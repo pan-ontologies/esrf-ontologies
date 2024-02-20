@@ -1,0 +1,240 @@
+stages:
+  - test
+  - style
+  - build
+  - test_build
+  - deploy
+
+### Jobs templates ###
+
+.scripts:
+  prepare_python:
+    - python --version
+    - python -m pip install --upgrade pip setuptools
+  init_python_win:
+    - SET "PATH=C:\\python\\%PYTHON_VER%;C:\\python\\%PYTHON_VER%\\Scripts;%PATH%"
+    - python -m venv --clear build_venv
+    - call "build_venv\\Scripts\\activate.bat"
+  cleanup_python_win:
+    - rmdir build_venv /s /q
+  install_sdist:
+    - ls -Rl sdist
+    - |
+      for filename in sdist/*.tar.gz; do
+        python -m pip install $filename[test]
+      done
+  install_sdist_win:
+    - dir sdist
+    - |
+      FOR %%F IN (sdist\*.tar.gz) DO (
+        echo %%F
+        python -m pip install %%F[test]
+      )
+
+.base:
+  only:
+    refs:
+      - main
+      - merge_requests
+  timeout: 10m
+
+.base-lin:  # Linux, Python 3.8
+  extends: .base
+  tags:
+    - linux
+  image: docker-registry.esrf.fr/dau/ewoks:python_3.8
+  before_script:
+    - !reference [.scripts, prepare_python]
+  after_script:
+    - echo 
+
+.base-win:  # Windows, Python 3.8
+  extends: .base
+  tags:
+    - win
+  variables:
+    PYTHON_VER: "3.8"
+  before_script:
+    - !reference [.scripts, init_python_win]
+    - !reference [.scripts, prepare_python]
+  after_script:
+    - !reference [.scripts, cleanup_python_win]
+
+.style:  # base job for style stage
+  stage: style
+  extends: .base-lin
+
+.test:  # base job for test stage (Linux)
+  stage: test
+  extends: .base-lin
+  before_script:
+    - !reference [.base-lin, before_script]
+    - python -m pip install pytest-cov
+  script:
+    - python -m pip install .[test]
+    - python -m pytest
+    - python -m pip install gevent
+    - python -m gevent.monkey --module pytest --cov=./ -v .
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+
+.test-win:  # base job for test stage (Windows)
+  stage: test
+  extends: .base-win
+  script:
+    - python -m pip install .[test]
+    - python -m pytest
+    - python -m pip install gevent
+    - python -m gevent.monkey --module pytest -v .
+
+.build:  # base job for build stage
+  stage: build
+  extends: .base-lin
+  only:
+    refs:
+      - main
+
+.build_sdist:  # base job for sdist build (Linux)
+  extends: .build
+  script:
+    - python setup.py sdist
+    - ls -Rl dist
+    - mkdir -p sdist
+    - mv dist/* sdist/
+  after_script:
+    - ls -Rl sdist
+  artifacts:
+    paths:
+      - sdist/
+    when: on_success
+    expire_in: 2h
+
+.test_build:  # base job for test_build stage (Linux)
+  stage: test_build
+  extends: .base-lin
+  only:
+    refs:
+      - main
+
+.test_build-win:  # base job for test_build stage (Windows)
+  stage: test_build
+  extends: .base-win
+  only:
+    refs:
+      - main
+
+.test_sdist:  # base job for sdist test (Linux)
+  extends: .test_build
+  script:
+    - !reference [.scripts, install_sdist]
+    - cd sdist
+    - export PROJECT_NAME=${CI_PROJECT_NAME//[-]/_}
+    - python -m pytest -v --pyargs ${PROJECT_NAME}.tests
+    - python -m pip install gevent
+    - python -m gevent.monkey --module pytest -v --pyargs ${PROJECT_NAME}.tests
+
+.test_sdist-win:  # base job for sdist test (Windows)
+  extends: .test_build-win
+  script:
+    - !reference [.scripts, install_sdist_win]
+    - cd sdist
+    - set PROJECT_NAME=%CI_PROJECT_NAME:-=_%
+    - python -m pytest -v --pyargs %PROJECT_NAME%.tests
+    - python -m pip install gevent
+    - python -m gevent.monkey --module pytest -v --pyargs %PROJECT_NAME%.tests
+
+.deploy:  # base job for deploy stage (Linux)
+  stage: deploy
+  extends: .base-lin
+  only:
+    refs:
+      - main
+
+### Jobs ###
+
+flake8:
+  extends: .style
+  before_script:
+    - python -m pip install flake8
+  script:
+    - flake8
+
+black:
+  extends: .style
+  before_script:
+    - python -m pip install black
+  script:
+    - LC_ALL=C.UTF-8 black --check --safe .
+
+build_sdist:
+  extends: .build_sdist
+
+build_doc:
+  extends: .build
+  image: docker-registry.esrf.fr/dau/ewoks:python_3.8_doc  # pandoc
+  script:
+    - python -m pip install .[doc]
+    - sphinx-build doc html
+  after_script:
+    - ls -Rl html
+  artifacts:
+    paths:
+      - html/
+    when: on_success
+    expire_in: 2h
+
+build_hdf5:
+  extends: .build
+  script:
+    - python -m pip install .[test]
+    - python scripts/save_nexus.py
+  after_script:
+    - ls -Rl html
+  artifacts:
+    paths:
+      - icat.h5
+    when: on_success
+    expire_in: 2h
+
+pages:
+  extends: .deploy
+  script:
+    - mv html public
+  after_script:
+    - ls -Rl public
+  artifacts:
+    paths:
+      - public
+    when: on_success
+    expire_in: 2h
+
+assets:
+  extends: .deploy
+  script:
+    - mv sdist assets
+  after_script:
+    - ls -Rl assets
+  artifacts:
+    paths:
+      - assets
+    when: on_success
+    expire_in: 2h
+
+### Python 3.8 jobs ###
+
+test-3.8:
+  extends: .test
+  image: docker-registry.esrf.fr/dau/ewoks:python_3.8
+
+.test-3.8-win: # TODO detached python processes keep running
+  extends: .test-win
+  variables:
+    PYTHON_VER: "3.8"
+
+test_sdist-3.8:
+  extends: .test_sdist
+  image: docker-registry.esrf.fr/dau/ewoks:python_3.8
+
+.test_sdist-3.8-win: # TODO detached python processes keep running
+  extends: .test_sdist-win
+  variables:
+    PYTHON_VER: "3.8"
