@@ -182,19 +182,6 @@ build_doc:
     when: on_success
     expire_in: 2h
 
-build_hdf5:
-  extends: .build
-  script:
-    - python -m pip install .[test]
-    - python scripts/save_nexus.py
-  after_script:
-    - ls -Rl html
-  artifacts:
-    paths:
-      - icat.h5
-    when: on_success
-    expire_in: 2h
-
 pages:
   extends: .deploy
   script:
