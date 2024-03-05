@@ -64,7 +64,7 @@ def test_double_technique_metadata():
 
 
 def test_wrong_technique_metadata():
-    with pytest.raises(KeyError, match="'WRONG' is not a known technique acronym"):
+    with pytest.raises(KeyError, match="'WRONG' is not a known technique alias"):
         get_technique_metadata("XAS", "WRONG")
 
 
