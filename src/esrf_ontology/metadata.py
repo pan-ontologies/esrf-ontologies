@@ -5,7 +5,7 @@ from . import techniques
 
 @dataclass
 class TechniqueMetadata:
-    techniques: Set[techniques.Technique]
+    techniques: Set[techniques.TechniqueModel]
 
     def get_scan_info(self) -> Dict[str, Dict[str, Union[List[str], str]]]:
         if not self.techniques:

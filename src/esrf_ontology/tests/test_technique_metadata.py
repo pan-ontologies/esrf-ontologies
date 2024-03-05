@@ -31,10 +31,10 @@ def test_multi_technique_metadata():
         "techniques": {
             "@NX_class": "NXnote",
             "acronyms": ["XAS", "XRF"],
-            "names": ["x-ray absorption spectroscopy", "x-ray fluorescence"],
+            "names": ["x-ray absorption spectroscopy", "fluorescence microscopy"],
             "urls": [
                 "http://purl.org/pan-science/PaNET/PaNET01196",
-                "http://purl.org/pan-science/PaNET/PaNET01177",
+                "http://purl.org/pan-science/PaNET/PaNET01113",
             ],
         },
     }
@@ -53,10 +53,10 @@ def test_double_technique_metadata():
         "techniques": {
             "@NX_class": "NXnote",
             "acronyms": ["XAS", "XRF"],
-            "names": ["x-ray absorption spectroscopy", "x-ray fluorescence"],
+            "names": ["x-ray absorption spectroscopy", "fluorescence microscopy"],
             "urls": [
                 "http://purl.org/pan-science/PaNET/PaNET01196",
-                "http://purl.org/pan-science/PaNET/PaNET01177",
+                "http://purl.org/pan-science/PaNET/PaNET01113",
             ],
         },
     }
