@@ -12,7 +12,7 @@ def test_single_technique_metadata():
         "scan_meta_categories": ["techniques"],
         "techniques": {
             "@NX_class": "NXnote",
-            "abbriviations": ["XAS"],
+            "acronyms": ["XAS"],
             "names": ["x-ray absorption spectroscopy"],
             "urls": ["http://purl.org/pan-science/PaNET/PaNET01196"],
         },
@@ -30,7 +30,7 @@ def test_multi_technique_metadata():
         "scan_meta_categories": ["techniques"],
         "techniques": {
             "@NX_class": "NXnote",
-            "abbriviations": ["XAS", "XRF"],
+            "acronyms": ["XAS", "XRF"],
             "names": ["x-ray absorption spectroscopy", "x-ray fluorescence"],
             "urls": [
                 "http://purl.org/pan-science/PaNET/PaNET01196",
@@ -52,7 +52,7 @@ def test_double_technique_metadata():
         "scan_meta_categories": ["techniques"],
         "techniques": {
             "@NX_class": "NXnote",
-            "abbriviations": ["XAS", "XRF"],
+            "acronyms": ["XAS", "XRF"],
             "names": ["x-ray absorption spectroscopy", "x-ray fluorescence"],
             "urls": [
                 "http://purl.org/pan-science/PaNET/PaNET01196",
@@ -64,7 +64,7 @@ def test_double_technique_metadata():
 
 
 def test_wrong_technique_metadata():
-    with pytest.raises(KeyError, match="'WRONG' is not a known technique abbriviation"):
+    with pytest.raises(KeyError, match="'WRONG' is not a known technique acronym"):
         get_technique_metadata("XAS", "WRONG")
 
 
