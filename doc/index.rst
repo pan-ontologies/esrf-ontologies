@@ -1,7 +1,15 @@
 ESRF Ontology |version|
 =======================
 
-.. code::python
+The ESRF ontology currently only provides a python API to the `PaNET Ontology <https://doi.org/10.5281/zenodo.4806026>`_
+for techniques within the photon and neutron (PaN) domain.
+
+Technique in Bliss
+------------------
+
+Define technique related metadata for HDF5 and the data portal in Bliss:
+
+.. code:: python
 
     from bliss import current_session
     from esrf_ontology.metadata import get_technique_metadata
