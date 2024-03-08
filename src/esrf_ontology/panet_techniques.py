@@ -1,8 +1,10 @@
 import os
+from functools import lru_cache
 from owlready2 import get_ontology
 from . import techniques
 
 
+@lru_cache(maxsize=1)
 def get_techniques_panet():
     current_directory = os.path.dirname(os.path.realpath(__file__))
     ontology_path = os.path.join(current_directory, "ontology/PaNET.owl")
@@ -28,6 +30,6 @@ def get_techniques_panet():
         k: abbreviations_info[k] for k in sorted(abbreviations_info)
     }
     return {
-        alias: techniques.TechniqueModel(**info)
+        alias: techniques.Technique(**info)
         for alias, info in sorted_abbreviations_info.items()
     }

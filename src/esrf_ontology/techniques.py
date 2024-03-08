@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from dataclasses import dataclass
 
 from . import panet_techniques
 
@@ -6,7 +6,8 @@ from . import panet_techniques
 _PANET_ID_TEMPLATE = "http://purl.org/pan-science/PaNET/PaNET{:05d}"
 
 
-class TechniqueModel(BaseModel):
+@dataclass(frozen=True)
+class Technique:
     acronym: str
     name: str
     panetid: int
@@ -19,11 +20,8 @@ class TechniqueModel(BaseModel):
         frozen = True
 
 
-def get_technique(alias: str) -> TechniqueModel:
+def get_technique(alias: str) -> Technique:
     try:
-        return _ALIAS_TO_TECHNIQUE[alias]
+        return panet_techniques.get_techniques_panet()[alias]
     except KeyError:
         raise KeyError(f"'{alias}' is not a known technique alias") from None
-
-
-_ALIAS_TO_TECHNIQUE = panet_techniques.get_techniques_panet()
