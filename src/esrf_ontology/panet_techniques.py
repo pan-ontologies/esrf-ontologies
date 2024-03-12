@@ -23,7 +23,7 @@ def get_techniques_panet():
                         abbreviations_info[abbreviation] = {
                             "acronym": abbreviation,
                             "name": cls.label[0],
-                            "panetid": cls.iri[-5:],
+                            "panetid": int(cls.iri[-5:]),
                         }
 
     sorted_abbreviations_info = {
