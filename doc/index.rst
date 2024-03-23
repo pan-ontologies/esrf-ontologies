@@ -7,7 +7,7 @@ for techniques within the photon and neutron (PaN) domain.
 Technique in Bliss
 ------------------
 
-Get the technique metadata for one of more aliases
+Get the :ref:`technique metadata <techniques>` for one of more aliases
 
 .. code:: python
 
@@ -39,4 +39,5 @@ Or when it needs to be merged it with already existing BLISS scan info
 .. toctree::
     :hidden:
     
+    techniques
     api

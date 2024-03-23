@@ -169,6 +169,7 @@ build_doc:
   image: docker-registry.esrf.fr/dau/ewoks:python_3.8_doc  # pandoc
   script:
     - python -m pip install .[doc]
+    - python scripts/generate.py
     - sphinx-build doc html
   after_script:
     - ls -Rl html
