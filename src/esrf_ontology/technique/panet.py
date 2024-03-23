@@ -19,6 +19,6 @@ def get_techniques() -> Dict[str, Technique]:
             for acronym in acronyms:
                 if acronym not in techniques:
                     techniques[acronym] = Technique(
-                        id=cls.name, iri=cls.iri, name=cls.label[0], acronym=acronym
+                        pid=cls.name, iri=cls.iri, name=cls.label[0], acronym=acronym
                     )
     return techniques
