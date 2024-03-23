@@ -1,5 +1,5 @@
 import pytest
-from ..metadata import get_technique_metadata
+from ..technique import get_technique_metadata
 
 
 def test_single_technique_metadata():
@@ -14,7 +14,7 @@ def test_single_technique_metadata():
             "@NX_class": "NXnote",
             "acronyms": ["XAS"],
             "names": ["x-ray absorption spectroscopy"],
-            "urls": ["http://purl.org/pan-science/PaNET/PaNET01196"],
+            "iris": ["http://purl.org/pan-science/PaNET/PaNET01196"],
         },
     }
     assert metadata.get_scan_info() == scan_info
@@ -32,7 +32,7 @@ def test_multi_technique_metadata():
             "@NX_class": "NXnote",
             "acronyms": ["XAS", "XRF"],
             "names": ["x-ray absorption spectroscopy", "fluorescence microscopy"],
-            "urls": [
+            "iris": [
                 "http://purl.org/pan-science/PaNET/PaNET01196",
                 "http://purl.org/pan-science/PaNET/PaNET01113",
             ],
@@ -54,7 +54,7 @@ def test_double_technique_metadata():
             "@NX_class": "NXnote",
             "acronyms": ["XAS", "XRF"],
             "names": ["x-ray absorption spectroscopy", "fluorescence microscopy"],
-            "urls": [
+            "iris": [
                 "http://purl.org/pan-science/PaNET/PaNET01196",
                 "http://purl.org/pan-science/PaNET/PaNET01113",
             ],
