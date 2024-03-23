@@ -72,9 +72,7 @@ stages:
     - python -m pip install pytest-cov
   script:
     - python -m pip install .[test]
-    - python -m pytest
-    - python -m pip install gevent
-    - python -m gevent.monkey --module pytest --cov=./ -v .
+    - python -m pytest --cov=./ -v -W error
   coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
 
 .test-win:  # base job for test stage (Windows)
@@ -82,9 +80,7 @@ stages:
   extends: .base-win
   script:
     - python -m pip install .[test]
-    - python -m pytest
-    - python -m pip install gevent
-    - python -m gevent.monkey --module pytest -v .
+    - python -m pytest -v -W error
 
 .build:  # base job for build stage
   stage: build
@@ -212,7 +208,7 @@ test-3.8:
   extends: .test
   image: docker-registry.esrf.fr/dau/ewoks:python_3.8
 
-.test-3.8-win: # TODO detached python processes keep running
+.test-3.8-win:
   extends: .test-win
   variables:
     PYTHON_VER: "3.8"
@@ -221,7 +217,27 @@ test_sdist-3.8:
   extends: .test_sdist
   image: docker-registry.esrf.fr/dau/ewoks:python_3.8
 
-.test_sdist-3.8-win: # TODO detached python processes keep running
+.test_sdist-3.8-win:
   extends: .test_sdist-win
   variables:
     PYTHON_VER: "3.8"
+
+### Python 3.11 jobs ###
+
+test-3.11:
+  extends: .test
+  image: docker-registry.esrf.fr/dau/ewoks:python_3.11
+
+.test-3.11-win:
+  extends: .test-win
+  variables:
+    PYTHON_VER: "3.11"
+
+test_sdist-3.11:
+  extends: .test_sdist
+  image: docker-registry.esrf.fr/dau/ewoks:python_3.11
+
+.test_sdist-3.11-win:
+  extends: .test_sdist-win
+  variables:
+    PYTHON_VER: "3.11"
