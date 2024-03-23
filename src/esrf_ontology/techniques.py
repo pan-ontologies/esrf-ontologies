@@ -1,5 +1,8 @@
 from dataclasses import dataclass
 
+from . import panet_techniques
+
+
 _PANET_ID_TEMPLATE = "http://purl.org/pan-science/PaNET/PaNET{:05d}"
 
 
@@ -13,15 +16,12 @@ class Technique:
     def url(self) -> str:
         return _PANET_ID_TEMPLATE.format(self.panetid)
 
+    class Config:
+        frozen = True
+
 
 def get_technique(alias: str) -> Technique:
     try:
-        return _ALIAS_TO_TECHNIQUE[alias]
+        return panet_techniques.get_techniques_panet()[alias]
     except KeyError:
         raise KeyError(f"'{alias}' is not a known technique alias") from None
-
-
-_ALIAS_TO_TECHNIQUE = {
-    "XAS": Technique(acronym="XAS", name="x-ray absorption spectroscopy", panetid=1196),
-    "XRF": Technique(acronym="XRF", name="x-ray fluorescence", panetid=1177),
-}
