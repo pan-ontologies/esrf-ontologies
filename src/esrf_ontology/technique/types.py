@@ -34,19 +34,18 @@ class TechniqueMetadata:
         scan_info_acronyms = list()
         scan_info_names = list()
         scan_info_iris = list()
-        techniques = {
-            "@NX_class": "NXnote",
-            "acronyms": scan_info_acronyms,
-            "names": scan_info_names,
-            "iris": scan_info_iris,
-        }
         for technique in sorted(
             self.techniques, key=lambda technique: technique.acronym
         ):
             scan_info_acronyms.append(technique.acronym)
             scan_info_names.append(technique.name)
             scan_info_iris.append(technique.iri)
-        return techniques
+        return {
+            "@NX_class": "NXnote",
+            "acronyms": scan_info_acronyms,
+            "names": scan_info_names,
+            "iris": scan_info_iris,
+        }
 
     def fill_dataset_metadata(self, dataset: MutableMapping) -> None:
         if not self.techniques:
