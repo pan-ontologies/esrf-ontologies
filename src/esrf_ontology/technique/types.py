@@ -54,14 +54,14 @@ class TechniqueMetadata:
         # Currently handles mutable mappings by only using __getitem__ and __setitem__
         # https://gitlab.esrf.fr/bliss/bliss/-/blob/master/bliss/icat/policy.py
         try:
-            values = dataset["definition"].split(" ")
+            definitions = dataset["definition"].split(" ")
         except KeyError:
-            values = list()
+            definitions = list()
         try:
-            keys = dataset["technique_pid"].split(" ")
+            pids = dataset["technique_pid"].split(" ")
         except KeyError:
-            keys = list()
-        techniques = dict(zip(keys, values))
+            pids = list()
+        techniques = dict(zip(pids, definitions))
         for technique in self.techniques:
             techniques[technique.pid] = technique.acronym
         for key, value in self._get_icat_metadata(techniques).items():
@@ -74,5 +74,5 @@ class TechniqueMetadata:
         return self._get_icat_metadata(techniques)
 
     def _get_icat_metadata(self, techniques: Dict[str, str]) -> Dict[str, str]:
-        keys, values = zip(*sorted(techniques.items(), key=lambda tpl: tpl[1]))
-        return {"technique_pid": " ".join(keys), "definition": " ".join(values)}
+        pids, definitions = zip(*sorted(techniques.items(), key=lambda tpl: tpl[1]))
+        return {"technique_pid": " ".join(pids), "definition": " ".join(definitions)}
