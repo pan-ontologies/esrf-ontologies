@@ -1,23 +1,21 @@
 import os
 import sys
+from typing import Sequence, Generator, List
+
 from tabulate import tabulate
-from esrf_ontology.technique import get_techniques
+
+from esrf_ontology.technique.types import Technique
+from esrf_ontology.technique import get_all_techniques
 
 
 def main():
     docdir = os.path.join(os.path.dirname(__file__), "..", "doc")
 
-    headers = ["PID", "Alias", "Acronym", "Name"]
+    headers = ["Alias", "Acronym", "Name", "PID"]
     table = [
-        [
-            f"`{technique.pid} <{technique.iri}>`_",
-            alias,
-            technique.acronym,
-            technique.name,
-        ]
-        for alias, technique in sorted(
-            get_techniques().items(), key=lambda tpl: tpl[1].acronym
-        )
+        row
+        for alias, techniques in sorted(get_all_techniques().items())
+        for row in _iter_rows(alias, techniques)
     ]
 
     with open(os.path.join(docdir, "techniques.rst"), "w") as f:
@@ -27,6 +25,19 @@ def main():
             "The **alias** is used in :meth:`esrf_ontology.technique.get_technique_metadata`.\n\n"
         )
         f.write(tabulate(table, headers, tablefmt="rst"))
+
+
+def _iter_rows(
+    alias, techniques: Sequence[Technique]
+) -> Generator[List[str], None, None]:
+    for technique in sorted(techniques, key=lambda tech: tech.acronym):
+        yield [
+            alias,
+            technique.acronym,
+            technique.name,
+            f"`{technique.pid} <{technique.iri}>`_",
+        ]
+        alias = ""
 
 
 if __name__ == "__main__":
