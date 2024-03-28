@@ -37,7 +37,7 @@ def _iter_rows(
             technique.name,
             f"`{technique.pid} <{technique.iri}>`_",
         ]
-        alias = ""
+        alias = "+"
 
 
 if __name__ == "__main__":
