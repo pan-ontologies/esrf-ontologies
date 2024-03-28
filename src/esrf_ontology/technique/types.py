@@ -31,20 +31,20 @@ class TechniqueMetadata:
         scan_info["techniques"] = self._get_nxnote()
 
     def _get_nxnote(self) -> Dict[str, Union[List[str], str]]:
-        scan_info_acronyms = list()
-        scan_info_names = list()
-        scan_info_iris = list()
+        acronyms = list()
+        names = list()
+        iris = list()
         for technique in sorted(
             self.techniques, key=lambda technique: technique.acronym
         ):
-            scan_info_acronyms.append(technique.acronym)
-            scan_info_names.append(technique.name)
-            scan_info_iris.append(technique.iri)
+            acronyms.append(technique.acronym)
+            names.append(technique.name)
+            iris.append(technique.iri)
         return {
             "@NX_class": "NXnote",
-            "acronyms": scan_info_acronyms,
-            "names": scan_info_names,
-            "iris": scan_info_iris,
+            "acronyms": acronyms,
+            "names": names,
+            "iris": iris,
         }
 
     def fill_dataset_metadata(self, dataset: MutableMapping) -> None:
