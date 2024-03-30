@@ -1,5 +1,8 @@
+import logging
 import dataclasses
 from typing import List, Dict, Union, Set, MutableMapping
+
+_logger = logging.getLogger(__name__)
 
 
 @dataclasses.dataclass(frozen=True)
@@ -64,7 +67,15 @@ class TechniqueMetadata:
         for technique in self.techniques:
             techniques[technique.pid] = technique.acronym
         for key, value in self._get_icat_metadata(techniques).items():
-            dataset[key] = value
+            try:
+                dataset[key] = value
+            except KeyError:
+                if key == "technique_pid":
+                    _logger.warning(
+                        "Skip ICAT field 'technique_pid' (requires pyicat-plus>=0.2)"
+                    )
+                    continue
+                raise
 
     def get_dataset_metadata(self) -> Dict[str, str]:
         if not self.techniques:

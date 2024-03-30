@@ -38,22 +38,22 @@ stages:
       - merge_requests
   timeout: 10m
 
-.base-lin:  # Linux, Python 3.8
+.base-lin:  # Linux, Python 3.9
   extends: .base
   tags:
     - linux
-  image: docker-registry.esrf.fr/dau/ewoks:python_3.8
+  image: docker-registry.esrf.fr/dau/ewoks:python_3.9
   before_script:
     - !reference [.scripts, prepare_python]
   after_script:
     - echo 
 
-.base-win:  # Windows, Python 3.8
+.base-win:  # Windows, Python 3.9
   extends: .base
   tags:
     - win
   variables:
-    PYTHON_VER: "3.8"
+    PYTHON_VER: "3.9"
   before_script:
     - !reference [.scripts, init_python_win]
     - !reference [.scripts, prepare_python]
@@ -124,9 +124,9 @@ stages:
     - !reference [.scripts, install_sdist]
     - cd sdist
     - export PROJECT_NAME=${CI_PROJECT_NAME//[-]/_}
-    - python -m pytest -v --pyargs ${PROJECT_NAME}.tests
+    - python -m pytest -v -W error --pyargs ${PROJECT_NAME}.tests
     - python -m pip install gevent
-    - python -m gevent.monkey --module pytest -v --pyargs ${PROJECT_NAME}.tests
+    - python -m gevent.monkey --module pytest -v -W error --pyargs ${PROJECT_NAME}.tests
 
 .test_sdist-win:  # base job for sdist test (Windows)
   extends: .test_build-win
@@ -134,9 +134,9 @@ stages:
     - !reference [.scripts, install_sdist_win]
     - cd sdist
     - set PROJECT_NAME=%CI_PROJECT_NAME:-=_%
-    - python -m pytest -v --pyargs %PROJECT_NAME%.tests
+    - python -m pytest -v -W error --pyargs %PROJECT_NAME%.tests
     - python -m pip install gevent
-    - python -m gevent.monkey --module pytest -v --pyargs %PROJECT_NAME%.tests
+    - python -m gevent.monkey --module pytest -v -W error --pyargs %PROJECT_NAME%.tests
 
 .deploy:  # base job for deploy stage (Linux)
   stage: deploy
@@ -166,7 +166,7 @@ build_sdist:
 
 build_doc:
   extends: .build
-  image: docker-registry.esrf.fr/dau/ewoks:python_3.8_doc  # pandoc
+  image: docker-registry.esrf.fr/dau/ewoks:python_3.9_doc  # pandoc
   script:
     - python -m pip install .[doc]
     - python scripts/generate.py
@@ -203,25 +203,25 @@ assets:
     when: on_success
     expire_in: 2h
 
-### Python 3.8 jobs ###
+### Python 3.9 jobs ###
 
-test-3.8:
+test-3.9:
   extends: .test
-  image: docker-registry.esrf.fr/dau/ewoks:python_3.8
+  image: docker-registry.esrf.fr/dau/ewoks:python_3.9
 
-.test-3.8-win:
+.test-3.9-win:
   extends: .test-win
   variables:
-    PYTHON_VER: "3.8"
+    PYTHON_VER: "3.9"
 
-test_sdist-3.8:
+test_sdist-3.9:
   extends: .test_sdist
-  image: docker-registry.esrf.fr/dau/ewoks:python_3.8
+  image: docker-registry.esrf.fr/dau/ewoks:python_3.9
 
-.test_sdist-3.8-win:
+.test_sdist-3.9-win:
   extends: .test_sdist-win
   variables:
-    PYTHON_VER: "3.8"
+    PYTHON_VER: "3.9"
 
 ### Python 3.11 jobs ###
 
