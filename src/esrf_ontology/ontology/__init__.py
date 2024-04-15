@@ -10,5 +10,5 @@ from owlready2.entity import ThingClass
 
 
 def load_panet_onotology() -> ThingClass:
-    owl_file = importlib_resources.files(__package__).joinpath("PaNET.owl")
+    owl_file = importlib_resources.files(__package__).joinpath("esrf_ontology.owl")
     return get_ontology(owl_file.as_uri()).load()
