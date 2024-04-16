@@ -1,0 +1,204 @@
+
+Categories:
+-----------
+
+x-ray absorption
+    - atomic core excitation (interaction)
+
+x-ray spectroscopy
+    - X-rays IN (sample-input) ???
+
+hard x-ray probe
+    - X-rays IN with energy > 5to10 keV (sample-input)
+
+Techniques:
+-----------
+
+x-ray absorption spectroscopy (XAS)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+
+x-ray absorption near edge structure (XANES)
+    - atomic core excitation (interaction)
+    - in-energy range < 500 eV (sample-input)
+
+extended x-ray absorption fine structure (EXAFS)
+    - atomic core excitation (interaction)
+    - in-energy range > 500 eV (sample-input)
+
+energy dispersive extended x-ray absorption fine structure (ED-EXAFS)
+    - atomic core excitation (interaction)
+    - in-energy range > 500 eV (sample-input)
+    - disperse in-energy in space (sample-input)
+
+energy dispersive x-ray absorption spectroscopy (NEW, ED-XAS)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - disperse in-energy in space (sample-input)
+
+laser-driven shock compressed x-ray absorption spectroscopy (NEW)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - in-compression (sample-input)
+
+microfocus x-ray absorption spectroscopy (micro-XAS)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - scanning micro spatial resolution (< 10 micron) of the sample (detection)
+
+x-ray fluorescence spectroscopy (XRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+
+scanning nano X-ray fluorescence (NEW, nano-XRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - scanning nano spatial resolution (< 0.1 micron) of the sample (detection)
+
+scanning micro X-ray fluorescence (NEW, μXRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - scanning micro spatial resolution (< 10 micron) of the sample (detection)
+
+scanning macro X-ray fluorescence (NEW, MA-XRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - scanning macro spatial resolution (> 10 micron) of the sample (detection)
+
+full-field x-ray fluorescence imaging (NEW, FF-XRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - spatial resolution of the sample on the detector side (detection)
+
+energy dispersive x-ray fluorescence spectroscopy (NEW)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - a detector that can distinguish X-ray energies and count them (detection)
+    - X-rays IN (sample-input)
+
+energy dispersive x-ray spectroscopy (EDS)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - a detector that can distinguish X-ray energies and count them (detection)
+
+x-ray fluoresence computed tomography
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - multi-projections of the sample (detection)
+
+x-ray emission spectroscopy
+    TODO: XES (non-resonant), RIXS (resonant), ...
+
+x-ray photoelectron spectroscopy (XPS)
+    - atomic core excitation (interaction)
+    - photo-electrons (detection)
+
+x-ray photoelectron emission (X-PEEM)
+    TODO:
+    - atomic core excitation (interaction)
+    - photo-electrons (detection)
+    - X-rays IN (sample-in) ?
+
+high resolution x-ray photoelectron spectroscopy (HR-XPS)
+    - atomic core excitation (interaction)
+    - photo-electrons (detection)
+    - monochromatic (DE/E < 1e-3) X-rays IN which results in photo-electrons with a smaller energy bandwidth
+
+ambient pressure x-ray photoelectron spectroscopy (AP-XPS)
+    https://www.sciencedirect.com/science/article/pii/S0167572918300116
+
+hard x-ray photoelectron spectroscopy
+    - atomic core excitation (interaction)
+    - photo-electrons (detection)
+    - X-rays IN with energy > 5to10 keV (sample-input)
+
+x-ray photon correlation spectroscopy (XPCS)
+    TODO: 
+
+nonlinear x-ray spectroscopy
+    TODO: 
+
+
+https://www.esrf.fr/files/live/sites/www/files/events/conferences/2014/ESRF%20ILL%20Summer%20Programme%202014/Presentations/Inelastic%20X-Ray%20Scattering_Krisch.pdf
+
+
+XMCD total electron yield
+anomalous small angle x-ray scattering
+anomalous solution x-ray scattering
+biological small angle scattering
+borrmann effect
+correlative light x-ray microscopy
+cryo x-ray microscopy
+diffuse small angle x-ray scattering
+energy dispersive x-ray diffraction
+fixed target serial synchrotron crystallography
+grazing incidence small angle x-ray scattering
+grazing incidence wide angle scattering
+grazing incidence x-ray diffraction
+high resolution powder diffraction
+inelastic small angle scattering
+inelastic x-ray scattering
+inelastic x-ray small angle scattering
+lipidic cubic phase serial synchrotron crystallography
+long wavelength crystallography
+magnetic x-ray tomography
+micro grazing incidence small angle x-ray scattering tomography
+micro small angle x-ray scattering tomography
+microfocus macromolecular crystallography
+microfocus x-ray scattering
+multi wavelength anomalous diffraction
+nanofocus macromolecular crystallography
+nanofocus x-ray scattering
+photoelectron diffraction
+pulse overlap diffraction
+resonant elastic x-ray scattering
+resonant inelastic x-ray scattering
+resonant soft x-ray scattering
+resonant x-ray scattering
+scanning transmission x-ray microscopy
+serial femtosecond crystallography
+serial synchrotron crystallography
+small angle inelastic scattering
+small angle x-ray scattering
+soft x-ray diffraction
+soft x-ray imaging
+soft x-ray probe
+soft x-ray small angle scattering
+surface x-ray diffraction
+tender x-ray probe
+time resolved serial femtosecond crystallography
+time resolved serial synchrotron crystallography
+ultra small angle x-ray scattering
+wide angle x-ray scattering
+x-ray birefringence imaging 
+x-ray diffraction imaging
+x-ray diffraction
+x-ray excited optical luminescence
+x-ray holography
+x-ray imaging
+x-ray linear dichroism
+x-ray lithography
+x-ray magnetic circular dichroism
+x-ray magnetic linear dichroism
+x-ray magnetochiral dichroism
+x-ray microscopy
+x-ray microtomography
+x-ray natural circular dichroism
+x-ray natural linear dichroism
+x-ray photoelectron diffraction
+x-ray photoemission microscopy
+x-ray powder diffraction
+x-ray reflectivity
+x-ray refraction imaging
+x-ray refraction tomography
+x-ray scanning microscopy
+x-ray scattering
+x-ray single crystal diffraction
+x-ray standing wave
+x-ray tomography
+
+
+
+
+
+
