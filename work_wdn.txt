@@ -26,6 +26,13 @@ extended x-ray absorption fine structure (EXAFS)
     - atomic core excitation (interaction)
     - in-energy range > 500 eV (sample-input)
 
+scanning transmission x-ray microscopy (STXM)
+    TODO:
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - tranmission (detection)
+    - scanning nano spatial resolution (< 0.1 micron) of the sample (detection)
+
 energy dispersive extended x-ray absorption fine structure (ED-EXAFS)
     - atomic core excitation (interaction)
     - in-energy range > 500 eV (sample-input)
@@ -58,7 +65,7 @@ scanning nano X-ray fluorescence (NEW, nano-XRF)
 scanning micro X-ray fluorescence (NEW, μXRF)
     - atomic core excitation (interaction)
     - fluorescence (detection)
-    - scanning micro spatial resolution (< 10 micron) of the sample (detection)
+    - scanning micro spatial resolution (< 10 micron) of the sample (detection)??
 
 scanning macro X-ray fluorescence (NEW, MA-XRF)
     - atomic core excitation (interaction)
@@ -69,6 +76,11 @@ full-field x-ray fluorescence imaging (NEW, FF-XRF)
     - atomic core excitation (interaction)
     - fluorescence (detection)
     - spatial resolution of the sample on the detector side (detection)
+
+total reflection X-rays fluorescence (NEW, TXRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - X-rays IN at angles < 1 degree (sample-input)
 
 energy dispersive x-ray fluorescence spectroscopy (NEW)
     - atomic core excitation (interaction)
@@ -118,82 +130,201 @@ x-ray photon correlation spectroscopy (XPCS)
 nonlinear x-ray spectroscopy
     TODO: 
 
+x-ray magnetic circular dichroism (XMCD)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - in-magnetic field (sample-input)
+    - X-rays IN left circular polarized (sample-input)
+    - X-rays IN right circular polarized (sample-input)
+
+XMCD total electron yield (XMCD-TEY)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - in-magnetic field (sample-input)
+    - X-rays IN left circular polarized (sample-input)
+    - X-rays IN right circular polarized (sample-input)
+    - total-electrons = auger + photo electrons (detection)
+
+x-ray magnetic linear dichroism (XMLD)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - in-magnetic field (sample-input)
+    - X-rays IN horizontal linear polarized (sample-input)
+    - X-rays IN vertical linear polarized (sample-input)
+
+x-ray natural circular dichroism (XNCD)
+x-ray natural linear dichroism (XNLD)
+x-ray linear dichroism
+x-ray magnetochiral dichroism (XMCHD)
+
+x-ray diffraction
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+
+x-ray single crystal diffraction
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - single crystal sample (sample)
+
+serial synchrotron crystallography (SSX)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - measure diffraction from many single crystals one by one (sample)
+
+serial femtosecond crystallography
+time resolved serial femtosecond crystallography
+time resolved serial synchrotron crystallography
+fixed target serial synchrotron crystallography
+lipidic cubic phase serial synchrotron crystallography
+
+x-ray powder diffraction
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - measure diffraction from many many crystals at once (sample)
+
+high resolution powder diffraction (HRXRPD)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - measure diffraction from many many crystals at once (sample)
+    - delta-Q < 1e-4 Å-1 (detection)
+
+energy dispersive x-ray diffraction (ED-XRD)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - a detector that can distinguish X-ray energies and count them (detection)
+
+small angle x-ray scattering (SAXS)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+
+ultra small angle x-ray scattering (USAXS)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 0.1 nm^-1 (detection)
+
+wide angle x-ray scattering (WAXS)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax > 1 nm^-1 (detection)
+
+grazing incidence x-ray diffraction (GIXRD)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - X-rays IN at angles < 1 degree (sample-input)
+
+grazing incidence small angle x-ray scattering
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - X-rays IN at angles < 1 degree (sample-input)
+
+grazing incidence wide angle scattering
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax > 1 nm^-1 (detection)
+    - X-rays IN at angles < 1 degree (sample-input)
+
+soft x-ray small angle scattering
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - X-rays IN energy < ???
+
+micro small angle x-ray scattering tomography
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - micro spatial resolution (< 10 micron) of the sample (detection)
+    - multi-projections of the sample (detection)
+
+micro grazing incidence small angle x-ray scattering tomography
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - micro spatial resolution (< 10 micron) of the sample (detection)
+    - multi-projections of the sample (detection)
+    - X-rays IN at angles < 1 degree (sample-input)
+
+biological small angle scattering
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - biological sample (sample)
+
+anomalous small angle x-ray scattering (ASAXS)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - anomalous: SAXS at several monochromatic in-energies (TODO)
+
+
+photoelectron diffraction
+x-ray photoelectron diffraction (XPD)
+    https://msspec.cnrs.fr/spectroscopies/ped/ped.html
+    - atomic core excitation (interaction)
+    - diffraction of photo-electrons (detection)
+
+
+
+soft x-ray diffraction
+multi wavelength anomalous diffraction
+pulse overlap diffraction
+surface x-ray diffraction
+x-ray diffraction imaging
+diffuse small angle x-ray scattering
+microfocus macromolecular crystallography
+nanofocus macromolecular crystallography
+long wavelength crystallography
+anomalous solution x-ray scattering
+
+
+
+
+https://www.diamond.ac.uk/Instruments/Techniques/
 
 https://www.esrf.fr/files/live/sites/www/files/events/conferences/2014/ESRF%20ILL%20Summer%20Programme%202014/Presentations/Inelastic%20X-Ray%20Scattering_Krisch.pdf
 
 
-XMCD total electron yield
-anomalous small angle x-ray scattering
-anomalous solution x-ray scattering
-biological small angle scattering
+
+
+
+
+cryo x-ray microscopy
+microfocus x-ray scattering
+nanofocus x-ray scattering
+
 borrmann effect
 correlative light x-ray microscopy
-cryo x-ray microscopy
-diffuse small angle x-ray scattering
-energy dispersive x-ray diffraction
-fixed target serial synchrotron crystallography
-grazing incidence small angle x-ray scattering
-grazing incidence wide angle scattering
-grazing incidence x-ray diffraction
-high resolution powder diffraction
+
 inelastic small angle scattering
 inelastic x-ray scattering
 inelastic x-ray small angle scattering
-lipidic cubic phase serial synchrotron crystallography
-long wavelength crystallography
-magnetic x-ray tomography
-micro grazing incidence small angle x-ray scattering tomography
-micro small angle x-ray scattering tomography
-microfocus macromolecular crystallography
-microfocus x-ray scattering
-multi wavelength anomalous diffraction
-nanofocus macromolecular crystallography
-nanofocus x-ray scattering
-photoelectron diffraction
-pulse overlap diffraction
-resonant elastic x-ray scattering
-resonant inelastic x-ray scattering
+small angle inelastic scattering
+
+resonant elastic x-ray scattering (REXS)
+resonant inelastic x-ray scattering (RIXS)
 resonant soft x-ray scattering
 resonant x-ray scattering
-scanning transmission x-ray microscopy
-serial femtosecond crystallography
-serial synchrotron crystallography
-small angle inelastic scattering
-small angle x-ray scattering
-soft x-ray diffraction
+
+magnetic x-ray tomography
+
 soft x-ray imaging
 soft x-ray probe
-soft x-ray small angle scattering
-surface x-ray diffraction
 tender x-ray probe
-time resolved serial femtosecond crystallography
-time resolved serial synchrotron crystallography
-ultra small angle x-ray scattering
-wide angle x-ray scattering
 x-ray birefringence imaging 
-x-ray diffraction imaging
-x-ray diffraction
 x-ray excited optical luminescence
 x-ray holography
 x-ray imaging
-x-ray linear dichroism
 x-ray lithography
-x-ray magnetic circular dichroism
-x-ray magnetic linear dichroism
-x-ray magnetochiral dichroism
 x-ray microscopy
 x-ray microtomography
-x-ray natural circular dichroism
-x-ray natural linear dichroism
-x-ray photoelectron diffraction
 x-ray photoemission microscopy
-x-ray powder diffraction
 x-ray reflectivity
 x-ray refraction imaging
 x-ray refraction tomography
 x-ray scanning microscopy
 x-ray scattering
-x-ray single crystal diffraction
 x-ray standing wave
 x-ray tomography
 

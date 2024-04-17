@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology/"
+     xml:base="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#energy_range_unit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#energy_range_unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#energy_range_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#energy_range_value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#atomic_core_excitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#atomic_core_excitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_proccess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#auger_electrons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#auger_electrons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#change_over_space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#change_over_space">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#change_over_time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#change_over_time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changing_energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changing_energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changing_energy_over_space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changing_energy_over_space">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#x-rays"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changes"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#change_over_space"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changing_energy_over_time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changing_energy_over_time">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#change_over_time"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changing_energy"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#diffraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#diffraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#elastic_scattering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#elastic_scattering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_proccess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#energy_dispersive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#energy_dispersive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#energy_dispersive_extended_x-ray_absorption_fine_structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#energy_dispersive_extended_x-ray_absorption_fine_structure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#atomic_core_excitation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#energy_dispersive"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays_changing_over_space"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#experimental_technique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#experimental_technique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#experimental_technique"/>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#extended_x-ray_absorption_fine_structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#extended_x-ray_absorption_fine_structure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#atomic_core_excitation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays_changing"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#experimental_technique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#fluoresence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#fluoresence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#full-field_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#full-field_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#hard_monochromatic_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#hard_monochromatic_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#horizontal_linear_polarized_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#horizontal_linear_polarized_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#left_circular_polarized_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#left_circular_polarized_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#macro_focussed_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#macro_focussed_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#micro_focussed_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#micro_focussed_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays_changing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays_changing">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changing_energy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays_changing_over_space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays_changing_over_space">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changing_energy_over_space"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays_changing_over_time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays_changing_over_time">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#changing_energy_over_time"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#nano_focussed_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#nano_focussed_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#photoelectrons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#photoelectrons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#right_circular_polarized_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#right_circular_polarized_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_proccess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_proccess"/>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#scanning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#scanning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#soft_monochromatic_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#soft_monochromatic_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#tomography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#tomography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#total_electrons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#total_electrons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#transmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#vertical_linear_polarized_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#vertical_linear_polarized_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#x-ray_absorption_near_edge_structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#x-ray_absorption_near_edge_structure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#atomic_core_excitation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays_changing"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#experimental_technique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#x-ray_absorption_spectroscopy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#x-ray_absorption_spectroscopy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#atomic_core_excitation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#monochromatic_x-rays_changing"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#experimental_technique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#sample_input"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
