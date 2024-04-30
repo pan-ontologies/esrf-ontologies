@@ -42,7 +42,7 @@ stages:
   extends: .base
   tags:
     - linux
-  image: docker-registry.esrf.fr/dau/ewoks:python_3.9
+  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.9:latest
   before_script:
     - !reference [.scripts, prepare_python]
   after_script:
@@ -166,7 +166,7 @@ build_sdist:
 
 build_doc:
   extends: .build
-  image: docker-registry.esrf.fr/dau/ewoks:python_3.9_doc  # pandoc
+  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.9_doc  # pandoc:latest
   script:
     - python -m pip install .[doc]
     - python scripts/generate.py
@@ -207,7 +207,7 @@ assets:
 
 test-3.9:
   extends: .test
-  image: docker-registry.esrf.fr/dau/ewoks:python_3.9
+  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.9:latest
 
 .test-3.9-win:
   extends: .test-win
@@ -216,7 +216,7 @@ test-3.9:
 
 test_sdist-3.9:
   extends: .test_sdist
-  image: docker-registry.esrf.fr/dau/ewoks:python_3.9
+  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.9:latest
 
 .test_sdist-3.9-win:
   extends: .test_sdist-win
@@ -227,7 +227,7 @@ test_sdist-3.9:
 
 test-3.11:
   extends: .test
-  image: docker-registry.esrf.fr/dau/ewoks:python_3.11
+  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.11:latest
 
 .test-3.11-win:
   extends: .test-win
@@ -236,7 +236,7 @@ test-3.11:
 
 test_sdist-3.11:
   extends: .test_sdist
-  image: docker-registry.esrf.fr/dau/ewoks:python_3.11
+  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.11:latest
 
 .test_sdist-3.11-win:
   extends: .test_sdist-win
