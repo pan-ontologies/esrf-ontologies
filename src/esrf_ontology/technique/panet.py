@@ -37,7 +37,7 @@ def get_xray_techniques():
     """Returns all techniques associated with x-ray probe"""
     ontology = load_esrf_ontology()
     print(ontology)
-    return resultBindings(ontology, 'closeParents')
+    return resultBindings(ontology, 'xrayTechniques')
 
 
 
@@ -46,13 +46,19 @@ def resultBindings(ontology, sparqlQuery, classId = 'x-ray probe' ):
     query = sparql_queries[sparqlQuery](classId, prefix)
     print("query", query)
 
-    graph = default_world.as_rdflib_graph()
-    print("graph", graph)
-    result = list(graph.query_owlready(query))
+    # graph = default_world.as_rdflib_graph()
+    # print("graph", graph)
+    # result = list(graph.query_owlready(query))
+    result = list(default_world.sparql("""
+           SELECT ?child
+        WHERE {
+            ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
+        }
+    """))
     print(result)
-    result_list = [{"parent": "#" + item[0], "label": "#" + str(item[1])} for item in result]
-    print(result_list)
-    return result_list
+    # result_list = [{"parent": "#" + item[0], "label": "#" + str(item[1])} for item in result]
+    # print(result_list)
+    return result
 
 
 prefix = "PREFIX ontology: <http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#>"
@@ -67,11 +73,11 @@ sparql_queries = {
                 OPTIONAL {{ ?child rdfs:label ?label }}
         }}
     """,
-    "closeParents": lambda classId, prefix: f"""
-        {prefix}
-        SELECT ?parent
+    "xrayTechniques": lambda classId, prefix: f"""
+        
+        SELECT ?child
         WHERE {{
-            ontology:'{classId}' rdfs:subClassOf ?parent .
+            ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
         }}
     """,
     "objectProperties": lambda classId, prefix: f"""

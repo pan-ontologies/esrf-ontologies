@@ -9,7 +9,6 @@ def get_technique_metadata(*aliases: Tuple[str]) -> TechniqueMetadata:
     associated to the provided technique aliases."""
     return TechniqueMetadata(techniques=set(_iter_from_aliases(*aliases)))
 
-
 def get_techniques(*aliases: Tuple[str]) -> Set[Technique]:
     """Returns a set of techniques referenced by the provided technique aliases."""
     return set(_iter_from_aliases(*aliases))

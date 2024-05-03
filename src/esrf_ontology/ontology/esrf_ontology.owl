@@ -240,7 +240,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01030"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#ESRF_technique"/>
         <rdfs:label>high resolution powder diffraction</rdfs:label>
     </owl:Class>
