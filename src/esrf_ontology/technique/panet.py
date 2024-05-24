@@ -7,7 +7,8 @@ from types import MappingProxyType
 from owlready2 import default_world
 
 from .types import Technique
-from ..ontology import load_panet_ontology, load_esrf_ontology
+from ..ontology import load_panet_ontology, load_esrf_ontology, use_robot
+import json
 
 
 @lru_cache(maxsize=1)
@@ -37,28 +38,40 @@ def get_xray_techniques():
     """Returns all techniques associated with x-ray probe"""
     ontology = load_esrf_ontology()
     print(ontology)
-    return resultBindings(ontology, 'xrayTechniques')
+    return resultBindings(ontology, "xrayTechniques")
 
 
-
-def resultBindings(ontology, sparqlQuery, classId = 'x-ray probe' ):
+def resultBindings(ontology, sparqlQuery, classId="x-ray probe"):
     print("resultBindings: ", ontology, sparqlQuery, classId)
     query = sparql_queries[sparqlQuery](classId, prefix)
     print("query", query)
-
+    use_robot.run_robot_reasoner()
     # graph = default_world.as_rdflib_graph()
     # print("graph", graph)
     # result = list(graph.query_owlready(query))
-    result = list(default_world.sparql("""
-           SELECT ?child
+    techniques = list(
+        default_world.sparql(
+            """
+           SELECT ?child ?label
         WHERE {
             ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
+            OPTIONAL {?child rdfs:label ?label}
         }
-    """))
-    print(result)
-    # result_list = [{"parent": "#" + item[0], "label": "#" + str(item[1])} for item in result]
-    # print(result_list)
-    return result
+    """
+        )
+    )
+    for tech in techniques:
+        tech[0] = str(tech[0])
+
+    file_path = '/home/koumouts/code/esrf-ontology/src/esrf_ontology/ontology/xray_probe_sparql.json'
+
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    techniques_sparql = data['techniques_sparql']
+    print(techniques_sparql)
+
+    return techniques
 
 
 prefix = "PREFIX ontology: <http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#>"
@@ -74,7 +87,7 @@ sparql_queries = {
         }}
     """,
     "xrayTechniques": lambda classId, prefix: f"""
-        
+        {prefix}
         SELECT ?child
         WHERE {{
             ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
@@ -100,5 +113,5 @@ sparql_queries = {
             NOT EXISTS {{ ?class rdfs:subClassOf ?parent . }}
         )
         }}
-    """
+    """,
 }

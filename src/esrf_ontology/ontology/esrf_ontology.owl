@@ -97,10 +97,10 @@
     
 
 
-    <!-- http://purl.org/pan-science/PaNET/PaNET01020 -->
+    <!-- http://purl.org/pan-science/PaNET/PaNET01012 -->
 
-    <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01020">
-        <owl:disjointWith rdf:resource="http://purl.org/pan-science/PaNET/PaNET01034"/>
+    <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01012">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#XrayTechniques"/>
     </rdf:Description>
     
 
@@ -325,6 +325,12 @@
         <skos:altLabel>XRF-CT</skos:altLabel>
         <skos:altLabel>x-ray fluoresence tomography</skos:altLabel>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#XrayTechniques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#XrayTechniques"/>
     
 
 
