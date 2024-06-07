@@ -1,15 +1,63 @@
+Ontology usage:
+---------------
 
-Categories:
------------
+- Question Type 1: 
+  I want to find out which pigments the painter used in this painting. Which technique can I use for that?
+  I want to use X-ray powder diffraction to find out which pigments the painter used in this painting. Would this work and if yes, what are the limitations.
 
-x-ray absorption
-    - atomic core excitation (interaction)
+- Question Type 2:
+  Am I using the same technique as in this particular scientific publication?
 
-x-ray spectroscopy
-    - X-rays IN (sample-input) ???
+- Question Type 3:
+  I want to use a specific technique (e.g. derived from question type 1). Where do I go for that?
 
-hard x-ray probe
-    - X-rays IN with energy > 5to10 keV (sample-input)
+- Question Type 4:
+  I want to use a specific technique (e.g. derived from question type 1). Who do I contact to know whether this is the right thing to do for my particular use case?
+
+- Question Type 5:
+  Give me a list of non-existing techniques that could solve new scientific problems.
+
+- Question Type 6:
+  How are X-ray powder diffraction and X-ray absorption spectroscopy related? What is the overlap and the differences in terms of characteristics?
+  How are X-ray powder diffraction and X-ray absorption spectroscopy related? What is the overlap and the differences in terms of scientic problems they can solve?
+
+Ontology design principles:
+---------------------------
+
+Suppose technique1 = block1 AND block2. Now we create a new technique technique2 = block1 AND block2 AND block3
+but it is not a specialization of technique1. This means we need to re-define technique1 = block1 AND block2 AND block4.
+
+Technique Characteristics:
+--------------------------
+
+When X-rays or electrons interact with matter (for example atoms bound in molecules or crystals) a cascade of several events could occur, each of them
+having a different probability to occur. Since you have many atoms, all possible events are happening at the same time. Depending on the detection types
+you use, you can only see a subset of all the possible events, often only one specific cascade of events.
+
+An example of a cascade of events: X-ray photon energy is transferred to an inner core electron of an atom (atomic core excitation). The atom that is left
+after this is in a unstable state and naturally reverts to its ground state by an electron falling back from a higher energy level and the energy is
+release in one of these forms: as an X-ray (fluorescence), as an electron from a higher energy level (Auger). So there are two event cascades described here
+which could be called fluorescence and Auger. You can detect fluorescence, Auger or both.
+
+"sample-input": the thing that leads to the cascade of events
+"interaction": is the first step of a cascade
+"detection": selection of cascades you measure
+
+For example "atomic core excitation" are all the events cascades that result from atomic core excitation.
+
+
+
+"sample-input" and "detection" can have characteristics.
+
+If "sample-input" are X-rays, the X-rays have characteristics. They have a energy distribution that could change in space and time.
+The energy distribution can be narrow (monochromatic in which case it has an energy, e.g. 10 keV),
+wide (pink) or very wide (white). X-rays also have a spatial distribution: parallel and not parallel.
+When parallel it can have a diameter which is in the nano, micro etc. length scale. 
+
+If "detection" is transmission, it can be a diode or a full-field camera (point or image). If "detection" is fluorescence, it has
+an energy resolution (smallest difference on photon energy that can be distinguished) and a range (e.g. >= 1 keV)
+
+Source, sample and detector can move during the measurement: images, tomography, ...
 
 Techniques:
 -----------
@@ -330,6 +378,18 @@ x-ray tomography
 
 
 
+
+Categories:
+-----------
+
+x-ray absorption
+    - atomic core excitation (interaction)
+
+x-ray spectroscopy
+    - X-rays IN (sample-input) ???
+
+hard x-ray probe
+    - X-rays IN with energy > 5to10 keV (sample-input)
 
 
 
