@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology"
+         xmlns="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#"
+         xmlns:core="http://www.w3.org/2004/02/skos/core#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology">
+  <owl:versionIRI rdf:resource="urn:absolute:testImportPanet"/>
+  <owl:imports rdf:resource="http://purl.org/pan-science/PaNET/PaNET.owl"/>
+</owl:Ontology>
+
+<owl:ObjectProperty rdf:about="#utilizesTechnique">
+  <rdfs:domain rdf:resource="#Beamline"/>
+  <rdfs:range rdf:resource="http://purl.org/pan-science/PaNET/PaNET00001"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#actualValue">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#ESRF_technique"/>
+</owl:DatatypeProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+
+<owl:Class rdf:about="#Beamline">
+  <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ESRF_technique"/>
+
+<owl:Class rdf:about="#XrayTechniques">
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00100"/>
+  <owl:equivalentClass rdf:resource="http://purl.org/pan-science/PaNET/PaNET01012"/>
+</owl:Class>
+
+<owl:Class rdf:about="#BCDI">
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://gitlab.esrf.fr/dau/ontology/esrf-ontology/-/issues/5#note_321795</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bragg coherent diffraction imaging</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#BPTYCHO">
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#actualValue"/>
+      <owl:allValuesFrom>
+        <rdfs:Datatype>
+          <owl:oneOf>
+            <rdf:Description>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">failure</rdf:first>
+            <rdf:rest>
+            <rdf:Description>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">success</rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+            </rdf:rest>
+            </rdf:Description>
+          </owl:oneOf>
+        </rdfs:Datatype>
+      </owl:allValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://gitlab.esrf.fr/dau/ontology/esrf-ontology/-/issues/5#note_321795</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#DAFS">
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://gitlab.esrf.fr/dau/ontology/esrf-ontology/-/issues/5#note_321795</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#DANES">
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://gitlab.esrf.fr/dau/ontology/esrf-ontology/-/issues/5#note_321795</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#ED-XAS">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01012"/>
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01135"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01135"/>
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01156"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy dispersive x-ray absorption spectroscopy</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#HRPD">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01012"/>
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01030"/>
+        <rdf:Description rdf:about="#high_detection_spatial_resolution"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01030"/>
+  <rdfs:subClassOf rdf:resource="#high_detection_spatial_resolution"/>
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01012"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high resolution powder diffraction</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#high_detection_spatial_resolution">
+  <rdfs:subClassOf rdf:resource="#detection_spatial_resolution"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;= X microradians</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#LPXAS">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01196"/>
+        <rdf:Description rdf:about="#laser_excitation"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01196"/>
+  <rdfs:subClassOf rdf:resource="#laser_excitation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laser-driven shock compressed x-ray absorption spectroscopy</rdfs:label>
+  <core:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LPXAS</core:prefLabel>
+</owl:Class>
+
+<owl:Class rdf:about="#laser_excitation">
+  <rdfs:subClassOf rdf:resource="#excitation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#NFP">
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://gitlab.esrf.fr/dau/ontology/esrf-ontology/-/issues/5#note_321795</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">near field ptychography</rdfs:label>
+  <core:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFP</core:prefLabel>
+</owl:Class>
+
+<owl:Class rdf:about="#PCT">
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://gitlab.esrf.fr/dau/ontology/esrf-ontology/-/issues/5#note_321795</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#PTYCHO-TOMO">
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01129"/>
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01212"/>
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://gitlab.esrf.fr/dau/ontology/esrf-ontology/-/issues/5#note_321795</rdfs:comment>
+  <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PXCT</core:altLabel>
+  <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ptychographic x-ray computed tomography</core:altLabel>
+</owl:Class>
+
+<owl:Class rdf:about="#SXDM">
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01295"/>
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+</owl:Class>
+
+<owl:Class rdf:about="#XFCT">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01012"/>
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01129"/>
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01177"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01012"/>
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01129"/>
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01177"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray fluoresence computed tomography</rdfs:label>
+  <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XRF-CT</core:altLabel>
+  <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray fluoresence tomography</core:altLabel>
+</owl:Class>
+
+<owl:Class rdf:about="#biological_sample_type">
+  <rdfs:subClassOf rdf:resource="#sample_type"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sample_type"/>
+
+<owl:Class rdf:about="#biosaxs">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01012"/>
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01124"/>
+        <rdf:Description rdf:about="#biological_sample_type"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#ESRF_technique"/>
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01188"/>
+  <rdfs:subClassOf rdf:resource="#biological_sample_type"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAXS on biological samples</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological small angle scattering</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#detection_spatial_resolution"/>
+
+<owl:Class rdf:about="#electron_probe">
+  <rdfs:subClassOf rdf:resource="#excitation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#excitation">
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Something you do to the sample. So you "excite" the sample.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#magnetic_field_excitation">
+  <rdfs:subClassOf rdf:resource="#excitation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pressure_sample_environment">
+  <rdfs:subClassOf rdf:resource="#excitation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pulsed">
+  <rdfs:subClassOf rdf:resource="#time"/>
+</owl:Class>
+
+<owl:Class rdf:about="#time"/>
+
+<owl:Class rdf:about="#pulsed_laser_excitation">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#laser_excitation"/>
+        <rdf:Description rdf:about="#pulsed"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#laser_excitation"/>
+  <rdfs:subClassOf rdf:resource="#pulsed"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pulsed_magnetic_field_excitation">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#magnetic_field_excitation"/>
+        <rdf:Description rdf:about="#pulsed"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#pulsed"/>
+  <rdfs:subClassOf rdf:resource="#magnetic_field_excitation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#temperature_sample_environment">
+  <rdfs:subClassOf rdf:resource="#excitation"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#ID01">
+  <rdf:type rdf:resource="#Beamline"/>
+  <utilizesTechnique rdf:resource="#coherent_diffraction_imaging"/>
+  <utilizesTechnique rdf:resource="#grazing_incidence_small_angle_x-ray_scattering"/>
+  <utilizesTechnique rdf:resource="#microbeam"/>
+  <utilizesTechnique rdf:resource="#ptychography"/>
+  <utilizesTechnique rdf:resource="#x-ray_diffraction"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coherent_diffraction_imaging">
+  <rdf:type rdf:resource="http://purl.org/pan-science/PaNET/PaNET01174"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#grazing_incidence_small_angle_x-ray_scattering">
+  <rdf:type rdf:resource="http://purl.org/pan-science/PaNET/PaNET01162"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#microbeam">
+  <rdf:type rdf:resource="http://purl.org/pan-science/PaNET/PaNET00001"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ptychography">
+  <rdf:type rdf:resource="http://purl.org/pan-science/PaNET/PaNET01212"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#x-ray_diffraction">
+  <rdf:type rdf:resource="http://purl.org/pan-science/PaNET/PaNET01216"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#esrfTechnique">
+  <rdf:type rdf:resource="#ESRF_technique"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#esrf_ID21_beamline">
+  <utilizesTechnique rdf:resource="PaNET:mySingleCrystalDiffractionTechnique"/>
+  <rdf:type rdf:resource="#Beamline"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ID21</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#esrf_ID23">
+  <utilizesTechnique rdf:resource="PaNET:mySingleCrystalDiffractionTechnique"/>
+  <rdf:type rdf:resource="#Beamline"/>
+</owl:NamedIndividual>
+
+<rdf:Description rdf:about="PaNET:dataset">
+  <owl:disjointWith rdf:resource="#Beamline"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01012">
+  <owl:equivalentClass rdf:resource="#XrayTechniques"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01101">
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01174"/>
+  <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PXRD</core:altLabel>
+  <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XRPD</core:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01188">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01012"/>
+        <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01124"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01196">
+  <rdfs:subClassOf rdf:resource="#ED-XAS"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01212">
+  <core:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PTYCHO</core:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01116">
+  <core:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCI</core:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0000182">
+  <owl:equivalentClass rdf:resource="https://www.wikidata.org/wiki/Q133900"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01022">
+  <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000182"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01125">
+  <owl:equivalentClass rdf:resource="http://purl.org/pan-science/PaNET/PaNET00300"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01106">
+  <owl:equivalentClass rdf:resource="http://purl.org/pan-science/PaNET/PaNET00401"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.wikidata.org/wiki/Q133900">
+  <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000182"/>
+  <owl:equivalentClass rdf:resource="http://purl.org/pan-science/PaNET/PaNET01022"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01241">
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01188"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01274">
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01188"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01280">
+  <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01188"/>
+</rdf:Description>
+
+
+</rdf:RDF>

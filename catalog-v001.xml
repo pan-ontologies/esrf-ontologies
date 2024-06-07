@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1717510457717" name="http://purl.org/pan-science/PaNET/PaNET.owl" uri="src/esrf_ontology/ontology/PaNET.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1717510457717" name="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology" uri="intermediate.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1717510457717" name="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology/" uri="src/esrf_ontology/ontology/esrf_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1717510457717" name="shadowed:http://purl.org/pan-science/PaNET/PaNET.owl" uri="build/lib/esrf_ontology/ontology/PaNET.owl"/>
+    </group>
+</catalog>

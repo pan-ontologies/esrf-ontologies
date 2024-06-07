@@ -45,14 +45,14 @@ def resultBindings(ontology, sparqlQuery, classId="x-ray probe"):
     print("resultBindings: ", ontology, sparqlQuery, classId)
     query = sparql_queries[sparqlQuery](classId, prefix)
     print("query", query)
-    use_robot.run_robot_reasoner()
+    # use_robot.run_robot_reasoner()
     # graph = default_world.as_rdflib_graph()
     # print("graph", graph)
     # result = list(graph.query_owlready(query))
     techniques = list(
         default_world.sparql(
             """
-           SELECT ?child ?label
+           SELECT DISTINCT ?child ?label
         WHERE {
             ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
             OPTIONAL {?child rdfs:label ?label}

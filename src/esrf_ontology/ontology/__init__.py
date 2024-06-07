@@ -16,11 +16,12 @@ def load_panet_ontology() -> ThingClass:
 
 
 def load_esrf_ontology() -> ThingClass:
-    owl_file = importlib_resources.files(__package__).joinpath("robot_esrf_ontology.owl")
-    # owl_file = "/users/koumouts/ontologies/esrf_ontology_infered/esrf_ontology_infered.owl"
-    ontology = get_ontology(owl_file.as_uri()).load()
-    # ontology = get_ontology(owl_file).load()
+    # owl_file = importlib_resources.files(__package__).joinpath("esrf_ontology.owl")
+    owl_file = "/home/koumouts/code/esrf-ontology/src/esrf_ontology/ontology/robot_esrf_ontology.owl"
+    # ontology = get_ontology(owl_file.as_uri()).load()
+    ontology = get_ontology(owl_file).load()
+    with ontology:
+        sync_reasoner()
+    # ontology.save()
     print(ontology)
-    # with ontology:
-    #     sync_reasoner()
-    print(ontology)
+    return ontology

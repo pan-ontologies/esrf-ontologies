@@ -49,6 +49,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#has_probe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#has_probe">
+        <rdfs:domain rdf:resource="http://purl.org/pan-science/PaNET/PaNET00001"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#utilizesTechnique -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#utilizesTechnique">
@@ -234,9 +242,12 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01012"/>
                     <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01030"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#high_detection_spatial_resolution"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#has_probe"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/pan-science/PaNET/PaNET01012"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
