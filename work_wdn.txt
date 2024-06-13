@@ -1,3 +1,10 @@
+TODO:
+-----
+
+1. Put the current building blocks in protege
+2. Define several PaNET and new ESRF techniques based on thse building blocks
+3. ISDD presentation on the 21th (ask for EXP volunteers) -> define their techniques + add more building blocks
+
 Ontology usage:
 ---------------
 
