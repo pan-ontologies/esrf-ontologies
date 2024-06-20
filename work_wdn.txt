@@ -2,8 +2,10 @@ To DISCUSS:
 -----------
 
 1. some standard ranges need to exist like in the case of atomic_distance_range(?).
-   We need to name them and keep them as classes? 
-   If we need a free given value we need it to be a data-property as well.
+   We need to name them and keep them as classes? If there are certain discrete bounds
+   we need to keep them with a name as classes and define them according to the value 
+   of the data-property. 
+   If we need a free given value we need it to be a data-property in a class as well.
    Same for: energy_range, atomic_distance_resolution, sample_spatial_resolution 
 
 TODO:
@@ -47,6 +49,42 @@ but it is not a specialization of technique1. This means we need to re-define te
 technique1 = block1 AND block2 defines the technique using other classes and inheritance or better object and data properties.
 
 - insert individuals for each leaf-class to let the reasoner find inconcistencies.
+
+- Every thechnique has a list of labels and two of them are necessary and special: the default short name
+(technique accronym) and the default long name (full technique name) for human concumption. For APIs all
+labels are equal.
+
+Adding technique:
+
+- "Name" when creating a new technique class (used only for the IRI): XAS
+- Add "Annotation" "rdfs:label" (used for display in protege and default long name?): XAS
+- Add "Annotation" "skos:prefLabel" (default long name?): X-ray Absorption Spectroscopy
+- Add "Annotation" "skos:altLabel" (add short or long names to the list of technique labels): ... 
+- "Equivalent To" (): logical operators to combine classes and data property
+
+object properties connect classes
+
+
+ISDD Presentation OSCAR:
+------------------------
+
+- Problem we focus on the ultimate goal and as a result we get nothing done.
+- Ultimate goal: "data speaks for itself" which means
+                 in HDF5: contains meaning in the context of a technique for data processing
+                 in ICAT: search
+- Solution: NeXus
+- Proposal: Start with the context
+- Define techniques:
+           - Taxonomies (flat list of names): show Giannis google doc (Renauld)
+           - Ontologies (define techniques based on hpw they are related to eachother):
+                - subsclassing: PANET
+                - composition: like LEGO
+- Freedom to define new techniques and blocks as we go
+- How can I bother with it? In preparation for the OSCAR 
+
+- OSCAR: create a process on how each institute can define its own ontology and connect/influence a central ontology (PANET).
+         Common vocab. and common understanding when discussing techniques.
+
 
 Technique Characteristics:
 --------------------------
