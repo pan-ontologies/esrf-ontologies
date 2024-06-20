@@ -752,6 +752,10 @@
                             </rdfs:Datatype>
                         </owl:someValuesFrom>
                     </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#energy_range_unit"/>
+                        <owl:hasValue>eV</owl:hasValue>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>

@@ -1,3 +1,11 @@
+To DISCUSS:
+-----------
+
+1. some standard ranges need to exist like in the case of atomic_distance_range(?).
+   We need to name them and keep them as classes? 
+   If we need a free given value we need it to be a data-property as well.
+   Same for: energy_range, atomic_distance_resolution, sample_spatial_resolution 
+
 TODO:
 -----
 
@@ -31,8 +39,14 @@ Ontology usage:
 Ontology design principles:
 ---------------------------
 
+- Deferential definition of techniques:
 Suppose technique1 = block1 AND block2. Now we create a new technique technique2 = block1 AND block2 AND block3
 but it is not a specialization of technique1. This means we need to re-define technique1 = block1 AND block2 AND block4.
+
+- Define classes and let the tree structure be infered instead of creating a taxonomy only structure like PaNET:
+technique1 = block1 AND block2 defines the technique using other classes and inheritance or better object and data properties.
+
+- insert individuals for each leaf-class to let the reasoner find inconcistencies.
 
 Technique Characteristics:
 --------------------------
