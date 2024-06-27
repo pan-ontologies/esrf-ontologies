@@ -4,7 +4,7 @@
 from typing import Tuple, Mapping
 from functools import lru_cache
 from types import MappingProxyType
-from owlready2 import default_world
+from owlready2 import default_world, get_ontology
 
 from .types import Technique
 from ..ontology import load_panet_ontology, load_esrf_ontology, use_robot
@@ -33,6 +33,22 @@ def get_techniques() -> Mapping[str, Tuple[Technique]]:
                     techniques[acronym] = alias_techniques
     return MappingProxyType(techniques)
 
+def get_xray_techniques_parsing():
+    onto = get_ontology("http://purl.org/pan-science/PaNET/PaNET.owl").load()
+
+    # Function to recursively find all subclasses of a given class
+    def get_all_subclasses(cls):
+        subclasses = set(cls.subclasses())
+        for subclass in cls.subclasses():
+            subclasses.update(get_all_subclasses(subclass))
+        return subclasses
+
+    xray_probe_class = onto.search_one(iri="http://purl.org/pan-science/PaNET/PaNET01012")
+
+    all_subclasses = get_all_subclasses(xray_probe_class)
+
+    return all_subclasses
+
 
 def get_xray_techniques():
     """Returns all techniques associated with x-ray probe"""
@@ -54,7 +70,7 @@ def resultBindings(ontology, sparqlQuery, classId="x-ray probe"):
             """
            SELECT DISTINCT ?child ?label
         WHERE {
-            ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
+            ?child rdfs:subClassOf* <http://purl.org/pan-science/PaNET/PaNET01012> .
             OPTIONAL {?child rdfs:label ?label}
         }
     """
@@ -69,7 +85,7 @@ def resultBindings(ontology, sparqlQuery, classId="x-ray probe"):
         data = json.load(file)
 
     techniques_sparql = data['techniques_sparql']
-    print(techniques_sparql)
+    # print(techniques_sparql)
 
     return techniques
 
@@ -90,7 +106,7 @@ sparql_queries = {
         {prefix}
         SELECT ?child
         WHERE {{
-            ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
+            ?child rdfs:subClassOf* <http://purl.org/pan-science/PaNET/PaNET01012> .
         }}
     """,
     "objectProperties": lambda classId, prefix: f"""
