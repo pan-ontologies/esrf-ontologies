@@ -29,6 +29,12 @@
         <Class IRI="#atomic_core_excitation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#atomic_distance_range"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#atomic_distance_resolution"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#auger_electrons"/>
     </Declaration>
     <Declaration>
@@ -36,6 +42,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#detection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detection_energy_range"/>
     </Declaration>
     <Declaration>
         <Class IRI="#detection_mode"/>
@@ -57,6 +66,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#experimental_technique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#extended"/>
     </Declaration>
     <Declaration>
         <Class IRI="#fluoresence"/>
@@ -86,10 +98,19 @@
         <Class IRI="#micro_sample_spatial_resolution"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#monochromatic_beam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#named_atomic_distance_range"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#named_photon_energy_ranges"/>
     </Declaration>
     <Declaration>
         <Class IRI="#nano_sample_spatial_resolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#near_edge"/>
     </Declaration>
     <Declaration>
         <Class IRI="#other"/>
@@ -101,10 +122,19 @@
         <Class IRI="#photon_energy"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#photon_energy_range"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pink_beam"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#polarization"/>
     </Declaration>
     <Declaration>
         <Class IRI="#powder_sample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#range"/>
     </Declaration>
     <Declaration>
         <Class IRI="#right_circular_polarization"/>
@@ -158,6 +188,9 @@
         <Class IRI="#visual_spectrum"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#white_beam"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#x-ray"/>
     </Declaration>
     <Declaration>
@@ -165,6 +198,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#changes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_photon_energy_range"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#has_polarization"/>
@@ -200,11 +236,48 @@
         <NamedIndividual IRI="#changeOverTime"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#hardXrays"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#photon_Energy_Range_For_Hard_Xrays"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#softXrays"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#testChangeOverSpaceET"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#testEAFS"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#hard_x-ray"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#named_photon_energy_ranges"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_photon_energy_range"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#photon_energy_range"/>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="#energy_range_value"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:float"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+                            </FacetRestriction>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100000.0</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                    <DataHasValue>
+                        <DataProperty IRI="#energy_range_unit"/>
+                        <Literal>eV</Literal>
+                    </DataHasValue>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#macro_sample_spatial_resolution"/>
         <ObjectIntersectionOf>
@@ -221,6 +294,32 @@
             <DataHasValue>
                 <DataProperty IRI="#sample_spatial_resolution_unit"/>
                 <Literal>micron</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#photon_energy_range"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#energy_range_value"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#soft_x-ray"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#named_photon_energy_ranges"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#energy_range_value"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="#energy_range_unit"/>
+                <Literal>eV</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -252,6 +351,14 @@
         <Class IRI="#detection"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#atomic_distance_range"/>
+        <Class IRI="#detection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#atomic_distance_resolution"/>
+        <Class IRI="#detection"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#auger_electrons"/>
         <Class IRI="#detection"/>
     </SubClassOf>
@@ -262,6 +369,10 @@
     <SubClassOf>
         <Class IRI="#detection"/>
         <Class IRI="#technique_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detection_energy_range"/>
+        <Class IRI="#photon_energy"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#detection_mode"/>
@@ -288,12 +399,12 @@
         <Class IRI="#detection_mode"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#fluoresence"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#extended"/>
+        <Class IRI="#detection_energy_range"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#hard_x-ray"/>
-        <Class IRI="#named_photon_energy_ranges"/>
+        <Class IRI="#fluoresence"/>
+        <Class IRI="#detection"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#horizontal_linear_polarization"/>
@@ -312,10 +423,6 @@
         <Class IRI="#polarization"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#macro_sample_spatial_resolution"/>
-        <Class IRI="#sample_spatial_resolution"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#magnetic_field"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
@@ -324,12 +431,24 @@
         <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#monochromatic_beam"/>
+        <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#named_atomic_distance_range"/>
+        <Class IRI="#atomic_distance_range"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#named_photon_energy_ranges"/>
         <Class IRI="#photon_energy"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#nano_sample_spatial_resolution"/>
         <Class IRI="#sample_spatial_resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#near_edge"/>
+        <Class IRI="#detection_energy_range"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#other"/>
@@ -342,6 +461,14 @@
     <SubClassOf>
         <Class IRI="#photon_energy"/>
         <Class IRI="#sample_input"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#photon_energy_range"/>
+        <Class IRI="#range"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pink_beam"/>
+        <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#polarization"/>
@@ -416,6 +543,10 @@
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#white_beam"/>
+        <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
@@ -423,6 +554,14 @@
         <Class IRI="#x-rays"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#named_photon_energy_ranges"/>
+        <NamedIndividual IRI="#hardXrays"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#named_photon_energy_ranges"/>
+        <NamedIndividual IRI="#softXrays"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#x-rays"/>
         <NamedIndividual IRI="#testChangeOverSpaceET"/>
@@ -436,6 +575,11 @@
         <NamedIndividual IRI="#testEAFS"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_photon_energy_range"/>
+        <NamedIndividual IRI="#hardXrays"/>
+        <NamedIndividual IRI="#photon_Energy_Range_For_Hard_Xrays"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#changes"/>
         <NamedIndividual IRI="#testChangeOverSpaceET"/>
         <NamedIndividual IRI="#changeOverSpace"/>
@@ -445,6 +589,26 @@
         <NamedIndividual IRI="#testChangeOverSpaceET"/>
         <NamedIndividual IRI="#changeOverTime"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#energy_range_unit"/>
+        <NamedIndividual IRI="#photon_Energy_Range_For_Hard_Xrays"/>
+        <Literal>eV</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#energy_range_value"/>
+        <NamedIndividual IRI="#photon_Energy_Range_For_Hard_Xrays"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">11.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#energy_range_unit"/>
+        <NamedIndividual IRI="#softXrays"/>
+        <Literal>eV</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#energy_range_value"/>
+        <NamedIndividual IRI="#softXrays"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#energy_range_value"/>
         <NamedIndividual IRI="#testEAFS"/>
@@ -465,14 +629,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#atomic_distance_unit"/>
         <Class IRI="#diffraction_of_elastic_scattering"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#energy_range_unit"/>
-        <Class IRI="#experimental_technique"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#energy_range_value"/>
-        <Class IRI="#experimental_technique"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#atomic_distance_range"/>
@@ -514,6 +670,22 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#energy_range_value</IRI>
         <Literal>has energy range value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hard_x-ray</IRI>
+        <Literal>Defined using an object property (has_photon_energy_range) to connect to another class (photon_energy_range) that has the data properties (value and unit). It creates a chain where the characteristics of other classes included in the definition define the class. Works with the reasoner!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_spatial_resolution_achieved_on_detection</IRI>
+        <Literal>achieved_on could be an object property of the  &quot;sample_spatial_resolution&quot; in this case:
+
+&quot;sample_spatial_resolution&quot;
+     achieved_on
+&quot;detection&quot;
+
+and remove this class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
