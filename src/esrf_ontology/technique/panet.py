@@ -70,7 +70,7 @@ def resultBindings(ontology, sparqlQuery, classId="x-ray probe"):
             """
            SELECT DISTINCT ?child ?label
         WHERE {
-            ?child rdfs:subClassOf* <http://purl.org/pan-science/PaNET/PaNET01012> .
+            ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
             OPTIONAL {?child rdfs:label ?label}
         }
     """
@@ -106,7 +106,7 @@ sparql_queries = {
         {prefix}
         SELECT ?child
         WHERE {{
-            ?child rdfs:subClassOf* <http://purl.org/pan-science/PaNET/PaNET01012> .
+            ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
         }}
     """,
     "objectProperties": lambda classId, prefix: f"""
