@@ -1,0 +1,72 @@
+[
+    {
+        "id": "esrf-ontology.CRYO-EM",
+        "label": "CRYO-EM",
+        "prefLabel": "Cryo-electron microscopy"
+    },
+    {
+        "id": "esrf-ontology.CRYO-EM",
+        "label": "CRYO-EM",
+        "prefLabel": "TEM under cryogenic conditions"
+    },
+    {
+        "id": "esrf-ontology.ED-EXAFS",
+        "label": "ED-EXAFS",
+        "prefLabel": "Energy Dispersive Extended X-ray Absorption Fine Structure"
+    },
+    {
+        "id": "esrf-ontology.ED-XANES",
+        "label": "ED-XANES",
+        "prefLabel": "Energy Dispersive X-ray Absorption Near Edge Structure"
+    },
+    {
+        "id": "esrf-ontology.ED-XAS",
+        "label": "ED-XAS",
+        "prefLabel": "Energy Dispersive X-ray Absorption Spectroscopy"
+    },
+    {
+        "id": "esrf-ontology.EXAFS",
+        "label": "EXAFS",
+        "prefLabel": "Extended X-ray Absorption Fine Structure"
+    },
+    {
+        "id": "esrf-ontology.TEM",
+        "label": "TEM",
+        "prefLabel": "Transmission Electron Microscopy"
+    },
+    {
+        "id": "esrf-ontology.XANES",
+        "label": "XANES",
+        "prefLabel": "X-ray Absorption Near Edge Structure"
+    },
+    {
+        "id": "esrf-ontology.XANES",
+        "label": "XANES",
+        "prefLabel": "XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV."
+    },
+    {
+        "id": "esrf-ontology.XAS",
+        "label": "XAS",
+        "prefLabel": "X-ray Absorption Spectroscopy"
+    },
+    {
+        "id": "esrf-ontology.XFCT",
+        "label": "XFCT",
+        "prefLabel": "X-ray Fluorescence Tomography"
+    },
+    {
+        "id": "esrf-ontology.XRF",
+        "label": "XRF",
+        "prefLabel": "X-ray Fluorescence Spectroscopy"
+    },
+    {
+        "id": "esrf-ontology.XRPD",
+        "label": "XRPD",
+        "prefLabel": "X-ray Powder Diffraction"
+    },
+    {
+        "id": "PaNET.PaNET01095",
+        "label": "x-ray fluorescence spectroscopy",
+        "prefLabel": null
+    }
+]

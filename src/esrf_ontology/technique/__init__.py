@@ -1,7 +1,7 @@
 from typing import Set, Tuple, Generator
 
 from .types import Technique, TechniqueMetadata
-from .panet import get_techniques as get_all_techniques, get_xray_techniques
+from .panet import get_techniques as get_all_techniques, get_xray_techniques, get_esrfPanet_techniques
 
 
 def get_technique_metadata(*aliases: Tuple[str]) -> TechniqueMetadata:
@@ -13,8 +13,12 @@ def get_technique_metadata(*aliases: Tuple[str]) -> TechniqueMetadata:
 def get_techniques(*aliases: Tuple[str]) -> Set[Technique]:
     """Returns a set of techniques referenced by the provided technique aliases."""
     all_techniques = get_xray_techniques()
-    print(all_techniques)
     return all_techniques
+
+def get_esrf_techniques(*aliases: Tuple[str]) -> Set[Technique]:
+    """Returns a set of techniques referenced by the provided technique aliases."""
+    all_esrf_techniques = get_esrfPanet_techniques()
+    return all_esrf_techniques
 
 
 def _iter_from_aliases(*aliases: Tuple[str]) -> Generator[Technique, None, None]:

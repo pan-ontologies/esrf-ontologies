@@ -17,7 +17,8 @@ def load_panet_ontology() -> ThingClass:
 
 def load_esrf_ontology() -> ThingClass:
     # owl_file = importlib_resources.files(__package__).joinpath("esrf_ontology.owl")
-    owl_file = "/home/koumouts/code/esrf-ontology/src/esrf_ontology/ontology/PaNET_reasoned.owl"
+    # PaNET_reasoned.owl
+    owl_file = "/home/koumouts/code/esrf-ontology/src/esrf_ontology/ontology/esrf-ontology.owl"
     # ontology = get_ontology(owl_file.as_uri()).load()
     ontology = get_ontology(owl_file).load()
     with ontology:

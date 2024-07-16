@@ -9,6 +9,7 @@ from owlready2 import default_world, get_ontology
 from .types import Technique
 from ..ontology import load_panet_ontology, load_esrf_ontology, use_robot
 import json
+from collections import defaultdict
 
 
 @lru_cache(maxsize=1)
@@ -56,35 +57,69 @@ def get_xray_techniques():
     print(ontology)
     return resultBindings(ontology, "xrayTechniques")
 
+def get_esrfPanet_techniques():
+    """
+    Returns all esrf techniques with their PaNET equivalent if exist
+    Return: [{esrf_IRI, esrf_label, esrf_prefLabel, panet_IRI, panet_label}]
+    """
+    ontology = load_esrf_ontology()
+    return resultBindings(ontology, "esrfPanetTechniques")
+
 
 def resultBindings(ontology, sparqlQuery, classId="x-ray probe"):
     print("resultBindings: ", ontology, sparqlQuery, classId)
     query = sparql_queries[sparqlQuery](classId, prefix)
     print("query", query)
-    # use_robot.run_robot_reasoner()
-    # graph = default_world.as_rdflib_graph()
-    # print("graph", graph)
-    # result = list(graph.query_owlready(query))
-    techniques = list(
-        default_world.sparql(
-            """
-           SELECT DISTINCT ?child ?label
-        WHERE {
-            ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
-            OPTIONAL {?child rdfs:label ?label}
-        }
+
+    techniques = list(default_world.sparql(
+        """
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        PREFIX : <http://purl.org/pan-science/PaNET/PaNET.owl#>
+        PREFIX esrf: <http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#>
+
+        SELECT ?subClass ?label ?prefLabel
+        WHERE {{ 
+            ?subClass rdfs:subClassOf esrf:experimental_technique
+            OPTIONAL {{?subClass rdfs:label ?label}}
+            OPTIONAL {{?subClass skos:prefLabel ?prefLabel}}
+            FILTER (?subClass != owl:Nothing && ?subClass != esrf:experimental_technique)
+        }}
     """
-        )
-    )
+    ))
+
     for tech in techniques:
         tech[0] = str(tech[0])
 
+    # Dictionary to store unique entries
+    unique_entries = defaultdict(lambda: {"esrf_id": "", "esrf_label": "", "esrf_prefLabels": []})
+
+    # Populate the dictionary
+    for entry in techniques:
+        unique_entries[entry[0]]["esrf_id"] = entry[0]
+        unique_entries[entry[0]]["esrf_label"] = entry[1]
+        unique_entries[entry[0]]["esrf_prefLabels"].append(entry[2])
+
+    # Convert dictionary back to a list of dictionaries
+    result = list(unique_entries.values())
+
+    # Define file path
     file_path = '/home/koumouts/code/esrf-ontology/src/esrf_ontology/ontology/xray_probe_sparql.json'
 
-    with open(file_path, 'r') as file:
-        data = json.load(file)
+    # Save to JSON file
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(result, f, ensure_ascii=False, indent=4)
 
-    techniques_sparql = data['techniques_sparql']
+    print(f"Data saved to {file_path}")
+    # file_path = '/home/koumouts/code/esrf-ontology/src/esrf_ontology/ontology/xray_probe_sparql.json'
+
+    # with open(file_path, 'r') as file:
+    #     data = json.load(file)
+
+    # techniques_sparql = data['techniques_sparql']
     # print(techniques_sparql)
 
     return techniques
@@ -100,6 +135,23 @@ sparql_queries = {
         WHERE {{
             ?child rdfs:subClassOf ontology:{classId} .
                 OPTIONAL {{ ?child rdfs:label ?label }}
+        }}
+    """,
+    "esrfPanetTechniques": lambda classId, prefix: f"""
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        PREFIX : <http://purl.org/pan-science/PaNET/PaNET.owl#>
+        PREFIX esrf: <http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#>
+
+        SELECT ?subClass ?label ?prefLabel
+        WHERE {{ 
+            ?subClass rdfs:subClassOf esrf:experimental_technique
+            OPTIONAL {{?subClass rdfs:label ?label}}
+            OPTIONAL {{?subClass skos:prefLabel ?prefLabel}}
+            FILTER (?subClass != owl:Nothing && ?subClass != esrf:experimental_technique)
         }}
     """,
     "xrayTechniques": lambda classId, prefix: f"""
