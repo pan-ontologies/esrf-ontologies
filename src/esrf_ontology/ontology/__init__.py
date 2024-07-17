@@ -16,14 +16,14 @@ def load_panet_ontology() -> ThingClass:
 
 
 def load_esrf_ontology() -> ThingClass:
-    # owl_file = importlib_resources.files(__package__).joinpath("esrf_ontology.owl")
-    # PaNET_reasoned.owl
-    owl_file = "/home/koumouts/code/esrf-ontology/src/esrf_ontology/ontology/esrf-ontology.owl"
-    # ontology = get_ontology(owl_file.as_uri()).load()
-    ontology = get_ontology(owl_file).load()
+    owl_file = importlib_resources.files(__package__).joinpath("esrf-ontology.owl")
+    # PaNET_reasoned.owl -> if we need to query the reasoned version with all subclasses
+
+    ontology = get_ontology(str(owl_file)).load()
     with ontology:
         # seems that the reasoners (native or pellet) dont work to have all subclasses of "x-ray probe"
+        # it seems to work to get the equivalent classes for esrf+PaNET ontology.
         sync_reasoner_pellet()
     # ontology.save()
-    print(ontology)
+
     return ontology

@@ -1,72 +1,125 @@
 [
     {
-        "id": "esrf-ontology.CRYO-EM",
-        "label": "CRYO-EM",
-        "prefLabel": "Cryo-electron microscopy"
+        "esrf_id": "esrf-ontology.CRYO-EM",
+        "esrf_label": "CRYO-EM",
+        "esrf_prefLabels": [
+            "Cryo-electron microscopy",
+            "TEM under cryogenic conditions"
+        ],
+        "eqClass": [
+            "esrf-ontology.cryo & esrf-ontology.electrons & esrf-ontology.transmission"
+        ]
     },
     {
-        "id": "esrf-ontology.CRYO-EM",
-        "label": "CRYO-EM",
-        "prefLabel": "TEM under cryogenic conditions"
+        "esrf_id": "esrf-ontology.ED-EXAFS",
+        "esrf_label": "ED-EXAFS",
+        "esrf_prefLabels": [
+            "Energy Dispersive Extended X-ray Absorption Fine Structure"
+        ],
+        "eqClass": [
+            "esrf-ontology.atomic_core_excitation & esrf-ontology.energy_dispersive_detection_mode_in_space & esrf-ontology.extended & esrf-ontology.x-ray"
+        ]
     },
     {
-        "id": "esrf-ontology.ED-EXAFS",
-        "label": "ED-EXAFS",
-        "prefLabel": "Energy Dispersive Extended X-ray Absorption Fine Structure"
+        "esrf_id": "esrf-ontology.ED-XANES",
+        "esrf_label": "ED-XANES",
+        "esrf_prefLabels": [
+            "Energy Dispersive X-ray Absorption Near Edge Structure"
+        ],
+        "eqClass": [
+            "esrf-ontology.atomic_core_excitation & esrf-ontology.energy_dispersive_detection_mode_in_space & esrf-ontology.near_edge"
+        ]
     },
     {
-        "id": "esrf-ontology.ED-XANES",
-        "label": "ED-XANES",
-        "prefLabel": "Energy Dispersive X-ray Absorption Near Edge Structure"
+        "esrf_id": "esrf-ontology.ED-XAS",
+        "esrf_label": "ED-XAS",
+        "esrf_prefLabels": [
+            "Energy Dispersive X-ray Absorption Spectroscopy"
+        ],
+        "eqClass": [
+            "esrf-ontology.atomic_core_excitation & esrf-ontology.detection_as_a_function_of_incident_energy & esrf-ontology.energy_dispersive_detection_mode_in_space & esrf-ontology.x-ray"
+        ]
     },
     {
-        "id": "esrf-ontology.ED-XAS",
-        "label": "ED-XAS",
-        "prefLabel": "Energy Dispersive X-ray Absorption Spectroscopy"
+        "esrf_id": "esrf-ontology.EXAFS",
+        "esrf_label": "EXAFS",
+        "esrf_prefLabels": [
+            "Extended X-ray Absorption Fine Structure"
+        ],
+        "eqClass": [
+            "esrf-ontology.atomic_core_excitation & esrf-ontology.extended & esrf-ontology.x-ray"
+        ]
     },
     {
-        "id": "esrf-ontology.EXAFS",
-        "label": "EXAFS",
-        "prefLabel": "Extended X-ray Absorption Fine Structure"
+        "esrf_id": "esrf-ontology.TEM",
+        "esrf_label": "TEM",
+        "esrf_prefLabels": [
+            "Transmission Electron Microscopy"
+        ],
+        "eqClass": [
+            "esrf-ontology.electrons & esrf-ontology.transmission"
+        ]
     },
     {
-        "id": "esrf-ontology.TEM",
-        "label": "TEM",
-        "prefLabel": "Transmission Electron Microscopy"
+        "esrf_id": "esrf-ontology.XANES",
+        "esrf_label": "XANES",
+        "esrf_prefLabels": [
+            "X-ray Absorption Near Edge Structure",
+            "XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV."
+        ],
+        "eqClass": [
+            "esrf-ontology.atomic_core_excitation & esrf-ontology.near_edge & esrf-ontology.x-ray"
+        ]
     },
     {
-        "id": "esrf-ontology.XANES",
-        "label": "XANES",
-        "prefLabel": "X-ray Absorption Near Edge Structure"
+        "esrf_id": "esrf-ontology.XAS",
+        "esrf_label": "XAS",
+        "esrf_prefLabels": [
+            "X-ray Absorption Spectroscopy"
+        ],
+        "eqClass": [
+            "esrf-ontology.atomic_core_excitation & esrf-ontology.detection_as_a_function_of_incident_energy & esrf-ontology.x-ray"
+        ]
     },
     {
-        "id": "esrf-ontology.XANES",
-        "label": "XANES",
-        "prefLabel": "XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV."
+        "esrf_id": "esrf-ontology.XFCT",
+        "esrf_label": "XFCT",
+        "esrf_prefLabels": [
+            "X-ray Fluorescence Tomography"
+        ],
+        "eqClass": [
+            "esrf-ontology.fluoresence & esrf-ontology.tomography & esrf-ontology.x-ray"
+        ]
     },
     {
-        "id": "esrf-ontology.XAS",
-        "label": "XAS",
-        "prefLabel": "X-ray Absorption Spectroscopy"
+        "esrf_id": "esrf-ontology.XRF",
+        "esrf_label": "XRF",
+        "esrf_prefLabels": [
+            "X-ray Fluorescence Spectroscopy"
+        ],
+        "eqClass": [
+            "PaNET.PaNET01095",
+            "esrf-ontology.energy_dispersive_detection_mode & esrf-ontology.fluoresence & esrf-ontology.x-ray"
+        ]
     },
     {
-        "id": "esrf-ontology.XFCT",
-        "label": "XFCT",
-        "prefLabel": "X-ray Fluorescence Tomography"
+        "esrf_id": "esrf-ontology.XRPD",
+        "esrf_label": "XRPD",
+        "esrf_prefLabels": [
+            "X-ray Powder Diffraction"
+        ],
+        "eqClass": [
+            "esrf-ontology.diffraction & esrf-ontology.powder_sample & esrf-ontology.x-ray"
+        ]
     },
     {
-        "id": "esrf-ontology.XRF",
-        "label": "XRF",
-        "prefLabel": "X-ray Fluorescence Spectroscopy"
-    },
-    {
-        "id": "esrf-ontology.XRPD",
-        "label": "XRPD",
-        "prefLabel": "X-ray Powder Diffraction"
-    },
-    {
-        "id": "PaNET.PaNET01095",
-        "label": "x-ray fluorescence spectroscopy",
-        "prefLabel": null
+        "esrf_id": "PaNET.PaNET01095",
+        "esrf_label": "x-ray fluorescence spectroscopy",
+        "esrf_prefLabels": [
+            null
+        ],
+        "eqClass": [
+            "esrf-ontology.XRF"
+        ]
     }
 ]
