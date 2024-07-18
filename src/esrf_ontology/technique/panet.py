@@ -108,7 +108,7 @@ def resultBindings(ontology, sparqlQuery, classId="x-ray probe"):
         tech[3] = str(tech[3])
 
     # Dictionary to store unique entries
-    unique_entries = defaultdict(lambda: {"esrf_id": "", "esrf_label": "", "esrf_prefLabels": [], "eqClass": []})
+    unique_entries = defaultdict(lambda: {"esrf_id": "", "esrf_label": "", "esrf_prefLabels": [], "definition": [], "eqClass": []})
     pprint.pprint(techniques)
     # Populate the dictionary
     for entry in techniques:
@@ -116,7 +116,9 @@ def resultBindings(ontology, sparqlQuery, classId="x-ray probe"):
         unique_entries[entry[0]]["esrf_label"] = entry[1]
         if entry[2] not in unique_entries[entry[0]]["esrf_prefLabels"]:
             unique_entries[entry[0]]["esrf_prefLabels"].append(entry[2])
-        if entry[3] not in unique_entries[entry[0]]["eqClass"]:
+        if entry[3] not in unique_entries[entry[0]]["eqClass"] and "esrf-ontology." in entry[3]:
+            unique_entries[entry[0]]["definition"].append(entry[3])
+        if entry[3] not in unique_entries[entry[0]]["eqClass"] and "esrf-ontology." not in entry[3]:
             unique_entries[entry[0]]["eqClass"].append(entry[3])
 
     # Convert dictionary back to a list of dictionaries

@@ -6,9 +6,11 @@
             "Cryo-electron microscopy",
             "TEM under cryogenic conditions"
         ],
-        "eqClass": [
+        "definition": [
+            "esrf-ontology.cryo & esrf-ontology.electrons & esrf-ontology.transmission",
             "esrf-ontology.cryo & esrf-ontology.electrons & esrf-ontology.transmission"
-        ]
+        ],
+        "eqClass": []
     },
     {
         "esrf_id": "esrf-ontology.ED-EXAFS",
@@ -16,9 +18,10 @@
         "esrf_prefLabels": [
             "Energy Dispersive Extended X-ray Absorption Fine Structure"
         ],
-        "eqClass": [
+        "definition": [
             "esrf-ontology.atomic_core_excitation & esrf-ontology.energy_dispersive_detection_mode_in_space & esrf-ontology.extended & esrf-ontology.x-ray"
-        ]
+        ],
+        "eqClass": []
     },
     {
         "esrf_id": "esrf-ontology.ED-XANES",
@@ -26,9 +29,10 @@
         "esrf_prefLabels": [
             "Energy Dispersive X-ray Absorption Near Edge Structure"
         ],
-        "eqClass": [
+        "definition": [
             "esrf-ontology.atomic_core_excitation & esrf-ontology.energy_dispersive_detection_mode_in_space & esrf-ontology.near_edge"
-        ]
+        ],
+        "eqClass": []
     },
     {
         "esrf_id": "esrf-ontology.ED-XAS",
@@ -36,9 +40,10 @@
         "esrf_prefLabels": [
             "Energy Dispersive X-ray Absorption Spectroscopy"
         ],
-        "eqClass": [
+        "definition": [
             "esrf-ontology.atomic_core_excitation & esrf-ontology.detection_as_a_function_of_incident_energy & esrf-ontology.energy_dispersive_detection_mode_in_space & esrf-ontology.x-ray"
-        ]
+        ],
+        "eqClass": []
     },
     {
         "esrf_id": "esrf-ontology.EXAFS",
@@ -46,9 +51,10 @@
         "esrf_prefLabels": [
             "Extended X-ray Absorption Fine Structure"
         ],
-        "eqClass": [
+        "definition": [
             "esrf-ontology.atomic_core_excitation & esrf-ontology.extended & esrf-ontology.x-ray"
-        ]
+        ],
+        "eqClass": []
     },
     {
         "esrf_id": "esrf-ontology.TEM",
@@ -56,9 +62,10 @@
         "esrf_prefLabels": [
             "Transmission Electron Microscopy"
         ],
-        "eqClass": [
+        "definition": [
             "esrf-ontology.electrons & esrf-ontology.transmission"
-        ]
+        ],
+        "eqClass": []
     },
     {
         "esrf_id": "esrf-ontology.XANES",
@@ -67,9 +74,11 @@
             "X-ray Absorption Near Edge Structure",
             "XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV."
         ],
-        "eqClass": [
+        "definition": [
+            "esrf-ontology.atomic_core_excitation & esrf-ontology.near_edge & esrf-ontology.x-ray",
             "esrf-ontology.atomic_core_excitation & esrf-ontology.near_edge & esrf-ontology.x-ray"
-        ]
+        ],
+        "eqClass": []
     },
     {
         "esrf_id": "esrf-ontology.XAS",
@@ -77,9 +86,10 @@
         "esrf_prefLabels": [
             "X-ray Absorption Spectroscopy"
         ],
-        "eqClass": [
+        "definition": [
             "esrf-ontology.atomic_core_excitation & esrf-ontology.detection_as_a_function_of_incident_energy & esrf-ontology.x-ray"
-        ]
+        ],
+        "eqClass": []
     },
     {
         "esrf_id": "esrf-ontology.XFCT",
@@ -87,9 +97,10 @@
         "esrf_prefLabels": [
             "X-ray Fluorescence Tomography"
         ],
-        "eqClass": [
+        "definition": [
             "esrf-ontology.fluoresence & esrf-ontology.tomography & esrf-ontology.x-ray"
-        ]
+        ],
+        "eqClass": []
     },
     {
         "esrf_id": "esrf-ontology.XRF",
@@ -97,9 +108,11 @@
         "esrf_prefLabels": [
             "X-ray Fluorescence Spectroscopy"
         ],
-        "eqClass": [
-            "PaNET.PaNET01095",
+        "definition": [
             "esrf-ontology.energy_dispersive_detection_mode & esrf-ontology.fluoresence & esrf-ontology.x-ray"
+        ],
+        "eqClass": [
+            "PaNET.PaNET01095"
         ]
     },
     {
@@ -108,9 +121,10 @@
         "esrf_prefLabels": [
             "X-ray Powder Diffraction"
         ],
-        "eqClass": [
+        "definition": [
             "esrf-ontology.diffraction & esrf-ontology.powder_sample & esrf-ontology.x-ray"
-        ]
+        ],
+        "eqClass": []
     },
     {
         "esrf_id": "PaNET.PaNET01095",
@@ -118,8 +132,9 @@
         "esrf_prefLabels": [
             null
         ],
-        "eqClass": [
+        "definition": [
             "esrf-ontology.XRF"
-        ]
+        ],
+        "eqClass": []
     }
 ]

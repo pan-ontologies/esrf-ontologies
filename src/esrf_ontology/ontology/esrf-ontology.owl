@@ -21,6 +21,9 @@
         <Class IRI="#DAC"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DetectedPhenomenon"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ED-EXAFS"/>
     </Declaration>
     <Declaration>
@@ -31,6 +34,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#EXAFS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reflectometry"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TEM"/>
@@ -52,6 +58,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#XRPD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XRR"/>
     </Declaration>
     <Declaration>
         <Class IRI="#angular_dispersive_detection_mode"/>
@@ -108,7 +117,7 @@
         <Class IRI="#extended"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#fluoresence"/>
+        <Class IRI="#fluorescence"/>
     </Declaration>
     <Declaration>
         <Class IRI="#full-field_imaging"/>
@@ -240,6 +249,15 @@
         <ObjectProperty IRI="#changes"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#detectsPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDetectionMode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProbe"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#has_photon_energy_range"/>
     </Declaration>
     <Declaration>
@@ -365,7 +383,7 @@
     <EquivalentClasses>
         <Class IRI="#XFCT"/>
         <ObjectIntersectionOf>
-            <Class IRI="#fluoresence"/>
+            <Class IRI="#fluorescence"/>
             <Class IRI="#tomography"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -374,8 +392,26 @@
         <Class IRI="#XRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#energy_dispersive_detection_mode"/>
-            <Class IRI="#fluoresence"/>
+            <Class IRI="#fluorescence"/>
             <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#detectsPhenomenon"/>
+                <Class IRI="#fluorescence"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDetectionMode"/>
+                <Class IRI="#energy_dispersive_detection_mode"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasProbe"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -384,6 +420,24 @@
             <Class IRI="#diffraction"/>
             <Class IRI="#powder_sample"/>
             <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XRR"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#detectsPhenomenon"/>
+                <Class IRI="#Reflectometry"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDetectionMode"/>
+                <Class IRI="#angular_dispersive_detection_mode"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasProbe"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -475,6 +529,10 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DetectedPhenomenon"/>
+        <Class IRI="#detection"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ED-EXAFS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -489,6 +547,10 @@
     <SubClassOf>
         <Class IRI="#EXAFS"/>
         <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reflectometry"/>
+        <Class IRI="#DetectedPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TEM"/>
@@ -591,8 +653,8 @@
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#fluoresence"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#fluorescence"/>
+        <Class IRI="#DetectedPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#full-field_imaging"/>
@@ -792,6 +854,14 @@
         <NamedIndividual IRI="#testEAFS"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
     </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#detectsPhenomenon"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#detectsPhenomenon"/>
+        <Class IRI="#DetectedPhenomenon"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_polarization"/>
         <Class IRI="#polarization"/>
@@ -966,6 +1036,15 @@
         <Literal>XRF measures X-ray photons coming from a sample during irradition with X-rays and derives elemental composition from the energy of the fluorescence photons</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRF</IRI>
+        <Literal>X-ray Fluorescence Spectroscopy isA eperimental_technique that 
+
+hasDetectionMode an energy_dispersive_detection_mode,
+and detects the phenomenon of fluorescence, 
+and involves X-ray radiation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XRF</IRI>
         <Literal>XRF</Literal>
@@ -984,6 +1063,16 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRPD</IRI>
         <Literal>X-ray Powder Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XRR</IRI>
+        <Literal>XRR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XRR</IRI>
+        <Literal>X-ray Reflectometry</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1052,7 +1141,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#fluoresence</IRI>
+        <IRI>#fluorescence</IRI>
         <Literal>Detecting one result after atomic core excitation (fluorescence)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
