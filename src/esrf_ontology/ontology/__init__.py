@@ -10,8 +10,8 @@ from owlready2 import get_ontology
 from owlready2.entity import ThingClass
 
 
-def load_panet_ontology() -> ThingClass:
-    owl_file = importlib_resources.files(__package__).joinpath("PaNET.owl")
+def load_panetReasoned_ontology() -> ThingClass:
+    owl_file = importlib_resources.files(__package__).joinpath("PaNET_reasoned.owl")
     return get_ontology(owl_file.as_uri()).load()
 
 

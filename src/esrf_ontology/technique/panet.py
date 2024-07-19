@@ -7,7 +7,7 @@ from types import MappingProxyType
 from owlready2 import default_world, get_ontology
 
 from .types import Technique
-from ..ontology import load_panet_ontology, load_esrf_ontology, use_robot
+from ..ontology import load_panetReasoned_ontology, load_esrf_ontology, use_robot
 import json
 from collections import defaultdict
 import sys
@@ -42,7 +42,7 @@ def get_techniques() -> Mapping[str, Tuple[Technique]]:
 def get_xray_techniques_parsing():
     onto = get_ontology("http://purl.org/pan-science/PaNET/PaNET.owl").load()
 
-    # Function to recursively find all subclasses of a given class
+    # Recursively find all subclasses of a given class
     def get_all_subclasses(cls):
         subclasses = set(cls.subclasses())
         for subclass in cls.subclasses():
@@ -55,14 +55,21 @@ def get_xray_techniques_parsing():
 
     return all_subclasses
 
+prefix = "PREFIX ontology: <http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#>"
+
+def resultBindings(ontology, sparqlQuery, classId):
+    query = sparql_queries[sparqlQuery](classId, prefix)
+    return list(default_world.sparql(query))
+
 
 def get_xray_techniques():
     """Returns all techniques associated with x-ray probe"""
-    ontology = load_esrf_ontology()
-    print(ontology)
-    return resultBindings(ontology, "xrayTechniques")
+    ontology = load_panetReasoned_ontology()
+    xray_techniques = resultBindings(ontology, "xrayTechniques", '<http://purl.org/pan-science/PaNET/PaNET01012>')
+    pprint.pprint(xray_techniques)
+    return xray_techniques
 
-def get_esrfPanet_techniques():
+def esrf_techniques():
     """
     Returns all esrf techniques with their PaNET equivalent if exist
     Return: [{esrf_IRI, esrf_label, esrf_prefLabel, panet_IRI, panet_label}]
@@ -74,35 +81,7 @@ def get_esrfPanet_techniques():
     # techniques_sparql = data['techniques_sparql']
     # print(techniques_sparql)
     ontology = load_esrf_ontology()
-    return resultBindings(ontology, "esrfPanetTechniques")
-
-
-def resultBindings(ontology, sparqlQuery, classId="x-ray probe"):
-    print("resultBindings: ", ontology, sparqlQuery, classId)
-    query = sparql_queries[sparqlQuery](classId, prefix)
-    print("query", query)
-
-    techniques = list(default_world.sparql(
-        """
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX owl: <http://www.w3.org/2002/07/owl#>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-        PREFIX : <http://purl.org/pan-science/PaNET/PaNET.owl#>
-        PREFIX esrf: <http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#>
-
-        SELECT ?subClass ?label ?prefLabel ?eqClass
-        WHERE {{ 
-            ?subClass rdfs:subClassOf esrf:experimental_technique
-            OPTIONAL { ?subClass owl:equivalentClass ?eqClass }
-            OPTIONAL {{?subClass rdfs:label ?label}}
-            OPTIONAL {{?subClass skos:prefLabel ?prefLabel}}
-            FILTER (?subClass != owl:Nothing && ?subClass != esrf:experimental_technique)
-        }}
-    """
-    ))
-
+    techniques = resultBindings(ontology, "esrfTechniques", "esrf:experimental_technique")
     for tech in techniques:
         tech[0] = str(tech[0])
         tech[3] = str(tech[3])
@@ -135,9 +114,6 @@ def resultBindings(ontology, sparqlQuery, classId="x-ray probe"):
     return techniques
 
 
-prefix = "PREFIX ontology: <http://www.semanticweb.org/koumouts/ontologies/2023/8/esrf-ontology#>"
-
-
 sparql_queries = {
     "closeChildren": lambda classId, prefix: f"""
         {prefix}
@@ -147,7 +123,7 @@ sparql_queries = {
                 OPTIONAL {{ ?child rdfs:label ?label }}
         }}
     """,
-    "esrfPanetTechniques": lambda classId, prefix: f"""
+    "esrfTechniques": lambda classId, prefix: f"""
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX owl: <http://www.w3.org/2002/07/owl#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -159,7 +135,7 @@ sparql_queries = {
         SELECT ?subClass ?label ?prefLabel ?eqClass
         WHERE {{ 
             ?subClass rdfs:subClassOf esrf:experimental_technique
-            OPTIONAL {{?subclass owl:equivalentClass ?eqClass}}
+            OPTIONAL {{ ?subClass owl:equivalentClass ?eqClass }}
             OPTIONAL {{?subClass rdfs:label ?label}}
             OPTIONAL {{?subClass skos:prefLabel ?prefLabel}}
             FILTER (?subClass != owl:Nothing && ?subClass != esrf:experimental_technique)
@@ -167,9 +143,10 @@ sparql_queries = {
     """,
     "xrayTechniques": lambda classId, prefix: f"""
         {prefix}
-        SELECT ?child
+        SELECT ?subClass ?label
         WHERE {{
-            ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> .
+            ?child rdfs:subClassOf <http://purl.org/pan-science/PaNET/PaNET01012> 
+            OPTIONAL {{ ?subClass rdfs:label ?label}}
         }}
     """,
     "objectProperties": lambda classId, prefix: f"""

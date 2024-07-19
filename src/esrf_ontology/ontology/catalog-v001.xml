@@ -3,8 +3,8 @@
     <uri id="Imports Wizard Entry" name="http://purl.org/pan-science/PaNET/PaNET.owl" uri="PaNET.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/pan-science/PaNET/PaNET.owl" uri="PaNET.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1721311153177" name="duplicate:http://purl.org/pan-science/PaNET/PaNET.owl" uri="PaNET.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1721311153177" name="duplicate:http://purl.org/pan-science/PaNET/PaNET.owl" uri="PaNET_reasoned.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1721311153177" name="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology" uri="esrf-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1721382147119" name="duplicate:http://purl.org/pan-science/PaNET/PaNET.owl" uri="PaNET.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1721382147119" name="duplicate:http://purl.org/pan-science/PaNET/PaNET.owl" uri="PaNET_reasoned.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1721382147119" name="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology" uri="esrf-ontology.owl"/>
     </group>
 </catalog>
