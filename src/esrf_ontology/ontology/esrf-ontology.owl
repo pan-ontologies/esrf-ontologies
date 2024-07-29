@@ -391,14 +391,6 @@
     <EquivalentClasses>
         <Class IRI="#XRF"/>
         <ObjectIntersectionOf>
-            <Class IRI="#energy_dispersive_detection_mode"/>
-            <Class IRI="#fluorescence"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#XRF"/>
-        <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#detectsPhenomenon"/>
@@ -1033,16 +1025,16 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRF</IRI>
-        <Literal>XRF measures X-ray photons coming from a sample during irradition with X-rays and derives elemental composition from the energy of the fluorescence photons</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#XRF</IRI>
         <Literal>X-ray Fluorescence Spectroscopy isA eperimental_technique that 
 
 hasDetectionMode an energy_dispersive_detection_mode,
 and detects the phenomenon of fluorescence, 
 and involves X-ray radiation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRF</IRI>
+        <Literal>XRF measures X-ray photons coming from a sample during irradition with X-rays and derives elemental composition from the energy of the fluorescence photons</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

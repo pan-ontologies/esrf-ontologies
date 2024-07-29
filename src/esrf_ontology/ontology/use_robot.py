@@ -2,24 +2,31 @@ import subprocess
 
 
 def run_robot_reasoner(
-        input_ontology="/home/koumouts/code/esrf-ontology/src/esrf_ontology/ontology/esrf_ontology.owl",
-        output_ontology="robot_esrf_ontology.owl"
-    ):
+    input_ontology="/home/koumouts/code/esrf-ontology/src/esrf_ontology/ontology/esrf_ontology.owl",
+    output_ontology="robot_esrf_ontology.owl",
+):
     # Define the ROBOT jar file path
     robot_jar = "/home/koumouts/code/robot/robot.jar"
 
     # Build the ROBOT reason command
     command = [
         "java",
-            "-jar", robot_jar,
-        "reason", 
-            "--reasoner", "hermit",
-            # "--create-new-ontology", "true",
-            "--annotate-inferred-axioms", "true",
-            "--include-indirect", "true",
-            "--exclude-tautologies", "all",
-            "--input", input_ontology,
-            "--output", "intermediate.owl",
+        "-jar",
+        robot_jar,
+        "reason",
+        "--reasoner",
+        "hermit",
+        # "--create-new-ontology", "true",
+        "--annotate-inferred-axioms",
+        "true",
+        "--include-indirect",
+        "true",
+        "--exclude-tautologies",
+        "all",
+        "--input",
+        input_ontology,
+        "--output",
+        "intermediate.owl",
         # "materialize",
         #     "--reasoner", "hermit",
         #     "--input", "intermediate.owl",

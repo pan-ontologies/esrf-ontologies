@@ -109,7 +109,6 @@
             "X-ray Fluorescence Spectroscopy"
         ],
         "definition": [
-            "esrf-ontology.energy_dispersive_detection_mode & esrf-ontology.fluorescence & esrf-ontology.x-ray",
             "esrf-ontology.experimental_technique & esrf-ontology.detectsPhenomenon.some(esrf-ontology.fluorescence) & esrf-ontology.hasDetectionMode.some(esrf-ontology.energy_dispersive_detection_mode) & esrf-ontology.hasProbe.some(esrf-ontology.x-ray)"
         ],
         "eqClass": [
@@ -124,28 +123,6 @@
         ],
         "definition": [
             "esrf-ontology.diffraction & esrf-ontology.powder_sample & esrf-ontology.x-ray"
-        ],
-        "eqClass": []
-    },
-    {
-        "esrf_id": "esrf-ontology.XRR",
-        "esrf_label": "XRR",
-        "esrf_prefLabels": [
-            "X-ray Reflectometry"
-        ],
-        "definition": [
-            "esrf-ontology.experimental_technique & esrf-ontology.detectsPhenomenon.some(esrf-ontology.Reflectometry) & esrf-ontology.hasDetectionMode.some(esrf-ontology.angular_dispersive_detection_mode) & esrf-ontology.hasProbe.some(esrf-ontology.x-ray)"
-        ],
-        "eqClass": []
-    },
-    {
-        "esrf_id": "PaNET.PaNET01095",
-        "esrf_label": "x-ray fluorescence spectroscopy",
-        "esrf_prefLabels": [
-            null
-        ],
-        "definition": [
-            "esrf-ontology.XRF"
         ],
         "eqClass": []
     }
