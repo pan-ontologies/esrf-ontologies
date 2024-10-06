@@ -75,10 +75,10 @@
         <Class IRI="#biological_sample"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#cryo"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#detection"/>
+        <Class IRI="#cryo"/>
     </Declaration>
     <Declaration>
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
@@ -99,7 +99,7 @@
         <Class IRI="#energy_dispersive_detection_mode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#energy_dispersive_detection_mode_in_space"/>
+        <Class IRI="#energy_dispersive_in_space"/>
     </Declaration>
     <Declaration>
         <Class IRI="#experimental_technique"/>
@@ -210,6 +210,9 @@
         <Class IRI="#soft_x-ray"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#space_time"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#technique_property"/>
     </Declaration>
     <Declaration>
@@ -309,7 +312,7 @@
         <Class IRI="#ED-EXAFS"/>
         <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
-            <Class IRI="#energy_dispersive_detection_mode_in_space"/>
+            <Class IRI="#energy_dispersive_in_space"/>
             <Class IRI="#extended"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -318,7 +321,7 @@
         <Class IRI="#ED-XANES"/>
         <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
-            <Class IRI="#energy_dispersive_detection_mode_in_space"/>
+            <Class IRI="#energy_dispersive_in_space"/>
             <Class IRI="#near_edge"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -327,7 +330,7 @@
         <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
             <Class IRI="#detection_as_a_function_of_incident_energy"/>
-            <Class IRI="#energy_dispersive_detection_mode_in_space"/>
+            <Class IRI="#energy_dispersive_in_space"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -520,7 +523,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#angular_dispersive_detection_mode"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#anomalous"/>
@@ -528,43 +531,43 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#atomic_core_excitation"/>
-        <Class IRI="#detection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#atomic_distance_range"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#atomic_distance_range"/>
         <Class IRI="#range"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#atomic_distance_range"/>
+        <Class IRI="#space_time"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#atomic_distance_resolution"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#auger_electrons"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#biological_sample"/>
         <Class IRI="#sample_type"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#cascade_of_events_being_detected"/>
+        <Class IRI="#technique_property"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#cryo"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#detection"/>
-        <Class IRI="#technique_property"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#diffraction"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#diffraction_of_elastic_scattering"/>
@@ -580,11 +583,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#energy_dispersive_detection_mode"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#energy_dispersive_detection_mode_in_space"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#energy_dispersive_in_space"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#extended"/>
@@ -592,11 +595,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#fluoresence"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#full-field_imaging"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#horizontal_linear_polarization"/>
@@ -648,7 +651,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#photo_electrons"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#photon_energy"/>
@@ -684,7 +687,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_spatial_resolution"/>
-        <Class IRI="#technique_property"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_spatial_resolution_achieved_on_detection"/>
@@ -700,7 +703,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#scanning_imaging"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#serial"/>
@@ -715,12 +718,16 @@
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#space_time"/>
+        <Class IRI="#technique_property"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#tomography"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#total_electrons"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#total_reflection"/>
@@ -728,7 +735,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#transmission"/>
-        <Class IRI="#detection"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#vertical_linear_polarization"/>
@@ -1012,13 +1019,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#cryo</IRI>
-        <Literal>Cryogenic temperature</Literal>
+        <IRI>#cascade_of_events_being_detected</IRI>
+        <Literal>Cascade of events being detected</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#detection</IRI>
-        <Literal>Cascade of events being detected</Literal>
+        <IRI>#cryo</IRI>
+        <Literal>Cryogenic temperature</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1037,7 +1044,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#energy_dispersive_detection_mode_in_space</IRI>
+        <IRI>#energy_dispersive_in_space</IRI>
         <Literal>Counting photons and their energy by dispersing them in space</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1090,6 +1097,11 @@ and remove this class</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#serial</IRI>
         <Literal>eg serial_crystallography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#space_time</IRI>
+        <Literal>Things that happen during the experiment as a function of space and time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

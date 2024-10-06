@@ -452,3 +452,10 @@ hard x-ray probe
 
 
 
+HDF5 file or ICAT dataset would be an instance of the ESRF Ontology.
+
+SparQl query: query about the schema but also the instances.
+
+Open world assumption
+
+Triple-store based on RDF: this is where the beamlines send their instances (datasets) via a SparQl query (INSERT)
