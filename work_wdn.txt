@@ -184,7 +184,7 @@ full-field x-ray fluorescence imaging (NEW, FF-XRF)
     - fluorescence (detection)
     - spatial resolution of the sample on the detector side (detection)
 
-total reflection X-rays fluorescence (NEW, TXRF)
+total reflection X-ray fluorescence (NEW, TXRF)
     - atomic core excitation (interaction)
     - fluorescence (detection)
     - X-rays IN at angles < 1 degree (sample-input)
