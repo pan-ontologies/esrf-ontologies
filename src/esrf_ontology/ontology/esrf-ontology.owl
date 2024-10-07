@@ -36,6 +36,9 @@
         <Class IRI="#TEM"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TXRF"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#UV"/>
     </Declaration>
     <Declaration>
@@ -108,7 +111,7 @@
         <Class IRI="#extended"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#fluoresence"/>
+        <Class IRI="#fluorescence"/>
     </Declaration>
     <Declaration>
         <Class IRI="#full-field_imaging"/>
@@ -181,6 +184,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#right_circular_polarization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sample_incident_angle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sample_input"/>
@@ -350,6 +359,14 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#TXRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#XANES"/>
         <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
@@ -368,7 +385,7 @@
     <EquivalentClasses>
         <Class IRI="#XFCT"/>
         <ObjectIntersectionOf>
-            <Class IRI="#fluoresence"/>
+            <Class IRI="#fluorescence"/>
             <Class IRI="#tomography"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -377,7 +394,7 @@
         <Class IRI="#XRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#energy_dispersive_detection_mode"/>
-            <Class IRI="#fluoresence"/>
+            <Class IRI="#fluorescence"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -498,6 +515,10 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TXRF"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UV"/>
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
@@ -594,7 +615,7 @@
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#fluoresence"/>
+        <Class IRI="#fluorescence"/>
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
@@ -680,6 +701,14 @@
     <SubClassOf>
         <Class IRI="#right_circular_polarization"/>
         <Class IRI="#polarization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sample_incident_angle"/>
+        <Class IRI="#sample_input"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
+        <Class IRI="#sample_incident_angle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_input"/>
@@ -924,6 +953,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TXRF</IRI>
+        <Literal>TXRF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#TXRF</IRI>
+        <Literal>Total Reflection X-ray Fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XANES</IRI>
         <Literal>XANES</Literal>
     </AnnotationAssertion>
@@ -1059,7 +1098,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#fluoresence</IRI>
+        <IRI>#fluorescence</IRI>
         <Literal>Detecting one result after atomic core excitation (fluorescence)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
