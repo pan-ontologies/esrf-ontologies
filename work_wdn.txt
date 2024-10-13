@@ -459,3 +459,41 @@ SparQl query: query about the schema but also the instances.
 Open world assumption
 
 Triple-store based on RDF: this is where the beamlines send their instances (datasets) via a SparQl query (INSERT)
+
+
+Detection mode:
+
+Photons have:
+  - count
+  - direction
+  - energy
+
+Detectors that only count (diodes)
+Detectors that count and measure the energy                                      -> energy dispersive detection mode
+Detectors that count and measure spatial distribution                            -> angular dispersive detection mode
+Detectors that count, measure the energy and measure spatial distribution
+
+
+Space & Time:
+
+
+    Category 1: sample and primary beam don't move with respect to eachother
+
+        single pixel detectors
+        multi pixel detectors
+
+    Category 2: sample and primary beam move with respect to eachother
+
+        single pixel detectors
+        multi pixel detectors
+
+
+1 pixel counts photons and optionally measured their energy (to obtain an energy histogram of the measured photons)
+
+
+Sample input:
+
+    Energy dispersive in space
+
+    
+

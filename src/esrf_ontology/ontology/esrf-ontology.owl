@@ -30,7 +30,22 @@
         <Class IRI="#ED-XAS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ED-XRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EDS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#EXAFS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FF-XRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MA-XRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PIXE"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TEM"/>
@@ -40,6 +55,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#UV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WDS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XANES"/>
@@ -57,10 +75,10 @@
         <Class IRI="#XRPD"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#angular_dispersive_detection_mode"/>
+        <Class IRI="#anomalous"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#anomalous"/>
+        <Class IRI="#area_detector"/>
     </Declaration>
     <Declaration>
         <Class IRI="#atomic_core_excitation"/>
@@ -81,10 +99,31 @@
         <Class IRI="#cascade_of_events_being_detected"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#charged_particles"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#cryo"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#detect_photon_count"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detect_photon_direction_with_respect_to_primary_beam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detect_photon_energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detected_photon_property"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detection_in_space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detector_type"/>
     </Declaration>
     <Declaration>
         <Class IRI="#diffraction"/>
@@ -96,13 +135,13 @@
         <Class IRI="#diffraction_of_photo-electrons"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#disperse_incident_energy_in_space"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#electrons"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#energy_dispersive_detection_mode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#energy_dispersive_in_space"/>
+        <Class IRI="#energy_dispersive_detector"/>
     </Declaration>
     <Declaration>
         <Class IRI="#experimental_technique"/>
@@ -138,6 +177,9 @@
         <Class IRI="#magnetic_field"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#micro-XRF"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#micro_sample_spatial_resolution"/>
     </Declaration>
     <Declaration>
@@ -148,6 +190,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#named_photon_energy_ranges"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nano-XRF"/>
     </Declaration>
     <Declaration>
         <Class IRI="#nano_sample_spatial_resolution"/>
@@ -172,6 +217,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#pink_beam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#point_detector"/>
     </Declaration>
     <Declaration>
         <Class IRI="#polarization"/>
@@ -222,6 +270,9 @@
         <Class IRI="#space_time"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#strip_detector"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#technique_property"/>
     </Declaration>
     <Declaration>
@@ -241,6 +292,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#visual_spectrum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wavelength_dispersive_detector"/>
     </Declaration>
     <Declaration>
         <Class IRI="#white_beam"/>
@@ -321,7 +375,7 @@
         <Class IRI="#ED-EXAFS"/>
         <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
-            <Class IRI="#energy_dispersive_in_space"/>
+            <Class IRI="#disperse_incident_energy_in_space"/>
             <Class IRI="#extended"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -330,7 +384,7 @@
         <Class IRI="#ED-XANES"/>
         <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
-            <Class IRI="#energy_dispersive_in_space"/>
+            <Class IRI="#disperse_incident_energy_in_space"/>
             <Class IRI="#near_edge"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -339,8 +393,25 @@
         <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
             <Class IRI="#detection_as_a_function_of_incident_energy"/>
-            <Class IRI="#energy_dispersive_in_space"/>
+            <Class IRI="#disperse_incident_energy_in_space"/>
             <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#detect_photon_energy"/>
+            <Class IRI="#energy_dispersive_detector"/>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EDS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#detect_photon_energy"/>
+            <Class IRI="#energy_dispersive_detector"/>
+            <Class IRI="#fluorescence"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -349,6 +420,33 @@
             <Class IRI="#atomic_core_excitation"/>
             <Class IRI="#extended"/>
             <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FF-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#area_detector"/>
+            <Class IRI="#detect_photon_energy"/>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MA-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#detect_photon_energy"/>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#macro_sample_spatial_resolution"/>
+            <Class IRI="#scanning_imaging"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PIXE"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#charged_particles"/>
+            <Class IRI="#detect_photon_energy"/>
+            <Class IRI="#fluorescence"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -361,9 +459,18 @@
     <EquivalentClasses>
         <Class IRI="#TXRF"/>
         <ObjectIntersectionOf>
+            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
             <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WDS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#detect_photon_energy"/>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#wavelength_dispersive_detector"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -385,6 +492,7 @@
     <EquivalentClasses>
         <Class IRI="#XFCT"/>
         <ObjectIntersectionOf>
+            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#tomography"/>
             <Class IRI="#x-ray"/>
@@ -393,7 +501,7 @@
     <EquivalentClasses>
         <Class IRI="#XRF"/>
         <ObjectIntersectionOf>
-            <Class IRI="#energy_dispersive_detection_mode"/>
+            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -454,6 +562,26 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#micro-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#detect_photon_energy"/>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#micro_sample_spatial_resolution"/>
+            <Class IRI="#scanning_imaging"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#nano-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#detect_photon_energy"/>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#nano_sample_spatial_resolution"/>
+            <Class IRI="#scanning_imaging"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#photon_energy_range"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="#energy_range_value"/>
@@ -507,7 +635,27 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ED-XRF"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EDS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#EXAFS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FF-XRF"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MA-XRF"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PIXE"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -521,6 +669,10 @@
     <SubClassOf>
         <Class IRI="#UV"/>
         <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WDS"/>
+        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XANES"/>
@@ -543,12 +695,12 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#angular_dispersive_detection_mode"/>
-        <Class IRI="#space_time"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#anomalous"/>
         <Class IRI="#other"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#area_detector"/>
+        <Class IRI="#detection_in_space"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#atomic_core_excitation"/>
@@ -579,12 +731,40 @@
         <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#charged_particles"/>
+        <Class IRI="#sample_input"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#cryo"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#detect_photon_count"/>
+        <Class IRI="#detected_photon_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detect_photon_direction_with_respect_to_primary_beam"/>
+        <Class IRI="#detected_photon_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detect_photon_energy"/>
+        <Class IRI="#detected_photon_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detected_photon_property"/>
+        <Class IRI="#technique_property"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
         <Class IRI="#space_time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detection_in_space"/>
+        <Class IRI="#technique_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detector_type"/>
+        <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#diffraction"/>
@@ -599,16 +779,16 @@
         <Class IRI="#diffraction"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#disperse_incident_energy_in_space"/>
+        <Class IRI="#sample_input"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#electrons"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#energy_dispersive_detection_mode"/>
-        <Class IRI="#space_time"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#energy_dispersive_in_space"/>
-        <Class IRI="#space_time"/>
+        <Class IRI="#energy_dispersive_detector"/>
+        <Class IRI="#detector_type"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#extended"/>
@@ -643,6 +823,10 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#micro-XRF"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#micro_sample_spatial_resolution"/>
         <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
@@ -657,6 +841,10 @@
     <SubClassOf>
         <Class IRI="#named_photon_energy_ranges"/>
         <Class IRI="#sample_input"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nano-XRF"/>
+        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#nano_sample_spatial_resolution"/>
@@ -689,6 +877,10 @@
     <SubClassOf>
         <Class IRI="#pink_beam"/>
         <Class IRI="#photon_energy_bandwidth"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#point_detector"/>
+        <Class IRI="#detection_in_space"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#polarization"/>
@@ -751,6 +943,10 @@
         <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#strip_detector"/>
+        <Class IRI="#detection_in_space"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#tomography"/>
         <Class IRI="#space_time"/>
     </SubClassOf>
@@ -773,6 +969,10 @@
     <SubClassOf>
         <Class IRI="#visual_spectrum"/>
         <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wavelength_dispersive_detector"/>
+        <Class IRI="#detector_type"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#white_beam"/>
@@ -923,6 +1123,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EDS</IRI>
+        <Literal>EDS measures X-ray photons coming from a sample during irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EDS</IRI>
+        <Literal>EDS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#EDS</IRI>
+        <Literal>Energy Dispersive X-ray Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#EXAFS</IRI>
         <Literal>XAS can be called EXAFS when looking at the absorption probability within an X-ray photon energy range greater than 500 eV.</Literal>
     </AnnotationAssertion>
@@ -935,6 +1150,36 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#EXAFS</IRI>
         <Literal>Extended X-ray Absorption Fine Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FF-XRF</IRI>
+        <Literal>FF-XRF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#FF-XRF</IRI>
+        <Literal>Full-Field X-ray Fluorescence Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MA-XRF</IRI>
+        <Literal>MA-XRF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#MA-XRF</IRI>
+        <Literal>Scanning Macro X-ray fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PIXE</IRI>
+        <Literal>PIXE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#PIXE</IRI>
+        <Literal>Particle Induced X-ray Emission</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -960,6 +1205,21 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#TXRF</IRI>
         <Literal>Total Reflection X-ray Fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WDS</IRI>
+        <Literal>WDS measures X-ray photons coming from a sample during irradition  with an wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WDS</IRI>
+        <Literal>WDS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#WDS</IRI>
+        <Literal>Wavelength Dispersive X-ray Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1033,11 +1293,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#angular_dispersive_detection_mode</IRI>
-        <Literal>Counting photons and their energy by analyzer crystal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#anomalous</IRI>
         <Literal>eg anomalous_SAXS</Literal>
     </AnnotationAssertion>
@@ -1068,6 +1323,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detect_photon_energy</IRI>
+        <Literal>Counting photons and their energy by semiconductors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#detection_as_a_function_of_incident_energy</IRI>
         <Literal>Detect as a function of the incident photon or particle energy</Literal>
     </AnnotationAssertion>
@@ -1078,13 +1338,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#energy_dispersive_detection_mode</IRI>
-        <Literal>Counting photons and their energy by semiconductors</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#energy_dispersive_in_space</IRI>
-        <Literal>Counting photons and their energy by dispersing them in space</Literal>
+        <IRI>#disperse_incident_energy_in_space</IRI>
+        <Literal>Disperse incident energy in space</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1110,6 +1365,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hard_x-ray</IRI>
         <Literal>Defined using an object property (has_photon_energy_range) to connect to another class (photon_energy_range) that has the data properties (value and unit). It creates a chain where the characteristics of other classes included in the definition define the class. Works with the reasoner!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#micro-XRF</IRI>
+        <Literal>micro-XRF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#micro-XRF</IRI>
+        <Literal>Scanning Micro X-ray fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nano-XRF</IRI>
+        <Literal>nano-XRF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#nano-XRF</IRI>
+        <Literal>Scanning Nano X-ray fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
