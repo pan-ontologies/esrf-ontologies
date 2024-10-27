@@ -48,7 +48,13 @@
         <Class IRI="#FF-XRF"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#GISAXS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HR-XRPD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LDDS-XAS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MA-XRF"/>
@@ -97,6 +103,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#XRPD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#absorption"/>
     </Declaration>
     <Declaration>
         <Class IRI="#anomalous"/>
@@ -189,22 +198,19 @@
         <Class IRI="#high_precision_in_Q_space"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#high_resolution_in_Q_space"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#horizontal_linear_polarization"/>
     </Declaration>
     <Declaration>
         <Class IRI="#infrared"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#large_length_scales"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#laser"/>
     </Declaration>
     <Declaration>
         <Class IRI="#left_circular_polarization"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#low_resolution_in_Q_space"/>
     </Declaration>
     <Declaration>
         <Class IRI="#macro_sample_spatial_resolution"/>
@@ -241,9 +247,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#photo_electrons"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#photon_energy"/>
     </Declaration>
     <Declaration>
         <Class IRI="#photon_energy_bandwidth"/>
@@ -301,6 +304,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#single_crystal_sample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#small_length_scales"/>
     </Declaration>
     <Declaration>
         <Class IRI="#soft_x-ray"/>
@@ -486,11 +492,29 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#GISAXS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#diffraction"/>
+            <Class IRI="#large_length_scales"/>
+            <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#HR-XRPD"/>
         <ObjectIntersectionOf>
             <Class IRI="#diffraction"/>
             <Class IRI="#high_precision_in_Q_space"/>
             <Class IRI="#powder_sample"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LDDS-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#atomic_core_excitation"/>
+            <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            <Class IRI="#laser"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -516,7 +540,7 @@
         <Class IRI="#SAXS"/>
         <ObjectIntersectionOf>
             <Class IRI="#diffraction"/>
-            <Class IRI="#low_resolution_in_Q_space"/>
+            <Class IRI="#large_length_scales"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -556,7 +580,7 @@
         <Class IRI="#WAXS"/>
         <ObjectIntersectionOf>
             <Class IRI="#diffraction"/>
-            <Class IRI="#high_resolution_in_Q_space"/>
+            <Class IRI="#small_length_scales"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -615,6 +639,10 @@
             <Class IRI="#powder_sample"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#absorption"/>
+        <Class IRI="#atomic_core_excitation"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#hard_x-ray"/>
@@ -761,7 +789,15 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GISAXS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HR-XRPD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LDDS-XAS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -827,6 +863,10 @@
     <SubClassOf>
         <Class IRI="#XRPD"/>
         <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#absorption"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#anomalous"/>
@@ -945,10 +985,6 @@
         <Class IRI="#detection_resolution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#high_resolution_in_Q_space"/>
-        <Class IRI="#detection_resolution"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#horizontal_linear_polarization"/>
         <Class IRI="#polarization"/>
     </SubClassOf>
@@ -957,16 +993,16 @@
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#large_length_scales"/>
+        <Class IRI="#detection_resolution"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#laser"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#left_circular_polarization"/>
         <Class IRI="#polarization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#low_resolution_in_Q_space"/>
-        <Class IRI="#detection_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#magnetic_field"/>
@@ -1011,10 +1047,6 @@
     <SubClassOf>
         <Class IRI="#photo_electrons"/>
         <Class IRI="#cascade_of_events_being_detected"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#photon_energy"/>
-        <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#photon_energy_bandwidth"/>
@@ -1087,6 +1119,10 @@
     <SubClassOf>
         <Class IRI="#single_crystal_sample"/>
         <Class IRI="#sample_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#small_length_scales"/>
+        <Class IRI="#detection_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#soft_x-ray"/>
@@ -1332,6 +1368,16 @@
         <Literal>Full-Field X-ray Fluorescence Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GISAXS</IRI>
+        <Literal>GISAXS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#GISAXS</IRI>
+        <Literal>Grazing Incidence Small Angle X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HR-XRPD</IRI>
         <Literal>Like XRPD but with a high resolution in Q-space (or d-spacing).</Literal>
@@ -1345,6 +1391,21 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#HR-XRPD</IRI>
         <Literal>High-Resolution X-ray Powder Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LDDS-XAS</IRI>
+        <Literal>LDDC-XAS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#LDDS-XAS</IRI>
+        <Literal>Laser-Driven Shock Compression X-ray Absorption Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#LDDS-XAS</IRI>
+        <Literal>Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1639,22 +1700,20 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#high_precision_in_Q_space</IRI>
-        <Literal>For example delta-Q &lt; 1e-4 Å-1</Literal>
+        <Literal>For example min(ΔQ) = 1e-4 Å-1 to 5e-4 Å-1
+
+Angular resolution: min(Δ2θ) = 0.001° to 0.005°
+
+Resolving power (Δ2θ/θ)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#high_resolution_in_Q_space</IRI>
-        <Literal>For example Qmax &gt; 1 nm^-1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#low_resolution_in_Q_space</IRI>
-        <Literal>For example Qmax &lt; 1 nm^-1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#low_resolution_in_Q_space</IRI>
-        <Literal>To be changed: replace Qmax with Qmin and swap high and low</Literal>
+        <IRI>#large_length_scales</IRI>
+        <Literal>Length Scale d (Å) = 10 – 1000
+
+Q-Range (Å−1) = 0.01 – 0.1
+
+Large structural features: supramolecular structures, particle sizes, and shapes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1696,6 +1755,15 @@ and remove this class</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#scanning_imaging</IRI>
         <Literal>Image of the sample build up by many measurements (motion of beam, sample or detector)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#small_length_scales</IRI>
+        <Literal>Length Scale d (Å) = 1 – 10
+
+Q-Range (Å−1) = 0.1 – 2.5
+
+Small structural features: Atomic distances, crystal lattice spacings, molecular packing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

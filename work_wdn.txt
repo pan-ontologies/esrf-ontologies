@@ -150,7 +150,8 @@ energy dispersive x-ray absorption spectroscopy (NEW, ED-XAS)
     - in-energy range (sample-input)
     - disperse in-energy in space (sample-input)
 
-laser-driven shock compressed x-ray absorption spectroscopy (NEW)
+laser-driven shock compression x-ray absorption spectroscopy (NEW)
+Laser-driven dynamic compression x-ray absorption spectroscopy
     - atomic core excitation (interaction)
     - in-energy range (sample-input)
     - in-compression (sample-input)
