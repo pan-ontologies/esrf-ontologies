@@ -48,6 +48,9 @@
         <Class IRI="#FF-XRF"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FTIR"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GISAXS"/>
     </Declaration>
     <Declaration>
@@ -76,6 +79,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#TXRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USAXS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UV"/>
@@ -330,6 +336,9 @@
         <Class IRI="#transmission"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ultra_large_length_scales"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#vertical_linear_polarization"/>
     </Declaration>
     <Declaration>
@@ -443,7 +452,7 @@
         <Class IRI="#ED-XRD"/>
         <ObjectIntersectionOf>
             <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#diffraction"/>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -460,7 +469,7 @@
         <Class IRI="#ED-XRPD"/>
         <ObjectIntersectionOf>
             <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#diffraction"/>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
             <Class IRI="#powder_sample"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -492,9 +501,16 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#FTIR"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#infrared"/>
+            <Class IRI="#transmission"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#GISAXS"/>
         <ObjectIntersectionOf>
-            <Class IRI="#diffraction"/>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
             <Class IRI="#large_length_scales"/>
             <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
             <Class IRI="#x-ray"/>
@@ -503,7 +519,7 @@
     <EquivalentClasses>
         <Class IRI="#HR-XRPD"/>
         <ObjectIntersectionOf>
-            <Class IRI="#diffraction"/>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
             <Class IRI="#high_precision_in_Q_space"/>
             <Class IRI="#powder_sample"/>
             <Class IRI="#x-ray"/>
@@ -539,7 +555,7 @@
     <EquivalentClasses>
         <Class IRI="#SAXS"/>
         <ObjectIntersectionOf>
-            <Class IRI="#diffraction"/>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
             <Class IRI="#large_length_scales"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -547,7 +563,7 @@
     <EquivalentClasses>
         <Class IRI="#SCXRD"/>
         <ObjectIntersectionOf>
-            <Class IRI="#diffraction"/>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
             <Class IRI="#single_crystal_sample"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -555,7 +571,7 @@
     <EquivalentClasses>
         <Class IRI="#SSX"/>
         <ObjectIntersectionOf>
-            <Class IRI="#diffraction"/>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
             <Class IRI="#serial_scanning"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -577,9 +593,17 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#USAXS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
+            <Class IRI="#ultra_large_length_scales"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#WAXS"/>
         <ObjectIntersectionOf>
-            <Class IRI="#diffraction"/>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
             <Class IRI="#small_length_scales"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -620,7 +644,7 @@
     <EquivalentClasses>
         <Class IRI="#XRD"/>
         <ObjectIntersectionOf>
-            <Class IRI="#diffraction"/>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -635,7 +659,7 @@
     <EquivalentClasses>
         <Class IRI="#XRPD"/>
         <ObjectIntersectionOf>
-            <Class IRI="#diffraction"/>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
             <Class IRI="#powder_sample"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -789,6 +813,10 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FTIR"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GISAXS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -826,6 +854,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TXRF"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USAXS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1147,6 +1179,10 @@
     <SubClassOf>
         <Class IRI="#transmission"/>
         <Class IRI="#cascade_of_events_being_detected"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ultra_large_length_scales"/>
+        <Class IRI="#detection_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#vertical_linear_polarization"/>
@@ -1369,6 +1405,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FTIR</IRI>
+        <Literal>FTIR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#FTIR</IRI>
+        <Literal>Fourier Transform Infrared Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#GISAXS</IRI>
         <Literal>GISAXS</Literal>
     </AnnotationAssertion>
@@ -1509,6 +1555,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#USAXS</IRI>
+        <Literal>USAXS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#USAXS</IRI>
+        <Literal>Ultra-Small Angle X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#WAXS</IRI>
         <Literal>WAXS</Literal>
     </AnnotationAssertion>
@@ -1580,7 +1636,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRD</IRI>
-        <Literal>X-ray diffraction measured the diffraction from a crystalline sample to determine the crystal structure, molecular structure, multi-phase identifiaction and composition, ...</Literal>
+        <Literal>X-ray diffraction measured the diffraction from a crystalline sample to determine the crystal structure, molecular structure, multi-phase identification and composition, ...</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1784,6 +1840,15 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#transmission</IRI>
         <Literal>Detect incident photon or particles after passing through the sample without interaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ultra_large_length_scales</IRI>
+        <Literal>Length Scale d (Å) = 1000 - 10000
+
+Q-Range (Å−1) = 0.0001 - 0.01
+
+Ultra Large structural features: large aggregates, clusters, and larger pores</Literal>
     </AnnotationAssertion>
 </Ontology>
 
