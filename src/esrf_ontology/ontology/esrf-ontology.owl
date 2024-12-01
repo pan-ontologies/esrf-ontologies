@@ -33,9 +33,6 @@
         <Class IRI="#ED-XRD"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ED-XRF"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ED-XRPD"/>
     </Declaration>
     <Declaration>
@@ -60,7 +57,13 @@
         <Class IRI="#LDDS-XAS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MA-XRF"/>
+        <Class IRI="#MACRO-XRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MICRO-XRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NANO-XRF"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PIXE"/>
@@ -225,9 +228,6 @@
         <Class IRI="#magnetic_field"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#micro-XRF"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#micro_sample_spatial_resolution"/>
     </Declaration>
     <Declaration>
@@ -238,9 +238,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#named_photon_energy_ranges"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#nano-XRF"/>
     </Declaration>
     <Declaration>
         <Class IRI="#nano_sample_spatial_resolution"/>
@@ -457,15 +454,6 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#ED-XRF"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#energy_dispersive_detector"/>
-            <Class IRI="#fluorescence"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#ED-XRPD"/>
         <ObjectIntersectionOf>
             <Class IRI="#detect_photon_energy"/>
@@ -535,11 +523,31 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#MA-XRF"/>
+        <Class IRI="#MACRO-XRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#macro_sample_spatial_resolution"/>
+            <Class IRI="#scanning_imaging"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MICRO-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#detect_photon_energy"/>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#micro_sample_spatial_resolution"/>
+            <Class IRI="#scanning_imaging"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NANO-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#detect_photon_energy"/>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#nano_sample_spatial_resolution"/>
             <Class IRI="#scanning_imaging"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -716,26 +724,6 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#micro-XRF"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#fluorescence"/>
-            <Class IRI="#micro_sample_spatial_resolution"/>
-            <Class IRI="#scanning_imaging"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#nano-XRF"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#fluorescence"/>
-            <Class IRI="#nano_sample_spatial_resolution"/>
-            <Class IRI="#scanning_imaging"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#photon_energy_range"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="#energy_range_value"/>
@@ -793,10 +781,6 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ED-XRF"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ED-XRPD"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -829,7 +813,15 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MA-XRF"/>
+        <Class IRI="#MACRO-XRF"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MICRO-XRF"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NANO-XRF"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1041,10 +1033,6 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#micro-XRF"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#micro_sample_spatial_resolution"/>
         <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
@@ -1059,10 +1047,6 @@
     <SubClassOf>
         <Class IRI="#named_photon_energy_ranges"/>
         <Class IRI="#sample_input"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#nano-XRF"/>
-        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#nano_sample_spatial_resolution"/>
@@ -1455,13 +1439,33 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MA-XRF</IRI>
-        <Literal>MA-XRF</Literal>
+        <IRI>#MACRO-XRF</IRI>
+        <Literal>MACRO-XRF</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#MA-XRF</IRI>
+        <IRI>#MACRO-XRF</IRI>
         <Literal>Scanning Macro X-ray fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MICRO-XRF</IRI>
+        <Literal>MICRO-XRF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#MICRO-XRF</IRI>
+        <Literal>Scanning Micro X-ray fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NANO-XRF</IRI>
+        <Literal>NANO-XRF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#NANO-XRF</IRI>
+        <Literal>Scanning Nano X-ray fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1524,7 +1528,7 @@
         <Literal>SSX</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#SSX</IRI>
         <Literal>Serial Synchrotron Crystallography</Literal>
     </AnnotationAssertion>
@@ -1589,6 +1593,11 @@
         <Literal>Wavelength Dispersive X-ray Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XANES</IRI>
+        <Literal>XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XANES</IRI>
         <Literal>XANES</Literal>
@@ -1597,11 +1606,6 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XANES</IRI>
         <Literal>X-ray Absorption Near Edge Structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#XANES</IRI>
-        <Literal>XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1770,26 +1774,6 @@ Resolving power (Δ2θ/θ)</Literal>
 Q-Range (Å−1) = 0.01 – 0.1
 
 Large structural features: supramolecular structures, particle sizes, and shapes</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#micro-XRF</IRI>
-        <Literal>micro-XRF</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#micro-XRF</IRI>
-        <Literal>Scanning Micro X-ray fluorescence</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#nano-XRF</IRI>
-        <Literal>nano-XRF</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#nano-XRF</IRI>
-        <Literal>Scanning Nano X-ray fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

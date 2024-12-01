@@ -498,3 +498,33 @@ Sample input:
 
     
 
+How to use the NeXus Ontology:
+------------------------------
+
+Data analysis software needs to know:
+
+- Can I calculate elemental concentrations from this data?
+- What can I calculate from this data?
+
+
+https://manual.nexusformat.org/classes/applications/NXfluo.html
+
+Group "/entry/instrument/fluorescence" is related to these building blocks:
+- detect_photon_energy
+- fluorescence
+
+Dataset "/entry/instrument/source/probe" is related to these building blocks:
+- x-ray
+
+How to deal with technique purpose:
+-----------------------------------
+
+Combine our building blocks to create scientific purposes (3D elemental concentrations, Protein structures, Residual stress, ...).
+
+Then we can ask the ontology:
+    - What is the purpose of XRF?
+    - What techniques provide elemental concentrations?
+
+If you cannot derive purpose from the building blocks, you are missing building blocks.
+
+The building blocks you need for purpose may be more than the building blocks you need just for differentiating techniques.
