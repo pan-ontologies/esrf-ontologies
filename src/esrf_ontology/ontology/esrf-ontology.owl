@@ -177,9 +177,6 @@
         <Class IRI="#diffraction_of_elastic_scattering"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#diffraction_of_photo-electrons"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#disperse_incident_energy_in_space"/>
     </Declaration>
     <Declaration>
@@ -974,10 +971,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#diffraction_of_elastic_scattering"/>
-        <Class IRI="#diffraction"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#diffraction_of_photo-electrons"/>
         <Class IRI="#diffraction"/>
     </SubClassOf>
     <SubClassOf>
