@@ -1,25 +1,83 @@
-# ESRF Ontology
+# ESRF Ontology for Oscars
 
-The ESRF ontology provides a python API to all ontologies used on ESRF data acquisition.
+This repository contains the first draft of the ESRF Ontology, which defines 11 techniques from two major families: **XAS (X-ray Absorption Spectroscopy)** and **XRF (X-ray Fluorescence)**.
 
-* Metadata for techniques within the photon and neutron (PaN) domain from the [PaNET Ontology](https://doi.org/10.5281/zenodo.4806026).
+## Goals
 
-## Getting started
+- **Demonstrate the approach**: Show how these techniques can be defined using fundamental building blocks.
+- **Facilitate differentiation**: Use these definitions to distinguish between techniques clearly and effectively.
+- **Connect to PaNET**: Find the equivelances in the PaNET ontology.
 
-Install from pypi
+---
 
-```bash
-pip install esrf-ontology
-```
+## Building the Ontology
 
-Retrieve technique metadata for one or more technique aliases
+### Steps:
 
-```python
-from esrf_ontology.technique import get_technique_metadata
+1. **Identify Use Cases**:
 
-metadata = get_technique_metadata("XAS", "XRF")
-```
+   - Define how the ontology will be used and what specific needs it will address.
+   - Formulate questions the ontology should answer using a reasoner or SPARQL/SWRL queries.
 
-## Documentation
+2. **Develop Concepts**:
 
-https://esrf-ontology.readthedocs.io
+   - Begin with sentences describing the concepts of the ontology.
+   - Extract key concepts as **classes** and identify their descriptors as **building blocks**.
+
+3. **Define Classes**:
+
+   - Use differential definitions by combining building blocks to define classes.
+   - Gradually refine these definitions, adding more building blocks to distinguish between techniques.
+
+4. **Iterative Refinement**:
+
+   - Start with simple definitions and expand them based on the need to differentiate techniques.
+   - Use the reasoner continuously during development to understand the implications of the modeling approach.
+
+5. **Organize Building Blocks**:
+   - Group building blocks into **categories** and create object properties for better organization.
+   - Use these categories and properties to craft meaningful sentences that describe the techniques, rather than relying solely on taxonomies.
+
+---
+
+## Semantic Negotiations
+
+- **Document Reasoning**:
+  - Clearly explain the rationale behind the modeling approach for human understanding.
+- **Visual Aids**:
+
+  - Include images in this repository to illustrate the ontology's structure and definitions.
+  - Directly reference these images in the ontology to enhance comprehension.
+
+- **Interlink with Other Ontologies**:
+  - Identify relationships with external ontologies and document selected connections (e.g., `owl:equivalentTo`, `skos:broader`, etc.).
+
+---
+
+## Why Build Gradually?
+
+- The goal is not to create exhaustive definitions initially.
+- Focus on differentiating techniques incrementally, adding complexity as needed to refine the ontology.
+
+### Working with building blocks and differential meaning in protege:
+
+## DL-query tab
+
+In the following image a query has been built using the Description-Logic (DL) query tab in protege.
+
+- Using such queries it is easy to infer if more than technique has the same descrition with any other using the building blocks.
+- Equivalent class has to contain always one technique or else a new building block needs to be introduced to differentiate between the techniques.
+- The subclasses and superclasses can easily be examined in this tab to make sure everything makes sense.
+
+![DL query for examing definitions](images/DL-quey%20for%20examining%20techniques.png)
+
+## OntoGraf graphs for spotting the differences
+
+In the following graphs we can see the building blocks that differentiate the techiniques included in this deliverable.
+Most common building blocks have been removed to make the differentiating building blocks clearer.
+
+XAS techniques
+![XAS techniques with their building blocks](images/XAS%20techniques.png)
+
+XRF techniques
+![XRF techniques with their building blocks](images/XRF%20techniques.png)

@@ -15,9 +15,6 @@
     <Prefix name="esrf_ontology" IRI="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#"/>
     <Import>http://purl.org/pan-science/PaNET/PaNET.owl</Import>
     <Declaration>
-        <Class IRI="#CRYO-EM"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#DAC"/>
     </Declaration>
     <Declaration>
@@ -30,16 +27,7 @@
         <Class IRI="#ED-XAS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ED-XRD"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ED-XRF"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ED-XRPD"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EDS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EXAFS"/>
@@ -48,49 +36,16 @@
         <Class IRI="#FF-XRF"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FTIR"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GISAXS"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#HR-XRPD"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#LDDS-XAS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MA-XRF"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PIXE"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SAXS"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SCXRD"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SSX"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TEM"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#TXRF"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#USAXS"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#UV"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WAXS"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WDS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XANES"/>
@@ -99,16 +54,7 @@
         <Class IRI="#XAS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#XFCT"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#XRD"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#XRF"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#XRPD"/>
     </Declaration>
     <Declaration>
         <Class IRI="#absorption"/>
@@ -387,22 +333,40 @@
         <DataProperty IRI="#sample_spatial_resolution_unit"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#changeOverSpace"/>
+        <NamedIndividual IRI="#ED-EXAFS_individual"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#changeOverTime"/>
+        <NamedIndividual IRI="#ED-XANES_individual"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#hardXrays"/>
+        <NamedIndividual IRI="#ED-XAS_individual"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#photon_Energy_Range_For_Hard_Xrays"/>
+        <NamedIndividual IRI="#ED-XRF_individual"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#softXrays"/>
+        <NamedIndividual IRI="#ED-XRPD_individual"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#testEAFS"/>
+        <NamedIndividual IRI="#EXAFS_individual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FF-XRF_individual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LDDC-XAS_individual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MA-XRF_individual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TXRF_individual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#micro-XRF_individual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nano-XRF_individual"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
@@ -415,11 +379,22 @@
         <Class IRI="#XRF"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#CRYO-EM"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01196"/>
+        <Class IRI="#XAS"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01198"/>
+        <Class IRI="#EXAFS"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01199"/>
+        <Class IRI="#XANES"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-EXAFS"/>
         <ObjectIntersectionOf>
-            <Class IRI="#cryo"/>
-            <Class IRI="#electrons"/>
-            <Class IRI="#transmission"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01198"/>
+            <Class IRI="#disperse_incident_energy_in_space"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -434,9 +409,23 @@
     <EquivalentClasses>
         <Class IRI="#ED-XANES"/>
         <ObjectIntersectionOf>
+            <Class IRI="#XANES"/>
+            <Class IRI="#disperse_incident_energy_in_space"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-XANES"/>
+        <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
             <Class IRI="#disperse_incident_energy_in_space"/>
             <Class IRI="#near_edge"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01196"/>
+            <Class IRI="#disperse_incident_energy_in_space"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -449,11 +438,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#ED-XRD"/>
+        <Class IRI="#ED-XRF"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#x-ray"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
+            <Class IRI="#energy_dispersive_detector"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -463,23 +451,6 @@
             <Class IRI="#energy_dispersive_detector"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ED-XRPD"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#powder_sample"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#EDS"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#energy_dispersive_detector"/>
-            <Class IRI="#fluorescence"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -493,6 +464,14 @@
     <EquivalentClasses>
         <Class IRI="#FF-XRF"/>
         <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
+            <Class IRI="#area_detector"/>
+            <Class IRI="#full-field_imaging"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FF-XRF"/>
+        <ObjectIntersectionOf>
             <Class IRI="#area_detector"/>
             <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
@@ -501,28 +480,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#FTIR"/>
+        <Class IRI="#LDDS-XAS"/>
         <ObjectIntersectionOf>
-            <Class IRI="#infrared"/>
-            <Class IRI="#transmission"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#GISAXS"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#large_length_scales"/>
-            <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#HR-XRPD"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#high_precision_in_Q_space"/>
-            <Class IRI="#powder_sample"/>
-            <Class IRI="#x-ray"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01196"/>
+            <Class IRI="#laser"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -537,6 +498,14 @@
     <EquivalentClasses>
         <Class IRI="#MA-XRF"/>
         <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
+            <Class IRI="#macro_sample_spatial_resolution"/>
+            <Class IRI="#scanning_imaging"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MA-XRF"/>
+        <ObjectIntersectionOf>
             <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#macro_sample_spatial_resolution"/>
@@ -545,42 +514,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#PIXE"/>
+        <Class IRI="#TXRF"/>
         <ObjectIntersectionOf>
-            <Class IRI="#charged_particles"/>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#fluorescence"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#SAXS"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#large_length_scales"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#SCXRD"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#single_crystal_sample"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#SSX"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#serial_scanning"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#TEM"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#electrons"/>
-            <Class IRI="#transmission"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
+            <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -590,30 +527,6 @@
             <Class IRI="#fluorescence"/>
             <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
             <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#USAXS"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#ultra_large_length_scales"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#WAXS"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#small_length_scales"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#WDS"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#fluorescence"/>
-            <Class IRI="#wavelength_dispersive_detector"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -633,34 +546,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#XFCT"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#fluorescence"/>
-            <Class IRI="#tomography"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#XRD"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#XRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#XRPD"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#powder_sample"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -718,11 +607,27 @@
     <EquivalentClasses>
         <Class IRI="#micro-XRF"/>
         <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
+            <Class IRI="#micro_sample_spatial_resolution"/>
+            <Class IRI="#scanning_imaging"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#micro-XRF"/>
+        <ObjectIntersectionOf>
             <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#micro_sample_spatial_resolution"/>
             <Class IRI="#scanning_imaging"/>
             <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#nano-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
+            <Class IRI="#nano_sample_spatial_resolution"/>
+            <Class IRI="#scanning_imaging"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -769,10 +674,6 @@
         </ObjectUnionOf>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="#CRYO-EM"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DAC"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
@@ -789,19 +690,7 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ED-XRD"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ED-XRF"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ED-XRPD"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EDS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -813,18 +702,6 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FTIR"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GISAXS"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HR-XRPD"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#LDDS-XAS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -833,44 +710,12 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PIXE"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SAXS"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SCXRD"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SSX"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TEM"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#TXRF"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#USAXS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UV"/>
         <Class IRI="#named_photon_energy_ranges"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WAXS"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WDS"/>
-        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XANES"/>
@@ -881,19 +726,7 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#XFCT"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#XRD"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#XRF"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#XRPD"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1204,52 +1037,54 @@
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#micro-XRF"/>
+        <Class IRI="#nano-XRF"/>
+    </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#named_photon_energy_ranges"/>
-        <NamedIndividual IRI="#hardXrays"/>
+        <Class IRI="#ED-EXAFS"/>
+        <NamedIndividual IRI="#ED-EXAFS_individual"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#named_photon_energy_ranges"/>
-        <NamedIndividual IRI="#softXrays"/>
+        <Class IRI="#ED-XANES"/>
+        <NamedIndividual IRI="#ED-XANES_individual"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#atomic_core_excitation"/>
-        <NamedIndividual IRI="#testEAFS"/>
+        <Class IRI="#ED-XAS"/>
+        <NamedIndividual IRI="#ED-XAS_individual"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#experimental_technique"/>
-        <NamedIndividual IRI="#testEAFS"/>
+        <Class IRI="#ED-XRF"/>
+        <NamedIndividual IRI="#ED-XRF_individual"/>
     </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_photon_energy_range"/>
-        <NamedIndividual IRI="#hardXrays"/>
-        <NamedIndividual IRI="#photon_Energy_Range_For_Hard_Xrays"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#energy_range_unit"/>
-        <NamedIndividual IRI="#photon_Energy_Range_For_Hard_Xrays"/>
-        <Literal>eV</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#energy_range_value"/>
-        <NamedIndividual IRI="#photon_Energy_Range_For_Hard_Xrays"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">11.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#energy_range_unit"/>
-        <NamedIndividual IRI="#softXrays"/>
-        <Literal>eV</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#energy_range_value"/>
-        <NamedIndividual IRI="#softXrays"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#energy_range_value"/>
-        <NamedIndividual IRI="#testEAFS"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
-    </DataPropertyAssertion>
+    <ClassAssertion>
+        <Class IRI="#EXAFS"/>
+        <NamedIndividual IRI="#EXAFS_individual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FF-XRF"/>
+        <NamedIndividual IRI="#FF-XRF_individual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LDDS-XAS"/>
+        <NamedIndividual IRI="#LDDC-XAS_individual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MA-XRF"/>
+        <NamedIndividual IRI="#MA-XRF_individual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TXRF"/>
+        <NamedIndividual IRI="#TXRF_individual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#micro-XRF"/>
+        <NamedIndividual IRI="#micro-XRF_individual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#nano-XRF"/>
+        <NamedIndividual IRI="#nano-XRF_individual"/>
+    </ClassAssertion>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_polarization"/>
         <Class IRI="#polarization"/>
@@ -1278,21 +1113,6 @@
         <DataProperty IRI="#energy_range_value"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#CRYO-EM</IRI>
-        <Literal>CRYO-EM</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#CRYO-EM</IRI>
-        <Literal>Cryo-electron microscopy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#CRYO-EM</IRI>
-        <Literal>TEM under cryogenic conditions</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DAC</IRI>
@@ -1344,41 +1164,6 @@
         <Literal>Energy Dispersive X-ray Absorption Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ED-XRD</IRI>
-        <Literal>ED-XRD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#ED-XRD</IRI>
-        <Literal>Energy Dispersive X-ray Diffraction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ED-XRPD</IRI>
-        <Literal>ED-XRPD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#ED-XRPD</IRI>
-        <Literal>Energy Dispersive X-ray Powder Diffraction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#EDS</IRI>
-        <Literal>EDS measures X-ray photons coming from a sample during irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#EDS</IRI>
-        <Literal>EDS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#EDS</IRI>
-        <Literal>Energy Dispersive X-ray Spectroscopy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#EXAFS</IRI>
         <Literal>XAS can be called EXAFS when looking at the absorption probability within an X-ray photon energy range greater than 500 eV.</Literal>
@@ -1402,41 +1187,6 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#FF-XRF</IRI>
         <Literal>Full-Field X-ray Fluorescence Imaging</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#FTIR</IRI>
-        <Literal>FTIR</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#FTIR</IRI>
-        <Literal>Fourier Transform Infrared Spectroscopy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#GISAXS</IRI>
-        <Literal>GISAXS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#GISAXS</IRI>
-        <Literal>Grazing Incidence Small Angle X-ray Scattering</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HR-XRPD</IRI>
-        <Literal>Like XRPD but with a high resolution in Q-space (or d-spacing).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#HR-XRPD</IRI>
-        <Literal>HR-XRPD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#HR-XRPD</IRI>
-        <Literal>High-Resolution X-ray Powder Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1465,86 +1215,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#PIXE</IRI>
-        <Literal>PIXE</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#PIXE</IRI>
-        <Literal>Particle Induced X-ray Emission</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#SAXS</IRI>
-        <Literal>SAXS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#SAXS</IRI>
-        <Literal>Small-Angle X-ray Scattering</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SCXRD</IRI>
-        <Literal>Single crystal X-ray diffraction measured the diffraction from a single crystal to determine its crystal structure.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#SCXRD</IRI>
-        <Literal>SCXRD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#SCXRD</IRI>
-        <Literal>SC-XRD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#SCXRD</IRI>
-        <Literal>SCD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#SCXRD</IRI>
-        <Literal>SXRD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#SCXRD</IRI>
-        <Literal>Single crystal X-ray diffraction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SSX</IRI>
-        <Literal>Like SCXRD but instead of measuring the same crystal under different orientations we measure many individual crystals with random orientation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#SSX</IRI>
-        <Literal>SSX</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#SSX</IRI>
-        <Literal>Serial Synchrotron Crystallography</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#TEM</IRI>
-        <Literal>Transmission imaging of samples with electrons</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TEM</IRI>
-        <Literal>TEM</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#TEM</IRI>
-        <Literal>Transmission Electron Microscopy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TXRF</IRI>
         <Literal>TXRF</Literal>
     </AnnotationAssertion>
@@ -1552,41 +1222,6 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#TXRF</IRI>
         <Literal>Total Reflection X-ray Fluorescence</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#USAXS</IRI>
-        <Literal>USAXS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#USAXS</IRI>
-        <Literal>Ultra-Small Angle X-ray Scattering</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WAXS</IRI>
-        <Literal>WAXS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#WAXS</IRI>
-        <Literal>Wide-angle X-ray Scattering</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WDS</IRI>
-        <Literal>WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WDS</IRI>
-        <Literal>WDS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#WDS</IRI>
-        <Literal>Wavelength Dispersive X-ray Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1620,36 +1255,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#XFCT</IRI>
-        <Literal>XRF under different sample orientations</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#XFCT</IRI>
-        <Literal>XFCT</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#XFCT</IRI>
-        <Literal>X-ray Fluorescence Tomography</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#XRD</IRI>
-        <Literal>X-ray diffraction measured the diffraction from a crystalline sample to determine the crystal structure, molecular structure, multi-phase identification and composition, ...</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#XRD</IRI>
-        <Literal>XRD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#XRD</IRI>
-        <Literal>X-ray diffraction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRF</IRI>
         <Literal>XRF measures X-ray photons coming from a sample during irradition with X-rays and derives elemental composition from the energy of the fluorescence photons</Literal>
     </AnnotationAssertion>
@@ -1662,21 +1267,6 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRF</IRI>
         <Literal>X-ray Fluorescence Spectroscopy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#XRPD</IRI>
-        <Literal>X-ray powder diffraction measured the diffraction from a powder to determine the crystal structure or multi-phase identifiaction and composition.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#XRPD</IRI>
-        <Literal>XRPD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <IRI>#XRPD</IRI>
-        <Literal>X-ray Powder Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1854,5 +1444,5 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
