@@ -43,6 +43,7 @@ def save_techniques(name: str, techniques: List[Dict[str, Any]]):
     json_file = os.path.join(
         os.path.dirname(__file__), "..", "src", "esrf_ontology", "db", name
     )
+    techniques = sorted(techniques, key=lambda technique: technique["names"][0])
     with open(json_file, "w") as f:
         json.dump(techniques, f, indent=2)
 
