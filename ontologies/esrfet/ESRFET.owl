@@ -231,9 +231,6 @@
         <Class IRI="#monochromatic_beam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#named_atomic_distance_range"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#named_photon_energy_ranges"/>
     </Declaration>
     <Declaration>
@@ -285,13 +282,13 @@
         <Class IRI="#sample_input"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#sample_spatial_resolution"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#sample_spatial_resolution_achieved_on_detection"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sample_spatial_resolution_achived_on_input"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sample_spatial_resolution_class"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sample_type"/>
@@ -675,50 +672,28 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#hard_x-ray"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#named_photon_energy_ranges"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#has_photon_energy_range"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#photon_energy_range"/>
-                    <DataSomeValuesFrom>
-                        <DataProperty IRI="#energy_range_value"/>
-                        <DatatypeRestriction>
-                            <Datatype abbreviatedIRI="xsd:float"/>
-                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
-                            </FacetRestriction>
-                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100000.0</Literal>
-                            </FacetRestriction>
-                        </DatatypeRestriction>
-                    </DataSomeValuesFrom>
-                    <DataHasValue>
-                        <DataProperty IRI="#energy_range_unit"/>
-                        <Literal>eV</Literal>
-                    </DataHasValue>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#macro_sample_spatial_resolution"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#sample_spatial_resolution"/>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#sample_spatial_resolution"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataHasValue>
-                <DataProperty IRI="#sample_spatial_resolution_unit"/>
-                <Literal>micron</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_photon_energy_range"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#photon_energy_range"/>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#energy_range_value"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:float"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+                        </FacetRestriction>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100000.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+                <DataHasValue>
+                    <DataProperty IRI="#energy_range_unit"/>
+                    <Literal>eV</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#photon_energy_range"/>
@@ -998,6 +973,10 @@
         <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#hard_x-ray"/>
+        <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#high_precision_in_Q_space"/>
         <Class IRI="#detection_resolution"/>
     </SubClassOf>
@@ -1022,20 +1001,20 @@
         <Class IRI="#polarization"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#macro_sample_spatial_resolution"/>
+        <Class IRI="#sample_spatial_resolution_class"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#magnetic_field"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#micro_sample_spatial_resolution"/>
-        <Class IRI="#sample_spatial_resolution"/>
+        <Class IRI="#sample_spatial_resolution_class"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#monochromatic_beam"/>
         <Class IRI="#photon_energy_bandwidth"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#named_atomic_distance_range"/>
-        <Class IRI="#atomic_distance_range"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#named_photon_energy_ranges"/>
@@ -1043,7 +1022,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#nano_sample_spatial_resolution"/>
-        <Class IRI="#sample_spatial_resolution"/>
+        <Class IRI="#sample_spatial_resolution_class"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#near_edge"/>
@@ -1102,16 +1081,16 @@
         <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#sample_spatial_resolution"/>
-        <Class IRI="#space_time"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#sample_spatial_resolution_achieved_on_detection"/>
-        <Class IRI="#sample_spatial_resolution"/>
+        <Class IRI="#sample_spatial_resolution_class"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_spatial_resolution_achived_on_input"/>
-        <Class IRI="#sample_spatial_resolution"/>
+        <Class IRI="#sample_spatial_resolution_class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sample_spatial_resolution_class"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_type"/>

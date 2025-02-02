@@ -7,9 +7,7 @@ def test_get_all_technique():
 
 
 def test_get_technique():
-    all_techniques = {
-        tech for techniques in get_all_techniques().values() for tech in techniques
-    }
+    all_techniques = set(get_all_techniques())
     subset = get_techniques("XRF", "XRD")
     assert subset
     assert subset < all_techniques

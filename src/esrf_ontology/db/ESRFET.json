@@ -1,0 +1,255 @@
+[
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#LDDS-XAS",
+    "names": [
+      "LDDC-XAS",
+      "Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy",
+      "Laser-Driven Shock Compression X-ray Absorption Spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XRD",
+    "names": [
+      "ED-XRD",
+      "Energy Dispersive X-ray Diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#SSX",
+    "names": [
+      "SSX",
+      "Serial Synchrotron Crystallography"
+    ],
+    "description": "Like SCXRD but instead of measuring the same crystal under different orientations we measure many individual crystals with random orientation."
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#HR-XRPD",
+    "names": [
+      "HR-XRPD",
+      "High-Resolution X-ray Powder Diffraction"
+    ],
+    "description": "Like XRPD but with a high resolution in Q-space (or d-spacing)."
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XAS",
+    "names": [
+      "ED-XAS",
+      "Energy Dispersive X-ray Absorption Spectroscopy"
+    ],
+    "description": "XAS can be called ED-XAS when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#SCXRD",
+    "names": [
+      "SCXRD",
+      "Single crystal X-ray diffraction",
+      "SC-XRD",
+      "SCD",
+      "SXRD"
+    ],
+    "description": "Single crystal X-ray diffraction measured the diffraction from a single crystal to determine its crystal structure."
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#USAXS",
+    "names": [
+      "USAXS",
+      "Ultra-Small Angle X-ray Scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#GISAXS",
+    "names": [
+      "GISAXS",
+      "Grazing Incidence Small Angle X-ray Scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XANES",
+    "names": [
+      "ED-XANES",
+      "Energy Dispersive X-ray Absorption Near Edge Structure"
+    ],
+    "description": "XANES can be called ED-XANES when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#SAXS",
+    "names": [
+      "SAXS",
+      "Small-Angle X-ray Scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#WDS",
+    "names": [
+      "WDS",
+      "Wavelength Dispersive X-ray Spectroscopy"
+    ],
+    "description": "WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons"
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XANES",
+    "names": [
+      "XANES",
+      "X-ray Absorption Near Edge Structure"
+    ],
+    "description": "XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV."
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XFCT",
+    "names": [
+      "XFCT",
+      "X-ray Fluorescence Tomography"
+    ],
+    "description": "XRF under different sample orientations"
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRPD",
+    "names": [
+      "XRPD",
+      "X-ray Powder Diffraction"
+    ],
+    "description": "X-ray powder diffraction measured the diffraction from a powder to determine the crystal structure or multi-phase identifiaction and composition."
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#FTIR",
+    "names": [
+      "FTIR",
+      "Fourier Transform Infrared Spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-EXAFS",
+    "names": [
+      "ED-EXAFS",
+      "Energy Dispersive Extended X-ray Absorption Fine Structure"
+    ],
+    "description": "EXAFS can be called ED-EXAFS when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#PIXE",
+    "names": [
+      "PIXE",
+      "Particle Induced X-ray Emission"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#WAXS",
+    "names": [
+      "WAXS",
+      "Wide-angle X-ray Scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+    "names": [
+      "XAS",
+      "X-ray Absorption Spectroscopy"
+    ],
+    "description": "XAS measures a signal related to the X-ray absorption probability (could be fluorescence, photon electrons, auger electrons, all electrons, transmission) as function of the incomming X-ray photon energy. X-rays are absorbed by atomic core excitation (remove and core-shell electron from an atom)."
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+    "names": [
+      "XRF",
+      "X-ray Fluorescence Spectroscopy"
+    ],
+    "description": "XRF measures X-ray photons coming from a sample during irradition with X-rays and derives elemental composition from the energy of the fluorescence photons"
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#FF-XRF",
+    "names": [
+      "FF-XRF",
+      "Full-Field X-ray Fluorescence Imaging"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#CRYO-EM",
+    "names": [
+      "CRYO-EM",
+      "Cryo-electron microscopy",
+      "TEM under cryogenic conditions"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#NANO-XRF",
+    "names": [
+      "NANO-XRF",
+      "Scanning Nano X-ray fluorescence"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRD",
+    "names": [
+      "XRD",
+      "X-ray diffraction"
+    ],
+    "description": "X-ray diffraction measured the diffraction from a crystalline sample to determine the crystal structure, molecular structure, multi-phase identification and composition, ..."
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#EXAFS",
+    "names": [
+      "EXAFS",
+      "Extended X-ray Absorption Fine Structure"
+    ],
+    "description": "XAS can be called EXAFS when looking at the absorption probability within an X-ray photon energy range greater than 500 eV."
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#MICRO-XRF",
+    "names": [
+      "MICRO-XRF",
+      "Scanning Micro X-ray fluorescence"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#EDS",
+    "names": [
+      "EDS",
+      "Energy Dispersive X-ray Spectroscopy"
+    ],
+    "description": "EDS measures X-ray photons coming from a sample during irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons"
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#TXRF",
+    "names": [
+      "TXRF",
+      "Total Reflection X-ray Fluorescence"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#MACRO-XRF",
+    "names": [
+      "MACRO-XRF",
+      "Scanning Macro X-ray fluorescence"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XRPD",
+    "names": [
+      "ED-XRPD",
+      "Energy Dispersive X-ray Powder Diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#TEM",
+    "names": [
+      "TEM",
+      "Transmission Electron Microscopy"
+    ],
+    "description": "Transmission imaging of samples with electrons"
+  }
+]

@@ -1,6 +1,6 @@
 import logging
 import dataclasses
-from typing import List, Dict, Union, Set, MutableMapping
+from typing import List, Dict, Union, Set, MutableMapping, Tuple
 
 _logger = logging.getLogger(__name__)
 
@@ -8,16 +8,17 @@ _logger = logging.getLogger(__name__)
 @dataclasses.dataclass(frozen=True)
 class Technique:
     """Technique defined in an Ontology"""
-    pid: str  # Persistent IDentifier within the ESRF Ontology
+
     iri: str  # Internationalized Resource Identifier
-    name: str  # Human readable name
-    acronym: str  # Human readable acronym without spaces
+    names: Tuple[str]  # Human readable name (first is the perferred one)
+    description: str  # Human readable description
 
 
 @dataclasses.dataclass
 class TechniqueMetadata:
     """Set of techniques with associated metadata for file (BLISS scan info)
     and data portal (ICAT dataset metafata)."""
+
     techniques: Set[Technique]
 
     def get_scan_info(self) -> Dict[str, Dict[str, Union[List[str], str]]]:
@@ -37,18 +38,15 @@ class TechniqueMetadata:
         scan_info["techniques"] = self._get_nxnote()
 
     def _get_nxnote(self) -> Dict[str, Union[List[str], str]]:
-        acronyms = list()
         names = list()
         iris = list()
         for technique in sorted(
-            self.techniques, key=lambda technique: technique.acronym
+            self.techniques, key=lambda technique: technique.names[0]
         ):
-            acronyms.append(technique.acronym)
-            names.append(technique.name)
+            names.append(technique.names[0])
             iris.append(technique.iri)
         return {
             "@NX_class": "NXnote",
-            "acronyms": acronyms,
             "names": names,
             "iris": iris,
         }
@@ -68,7 +66,7 @@ class TechniqueMetadata:
             pids = list()
         techniques = dict(zip(pids, definitions))
         for technique in self.techniques:
-            techniques[technique.pid] = technique.acronym
+            techniques[technique.iri] = technique.names[0]
         for key, value in self._get_icat_metadata(techniques).items():
             try:
                 dataset[key] = value
@@ -83,9 +81,11 @@ class TechniqueMetadata:
     def get_dataset_metadata(self) -> Dict[str, str]:
         if not self.techniques:
             return dict()
-        techniques = {technique.pid: technique.acronym for technique in self.techniques}
+        techniques = {
+            technique.iri: technique.names[0] for technique in self.techniques
+        }
         return self._get_icat_metadata(techniques)
 
     def _get_icat_metadata(self, techniques: Dict[str, str]) -> Dict[str, str]:
-        pids, definitions = zip(*sorted(techniques.items(), key=lambda tpl: tpl[1]))
-        return {"technique_pid": " ".join(pids), "definition": " ".join(definitions)}
+        iris, definitions = zip(*sorted(techniques.items(), key=lambda tpl: tpl[1]))
+        return {"technique_pid": " ".join(iris), "definition": " ".join(definitions)}

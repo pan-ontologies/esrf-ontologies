@@ -5,7 +5,12 @@ def test_get_dataset_metadata():
     metadata = get_technique_metadata("XRF", "XAS")
     dataset_metadata = {
         "definition": "XAS XRF",
-        "technique_pid": "PaNET01196 PaNET01113",
+        "technique_pid": " ".join(
+            [
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+            ]
+        ),
     }
 
     assert metadata.get_dataset_metadata() == dataset_metadata
@@ -15,7 +20,12 @@ def test_fill_dataset_metadata():
     metadata = get_technique_metadata("XRF", "XAS")
     dataset_metadata = {
         "definition": "XAS XRF",
-        "technique_pid": "PaNET01196 PaNET01113",
+        "technique_pid": " ".join(
+            [
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+            ]
+        ),
     }
 
     dataset = dict(dataset_metadata)
@@ -24,7 +34,7 @@ def test_fill_dataset_metadata():
 
     dataset = {
         "definition": "XRF",
-        "technique_pid": "PaNET01113",
+        "technique_pid": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
     }
     metadata.fill_dataset_metadata(dataset)
     assert dataset == dataset_metadata
@@ -35,11 +45,17 @@ def test_fill_dataset_metadata():
 
     dataset = {
         "definition": "XRD",
-        "technique_pid": "PaNET01216",
+        "technique_pid": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRD",
     }
     dataset_metadata = {
         "definition": "XAS XRD XRF",
-        "technique_pid": "PaNET01196 PaNET01216 PaNET01113",
+        "technique_pid": " ".join(
+            [
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRD",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+            ]
+        ),
     }
     metadata.fill_dataset_metadata(dataset)
     assert dataset == dataset_metadata
@@ -51,11 +67,10 @@ def test_get_scan_info():
         "scan_meta_categories": ["techniques"],
         "techniques": {
             "@NX_class": "NXnote",
-            "acronyms": ["XAS", "XRF"],
-            "names": ["x-ray absorption spectroscopy", "fluorescence microscopy"],
+            "names": ["XAS", "XRF"],
             "iris": [
-                "http://purl.org/pan-science/PaNET/PaNET01196",
-                "http://purl.org/pan-science/PaNET/PaNET01113",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
             ],
         },
     }
@@ -68,11 +83,10 @@ def test_fill_scan_info():
         "scan_meta_categories": ["technique", "techniques"],
         "techniques": {
             "@NX_class": "NXnote",
-            "acronyms": ["XAS", "XRF"],
-            "names": ["x-ray absorption spectroscopy", "fluorescence microscopy"],
+            "names": ["XAS", "XRF"],
             "iris": [
-                "http://purl.org/pan-science/PaNET/PaNET01196",
-                "http://purl.org/pan-science/PaNET/PaNET01113",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
             ],
         },
     }
@@ -91,7 +105,12 @@ def test_double_technique_metadata():
 
     dataset_metadata = {
         "definition": "XAS XRF",
-        "technique_pid": "PaNET01196 PaNET01113",
+        "technique_pid": " ".join(
+            [
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+            ]
+        ),
     }
     assert metadata.get_dataset_metadata() == dataset_metadata
 
@@ -99,11 +118,10 @@ def test_double_technique_metadata():
         "scan_meta_categories": ["techniques"],
         "techniques": {
             "@NX_class": "NXnote",
-            "acronyms": ["XAS", "XRF"],
-            "names": ["x-ray absorption spectroscopy", "fluorescence microscopy"],
+            "names": ["XAS", "XRF"],
             "iris": [
-                "http://purl.org/pan-science/PaNET/PaNET01196",
-                "http://purl.org/pan-science/PaNET/PaNET01113",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
             ],
         },
     }
