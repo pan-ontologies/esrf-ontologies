@@ -15,4 +15,6 @@ __pycache__/
 *.egg-info/
 .eggs/
 /doc/_generated
-/doc/techniques.rst
+
+# Generates
+catalog-v001.xml

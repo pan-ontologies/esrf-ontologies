@@ -6,7 +6,7 @@ def test_get_dataset_metadata():
     metadata = get_technique_metadata("XAS")
     dataset_metadata = {
         "definition": "XAS",
-        "technique_pid": "PaNET01196",
+        "technique_pid": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
     }
 
     assert metadata.get_dataset_metadata() == dataset_metadata
@@ -16,7 +16,7 @@ def test_fill_dataset_metadata():
     metadata = get_technique_metadata("XAS")
     dataset_metadata = {
         "definition": "XAS",
-        "technique_pid": "PaNET01196",
+        "technique_pid": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
     }
 
     dataset = {}
@@ -34,9 +34,10 @@ def test_get_scan_info():
         "scan_meta_categories": ["techniques"],
         "techniques": {
             "@NX_class": "NXnote",
-            "acronyms": ["XAS"],
-            "names": ["x-ray absorption spectroscopy"],
-            "iris": ["http://purl.org/pan-science/PaNET/PaNET01196"],
+            "names": ["XAS"],
+            "iris": [
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS"
+            ],
         },
     }
     assert metadata.get_scan_info() == scan_info
@@ -48,9 +49,10 @@ def test_fill_scan_info():
         "scan_meta_categories": ["techniques"],
         "techniques": {
             "@NX_class": "NXnote",
-            "acronyms": ["XAS"],
-            "names": ["x-ray absorption spectroscopy"],
-            "iris": ["http://purl.org/pan-science/PaNET/PaNET01196"],
+            "names": ["XAS"],
+            "iris": [
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS"
+            ],
         },
     }
 
@@ -62,18 +64,20 @@ def test_fill_scan_info():
         "scan_meta_categories": ["techniques", "technique"],
         "techniques": {
             "@NX_class": "NXnote",
-            "acronyms": ["XAS"],
-            "names": ["x-ray absorption spectroscopy"],
-            "iris": ["http://purl.org/pan-science/PaNET/PaNET01196"],
+            "names": ["XAS"],
+            "iris": [
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS"
+            ],
         },
     }
     info = {
         "scan_meta_categories": ["techniques", "technique"],
         "techniques": {
             "@NX_class": "NXnote",
-            "acronyms": ["XRF"],
-            "names": ["fluorescence microscopy"],
-            "iris": ["http://purl.org/pan-science/PaNET/PaNET01113"],
+            "names": ["XRF"],
+            "iris": [
+                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF"
+            ],
         },
     }
     metadata.fill_scan_info(info)
@@ -81,7 +85,7 @@ def test_fill_scan_info():
 
 
 def test_wrong_technique_metadata():
-    with pytest.raises(KeyError, match="'WRONG' is not a known technique alias"):
+    with pytest.raises(KeyError, match="'WRONG' is not a known technique name"):
         get_technique_metadata("XAS", "WRONG")
 
 

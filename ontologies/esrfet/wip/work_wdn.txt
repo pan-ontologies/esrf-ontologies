@@ -1,0 +1,530 @@
+To DISCUSS:
+-----------
+
+1. some standard ranges need to exist like in the case of atomic_distance_range(?).
+   We need to name them and keep them as classes? If there are certain discrete bounds
+   we need to keep them with a name as classes and define them according to the value 
+   of the data-property. 
+   If we need a free given value we need it to be a data-property in a class as well.
+   Same for: energy_range, atomic_distance_resolution, sample_spatial_resolution 
+
+TODO:
+-----
+
+1. Put the current building blocks in protege
+2. Define several PaNET and new ESRF techniques based on thse building blocks
+3. ISDD presentation on the 21th (ask for EXP volunteers) -> define their techniques + add more building blocks
+
+Ontology usage:
+---------------
+
+- Question Type 1: 
+  I want to find out which pigments the painter used in this painting. Which technique can I use for that?
+  I want to use X-ray powder diffraction to find out which pigments the painter used in this painting. Would this work and if yes, what are the limitations.
+
+- Question Type 2:
+  Am I using the same technique as in this particular scientific publication?
+
+- Question Type 3:
+  I want to use a specific technique (e.g. derived from question type 1). Where do I go for that?
+
+- Question Type 4:
+  I want to use a specific technique (e.g. derived from question type 1). Who do I contact to know whether this is the right thing to do for my particular use case?
+
+- Question Type 5:
+  Give me a list of non-existing techniques that could solve new scientific problems.
+
+- Question Type 6:
+  How are X-ray powder diffraction and X-ray absorption spectroscopy related? What is the overlap and the differences in terms of characteristics?
+  How are X-ray powder diffraction and X-ray absorption spectroscopy related? What is the overlap and the differences in terms of scientic problems they can solve?
+
+Ontology design principles:
+---------------------------
+
+- Deferential definition of techniques:
+Suppose technique1 = block1 AND block2. Now we create a new technique technique2 = block1 AND block2 AND block3
+but it is not a specialization of technique1. This means we need to re-define technique1 = block1 AND block2 AND block4.
+
+- Define classes and let the tree structure be infered instead of creating a taxonomy only structure like PaNET:
+technique1 = block1 AND block2 defines the technique using other classes and inheritance or better object and data properties.
+
+- insert individuals for each leaf-class to let the reasoner find inconcistencies.
+
+- Every thechnique has a list of labels and two of them are necessary and special: the default short name
+(technique accronym) and the default long name (full technique name) for human concumption. For APIs all
+labels are equal.
+
+Adding technique:
+
+- "Name" when creating a new technique class (used only for the IRI): XAS
+- Add "Annotation" "rdfs:label" (used for display in protege and default long name?): XAS
+- Add "Annotation" "skos:prefLabel" (default long name?): X-ray Absorption Spectroscopy
+- Add "Annotation" "skos:altLabel" (add short or long names to the list of technique labels): ... 
+- "Equivalent To" (): logical operators to combine classes and data property
+
+object properties connect classes
+
+
+ISDD Presentation OSCAR:
+------------------------
+
+- Problem we focus on the ultimate goal and as a result we get nothing done.
+- Ultimate goal: "data speaks for itself" which means
+                 in HDF5: contains meaning in the context of a technique for data processing
+                 in ICAT: search
+- Solution: NeXus
+- Proposal: Start with the context
+- Define techniques:
+           - Taxonomies (flat list of names): show Giannis google doc (Renauld)
+           - Ontologies (define techniques based on hpw they are related to eachother):
+                - subsclassing: PANET
+                - composition: like LEGO
+- Freedom to define new techniques and blocks as we go
+- How can I bother with it? In preparation for the OSCAR 
+
+- OSCAR: create a process on how each institute can define its own ontology and connect/influence a central ontology (PANET).
+         Common vocab. and common understanding when discussing techniques.
+
+
+Technique Characteristics:
+--------------------------
+
+When X-rays or electrons interact with matter (for example atoms bound in molecules or crystals) a cascade of several events could occur, each of them
+having a different probability to occur. Since you have many atoms, all possible events are happening at the same time. Depending on the detection types
+you use, you can only see a subset of all the possible events, often only one specific cascade of events.
+
+An example of a cascade of events: X-ray photon energy is transferred to an inner core electron of an atom (atomic core excitation). The atom that is left
+after this is in a unstable state and naturally reverts to its ground state by an electron falling back from a higher energy level and the energy is
+release in one of these forms: as an X-ray (fluorescence), as an electron from a higher energy level (Auger). So there are two event cascades described here
+which could be called fluorescence and Auger. You can detect fluorescence, Auger or both.
+
+"sample-input": the thing that leads to the cascade of events
+"interaction": is the first step of a cascade
+"detection": selection of cascades you measure
+
+For example "atomic core excitation" are all the events cascades that result from atomic core excitation.
+
+
+
+"sample-input" and "detection" can have characteristics.
+
+If "sample-input" are X-rays, the X-rays have characteristics. They have a energy distribution that could change in space and time.
+The energy distribution can be narrow (monochromatic in which case it has an energy, e.g. 10 keV),
+wide (pink) or very wide (white). X-rays also have a spatial distribution: parallel and not parallel.
+When parallel it can have a diameter which is in the nano, micro etc. length scale. 
+
+If "detection" is transmission, it can be a diode or a full-field camera (point or image). If "detection" is fluorescence, it has
+an energy resolution (smallest difference on photon energy that can be distinguished) and a range (e.g. >= 1 keV)
+
+Source, sample and detector can move during the measurement: images, tomography, ...
+
+Techniques:
+-----------
+
+x-ray absorption spectroscopy (XAS)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+
+x-ray absorption near edge structure (XANES)
+    - atomic core excitation (interaction)
+    - in-energy range < 500 eV (sample-input)
+
+extended x-ray absorption fine structure (EXAFS)
+    - atomic core excitation (interaction)
+    - in-energy range > 500 eV (sample-input)
+
+scanning transmission x-ray microscopy (STXM)
+    TODO:
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - tranmission (detection)
+    - scanning nano spatial resolution (< 0.1 micron) of the sample (detection)
+
+energy dispersive extended x-ray absorption fine structure (ED-EXAFS)
+    - atomic core excitation (interaction)
+    - in-energy range > 500 eV (sample-input)
+    - disperse in-energy in space (sample-input)
+
+energy dispersive x-ray absorption spectroscopy (NEW, ED-XAS)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - disperse in-energy in space (sample-input)
+
+laser-driven shock compression x-ray absorption spectroscopy (NEW)
+Laser-driven dynamic compression x-ray absorption spectroscopy
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - in-compression (sample-input)
+
+microfocus x-ray absorption spectroscopy (micro-XAS)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - scanning micro spatial resolution (< 10 micron) of the sample (detection)
+
+x-ray fluorescence spectroscopy (XRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+
+scanning nano X-ray fluorescence (NEW, nano-XRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - scanning nano spatial resolution (< 0.1 micron) of the sample (detection)
+
+scanning micro X-ray fluorescence (NEW, μXRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - scanning micro spatial resolution (< 10 micron) of the sample (detection)??
+
+scanning macro X-ray fluorescence (NEW, MA-XRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - scanning macro spatial resolution (> 10 micron) of the sample (detection)
+
+full-field x-ray fluorescence imaging (NEW, FF-XRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - spatial resolution of the sample on the detector side (detection)
+
+total reflection X-ray fluorescence (NEW, TXRF)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - X-rays IN at angles < 1 degree (sample-input)
+
+energy dispersive x-ray fluorescence spectroscopy (NEW)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - a detector that can distinguish X-ray energies and count them (detection)
+    - X-rays IN (sample-input)
+
+energy dispersive x-ray spectroscopy (EDS)
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - a detector that can distinguish X-ray energies and count them (detection)
+
+x-ray fluoresence computed tomography
+    - atomic core excitation (interaction)
+    - fluorescence (detection)
+    - multi-projections of the sample (detection)
+
+x-ray emission spectroscopy
+    TODO: XES (non-resonant), RIXS (resonant), ...
+
+x-ray photoelectron spectroscopy (XPS)
+    - atomic core excitation (interaction)
+    - photo-electrons (detection)
+
+x-ray photoelectron emission (X-PEEM)
+    TODO:
+    - atomic core excitation (interaction)
+    - photo-electrons (detection)
+    - X-rays IN (sample-in) ?
+
+high resolution x-ray photoelectron spectroscopy (HR-XPS)
+    - atomic core excitation (interaction)
+    - photo-electrons (detection)
+    - monochromatic (DE/E < 1e-3) X-rays IN which results in photo-electrons with a smaller energy bandwidth
+
+ambient pressure x-ray photoelectron spectroscopy (AP-XPS)
+    https://www.sciencedirect.com/science/article/pii/S0167572918300116
+
+hard x-ray photoelectron spectroscopy
+    - atomic core excitation (interaction)
+    - photo-electrons (detection)
+    - X-rays IN with energy > 5to10 keV (sample-input)
+
+x-ray photon correlation spectroscopy (XPCS)
+    TODO: 
+
+nonlinear x-ray spectroscopy
+    TODO: 
+
+x-ray magnetic circular dichroism (XMCD)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - in-magnetic field (sample-input)
+    - X-rays IN left circular polarized (sample-input)
+    - X-rays IN right circular polarized (sample-input)
+
+XMCD total electron yield (XMCD-TEY)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - in-magnetic field (sample-input)
+    - X-rays IN left circular polarized (sample-input)
+    - X-rays IN right circular polarized (sample-input)
+    - total-electrons = auger + photo electrons (detection)
+
+x-ray magnetic linear dichroism (XMLD)
+    - atomic core excitation (interaction)
+    - in-energy range (sample-input)
+    - in-magnetic field (sample-input)
+    - X-rays IN horizontal linear polarized (sample-input)
+    - X-rays IN vertical linear polarized (sample-input)
+
+x-ray natural circular dichroism (XNCD)
+x-ray natural linear dichroism (XNLD)
+x-ray linear dichroism
+x-ray magnetochiral dichroism (XMCHD)
+
+x-ray diffraction
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+
+x-ray single crystal diffraction
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - single crystal sample (sample)
+
+serial synchrotron crystallography (SSX)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - measure diffraction from many single crystals one by one (sample)
+
+serial femtosecond crystallography
+time resolved serial femtosecond crystallography
+time resolved serial synchrotron crystallography
+fixed target serial synchrotron crystallography
+lipidic cubic phase serial synchrotron crystallography
+
+x-ray powder diffraction
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - measure diffraction from many many crystals at once (sample)
+
+high resolution powder diffraction (HRXRPD)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - measure diffraction from many many crystals at once (sample)
+    - delta-Q < 1e-4 Å-1 (detection)
+
+energy dispersive x-ray diffraction (ED-XRD)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - a detector that can distinguish X-ray energies and count them (detection)
+
+small angle x-ray scattering (SAXS)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+
+ultra small angle x-ray scattering (USAXS)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 0.1 nm^-1 (detection)
+
+wide angle x-ray scattering (WAXS)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax > 1 nm^-1 (detection)
+
+grazing incidence x-ray diffraction (GIXRD)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - X-rays IN at angles < 1 degree (sample-input)
+
+grazing incidence small angle x-ray scattering
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - X-rays IN at angles < 1 degree (sample-input)
+
+grazing incidence wide angle scattering
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax > 1 nm^-1 (detection)
+    - X-rays IN at angles < 1 degree (sample-input)
+
+soft x-ray small angle scattering
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - X-rays IN energy < ???
+
+micro small angle x-ray scattering tomography
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - micro spatial resolution (< 10 micron) of the sample (detection)
+    - multi-projections of the sample (detection)
+
+micro grazing incidence small angle x-ray scattering tomography
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - micro spatial resolution (< 10 micron) of the sample (detection)
+    - multi-projections of the sample (detection)
+    - X-rays IN at angles < 1 degree (sample-input)
+
+biological small angle scattering
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - biological sample (sample)
+
+anomalous small angle x-ray scattering (ASAXS)
+    - elastic scattering (interaction)
+    - diffraction of elastic scattered photons (detection)
+    - Qmax < 1 nm^-1 (detection)
+    - anomalous: SAXS at several monochromatic in-energies (TODO)
+
+
+photoelectron diffraction
+x-ray photoelectron diffraction (XPD)
+    https://msspec.cnrs.fr/spectroscopies/ped/ped.html
+    - atomic core excitation (interaction)
+    - diffraction of photo-electrons (detection)
+
+
+
+soft x-ray diffraction
+multi wavelength anomalous diffraction
+pulse overlap diffraction
+surface x-ray diffraction
+x-ray diffraction imaging
+diffuse small angle x-ray scattering
+microfocus macromolecular crystallography
+nanofocus macromolecular crystallography
+long wavelength crystallography
+anomalous solution x-ray scattering
+
+
+
+
+https://www.diamond.ac.uk/Instruments/Techniques/
+
+https://www.esrf.fr/files/live/sites/www/files/events/conferences/2014/ESRF%20ILL%20Summer%20Programme%202014/Presentations/Inelastic%20X-Ray%20Scattering_Krisch.pdf
+
+
+
+
+
+
+cryo x-ray microscopy
+microfocus x-ray scattering
+nanofocus x-ray scattering
+
+borrmann effect
+correlative light x-ray microscopy
+
+inelastic small angle scattering
+inelastic x-ray scattering
+inelastic x-ray small angle scattering
+small angle inelastic scattering
+
+resonant elastic x-ray scattering (REXS)
+resonant inelastic x-ray scattering (RIXS)
+resonant soft x-ray scattering
+resonant x-ray scattering
+
+magnetic x-ray tomography
+
+soft x-ray imaging
+soft x-ray probe
+tender x-ray probe
+x-ray birefringence imaging 
+x-ray excited optical luminescence
+x-ray holography
+x-ray imaging
+x-ray lithography
+x-ray microscopy
+x-ray microtomography
+x-ray photoemission microscopy
+x-ray reflectivity
+x-ray refraction imaging
+x-ray refraction tomography
+x-ray scanning microscopy
+x-ray scattering
+x-ray standing wave
+x-ray tomography
+
+
+
+
+Categories:
+-----------
+
+x-ray absorption
+    - atomic core excitation (interaction)
+
+x-ray spectroscopy
+    - X-rays IN (sample-input) ???
+
+hard x-ray probe
+    - X-rays IN with energy > 5to10 keV (sample-input)
+
+
+
+HDF5 file or ICAT dataset would be an instance of the ESRF Ontology.
+
+SparQl query: query about the schema but also the instances.
+
+Open world assumption
+
+Triple-store based on RDF: this is where the beamlines send their instances (datasets) via a SparQl query (INSERT)
+
+
+Detection mode:
+
+Photons have:
+  - count
+  - direction
+  - energy
+
+Detectors that only count (diodes)
+Detectors that count and measure the energy                                      -> energy dispersive detection mode
+Detectors that count and measure spatial distribution                            -> angular dispersive detection mode
+Detectors that count, measure the energy and measure spatial distribution
+
+
+Space & Time:
+
+
+    Category 1: sample and primary beam don't move with respect to eachother
+
+        single pixel detectors
+        multi pixel detectors
+
+    Category 2: sample and primary beam move with respect to eachother
+
+        single pixel detectors
+        multi pixel detectors
+
+
+1 pixel counts photons and optionally measured their energy (to obtain an energy histogram of the measured photons)
+
+
+Sample input:
+
+    Energy dispersive in space
+
+    
+
+How to use the NeXus Ontology:
+------------------------------
+
+Data analysis software needs to know:
+
+- Can I calculate elemental concentrations from this data?
+- What can I calculate from this data?
+
+
+https://manual.nexusformat.org/classes/applications/NXfluo.html
+
+Group "/entry/instrument/fluorescence" is related to these building blocks:
+- detect_photon_energy
+- fluorescence
+
+Dataset "/entry/instrument/source/probe" is related to these building blocks:
+- x-ray
+
+How to deal with technique purpose:
+-----------------------------------
+
+Combine our building blocks to create scientific purposes (3D elemental concentrations, Protein structures, Residual stress, ...).
+
+Then we can ask the ontology:
+    - What is the purpose of XRF?
+    - What techniques provide elemental concentrations?
+
+If you cannot derive purpose from the building blocks, you are missing building blocks.
+
+The building blocks you need for purpose may be more than the building blocks you need just for differentiating techniques.

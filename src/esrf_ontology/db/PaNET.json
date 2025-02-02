@@ -1,0 +1,686 @@
+[
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01275",
+    "names": [
+      "ASAX",
+      "anomalous solution x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01274",
+    "names": [
+      "ASAXS",
+      "anomalous small angle x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01314",
+    "names": [
+      "CLXM",
+      "correlative light x-ray microscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01207",
+    "names": [
+      "CT scan",
+      "x-ray tomography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01321",
+    "names": [
+      "EDE",
+      "ED-EXAFS",
+      "energy dispersive extended x-ray absorption fine structure"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01193",
+    "names": [
+      "EDX",
+      "energy dispersive x-ray spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01160",
+    "names": [
+      "EDXRD",
+      "energy dispersive x-ray diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01198",
+    "names": [
+      "EXAFS",
+      "extended x-ray absorption fine structure"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01310",
+    "names": [
+      "FT-SSX",
+      "fixed target serial synchrotron crystallography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01162",
+    "names": [
+      "GISAXS",
+      "grazing incidence small angle x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01316",
+    "names": [
+      "GIWAXS",
+      "grazing incidence wide angle scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01161",
+    "names": [
+      "GIXD",
+      "grazing incidence x-ray diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01103",
+    "names": [
+      "HAXPES",
+      "hard photoelectron spectroscopy",
+      "hard x-ray photoelectron spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01297",
+    "names": [
+      "HR-XPS",
+      "high resolution x-ray photoelectron spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01182",
+    "names": [
+      "IXS",
+      "inelastic x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01311",
+    "names": [
+      "LCP-SSX",
+      "lipidic cubic phase serial synchrotron crystallography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01165",
+    "names": [
+      "MAD",
+      "multi wavelength anomalous dispersion",
+      "multi wavelength anomalous diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01167",
+    "names": [
+      "PhD",
+      "photoelectron diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01260",
+    "names": [
+      "REXS",
+      "resonant elastic x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01183",
+    "names": [
+      "RIXS",
+      "resonant inelastic x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01187",
+    "names": [
+      "RSXS",
+      "resonant soft x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01186",
+    "names": [
+      "RXS",
+      "resonant x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01188",
+    "names": [
+      "SAXS",
+      "small angle x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01168",
+    "names": [
+      "SFX",
+      "serial femtosecond crystallography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01169",
+    "names": [
+      "SSX",
+      "serial synchrotron crystallography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01219",
+    "names": [
+      "STXM",
+      "scanning transmission x-ray microscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01102",
+    "names": [
+      "SXRD",
+      "x-ray single crystal diffraction",
+      "single crystal x-ray diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01309",
+    "names": [
+      "TR-SFX",
+      "time resolved serial femtosecond crystallography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01312",
+    "names": [
+      "TR-SSX",
+      "time resolved serial synchrotron crystallography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01241",
+    "names": [
+      "USAXS",
+      "ultra small angle x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01191",
+    "names": [
+      "WAXS",
+      "wide angle x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01197",
+    "names": [
+      "XAFS",
+      "x-ray absorption fine structure"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01199",
+    "names": [
+      "XANES",
+      "NEXAFS",
+      "x-ray absorption near edge structure"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01196",
+    "names": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01327",
+    "names": [
+      "XBI",
+      "x-ray birefringence imaging"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01140",
+    "names": [
+      "XEOL",
+      "x-ray excited optical luminescence"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01200",
+    "names": [
+      "XES",
+      "x-ray emission spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01137",
+    "names": [
+      "XMCD",
+      "x-ray magnetic circular dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01221",
+    "names": [
+      "XMCD TEY",
+      "XMCD total electron yield"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01301",
+    "names": [
+      "XMChiD",
+      "x-ray magnetochiral dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01259",
+    "names": [
+      "XMLD",
+      "x-ray magnetic linear dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01302",
+    "names": [
+      "XNCD",
+      "x-ray natural circular dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01303",
+    "names": [
+      "XNLD",
+      "x-ray natural linear dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01205",
+    "names": [
+      "XPCS",
+      "x-ray photon correlation spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01101",
+    "names": [
+      "XPD",
+      "x-ray powder diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01204",
+    "names": [
+      "XPS",
+      "x-ray photoelectron spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01216",
+    "names": [
+      "XRD",
+      "x-ray diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01149",
+    "names": [
+      "XRR",
+      "x-ray reflectivity",
+      "x-ray reflectometry"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01173",
+    "names": [
+      "XSW",
+      "x-ray standing wave"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01218",
+    "names": [
+      "ambient pressure x-ray photoelectron spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01325",
+    "names": [
+      "borrmann effect"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01315",
+    "names": [
+      "cryo x-ray microscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01280",
+    "names": [
+      "diffuse small angle x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01013",
+    "names": [
+      "hard x-ray probe"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01281",
+    "names": [
+      "inelastic x-ray small angle scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01305",
+    "names": [
+      "long wavelength crystallography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01313",
+    "names": [
+      "magnetic x-ray tomography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01287",
+    "names": [
+      "micro GISAXS tomography",
+      "micro grazing incidence small angle x-ray scattering tomography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01286",
+    "names": [
+      "micro SAXS tomography",
+      "micro small angle x-ray scattering tomography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01306",
+    "names": [
+      "microfocus MX",
+      "microfocus macromolecular crystallography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01322",
+    "names": [
+      "microfocus x-ray absorption spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01271",
+    "names": [
+      "microfocus x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01307",
+    "names": [
+      "nanofocus MX",
+      "nanofocus macromolecular crystallography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01272",
+    "names": [
+      "nanofocus x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01229",
+    "names": [
+      "nonlinear x-ray spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01238",
+    "names": [
+      "pulse overlap diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01283",
+    "names": [
+      "soft x-ray diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01289",
+    "names": [
+      "soft x-ray imaging"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01015",
+    "names": [
+      "soft x-ray probe"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01282",
+    "names": [
+      "soft x-ray small angle scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01172",
+    "names": [
+      "surface x-ray diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01014",
+    "names": [
+      "tender x-ray probe"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01227",
+    "names": [
+      "x-ray absorption"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01290",
+    "names": [
+      "x-ray diffraction imaging"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01095",
+    "names": [
+      "x-ray fluorescence spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01266",
+    "names": [
+      "x-ray holography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01285",
+    "names": [
+      "x-ray imaging"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01300",
+    "names": [
+      "x-ray linear dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01224",
+    "names": [
+      "x-ray lithography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01180",
+    "names": [
+      "x-ray microscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01208",
+    "names": [
+      "x-ray microtomography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01284",
+    "names": [
+      "x-ray photoelectron diffraction"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01258",
+    "names": [
+      "x-ray photoelectron emission"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01294",
+    "names": [
+      "x-ray photoemission electron microscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01261",
+    "names": [
+      "x-ray refraction imaging",
+      "x-ray refraction radiography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01262",
+    "names": [
+      "x-ray refraction tomography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01295",
+    "names": [
+      "x-ray scanning microscopy",
+      "scanning x-ray microscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01184",
+    "names": [
+      "x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01156",
+    "names": [
+      "x-ray spectroscopy"
+    ],
+    "description": ""
+  }
+]
