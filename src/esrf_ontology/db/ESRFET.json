@@ -89,6 +89,16 @@
     "description": ""
   },
   {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#HERFD-XAS",
+    "names": [
+      "HERFD-XAS",
+      "High-Energy Resolution Fluorescence Detected X-ray Absorption Spectrscopy",
+      "HERFD",
+      "High-Energy Resolution Fluorescence Detected"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#HR-XRPD",
     "names": [
       "HR-XRPD",
@@ -130,10 +140,34 @@
     "description": ""
   },
   {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#NR-XMLD",
+    "names": [
+      "NR-XMLD",
+      "Non-Reciprocal X-ray Magnetic Linear Dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#PFY-XAS",
+    "names": [
+      "PFY-XAS",
+      "Partial Fluorescence Yield X-ray Absorption Spectroscopy"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#PIXE",
     "names": [
       "PIXE",
       "Particle Induced X-ray Emission"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#RIXS",
+    "names": [
+      "RIXS",
+      "Resonant Inelastic X-ray Scattering"
     ],
     "description": ""
   },
@@ -171,6 +205,14 @@
       "Transmission Electron Microscopy"
     ],
     "description": "Transmission imaging of samples with electrons"
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#TFY-XAS",
+    "names": [
+      "TFY-XAS",
+      "Total Fluorescence Yield X-ray Absorption Spectroscopy"
+    ],
+    "description": ""
   },
   {
     "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#TXRF",
@@ -221,12 +263,68 @@
     "description": "XAS measures a signal related to the X-ray absorption probability (could be fluorescence, photon electrons, auger electrons, all electrons, transmission) as function of the incomming X-ray photon energy. X-rays are absorbed by atomic core excitation (remove and core-shell electron from an atom)."
   },
   {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XDMR",
+    "names": [
+      "XDMR",
+      "X-ray Detected Magnetic Resonance"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XES",
+    "names": [
+      "XES",
+      "X-ray Emission Spectroscopy"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XFCT",
     "names": [
       "XFCT",
       "X-ray Fluorescence Tomography"
     ],
     "description": "XRF under different sample orientations"
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XLD",
+    "names": [
+      "XLD",
+      "X-ray Linear Dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XMCD",
+    "names": [
+      "XMCD",
+      "X-ray Magnetic Circular Dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XMLD",
+    "names": [
+      "XMLD",
+      "X-ray Magnetic Linear Dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XM\u03c7D",
+    "names": [
+      "XM\u03c7D",
+      "X-ray MagnetoChiral Dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XNCD",
+    "names": [
+      "XNCD",
+      "X-ray Natural Circular Dichroism"
+    ],
+    "description": ""
   },
   {
     "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRD",
@@ -251,5 +349,13 @@
       "X-ray Powder Diffraction"
     ],
     "description": "X-ray powder diffraction measured the diffraction from a powder to determine the crystal structure or multi-phase identifiaction and composition."
+  },
+  {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRS",
+    "names": [
+      "XRS",
+      "X-ray Raman Scattering"
+    ],
+    "description": ""
   }
 ]
