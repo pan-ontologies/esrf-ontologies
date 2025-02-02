@@ -169,7 +169,6 @@ build_doc:
   image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.9_doc  # pandoc:latest
   script:
     - python -m pip install .[doc]
-    - python scripts/generate.py
     - sphinx-build doc html
   after_script:
     - ls -Rl html
