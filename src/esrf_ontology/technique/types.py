@@ -7,6 +7,7 @@ _logger = logging.getLogger(__name__)
 
 @dataclasses.dataclass(frozen=True)
 class Technique:
+    """Technique defined in an Ontology"""
     pid: str  # Persistent IDentifier within the ESRF Ontology
     iri: str  # Internationalized Resource Identifier
     name: str  # Human readable name
@@ -15,6 +16,8 @@ class Technique:
 
 @dataclasses.dataclass
 class TechniqueMetadata:
+    """Set of techniques with associated metadata for file (BLISS scan info)
+    and data portal (ICAT dataset metafata)."""
     techniques: Set[Technique]
 
     def get_scan_info(self) -> Dict[str, Dict[str, Union[List[str], str]]]:
