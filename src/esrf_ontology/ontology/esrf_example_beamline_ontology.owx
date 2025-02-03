@@ -640,14 +640,6 @@
     <EquivalentClasses>
         <Class IRI="#XAS"/>
         <ObjectIntersectionOf>
-            <Class IRI="#atomic_core_excitation"/>
-            <Class IRI="#detection_as_a_function_of_incident_energy"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#XAS"/>
-        <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#aims_at"/>
@@ -1579,6 +1571,15 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XAS</IRI>
         <Literal>XAS measures a signal related to the X-ray absorption probability (could be fluorescence, photon electrons, auger electrons, all electrons, transmission) as function of the incomming X-ray photon energy. X-rays are absorbed by atomic core excitation (remove and core-shell electron from an atom).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XAS</IRI>
+        <Literal>Old class based definition
+
+atomic_core_excitation
+ and detection_as_a_function_of_incident_energy
+ and x-ray</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
