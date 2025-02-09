@@ -528,3 +528,30 @@ Then we can ask the ontology:
 If you cannot derive purpose from the building blocks, you are missing building blocks.
 
 The building blocks you need for purpose may be more than the building blocks you need just for differentiating techniques.
+
+Object properties:
+------------------
+
+- What are we measuring (it is always going to be the result of the interaction of the input and the sample)
+- How are we measuring it
+- What do we derive from what we are measuring
+
+technique  ->  measures property derived from the result of interaction     -> X-ray absorption probability
+technique  ->  measures result of interaction                               -> X-rays, X-ray fluorescence, total electrons, auger electrons, diffraction (elastic scattering from ordered materials)
+
+interaction result  ->  requires sample type     -> single crystal, powder, fiber, ...
+interaction result  ->  has photon energy range  -> UV, hard X-rays, X-ray, Soft-X-rays, gamma rays ????
+interaction result  ->  has count    ????
+
+technique  ->  measures as a function of            -> incident X-ray energy, sample orientation, sample translation, time
+technique  ->  measures with a detector type        -> energy dispersive detector, point detector, area detector, strip detector, wavelength dispersive detector
+technique  ->  measures with a detector resolution  -> ultra large length scales, ...
+
+experiment -> has technique -> XRD, XRF, ...
+experiment -> has scientist -> wout, Giannis
+experiment -> has location -> ESRF ID21
+
+instrument -> supports technique -> XRD, XRF, ...
+
+diffraction (interaction result) 'any of' single crystal, powder, fiber
+x-ray powder diffraction (technique) 'exactly' powder
