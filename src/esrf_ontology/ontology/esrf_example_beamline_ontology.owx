@@ -42,6 +42,12 @@
         <Class IRI="#MA-XRF"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PaN_experiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scientist"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TXRF"/>
     </Declaration>
     <Declaration>
@@ -79,6 +85,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#auger_electrons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#beamline"/>
     </Declaration>
     <Declaration>
         <Class IRI="#biological_sample"/>
@@ -354,6 +363,9 @@
         <ObjectProperty IRI="#has_polarization"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#has_purpose"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#involves_detector"/>
     </Declaration>
     <Declaration>
@@ -361,6 +373,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#uses_detection_method"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses_detector"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#uses_probe"/>
@@ -453,10 +468,16 @@
         <NamedIndividual IRI="#experiment000"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#localSA"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#micro-XRF_individual"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#nano-XRF_individual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#xrayProbe"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
@@ -464,6 +485,13 @@
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01012"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses_probe"/>
+            <Class IRI="#x-ray"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
         <Class IRI="#XRF"/>
@@ -689,7 +717,10 @@
         <Class IRI="#experimental_technique"/>
         <ObjectIntersectionOf>
             <Class IRI="http://purl.org/pan-science/PaNET/PaNET00001"/>
-            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01012"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#uses_probe"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01012"/>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -825,10 +856,6 @@
             <Class IRI="#photo_electrons"/>
         </ObjectUnionOf>
     </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="http://purl.org/pan-science/PaNET/PaNET00001"/>
-        <Class IRI="#probe_type"/>
-    </SubClassOf>
     <SubClassOf>
         <Class IRI="#DAC"/>
         <Class IRI="#sample_input"/>
@@ -1230,8 +1257,20 @@
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="PaNET:dataset"/>
+        <Class IRI="#beamline"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PaN_experiment"/>
+        <Class IRI="#beamline"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#area_detector"/>
         <Class IRI="#point_detector"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#beamline"/>
+        <Class IRI="#experimental_technique"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#micro-XRF"/>
@@ -1302,6 +1341,10 @@
         <NamedIndividual IRI="#dataset000_full-field-imaging_individual"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#local_structure_analysis"/>
+        <NamedIndividual IRI="#localSA"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#micro-XRF"/>
         <NamedIndividual IRI="#micro-XRF_individual"/>
     </ClassAssertion>
@@ -1309,20 +1352,14 @@
         <Class IRI="#nano-XRF"/>
         <NamedIndividual IRI="#nano-XRF_individual"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01012"/>
+        <NamedIndividual IRI="#xrayProbe"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_experimental_property"/>
+        <ObjectProperty IRI="#aims_at"/>
         <NamedIndividual IRI="#FF-XRF_individual"/>
-        <NamedIndividual IRI="#ID31-experiment000-property1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_experimental_property"/>
-        <NamedIndividual IRI="#FF-XRF_individual"/>
-        <NamedIndividual IRI="#ID31-experiment000-property2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_experimental_property"/>
-        <NamedIndividual IRI="#FF-XRF_individual"/>
-        <NamedIndividual IRI="#ID31-experiment000-property3"/>
+        <NamedIndividual IRI="#localSA"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#belongs_to"/>
@@ -1334,16 +1371,6 @@
         <NamedIndividual IRI="#experiment000"/>
         <NamedIndividual IRI="#ID31-experiment000-property1"/>
     </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_experimental_property"/>
-        <NamedIndividual IRI="#experiment000"/>
-        <NamedIndividual IRI="#ID31-experiment000-property2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_experimental_property"/>
-        <NamedIndividual IRI="#experiment000"/>
-        <NamedIndividual IRI="#ID31-experiment000-property3"/>
-    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#belongs_to"/>
         <NamedIndividual IRI="#dataset000_FF-XRF_individual"/>
@@ -1354,6 +1381,14 @@
         <NamedIndividual IRI="#dataset000_area-detector_individual"/>
         <Literal>dataset000</Literal>
     </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#aims_at"/>
+        <ObjectProperty IRI="#has_purpose"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#involves_detector"/>
+        <ObjectProperty IRI="#uses_detector"/>
+    </EquivalentObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#aims_at"/>
         <Class IRI="#experimental_technique"/>

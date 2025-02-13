@@ -81,3 +81,85 @@ XAS techniques
 
 XRF techniques
 ![XRF techniques with their building blocks](images/XRF%20techniques.png)
+
+## Example for connecting ontologies
+
+In order to demonstrate the use of our ontology we need to connect it with other ontologies and allow the reasoner infer some
+new knowledge.
+
+Lets assume we have an experimental ontology that has properties that can be used to describe an experiment.
+These properties are very close tho the concepts defined in NeXUS standard since it describes a file structure
+of properies that the experiments would need to save.
+Here we define such properties and their individuals:
+
+<ClassAssertion>
+   <Class IRI="#property_1"/>
+   <NamedIndividual IRI="#ID31-experiment000-property1"/>
+</ClassAssertion>
+<ClassAssertion>
+   <Class IRI="#property_2"/>
+   <NamedIndividual IRI="#ID31-experiment000-property2"/>
+</ClassAssertion>
+<ClassAssertion>
+   <Class IRI="#property_3"/>
+   <NamedIndividual IRI="#ID31-experiment000-property3"/>
+</ClassAssertion>
+<ClassAssertion>
+   <Class IRI="#property_4"/>
+   <NamedIndividual IRI="#ID31-experiment000-property4"/>
+</ClassAssertion>
+
+<ObjectPropertyAssertion>
+   <ObjectProperty IRI="#has_experimental_property"/>
+   <NamedIndividual IRI="#experiment000"/>
+   <NamedIndividual IRI="#ID31-experiment000-property1"/>
+</ObjectPropertyAssertion>
+<ObjectPropertyAssertion>
+   <ObjectProperty IRI="#has_experimental_property"/>
+   <NamedIndividual IRI="#experiment000"/>
+   <NamedIndividual IRI="#ID31-experiment000-property2"/>
+</ObjectPropertyAssertion>
+<ObjectPropertyAssertion>
+   <ObjectProperty IRI="#has_experimental_property"/>
+   <NamedIndividual IRI="#experiment000"/>
+   <NamedIndividual IRI="#ID31-experiment000-property3"/>
+</ObjectPropertyAssertion>
+
+<Declaration>
+   <ObjectProperty IRI="#has_experimental_property"/>
+</Declaration>
+<ObjectPropertyDomain>
+   <ObjectProperty IRI="#has_experimental_property"/>
+   <Class IRI="#technique_property"/>
+</ObjectPropertyDomain>
+<ObjectPropertyRange>
+   <ObjectProperty IRI="#has_experimental_property"/>
+   <Class IRI="#experiment_property"/>
+</ObjectPropertyRange>
+
+<EquivalentClasses>
+   <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
+   <ObjectSomeValuesFrom>
+      <ObjectProperty IRI="#has_experimental_property"/>
+      <Class IRI="#property_2"/>
+   </ObjectSomeValuesFrom>
+</EquivalentClasses>
+
+<EquivalentClasses>
+   <Class IRI="#area_detector"/>
+   <ObjectIntersectionOf>
+      <Class IRI="#technique_property"/>
+      <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_experimental_property"/>
+            <Class IRI="#property_1"/>
+      </ObjectSomeValuesFrom>
+   </ObjectIntersectionOf>
+</EquivalentClasses>
+
+<EquivalentClasses>
+   <Class IRI="#full-field_imaging"/>
+   <ObjectSomeValuesFrom>
+      <ObjectProperty IRI="#has_experimental_property"/>
+      <Class IRI="#property_3"/>
+   </ObjectSomeValuesFrom>
+</EquivalentClasses>
