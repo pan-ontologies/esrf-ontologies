@@ -1,13 +1,13 @@
-"""rm -rf doc/_generated/; sphinx-build doc build/sphinx/html -E -a"""
-
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-from esrf_ontology import __version__ as release
+from importlib.metadata import version as get_version
+
+release = get_version("esrf-ontology")
 
 project = "esrf-ontology"
 version = ".".join(release.split(".")[:2])
-copyright = "2024-present, ESRF"
+copyright = "2024-2025, ESRF"
 author = "ESRF"
 docstitle = f"{project} {version}"
 

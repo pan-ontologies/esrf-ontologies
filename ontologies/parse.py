@@ -91,7 +91,7 @@ def generate_docs():
     headers = ["Name", "Alternative names", "Description"]
     table = [
         [
-            f"`{technique.names[0]} <{technique.iri}>`_",
+            f"`{technique.names[0]} <{technique.iri}>`_",  # noqa W604
             ", ".join(technique.names[1:]),
             technique.description,
         ]
