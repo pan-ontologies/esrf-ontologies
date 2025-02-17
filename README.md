@@ -109,6 +109,23 @@ Here we define such properties and their individuals:
    <NamedIndividual IRI="#ID31-experiment000-property4"/>
 </ClassAssertion>
 
+We also define the following object property that is connecting a technique_property used to describe techniques
+to a specific experiment_property through the Domain and Range properties.
+
+<Declaration>
+   <ObjectProperty IRI="#has_experimental_property"/>
+</Declaration>
+<ObjectPropertyDomain>
+   <ObjectProperty IRI="#has_experimental_property"/>
+   <Class IRI="#technique_property"/>
+</ObjectPropertyDomain>
+<ObjectPropertyRange>
+   <ObjectProperty IRI="#has_experimental_property"/>
+   <Class IRI="#experiment_property"/>
+</ObjectPropertyRange>
+
+Then we create the appropriete individuals to use the object property we created:
+
 <ObjectPropertyAssertion>
    <ObjectProperty IRI="#has_experimental_property"/>
    <NamedIndividual IRI="#experiment000"/>
@@ -125,24 +142,14 @@ Here we define such properties and their individuals:
    <NamedIndividual IRI="#ID31-experiment000-property3"/>
 </ObjectPropertyAssertion>
 
-<Declaration>
-   <ObjectProperty IRI="#has_experimental_property"/>
-</Declaration>
-<ObjectPropertyDomain>
-   <ObjectProperty IRI="#has_experimental_property"/>
-   <Class IRI="#technique_property"/>
-</ObjectPropertyDomain>
-<ObjectPropertyRange>
-   <ObjectProperty IRI="#has_experimental_property"/>
-   <Class IRI="#experiment_property"/>
-</ObjectPropertyRange>
-
+In the following snippets we see the appointment of these experimental properties in the definition of
+techniques like saying "if you use this specific kind of detector then you use this technique":
 <EquivalentClasses>
-   <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
-   <ObjectSomeValuesFrom>
-      <ObjectProperty IRI="#has_experimental_property"/>
-      <Class IRI="#property_2"/>
-   </ObjectSomeValuesFrom>
+<Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
+<ObjectSomeValuesFrom>
+<ObjectProperty IRI="#has_experimental_property"/>
+<Class IRI="#property_2"/>
+</ObjectSomeValuesFrom>
 </EquivalentClasses>
 
 <EquivalentClasses>
@@ -163,3 +170,14 @@ Here we define such properties and their individuals:
       <Class IRI="#property_3"/>
    </ObjectSomeValuesFrom>
 </EquivalentClasses>
+
+With the above we can see the reasoner infers different things for a given individual as shown in the following steps:
+
+Initialy it was infered to be a detector
+![XRF techniques with their building blocks](images/inference_as_detector.png)
+
+With the addition of another property the reasoner went deaper into infering the individual as a technique as well:
+![XRF techniques with their building blocks](images/inference_as_technique.png)
+
+Finally when adding the final property the reasoner was able to infer the exact technique used in this experiment:
+![XRF techniques with their building blocks](images/inference_as_specialized_technique.png)
