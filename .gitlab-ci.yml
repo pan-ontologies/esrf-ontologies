@@ -2,6 +2,13 @@ include:
   - project: dau/ci/pyci
     file: .gitlab-ci-template.yml
 
+check-ontologies-parse:
+  extends: .style
+  script:
+    - python -m pip install .[dev]
+    - python ontologies/parse.py
+    - git diff --exit-code
+
 test-3.8:
   extends: .test-3.8
 
