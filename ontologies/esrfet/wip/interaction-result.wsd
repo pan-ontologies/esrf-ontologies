@@ -1,0 +1,26 @@
+@startuml
+class technique
+
+package cascade_of_events_being_detected {
+  class "X-rays"
+  class "X-ray fluorescence"
+  class "total electrons"
+  class "auger electrons"
+  class "diffraction (elastic scattering from ordered materials)"
+}
+
+package space_time {
+  class "incident X-ray energy"
+  class "sample orientation"
+  class "sample translation"
+  class "time"
+}
+
+technique - cascade_of_events_being_detected : measures_result_of_interaction
+technique - space_time : measures_as_a_function_of
+technique - detector_type : measures_with_a_detector_type
+technique - detection_resoltion : measures_with_a_detector_resolution
+technique - requires_sample_input : sample_input
+technique - measures_with_a_detector_resolution : detection_resoltion
+
+@enduml
