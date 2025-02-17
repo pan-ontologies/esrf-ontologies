@@ -35,6 +35,7 @@ dev = [
     "black >=22",
     "flake8 >=4",
     "owlready2",
+    "tabulate",
 ]
 doc = [
     "esrf-ontology[test]",
