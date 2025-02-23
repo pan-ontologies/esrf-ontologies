@@ -4,5 +4,6 @@
 
 New features
 
-- PaNET ontology parsing for techniques.
-- API for adding scan metadata (HDF5) and dataset metadata (ICAT+) in Bliss.
+- ESRFET ontology for experimental techniques at the ESRF.
+- API for adding scan metadata to HDF5 and dataset metadata to the ESRF data portal.
+- OWL Ontology transpilation for runtime performance.
