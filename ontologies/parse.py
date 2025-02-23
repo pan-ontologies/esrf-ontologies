@@ -7,7 +7,7 @@ from owlready2 import get_ontology
 from owlready2 import Thing
 from owlready2.namespace import Ontology
 
-from esrf_ontology.technique import get_all_techniques
+from esrf_ontologies.technique import get_all_techniques
 
 
 def load_ontology(*args) -> Ontology:

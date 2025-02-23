@@ -5,4 +5,4 @@ API reference
     :toctree: _generated
     :recursive:
 
-    esrf_ontology
+    esrf_ontologies

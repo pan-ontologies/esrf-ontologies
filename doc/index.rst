@@ -12,7 +12,7 @@ Get the :ref:`technique metadata <techniques>` for one of more aliases
 
 .. code:: python
 
-    from esrf_ontology.technique import get_technique_metadata
+    from esrf_ontologies.technique import get_technique_metadata
 
     metadata = get_technique_metadata("XAS", "XRF")
 

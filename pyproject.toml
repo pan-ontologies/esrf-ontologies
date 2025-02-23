@@ -3,7 +3,7 @@ requires = ["setuptools>=46.4"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "esrf-ontology"
+name = "esrf-ontologies"
 version = "0.1.0b0"
 authors = [{name = "ESRF", email = "dau-pydev@esrf.fr"}]
 description = "ESRF Ontology"
@@ -20,25 +20,25 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://gitlab.esrf.fr/dau/ontology/esrf-ontology/"
-Documentation = "https://esrf-ontology.readthedocs.io/"
-Repository = "https://gitlab.esrf.fr/dau/ontology/esrf-ontology/"
-Issues = "https://gitlab.esrf.fr/dau/ontology/esrf-ontology/issues"
-Changelog = "https://gitlab.esrf.fr/dau/ontology/esrf-ontology/-/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/pan-ontologies/esrf-ontologies/esrf-ontologies/"
+Documentation = "https://esrf-ontologies.readthedocs.io/"
+Repository = "https://github.com/pan-ontologies/esrf-ontologies/esrf-ontologies/"
+Issues = "https://github.com/pan-ontologies/esrf-ontologies/esrf-ontologies/issues"
+Changelog = "https://github.com/pan-ontologies/esrf-ontologies/-/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 test = [
     "pytest >=7",
 ]
 dev = [
-    "esrf-ontology[test]",
+    "esrf-ontologies[test]",
     "black >=22",
     "flake8 >=4",
     "owlready2",
     "tabulate",
 ]
 doc = [
-    "esrf-ontology[test]",
+    "esrf-ontologies[test]",
     "sphinx >=4.5",
     "sphinx-autodoc-typehints >=1.16",
     "pydata-sphinx-theme",

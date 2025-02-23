@@ -3,9 +3,9 @@
 
 from importlib.metadata import version as get_version
 
-release = get_version("esrf-ontology")
+release = get_version("esrf-ontologies")
 
-project = "esrf-ontology"
+project = "esrf-ontologies"
 version = ".".join(release.split(".")[:2])
 copyright = "2024-2025, ESRF"
 author = "ESRF"
@@ -42,13 +42,13 @@ html_static_path = []
 html_theme_options = {
     "icon_links": [
         {
-            "name": "gitlab",
-            "url": "https://gitlab.esrf.fr/dau/ontology/esrf-ontology",
-            "icon": "fa-brands fa-gitlab",
+            "name": "github",
+            "url": "https://github.com/pan-ontologies/esrf-ontologies",
+            "icon": "fa-brands fa-github",
         },
         {
             "name": "pypi",
-            "url": "https://pypi.org/project/esrf-ontology",
+            "url": "https://pypi.org/project/esrf-ontologies",
             "icon": "fa-brands fa-python",
         },
     ],
