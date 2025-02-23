@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  test:
+  py-test:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -55,17 +55,34 @@ jobs:
         run: |
           pytest --pyargs esrf_ontologies
 
-      - name: Install parsing dependencies
-        if: ${{ matrix.python-version == '3.12' }}
+  owl-test:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Upgrade pip
         run: |
-          pip install "$(ls dist/*.tar.gz)[dev]"
+          python -m pip install --upgrade pip
+
+      - name: Install parsing dependencies
+        run: |
+          pip install .[dev]
 
       - name: Run ontology parsing
-        if: ${{ matrix.python-version == '3.12' }}
         run: |
           python ontologies/parse.py
 
       - name: Check parsing did not change any files
-        if: ${{ matrix.python-version == '3.12' }}
         run: |
           git diff --exit-code
