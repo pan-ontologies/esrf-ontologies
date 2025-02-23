@@ -1,12 +1,20 @@
 ESRF Ontologies |version|
 =========================
 
-The ESRF Ontologies project provides ontologies related to ESRF data acquisition with a python API.
+The *ESRF Ontologies* project provides ontologies related to ESRF data acquisition.
 
-* Metadata for techniques within the photon and neutron (PaN) domain from the `PaNET Ontology <https://doi.org/10.5281/zenodo.4806026>`_.
+Ontologies:
 
-Technique in Bliss
-------------------
+* *ESRFET* is an ontology of experimental techniques used at the ESRF connected to
+  the `PaNET <https://doi.org/10.5281/zenodo.4806026>`_ ontology.
+
+Python API:
+
+* Generate technique metadata for ESRF data producers to save in `NeXus-compliant <https://www.nexusformat.org/>`_
+  HDF5 and the `ESRF data portal <https://data.esrf.fr>`_.
+
+Python API for technique metadata
+---------------------------------
 
 Get the :ref:`technique metadata <techniques>` for one of more aliases
 

@@ -25,14 +25,12 @@ exclude_patterns = ["build"]
 
 always_document_param_types = True
 
-
 autosummary_generate = True
 autodoc_default_flags = [
     "members",
     "undoc-members",
     "show-inheritance",
 ]
-
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
