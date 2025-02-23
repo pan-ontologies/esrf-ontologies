@@ -1,6 +1,6 @@
 # ESRF Ontologies
 
-The *ESRF Ontologies* project provides ontologies related to ESRF data acquisition.
+The *ESRF Ontologies* project provides ontologies related to [ESRF](https://esrf.fr/) data acquisition.
 
 Ontologies:
 
