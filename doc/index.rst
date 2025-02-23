@@ -1,14 +1,14 @@
 ESRF Ontologies |version|
 =========================
 
-The *ESRF Ontologies* project provides ontologies related to ESRF data acquisition.
+The *ESRF Ontologies* project provides ontologies related to `ESRF <https://esrf.fr/>`_ data acquisition.
 
 Ontologies:
 
 * *ESRFET* is an ontology of experimental techniques used at the ESRF connected to
   the `PaNET <https://doi.org/10.5281/zenodo.4806026>`_ ontology.
 
-Python API:
+Python API's:
 
 * Generate technique metadata for ESRF data producers to save in `NeXus-compliant <https://www.nexusformat.org/>`_
   HDF5 and the `ESRF data portal <https://data.esrf.fr>`_.
