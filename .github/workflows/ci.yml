@@ -54,3 +54,15 @@ jobs:
       - name: Run tests
         run: |
           pytest --pyargs esrf_ontologies
+
+      - name: Install parsing dependencies
+        run: |
+          pip install "$(ls dist/*.tar.gz)[dev]"
+
+      - name: Run ontology parsing
+        run: |
+          python ontologies/parse.py
+
+      - name: Check parsing did not change any files
+        run: |
+          git diff --exit-code
