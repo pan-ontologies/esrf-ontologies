@@ -102,7 +102,7 @@ def generate_docs():
         )
     ]
 
-    with open(os.path.join(docdir, "techniques.rst"), "w") as f:
+    with open(os.path.join(docdir, "techniques.rst"), "w", encoding="utf-8") as f:
         f.write(".. _techniques:\n\n")
         f.write("Techniques\n==========\n\n")
         f.write(
