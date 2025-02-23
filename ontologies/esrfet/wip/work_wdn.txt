@@ -453,7 +453,7 @@ hard x-ray probe
 
 
 
-HDF5 file or ICAT dataset would be an instance of the ESRF Ontology.
+HDF5 file or ICAT dataset would be an instance of the ESRF Technique Ontology.
 
 SparQl query: query about the schema but also the instances.
 

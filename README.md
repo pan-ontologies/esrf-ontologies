@@ -1,6 +1,6 @@
-# ESRF Ontology
+# ESRF Ontologies
 
-The ESRF ontology provides a python API to all ontologies used on ESRF data acquisition.
+The ESRF Ontologies project provides ontologies related to ESRF data acquisition with a python API.
 
 * Metadata for techniques within the photon and neutron (PaN) domain from the [PaNET Ontology](https://doi.org/10.5281/zenodo.4806026).
 
