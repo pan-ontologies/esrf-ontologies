@@ -22,7 +22,7 @@ black .
 flake8
 ```
 
-## Data generation
+## Ontology transpilation
 
 Parsing the OWL files at runtime is too inefficient. Whenever we change the ontology,
 this script generates data included in the python project that is more efficient
