@@ -92,92 +92,93 @@ These properties are very close tho the concepts defined in NeXUS standard since
 of properies that the experiments would need to save.
 Here we define such properties and their individuals:
 
-<ClassAssertion>
-   <Class IRI="#property_1"/>
-   <NamedIndividual IRI="#ID31-experiment000-property1"/>
-</ClassAssertion>
-<ClassAssertion>
-   <Class IRI="#property_2"/>
-   <NamedIndividual IRI="#ID31-experiment000-property2"/>
-</ClassAssertion>
-<ClassAssertion>
-   <Class IRI="#property_3"/>
-   <NamedIndividual IRI="#ID31-experiment000-property3"/>
-</ClassAssertion>
-<ClassAssertion>
-   <Class IRI="#property_4"/>
-   <NamedIndividual IRI="#ID31-experiment000-property4"/>
-</ClassAssertion>
+      <ClassAssertion>
+         <Class IRI="#property_1"/>
+         <NamedIndividual IRI="#ID31-experiment000-property1"/>
+      </ClassAssertion>
+      <ClassAssertion>
+         <Class IRI="#property_2"/>
+         <NamedIndividual IRI="#ID31-experiment000-property2"/>
+      </ClassAssertion>
+      <ClassAssertion>
+         <Class IRI="#property_3"/>
+         <NamedIndividual IRI="#ID31-experiment000-property3"/>
+      </ClassAssertion>
+      <ClassAssertion>
+         <Class IRI="#property_4"/>
+         <NamedIndividual IRI="#ID31-experiment000-property4"/>
+      </ClassAssertion>
 
 We also define the following object property that is connecting a technique_property used to describe techniques
-to a specific experiment_property through the Domain and Range properties.
+to a specific experiment_property through the `Domain` and `Range` properties.
 
-<Declaration>
-   <ObjectProperty IRI="#has_experimental_property"/>
-</Declaration>
-<ObjectPropertyDomain>
-   <ObjectProperty IRI="#has_experimental_property"/>
-   <Class IRI="#technique_property"/>
-</ObjectPropertyDomain>
-<ObjectPropertyRange>
-   <ObjectProperty IRI="#has_experimental_property"/>
-   <Class IRI="#experiment_property"/>
-</ObjectPropertyRange>
+      <Declaration>
+         <ObjectProperty IRI="#has_experimental_property"/>
+      </Declaration>
+      <ObjectPropertyDomain>
+         <ObjectProperty IRI="#has_experimental_property"/>
+         <Class IRI="#technique_property"/>
+      </ObjectPropertyDomain>
+      <ObjectPropertyRange>
+         <ObjectProperty IRI="#has_experimental_property"/>
+         <Class IRI="#experiment_property"/>
+      </ObjectPropertyRange>
 
-Then we create the appropriete individuals to use the object property we created:
+Then we create the appropriete `individuals` to use the object property we created:
 
-<ObjectPropertyAssertion>
-   <ObjectProperty IRI="#has_experimental_property"/>
-   <NamedIndividual IRI="#experiment000"/>
-   <NamedIndividual IRI="#ID31-experiment000-property1"/>
-</ObjectPropertyAssertion>
-<ObjectPropertyAssertion>
-   <ObjectProperty IRI="#has_experimental_property"/>
-   <NamedIndividual IRI="#experiment000"/>
-   <NamedIndividual IRI="#ID31-experiment000-property2"/>
-</ObjectPropertyAssertion>
-<ObjectPropertyAssertion>
-   <ObjectProperty IRI="#has_experimental_property"/>
-   <NamedIndividual IRI="#experiment000"/>
-   <NamedIndividual IRI="#ID31-experiment000-property3"/>
-</ObjectPropertyAssertion>
+      <ObjectPropertyAssertion>
+         <ObjectProperty IRI="#has_experimental_property"/>
+         <NamedIndividual IRI="#experiment000"/>
+         <NamedIndividual IRI="#ID31-experiment000-property1"/>
+      </ObjectPropertyAssertion>
+      <ObjectPropertyAssertion>
+         <ObjectProperty IRI="#has_experimental_property"/>
+         <NamedIndividual IRI="#experiment000"/>
+         <NamedIndividual IRI="#ID31-experiment000-property2"/>
+      </ObjectPropertyAssertion>
+      <ObjectPropertyAssertion>
+         <ObjectProperty IRI="#has_experimental_property"/>
+         <NamedIndividual IRI="#experiment000"/>
+         <NamedIndividual IRI="#ID31-experiment000-property3"/>
+      </ObjectPropertyAssertion>
 
 In the following snippets we see the appointment of these experimental properties in the definition of
 techniques like saying "if you use this specific kind of detector then you use this technique":
-<EquivalentClasses>
-<Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
-<ObjectSomeValuesFrom>
-<ObjectProperty IRI="#has_experimental_property"/>
-<Class IRI="#property_2"/>
-</ObjectSomeValuesFrom>
-</EquivalentClasses>
 
-<EquivalentClasses>
-   <Class IRI="#area_detector"/>
-   <ObjectIntersectionOf>
-      <Class IRI="#technique_property"/>
+      <EquivalentClasses>
+      <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
       <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_experimental_property"/>
-            <Class IRI="#property_1"/>
-      </ObjectSomeValuesFrom>
-   </ObjectIntersectionOf>
-</EquivalentClasses>
-
-<EquivalentClasses>
-   <Class IRI="#full-field_imaging"/>
-   <ObjectSomeValuesFrom>
       <ObjectProperty IRI="#has_experimental_property"/>
-      <Class IRI="#property_3"/>
-   </ObjectSomeValuesFrom>
-</EquivalentClasses>
+      <Class IRI="#property_2"/>
+      </ObjectSomeValuesFrom>
+      </EquivalentClasses>
+
+      <EquivalentClasses>
+         <Class IRI="#area_detector"/>
+         <ObjectIntersectionOf>
+            <Class IRI="#technique_property"/>
+            <ObjectSomeValuesFrom>
+                  <ObjectProperty IRI="#has_experimental_property"/>
+                  <Class IRI="#property_1"/>
+            </ObjectSomeValuesFrom>
+         </ObjectIntersectionOf>
+      </EquivalentClasses>
+
+      <EquivalentClasses>
+         <Class IRI="#full-field_imaging"/>
+         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_experimental_property"/>
+            <Class IRI="#property_3"/>
+         </ObjectSomeValuesFrom>
+      </EquivalentClasses>
 
 With the above we can see the reasoner infers different things for a given individual as shown in the following steps:
 
-Initialy it was infered to be a detector
-![XRF techniques with their building blocks](images/inference_as_detector.png)
+1. Initialy it was infered to be a `detector`
+   ![XRF techniques with their building blocks](images/inference_as_detector.png)
 
-With the addition of another property the reasoner went deaper into infering the individual as a technique as well:
-![XRF techniques with their building blocks](images/inference_as_technique.png)
+2. With the addition of another property the reasoner went deaper into infering the individual as a `technique` as well:
+   ![XRF techniques with their building blocks](images/inference_as_technique.png)
 
-Finally when adding the final property the reasoner was able to infer the exact technique used in this experiment:
-![XRF techniques with their building blocks](images/inference_as_specialized_technique.png)
+3. Finally when adding the final property the reasoner was able to infer the `exact technique` used in this experiment:
+   ![XRF techniques with their building blocks](images/inference_as_specialized_technique.png)
