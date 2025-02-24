@@ -1,243 +1,51 @@
-stages:
-  - test
-  - style
-  - build
-  - test_build
-  - deploy
+include:
+  - project: dau/ci/pyci
+    file: .gitlab-ci-template.yml
 
-### Jobs templates ###
+test-3.8:
+  extends: .test-3.8
 
-.scripts:
-  prepare_python:
-    - python --version
-    - python -m pip install --upgrade pip setuptools
-  init_python_win:
-    - SET "PATH=C:\\python\\%PYTHON_VER%;C:\\python\\%PYTHON_VER%\\Scripts;%PATH%"
-    - python -m venv --clear build_venv
-    - call "build_venv\\Scripts\\activate.bat"
-  cleanup_python_win:
-    - rmdir build_venv /s /q
-  install_sdist:
-    - ls -Rl sdist
-    - |
-      for filename in sdist/*.tar.gz; do
-        python -m pip install $filename[test]
-      done
-  install_sdist_win:
-    - dir sdist
-    - |
-      FOR %%F IN (sdist\*.tar.gz) DO (
-        echo %%F
-        python -m pip install %%F[test]
-      )
+test-3.9-win:
+  extends: .test-3.9-win
 
-.base:
-  only:
-    refs:
-      - main
-      - merge_requests
-  timeout: 10m
-
-.base-lin:  # Linux, Python 3.9
-  extends: .base
-  tags:
-    - linux
-  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.9:latest
-  before_script:
-    - !reference [.scripts, prepare_python]
-  after_script:
-    - echo 
-
-.base-win:  # Windows, Python 3.9
-  extends: .base
-  tags:
-    - win
-  variables:
-    PYTHON_VER: "3.9"
-  before_script:
-    - !reference [.scripts, init_python_win]
-    - !reference [.scripts, prepare_python]
-  after_script:
-    - !reference [.scripts, cleanup_python_win]
-
-.style:  # base job for style stage
-  stage: style
-  extends: .base-lin
-
-.test:  # base job for test stage (Linux)
-  stage: test
-  extends: .base-lin
-  before_script:
-    - !reference [.base-lin, before_script]
-    - python -m pip install pytest-cov
-  script:
-    - python -m pip install .[test]
-    - python -m pytest --cov=./ -v -W error
-  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
-
-.test-win:  # base job for test stage (Windows)
-  stage: test
-  extends: .base-win
-  script:
-    - python -m pip install .[test]
-    - python -m pytest -v -W error
-
-.build:  # base job for build stage
-  stage: build
-  extends: .base-lin
-  only:
-    refs:
-      - main
-
-.build_sdist:  # base job for sdist build (Linux)
-  extends: .build
-  script:
-    - python setup.py sdist
-    - ls -Rl dist
-    - mkdir -p sdist
-    - mv dist/* sdist/
-  after_script:
-    - ls -Rl sdist
-  artifacts:
-    paths:
-      - sdist/
-    when: on_success
-    expire_in: 2h
-
-.test_build:  # base job for test_build stage (Linux)
-  stage: test_build
-  extends: .base-lin
-  only:
-    refs:
-      - main
-
-.test_build-win:  # base job for test_build stage (Windows)
-  stage: test_build
-  extends: .base-win
-  only:
-    refs:
-      - main
-
-.test_sdist:  # base job for sdist test (Linux)
-  extends: .test_build
-  script:
-    - !reference [.scripts, install_sdist]
-    - cd sdist
-    - export PROJECT_NAME=${CI_PROJECT_NAME//[-]/_}
-    - python -m pytest -v -W error --pyargs ${PROJECT_NAME}.tests
-    - python -m pip install gevent
-    - python -m gevent.monkey --module pytest -v -W error --pyargs ${PROJECT_NAME}.tests
-
-.test_sdist-win:  # base job for sdist test (Windows)
-  extends: .test_build-win
-  script:
-    - !reference [.scripts, install_sdist_win]
-    - cd sdist
-    - set PROJECT_NAME=%CI_PROJECT_NAME:-=_%
-    - python -m pytest -v -W error --pyargs %PROJECT_NAME%.tests
-    - python -m pip install gevent
-    - python -m gevent.monkey --module pytest -v -W error --pyargs %PROJECT_NAME%.tests
-
-.deploy:  # base job for deploy stage (Linux)
-  stage: deploy
-  extends: .base-lin
-  only:
-    refs:
-      - main
-
-### Jobs ###
-
-flake8:
-  extends: .style
-  before_script:
-    - python -m pip install flake8
-  script:
-    - flake8
-
-black:
-  extends: .style
-  before_script:
-    - python -m pip install black
-  script:
-    - LC_ALL=C.UTF-8 black --check --safe .
+test-3.13:
+  extends: .test-3.13
 
 build_sdist:
   extends: .build_sdist
 
-build_doc:
-  extends: .build
-  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.9_doc  # pandoc:latest
-  script:
-    - python -m pip install .[doc]
-    - sphinx-build doc html
-  after_script:
-    - ls -Rl html
-  artifacts:
-    paths:
-      - html/
-    when: on_success
-    expire_in: 2h
-
-pages:
-  extends: .deploy
-  script:
-    - mv html public
-  after_script:
-    - ls -Rl public
-  artifacts:
-    paths:
-      - public
-    when: on_success
-    expire_in: 2h
-
-assets:
-  extends: .deploy
-  script:
-    - mv sdist assets
-  after_script:
-    - ls -Rl assets
-  artifacts:
-    paths:
-      - assets
-    when: on_success
-    expire_in: 2h
-
-### Python 3.9 jobs ###
-
-test-3.9:
-  extends: .test
-  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.9:latest
-
-.test-3.9-win:
-  extends: .test-win
-  variables:
-    PYTHON_VER: "3.9"
+test_sdist-3.8:
+  extends: .test_sdist-3.8
 
 test_sdist-3.9:
-  extends: .test_sdist
-  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.9:latest
+  extends: .test_sdist-3.9
 
-.test_sdist-3.9-win:
-  extends: .test_sdist-win
-  variables:
-    PYTHON_VER: "3.9"
+test_sdist-3.10:
+  extends: .test_sdist-3.10
 
-### Python 3.11 jobs ###
-
-test-3.11:
-  extends: .test
-  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.11:latest
-
-.test-3.11-win:
-  extends: .test-win
-  variables:
-    PYTHON_VER: "3.11"
+test_sdist-3.10-win:
+  extends: .test_sdist-3.10-win
 
 test_sdist-3.11:
-  extends: .test_sdist
-  image: gitlab-registry.esrf.fr/dau/ci/pyci/python_3.11:latest
+  extends: .test_sdist-3.11
 
-.test_sdist-3.11-win:
-  extends: .test_sdist-win
-  variables:
-    PYTHON_VER: "3.11"
+test_sdist-3.12:
+  extends: .test_sdist-3.12
+
+test_sdist-3.13:
+  extends: .test_sdist-3.13
+
+build_doc:
+  extends: .build_doc
+
+pypi:
+  extends: .pypi
+
+testpypi:
+  extends: .testpypi
+
+pages:
+  extends: .pages
+
+assets:
+  extends: .assets
