@@ -12,15 +12,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Python 3.11
+        uses: actions/setup-python@5
         with:
           python-version: '3.11'
 
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install build twine
+        run: pip install build
 
       - name: Build package
         run: python -m build
@@ -31,8 +32,8 @@ jobs:
           name: dist
           path: dist/
 
-  publish-test-pypi:
-    name: Publish to TestPyPI
+  test:
+    name: Test built distributions
     needs: build
     runs-on: ubuntu-latest
 
@@ -43,11 +44,58 @@ jobs:
           name: dist
           path: dist/
 
+      - name: Set up Python 3.11
+        uses: actions/setup-python@5
+        with:
+          python-version: '3.11'
+
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Install built distributions
+        run: pip install "$(ls dist/*.tar.gz)"[test]
+
+      - name: Run tests
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: |
+          DISTRO_NAME="${REPO_NAME//-/_}"
+          pytest --pyargs ${DISTRO_NAME}
+
+  publish-test-pypi:
+    name: Publish to TestPyPI
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download built distributions
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@5
+        with:
+          python-version: '3.11'
+
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Install dependencies
+        run: pip install twine
+
       - name: Publish package to TestPyPI
         env:
-          TWINE_USERNAME: ${{ secrets.TEST_PYPI_TOKEN }}
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
         run: |
-          python -m pip install --upgrade twine
+          if [[ -z "${{ TWINE_PASSWORD }}" ]]; then
+            echo "❌ TEST_PYPI_TOKEN is not set."
+            exit 1
+          fi
           twine upload --repository testpypi dist/*
 
   publish-pypi:
@@ -62,12 +110,28 @@ jobs:
           name: dist
           path: dist/
 
+      - name: Set up Python 3.11
+        uses: actions/setup-python@5
+        with:
+          python-version: '3.11'
+
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Install dependencies
+        run: pip install twine
+
       - name: Publish package to PyPI
         env:
-          TWINE_USERNAME: ${{ secrets.PYPI_TOKEN }}
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
         run: |
-          python -m pip install --upgrade twine
-          twine upload dist/*
+          if [[ -z "${{ TWINE_PASSWORD }}" ]]; then
+            echo "❌ PYPI_TOKEN is not set."
+            exit 1
+          fi
+          # twine upload dist/*   TODO: uncomment when tested
 
   tag-release:
     name: Tag release
@@ -75,27 +139,61 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Download built distributions
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@5
+        with:
+          python-version: '3.11'
+
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Install source distribution
+        run: pip install "$(ls dist/*.tar.gz)"
 
       - name: Get current version
-        id: get_version
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
-          DISTRO_NAME="esrf_ontologies"
+          DISTRO_NAME="${REPO_NAME//-/_}"
           VERSION=$(python -c "from importlib.metadata import version; print(version('${DISTRO_NAME}'))")
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
           echo "Detected version: ${VERSION}"
 
-      - name: Create Git tag
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Get last commit SHA
         run: |
-          TAGNAME="v${{ env.VERSION }}"
-          REF_SHA="${{ github.sha }}"
-          REPO="${{ github.repository }}"
+          REF_SHA=$(git rev-parse HEAD)
+          echo "REF_SHA=${REF_SHA}" >> $GITHUB_ENV
+          echo "Commit SHA to tag: ${REF_SHA}"
 
-          curl --request POST \
-            --url "https://api.github.com/repos/${REPO}/git/refs" \
-            --header "Authorization: Bearer ${GITHUB_TOKEN}" \
-            --header "Accept: application/vnd.github.v3+json" \
-            --data "{\"ref\": \"refs/tags/${TAGNAME}\", \"sha\": \"${REF_SHA}\"}"
+      - name: Create Git tag
+        run: |
+          # https://docs.github.com/en/rest/git/refs?apiVersion=2022-11-28#create-a-reference
+
+          TAGNAME="v${{ env.VERSION }}"
+          API_URL="${{ github.api_url }}/${{ github.repository }}/git/refs"
+          API_VERSION="2022-11-28"
+
+          RESPONSE=$(curl -s -o response.json -w "%{http_code}" \
+            -L --request POST \
+            --url "${{ env.API_URL }}" \
+            --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            --header "Content-Type: application/json" \
+            --header "Accept: application/vnd.github+json" \
+            --header "X-GitHub-Api-Version: ${API_VERSION}" \
+            --data "{
+              \"ref\": \"refs/tags/${TAGNAME}\",
+              \"sha\": \"${REF_SHA}\"
+            }")
+
+          if [[ "$RESPONSE" -ne 201 ]]; then
+            echo "❌ GitHub API request failed with status code: $RESPONSE"
+            cat response.json
+            exit 1
+          fi

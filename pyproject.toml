@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "esrf-ontologies"
-version = "0.1.0b0"
+version = "0.1.0b1"
 authors = [{name = "ESRF", email = "dau-pydev@esrf.fr"}]
 description = "ESRF Ontologies"
 readme = {file = "README.md", content-type = "text/markdown"}
