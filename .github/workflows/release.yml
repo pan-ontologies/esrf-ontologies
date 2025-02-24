@@ -99,7 +99,7 @@ jobs:
             echo "❌ TEST_PYPI_TOKEN is not set."
             exit 1
           fi
-          # twine upload --repository testpypi dist/*  TODO: uncomment when tested
+          twine upload --repository testpypi dist/*
 
   publish-pypi:
     name: Publish to PyPI
@@ -134,7 +134,7 @@ jobs:
             echo "❌ PYPI_TOKEN is not set."
             exit 1
           fi
-          # twine upload dist/*   TODO: uncomment when tested
+          twine upload dist/*
 
   tag-release:
     name: Tag release
