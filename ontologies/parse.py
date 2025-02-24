@@ -15,11 +15,27 @@ def load_ontology(*args) -> Ontology:
     return get_ontology(owl_file).load()
 
 
-def get_all_subclasses(cls) -> Set[Thing]:
+def get_all_subclasses(cls: Thing) -> Set[Thing]:
     subclasses = set(cls.subclasses())
     for subclass in cls.subclasses():
         subclasses.update(get_all_subclasses(subclass))
     return subclasses
+
+
+def get_subclass_tree(cls, path: str = None) -> Dict[str, Thing]:
+    if not path:
+        path = ""
+    clsdict = dict()
+
+    for subclass in cls.subclasses():
+        sub_path = f"{path}/{subclass.name}"
+        subclsdict = get_subclass_tree(subclass, sub_path)
+        if subclsdict:
+            clsdict.update(subclsdict)
+        else:
+            clsdict[sub_path] = subclass
+
+    return clsdict
 
 
 def get_names(cls: Thing) -> List[str]:
@@ -69,6 +85,19 @@ def get_esrfet_techniques():
     save_techniques("ESRFET.json", techniques)
 
 
+def get_esrfet_building_blocks():
+
+    ontology = load_ontology("esrfet", "ESRFET.owl")
+
+    building_blocks = ontology.search_one(
+        iri="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#technique_property"
+    )
+
+    subclasses = get_subclass_tree(building_blocks)
+    for name in subclasses:
+        print(name)
+
+
 def get_panet_techniques():
     ontology = load_ontology("panet", "PaNET.owl")
 
@@ -112,6 +141,7 @@ def generate_docs():
 
 
 if __name__ == "__main__":
+    # get_esrfet_building_blocks()
     get_esrfet_techniques()
     get_panet_techniques()
     generate_docs()

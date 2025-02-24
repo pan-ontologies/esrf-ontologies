@@ -393,6 +393,24 @@
         <ObjectProperty IRI="#has_polarization"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#measures_as_a_function_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measures_interaction_result_property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measures_result_of_interaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measures_with_a_detector_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires_sample_input"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires_sample_type"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#atomic_distance_range"/>
     </Declaration>
     <Declaration>
@@ -1297,9 +1315,53 @@
         <NamedIndividual IRI="#testEAFS"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
     </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures_as_a_function_of"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures_interaction_result_property"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures_result_of_interaction"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures_with_a_detector_type"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires_sample_input"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires_sample_type"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_polarization"/>
         <Class IRI="#polarization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures_as_a_function_of"/>
+        <Class IRI="#space_time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures_result_of_interaction"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures_with_a_detector_type"/>
+        <Class IRI="#detector_type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires_sample_input"/>
+        <Class IRI="#sample_input"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires_sample_type"/>
+        <Class IRI="#sample_type"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#atomic_distance_range"/>
@@ -1980,8 +2042,40 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measures_as_a_function_of</IRI>
+        <Literal>Example: XAS measures as function of incident X-ray photon energy
+                X-ray absorption tomography measures as function of sample orientation
+                Scanning Micro X-ray fluorescence measures as function of sample translation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measures_interaction_result_property</IRI>
+        <Literal>Example: XRF measures photon energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measures_result_of_interaction</IRI>
+        <Literal>Example: XRF measures fluorscence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#photo_electrons</IRI>
         <Literal>Detecting one result after atomic core excitation (photo electrons)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requires_sample_input</IRI>
+        <Literal>Example: Soft X-ray Absorption Spectroscopy uses soft X-ray as sample input</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requires_sample_type</IRI>
+        <Literal>Example: XRPD requires powder
+                XRD does not require any sample type
+
+                Another way of looking at it:
+                diffraction (cascade of events being detected) requires &apos;any of&apos; single crystal, powder, fiber
+                x-ray powder diffraction (technique) requires &apos;exactly&apos; powder</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2041,5 +2135,5 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 

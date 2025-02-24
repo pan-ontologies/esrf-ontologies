@@ -1,0 +1,26 @@
+@startuml
+class technique
+
+package A {
+  class "X-rays"
+  class "X-ray fluorescence"
+  class "total electrons"
+  class "auger electrons"
+  class "diffraction (elastic scattering from ordered materials)"
+}
+
+package B {
+  class "incident X-ray energy"
+  class "sample orientation"
+  class "sample translation"
+  class "time"
+}
+
+technique - "X-ray absorption probability" : "measures property derived from the result of interaction"
+technique - A : measures result of interaction
+technique - B : measures as a function of
+technique - "energy dispersive detector" : measures with a detector type
+technique - "ultra large length scales" : measures with a detector resolution
+
+@enduml
+
