@@ -3,6 +3,9 @@ name: Publish to PyPI
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write  # This grants permission to create tags
+
 jobs:
   build:
     name: Build package
@@ -13,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -33,7 +36,7 @@ jobs:
           path: dist/
 
   test:
-    name: Test built distributions
+    name: Test package
     needs: build
     runs-on: ubuntu-latest
 
@@ -45,7 +48,7 @@ jobs:
           path: dist/
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -76,7 +79,7 @@ jobs:
           path: dist/
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -89,14 +92,14 @@ jobs:
 
       - name: Publish package to TestPyPI
         env:
-          TWINE_USERNAME: __token__
+          TWINE_USERNAME: "__token__"
           TWINE_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
         run: |
-          if [[ -z "${{ TWINE_PASSWORD }}" ]]; then
+          if [[ -z "${{ env.TWINE_PASSWORD }}" ]]; then
             echo "❌ TEST_PYPI_TOKEN is not set."
             exit 1
           fi
-          twine upload --repository testpypi dist/*
+          # twine upload --repository testpypi dist/*  TODO: uncomment when tested
 
   publish-pypi:
     name: Publish to PyPI
@@ -111,7 +114,7 @@ jobs:
           path: dist/
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -124,10 +127,10 @@ jobs:
 
       - name: Publish package to PyPI
         env:
-          TWINE_USERNAME: __token__
+          TWINE_USERNAME: "__token__"
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
         run: |
-          if [[ -z "${{ TWINE_PASSWORD }}" ]]; then
+          if [[ -z "${{ env.TWINE_PASSWORD }}" ]]; then
             echo "❌ PYPI_TOKEN is not set."
             exit 1
           fi
@@ -137,6 +140,8 @@ jobs:
     name: Tag release
     needs: publish-pypi
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Download built distributions
@@ -146,7 +151,7 @@ jobs:
           path: dist/
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -157,38 +162,36 @@ jobs:
       - name: Install source distribution
         run: pip install "$(ls dist/*.tar.gz)"
 
-      - name: Get current version
+      - name: Get source distribution version
         env:
           REPO_NAME: ${{ github.event.repository.name }}
         run: |
           DISTRO_NAME="${REPO_NAME//-/_}"
-          VERSION=$(python -c "from importlib.metadata import version; print(version('${DISTRO_NAME}'))")
-          echo "VERSION=${VERSION}" >> $GITHUB_ENV
-          echo "Detected version: ${VERSION}"
-
-      - name: Get last commit SHA
-        run: |
-          REF_SHA=$(git rev-parse HEAD)
-          echo "REF_SHA=${REF_SHA}" >> $GITHUB_ENV
-          echo "Commit SHA to tag: ${REF_SHA}"
+          TAG_VERSION=$(python -c "from importlib.metadata import version; print(version('${DISTRO_NAME}'))")
+          echo "TAG_VERSION=${TAG_VERSION}" >> $GITHUB_ENV
+          echo "Detected version: ${TAG_VERSION}"
 
       - name: Create Git tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # https://docs.github.com/en/rest/git/refs?apiVersion=2022-11-28#create-a-reference
 
-          TAGNAME="v${{ env.VERSION }}"
-          API_URL="${{ github.api_url }}/${{ github.repository }}/git/refs"
+          API_URL="${{ github.api_url }}/repos/${{ github.repository }}/git/refs"
           API_VERSION="2022-11-28"
+
+          TAG_NAME="v${{ env.TAG_VERSION }}"
+          REF_SHA="${{ github.sha }}"
 
           RESPONSE=$(curl -s -o response.json -w "%{http_code}" \
             -L --request POST \
-            --url "${{ env.API_URL }}" \
-            --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            --url "${API_URL}" \
+            --header "Authorization: Bearer ${{ env.GITHUB_TOKEN }}" \
             --header "Content-Type: application/json" \
             --header "Accept: application/vnd.github+json" \
             --header "X-GitHub-Api-Version: ${API_VERSION}" \
             --data "{
-              \"ref\": \"refs/tags/${TAGNAME}\",
+              \"ref\": \"refs/tags/${TAG_NAME}\",
               \"sha\": \"${REF_SHA}\"
             }")
 
