@@ -1,4 +1,4 @@
-name: Unit Tests, Linting, and Formatting Checks
+name: Test, Lint and Format
 
 on:
   push:
@@ -51,9 +51,26 @@ jobs:
         run: |
           pip install --pre "$(ls dist/*.tar.gz)[test]"
 
-      - name: Run tests
+      - name: Get distribution name (Linux/macOS)
+        if: runner.os != 'Windows'
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
-          pytest --pyargs esrf_ontologies
+          DISTRO_NAME="${REPO_NAME//-/_}"
+          echo "DISTRO_NAME=${DISTRO_NAME}" >> $GITHUB_ENV
+
+      - name: Get distribution name (Windows)
+        if: runner.os == 'Windows'
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: |
+          $DISTRO_NAME = $REPO_NAME -replace '-', '_'
+          echo "DISTRO_NAME=$DISTRO_NAME" | Out-File -Append -FilePath $env:GITHUB_ENV
+        shell: pwsh
+
+      - name: Test source distribution
+        run: |
+          pytest --pyargs ${DISTRO_NAME}
 
   owl-test:
     runs-on: ${{ matrix.os }}
@@ -75,14 +92,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
 
-      - name: Install parsing dependencies
+      - name: Install transpilation dependencies
         run: |
           pip install .[dev]
 
-      - name: Run ontology parsing
+      - name: Run ontology transpilation
         run: |
           python ontologies/parse.py
 
-      - name: Check parsing did not change any files
+      - name: Check transpilation did not modify the python project
         run: |
           git diff --exit-code
