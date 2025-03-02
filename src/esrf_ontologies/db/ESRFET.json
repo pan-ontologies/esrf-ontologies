@@ -41,6 +41,14 @@
     "description": ""
   },
   {
+    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XRF",
+    "names": [
+      "ED-XRF",
+      "Energy Dispersive X-ray Fluorescence Spectroscopy"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XRPD",
     "names": [
       "ED-XRPD",
