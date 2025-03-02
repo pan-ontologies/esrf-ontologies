@@ -528,3 +528,213 @@ Then we can ask the ontology:
 If you cannot derive purpose from the building blocks, you are missing building blocks.
 
 The building blocks you need for purpose may be more than the building blocks you need just for differentiating techniques.
+
+Object properties:
+------------------
+
+Domain -> property -> range
+
+Techniques
+++++++++++
+
+
+- What are we measuring (it is always going to be the result of the interaction of the input and the sample)
+- How are we measuring it
+- What do we derive from what we are measuring
+
+Classes to be used as domain or range:
+
+    cascade of events being detected:
+        /cascade_of_events_being_detected/atomic_core_excitation
+        /cascade_of_events_being_detected/auger_electrons
+        /cascade_of_events_being_detected/diffraction/diffraction_of_elastic_scattering
+        /cascade_of_events_being_detected/fluorescence
+        /cascade_of_events_being_detected/photo_electrons
+        /cascade_of_events_being_detected/total_electrons
+        /cascade_of_events_being_detected/transmission
+
+    sample type:
+        /sample_type/biological_sample
+        /sample_type/powder_sample
+        /sample_type/single_crystal_sample
+
+    detection resoltion:
+        /detection_resolution/high_precision_in_Q_space
+        /detection_resolution/large_length_scales
+        /detection_resolution/small_length_scales
+        /detection_resolution/ultra_large_length_scales
+
+    detector type:
+        /detection_in_space/area_detector
+        /detection_in_space/point_detector
+        /detection_in_space/strip_detector
+        /detector_type/energy_dispersive_detector
+        /detector_type/wavelength_dispersive_detector
+
+    detected property:
+        /detected_photon_property/detect_photon_count
+        /detected_photon_property/detect_photon_direction_with_respect_to_primary_beam
+        /detected_photon_property/detect_photon_energy
+
+    sample input:
+        /sample_input/DAC
+        /sample_input/charged_particles
+        /sample_input/cryo
+        /sample_input/disperse_incident_energy_in_space
+        /sample_input/electrons
+        /sample_input/laser
+        /sample_input/magnetic_field
+        /sample_input/named_photon_energy_ranges/UV
+        /sample_input/named_photon_energy_ranges/hard_x-ray
+        /sample_input/named_photon_energy_ranges/infrared
+        /sample_input/named_photon_energy_ranges/soft_x-ray
+        /sample_input/named_photon_energy_ranges/visual_spectrum
+        /sample_input/named_photon_energy_ranges/x-ray
+        /sample_input/photon_energy_bandwidth/monochromatic_beam
+        /sample_input/photon_energy_bandwidth/pink_beam
+        /sample_input/photon_energy_bandwidth/white_beam
+        /sample_input/polarization/horizontal_linear_polarization
+        /sample_input/polarization/left_circular_polarization
+        /sample_input/polarization/right_circular_polarization
+        /sample_input/polarization/vertical_linear_polarization
+        /sample_input/sample_incident_angle/sample_incident_angle_smaller_than_critical_angle
+
+    other
+        /space_time/atomic_distance_range
+        /space_time/atomic_distance_resolution
+
+        /space_time/detection_as_a_function_of_incident_energy
+        /space_time/detection_as_a_function_of_incident_energy/extended
+        /space_time/detection_as_a_function_of_incident_energy/near_edge
+
+        /space_time/sample_spatial_resolution_class/macro_sample_spatial_resolution
+        /space_time/sample_spatial_resolution_class/micro_sample_spatial_resolution
+        /space_time/sample_spatial_resolution_class/nano_sample_spatial_resolution
+        /space_time/sample_spatial_resolution_class/sample_spatial_resolution_achieved_on_detection
+        /space_time/sample_spatial_resolution_class/sample_spatial_resolution_achived_on_input
+
+        /space_time/full-field_imaging
+        /space_time/scanning_imaging
+        /space_time/tomography
+
+        /space_time/serial_scanning
+
+        /other/anomalous
+        /other/resonant
+
+Properties:
+
+    technique  ->  measures result of interaction  -> cascade of events being detected
+
+        Example: XRF measures fluorscence
+
+    technique  ->  measures interaction result property  -> interaction result property
+
+        Example: XRF measures photon energy
+
+    technique  ->  limits/requires sample type  -> sample type
+
+        Example: XRPD requires powder
+                XRD does not require any sample type
+
+                Another way of looking at it:
+                diffraction (cascade of events being detected) requires 'any of' single crystal, powder, fiber
+                x-ray powder diffraction (technique) requires 'exactly' powder
+
+    technique  ->  requires sample input  -> sample input
+
+        Example: Soft X-ray Absorption Spectroscopy uses soft X-ray as sample input
+
+    technique  ->  measures as a function of -> space time
+
+        Example: XAS measures as function of incident X-ray photon energy
+                X-ray absorption tomography measures as function of sample orientation
+                Scanning Micro X-ray fluorescence measures as function of sample translation
+
+    technique  ->  measures with a detector type  -> detector type
+
+        Example: FF-XRF measures with an area detector
+
+    technique  ->  measures with a detector resolution  -> detection resoltion
+
+        Example: SAXS measures large length scales
+
+    XRF -> requires sample input ->  /sample_input/named_photon_energy_ranges/x-ray
+    XRF -> measures result of interaction -> /cascade_of_events_being_detected/fluorescence
+    XRF -> measures interaction result property -> /detected_photon_property/detect_photon_energy
+            Alternative: /cascade_of_events_being_detected/fluorescence -> measures interaction result property -> /detected_photon_property/detect_photon_energy
+    XRF -> measures interaction result property -> /detected_photon_property/detect_photon_count
+
+    TFY-XAS -> requires sample input -> /sample_input/named_photon_energy_ranges/x-ray
+    TFY-XAS -> measures result of interaction -> /cascade_of_events_being_detected/fluorescence
+    TFY-XAS -> measures as a function of -> /space_time/detection_as_a_function_of_incident_energy
+    TFY-XAS -> measures interaction result property -> /detected_photon_property/detect_photon_count
+
+    XAS -> requires sample input -> /sample_input/named_photon_energy_ranges/x-ray
+    XAS -> measures result of interaction -> /cascade_of_events_being_detected/atomic_core_excitation
+    XAS -> measures as a function of -> /space_time/detection_as_a_function_of_incident_energy
+    XAS -> measures interaction result property -> /detected_photon_property/detect_photon_count 
+
+    XANES -> requires sample input -> /sample_input/named_photon_energy_ranges/x-ray
+    XANES -> measures result of interaction -> /cascade_of_events_being_detected/atomic_core_excitation
+    XANES -> measures as a function of -> /space_time/detection_as_a_function_of_incident_energy/near_edge
+    XANES -> measures interaction result property -> /detected_photon_property/detect_photon_count
+
+Experiments
++++++++++++
+
+experiment -> has technique -> technique  (more than one)
+
+    Example: experiment "https://data.esrf.fr/investigation/2007783903" has XAS and MICRO-XRF
+
+experiment -> has scientist -> scientist
+
+    Example: experiment "https://data.esrf.fr/investigation/2007783903" has
+                Hiram CASTILLO (local contact) and Bernhard HESSE (scientist)
+                and Christian SEIM (scientist)
+
+experiment -> has location -> instrument
+
+    Example: experiment "https://data.esrf.fr/investigation/2007783903" was
+                conducted at ESRF ID21
+
+experiment -> has time span -> time
+
+    Example: experiment "https://data.esrf.fr/investigation/2007783903" was
+                conducted from 13/02/2025 08:00 to 17/02/2025 08:00
+
+
+Q: What techniques does ESRF ID21 support in 2025?
+A: XAS and MICRO-XRF
+
+Q: What instruments support XAS in 2025?
+A: ESRF ID21
+
+This is inferred or asserted: ESRF ID21 in 2025 supports MICRO-XRF
+
+
+ESRF Experiments
+++++++++++++++++
+
+User has a proposal approved (name "hg123", "mx789", ...)
+
+-> You will get one or more timeslots (timeslot = time interval) at one or more beamlines
+
+A "timeslot" is referred to as an "investigation" (ICAT), "experiment session" (data.esrf.fr), "proposal session" (Bliss).
+
+-> Within a timeslot the user does experiments at the beamline the timeslot is assigned to.
+
+An "experiment" means "Wout De Nolf et al. id doing an XRF scan at the nano end-station of ID21".
+  "nano end-station" is one instrument that ID21 has at the time of the experiment.
+
+Each "experiment" has these components
+- instrument ("nano end-station")
+- beamline ("ID21")
+- technique ("XRF")
+- scientists ("Wout De Nolf et al.")
+
+"Beamline" ("ID21") has these components
+- synchrotron exist port
+- insertion device ("undulator", "wiggler", "bending magnet")
+- instruments ("nano end-station, SXM end-station")
+- scientists ("Marine Cotte et al.")
