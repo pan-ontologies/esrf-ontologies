@@ -627,6 +627,28 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#TFY-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#detect_photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#fluorescence"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#TXRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#detect_photon_energy"/>
@@ -668,11 +690,55 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#XANES"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#near_edge"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#detect_photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01054"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#XAS"/>
         <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
             <Class IRI="#detection_as_a_function_of_incident_energy"/>
             <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#detect_photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01054"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -868,10 +934,6 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TFY-XAS"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#TXRF"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -889,14 +951,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WDS"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#XANES"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#XAS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -933,10 +987,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XRD"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#XRF"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
