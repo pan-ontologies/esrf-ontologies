@@ -4,8 +4,10 @@ from typing import Set, List, Dict, Any
 from tabulate import tabulate
 
 from owlready2 import get_ontology
-from owlready2 import Thing
+from owlready2 import sync_reasoner
+from owlready2.entity import ThingClass
 from owlready2.namespace import Ontology
+
 
 from esrf_ontologies.technique import get_all_techniques
 
@@ -15,14 +17,14 @@ def load_ontology(*args) -> Ontology:
     return get_ontology(owl_file).load()
 
 
-def get_all_subclasses(cls: Thing) -> Set[Thing]:
+def get_all_subclasses(cls: ThingClass) -> Set[ThingClass]:
     subclasses = set(cls.subclasses())
     for subclass in cls.subclasses():
         subclasses.update(get_all_subclasses(subclass))
     return subclasses
 
 
-def get_subclass_tree(cls, path: str = None) -> Dict[str, Thing]:
+def get_subclass_tree(cls, path: str = None) -> Dict[str, ThingClass]:
     if not path:
         path = ""
     clsdict = dict()
@@ -38,7 +40,7 @@ def get_subclass_tree(cls, path: str = None) -> Dict[str, Thing]:
     return clsdict
 
 
-def get_names(cls: Thing) -> List[str]:
+def get_names(cls: ThingClass) -> List[str]:
     names = []
     for name in cls.label:
         name = name.strip()
@@ -68,6 +70,9 @@ def save_techniques(name: str, techniques: List[Dict[str, Any]]):
 
 def get_esrfet_techniques():
     ontology = load_ontology("esrfet", "ESRFET.owl")
+
+    with ontology:
+        sync_reasoner()
 
     experimental_technique_base = ontology.search_one(
         iri="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#experimental_technique"

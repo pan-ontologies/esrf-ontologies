@@ -168,12 +168,6 @@
         <Class IRI="#atomic_core_excitation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#atomic_distance_range"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#atomic_distance_resolution"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#auger_electrons"/>
     </Declaration>
     <Declaration>
@@ -406,12 +400,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#requires_sample_type"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#atomic_distance_range"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#atomic_distance_resolution"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#atomic_distance_resolution_unit"/>
@@ -1165,14 +1153,6 @@
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#atomic_distance_range"/>
-        <Class IRI="#space_time"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#atomic_distance_resolution"/>
-        <Class IRI="#space_time"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#auger_electrons"/>
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
@@ -1489,17 +1469,9 @@
         <Class IRI="#sample_type"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
-        <DataProperty IRI="#atomic_distance_range"/>
-        <Class IRI="#diffraction_of_elastic_scattering"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#atomic_distance_unit"/>
         <Class IRI="#diffraction_of_elastic_scattering"/>
     </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#atomic_distance_range"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#atomic_distance_unit"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -2091,11 +2063,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#atomic_core_excitation</IRI>
         <Literal>Detecting any of the results after atomic core excitation (fluorescence, photo-electrons or auger-electrons)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#atomic_distance_resolution</IRI>
-        <Literal>atomic distance resolution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
