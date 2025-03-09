@@ -189,15 +189,6 @@
         <Class IRI="#cryo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#detect_photon_count"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#detect_photon_direction_with_respect_to_primary_beam"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#detect_photon_energy"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#detected_photon_property"/>
     </Declaration>
     <Declaration>
@@ -286,6 +277,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="#photo_electrons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#photon_count"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#photon_direction_with_respect_to_primary_beam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#photon_energy"/>
     </Declaration>
     <Declaration>
         <Class IRI="#photon_energy_bandwidth"/>
@@ -446,6 +446,24 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#CRYO-EM"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#cryo"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#electrons"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#ED-EXAFS"/>
         <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
@@ -455,11 +473,64 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#ED-EXAFS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#extended"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01054"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_with_a_detector_type"/>
+                <Class IRI="#energy_dispersive_detector"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#ED-XANES"/>
         <ObjectIntersectionOf>
             <Class IRI="#atomic_core_excitation"/>
             <Class IRI="#disperse_incident_energy_in_space"/>
             <Class IRI="#near_edge"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-XANES"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#near_edge"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -472,37 +543,117 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#ED-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_with_a_detector_type"/>
+                <Class IRI="#energy_dispersive_detector"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#ED-XRD"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#diffraction_of_elastic_scattering"/>
+            <Class IRI="#photon_energy"/>
+            <Class IRI="#x-ray"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-XRD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_with_a_detector_type"/>
+                <Class IRI="#energy_dispersive_detector"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#energy_dispersive_detector"/>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#photon_energy"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ED-XRF"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#energy_dispersive_detector"/>
-            <Class IRI="#fluorescence"/>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#fluorescence"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-XRPD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#diffraction_of_elastic_scattering"/>
+            <Class IRI="#photon_energy"/>
+            <Class IRI="#powder_sample"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ED-XRPD"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#diffraction_of_elastic_scattering"/>
-            <Class IRI="#powder_sample"/>
-            <Class IRI="#x-ray"/>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_with_a_detector_type"/>
+                <Class IRI="#energy_dispersive_detector"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#powder_sample"/>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#EDS"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#energy_dispersive_detector"/>
             <Class IRI="#fluorescence"/>
+            <Class IRI="#photon_energy"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -517,9 +668,9 @@
         <Class IRI="#FF-XRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#area_detector"/>
-            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#full-field_imaging"/>
+            <Class IRI="#photon_energy"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -560,9 +711,9 @@
     <EquivalentClasses>
         <Class IRI="#MACRO-XRF"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#macro_sample_spatial_resolution"/>
+            <Class IRI="#photon_energy"/>
             <Class IRI="#scanning_imaging"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -570,9 +721,9 @@
     <EquivalentClasses>
         <Class IRI="#MICRO-XRF"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#micro_sample_spatial_resolution"/>
+            <Class IRI="#photon_energy"/>
             <Class IRI="#scanning_imaging"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -580,9 +731,9 @@
     <EquivalentClasses>
         <Class IRI="#NANO-XRF"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
             <Class IRI="#nano_sample_spatial_resolution"/>
+            <Class IRI="#photon_energy"/>
             <Class IRI="#scanning_imaging"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -591,8 +742,8 @@
         <Class IRI="#PIXE"/>
         <ObjectIntersectionOf>
             <Class IRI="#charged_particles"/>
-            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
+            <Class IRI="#photon_energy"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -636,7 +787,7 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#detect_photon_count"/>
+                <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -651,8 +802,8 @@
     <EquivalentClasses>
         <Class IRI="#TXRF"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
+            <Class IRI="#photon_energy"/>
             <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -676,8 +827,8 @@
     <EquivalentClasses>
         <Class IRI="#WDS"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
+            <Class IRI="#photon_energy"/>
             <Class IRI="#wavelength_dispersive_detector"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -699,7 +850,7 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#detect_photon_count"/>
+                <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -729,7 +880,7 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#detect_photon_count"/>
+                <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -744,8 +895,8 @@
     <EquivalentClasses>
         <Class IRI="#XFCT"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
             <Class IRI="#fluorescence"/>
+            <Class IRI="#photon_energy"/>
             <Class IRI="#tomography"/>
             <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
@@ -760,22 +911,14 @@
     <EquivalentClasses>
         <Class IRI="#XRF"/>
         <ObjectIntersectionOf>
-            <Class IRI="#detect_photon_energy"/>
-            <Class IRI="#fluorescence"/>
-            <Class IRI="#x-ray"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#XRF"/>
-        <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#detect_photon_count"/>
+                <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#detect_photon_energy"/>
+                <Class IRI="#photon_energy"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -785,6 +928,14 @@
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#photon_energy"/>
+            <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -1042,18 +1193,6 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#detect_photon_count"/>
-        <Class IRI="#detected_photon_property"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#detect_photon_direction_with_respect_to_primary_beam"/>
-        <Class IRI="#detected_photon_property"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#detect_photon_energy"/>
-        <Class IRI="#detected_photon_property"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#detected_photon_property"/>
         <Class IRI="#technique_property"/>
     </SubClassOf>
@@ -1170,6 +1309,18 @@
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#photon_count"/>
+        <Class IRI="#detected_photon_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#photon_direction_with_respect_to_primary_beam"/>
+        <Class IRI="#detected_photon_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#photon_energy"/>
+        <Class IRI="#detected_photon_property"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#photon_energy_bandwidth"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
@@ -1183,7 +1334,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#polarization"/>
-        <Class IRI="#sample_input"/>
+        <Class IRI="#detected_photon_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#powder_sample"/>
@@ -1963,11 +2114,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#detect_photon_energy</IRI>
-        <Literal>Counting photons and their energy by semiconductors</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#detection_as_a_function_of_incident_energy</IRI>
         <Literal>Detect as a function of the incident photon or particle energy</Literal>
     </AnnotationAssertion>
@@ -1990,6 +2136,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#energy_range_value</IRI>
         <Literal>has energy range value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#extended</IRI>
+        <Literal>Incident energy is scanned over a range &gt; 200 eV</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2043,8 +2194,23 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#near_edge</IRI>
+        <Literal>Incident energy is scanned of a range &lt;200 eV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#photo_electrons</IRI>
         <Literal>Detecting one result after atomic core excitation (photo electrons)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#photon_direction_with_respect_to_primary_beam</IRI>
+        <Literal>Not sure we need this. This was XRPD (angular dispersive) vs. ED-XRPD (energy dispersive).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#photon_energy</IRI>
+        <Literal>Counting photons and their energy by semiconductors</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2119,5 +2285,5 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
