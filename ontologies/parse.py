@@ -4,8 +4,10 @@ from typing import Set, List, Dict, Any
 from tabulate import tabulate
 
 from owlready2 import get_ontology
-from owlready2 import Thing
+from owlready2 import sync_reasoner
+from owlready2.entity import ThingClass
 from owlready2.namespace import Ontology
+
 
 from esrf_ontologies.technique import get_all_techniques
 
@@ -15,14 +17,30 @@ def load_ontology(*args) -> Ontology:
     return get_ontology(owl_file).load()
 
 
-def get_all_subclasses(cls) -> Set[Thing]:
+def get_all_subclasses(cls: ThingClass) -> Set[ThingClass]:
     subclasses = set(cls.subclasses())
     for subclass in cls.subclasses():
         subclasses.update(get_all_subclasses(subclass))
     return subclasses
 
 
-def get_names(cls: Thing) -> List[str]:
+def get_subclass_tree(cls, path: str = None) -> Dict[str, ThingClass]:
+    if not path:
+        path = ""
+    clsdict = dict()
+
+    for subclass in cls.subclasses():
+        sub_path = f"{path}/{subclass.name}"
+        subclsdict = get_subclass_tree(subclass, sub_path)
+        if subclsdict:
+            clsdict.update(subclsdict)
+        else:
+            clsdict[sub_path] = subclass
+
+    return clsdict
+
+
+def get_names(cls: ThingClass) -> List[str]:
     names = []
     for name in cls.label:
         name = name.strip()
@@ -46,12 +64,15 @@ def save_techniques(name: str, techniques: List[Dict[str, Any]]):
         )
     )
     techniques = sorted(techniques, key=lambda technique: technique["names"][0])
-    with open(json_file, "w") as f:
+    with open(json_file, "w", encoding="utf-8") as f:
         json.dump(techniques, f, indent=2)
 
 
 def get_esrfet_techniques():
     ontology = load_ontology("esrfet", "ESRFET.owl")
+
+    with ontology:
+        sync_reasoner()
 
     experimental_technique_base = ontology.search_one(
         iri="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#experimental_technique"
@@ -67,6 +88,19 @@ def get_esrfet_techniques():
         )
 
     save_techniques("ESRFET.json", techniques)
+
+
+def get_esrfet_building_blocks():
+
+    ontology = load_ontology("esrfet", "ESRFET.owl")
+
+    building_blocks = ontology.search_one(
+        iri="http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#technique_property"
+    )
+
+    subclasses = get_subclass_tree(building_blocks)
+    for name in subclasses:
+        print(name)
 
 
 def get_panet_techniques():
@@ -112,6 +146,7 @@ def generate_docs():
 
 
 if __name__ == "__main__":
+    # get_esrfet_building_blocks()
     get_esrfet_techniques()
     get_panet_techniques()
     generate_docs()
