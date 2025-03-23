@@ -1,5 +1,13 @@
 [
   {
+    "iri": "http://purl.org/pan-science/ESRFET#3DXRD",
+    "names": [
+      "3DXRD",
+      "3D X-Ray Diffraction"
+    ],
+    "description": "3DXRD is a far field diffraction technique capable of reconstructing polycrystalline materials from the individual diffraction spots recorded in the diffraction pattern given that the crystallographic parameters of the material are known. The success of the technique is based on the ability of the individual diffraction spots to be separated. This means there is a trade off between the number of grains and the degree of strain that is measurable."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#CRYO-EM",
     "names": [
       "CRYO-EM",
@@ -7,6 +15,14 @@
       "TEM under cryogenic conditions"
     ],
     "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#DCT",
+    "names": [
+      "DCT",
+      "Diffraction Contract Tomography"
+    ],
+    "description": "DCT is a near-field diffraction-based imaging technique that provides high-resolution grain maps of polycrystalline materials (Ludwig et al. 2008). For each individual grain, the technique can provide orientation and average elastic strain tensor components with an accuracy of a few times 1e-4 (Reischig et al. 2013). The technique combines the concepts of image reconstruction from projections (tomography) and X-ray diffraction imaging (topography)."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#ED-EXAFS",
@@ -100,7 +116,7 @@
     "iri": "http://purl.org/pan-science/ESRFET#HERFD-XAS",
     "names": [
       "HERFD-XAS",
-      "High-Energy Resolution Fluorescence Detected X-ray Absorption Spectrscopy",
+      "High-Energy Resolution Fluorescence Detected X-ray Absorption Spectroscopy",
       "HERFD",
       "High-Energy Resolution Fluorescence Detected"
     ],

@@ -19,6 +19,9 @@ def load_ontology(*args) -> Ontology:
 
 def get_all_subclasses(cls: ThingClass) -> Set[ThingClass]:
     subclasses = set(cls.subclasses())
+    subclasses |= {
+        eq_cls for eq_cls in cls.equivalent_to if isinstance(eq_cls, ThingClass)
+    }
     for subclass in cls.subclasses():
         subclasses.update(get_all_subclasses(subclass))
     return subclasses
