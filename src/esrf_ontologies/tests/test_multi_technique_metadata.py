@@ -7,8 +7,8 @@ def test_get_dataset_metadata():
         "definition": "XAS XRF",
         "technique_pid": " ".join(
             [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+                "http://purl.org/pan-science/ESRFET#XAS",
+                "http://purl.org/pan-science/ESRFET#XRF",
             ]
         ),
     }
@@ -22,8 +22,8 @@ def test_fill_dataset_metadata():
         "definition": "XAS XRF",
         "technique_pid": " ".join(
             [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+                "http://purl.org/pan-science/ESRFET#XAS",
+                "http://purl.org/pan-science/ESRFET#XRF",
             ]
         ),
     }
@@ -34,7 +34,7 @@ def test_fill_dataset_metadata():
 
     dataset = {
         "definition": "XRF",
-        "technique_pid": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+        "technique_pid": "http://purl.org/pan-science/ESRFET#XRF",
     }
     metadata.fill_dataset_metadata(dataset)
     assert dataset == dataset_metadata
@@ -45,15 +45,15 @@ def test_fill_dataset_metadata():
 
     dataset = {
         "definition": "XRD",
-        "technique_pid": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRD",
+        "technique_pid": "http://purl.org/pan-science/ESRFET#XRD",
     }
     dataset_metadata = {
         "definition": "XAS XRD XRF",
         "technique_pid": " ".join(
             [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRD",
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+                "http://purl.org/pan-science/ESRFET#XAS",
+                "http://purl.org/pan-science/ESRFET#XRD",
+                "http://purl.org/pan-science/ESRFET#XRF",
             ]
         ),
     }
@@ -69,8 +69,8 @@ def test_get_scan_info():
             "@NX_class": "NXnote",
             "names": ["XAS", "XRF"],
             "iris": [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+                "http://purl.org/pan-science/ESRFET#XAS",
+                "http://purl.org/pan-science/ESRFET#XRF",
             ],
         },
     }
@@ -85,8 +85,8 @@ def test_fill_scan_info():
             "@NX_class": "NXnote",
             "names": ["XAS", "XRF"],
             "iris": [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+                "http://purl.org/pan-science/ESRFET#XAS",
+                "http://purl.org/pan-science/ESRFET#XRF",
             ],
         },
     }
@@ -107,8 +107,8 @@ def test_double_technique_metadata():
         "definition": "XAS XRF",
         "technique_pid": " ".join(
             [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+                "http://purl.org/pan-science/ESRFET#XAS",
+                "http://purl.org/pan-science/ESRFET#XRF",
             ]
         ),
     }
@@ -120,8 +120,8 @@ def test_double_technique_metadata():
             "@NX_class": "NXnote",
             "names": ["XAS", "XRF"],
             "iris": [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+                "http://purl.org/pan-science/ESRFET#XAS",
+                "http://purl.org/pan-science/ESRFET#XRF",
             ],
         },
     }

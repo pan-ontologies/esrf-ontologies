@@ -1,6 +1,6 @@
 [
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#CRYO-EM",
+    "iri": "http://purl.org/pan-science/ESRFET#CRYO-EM",
     "names": [
       "CRYO-EM",
       "Cryo-electron microscopy",
@@ -9,7 +9,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-EXAFS",
+    "iri": "http://purl.org/pan-science/ESRFET#ED-EXAFS",
     "names": [
       "ED-EXAFS",
       "Energy Dispersive Extended X-ray Absorption Fine Structure"
@@ -17,7 +17,7 @@
     "description": "EXAFS can be called ED-EXAFS when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XANES",
+    "iri": "http://purl.org/pan-science/ESRFET#ED-XANES",
     "names": [
       "ED-XANES",
       "Energy Dispersive X-ray Absorption Near Edge Structure"
@@ -25,7 +25,7 @@
     "description": "XANES can be called ED-XANES when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XAS",
+    "iri": "http://purl.org/pan-science/ESRFET#ED-XAS",
     "names": [
       "ED-XAS",
       "Energy Dispersive X-ray Absorption Spectroscopy"
@@ -33,7 +33,7 @@
     "description": "XAS can be called ED-XAS when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XRD",
+    "iri": "http://purl.org/pan-science/ESRFET#ED-XRD",
     "names": [
       "ED-XRD",
       "Energy Dispersive X-ray Diffraction"
@@ -41,7 +41,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XRF",
+    "iri": "http://purl.org/pan-science/ESRFET#ED-XRF",
     "names": [
       "ED-XRF",
       "Energy Dispersive X-ray Fluorescence Spectroscopy"
@@ -49,7 +49,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#ED-XRPD",
+    "iri": "http://purl.org/pan-science/ESRFET#ED-XRPD",
     "names": [
       "ED-XRPD",
       "Energy Dispersive X-ray Powder Diffraction"
@@ -57,7 +57,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#EDS",
+    "iri": "http://purl.org/pan-science/ESRFET#EDS",
     "names": [
       "EDS",
       "Energy Dispersive X-ray Spectroscopy"
@@ -65,7 +65,7 @@
     "description": "EDS measures X-ray photons coming from a sample during irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons"
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#EXAFS",
+    "iri": "http://purl.org/pan-science/ESRFET#EXAFS",
     "names": [
       "EXAFS",
       "Extended X-ray Absorption Fine Structure"
@@ -73,7 +73,7 @@
     "description": "XAS can be called EXAFS when looking at the absorption probability within an X-ray photon energy range greater than 500 eV."
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#FF-XRF",
+    "iri": "http://purl.org/pan-science/ESRFET#FF-XRF",
     "names": [
       "FF-XRF",
       "Full-Field X-ray Fluorescence Imaging"
@@ -81,7 +81,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#FTIR",
+    "iri": "http://purl.org/pan-science/ESRFET#FTIR",
     "names": [
       "FTIR",
       "Fourier Transform Infrared Spectroscopy"
@@ -89,7 +89,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#GISAXS",
+    "iri": "http://purl.org/pan-science/ESRFET#GISAXS",
     "names": [
       "GISAXS",
       "Grazing Incidence Small Angle X-ray Scattering"
@@ -97,7 +97,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#HERFD-XAS",
+    "iri": "http://purl.org/pan-science/ESRFET#HERFD-XAS",
     "names": [
       "HERFD-XAS",
       "High-Energy Resolution Fluorescence Detected X-ray Absorption Spectrscopy",
@@ -107,7 +107,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#HR-XRPD",
+    "iri": "http://purl.org/pan-science/ESRFET#HR-XRPD",
     "names": [
       "HR-XRPD",
       "High-Resolution X-ray Powder Diffraction"
@@ -115,7 +115,7 @@
     "description": "Like XRPD but with a high resolution in Q-space (or d-spacing)."
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#LDDS-XAS",
+    "iri": "http://purl.org/pan-science/ESRFET#LDDS-XAS",
     "names": [
       "LDDC-XAS",
       "Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy",
@@ -124,7 +124,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#MACRO-XRF",
+    "iri": "http://purl.org/pan-science/ESRFET#MACRO-XRF",
     "names": [
       "MACRO-XRF",
       "Scanning Macro X-ray fluorescence"
@@ -132,7 +132,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#MICRO-XRF",
+    "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRF",
     "names": [
       "MICRO-XRF",
       "Scanning Micro X-ray fluorescence"
@@ -140,7 +140,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#NANO-XRF",
+    "iri": "http://purl.org/pan-science/ESRFET#NANO-XRF",
     "names": [
       "NANO-XRF",
       "Scanning Nano X-ray fluorescence"
@@ -148,7 +148,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#NR-XMLD",
+    "iri": "http://purl.org/pan-science/ESRFET#NR-XMLD",
     "names": [
       "NR-XMLD",
       "Non-Reciprocal X-ray Magnetic Linear Dichroism"
@@ -156,7 +156,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#PFY-XAS",
+    "iri": "http://purl.org/pan-science/ESRFET#PFY-XAS",
     "names": [
       "PFY-XAS",
       "Partial Fluorescence Yield X-ray Absorption Spectroscopy"
@@ -164,7 +164,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#PIXE",
+    "iri": "http://purl.org/pan-science/ESRFET#PIXE",
     "names": [
       "PIXE",
       "Particle Induced X-ray Emission"
@@ -172,7 +172,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#RIXS",
+    "iri": "http://purl.org/pan-science/ESRFET#RIXS",
     "names": [
       "RIXS",
       "Resonant Inelastic X-ray Scattering"
@@ -180,7 +180,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#SAXS",
+    "iri": "http://purl.org/pan-science/ESRFET#SAXS",
     "names": [
       "SAXS",
       "Small-Angle X-ray Scattering"
@@ -188,7 +188,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#SCXRD",
+    "iri": "http://purl.org/pan-science/ESRFET#SCXRD",
     "names": [
       "SCXRD",
       "Single crystal X-ray diffraction",
@@ -199,7 +199,7 @@
     "description": "Single crystal X-ray diffraction measured the diffraction from a single crystal to determine its crystal structure."
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#SSX",
+    "iri": "http://purl.org/pan-science/ESRFET#SSX",
     "names": [
       "SSX",
       "Serial Synchrotron Crystallography"
@@ -207,7 +207,7 @@
     "description": "Like SCXRD but instead of measuring the same crystal under different orientations we measure many individual crystals with random orientation."
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#TEM",
+    "iri": "http://purl.org/pan-science/ESRFET#TEM",
     "names": [
       "TEM",
       "Transmission Electron Microscopy"
@@ -215,7 +215,7 @@
     "description": "Transmission imaging of samples with electrons"
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#TFY-XAS",
+    "iri": "http://purl.org/pan-science/ESRFET#TFY-XAS",
     "names": [
       "TFY-XAS",
       "Total Fluorescence Yield X-ray Absorption Spectroscopy"
@@ -223,7 +223,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#TXRF",
+    "iri": "http://purl.org/pan-science/ESRFET#TXRF",
     "names": [
       "TXRF",
       "Total Reflection X-ray Fluorescence"
@@ -231,7 +231,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#USAXS",
+    "iri": "http://purl.org/pan-science/ESRFET#USAXS",
     "names": [
       "USAXS",
       "Ultra-Small Angle X-ray Scattering"
@@ -239,7 +239,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#WAXS",
+    "iri": "http://purl.org/pan-science/ESRFET#WAXS",
     "names": [
       "WAXS",
       "Wide-angle X-ray Scattering"
@@ -247,7 +247,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#WDS",
+    "iri": "http://purl.org/pan-science/ESRFET#WDS",
     "names": [
       "WDS",
       "Wavelength Dispersive X-ray Spectroscopy"
@@ -255,7 +255,7 @@
     "description": "WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons"
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XANES",
+    "iri": "http://purl.org/pan-science/ESRFET#XANES",
     "names": [
       "XANES",
       "X-ray Absorption Near Edge Structure"
@@ -263,7 +263,7 @@
     "description": "XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV."
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+    "iri": "http://purl.org/pan-science/ESRFET#XAS",
     "names": [
       "XAS",
       "X-ray Absorption Spectroscopy"
@@ -271,7 +271,7 @@
     "description": "XAS measures a signal related to the X-ray absorption probability (could be fluorescence, photon electrons, auger electrons, all electrons, transmission) as function of the incomming X-ray photon energy. X-rays are absorbed by atomic core excitation (remove and core-shell electron from an atom)."
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XDMR",
+    "iri": "http://purl.org/pan-science/ESRFET#XDMR",
     "names": [
       "XDMR",
       "X-ray Detected Magnetic Resonance"
@@ -279,7 +279,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XES",
+    "iri": "http://purl.org/pan-science/ESRFET#XES",
     "names": [
       "XES",
       "X-ray Emission Spectroscopy"
@@ -287,7 +287,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XFCT",
+    "iri": "http://purl.org/pan-science/ESRFET#XFCT",
     "names": [
       "XFCT",
       "X-ray Fluorescence Tomography"
@@ -295,7 +295,7 @@
     "description": "XRF under different sample orientations"
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XLD",
+    "iri": "http://purl.org/pan-science/ESRFET#XLD",
     "names": [
       "XLD",
       "X-ray Linear Dichroism"
@@ -303,7 +303,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XMCD",
+    "iri": "http://purl.org/pan-science/ESRFET#XMCD",
     "names": [
       "XMCD",
       "X-ray Magnetic Circular Dichroism"
@@ -311,7 +311,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XMLD",
+    "iri": "http://purl.org/pan-science/ESRFET#XMLD",
     "names": [
       "XMLD",
       "X-ray Magnetic Linear Dichroism"
@@ -319,7 +319,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XM\u03c7D",
+    "iri": "http://purl.org/pan-science/ESRFET#XM\u03c7D",
     "names": [
       "XM\u03c7D",
       "X-ray MagnetoChiral Dichroism"
@@ -327,7 +327,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XNCD",
+    "iri": "http://purl.org/pan-science/ESRFET#XNCD",
     "names": [
       "XNCD",
       "X-ray Natural Circular Dichroism"
@@ -335,7 +335,7 @@
     "description": ""
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRD",
+    "iri": "http://purl.org/pan-science/ESRFET#XRD",
     "names": [
       "XRD",
       "X-ray diffraction"
@@ -343,7 +343,7 @@
     "description": "X-ray diffraction measured the diffraction from a crystalline sample to determine the crystal structure, molecular structure, multi-phase identification and composition, ..."
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF",
+    "iri": "http://purl.org/pan-science/ESRFET#XRF",
     "names": [
       "XRF",
       "X-ray Fluorescence Spectroscopy"
@@ -351,7 +351,7 @@
     "description": "XRF measures X-ray photons coming from a sample during irradition with X-rays and derives elemental composition from the energy of the fluorescence photons"
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRPD",
+    "iri": "http://purl.org/pan-science/ESRFET#XRPD",
     "names": [
       "XRPD",
       "X-ray Powder Diffraction"
@@ -359,7 +359,7 @@
     "description": "X-ray powder diffraction measured the diffraction from a powder to determine the crystal structure or multi-phase identifiaction and composition."
   },
   {
-    "iri": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRS",
+    "iri": "http://purl.org/pan-science/ESRFET#XRS",
     "names": [
       "XRS",
       "X-ray Raman Scattering"
