@@ -6,7 +6,7 @@ def test_get_dataset_metadata():
     metadata = get_technique_metadata("XAS")
     dataset_metadata = {
         "definition": "XAS",
-        "technique_pid": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+        "technique_pid": "http://purl.org/pan-science/ESRFET#XAS",
     }
 
     assert metadata.get_dataset_metadata() == dataset_metadata
@@ -16,7 +16,7 @@ def test_fill_dataset_metadata():
     metadata = get_technique_metadata("XAS")
     dataset_metadata = {
         "definition": "XAS",
-        "technique_pid": "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS",
+        "technique_pid": "http://purl.org/pan-science/ESRFET#XAS",
     }
 
     dataset = {}
@@ -35,9 +35,7 @@ def test_get_scan_info():
         "techniques": {
             "@NX_class": "NXnote",
             "names": ["XAS"],
-            "iris": [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS"
-            ],
+            "iris": ["http://purl.org/pan-science/ESRFET#XAS"],
         },
     }
     assert metadata.get_scan_info() == scan_info
@@ -50,9 +48,7 @@ def test_fill_scan_info():
         "techniques": {
             "@NX_class": "NXnote",
             "names": ["XAS"],
-            "iris": [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS"
-            ],
+            "iris": ["http://purl.org/pan-science/ESRFET#XAS"],
         },
     }
 
@@ -65,9 +61,7 @@ def test_fill_scan_info():
         "techniques": {
             "@NX_class": "NXnote",
             "names": ["XAS"],
-            "iris": [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XAS"
-            ],
+            "iris": ["http://purl.org/pan-science/ESRFET#XAS"],
         },
     }
     info = {
@@ -75,9 +69,7 @@ def test_fill_scan_info():
         "techniques": {
             "@NX_class": "NXnote",
             "names": ["XRF"],
-            "iris": [
-                "http://www.semanticweb.org/koumouts/ontologies/2024/3/esrf_ontology#XRF"
-            ],
+            "iris": ["http://purl.org/pan-science/ESRFET#XRF"],
         },
     }
     metadata.fill_scan_info(info)
