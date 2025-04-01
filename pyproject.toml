@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "esrf-ontologies"
-version = "0.1.0b2"
+version = "0.1.0b3"
 authors = [{name = "ESRF", email = "dau-pydev@esrf.fr"}]
 description = "ESRF Ontologies"
 readme = {file = "README.md", content-type = "text/markdown"}
@@ -20,11 +20,11 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pan-ontologies/esrf-ontologies/esrf-ontologies/"
+Homepage = "https://github.com/pan-ontologies/esrf-ontologies/"
 Documentation = "https://esrf-ontologies.readthedocs.io/"
-Repository = "https://github.com/pan-ontologies/esrf-ontologies/esrf-ontologies/"
-Issues = "https://github.com/pan-ontologies/esrf-ontologies/esrf-ontologies/issues"
-Changelog = "https://github.com/pan-ontologies/esrf-ontologies/-/blob/main/CHANGELOG.md"
+Repository = "https://github.com/pan-ontologies/esrf-ontologies/"
+Issues = "https://github.com/pan-ontologies/esrf-ontologies/issues"
+Changelog = "https://github.com/pan-ontologies/esrf-ontologies/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 test = [
