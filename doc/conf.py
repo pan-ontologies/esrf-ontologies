@@ -1,9 +1,13 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+import os
+import sys
 from importlib.metadata import version as get_version
 
 release = get_version("esrf-ontologies")
+
+sys.path.append(os.path.abspath("_ext"))
 
 project = "esrf-ontologies"
 version = ".".join(release.split(".")[:2])
@@ -19,6 +23,7 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.viewcode",
     "sphinx_autodoc_typehints",
+    "technique_table",
 ]
 templates_path = ["_templates"]
 exclude_patterns = ["build"]
@@ -36,7 +41,8 @@ autodoc_default_flags = [
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "pydata_sphinx_theme"
-html_static_path = []
+html_static_path = ["_static"]
+html_css_files = ["custom.css"]
 html_theme_options = {
     "icon_links": [
         {

@@ -1,7 +1,6 @@
 import os
 import json
 from typing import Set, List, Dict, Any
-from tabulate import tabulate
 
 from owlready2 import get_ontology
 from owlready2 import sync_reasoner
@@ -127,25 +126,21 @@ def get_panet_techniques():
 def generate_docs():
     docdir = os.path.join(os.path.dirname(__file__), "..", "doc")
 
-    headers = ["Name", "Alternative names", "Description"]
     table = [
-        [
-            f"`{technique.names[0]} <{technique.iri}>`_",  # noqa W604
-            ", ".join(technique.names[1:]),
-            technique.description,
-        ]
+        {
+            "Name": f'<a href="{technique.iri}">{technique.names[0]}</a>',  # noqa W604
+            "Alternative names": ", ".join(technique.names[1:]),
+            "Description": technique.description,
+        }
         for technique in sorted(
             get_all_techniques(), key=lambda technique: technique.names
         )
     ]
 
-    with open(os.path.join(docdir, "techniques.rst"), "w", encoding="utf-8") as f:
-        f.write(".. _techniques:\n\n")
-        f.write("Techniques\n==========\n\n")
-        f.write(
-            "The **name** and **alternative names** can be used in :meth:`esrf_ontology.technique.get_technique_metadata`.\n\n"
-        )
-        f.write(tabulate(table, headers, tablefmt="rst"))
+    with open(
+        os.path.join(docdir, "_ext", "techniques.json"), "w", encoding="utf-8"
+    ) as f:
+        json.dump(table, f, indent=2, ensure_ascii=False)
 
 
 if __name__ == "__main__":

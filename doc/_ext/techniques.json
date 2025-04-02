@@ -1,0 +1,237 @@
+[
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#3DXRD\">3DXRD</a>",
+    "Alternative names": "3D X-Ray Diffraction",
+    "Description": "3DXRD is a far field diffraction technique capable of reconstructing polycrystalline materials from the individual diffraction spots recorded in the diffraction pattern given that the crystallographic parameters of the material are known. The success of the technique is based on the ability of the individual diffraction spots to be separated. This means there is a trade off between the number of grains and the degree of strain that is measurable."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#CRYO-EM\">CRYO-EM</a>",
+    "Alternative names": "Cryo-electron microscopy, TEM under cryogenic conditions",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#DCT\">DCT</a>",
+    "Alternative names": "Diffraction Contract Tomography",
+    "Description": "DCT is a near-field diffraction-based imaging technique that provides high-resolution grain maps of polycrystalline materials (Ludwig et al. 2008). For each individual grain, the technique can provide orientation and average elastic strain tensor components with an accuracy of a few times 1e-4 (Reischig et al. 2013). The technique combines the concepts of image reconstruction from projections (tomography) and X-ray diffraction imaging (topography)."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#ED-EXAFS\">ED-EXAFS</a>",
+    "Alternative names": "Energy Dispersive Extended X-ray Absorption Fine Structure",
+    "Description": "EXAFS can be called ED-EXAFS when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#ED-XANES\">ED-XANES</a>",
+    "Alternative names": "Energy Dispersive X-ray Absorption Near Edge Structure",
+    "Description": "XANES can be called ED-XANES when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#ED-XAS\">ED-XAS</a>",
+    "Alternative names": "Energy Dispersive X-ray Absorption Spectroscopy",
+    "Description": "XAS can be called ED-XAS when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#ED-XRD\">ED-XRD</a>",
+    "Alternative names": "Energy Dispersive X-ray Diffraction",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#ED-XRF\">ED-XRF</a>",
+    "Alternative names": "Energy Dispersive X-ray Fluorescence Spectroscopy",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#ED-XRPD\">ED-XRPD</a>",
+    "Alternative names": "Energy Dispersive X-ray Powder Diffraction",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#EDS\">EDS</a>",
+    "Alternative names": "Energy Dispersive X-ray Spectroscopy",
+    "Description": "EDS measures X-ray photons coming from a sample during irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons"
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#EXAFS\">EXAFS</a>",
+    "Alternative names": "Extended X-ray Absorption Fine Structure",
+    "Description": "XAS can be called EXAFS when looking at the absorption probability within an X-ray photon energy range greater than 500 eV."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#FF-XRF\">FF-XRF</a>",
+    "Alternative names": "Full-Field X-ray Fluorescence Imaging",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#FTIR\">FTIR</a>",
+    "Alternative names": "Fourier Transform Infrared Spectroscopy",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#GISAXS\">GISAXS</a>",
+    "Alternative names": "Grazing Incidence Small Angle X-ray Scattering",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#HERFD-XAS\">HERFD-XAS</a>",
+    "Alternative names": "High-Energy Resolution Fluorescence Detected X-ray Absorption Spectroscopy, HERFD, High-Energy Resolution Fluorescence Detected",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#HR-XRPD\">HR-XRPD</a>",
+    "Alternative names": "High-Resolution X-ray Powder Diffraction",
+    "Description": "Like XRPD but with a high resolution in Q-space (or d-spacing)."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#LDDS-XAS\">LDDC-XAS</a>",
+    "Alternative names": "Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy, Laser-Driven Shock Compression X-ray Absorption Spectroscopy",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MACRO-XRF\">MACRO-XRF</a>",
+    "Alternative names": "Scanning Macro X-ray fluorescence",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MICRO-XRF\">MICRO-XRF</a>",
+    "Alternative names": "Scanning Micro X-ray fluorescence",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NANO-XRF\">NANO-XRF</a>",
+    "Alternative names": "Scanning Nano X-ray fluorescence",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NR-XMLD\">NR-XMLD</a>",
+    "Alternative names": "Non-Reciprocal X-ray Magnetic Linear Dichroism",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#PFY-XAS\">PFY-XAS</a>",
+    "Alternative names": "Partial Fluorescence Yield X-ray Absorption Spectroscopy",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#PIXE\">PIXE</a>",
+    "Alternative names": "Particle Induced X-ray Emission",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#RIXS\">RIXS</a>",
+    "Alternative names": "Resonant Inelastic X-ray Scattering",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SAXS\">SAXS</a>",
+    "Alternative names": "Small-Angle X-ray Scattering",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SCXRD\">SCXRD</a>",
+    "Alternative names": "Single crystal X-ray diffraction, SC-XRD, SCD, SXRD",
+    "Description": "Single crystal X-ray diffraction measured the diffraction from a single crystal to determine its crystal structure."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SSX\">SSX</a>",
+    "Alternative names": "Serial Synchrotron Crystallography",
+    "Description": "Like SCXRD but instead of measuring the same crystal under different orientations we measure many individual crystals with random orientation."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TEM\">TEM</a>",
+    "Alternative names": "Transmission Electron Microscopy",
+    "Description": "Transmission imaging of samples with electrons"
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TFY-XAS\">TFY-XAS</a>",
+    "Alternative names": "Total Fluorescence Yield X-ray Absorption Spectroscopy",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TXRF\">TXRF</a>",
+    "Alternative names": "Total Reflection X-ray Fluorescence",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#USAXS\">USAXS</a>",
+    "Alternative names": "Ultra-Small Angle X-ray Scattering",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#WAXS\">WAXS</a>",
+    "Alternative names": "Wide-angle X-ray Scattering",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#WDS\">WDS</a>",
+    "Alternative names": "Wavelength Dispersive X-ray Spectroscopy",
+    "Description": "WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons"
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XANES\">XANES</a>",
+    "Alternative names": "X-ray Absorption Near Edge Structure",
+    "Description": "XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XAS\">XAS</a>",
+    "Alternative names": "X-ray Absorption Spectroscopy",
+    "Description": "XAS measures a signal related to the X-ray absorption probability (could be fluorescence, photon electrons, auger electrons, all electrons, transmission) as function of the incomming X-ray photon energy. X-rays are absorbed by atomic core excitation (remove and core-shell electron from an atom)."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XDMR\">XDMR</a>",
+    "Alternative names": "X-ray Detected Magnetic Resonance",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XES\">XES</a>",
+    "Alternative names": "X-ray Emission Spectroscopy",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XFCT\">XFCT</a>",
+    "Alternative names": "X-ray Fluorescence Tomography",
+    "Description": "XRF under different sample orientations"
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XLD\">XLD</a>",
+    "Alternative names": "X-ray Linear Dichroism",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XMCD\">XMCD</a>",
+    "Alternative names": "X-ray Magnetic Circular Dichroism",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XMLD\">XMLD</a>",
+    "Alternative names": "X-ray Magnetic Linear Dichroism",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XMχD\">XMχD</a>",
+    "Alternative names": "X-ray MagnetoChiral Dichroism",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XNCD\">XNCD</a>",
+    "Alternative names": "X-ray Natural Circular Dichroism",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRD\">XRD</a>",
+    "Alternative names": "X-ray diffraction",
+    "Description": "X-ray diffraction measured the diffraction from a crystalline sample to determine the crystal structure, molecular structure, multi-phase identification and composition, ..."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRF\">XRF</a>",
+    "Alternative names": "X-ray Fluorescence Spectroscopy",
+    "Description": "XRF measures X-ray photons coming from a sample during irradition with X-rays and derives elemental composition from the energy of the fluorescence photons"
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRPD\">XRPD</a>",
+    "Alternative names": "X-ray Powder Diffraction",
+    "Description": "X-ray powder diffraction measured the diffraction from a powder to determine the crystal structure or multi-phase identifiaction and composition."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRS\">XRS</a>",
+    "Alternative names": "X-ray Raman Scattering",
+    "Description": ""
+  }
+]
