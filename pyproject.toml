@@ -35,14 +35,12 @@ dev = [
     "black >=22",
     "flake8 >=4",
     "owlready2",
-    "tabulate",
 ]
 doc = [
     "esrf-ontologies[test]",
     "sphinx >=4.5",
     "sphinx-autodoc-typehints >=1.16",
     "pydata-sphinx-theme",
-    "tabulate",
 ]
 
 [tool.setuptools]

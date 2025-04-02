@@ -1,0 +1,16 @@
+.scrollable-table {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 800px;
+    border: 1px solid #ddd;
+}
+
+.scrollable-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.scrollable-table th, .scrollable-table td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+}
