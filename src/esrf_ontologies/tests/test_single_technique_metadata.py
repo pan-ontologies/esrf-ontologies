@@ -39,6 +39,7 @@ def test_get_scan_info():
         },
     }
     assert metadata.get_scan_info() == scan_info
+    assert metadata.get_scan_metadata() == scan_info["techniques"]
 
 
 def test_fill_scan_info():
@@ -85,3 +86,4 @@ def test_empty_technique_metadata():
     metadata = get_technique_metadata()
     assert metadata.get_dataset_metadata() == dict()
     assert metadata.get_scan_info() == dict()
+    assert metadata.get_scan_metadata() is None

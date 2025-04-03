@@ -20,12 +20,14 @@ Install from pypi
 pip install esrf-ontologies
 ```
 
-Retrieve technique metadata for one or more technique aliases
+Retrieve technique metadata for one or more techniques
 
 ```python
-from esrf_ontologies.technique import get_technique_metadata
+from esrf_ontologies import technique
 
-metadata = get_technique_metadata("XAS", "XRF")
+metadata_generator = technique.get_technique_metadata("XAS", "XRF")
+dataset_metadata = metadata_generator.get_dataset_metadata()
+scan_metadata = metadata_generator.get_scan_metadata()
 ```
 
 ## Documentation

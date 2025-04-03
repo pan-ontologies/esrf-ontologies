@@ -1,6 +1,6 @@
 import logging
 import dataclasses
-from typing import List, Dict, Union, Set, MutableMapping, Tuple
+from typing import List, Dict, Union, Set, MutableMapping, Tuple, Optional
 
 _logger = logging.getLogger(__name__)
 
@@ -20,6 +20,10 @@ class TechniqueMetadata:
     and data portal (ICAT dataset metafata)."""
 
     techniques: Set[Technique]
+
+    def get_scan_metadata(self) -> Optional[Dict[str, Union[List[str], str]]]:
+        if self.techniques:
+            return self._get_nxnote()
 
     def get_scan_info(self) -> Dict[str, Dict[str, Union[List[str], str]]]:
         if not self.techniques:
