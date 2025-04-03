@@ -50,6 +50,11 @@
     "Description": "EDS measures X-ray photons coming from a sample during irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons"
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#EM\">EM</a>",
+    "Alternative names": "Electron Microscopy",
+    "Description": ""
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#EXAFS\">EXAFS</a>",
     "Alternative names": "Extended X-ray Absorption Fine Structure",
     "Description": "XAS can be called EXAFS when looking at the absorption probability within an X-ray photon energy range greater than 500 eV."
@@ -212,6 +217,11 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XNCD\">XNCD</a>",
     "Alternative names": "X-ray Natural Circular Dichroism",
+    "Description": ""
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRAYS\">XRAYS</a>",
+    "Alternative names": "X-ray Radiation Technique",
     "Description": ""
   },
   {
