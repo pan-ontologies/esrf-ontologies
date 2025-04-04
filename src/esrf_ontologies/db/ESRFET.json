@@ -81,6 +81,14 @@
     "description": "EDS measures X-ray photons coming from a sample during irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons"
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#EM",
+    "names": [
+      "EM",
+      "Electron Microscopy"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#EXAFS",
     "names": [
       "EXAFS",
@@ -347,6 +355,14 @@
     "names": [
       "XNCD",
       "X-ray Natural Circular Dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XRAYS",
+    "names": [
+      "XRAYS",
+      "X-ray Radiation Technique"
     ],
     "description": ""
   },

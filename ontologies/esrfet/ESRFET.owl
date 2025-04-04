@@ -45,6 +45,9 @@
         <Class IRI="#EDS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#EM"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#EXAFS"/>
     </Declaration>
     <Declaration>
@@ -145,6 +148,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#XNCD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XRAYS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XRD"/>
@@ -654,6 +660,16 @@
                 <ObjectProperty IRI="#measures_with_a_detector_type"/>
                 <Class IRI="#energy_dispersive_detector"/>
             </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#electrons"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EM"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#electrons"/>
@@ -1213,6 +1229,16 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#XRAYS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#XRD"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1323,6 +1349,10 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#EM"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NR-XMLD"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -1360,6 +1390,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XNCD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XRAYS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1848,6 +1882,16 @@
         <Literal>Energy Dispersive X-ray Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EM</IRI>
+        <Literal>EM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#EM</IRI>
+        <Literal>Electron Microscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#EXAFS</IRI>
         <Literal>XAS can be called EXAFS when looking at the absorption probability within an X-ray photon energy range greater than 500 eV.</Literal>
@@ -2251,6 +2295,16 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XNCD</IRI>
         <Literal>X-ray Natural Circular Dichroism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XRAYS</IRI>
+        <Literal>XRAYS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XRAYS</IRI>
+        <Literal>X-ray Radiation Technique</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
