@@ -1,5 +1,5 @@
-Bliss
-=====
+Publish technique metadata in Bliss
+===================================
 
 Use the scan metadata mechanism in `BLISS <https://bliss.gitlab-pages.esrf.fr/bliss/>`_ to add
 metadata automatically to any scan and dataset based on the content of the scan. For example any scan
