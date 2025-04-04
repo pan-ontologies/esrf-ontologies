@@ -1,8 +1,9 @@
 Bliss
 =====
 
-Use the scan metadata mechanism in BLISS to add metadata automatically to any scan and dataset
-based on the content of the scan. For example any scan that has an "energy" counter is an "XAS" scan:
+Use the scan metadata mechanism in `BLISS <https://bliss.gitlab-pages.esrf.fr/bliss/>`_ to add
+metadata automatically to any scan and dataset based on the content of the scan. For example any scan
+that has an "energy" counter is an "XAS" scan:
 
 .. code:: python
 
@@ -43,4 +44,5 @@ it can be done like this
 
         setup_global.ascan(setup_global.energy, start, stop, intervals, count_time, scan_info=scan_info)
 
-Adding the same technique to a dataset several times is not a problem.
+Adding the same technique to a dataset several times is not a problem; a unique list of techniques
+is maintained, preventing duplicates.
