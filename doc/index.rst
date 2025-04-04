@@ -13,40 +13,29 @@ Python API's:
 * Generate technique metadata for ESRF data producers to save in `NeXus-compliant <https://www.nexusformat.org/>`_
   HDF5 and the `ESRF data portal <https://data.esrf.fr>`_.
 
-Python API for technique metadata
----------------------------------
+Python API
+----------
 
-Get the :ref:`technique metadata <techniques>` for one of more aliases
-
-.. code:: python
-
-    from esrf_ontologies.technique import get_technique_metadata
-
-    metadata = get_technique_metadata("XAS", "XRF")
-
-Add technique metadata to the BLISS dataset metadata for the ESRF data portal
+Get the :ref:`technique metadata <techniques>` for one of more techniques
 
 .. code:: python
 
-    from bliss import current_session
+    from esrf_ontologies import technique
 
-    metadata.fill_dataset_metadata(current_session.scan_saving.dataset)
+    metadata_generator = technique.get_technique_metadata("XAS", "XRF")
+    dataset_metadata = metadata_generator.get_dataset_metadata()
+    scan_metadata = metadata_generator.get_scan_metadata()
 
-Add technique metadata to the BLISS scan info to be saved in HDF5 by the NeXus writer
-
-.. code:: python
-
-    ascan(energy, 9.01, 9.3, 600, 0.1, scan_info=metadata.get_scan_info())
-
-Or when it needs to be merged it with already existing BLISS scan info
+Get all techniques or a subset based on technique name or acronym
 
 .. code:: python
 
-    metadata.fill_scan_info(scan_info)
-    ascan(energy, 9.01, 9.3, 600, 0.1, scan_info=scan_info)
+    all_techniques = technique.get_all_techniques()
+    techniques = technique.get_techniques("XAS", "XRF")
 
 .. toctree::
     :hidden:
-    
+
+    bliss
     techniques
     api
