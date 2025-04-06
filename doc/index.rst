@@ -36,6 +36,7 @@ Get all techniques or a subset based on technique name or acronym
 .. toctree::
     :hidden:
 
-    bliss
-    techniques
+    howtoguides
+    explanations
+    esrfet
     api
