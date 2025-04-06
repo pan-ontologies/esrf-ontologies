@@ -408,6 +408,9 @@
         <ObjectProperty IRI="#measures_result_of_interaction"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#measures_transmission_with_detector_type"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#measures_with_a_detector_type"/>
     </Declaration>
     <Declaration>
@@ -471,12 +474,19 @@
                 <Class IRI="#diffraction_of_elastic_scattering"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#polycrystalline_sample"/>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#measures_transmission_with_detector_type"/>
+                    <Class IRI="#area_detector"/>
+                </ObjectSomeValuesFrom>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#polycrystalline_sample"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1336,11 +1346,11 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#polycrystalline_sample"/>
+                <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#x-ray"/>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#polycrystalline_sample"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1705,6 +1715,10 @@
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures_transmission_with_detector_type"/>
+        <Class IRI="#transmission"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#measures_with_a_detector_type"/>
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
@@ -1727,6 +1741,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#measures_result_of_interaction"/>
         <Class IRI="#cascade_of_events_being_detected"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures_transmission_with_detector_type"/>
+        <Class IRI="#detector_type"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#measures_with_a_detector_type"/>
