@@ -5,12 +5,10 @@ In the :ref:`ESRFET <techniques>` ontology, each experimental technique is defin
 the essential features that characterize it — such as what it measures, what kind of input it requires,
 and how the measurement is performed.
 
-These definitions are encoded using formal logic (OWL), but at a high level, each technique is described as:
+These definitions are encoded using formal logic (OWL), but at a high level, each technique is
+described as a combination of specific characteristics that distinguishes it from other techniques.
 
-- A type of experimental technique
-- A combination of specific conditions that must be met
-
-These conditions typically include:
+These characteristics typically include:
 
 - What kind of physical interaction the technique is based on (e.g., diffraction, fluorescence)
 - What properties are being measured (e.g., energy, intensity)
@@ -19,8 +17,7 @@ These conditions typically include:
 
 By using this formal structure, the ontology allows researchers and machines to:
 
-- Search for techniques based on specific properties
+- Search for techniques based on specific characteristics
 - Automatically classify or compare techniques
-- Check whether a technique meets a set of criteria
 
 New techniques can be added simply by describing their key characteristics using the same structure.
