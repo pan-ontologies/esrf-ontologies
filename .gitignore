@@ -16,6 +16,7 @@ __pycache__/
 *.egg-info/
 .eggs/
 /doc/_generated
+html
 
 # Generates
 catalog-v001.xml
