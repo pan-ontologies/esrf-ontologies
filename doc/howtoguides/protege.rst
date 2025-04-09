@@ -26,3 +26,9 @@ Create desktop file
     echo "Name=Protégé" >> $filename
     echo "Icon=$(pwd)/protege/app/Protege.icns" >> $filename
     echo "Exec=$(pwd)/protege/run.sh" >> $filename
+
+Optional: to use the plugin `OWLViz <https://github.com/protegeproject/owlviz>`_, `GraphViz <https://www.graphviz.org/>`_ must be installed. Restart Protégé after installation.
+
+.. code:: bash
+
+    sudo apt install graphviz
