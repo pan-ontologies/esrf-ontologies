@@ -78,7 +78,7 @@
       "EDS",
       "Energy Dispersive X-ray Spectroscopy"
     ],
-    "description": "EDS measures X-ray photons coming from a sample during irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons"
+    "description": "EDS measures X-ray photons coming from a sample during electron irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons"
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#EM",
@@ -389,6 +389,16 @@
       "X-ray Powder Diffraction"
     ],
     "description": "X-ray powder diffraction measured the diffraction from a powder to determine the crystal structure or multi-phase identifiaction and composition."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XRR",
+    "names": [
+      "XRR",
+      "X-ray Reflectometry",
+      "X-ray reflectivity",
+      "X-ray specular reflectivity"
+    ],
+    "description": ""
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRS",

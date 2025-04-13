@@ -162,6 +162,9 @@
         <Class IRI="#XRPD"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#XRR"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#XRS"/>
     </Declaration>
     <Declaration>
@@ -190,6 +193,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#cryo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detected_cascade_of_events_property"/>
     </Declaration>
     <Declaration>
         <Class IRI="#detected_photon_property"/>
@@ -309,6 +315,12 @@
         <Class IRI="#powder_sample"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#reflection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#refraction"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#resonant"/>
     </Declaration>
     <Declaration>
@@ -390,15 +402,6 @@
         <Class IRI="#3DXRD"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#changes"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_photon_energy_range"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_polarization"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
     </Declaration>
     <Declaration>
@@ -436,6 +439,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#sample_spatial_resolution_unit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#example_photon_count"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wrong"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
@@ -1303,6 +1312,20 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#XRR"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#reflection"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#absorption"/>
         <Class IRI="#atomic_core_excitation"/>
     </EquivalentClasses>
@@ -1451,8 +1474,12 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#detected_photon_property"/>
+        <Class IRI="#detected_cascade_of_events_property"/>
         <Class IRI="#technique_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detected_photon_property"/>
+        <Class IRI="#detected_cascade_of_events_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
@@ -1464,7 +1491,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#detection_resolution"/>
-        <Class IRI="#technique_property"/>
+        <Class IRI="#detected_cascade_of_events_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#detector_type"/>
@@ -1603,6 +1630,14 @@
         <Class IRI="#sample_type"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#reflection"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#refraction"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#resonant"/>
         <Class IRI="#other"/>
     </SubClassOf>
@@ -1702,6 +1737,15 @@
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#photon_count"/>
+        <NamedIndividual IRI="#example_photon_count"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures_interaction_result_property"/>
+        <NamedIndividual IRI="#wrong"/>
+        <NamedIndividual IRI="#example_photon_count"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
         <Class IRI="#experimental_technique"/>
@@ -1731,12 +1775,12 @@
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_polarization"/>
-        <Class IRI="#polarization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
         <Class IRI="#space_time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures_interaction_result_property"/>
+        <Class IRI="#detected_cascade_of_events_property"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -1887,7 +1931,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#EDS</IRI>
-        <Literal>EDS measures X-ray photons coming from a sample during irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons</Literal>
+        <Literal>EDS measures X-ray photons coming from a sample during electron irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2368,6 +2412,26 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRPD</IRI>
         <Literal>X-ray Powder Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XRR</IRI>
+        <Literal>XRR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#XRR</IRI>
+        <Literal>X-ray reflectivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#XRR</IRI>
+        <Literal>X-ray specular reflectivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XRR</IRI>
+        <Literal>X-ray Reflectometry</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
