@@ -47,7 +47,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#EDS\">EDS</a>",
     "Alternative names": "Energy Dispersive X-ray Spectroscopy",
-    "Description": "EDS measures X-ray photons coming from a sample during irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons"
+    "Description": "EDS measures X-ray photons coming from a sample during electron irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons"
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#EM\">EM</a>",
@@ -238,6 +238,11 @@
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRPD\">XRPD</a>",
     "Alternative names": "X-ray Powder Diffraction",
     "Description": "X-ray powder diffraction measured the diffraction from a powder to determine the crystal structure or multi-phase identifiaction and composition."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRR\">XRR</a>",
+    "Alternative names": "X-ray Reflectometry, X-ray reflectivity, X-ray specular reflectivity",
+    "Description": ""
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRS\">XRS</a>",

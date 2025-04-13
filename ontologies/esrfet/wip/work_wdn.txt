@@ -738,3 +738,87 @@ Each "experiment" has these components
 - insertion device ("undulator", "wiggler", "bending magnet")
 - instruments ("nano end-station, SXM end-station")
 - scientists ("Marine Cotte et al.")
+
+
+Nexus-ESRF Ontology connections
+-------------------------------
+
+NXfluo(Nexus)-XRF(ESRFET)
++++++++++++++++++++++++++
+
+experimental_technique
+ and (measures_interaction_result_property some photon_count)
+ and (measures_interaction_result_property some photon_energy)
+ and (measures_result_of_interaction some fluorescence)
+ and (requires_sample_input some x-ray)
+
+NXsource with probe=x-ray ->  and (requires_sample_input some x-ray)
+
+-
+
+NXdetector called "fluorescence" with
+    1D array (data)
+    1D array (energy) of the same length (length nE called "number of energies")
+
+NXdetector -> measures_interaction_result_property
+NXdetector with 1 dimension defined as "number of energies" -> photon_energy
+
+->  and (measures_interaction_result_property some photon_count)
+    and (measures_interaction_result_property some photon_energy)
+
+-
+
+??? (not explicitely defined) -> and (measures_result_of_interaction some fluorescence)
+
+Note: none of the application definition explicitly define what they are measuring.
+
+For the refactoring of NXxas we are doing explicitly (ontologies/esrfet/wip/nexus/XASModes.pdf)
+
+NXxas(Nexus)-XAS(ESRFET)
+++++++++++++++++++++++++
+
+experimental_technique
+ and (measures_as_a_function_of some detection_as_a_function_of_incident_energy)
+ and (measures_interaction_result_property some photon_count)
+ and (measures_result_of_interaction some atomic_core_excitation)
+ and (requires_sample_input some x-ray)
+
+NXsource with probe=x-ray ->  and (requires_sample_input some x-ray)
+
+NXdetector called "absorbed_beam" and "incoming_beam" with
+    1D array (data)
+
+None of these are defined explicitely: detection_as_a_function_of_incident_energy, photon_count, atomic_core_excitation, fluorescence
+
+NXxas(Nexus)-TFY-XAS(ESRFET)
+++++++++++++++++++++++++++++
+
+experimental_technique
+ and (measures_as_a_function_of some detection_as_a_function_of_incident_energy)
+ and (measures_interaction_result_property some photon_count)
+ and (measures_result_of_interaction some atomic_core_excitation)
+ and (measures_result_of_interaction some fluorescence)
+ and (requires_sample_input some x-ray)
+
+mode="Fluorescence Yield"  <-  TFY
+
+None of these are defined explicitely: detection_as_a_function_of_incident_energy, photon_count, atomic_core_excitation, fluorescence
+
+NXxas(Nexus)-HERFD-XAS(ESRFET)
+++++++++++++++++++++++++++++++
+
+experimental_technique
+ and (measures_as_a_function_of some detection_as_a_function_of_incident_energy)
+ and (measures_interaction_result_property some photon_count)
+ and (measures_result_of_interaction some atomic_core_excitation)
+ and (measures_result_of_interaction some fluorescence)
+ and (requires_sample_input some x-ray)
+
+mode="Fluorescence Yield"  <-  HERFD
+
+None of these are defined explicitely: detection_as_a_function_of_incident_energy, photon_count, atomic_core_excitation, fluorescence
+
+NXdirecttof(Nexus)-???(not a technique)
++++++++++++++++++++++++++++++++++++++++
+
+This is a application definition for raw data from a direct geometry TOF spectrometer.
