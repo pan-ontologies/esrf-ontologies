@@ -586,6 +586,12 @@
         <Class IRI="#FS‑XANES"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#can_be_used_for_technique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_use_NexusApplicationDefinition"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
     </Declaration>
     <Declaration>
@@ -1703,6 +1709,13 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXarpes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_be_used_for_technique"/>
+            <Class IRI="#XAS"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DAC"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
@@ -2284,6 +2297,18 @@
         <NamedIndividual IRI="#wrong"/>
         <NamedIndividual IRI="#example_photon_count"/>
     </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#can_be_used_for_technique"/>
+        <ObjectProperty IRI="#can_use_NexusApplicationDefinition"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_be_used_for_technique"/>
+        <Class IRI="http://purl.org/nexusformat/definitions/NeXusOntology#NeXusApplicationClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_use_NexusApplicationDefinition"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
         <Class IRI="#experimental_technique"/>
@@ -2316,6 +2341,14 @@
         <ObjectProperty IRI="#requires_sample_type"/>
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#can_be_used_for_technique"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#can_use_NexusApplicationDefinition"/>
+        <Class IRI="http://purl.org/nexusformat/definitions/NeXusOntology#NeXusApplicationClass"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
         <Class IRI="#space_time"/>
