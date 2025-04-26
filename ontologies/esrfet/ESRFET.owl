@@ -598,6 +598,12 @@
         <Class IRI="#TR‑SSX"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#can_be_used_for_technique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_use_NexusApplicationDefinition"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
     </Declaration>
     <Declaration>
@@ -1941,44 +1947,22 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.org/nexusformat/definitions/Application/NXarpes"/>
-        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXarpes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.org/nexusformat/definitions/NeXusOntology#has"/>
-            <Class IRI="http://purl.org/nexusformat/definitions/Group/NXarpes/ENTRY"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXmpes_arpes"/>
-        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXmx"/>
-        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01164"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXarpes"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#can_be_used_for_technique"/>
             <Class IRI="#XAS"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXarpes"/>
-        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
+        <Class IRI="#DAFS"/>
+        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXarpes"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.org/nexusformat/definitions/NeXusOntology#has"/>
-            <Class IRI="http://purl.org/nexusformat/definitions/Group/NXarpes/ENTRY"/>
-        </ObjectAllValuesFrom>
+        <Class IRI="#DFXM"/>
+        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXmpes_arpes"/>
-        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
+        <Class IRI="#EM"/>
+        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GIXRD"/>
@@ -2554,6 +2538,18 @@
         <ObjectProperty IRI="#can_use_NexusApplicationDefinition"/>
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#can_be_used_for_technique"/>
+        <ObjectProperty IRI="#can_use_NexusApplicationDefinition"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_be_used_for_technique"/>
+        <Class IRI="http://purl.org/nexusformat/definitions/NeXusOntology#NeXusApplicationClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_use_NexusApplicationDefinition"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
         <Class IRI="#experimental_technique"/>
@@ -2586,13 +2582,13 @@
         <ObjectProperty IRI="#requires_sample_type"/>
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#utilizes_technique"/>
-        <Class IRI="#synchrotron_experiment"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#can_be_used_for_technique"/>
         <Class IRI="#experimental_technique"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#can_use_NexusApplicationDefinition"/>
+        <Class IRI="http://purl.org/nexusformat/definitions/NeXusOntology#NeXusApplicationClass"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
