@@ -204,9 +204,6 @@
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#detection_in_space"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#detection_resolution"/>
     </Declaration>
     <Declaration>
@@ -1447,7 +1444,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#area_detector"/>
-        <Class IRI="#detection_in_space"/>
+        <Class IRI="#detector_type"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#atomic_core_excitation"/>
@@ -1484,10 +1481,6 @@
     <SubClassOf>
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
         <Class IRI="#space_time"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#detection_in_space"/>
-        <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#detection_resolution"/>
@@ -1615,7 +1608,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#point_detector"/>
-        <Class IRI="#detection_in_space"/>
+        <Class IRI="#detector_type"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#polarization"/>
@@ -1699,7 +1692,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#strip_detector"/>
-        <Class IRI="#detection_in_space"/>
+        <Class IRI="#detector_type"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#tomography"/>
