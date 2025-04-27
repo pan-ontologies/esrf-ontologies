@@ -171,9 +171,6 @@
         <Class IRI="#absorption"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#anomalous"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#area_detector"/>
     </Declaration>
     <Declaration>
@@ -279,9 +276,6 @@
         <Class IRI="#near_edge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#other"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#photo_electrons"/>
     </Declaration>
     <Declaration>
@@ -316,9 +310,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#refraction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#resonant"/>
     </Declaration>
     <Declaration>
         <Class IRI="#right_circular_polarization"/>
@@ -1439,10 +1430,6 @@
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#anomalous"/>
-        <Class IRI="#other"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#area_detector"/>
         <Class IRI="#detector_type"/>
     </SubClassOf>
@@ -1579,10 +1566,6 @@
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#other"/>
-        <Class IRI="#technique_property"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#photo_electrons"/>
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
@@ -1629,10 +1612,6 @@
     <SubClassOf>
         <Class IRI="#refraction"/>
         <Class IRI="#cascade_of_events_being_detected"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#resonant"/>
-        <Class IRI="#other"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#right_circular_polarization"/>
@@ -2435,11 +2414,6 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRS</IRI>
         <Literal>X-ray Raman Scattering</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#anomalous</IRI>
-        <Literal>eg anomalous_SAXS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
