@@ -1709,6 +1709,14 @@
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#cascade_of_events_being_detected"/>
+        <Class IRI="#detected_cascade_of_events_property"/>
+        <Class IRI="#detector_type"/>
+        <Class IRI="#sample_input"/>
+        <Class IRI="#sample_type"/>
+        <Class IRI="#space_time"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#photon_count"/>
         <NamedIndividual IRI="#example_photon_count"/>
