@@ -171,9 +171,6 @@
         <Class IRI="#absorption"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#anomalous"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#area_detector"/>
     </Declaration>
     <Declaration>
@@ -202,9 +199,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#detection_in_space"/>
     </Declaration>
     <Declaration>
         <Class IRI="#detection_resolution"/>
@@ -282,9 +276,6 @@
         <Class IRI="#near_edge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#other"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#photo_electrons"/>
     </Declaration>
     <Declaration>
@@ -321,9 +312,6 @@
         <Class IRI="#refraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#resonant"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#right_circular_polarization"/>
     </Declaration>
     <Declaration>
@@ -336,13 +324,16 @@
         <Class IRI="#sample_input"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#sample_input_property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sample_spatial_resolution"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#sample_spatial_resolution_achieved_on_detection"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sample_spatial_resolution_achived_on_input"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sample_spatial_resolution_class"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sample_type"/>
@@ -418,6 +409,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#requires_sample_input"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires_sample_input_property"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#requires_sample_type"/>
@@ -505,15 +499,7 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#detection_as_a_function_of_incident_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#extended"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -526,6 +512,10 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -535,15 +525,7 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#detection_as_a_function_of_incident_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#near_edge"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -556,6 +538,10 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -569,10 +555,6 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#disperse_incident_energy_in_space"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
@@ -582,6 +564,10 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -722,6 +708,10 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#full-field_imaging"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
@@ -732,10 +722,6 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#fluorescence"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_result_of_interaction"/>
-                <Class IRI="#full-field_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_with_a_detector_type"/>
@@ -770,16 +756,16 @@
                 <Class IRI="#large_length_scales"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#diffraction_of_elastic_scattering"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -814,7 +800,7 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#high_precision_in_Q_space"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
@@ -862,8 +848,12 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#macro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -872,10 +862,6 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -892,8 +878,12 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#micro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -902,10 +892,6 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -922,8 +908,12 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#nano_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -932,10 +922,6 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -1023,11 +1009,11 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#single_crystal_sample"/>
+                <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#x-ray"/>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#single_crystal_sample"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1036,12 +1022,12 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_result_of_interaction"/>
-                <Class IRI="#diffraction_of_elastic_scattering"/>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#serial_scanning"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
-                <Class IRI="#serial_scanning"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
@@ -1102,16 +1088,16 @@
                 <Class IRI="#photon_energy"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#fluorescence"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1226,16 +1212,16 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#tomography"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -1442,12 +1428,8 @@
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#anomalous"/>
-        <Class IRI="#other"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#area_detector"/>
-        <Class IRI="#detection_in_space"/>
+        <Class IRI="#detector_type"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#atomic_core_excitation"/>
@@ -1486,10 +1468,6 @@
         <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#detection_in_space"/>
-        <Class IRI="#technique_property"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#detection_resolution"/>
         <Class IRI="#detected_cascade_of_events_property"/>
     </SubClassOf>
@@ -1507,7 +1485,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#disperse_incident_energy_in_space"/>
-        <Class IRI="#sample_input"/>
+        <Class IRI="#sample_input_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#electrons"/>
@@ -1559,7 +1537,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#macro_sample_spatial_resolution"/>
-        <Class IRI="#sample_spatial_resolution_class"/>
+        <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#magnetic_field"/>
@@ -1567,7 +1545,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#micro_sample_spatial_resolution"/>
-        <Class IRI="#sample_spatial_resolution_class"/>
+        <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#monochromatic_beam"/>
@@ -1579,15 +1557,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#nano_sample_spatial_resolution"/>
-        <Class IRI="#sample_spatial_resolution_class"/>
+        <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#near_edge"/>
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#other"/>
-        <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#photo_electrons"/>
@@ -1615,7 +1589,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#point_detector"/>
-        <Class IRI="#detection_in_space"/>
+        <Class IRI="#detector_type"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#polarization"/>
@@ -1638,16 +1612,12 @@
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#resonant"/>
-        <Class IRI="#other"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#right_circular_polarization"/>
         <Class IRI="#polarization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_incident_angle"/>
-        <Class IRI="#sample_input"/>
+        <Class IRI="#sample_input_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
@@ -1658,16 +1628,20 @@
         <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#sample_input_property"/>
+        <Class IRI="#technique_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sample_spatial_resolution"/>
+        <Class IRI="#space_time"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#sample_spatial_resolution_achieved_on_detection"/>
-        <Class IRI="#sample_spatial_resolution_class"/>
+        <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_spatial_resolution_achived_on_input"/>
-        <Class IRI="#sample_spatial_resolution_class"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sample_spatial_resolution_class"/>
-        <Class IRI="#space_time"/>
+        <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_type"/>
@@ -1699,7 +1673,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#strip_detector"/>
-        <Class IRI="#detection_in_space"/>
+        <Class IRI="#detector_type"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#tomography"/>
@@ -1737,6 +1711,15 @@
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#cascade_of_events_being_detected"/>
+        <Class IRI="#detected_cascade_of_events_property"/>
+        <Class IRI="#detector_type"/>
+        <Class IRI="#sample_input"/>
+        <Class IRI="#sample_input_property"/>
+        <Class IRI="#sample_type"/>
+        <Class IRI="#space_time"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#photon_count"/>
         <NamedIndividual IRI="#example_photon_count"/>
@@ -1771,6 +1754,10 @@
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires_sample_input_property"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#requires_sample_type"/>
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
@@ -1799,6 +1786,10 @@
         <Class IRI="#sample_input"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires_sample_input_property"/>
+        <Class IRI="#sample_input_property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#requires_sample_type"/>
         <Class IRI="#sample_type"/>
     </ObjectPropertyRange>
@@ -1819,19 +1810,24 @@
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CRYO-EM</IRI>
+        <Literal>TEM applied to samples cooled to cryogenic temperatures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CRYO-EM</IRI>
         <Literal>CRYO-EM</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>#CRYO-EM</IRI>
-        <Literal>Cryo-electron microscopy</Literal>
+        <Literal>Cryogenic electron microscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#CRYO-EM</IRI>
-        <Literal>TEM under cryogenic conditions</Literal>
+        <Literal>Cryo-electron microscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1904,9 +1900,19 @@
         <Literal>ED-XRD</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#ED-XRD</IRI>
+        <Literal>XRD with an energy dispersive detector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#ED-XRD</IRI>
         <Literal>Energy Dispersive X-ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ED-XRF</IRI>
+        <Literal>XRF with an energy dispersive detector.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1917,6 +1923,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#ED-XRF</IRI>
         <Literal>Energy Dispersive X-ray Fluorescence Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ED-XRPD</IRI>
+        <Literal>XRPD with an energy dispersive detector.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1944,6 +1955,11 @@
         <Literal>Energy Dispersive X-ray Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EM</IRI>
+        <Literal>An electron microscope is a microscope that uses a beam of electrons as a source of illumination. They use electron optics that are analogous to the glass lenses of an optical light microscope to control the electron beam, for instance focusing it to produce magnified images or electron diffraction patterns.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#EM</IRI>
         <Literal>EM</Literal>
@@ -1967,6 +1983,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#EXAFS</IRI>
         <Literal>Extended X-ray Absorption Fine Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FF-XRF</IRI>
+        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved on the detection side.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2049,6 +2070,11 @@
         <Literal>Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MACRO-XRF</IRI>
+        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size greater that 100 micron.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MACRO-XRF</IRI>
         <Literal>MACRO-XRF</Literal>
@@ -2059,6 +2085,11 @@
         <Literal>Scanning Macro X-ray fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MICRO-XRF</IRI>
+        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 micron.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MICRO-XRF</IRI>
         <Literal>MICRO-XRF</Literal>
@@ -2067,6 +2098,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#MICRO-XRF</IRI>
         <Literal>Scanning Micro X-ray fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NANO-XRF</IRI>
+        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2176,7 +2212,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TEM</IRI>
-        <Literal>Transmission imaging of samples with electrons</Literal>
+        <Literal>EM in which a beam of electrons is transmitted through a specimen to form an image.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2284,6 +2320,11 @@
         <Literal>X-ray Detected Magnetic Resonance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XES</IRI>
+        <Literal>XRF with a high energy resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XES</IRI>
         <Literal>XES</Literal>
@@ -2296,7 +2337,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XFCT</IRI>
-        <Literal>XRF under different sample orientations</Literal>
+        <Literal>XRF which provides elemental distributions in the sample 3D by measuring fluorescence in 2D or 1D projection under many orientations.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2359,6 +2400,11 @@
         <Literal>X-ray Natural Circular Dichroism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRAYS</IRI>
+        <Literal>Experimental technique with X-ray irradiation of the sample under investigation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XRAYS</IRI>
         <Literal>XRAYS</Literal>
@@ -2414,6 +2460,11 @@
         <Literal>X-ray Powder Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRR</IRI>
+        <Literal>A surface-sensitive analytical technique based on X-ray reflection used in chemistry, physics, and materials science to characterize surfaces, thin films and multilayers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XRR</IRI>
         <Literal>XRR</Literal>
@@ -2445,8 +2496,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#anomalous</IRI>
-        <Literal>eg anomalous_SAXS</Literal>
+        <IRI>#area_detector</IRI>
+        <Literal>Detector that distinguishes the position of the waves (photons or particles) in a 2D plane in space by using an array of pixels which measure the waves independently.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2460,8 +2511,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#biological_sample</IRI>
+        <Literal>Any material taken from a living organism or made of biological molecules, such as cells, tissues, membranes, proteins, nucleic acid, DNA, or viruses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#cascade_of_events_being_detected</IRI>
-        <Literal>Cascade of events being detected</Literal>
+        <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the result of which is being detected.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#charged_particles</IRI>
+        <Literal>For example protons or helium ions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2470,8 +2531,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detected_cascade_of_events_property</IRI>
+        <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the result has properties which are being detected.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detected_photon_property</IRI>
+        <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the result being photons which properties are being measured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#detection_as_a_function_of_incident_energy</IRI>
         <Literal>Detect as a function of the incident photon or particle energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detection_resolution</IRI>
+        <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the resolution of the certain result properties are measured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detector_type</IRI>
+        <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the result has properties which are being detected with a detector that has certain characteristics.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2481,7 +2562,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#disperse_incident_energy_in_space</IRI>
-        <Literal>Disperse incident energy in space</Literal>
+        <Literal>Disperse incident wave photons in space with a polychromator (e.g. elliptically curved crystal in Bragg or Laue geometry).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#energy_dispersive_detector</IRI>
+        <Literal>Detector that distinguishes the energy of the waves (photons or particles) it measures with a semiconductor material which seperates energies based on the electrical current they generate in the semiconductor material.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2492,6 +2578,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#energy_range_value</IRI>
         <Literal>has energy range value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#experimental_technique</IRI>
+        <Literal>A specific method or procedure used to perform experiments and gather data to investigate scientific questions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2507,6 +2598,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#full-field_imaging</IRI>
         <Literal>Image of the sample in a single measurement (no motion of beam, sample or detector)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#full-field_imaging</IRI>
+        <Literal>Measure sample characteristics in a 2D plane in space by why of detection.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2533,6 +2629,11 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#macro_sample_spatial_resolution</IRI>
+        <Literal>Sample properties are measured with a resolution in space greater than 100 micron.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#measures_as_a_function_of</IRI>
         <Literal>Example: XAS measures as function of incident X-ray photon energy
                 X-ray absorption tomography measures as function of sample orientation
@@ -2547,6 +2648,21 @@ Large structural features: supramolecular structures, particle sizes, and shapes
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#measures_result_of_interaction</IRI>
         <Literal>Example: XRF measures fluorscence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#micro_sample_spatial_resolution</IRI>
+        <Literal>Sample properties are measured with a resolution in space between than 0.1 and 100 micron.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#monochromatic_beam</IRI>
+        <Literal>Photon energy bandwidth is smaller than ???</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#nano_sample_spatial_resolution</IRI>
+        <Literal>Sample properties are measured with a resolution in space between than 0.1 and 100 nanometer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2570,6 +2686,41 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pink_beam</IRI>
+        <Literal>Photon energy bandwidth is between ???</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#point_detector</IRI>
+        <Literal>Detector that cannot distinguish the position of the waves (photons or particles) in space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#polycrystalline_sample</IRI>
+        <Literal>A polycrystalline material is composed of many small single crystals (grains) with different orientations joined together.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#powder_sample</IRI>
+        <Literal>A powder is a collection of tiny, separate crystalline particles with random orientations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#reflection</IRI>
+        <Literal>Detect waves (photons or particles) which are reflected of the interface between two media.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#reflection</IRI>
+        <Literal>total reflection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#refraction</IRI>
+        <Literal>Detect waves (photons or particles) which are redirected as a result of passing from one medium to another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#requires_sample_input</IRI>
         <Literal>Example: Soft X-ray Absorption Spectroscopy uses soft X-ray as sample input</Literal>
     </AnnotationAssertion>
@@ -2585,6 +2736,36 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_incident_angle</IRI>
+        <Literal>The angle between the incident wave (photons or particles) and the sample surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_incident_angle_smaller_than_critical_angle</IRI>
+        <Literal>The angle between the incident wave (photons or particles) and the sample surface is below the critical angle for reflection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_input</IRI>
+        <Literal>Everything that influences the sample during an experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_input_property</IRI>
+        <Literal>Properties of everything that influences the sample during an experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_spatial_resolution</IRI>
+        <Literal>Sample properties are measured with a resolution in space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_spatial_resolution_achieved_on_detection</IRI>
+        <Literal>Sample properties are measured with a resolution in space determined by the detection mechanism (e.g. detector resolution or beam size).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#sample_spatial_resolution_achieved_on_detection</IRI>
         <Literal>achieved_on could be an object property of the  &quot;sample_spatial_resolution&quot; in this case:
 
@@ -2596,8 +2777,33 @@ and remove this class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_spatial_resolution_achived_on_input</IRI>
+        <Literal>Sample properties are measured with a resolution in space determined by the sample input.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_type</IRI>
+        <Literal>Charateristics of the sample being investigated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#scanning_imaging</IRI>
         <Literal>Image of the sample build up by many measurements (motion of beam, sample or detector)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scanning_imaging</IRI>
+        <Literal>Measure sample characteristics in a 2D plane in space by why of moving the sample.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#serial_scanning</IRI>
+        <Literal>A method of data collection where many samples of the same kind are streaming through the sample input (e.g. X-ray beam), one at a time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#single_crystal_sample</IRI>
+        <Literal>A solid material in which the component atoms are arranged in a definite pattern and whose surface regularity reflects its internal symmetry.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2615,8 +2821,28 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#strip_detector</IRI>
+        <Literal>Detector that distinguishes the position of the waves (photons or particles) in a 1D strip (line with a certain thickness) in space by using an array of pixels which measure the waves independently.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#technique_property</IRI>
+        <Literal>A characteristic or feature that describes what an experimental technique can do, how it works, or what kind of information it provides (like resolution, sensitivity, or the type of data it collects).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#technique_property</IRI>
+        <Literal>All the ranges of the object properties with experimental technique as domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#tomography</IRI>
         <Literal>Many images of the sample under different orientations from which a 3D volume can be reconstructed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tomography</IRI>
+        <Literal>Measure sample characteristics is 3D by measuring characteristics in 2D or 1D projection under many orientations.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2636,6 +2862,16 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
 Q-Range (Å−1) = 0.0001 - 0.01
 
 Ultra Large structural features: large aggregates, clusters, and larger pores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wavelength_dispersive_detector</IRI>
+        <Literal>Detector that distinguishes the energy of the waves (photons or particles) it measures with a crystal monochromator which separates the energies in space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#white_beam</IRI>
+        <Literal>Photon energy bandwidth is greater than ???</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

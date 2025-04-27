@@ -12,9 +12,9 @@
     "names": [
       "CRYO-EM",
       "Cryo-electron microscopy",
-      "TEM under cryogenic conditions"
+      "Cryogenic electron microscopy"
     ],
-    "description": ""
+    "description": "TEM applied to samples cooled to cryogenic temperatures."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#DCT",
@@ -52,7 +52,8 @@
     "iri": "http://purl.org/pan-science/ESRFET#ED-XRD",
     "names": [
       "ED-XRD",
-      "Energy Dispersive X-ray Diffraction"
+      "Energy Dispersive X-ray Diffraction",
+      "XRD with an energy dispersive detector."
     ],
     "description": ""
   },
@@ -62,7 +63,7 @@
       "ED-XRF",
       "Energy Dispersive X-ray Fluorescence Spectroscopy"
     ],
-    "description": ""
+    "description": "XRF with an energy dispersive detector."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#ED-XRPD",
@@ -70,7 +71,7 @@
       "ED-XRPD",
       "Energy Dispersive X-ray Powder Diffraction"
     ],
-    "description": ""
+    "description": "XRPD with an energy dispersive detector."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#EDS",
@@ -86,7 +87,7 @@
       "EM",
       "Electron Microscopy"
     ],
-    "description": ""
+    "description": "An electron microscope is a microscope that uses a beam of electrons as a source of illumination. They use electron optics that are analogous to the glass lenses of an optical light microscope to control the electron beam, for instance focusing it to produce magnified images or electron diffraction patterns."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#EXAFS",
@@ -102,7 +103,7 @@
       "FF-XRF",
       "Full-Field X-ray Fluorescence Imaging"
     ],
-    "description": ""
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved on the detection side."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#FTIR",
@@ -153,7 +154,7 @@
       "MACRO-XRF",
       "Scanning Macro X-ray fluorescence"
     ],
-    "description": ""
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size greater that 100 micron."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRF",
@@ -161,7 +162,7 @@
       "MICRO-XRF",
       "Scanning Micro X-ray fluorescence"
     ],
-    "description": ""
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 micron."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NANO-XRF",
@@ -169,7 +170,7 @@
       "NANO-XRF",
       "Scanning Nano X-ray fluorescence"
     ],
-    "description": ""
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NR-XMLD",
@@ -236,7 +237,7 @@
       "TEM",
       "Transmission Electron Microscopy"
     ],
-    "description": "Transmission imaging of samples with electrons"
+    "description": "EM in which a beam of electrons is transmitted through a specimen to form an image."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#TFY-XAS",
@@ -308,7 +309,7 @@
       "XES",
       "X-ray Emission Spectroscopy"
     ],
-    "description": ""
+    "description": "XRF with a high energy resolution."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XFCT",
@@ -316,7 +317,7 @@
       "XFCT",
       "X-ray Fluorescence Tomography"
     ],
-    "description": "XRF under different sample orientations"
+    "description": "XRF which provides elemental distributions in the sample 3D by measuring fluorescence in 2D or 1D projection under many orientations."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XLD",
@@ -364,7 +365,7 @@
       "XRAYS",
       "X-ray Radiation Technique"
     ],
-    "description": ""
+    "description": "Experimental technique with X-ray irradiation of the sample under investigation."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRD",
@@ -398,7 +399,7 @@
       "X-ray reflectivity",
       "X-ray specular reflectivity"
     ],
-    "description": ""
+    "description": "A surface-sensitive analytical technique based on X-ray reflection used in chemistry, physics, and materials science to characterize surfaces, thin films and multilayers."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRS",
