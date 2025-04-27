@@ -2413,6 +2413,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#area_detector</IRI>
+        <Literal>Detector that distinguishes the position of the waves (photons or particles) in a 2D plane in space by using an array of pixels which measure the waves independently.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#atomic_core_excitation</IRI>
         <Literal>Detecting any of the results after atomic core excitation (fluorescence, photo-electrons or auger-electrons)</Literal>
     </AnnotationAssertion>
@@ -2424,7 +2429,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#cascade_of_events_being_detected</IRI>
-        <Literal>Cascade of events being detected</Literal>
+        <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the result of which is being detected.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2433,8 +2438,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detected_cascade_of_events_property</IRI>
+        <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the result has properties which are being detected.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detected_photon_property</IRI>
+        <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the result being photons which properties are being measured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#detection_as_a_function_of_incident_energy</IRI>
         <Literal>Detect as a function of the incident photon or particle energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detection_resolution</IRI>
+        <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the resolution of the certain result properties are measured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detector_type</IRI>
+        <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the result has properties which are being detected with a detector that has certain characteristics.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2445,6 +2470,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#disperse_incident_energy_in_space</IRI>
         <Literal>Disperse incident energy in space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#energy_dispersive_detector</IRI>
+        <Literal>Detector that distinguishes the energy of the waves (photons or particles) it measures with a semiconductor material which seperates energies based on the electrical current they generate in the semiconductor material.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2533,6 +2563,26 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#point_detector</IRI>
+        <Literal>Detector that cannot distinguish the position of the waves (photons or particles) in space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#reflection</IRI>
+        <Literal>Detect waves (photons or particles) which are reflected of the interface between two media.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#reflection</IRI>
+        <Literal>total reflection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#refraction</IRI>
+        <Literal>Detect waves (photons or particles) which are redirected as a result of passing from one medium to another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#requires_sample_input</IRI>
         <Literal>Example: Soft X-ray Absorption Spectroscopy uses soft X-ray as sample input</Literal>
     </AnnotationAssertion>
@@ -2545,6 +2595,11 @@ Large structural features: supramolecular structures, particle sizes, and shapes
                 Another way of looking at it:
                 diffraction (cascade of events being detected) requires &apos;any of&apos; single crystal, powder, fiber
                 x-ray powder diffraction (technique) requires &apos;exactly&apos; powder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_input</IRI>
+        <Literal>Everything that influences the sample during an experiment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2578,6 +2633,11 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#strip_detector</IRI>
+        <Literal>Detector that distinguishes the position of the waves (photons or particles) in a 1D strip (line with a certain thickness) in space by using an array of pixels which measure the waves independently.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#tomography</IRI>
         <Literal>Many images of the sample under different orientations from which a 3D volume can be reconstructed</Literal>
     </AnnotationAssertion>
@@ -2599,6 +2659,11 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
 Q-Range (Å−1) = 0.0001 - 0.01
 
 Ultra Large structural features: large aggregates, clusters, and larger pores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wavelength_dispersive_detector</IRI>
+        <Literal>Detector that distinguishes the energy of the waves (photons or particles) it measures with a crystal monochromator which separates the energies in space.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
