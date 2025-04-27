@@ -493,15 +493,11 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+                <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#extended"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -523,15 +519,11 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+                <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#near_edge"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -553,10 +545,6 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#detection_as_a_function_of_incident_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
@@ -710,6 +698,10 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#full-field_imaging"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
@@ -720,10 +712,6 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#fluorescence"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_result_of_interaction"/>
-                <Class IRI="#full-field_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_with_a_detector_type"/>
@@ -758,12 +746,12 @@
                 <Class IRI="#large_length_scales"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
@@ -802,7 +790,7 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#high_precision_in_Q_space"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
@@ -850,8 +838,12 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#macro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -860,10 +852,6 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -880,8 +868,12 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#micro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -890,10 +882,6 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -910,8 +898,12 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#nano_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -920,10 +912,6 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#scanning_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -1011,11 +999,11 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#single_crystal_sample"/>
+                <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#x-ray"/>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#single_crystal_sample"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1024,12 +1012,12 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_result_of_interaction"/>
-                <Class IRI="#diffraction_of_elastic_scattering"/>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#serial_scanning"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
-                <Class IRI="#serial_scanning"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
@@ -1090,12 +1078,12 @@
                 <Class IRI="#photon_energy"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#fluorescence"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
@@ -1214,16 +1202,16 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_energy"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#tomography"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -1487,7 +1475,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#disperse_incident_energy_in_space"/>
-        <Class IRI="#sample_input"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#electrons"/>
