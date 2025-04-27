@@ -1810,19 +1810,24 @@
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CRYO-EM</IRI>
+        <Literal>TEM applied to samples cooled to cryogenic temperatures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CRYO-EM</IRI>
         <Literal>CRYO-EM</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>#CRYO-EM</IRI>
-        <Literal>Cryo-electron microscopy</Literal>
+        <Literal>Cryogenic electron microscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#CRYO-EM</IRI>
-        <Literal>TEM under cryogenic conditions</Literal>
+        <Literal>Cryo-electron microscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1895,9 +1900,19 @@
         <Literal>ED-XRD</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#ED-XRD</IRI>
+        <Literal>XRD with an energy dispersive detector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#ED-XRD</IRI>
         <Literal>Energy Dispersive X-ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ED-XRF</IRI>
+        <Literal>XRF with an energy dispersive detector.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1908,6 +1923,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#ED-XRF</IRI>
         <Literal>Energy Dispersive X-ray Fluorescence Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ED-XRPD</IRI>
+        <Literal>XRPD with an energy dispersive detector.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1935,6 +1955,11 @@
         <Literal>Energy Dispersive X-ray Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EM</IRI>
+        <Literal>An electron microscope is a microscope that uses a beam of electrons as a source of illumination. They use electron optics that are analogous to the glass lenses of an optical light microscope to control the electron beam, for instance focusing it to produce magnified images or electron diffraction patterns.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#EM</IRI>
         <Literal>EM</Literal>
@@ -1958,6 +1983,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#EXAFS</IRI>
         <Literal>Extended X-ray Absorption Fine Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FF-XRF</IRI>
+        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved on the detection side.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2040,6 +2070,11 @@
         <Literal>Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MACRO-XRF</IRI>
+        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size greater that 100 micron.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MACRO-XRF</IRI>
         <Literal>MACRO-XRF</Literal>
@@ -2050,6 +2085,11 @@
         <Literal>Scanning Macro X-ray fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MICRO-XRF</IRI>
+        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 micron.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MICRO-XRF</IRI>
         <Literal>MICRO-XRF</Literal>
@@ -2058,6 +2098,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#MICRO-XRF</IRI>
         <Literal>Scanning Micro X-ray fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NANO-XRF</IRI>
+        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2167,7 +2212,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TEM</IRI>
-        <Literal>Transmission imaging of samples with electrons</Literal>
+        <Literal>EM in which a beam of electrons is transmitted through a specimen to form an image.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2275,6 +2320,11 @@
         <Literal>X-ray Detected Magnetic Resonance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XES</IRI>
+        <Literal>XRF with a high energy resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XES</IRI>
         <Literal>XES</Literal>
@@ -2287,7 +2337,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XFCT</IRI>
-        <Literal>XRF under different sample orientations</Literal>
+        <Literal>XRF which provides elemental distributions in the sample 3D by measuring fluorescence in 2D or 1D projection under many orientations.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2350,6 +2400,11 @@
         <Literal>X-ray Natural Circular Dichroism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRAYS</IRI>
+        <Literal>Experimental technique with X-ray irradiation of the sample under investigation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XRAYS</IRI>
         <Literal>XRAYS</Literal>
@@ -2403,6 +2458,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRPD</IRI>
         <Literal>X-ray Powder Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRR</IRI>
+        <Literal>A surface-sensitive analytical technique based on X-ray reflection used in chemistry, physics, and materials science to characterize surfaces, thin films and multilayers.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2570,7 +2630,7 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#macro_sample_spatial_resolution</IRI>
-        <Literal>Sample properties are measured with a resolution in space greater than 10 micron.</Literal>
+        <Literal>Sample properties are measured with a resolution in space greater than 100 micron.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2592,7 +2652,7 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#micro_sample_spatial_resolution</IRI>
-        <Literal>Sample properties are measured with a resolution in space between than 10 micron and 0.1 micron.</Literal>
+        <Literal>Sample properties are measured with a resolution in space between than 0.1 and 100 micron.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2702,6 +2762,11 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#sample_spatial_resolution_achieved_on_detection</IRI>
+        <Literal>Sample properties are measured with a resolution in space determined by the detection mechanism (e.g. detector resolution or beam size).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_spatial_resolution_achieved_on_detection</IRI>
         <Literal>achieved_on could be an object property of the  &quot;sample_spatial_resolution&quot; in this case:
 
 &quot;sample_spatial_resolution&quot;
@@ -2709,11 +2774,6 @@ Large structural features: supramolecular structures, particle sizes, and shapes
 &quot;detection&quot;
 
 and remove this class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#sample_spatial_resolution_achieved_on_detection</IRI>
-        <Literal>Sample properties are measured with a resolution in space determined by the detection mechanism (e.g. detector resolution or beam size).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
