@@ -565,9 +565,9 @@ Classes to be used as domain or range:
         /detection_resolution/ultra_large_length_scales
 
     detector type:
-        /detection_in_space/area_detector
-        /detection_in_space/point_detector
-        /detection_in_space/strip_detector
+        /detector_type/area_detector
+        /detector_type/point_detector
+        /detector_type/strip_detector
         /detector_type/energy_dispersive_detector
         /detector_type/wavelength_dispersive_detector
 
