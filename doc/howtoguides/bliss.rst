@@ -14,7 +14,11 @@ that has an "energy" counter is an "XAS" scan:
         channels = scan.scan_info.get("channels", dict())
         if "energy" in channels:
             metadata_generator = technique.get_technique_metadata("XAS")
-            metadata.fill_dataset_metadata(current_session.scan_saving.dataset)
+
+            # For ICAT:
+            metadata_generator.fill_dataset_metadata(current_session.scan_saving.dataset)
+
+            # For HDF5:
             return metadata_generator.get_scan_metadata()
 
     scan_meta.add_categories({"techniques"})
@@ -35,10 +39,12 @@ it can be done like this
     def xas_scan(start, stop, intervals, count_time, scan_info=None):
         metadata_generator = technique.get_technique_metadata("XAS")
 
-        metadata.fill_dataset_metadata(current_session.scan_saving.dataset)
+        # For ICAT:
+        metadata_generator.fill_dataset_metadata(current_session.scan_saving.dataset)
 
+        # For HDF5:
         if scan_info is None:
-            scan_info=metadata_generator.get_scan_info()
+            scan_info = metadata_generator.get_scan_info()
         else:
             metadata_generator.fill_scan_info(scan_info)
 
