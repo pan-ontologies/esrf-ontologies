@@ -15,10 +15,28 @@
     <Prefix name="ESRFET" IRI="http://purl.org/pan-science/ESRFET#"/>
     <Import>http://purl.org/pan-science/PaNET/PaNET.owl</Import>
     <Declaration>
+        <Class IRI="#BCDI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BioSAXS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CDI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CMS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CRYO-EM"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CXDI"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DAFS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DCT"/>
@@ -60,10 +78,19 @@
         <Class IRI="#GISAXS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#GIXRD"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HERFD-XAS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HR-XRPD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HiP-CT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IXS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LDDS-XAS"/>
@@ -72,13 +99,31 @@
         <Class IRI="#MACRO-XRF"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MAD"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MICRO-XRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MX"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NANO-XRF"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NFS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NR-XMLD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NRIXS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NRS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PDF"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PFY-XAS"/>
@@ -87,7 +132,19 @@
         <Class IRI="#PIXE"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PTYCHO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#REXS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RIXS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RXES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SAD"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SAXS"/>
@@ -96,7 +153,16 @@
         <Class IRI="#SCXRD"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SMS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SMX"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SSX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#STXM"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TEM"/>
@@ -105,7 +171,16 @@
         <Class IRI="#TFY-XAS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TR-USAXS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TR-XRD"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TXRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USA-XPCS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#USAXS"/>
@@ -126,13 +201,28 @@
         <Class IRI="#XAS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#XBH"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XCL"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#XDMR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XDS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XEOL"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XES"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XFCT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XFH"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XLD"/>
@@ -150,7 +240,22 @@
         <Class IRI="#XNCD"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#XNHT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XPCI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XPCS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XPCT"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#XRAYS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XRCT"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XRD"/>
@@ -166,6 +271,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#XRS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XRT"/>
     </Declaration>
     <Declaration>
         <Class IRI="#absorption"/>
@@ -1364,11 +1472,59 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
+        <Class IRI="#BCDI"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioSAXS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CDI"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CMS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CXDI"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DAC"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DAFS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#EM"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GIXRD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HiP-CT"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IXS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MAD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MX"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NFS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1376,7 +1532,59 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NRIXS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NRS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PDF"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PTYCHO"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#REXS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RIXS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RXES"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SAD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SMS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SMX"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#STXM"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TR-USAXS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TR-XRD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USA-XPCS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1384,11 +1592,31 @@
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#XBH"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XCL"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#XDMR"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#XDS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XEOL"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#XES"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XFH"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1412,7 +1640,27 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#XNHT"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XPCI"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XPCS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XPCT"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#XRAYS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XRCT"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1421,6 +1669,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XRS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XRT"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1810,6 +2062,61 @@
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BCDI</IRI>
+        <Literal>BCDI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#BCDI</IRI>
+        <Literal>Bragg Coherent Diffraction Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BioSAXS</IRI>
+        <Literal>BioSAXS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CDI</IRI>
+        <Literal>CDI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#CDI</IRI>
+        <Literal>CXD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#CDI</IRI>
+        <Literal>CXDI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#CDI</IRI>
+        <Literal>Coherent X-Ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#CDI</IRI>
+        <Literal>Coherent X-ray Diffraction Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#CDI</IRI>
+        <Literal>Coherent Diffraction Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CMS</IRI>
+        <Literal>CMS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#CMS</IRI>
+        <Literal>Conventional Mössbauer Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CRYO-EM</IRI>
         <Literal>TEM applied to samples cooled to cryogenic temperatures.</Literal>
@@ -1830,9 +2137,29 @@
         <Literal>Cryo-electron microscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CXDI</IRI>
+        <Literal>CXDI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#CXDI</IRI>
+        <Literal>Coherent X-ray Diffraction Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DAC</IRI>
         <Literal>Diamond Anvil Cell to apply pressure on the sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DAFS</IRI>
+        <Literal>DAFS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#DAFS</IRI>
+        <Literal>Diffraction Anomalous Fine Structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2021,6 +2348,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GIXRD</IRI>
+        <Literal>GIXRD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#GIXRD</IRI>
+        <Literal>Grazing Incidence X-Ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HERFD-XAS</IRI>
         <Literal>HERFD-XAS</Literal>
     </AnnotationAssertion>
@@ -2056,6 +2393,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HiP-CT</IRI>
+        <Literal>HiP-CT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#HiP-CT</IRI>
+        <Literal>Hierarchical Phase-Contrast Tomography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IXS</IRI>
+        <Literal>IXS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#IXS</IRI>
+        <Literal>Inelastic X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LDDS-XAS</IRI>
         <Literal>LDDC-XAS</Literal>
     </AnnotationAssertion>
@@ -2085,6 +2442,16 @@
         <Literal>Scanning Macro X-ray fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MAD</IRI>
+        <Literal>MAD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#MAD</IRI>
+        <Literal>Multi-wavelength Anomalous Dispersion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MICRO-XRF</IRI>
         <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 micron.</Literal>
@@ -2098,6 +2465,16 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#MICRO-XRF</IRI>
         <Literal>Scanning Micro X-ray fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MX</IRI>
+        <Literal>MX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#MX</IRI>
+        <Literal>Macromolecular Crystallography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2115,6 +2492,21 @@
         <Literal>Scanning Nano X-ray fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NFS</IRI>
+        <Literal>Time-domain analog of Mössbauer spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NFS</IRI>
+        <Literal>NFS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#NFS</IRI>
+        <Literal>Nuclear Forward Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#NR-XMLD</IRI>
         <Literal>NR-XMLD</Literal>
@@ -2123,6 +2515,41 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#NR-XMLD</IRI>
         <Literal>Non-Reciprocal X-ray Magnetic Linear Dichroism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NRIXS</IRI>
+        <Literal>Measures phonon density of states</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NRIXS</IRI>
+        <Literal>NRIXS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#NRIXS</IRI>
+        <Literal>Nuclear Resonant Inelastic X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NRS</IRI>
+        <Literal>NRS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#NRS</IRI>
+        <Literal>Nuclear Resonant Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PDF</IRI>
+        <Literal>PDF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#PDF</IRI>
+        <Literal>Pair Distribution Function</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2146,6 +2573,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PTYCHO</IRI>
+        <Literal>PTYCHO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#PTYCHO</IRI>
+        <Literal>Ptychography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#REXS</IRI>
+        <Literal>REXS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#REXS</IRI>
+        <Literal>Resonant Elastic X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RIXS</IRI>
         <Literal>RIXS</Literal>
     </AnnotationAssertion>
@@ -2153,6 +2600,26 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#RIXS</IRI>
         <Literal>Resonant Inelastic X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RXES</IRI>
+        <Literal>RXES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#RXES</IRI>
+        <Literal>Resonant X-ray Emission Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SAD</IRI>
+        <Literal>SAD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#SAD</IRI>
+        <Literal>Single-wavelength Anomalous Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2195,6 +2662,26 @@
         <Literal>Single crystal X-ray diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SMS</IRI>
+        <Literal>SMS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#SMS</IRI>
+        <Literal>Synchrotron Mössbauer Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SMX</IRI>
+        <Literal>SXM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#SMX</IRI>
+        <Literal>Serial Macromolecular Crystallography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SSX</IRI>
         <Literal>Like SCXRD but instead of measuring the same crystal under different orientations we measure many individual crystals with random orientation.</Literal>
@@ -2208,6 +2695,16 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#SSX</IRI>
         <Literal>Serial Synchrotron Crystallography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#STXM</IRI>
+        <Literal>STXM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#STXM</IRI>
+        <Literal>Scanning Transmission X-ray Microscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2236,6 +2733,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TR-USAXS</IRI>
+        <Literal>TR-USAXS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#TR-USAXS</IRI>
+        <Literal>Time Resolved Ultra-Small Angle X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TR-XRD</IRI>
+        <Literal>TR-XRD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#TR-XRD</IRI>
+        <Literal>Time Resolved X-Ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TXRF</IRI>
         <Literal>TXRF</Literal>
     </AnnotationAssertion>
@@ -2243,6 +2760,16 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#TXRF</IRI>
         <Literal>Total Reflection X-ray Fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#USA-XPCS</IRI>
+        <Literal>USA-XPCS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#USA-XPCS</IRI>
+        <Literal>Ultra-Small Angle X-Ray Photon Correlation Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2311,6 +2838,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XBH</IRI>
+        <Literal>XBH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XBH</IRI>
+        <Literal>X-ray Bragg Holography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XCL</IRI>
+        <Literal>XCL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XCL</IRI>
+        <Literal>X-ray Computed Laminography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XDMR</IRI>
         <Literal>XDMR</Literal>
     </AnnotationAssertion>
@@ -2318,6 +2865,26 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XDMR</IRI>
         <Literal>X-ray Detected Magnetic Resonance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XDS</IRI>
+        <Literal>XDS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XDS</IRI>
+        <Literal>X-Ray Diffuse Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XEOL</IRI>
+        <Literal>XEOL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XEOL</IRI>
+        <Literal>X-ray Excited Optical Luminescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2351,13 +2918,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XFH</IRI>
+        <Literal>XFH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XFH</IRI>
+        <Literal>X-ray Fluorescence Holography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XLD</IRI>
         <Literal>XLD</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XLD</IRI>
-        <Literal>X-ray Linear Dichroism</Literal>
+        <Literal>X-Ray Linear Dichroism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2400,6 +2977,56 @@
         <Literal>X-ray Natural Circular Dichroism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XNHT</IRI>
+        <Literal>XNHT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XNHT</IRI>
+        <Literal>X-ray Nano-HoloTomography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XPCI</IRI>
+        <Literal>XPCI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#XPCI</IRI>
+        <Literal>PCXI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#XPCI</IRI>
+        <Literal>Phase-Contrast X-ray Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XPCI</IRI>
+        <Literal>X-ray Phase-Contrast Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XPCS</IRI>
+        <Literal>XPCS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XPCS</IRI>
+        <Literal>X-Ray Photon Correlation Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XPCT</IRI>
+        <Literal>XPCT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XPCT</IRI>
+        <Literal>Phase-Contrast Tomography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRAYS</IRI>
         <Literal>Experimental technique with X-ray irradiation of the sample under investigation.</Literal>
@@ -2413,6 +3040,16 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRAYS</IRI>
         <Literal>X-ray Radiation Technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XRCT</IRI>
+        <Literal>XRCT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XRCT</IRI>
+        <Literal>X-Ray Computed Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2493,6 +3130,26 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRS</IRI>
         <Literal>X-ray Raman Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XRT</IRI>
+        <Literal>XRT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#XRT</IRI>
+        <Literal>X-Ray Diffraction Topography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#XRT</IRI>
+        <Literal>XDT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XRT</IRI>
+        <Literal>X-Ray Topography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
