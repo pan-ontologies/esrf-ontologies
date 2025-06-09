@@ -9,10 +9,18 @@ from docutils.parsers.rst import Directive
 class InsertTechniqueTable(Directive):
     def run(self):
         rows = _generate_table_data()
+        count_paragraph = self._create_technique_count(len(rows))
         table_node = self._create_table(rows)
         search_box = self._create_search_box()
         script = self._create_filter_script()
-        return [search_box, table_node, script]
+        return [count_paragraph, search_box, table_node, script]
+
+    def _create_technique_count(self, count: int) -> nodes.paragraph:
+        paragraph = nodes.paragraph()
+        paragraph += nodes.Text("The ESRFET ontology currently contains ")
+        paragraph += nodes.strong(text=f"{count} techniques")
+        paragraph += nodes.Text(".")
+        return paragraph
 
     def _create_table(self, rows: List[Dict[str, Any]]) -> nodes.container:
         # Create a container for the scrollable table
