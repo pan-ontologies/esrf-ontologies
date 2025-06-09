@@ -8,6 +8,41 @@
     "description": "3DXRD is a far field diffraction technique capable of reconstructing polycrystalline materials from the individual diffraction spots recorded in the diffraction pattern given that the crystallographic parameters of the material are known. The success of the technique is based on the ability of the individual diffraction spots to be separated. This means there is a trade off between the number of grains and the degree of strain that is measurable."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#BCDI",
+    "names": [
+      "BCDI",
+      "Bragg Coherent Diffraction Imaging"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#BioSAXS",
+    "names": [
+      "BioSAXS"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#CDI",
+    "names": [
+      "CDI",
+      "Coherent Diffraction Imaging",
+      "CXD",
+      "CXDI",
+      "Coherent X-Ray Diffraction",
+      "Coherent X-ray Diffraction Imaging"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#CMS",
+    "names": [
+      "CMS",
+      "Conventional M\u00f6ssbauer Spectroscopy"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#CRYO-EM",
     "names": [
       "CRYO-EM",
@@ -15,6 +50,22 @@
       "Cryogenic electron microscopy"
     ],
     "description": "TEM applied to samples cooled to cryogenic temperatures."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#CXDI",
+    "names": [
+      "CXDI",
+      "Coherent X-ray Diffraction Imaging"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#DAFS",
+    "names": [
+      "DAFS",
+      "Diffraction Anomalous Fine Structure"
+    ],
+    "description": ""
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#DCT",
@@ -122,6 +173,14 @@
     "description": ""
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#GIXRD",
+    "names": [
+      "GIXRD",
+      "Grazing Incidence X-Ray Diffraction"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#HERFD-XAS",
     "names": [
       "HERFD-XAS",
@@ -138,6 +197,22 @@
       "High-Resolution X-ray Powder Diffraction"
     ],
     "description": "Like XRPD but with a high resolution in Q-space (or d-spacing)."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#HiP-CT",
+    "names": [
+      "HiP-CT",
+      "Hierarchical Phase-Contrast Tomography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#IXS",
+    "names": [
+      "IXS",
+      "Inelastic X-ray Scattering"
+    ],
+    "description": ""
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#LDDS-XAS",
@@ -157,12 +232,28 @@
     "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size greater that 100 micron."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#MAD",
+    "names": [
+      "MAD",
+      "Multi-wavelength Anomalous Dispersion"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRF",
     "names": [
       "MICRO-XRF",
       "Scanning Micro X-ray fluorescence"
     ],
     "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 micron."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#MX",
+    "names": [
+      "MX",
+      "Macromolecular Crystallography"
+    ],
+    "description": ""
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NANO-XRF",
@@ -173,10 +264,42 @@
     "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#NFS",
+    "names": [
+      "NFS",
+      "Nuclear Forward Scattering"
+    ],
+    "description": "Time-domain analog of M\u00f6ssbauer spectroscopy"
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#NR-XMLD",
     "names": [
       "NR-XMLD",
       "Non-Reciprocal X-ray Magnetic Linear Dichroism"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#NRIXS",
+    "names": [
+      "NRIXS",
+      "Nuclear Resonant Inelastic X-ray Scattering"
+    ],
+    "description": "Measures phonon density of states"
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#NRS",
+    "names": [
+      "NRS",
+      "Nuclear Resonant Scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#PDF",
+    "names": [
+      "PDF",
+      "Pair Distribution Function"
     ],
     "description": ""
   },
@@ -197,10 +320,42 @@
     "description": ""
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#PTYCHO",
+    "names": [
+      "PTYCHO",
+      "Ptychography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#REXS",
+    "names": [
+      "REXS",
+      "Resonant Elastic X-ray Scattering"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#RIXS",
     "names": [
       "RIXS",
       "Resonant Inelastic X-ray Scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#RXES",
+    "names": [
+      "RXES",
+      "Resonant X-ray Emission Spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#SAD",
+    "names": [
+      "SAD",
+      "Single-wavelength Anomalous Diffraction"
     ],
     "description": ""
   },
@@ -224,12 +379,36 @@
     "description": "Single crystal X-ray diffraction measured the diffraction from a single crystal to determine its crystal structure."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#SMS",
+    "names": [
+      "SMS",
+      "Synchrotron M\u00f6ssbauer Spectroscopy"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#SSX",
     "names": [
       "SSX",
       "Serial Synchrotron Crystallography"
     ],
     "description": "Like SCXRD but instead of measuring the same crystal under different orientations we measure many individual crystals with random orientation."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#STXM",
+    "names": [
+      "STXM",
+      "Scanning Transmission X-ray Microscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#SMX",
+    "names": [
+      "SXM",
+      "Serial Macromolecular Crystallography"
+    ],
+    "description": ""
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#TEM",
@@ -248,10 +427,34 @@
     "description": ""
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#TR-USAXS",
+    "names": [
+      "TR-USAXS",
+      "Time Resolved Ultra-Small Angle X-ray Scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#TR-XRD",
+    "names": [
+      "TR-XRD",
+      "Time Resolved X-Ray Diffraction"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#TXRF",
     "names": [
       "TXRF",
       "Total Reflection X-ray Fluorescence"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#USA-XPCS",
+    "names": [
+      "USA-XPCS",
+      "Ultra-Small Angle X-Ray Photon Correlation Spectroscopy"
     ],
     "description": ""
   },
@@ -296,10 +499,42 @@
     "description": "XAS measures a signal related to the X-ray absorption probability (could be fluorescence, photon electrons, auger electrons, all electrons, transmission) as function of the incomming X-ray photon energy. X-rays are absorbed by atomic core excitation (remove and core-shell electron from an atom)."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#XBH",
+    "names": [
+      "XBH",
+      "X-ray Bragg Holography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XCL",
+    "names": [
+      "XCL",
+      "X-ray Computed Laminography"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#XDMR",
     "names": [
       "XDMR",
       "X-ray Detected Magnetic Resonance"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XDS",
+    "names": [
+      "XDS",
+      "X-Ray Diffuse Scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XEOL",
+    "names": [
+      "XEOL",
+      "X-ray Excited Optical Luminescence"
     ],
     "description": ""
   },
@@ -320,10 +555,18 @@
     "description": "XRF which provides elemental distributions in the sample 3D by measuring fluorescence in 2D or 1D projection under many orientations."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#XFH",
+    "names": [
+      "XFH",
+      "X-ray Fluorescence Holography"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#XLD",
     "names": [
       "XLD",
-      "X-ray Linear Dichroism"
+      "X-Ray Linear Dichroism"
     ],
     "description": ""
   },
@@ -360,12 +603,54 @@
     "description": ""
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#XNHT",
+    "names": [
+      "XNHT",
+      "X-ray Nano-HoloTomography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XPCI",
+    "names": [
+      "XPCI",
+      "X-ray Phase-Contrast Imaging",
+      "PCXI",
+      "Phase-Contrast X-ray Imaging"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XPCS",
+    "names": [
+      "XPCS",
+      "X-Ray Photon Correlation Spectroscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XPCT",
+    "names": [
+      "XPCT",
+      "Phase-Contrast Tomography"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#XRAYS",
     "names": [
       "XRAYS",
       "X-ray Radiation Technique"
     ],
     "description": "Experimental technique with X-ray irradiation of the sample under investigation."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XRCT",
+    "names": [
+      "XRCT",
+      "X-Ray Computed Tomography"
+    ],
+    "description": ""
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRD",
@@ -406,6 +691,16 @@
     "names": [
       "XRS",
       "X-ray Raman Scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XRT",
+    "names": [
+      "XRT",
+      "X-Ray Topography",
+      "X-Ray Diffraction Topography",
+      "XDT"
     ],
     "description": ""
   }

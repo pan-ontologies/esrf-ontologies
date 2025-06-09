@@ -724,7 +724,7 @@ A "timeslot" is referred to as an "investigation" (ICAT), "experiment session" (
 
 -> Within a timeslot the user does experiments at the beamline the timeslot is assigned to.
 
-An "experiment" means "Wout De Nolf et al. id doing an XRF scan at the nano end-station of ID21".
+An "experiment" means "Wout De Nolf et al. is doing an XRF scan at the nano end-station of ID21".
   "nano end-station" is one instrument that ID21 has at the time of the experiment.
 
 Each "experiment" has these components
@@ -734,7 +734,7 @@ Each "experiment" has these components
 - scientists ("Wout De Nolf et al.")
 
 "Beamline" ("ID21") has these components
-- synchrotron exist port
+- synchrotron exit port
 - insertion device ("undulator", "wiggler", "bending magnet")
 - instruments ("nano end-station, SXM end-station")
 - scientists ("Marine Cotte et al.")
