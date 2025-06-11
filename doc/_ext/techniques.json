@@ -47,17 +47,17 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#ED-EXAFS\">ED-EXAFS</a>",
     "Alternative names": "Energy Dispersive Extended X-ray Absorption Fine Structure",
-    "Description": "EXAFS can be called ED-EXAFS when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
+    "Description": "EXAFS can be called ED-EXAFS when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space"
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#ED-XANES\">ED-XANES</a>",
     "Alternative names": "Energy Dispersive X-ray Absorption Near Edge Structure",
-    "Description": "XANES can be called ED-XANES when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
+    "Description": "XANES can be called ED-XANES when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space"
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#ED-XAS\">ED-XAS</a>",
     "Alternative names": "Energy Dispersive X-ray Absorption Spectroscopy",
-    "Description": "XAS can be called ED-XAS when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space"
+    "Description": "XAS can be called ED-XAS when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space"
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#ED-XRD\">ED-XRD</a>",
