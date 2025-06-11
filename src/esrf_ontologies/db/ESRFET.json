@@ -71,7 +71,7 @@
     "iri": "http://purl.org/pan-science/ESRFET#DCT",
     "names": [
       "DCT",
-      "Diffraction Contract Tomography"
+      "Diffraction Contrast Tomography"
     ],
     "description": "DCT is a near-field diffraction-based imaging technique that provides high-resolution grain maps of polycrystalline materials (Ludwig et al. 2008). For each individual grain, the technique can provide orientation and average elastic strain tensor components with an accuracy of a few times 1e-4 (Reischig et al. 2013). The technique combines the concepts of image reconstruction from projections (tomography) and X-ray diffraction imaging (topography)."
   },

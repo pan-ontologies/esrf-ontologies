@@ -2174,7 +2174,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#DCT</IRI>
-        <Literal>Diffraction Contract Tomography</Literal>
+        <Literal>Diffraction Contrast Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
