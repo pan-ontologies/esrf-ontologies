@@ -264,6 +264,14 @@
     "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#NFP",
+    "names": [
+      "NFP",
+      "Near-Field Ptychography"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#NFS",
     "names": [
       "NFS",
