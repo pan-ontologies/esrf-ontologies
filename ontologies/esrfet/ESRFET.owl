@@ -111,6 +111,9 @@
         <Class IRI="#NANO-XRF"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NFP"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NFS"/>
     </Declaration>
     <Declaration>
@@ -1524,6 +1527,10 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NFP"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NFS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -2490,6 +2497,16 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#NANO-XRF</IRI>
         <Literal>Scanning Nano X-ray fluorescence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NFP</IRI>
+        <Literal>NFP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#NFP</IRI>
+        <Literal>Near-Field Ptychography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
