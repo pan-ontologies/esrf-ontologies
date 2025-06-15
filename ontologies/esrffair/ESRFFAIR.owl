@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78">
+    <Prefix name="" IRI="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#experiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#participation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#person_experiment_role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_role_in_experiment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involves_experiment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involves_person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participates_in_experiment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ESRF_HC6147"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ESRF_HC6148"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#local_contact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#participant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#principal_investigator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#proposal_scientist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wout_de_nolf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wout_de_nolf_in_HC6147"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wout_de_nolf_in_HC6148"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#participation"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_role"/>
+            <Class IRI="#person_experiment_role"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#participation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#involves_experiment"/>
+            <Class IRI="#experiment"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#participation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#involves_person"/>
+            <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#experiment"/>
+        <NamedIndividual IRI="#ESRF_HC6147"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#experiment"/>
+        <NamedIndividual IRI="#ESRF_HC6148"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person_experiment_role"/>
+        <NamedIndividual IRI="#local_contact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person_experiment_role"/>
+        <NamedIndividual IRI="#participant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person_experiment_role"/>
+        <NamedIndividual IRI="#principal_investigator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person_experiment_role"/>
+        <NamedIndividual IRI="#proposal_scientist"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_role"/>
+        <NamedIndividual IRI="#wout_de_nolf_in_HC6147"/>
+        <NamedIndividual IRI="#principal_investigator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involves_experiment"/>
+        <NamedIndividual IRI="#wout_de_nolf_in_HC6147"/>
+        <NamedIndividual IRI="#ESRF_HC6147"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involves_person"/>
+        <NamedIndividual IRI="#wout_de_nolf_in_HC6147"/>
+        <NamedIndividual IRI="#wout_de_nolf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_role"/>
+        <NamedIndividual IRI="#wout_de_nolf_in_HC6148"/>
+        <NamedIndividual IRI="#local_contact"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_role"/>
+        <Class IRI="#participation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_role_in_experiment"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involves_experiment"/>
+        <Class IRI="#participation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involves_person"/>
+        <Class IRI="#participation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participates_in_experiment"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_role"/>
+        <Class IRI="#person_experiment_role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_role_in_experiment"/>
+        <Class IRI="#person_experiment_role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involves_experiment"/>
+        <Class IRI="#experiment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involves_person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participates_in_experiment"/>
+        <Class IRI="#experiment"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#experiment</IRI>
+        <Literal>An experiment performed at the ESRF.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#experiment</IRI>
+        <Literal>experiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#participation</IRI>
+        <Literal>A relation binding a person, a role, and an experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#participation</IRI>
+        <Literal>participation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#person_experiment_role</IRI>
+        <Literal>A role held by a person in the context of an experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#person_experiment_role</IRI>
+        <Literal>person_experiment_role</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

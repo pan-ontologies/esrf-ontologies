@@ -160,6 +160,11 @@
     "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers."
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NFP\">NFP</a>",
+    "Alternative names": "Near-Field Ptychography",
+    "Description": ""
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NFS\">NFS</a>",
     "Alternative names": "Nuclear Forward Scattering",
     "Description": "Time-domain analog of Mössbauer spectroscopy"
