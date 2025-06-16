@@ -18,17 +18,19 @@ HDF5 and the [ESRF data portal](https://data.esrf.fr).
 
 - **Public repository opened**
 
-A dedicated GitHub organisation (_pan-ontologies/esrf-ontologies_) now hosts ESRFET so that external partners can clone, fork or raise issues without VPN access to the facility.
+  - A dedicated GitHub organisation (_pan-ontologies/esrf-ontologies_) now hosts ESRFET so that external partners can clone, fork or raise issues without VPN access to the facility.
 
-Earlier snapshots (incl. the first deliverable, 31 Dec 2024) remain on the internal GitLab for provenance and reproducibility.
+  - Earlier snapshots (incl. the first deliverable, 31 Dec 2024) remain on the internal GitLab for provenance and reproducibility.
 
-- **Technique creation continues via _differential definitions_**
+- **Technique creation continues via _differential definitions_**:
 
   - Each new technique is expressed as the **minimal intersection of building-blocks** that distinguishes it from its siblings – the recommended “differential” style [indico.esrf.fr](https://indico.esrf.fr/event/114/contributions/764/attachments/558/1078/2024_09_NOBUGS_techniques_ontology_WDN.pdf).
 
-- Building-blocks were renamed **`technique_property`** to emphasise their role as reusable predicates rather than hand-made subtaxonomies.
+- **`Building-blocks were renamed technique_property`**:
 
-- **Re-organisation of technique properties**
+  - this helps to emphasise their role as reusable predicates rather than hand-made subtaxonomies.
+
+- **Re-organisation of technique properties**:
 
   - Introduced **high-level categories** (e.g. _Interaction-Type_, _Measured-Quantity_) to keep >200 properties navigable.
 
@@ -40,19 +42,21 @@ Earlier snapshots (incl. the first deliverable, 31 Dec 2024) remain on the inter
 
   - Techniques now reference properties (e.g. `esrf:measuresResultOfInteraction some esrf:diffraction`) instead of being direct subclasses of the property class itself.
 
-  - This removes an incorrect _class–instance conflation_ and allows us to declare the two branches **disjoint**, a powerful debugging cue for incoherent axioms [douroucouli.wordpress.com](https://douroucouli.wordpress.com/2018/08/03/debugging-ontologies-using-owl-reasoning-part-1-basics-and-disjoint-classes-axioms/)[bmcmedinformdecismak.biomedcentral.com](https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-01336-2).
+  - This removes an incorrect _class–instance conflation_ and allows us to declare the two branches **disjoint**, a powerful debugging cue for incoherent axioms.
+    - [OntoTips](https://douroucouli.wordpress.com/2018/08/03/debugging-ontologies-using-owl-reasoning-part-1-basics-and-disjoint-classes-axioms/)
+    - [semantic interoperability](https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-01336-2).
 
 - **Disjoint axioms added**
 
-  - `esrf:experimental_technique` **disjointWith** `esrf:technique_property` – prevents accidental mixing of levels.
+  - `esrf:experimental_technique` **disjointWith** `esrf:technique_property` – prevents accidental mixing of semantics and enforces object-property based definitions.
 
   - Sibling categories under `technique_property` also declared **mutually disjoint**.
 
-- Running the reasoner exposed **7 invalid technique definitions** (out of ~40) that silently violated the new constraints; they were fixed, proving the value of disjointness as a QA mechanism.
+  - Running the reasoner exposed **7 invalid technique definitions** (out of ~40) that silently violated the new constraints; they were fixed, proving the value of disjointness as a QA mechanism.
 
 - **PaNET linkage**
 
-Every ESRFET term is mapped to a PaNET identifier or triggers an upstream issue if PaNET lacks the concept, keeping both taxonomies in sync and ensuring global discoverability.
+  - Every ESRFET term is mapped to a PaNET identifier, keeping both taxonomies in sync and ensuring global discoverability.
 
 ---
 
@@ -60,9 +64,9 @@ Every ESRFET term is mapped to a PaNET identifier or triggers an upstream issue 
 
 1.  **Differential axioms** keep definitions readable and minimise maintenance when common blocks evolve.
 
-2.  **Object-property driven modelling** enables automatic **re-classification** and cleaner SPARQL queries, while disjointness catches hidden contradictions during reasoning [douroucouli.wordpress.com](https://douroucouli.wordpress.com/2018/08/03/debugging-ontologies-using-owl-reasoning-part-1-basics-and-disjoint-classes-axioms/).
+2.  **Object-property driven modelling** enables automatic **re-classification** and cleaner SPARQL queries, while disjointness catches hidden contradictions during reasoning.
 
-3.  Mapping to NeXUS application definition...
+3.  Mapping to NeXUS application definition was given using the appropriete object_property whenever possible as a proof of concept.
 
 4.  Mapping to PaNET ensures ESRF data remain FAIR and interoperable across all European photon & neutron facilities.
 
@@ -119,7 +123,8 @@ The PaNET ontology was reviewed before the recent changes that follow some of th
 
 - **Use best-practice patterns**
 
-  - Employ `EquivalentTo` for _necessary & sufficient_ definitions, `SubClassOf` for asserted hierarchy only – mixing them leads to classification surprises
+  - Employ `EquivalentTo` more to provide _necessary & sufficient_ definitions, and `SubClassOf` for asserted hierarchy only when a definition is not applicable.
+  - After providing the definitions allow the reasoner to create the taxonomy in order to avoid mistakes that always exist in manual subclassing.
 
     - [stackoverflow.com](https://stackoverflow.com/questions/4192435/owls-equivalentclass-vs-subclassof)
     - [henrietteharmse.com](https://henrietteharmse.com/2021/12/23/equivalentto-versus-subclassof/).
@@ -128,62 +133,49 @@ The PaNET ontology was reviewed before the recent changes that follow some of th
 
 ## Protege printsceens highlighting important changes
 
-The imported ontologies: PaNET and NeXUS are shown in the following image. The goal is to create mappings where possible for all techniques
+- **Import NeXUS and PaNET**
 
-with both ontologies.
+  The imported ontologies: PaNET and NeXUS are shown in the following image. The goal is to create mappings where possible for all techniques with both ontologies.
 
-- For PaNET we use the official URL and rely on purl.org redirection in order to import the ontology.
+  - For PaNET we use the official URL and rely on purl.org redirection in order to import the ontology.
 
-- For NeXUS a local file is imported till the official URL is enriched with the needed redirection information.
+  - For NeXUS a local file is imported till the official URL is enriched with the needed redirection information.
 
 ![Importing PaNET and NeXUS ontologies](images/imported_ontologies.png)
 
-In the following we can see the mappings to the PaNET ontology.
+- **Mapping to PaNET**
 
-First of all the highest level and most abstract techiques are mapped to the existing PaNET techniques.
+  In the following we can see the mappings to the PaNET ontology.
+  First of all the highest level and most abstract techiques are mapped to the existing PaNET techniques.
 
 ![mappings of high-level classes to PaNET equivalents](images/mappings_to_PaNET.png)
 
-Another important mapping to the PaNET ontology is depicted below where the ESRFET:experimental_technique
-
-was made a subclass of the PaNET:photon_and_neutron_technique. This relatioship can and probably should
-
-be further extended by making it equivalent_to the photon_techiques from the PaNET side.
+Another important mapping to the PaNET ontology is depicted below where the ESRFET:experimental_technique was made a subclass of the PaNET:photon_and_neutron_technique. This relatioship can and probably should be further extended by making it equivalent_to the photon_techiques from the PaNET side.
 
 ![subclassing ESRFET:experimental_techique under PaNET:photon_and_neutron_technique](images/mapping_to_PaNET.png)
 
-In the following image an example DL query demonstrates the way technique_properties can be used as
-
-building blocks to explore the differences, similariries and subclassing between techniques.
+- **DL-queries based on building-blocks**
+  In the following image an example DL query demonstrates the way technique_properties can be used as building blocks to explore the differences, similariries and subclassing between techniques.
 
 ![Dl query example in Protege](images/DL_query_example.png)
 
-The power of reasoning and the modular, differential approach we selected for providing definitions is
-
-demonstrated in the following image. ED-XAS is infered to have as a superclass the
-
-PaNET:'x-ray absorption spectroscopy' along with the ESRFET:XAS.
-
-None of them was manually appointed but the reasoner was able to understand the relation to XAS due to
-
-the differential definition and then also apply it to the equivalent PaNET technique.
+- **Reasoning and deferential definition**
+  The power of reasoning and the modular, differential approach we selected for providing definitions is demonstrated in the following image. ED-XAS is infered to have as a superclass the PaNET:'x-ray absorption spectroscopy' along with the ESRFET:XAS.None of them was manually appointed but the reasoner was able to understand the relation to XAS due to the differential definition and then also apply it to the equivalent PaNET technique.
 
 ![infered subclassing from both ESRFET and PaNET](images/infered_implicit_map_to_PaNET.png)
 
-Another important and awaited inference is depicted in the following image. The reasoner was able to deduce
+- **Reasoning located obsolete definitions**
+  Another important and awaited inference is depicted in the following image. The reasoner was able to deduce that both definitions (old in deliverable 1 and the new with object_properties) cannot coexist. That became obvious when disjoins were added to the ontology and explained in the message of the reasoner which explains while FF-XRF equals owl:Nothing the way it is defined.
 
-that both definitions (old in deliverable 1 and the new with object_properties) cannot coexist. That
+![object properties and disjoints in action with the reasoner](images/object-properties_reasoned.png)
 
-became obvious when disjoins were added to the ontology and explained in the message of the reasoner
+- **Reasoning located missing building blocks or erroneous definitions**
+  Finally the differential definition and the reasoner allow us to pinpoint techniques that are infered to be equal while they should not. In this case adding another technique_property or changing the definitions is needed.
 
-which explains while FF-XRF equals owl:Nothing the way it is defined.
+![Infered equivalent techniques that need the addition of another property to differentiate them](images/wrong_inferred_equivelent.png)
 
-![object properties and disjoins in action with the reasoner](images/object_properties_reasoned.png)
+## Implement in the beamlines
 
-Finally the differential definition and the reasoner allow us to pinpoint techniques that are infered to
+The python project was installed with success to ID15b as a demonstartion and following that it was delivered to the BCU (Beamline Control Unit) for mass installation in all beamlines. As the project continues and more techniques are added they will be imediatelly available from the ontology in each beamline as it is totally decoupled and synchronized with the evolving ontology. A printscreen from the ESRF data-portal follows where the ESRFET URI of the technique used is depicted.
 
-be equal while they should not. In this case adding another technique_property or changing the definitions
-
-is needed.
-
-![Infered equivalent techniques that need the addition of another property to differentiate them](images/wrong_infered_equivelent.png)
+![Data from beamline id15b in the data-portal](images/beamline_id15b.png)
