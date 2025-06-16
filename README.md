@@ -5,14 +5,13 @@ The _ESRF Ontologies_ project provides ontologies related to [ESRF](https://esrf
 Ontologies:
 
 - _ESRFET_ is an ontology of experimental techniques used at the ESRF connected to
-
-the [PaNET](https://doi.org/10.5281/zenodo.4806026) ontology.
+  the [PaNET](https://doi.org/10.5281/zenodo.4806026) ontology.
 
 Python API:
 
-- Generate technique metadata for ESRF data producers to save in [NeXus-compliant](https://www.nexusformat.org/)
+- Generate technique metadata for ESRF data producers to save in [NeXus-compliant](https://www.nexusformat.org/) HDF5 and the [ESRF data portal](https://data.esrf.fr).
 
-HDF5 and the [ESRF data portal](https://data.esrf.fr).
+---
 
 ## Getting started
 
@@ -36,14 +35,15 @@ scan_metadata = technique_metadata.get_scan_metadata()
 
 https://esrf-ontologies.readthedocs.io
 ## Steps taken
+## Progress report
 
-- **Public repository opened**
+- **New public github repository created**
 
   - A dedicated GitHub organisation (_pan-ontologies/esrf-ontologies_) now hosts ESRFET so that external partners can clone, fork or raise issues without VPN access to the facility.
 
   - Earlier snapshots (incl. the first deliverable, 31 Dec 2024) remain on the internal GitLab for provenance and reproducibility.
 
-- **Technique creation continues via _differential definitions_**:
+- **Technique creation continues via _differential definitions_**
 
   - Each new technique is expressed as the **minimal intersection of building-blocks** that distinguishes it from its siblings – the recommended “differential” style [indico.esrf.fr](https://indico.esrf.fr/event/114/contributions/764/attachments/558/1078/2024_09_NOBUGS_techniques_ontology_WDN.pdf).
 
@@ -51,11 +51,13 @@ https://esrf-ontologies.readthedocs.io
 
   - this helps to emphasise their role as reusable predicates rather than hand-made subtaxonomies.
 
-- **Re-organisation of technique properties**:
+- **Re-organisation of technique properties**
 
-  - Introduced **high-level categories** (e.g. _Interaction-Type_, _Measured-Quantity_) to keep >200 properties navigable.
+  - Introduced **high-level categories** to be able to add object_properties and provide range to them using these categories.
 
   - For each category we minted an **object property** whose **range** is that category – enabling the reasoner to detect category misuse through domain/range checking.
+
+  - This allows object_properties to be more specific and the reasoner to better safeguard the semantics in the technique definitions.
 
   - Obsolete or never-referenced properties were **merged or deprecated**, eliminating dead load.
 
@@ -63,13 +65,11 @@ https://esrf-ontologies.readthedocs.io
 
   - Techniques now reference properties (e.g. `esrf:measuresResultOfInteraction some esrf:diffraction`) instead of being direct subclasses of the property class itself.
 
-  - This removes an incorrect _class–instance conflation_ and allows us to declare the two branches **disjoint**, a powerful debugging cue for incoherent axioms.
-    - [OntoTips](https://douroucouli.wordpress.com/2018/08/03/debugging-ontologies-using-owl-reasoning-part-1-basics-and-disjoint-classes-axioms/)
-    - [semantic interoperability](https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-01336-2).
+  - This removes an incorrect _class–instance conflation_ and allows us to declare the two branches **disjoint**, a powerful debugging cue for incoherent axioms. ([OntoTips](https://douroucouli.wordpress.com/2018/08/03/debugging-ontologies-using-owl-reasoning-part-1-basics-and-disjoint-classes-axioms/), [semantic interoperability](https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-01336-2))
 
 - **Disjoint axioms added**
 
-  - `esrf:experimental_technique` **disjointWith** `esrf:technique_property` – prevents accidental mixing of semantics and enforces object-property based definitions.
+  - `esrf:experimental_technique` **disjointWith** `esrf:technique_property` in order to prevent accidental mixing of semantics and enforces object-property based definitions.
 
   - Sibling categories under `technique_property` also declared **mutually disjoint**.
 
@@ -91,38 +91,35 @@ https://esrf-ontologies.readthedocs.io
 
 4.  Mapping to PaNET ensures ESRF data remain FAIR and interoperable across all European photon & neutron facilities.
 
+---
+
 ## Reviwing the PaNET ontology
 
 The PaNET ontology was reviewed before the recent changes that follow some of these directions by adding object_properties moving PaNET from being a taxonomy closer to a complete ontology. The recommendations for PaNET are the following:
 
 - **Start with competency questions**
 
-  - Draft 5-10 user-oriented questions that the ontology must answer (e.g. _“Which techniques use neutron probes and measure time-resolved signals?”_) – a standard scoping method in ontology engineering
-
-    - [tishchungoora.medium.com](https://tishchungoora.medium.com/ontology-competency-questions-3d213eb08d33)
-    - [sciencedirect.com](https://www.sciencedirect.com/science/article/abs/pii/S1570826819300617).
+  - Draft 5-10 user-oriented questions that the ontology must answer (e.g. _“Which techniques use neutron probes and measure time-resolved signals?”_) – a standard scoping method in ontology engineering. ([Ontology competency questions](https://tishchungoora.medium.com/ontology-competency-questions-3d213eb08d33), [Analysis of Ontology Competency Questions](https://www.sciencedirect.com/science/article/abs/pii/S1570826819300617))
 
   - Let the questions drive modelling choices and shape which properties are required.
 
 - **Anchor design in real applications**
 
-  - Build at least one runnable demo (e.g. a beamline recommender or search form) to keep modelling grounded in user needs [indico.egi.eu](https://indico.egi.eu/event/6638/contributions/20451/).
+  - Build at least one runnable demo (e.g. a beamline recommender or search form) to keep modelling grounded in user needs ([PaNET Ontology-Based Beamline Finder](https://indico.egi.eu/event/6638/contributions/20451/)).
 
   - Document every SPARQL query the demo needs; these can become regression tests in CI/CD.
 
 - **Reuse and interlink**
 
-  - Prefer `owl:equivalentClass` / `skos:exactMatch` to external, _stable_ ontologies (e.g. QUDT for units, PROV-O for provenance, WayForLight beamline catalogue) rather than ad-hoc subclasses
+  - Prefer `owl:equivalentClass` / `skos:exactMatch` to external, _stable_ ontologies (e.g. QUDT for units, PROV-O for provenance) rather than ad-hoc subclasses
 
-  - Map each PaNET technique to its NeXus application definition where available (e.g. `NXarpes` ⇔ ARPES concept) so data validation can reference a single ID
-    - [manual.nexusformat.org](https://manual.nexusformat.org/classes/applications/NXarpes.html)
+  - Map each PaNET technique to its NeXus application definition where available (e.g. `NXarpes` ⇔ ARPES concept) so data validation can reference a single ID ([nexusformat](https://manual.nexusformat.org/classes/applications/NXarpes.html)).
 
 - **Keep the taxonomy clean**
 
   - Separate _real techniques_ from _organisational categories_; categories should never appear as objects of `hasTechnique` in data sets.
 
-  - Apply the **“one subclass” smell** rule: if a parent class has only one child, revisit the design – it’s usually a sign of unnecessary depth
-    - [protege.stanford.edu](https://protege.stanford.edu/publications/ontology_development/ontology101.pdf).
+  - Apply the **“one subclass” smell** rule: if a parent class has only one child, revisit the design – it’s usually a sign of unnecessary depth ([stanford ontology 101](https://protege.stanford.edu/publications/ontology_development/ontology101.pdf)).
 
 - **Four orthogonal facets**
 
@@ -136,7 +133,7 @@ The PaNET ontology was reviewed before the recent changes that follow some of th
 
   - Commit to never deleting URIs – mark `owl:deprecated true` and provide `dct:isReplacedBy` instead.
 
-  - Treat PaNET as the canonical vocabulary; facility extensions (ESRFET, PETRAET, DiamondET) should link via equivalence.
+  - Treat PaNET as the canonical vocabulary; facility extensions (ESRFET, PETRAET, DiamondET) should link via equivalence or subclassing.
 
 - **Continuous integration / delivery**
 
@@ -145,12 +142,9 @@ The PaNET ontology was reviewed before the recent changes that follow some of th
 - **Use best-practice patterns**
 
   - Employ `EquivalentTo` more to provide _necessary & sufficient_ definitions, and `SubClassOf` for asserted hierarchy only when a definition is not applicable.
-  - After providing the definitions allow the reasoner to create the taxonomy in order to avoid mistakes that always exist in manual subclassing.
+  - After providing the definitions allow the reasoner to create the taxonomy in order to avoid mistakes that always exist in manual subclassing ([EquivalentClass vs. SubClassOf](https://stackoverflow.com/questions/4192435/owls-equivalentclass-vs-subclassof), [Equivalent or SubClass](https://henrietteharmse.com/2021/12/23/equivalentto-versus-subclassof/)).
 
-    - [stackoverflow.com](https://stackoverflow.com/questions/4192435/owls-equivalentclass-vs-subclassof)
-    - [henrietteharmse.com](https://henrietteharmse.com/2021/12/23/equivalentto-versus-subclassof/).
-
-  - Keep labels concise; long natural-language detail goes into `rdfs:comment`.
+  - Keep labels concise; add long natural-language detail into `rdfs:comment` explaining semantics and the modeling approach taken.
 
 ## Protege printsceens highlighting important changes
 
@@ -195,7 +189,7 @@ Another important mapping to the PaNET ontology is depicted below where the ESRF
 
 ![Infered equivalent techniques that need the addition of another property to differentiate them](images/wrong_inferred_equivelent.png)
 
-## Implement in the beamlines
+## Using the ontology in production
 
 The python project was installed with success to ID15b as a demonstartion and following that it was delivered to the BCU (Beamline Control Unit) for mass installation in all beamlines. As the project continues and more techniques are added they will be imediatelly available from the ontology in each beamline as it is totally decoupled and synchronized with the evolving ontology. A printscreen from the ESRF data-portal follows where the ESRFET URI of the technique used is depicted.
 
