@@ -13,6 +13,7 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="ESRFET" IRI="http://purl.org/pan-science/ESRFET#"/>
+    <Import>http://purl.org/nexusformat/definitions/NeXusOntology</Import>
     <Import>http://purl.org/pan-science/PaNET/PaNET.owl</Import>
     <Declaration>
         <Class IRI="#ARPES"/>
@@ -1704,6 +1705,25 @@
             <ObjectProperty IRI="#can_be_used_for_technique"/>
             <Class IRI="#XAS"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXarpes"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXarpes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nexusformat/definitions/NeXusOntology#has"/>
+            <Class IRI="http://purl.org/nexusformat/definitions/Group/NXarpes/ENTRY"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXmpes_arpes"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/nexusformat/definitions/Application/NXmx"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01164"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DAC"/>
