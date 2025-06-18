@@ -59,14 +59,8 @@ class TechniqueMetadata:
         }
 
     def _fill_nxnote(self, nxnote: MutableMapping) -> None:
-        try:
-            names = nxnote["names"]
-        except KeyError:
-            names = list()
-        try:
-            iris = nxnote["iris"]
-        except KeyError:
-            iris = list()
+        names = nxnote.get("names", [])
+        iris = nxnote.get("iris", [])
         techniques = dict(zip(iris, names))
         for technique in self.techniques:
             techniques[technique.iri] = technique.names[0]
