@@ -13,6 +13,10 @@ class Technique:
     names: Tuple[str]  # Human readable name (first is the perferred one)
     description: str  # Human readable description
 
+    @property
+    def primary_name(self) -> str:
+        return self.names[0]
+
 
 @dataclasses.dataclass
 class TechniqueMetadata:
@@ -48,9 +52,9 @@ class TechniqueMetadata:
         names = list()
         iris = list()
         for technique in sorted(
-            self.techniques, key=lambda technique: technique.names[0]
+            self.techniques, key=lambda technique: technique.primary_name
         ):
-            names.append(technique.names[0])
+            names.append(technique.primary_name)
             iris.append(technique.iri)
         return {
             "@NX_class": "NXnote",
@@ -63,7 +67,7 @@ class TechniqueMetadata:
         iris = nxnote.get("iris", [])
         techniques = dict(zip(iris, names))
         for technique in self.techniques:
-            techniques[technique.iri] = technique.names[0]
+            techniques[technique.iri] = technique.primary_name
         iris, names = zip(*sorted(techniques.items(), key=lambda tpl: tpl[1]))
         nxnote.update(
             {
@@ -88,7 +92,7 @@ class TechniqueMetadata:
             pids = list()
         techniques = dict(zip(pids, definitions))
         for technique in self.techniques:
-            techniques[technique.iri] = technique.names[0]
+            techniques[technique.iri] = technique.primary_name
         for key, value in self._get_icat_metadata(techniques).items():
             try:
                 dataset[key] = value
@@ -104,7 +108,7 @@ class TechniqueMetadata:
         if not self.techniques:
             return dict()
         techniques = {
-            technique.iri: technique.names[0] for technique in self.techniques
+            technique.iri: technique.primary_name for technique in self.techniques
         }
         return self._get_icat_metadata(techniques)
 
