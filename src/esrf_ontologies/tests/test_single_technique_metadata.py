@@ -61,8 +61,11 @@ def test_fill_scan_info():
         "scan_meta_categories": ["techniques", "technique"],
         "techniques": {
             "@NX_class": "NXnote",
-            "names": ["XAS"],
-            "iris": ["http://purl.org/pan-science/ESRFET#XAS"],
+            "names": ["XAS", "XRF"],
+            "iris": [
+                "http://purl.org/pan-science/ESRFET#XAS",
+                "http://purl.org/pan-science/ESRFET#XRF",
+            ],
         },
     }
     info = {
