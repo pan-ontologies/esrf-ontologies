@@ -142,7 +142,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MACRO-XRF\">MACRO-XRF</a>",
     "Alternative names": "Scanning Macro X-ray fluorescence, MA-XRF, Macro-XRF",
-    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size greater that 100 micron."
+    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size greater that 100 micron."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MAD\">MAD</a>",
@@ -152,12 +152,12 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MICRO-XRD\">MICRO-XRD</a>",
     "Alternative names": "Scanning Micro X-ray diffraction, Micro-XRD, μ-XRD",
-    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 micron."
+    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MICRO-XRF\">MICRO-XRF</a>",
     "Alternative names": "Scanning Micro X-ray fluorescence, Micro-XRF, μ-XRF",
-    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 micron."
+    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MRT\">MRT</a>",
@@ -172,12 +172,12 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NANO-XRD\">NANO-XRD</a>",
     "Alternative names": "Scanning Nano X-ray diffraction, Nano-XRD, nXRD",
-    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers."
+    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NANO-XRF\">NANO-XRF</a>",
     "Alternative names": "Scanning Nano X-ray fluorescence, Nano-XRF, n-XRF",
-    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers."
+    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NFP\">NFP</a>",

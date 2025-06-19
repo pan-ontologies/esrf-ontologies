@@ -239,7 +239,7 @@
       "MA-XRF",
       "Macro-XRF"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size greater that 100 micron."
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size greater that 100 micron."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MAD",
@@ -257,7 +257,7 @@
       "Micro-XRD",
       "\u03bc-XRD"
     ],
-    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 micron."
+    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRF",
@@ -267,7 +267,7 @@
       "Micro-XRF",
       "\u03bc-XRF"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 micron."
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MRT",
@@ -293,7 +293,7 @@
       "Nano-XRD",
       "nXRD"
     ],
-    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers."
+    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NANO-XRF",
@@ -303,7 +303,7 @@
       "Nano-XRF",
       "n-XRF"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers."
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NFP",
