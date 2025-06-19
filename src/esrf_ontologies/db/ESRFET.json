@@ -76,6 +76,14 @@
     "description": "DCT is a near-field diffraction-based imaging technique that provides high-resolution grain maps of polycrystalline materials (Ludwig et al. 2008). For each individual grain, the technique can provide orientation and average elastic strain tensor components with an accuracy of a few times 1e-4 (Reischig et al. 2013). The technique combines the concepts of image reconstruction from projections (tomography) and X-ray diffraction imaging (topography)."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#DFXM",
+    "names": [
+      "DFXM",
+      "Dark-Field X-ray Microscopy"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#ED-EXAFS",
     "names": [
       "ED-EXAFS",
@@ -227,9 +235,11 @@
     "iri": "http://purl.org/pan-science/ESRFET#MACRO-XRF",
     "names": [
       "MACRO-XRF",
-      "Scanning Macro X-ray fluorescence"
+      "Scanning Macro X-ray fluorescence",
+      "MA-XRF",
+      "Macro-XRF"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size greater that 100 micron."
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size greater that 100 micron."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MAD",
@@ -240,12 +250,32 @@
     "description": ""
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRD",
+    "names": [
+      "MICRO-XRD",
+      "Scanning Micro X-ray diffraction",
+      "Micro-XRD",
+      "\u03bc-XRD"
+    ],
+    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRF",
     "names": [
       "MICRO-XRF",
-      "Scanning Micro X-ray fluorescence"
+      "Scanning Micro X-ray fluorescence",
+      "Micro-XRF",
+      "\u03bc-XRF"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 micron."
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#MRT",
+    "names": [
+      "MRT",
+      "Microbeam Radiation Therapy"
+    ],
+    "description": ""
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MX",
@@ -256,12 +286,24 @@
     "description": ""
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#NANO-XRD",
+    "names": [
+      "NANO-XRD",
+      "Scanning Nano X-ray diffraction",
+      "Nano-XRD",
+      "nXRD"
+    ],
+    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#NANO-XRF",
     "names": [
       "NANO-XRF",
-      "Scanning Nano X-ray fluorescence"
+      "Scanning Nano X-ray fluorescence",
+      "Nano-XRF",
+      "n-XRF"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample thourhg a beam is beam size between 0.1 and 100 nanometers."
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NFP",
@@ -358,6 +400,25 @@
       "Resonant X-ray Emission Spectroscopy"
     ],
     "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#S-XRD",
+    "names": [
+      "S-XRD",
+      "Scanning X-ray Diffraction",
+      "SXDM",
+      "SXRD",
+      "Scanning X-ray Diffraction Microscopy"
+    ],
+    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#S-XRF",
+    "names": [
+      "S-XRF",
+      "Scanning X-ray Fluorescence"
+    ],
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#SAD",
@@ -567,6 +628,14 @@
     "names": [
       "XFH",
       "X-ray Fluorescence Holography"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XHT",
+    "names": [
+      "XHT",
+      "X-ray HoloTomography"
     ],
     "description": ""
   },
