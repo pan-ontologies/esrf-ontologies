@@ -2306,7 +2306,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#DCT</IRI>
-        <Literal>Diffraction Contract Tomography</Literal>
+        <Literal>Diffraction Contrast Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2321,7 +2321,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ED-EXAFS</IRI>
-        <Literal>EXAFS can be called ED-EXAFS when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space</Literal>
+        <Literal>EXAFS can be called ED-EXAFS when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2336,7 +2336,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ED-XANES</IRI>
-        <Literal>XANES can be called ED-XANES when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space</Literal>
+        <Literal>XANES can be called ED-XANES when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2351,7 +2351,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ED-XAS</IRI>
-        <Literal>XAS can be called ED-XAS when you measure the X-ray absorption probablity as a function of energy all at once by dispersing the X-ray energies in space</Literal>
+        <Literal>XAS can be called ED-XAS when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
