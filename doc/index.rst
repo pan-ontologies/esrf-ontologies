@@ -22,9 +22,9 @@ Get the :ref:`technique metadata <techniques>` for one of more techniques
 
     from esrf_ontologies import technique
 
-    metadata_generator = technique.get_technique_metadata("XAS", "XRF")
-    dataset_metadata = metadata_generator.get_dataset_metadata()
-    scan_metadata = metadata_generator.get_scan_metadata()
+    technique_metadata = technique.get_technique_metadata("XAS", "XRF")
+    dataset_metadata = technique_metadata.get_dataset_metadata()
+    scan_metadata = technique_metadata.get_scan_metadata()
 
 Get all techniques or a subset based on technique name or acronym
 

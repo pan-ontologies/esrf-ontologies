@@ -14,13 +14,13 @@ that has an "energy" counter is an "XAS" scan:
     def add_xas_technique(scan):
         channels = scan.scan_info.get("channels", dict())
         if "energy" in channels:
-            metadata_generator = technique.get_technique_metadata("XAS")
+            technique_metadata = technique.get_technique_metadata("XAS")
 
             # For ICAT:
-            metadata_generator.fill_dataset_metadata(current_session.scan_saving.dataset)
+            technique_metadata.fill_dataset_metadata(current_session.scan_saving.dataset)
 
             # For HDF5:
-            return metadata_generator.get_scan_metadata()
+            return technique_metadata.get_scan_metadata()
 
     scan_meta.add_categories({"techniques"})
     scan_meta.techniques.timing = scan_meta.META_TIMING.START
@@ -38,16 +38,16 @@ it can be done like this
     from esrf_ontologies import technique
 
     def xas_scan(start, stop, intervals, count_time, scan_info=None):
-        metadata_generator = technique.get_technique_metadata("XAS")
+        technique_metadata = technique.get_technique_metadata("XAS")
 
         # For ICAT:
-        metadata_generator.fill_dataset_metadata(current_session.scan_saving.dataset)
+        technique_metadata.fill_dataset_metadata(current_session.scan_saving.dataset)
 
         # For HDF5:
         if scan_info is None:
-            scan_info = metadata_generator.get_scan_info()
+            scan_info = technique_metadata.get_scan_info()
         else:
-            metadata_generator.fill_scan_info(scan_info)
+            technique_metadata.fill_scan_info(scan_info)
 
         setup_global.ascan(setup_global.energy, start, stop, intervals, count_time, scan_info=scan_info)
 
