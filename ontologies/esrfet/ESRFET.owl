@@ -15,6 +15,9 @@
     <Prefix name="ESRFET" IRI="http://purl.org/pan-science/ESRFET#"/>
     <Import>http://purl.org/pan-science/PaNET/PaNET.owl</Import>
     <Declaration>
+        <Class IRI="#ARPES"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#BCDI"/>
     </Declaration>
     <Declaration>
@@ -72,6 +75,9 @@
         <Class IRI="#EXAFS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FF-XANES"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#FF-XRF"/>
     </Declaration>
     <Declaration>
@@ -82,6 +88,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#GIXRD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HAXPES"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HERFD-XAS"/>
@@ -105,10 +114,16 @@
         <Class IRI="#MAD"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MBS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MICRO-XRD"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MICRO-XRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MPES"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MRT"/>
@@ -150,6 +165,9 @@
         <Class IRI="#PTYCHO"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PXCT"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#REXS"/>
     </Declaration>
     <Declaration>
@@ -172,6 +190,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#SCXRD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SIXES"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SMS"/>
@@ -274,6 +295,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#XPCT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XPS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XRAYS"/>
@@ -523,6 +547,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#3DXRD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FS‑XANES"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
@@ -1584,6 +1611,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
+        <Class IRI="#ARPES"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BCDI"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -1620,7 +1651,15 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FF-XANES"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GIXRD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HAXPES"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1633,6 +1672,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MAD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MBS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MPES"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1672,6 +1719,10 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PXCT"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#REXS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -1689,6 +1740,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SAD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SIXES"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -1785,6 +1840,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XPCT"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XPS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -2095,6 +2154,10 @@
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FS‑XANES"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#cascade_of_events_being_detected"/>
         <Class IRI="#detected_cascade_of_events_property"/>
@@ -2194,6 +2257,26 @@
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ARPES</IRI>
+        <Literal>Angle-Resolved Photoemission Spectroscopy (ARPES) measures the energy and momentum of electrons emitted from a sample when illuminated by photons, mapping the electronic band structure and Fermi surface of materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ARPES</IRI>
+        <Literal>ARPES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#ARPES</IRI>
+        <Literal>Angle-Resolved Photoemission Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BCDI</IRI>
+        <Literal>Bragg Coherent Diffraction Imaging (BCDI) measures the coherent diffraction around a Bragg peak from a crystalline sample to reconstruct the 3D shape and internal strain field of individual nanocrystals. The result is a high-resolution image of the crystalline structure and deformation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BCDI</IRI>
         <Literal>BCDI</Literal>
@@ -2204,9 +2287,19 @@
         <Literal>Bragg Coherent Diffraction Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BioSAXS</IRI>
+        <Literal>BioSAXS is SAXS applied to biological macromolecules in solution to determine their size, shape, flexibility, and aggregation state in near-native conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BioSAXS</IRI>
         <Literal>BioSAXS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CDI</IRI>
+        <Literal>Coherent Diffraction Imaging (CDI) measures the far-field diffraction pattern from a sample illuminated with a coherent X-ray beam. The image of the sample is reconstructed computationally from the diffraction data using phase retrieval algorithms, yielding high-resolution, lensless imaging of the electron density or scattering potential.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2239,6 +2332,11 @@
         <Literal>Coherent Diffraction Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CMS</IRI>
+        <Literal>Conventional Mössbauer Spectroscopy measures the resonant absorption of gamma rays by Mössbauer-active nuclei (e.g. Fe-57) using a radioactive source scanned in velocity. It provides information on oxidation state, magnetic ordering, and local electronic and structural environment through hyperfine interactions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CMS</IRI>
         <Literal>CMS</Literal>
@@ -2251,7 +2349,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CRYO-EM</IRI>
-        <Literal>TEM applied to samples cooled to cryogenic temperatures.</Literal>
+        <Literal>Cryogenic Electron Microscopy (Cryo-EM) is EM performed on rapidly frozen samples to preserve native structures in a near-physiological, vitrified state. It enables high-resolution 3D reconstruction of biological macromolecules and complexes without the need for crystallization.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2269,6 +2367,11 @@
         <Literal>Cryo-electron microscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CXDI</IRI>
+        <Literal>Coherent X-ray Diffraction Imaging (CXDI) measures the coherent X-ray diffraction pattern from an isolated object or nanostructure. The 3D electron density is reconstructed computationally using phase retrieval, providing high-resolution, lensless imaging of the sample&apos;s internal structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CXDI</IRI>
         <Literal>CXDI</Literal>
@@ -2282,6 +2385,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DAC</IRI>
         <Literal>Diamond Anvil Cell to apply pressure on the sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DAFS</IRI>
+        <Literal>Diffraction Anomalous Fine Structure (DAFS) measures the intensity of Bragg diffraction as a function of X-ray photon energy near an absorption edge. It combines diffraction and XAS to provide element-specific structural information, such as site occupancy, bonding environment, and local distortions in crystals.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2309,6 +2417,11 @@
         <Literal>Diffraction Contrast Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DFXM</IRI>
+        <Literal>Dark-Field X-ray Microscopy (DFXM) measures X-ray diffraction in a dark-field imaging geometry to map crystalline structure, orientation, strain, and defects in 3D within bulk materials. It provides spatially resolved imaging of internal microstructures at micrometer to sub-micrometer resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DFXM</IRI>
         <Literal>DFXM</Literal>
@@ -2321,7 +2434,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ED-EXAFS</IRI>
-        <Literal>EXAFS can be called ED-EXAFS when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space</Literal>
+        <Literal>Energy Dispersive Extended X-ray Absorption Fine Structure (ED-EXAFS) measures oscillations in X-ray absorption probability beyond the edge with energy-dispersive detection, providing local atomic structural information such as bond distances and coordination numbers, acquired quickly without angular scanning.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2336,7 +2449,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ED-XANES</IRI>
-        <Literal>XANES can be called ED-XANES when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space</Literal>
+        <Literal>Energy Dispersive X-ray Absorption Near Edge Structure (ED-XANES) measures the X-ray absorption probability near the absorption edge using energy-dispersive detection, providing rapid information about the oxidation state and electronic structure without scanning incident energy.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2351,7 +2464,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ED-XAS</IRI>
-        <Literal>XAS can be called ED-XAS when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space</Literal>
+        <Literal>Energy Dispersive X-ray Absorption Spectroscopy (ED-XAS) measures X-ray absorption as a function of energy simultaneously by dispersing the X-ray beam in space with a polychromatic source and position-sensitive detector, enabling rapid acquisition of absorption spectra without scanning the incident energy.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2364,14 +2477,14 @@
         <Literal>Energy Dispersive X-ray Absorption Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ED-XRD</IRI>
+        <Literal>Energy Dispersive X-ray Diffraction (ED-XRD) measures diffraction patterns of a sample by detecting diffracted X-rays at a fixed angle while dispersing their energies, enabling fast phase identification and structural analysis without angular scanning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ED-XRD</IRI>
         <Literal>ED-XRD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#ED-XRD</IRI>
-        <Literal>XRD with an energy dispersive detector.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
@@ -2381,7 +2494,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ED-XRF</IRI>
-        <Literal>XRF with an energy dispersive detector.</Literal>
+        <Literal>Energy Dispersive X-ray Fluorescence Spectroscopy (ED-XRF) measures the energies of fluorescent X-rays emitted by a sample excited by a broad-spectrum X-ray source, providing elemental composition analysis without scanning the incident energy.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2396,7 +2509,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ED-XRPD</IRI>
-        <Literal>XRPD with an energy dispersive detector.</Literal>
+        <Literal>Energy Dispersive X-ray Powder Diffraction (ED-XRPD) measures diffraction patterns of powdered samples by detecting diffracted X-rays at a fixed angle while varying their energy, enabling rapid phase identification and structural analysis without scanning angles.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2426,7 +2539,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#EM</IRI>
-        <Literal>An electron microscope is a microscope that uses a beam of electrons as a source of illumination. They use electron optics that are analogous to the glass lenses of an optical light microscope to control the electron beam, for instance focusing it to produce magnified images or electron diffraction patterns.</Literal>
+        <Literal>Electron Microscopy (EM) uses a beam of electrons as illumination, controlled by electron optics analogous to glass lenses in light microscopes, to measure electron scattering or transmission through a sample. This technique provides high-resolution images and electron diffraction patterns, revealing structural, morphological, and compositional information at nanometer to atomic scales.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2441,7 +2554,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#EXAFS</IRI>
-        <Literal>XAS can be called EXAFS when looking at the absorption probability within an X-ray photon energy range greater than 500 eV.</Literal>
+        <Literal>Extended X-ray Absorption Fine Structure (EXAFS) measures oscillations in X-ray absorption above an element’s absorption edge, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2455,8 +2568,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FF-XANES</IRI>
+        <Literal>Full-field XANES measures X-ray transmission with an area detector while scanning incident photon energy, producing 2D maps of XANES spectra with spatially resolved chemical information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FF-XANES</IRI>
+        <Literal>FF-XANES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#FF-XANES</IRI>
+        <Literal>Full‑Field X-ray Absorption Near Edge Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#FF-XRF</IRI>
-        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved on the detection side.</Literal>
+        <Literal>Full-Field X-ray Fluorescence Imaging (FF-XRF) measures spatially resolved X-ray fluorescence spectra from every pixel simultaneously by illuminating the entire sample with a broad X-ray beam and detecting emitted fluorescence with an energy-sensitive area detector. This approach provides 2D elemental distribution maps in a single projection without the need for scanning, with spatial separation achieved on the detection side.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2469,6 +2597,11 @@
         <Literal>Full-Field X-ray Fluorescence Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FTIR</IRI>
+        <Literal>Fourier Transform Infrared Spectroscopy (FTIR) measures the absorption of infrared light by a sample as a function of wavelength, providing information on molecular vibrations and chemical bonds to identify and characterize materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FTIR</IRI>
         <Literal>FTIR</Literal>
@@ -2477,6 +2610,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#FTIR</IRI>
         <Literal>Fourier Transform Infrared Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GISAXS</IRI>
+        <Literal>Grazing Incidence Small Angle X-ray Scattering (GISAXS) measures scattered X-rays at small angles from a sample surface under shallow incidence, providing nanoscale information about surface and thin film morphology, including size, shape, and arrangement of nanostructures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2489,6 +2627,11 @@
         <Literal>Grazing Incidence Small Angle X-ray Scattering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GIXRD</IRI>
+        <Literal>Grazing Incidence X-Ray Diffraction (GIXRD) measures diffraction from a sample surface using X-rays at very shallow incident angles, providing structural information about thin films, surfaces, and near-surface regions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#GIXRD</IRI>
         <Literal>GIXRD</Literal>
@@ -2497,6 +2640,26 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#GIXRD</IRI>
         <Literal>Grazing Incidence X-Ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HAXPES</IRI>
+        <Literal>Hard X-ray Photoelectron Spectroscopy (HAXPES) uses high-energy X-rays to probe deeper into materials than conventional XPS, giving bulk-sensitive chemical and electronic information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HAXPES</IRI>
+        <Literal>HAXPES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#HAXPES</IRI>
+        <Literal>Hard X-ray Photoelectron Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HERFD-XAS</IRI>
+        <Literal>High-Energy Resolution Fluorescence Detected X-ray Absorption Spectroscopy (HERFD-XAS) measures X-ray absorption using fluorescence detected with high energy resolution, enhancing spectral detail by reducing core-hole lifetime broadening to reveal subtle electronic and chemical state information.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2509,11 +2672,6 @@
         <Literal>HERFD</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#HERFD-XAS</IRI>
-        <Literal>High-Energy Resolution Fluorescence Detected</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#HERFD-XAS</IRI>
         <Literal>High-Energy Resolution Fluorescence Detected X-ray Absorption Spectroscopy</Literal>
@@ -2521,7 +2679,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HR-XRPD</IRI>
-        <Literal>Like XRPD but with a high resolution in Q-space (or d-spacing).</Literal>
+        <Literal>High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2534,6 +2692,11 @@
         <Literal>High-Resolution X-ray Powder Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HiP-CT</IRI>
+        <Literal>Hierarchical Phase-Contrast Tomography (HiP-CT) measures phase-contrast X-ray projections from intact large biological organs at multiple spatial resolutions, providing 3D images that reveal whole-organ structure down to cellular-level detail without destructive sectioning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HiP-CT</IRI>
         <Literal>HiP-CT</Literal>
@@ -2544,6 +2707,11 @@
         <Literal>Hierarchical Phase-Contrast Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IXS</IRI>
+        <Literal>Inelastic X-ray Scattering (IXS) measures the energy and momentum change of X-rays scattered inelastically by a sample, providing information on electronic excitations, phonons, and other dynamic processes at the atomic scale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#IXS</IRI>
         <Literal>IXS</Literal>
@@ -2552,6 +2720,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#IXS</IRI>
         <Literal>Inelastic X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LDDS-XAS</IRI>
+        <Literal>This technique measures X-ray absorption spectra of materials compressed dynamically by laser-driven shock waves, providing time-resolved insights into electronic and structural changes under extreme pressure and temperature conditions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2594,6 +2767,11 @@
         <Literal>Scanning Macro X-ray fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MAD</IRI>
+        <Literal>Multi-wavelength Anomalous Dispersion (MAD) measures diffraction at multiple X-ray wavelengths around an absorption edge to use anomalous scattering differences for more accurate phase determination in crystallography.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MAD</IRI>
         <Literal>MAD</Literal>
@@ -2602,6 +2780,21 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#MAD</IRI>
         <Literal>Multi-wavelength Anomalous Dispersion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MBS</IRI>
+        <Literal>Mössbauer spectroscopy measures the resonant absorption of gamma rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of Mössbauer-active isotopes (e.g. Fe-57).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MBS</IRI>
+        <Literal>MBS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#MBS</IRI>
+        <Literal>Mössbauer Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2654,6 +2847,26 @@
         <Literal>Scanning Micro X-ray fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MPES</IRI>
+        <Literal>Momentum-Resolved Photoemission Spectroscopy (MPES) measures electron emission as a function of momentum and energy to reveal the dispersion and symmetry of electronic states in solids.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MPES</IRI>
+        <Literal>MPES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#MPES</IRI>
+        <Literal>Momentum-Resolved Photoemission Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MRT</IRI>
+        <Literal>Microbeam Radiation Therapy (MRT) uses arrays of microscale, high-dose X-ray beams to irradiate tissue with high spatial precision, aiming to maximize tumor damage while sparing surrounding healthy tissue.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MRT</IRI>
         <Literal>MRT</Literal>
@@ -2662,6 +2875,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#MRT</IRI>
         <Literal>Microbeam Radiation Therapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MX</IRI>
+        <Literal>Macromolecular Crystallography (MX) measures X-ray diffraction from crystals of biological macromolecules to determine their 3D atomic structures, providing insights into protein folding, function, and interactions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2724,6 +2942,11 @@
         <Literal>Scanning Nano X-ray fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NFP</IRI>
+        <Literal>Near-Field Ptychography (NFP) measures coherent diffraction patterns collected in the near-field regime by scanning overlapping illumination spots, enabling high-resolution phase and amplitude imaging of samples.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#NFP</IRI>
         <Literal>NFP</Literal>
@@ -2732,6 +2955,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#NFP</IRI>
         <Literal>Near-Field Ptychography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NFS</IRI>
+        <Literal>Nuclear Forward Scattering (NFS) measures the time-resolved resonant scattering of synchrotron-generated gamma rays in the forward direction, extracting hyperfine parameters (e.g. isomer shift, quadrupole splitting, magnetic splitting) from the temporal interference pattern.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2749,6 +2977,11 @@
         <Literal>Nuclear Forward Scattering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NR-XMLD</IRI>
+        <Literal>Non-Reciprocal X-ray Magnetic Linear Dichroism (NR-XMLD) measures differences in linear X-ray absorption depending on magnetization direction and X-ray polarization, revealing magnetic asymmetries that break time-reversal symmetry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#NR-XMLD</IRI>
         <Literal>NR-XMLD</Literal>
@@ -2761,7 +2994,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NRIXS</IRI>
-        <Literal>Measures phonon density of states</Literal>
+        <Literal>Nuclear Resonant Inelastic X-ray Scattering (NRIXS) measures the energy distribution of X-rays scattered inelastically by nuclear resonances, providing element-specific information on phonon density of states and lattice dynamics.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2774,6 +3007,11 @@
         <Literal>Nuclear Resonant Inelastic X-ray Scattering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NRS</IRI>
+        <Literal>Nuclear Resonant Scattering (NRS) measures time-delayed resonant scattering of X-rays from Mössbauer-active nuclei to study hyperfine interactions, magnetic order, and dynamics at the atomic scale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#NRS</IRI>
         <Literal>NRS</Literal>
@@ -2782,6 +3020,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#NRS</IRI>
         <Literal>Nuclear Resonant Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PDF</IRI>
+        <Literal>Pair Distribution Function (PDF) analysis measures the distribution of interatomic distances by Fourier-transforming total scattering data, revealing local atomic arrangements and disorder in both crystalline and amorphous materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2794,6 +3037,11 @@
         <Literal>Pair Distribution Function</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PFY-XAS</IRI>
+        <Literal>Partial Fluorescence Yield X-ray Absorption Spectroscopy (PFY-XAS) measures fluorescence photons from specific emission lines as a function of incident X-ray energy, providing element- and site-selective absorption spectra with reduced self-absorption effects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PFY-XAS</IRI>
         <Literal>PFY-XAS</Literal>
@@ -2802,6 +3050,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#PFY-XAS</IRI>
         <Literal>Partial Fluorescence Yield X-ray Absorption Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PIXE</IRI>
+        <Literal>Particle Induced X-ray Emission (PIXE) measures characteristic X-rays emitted by a sample when irradiated with energetic charged particles (e.g., protons) to determine elemental composition with high sensitivity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2814,6 +3067,11 @@
         <Literal>Particle Induced X-ray Emission</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PTYCHO</IRI>
+        <Literal>Ptychography (PTYCHO) measures coherent diffraction patterns by scanning overlapping illumination spots on a sample in the far field, reconstructing high-resolution complex-valued images of sample structure beyond conventional lens limitations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PTYCHO</IRI>
         <Literal>PTYCHO</Literal>
@@ -2822,6 +3080,26 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#PTYCHO</IRI>
         <Literal>Ptychography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PXCT</IRI>
+        <Literal>Ptychographic X-ray Computed Tomography (PXCT) combines ptychography and tomography to measure 3D electron density by scanning a coherent X-ray beam and recording diffraction patterns from overlapping regions at multiple angles. It provides high-resolution, quantitative 3D images of internal nanoscale structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PXCT</IRI>
+        <Literal>PXCT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#PXCT</IRI>
+        <Literal>Ptychographic X-ray Computed Tomography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#REXS</IRI>
+        <Literal>Resonant Elastic X-ray Scattering (REXS) measures elastic scattering near an absorption edge to enhance contrast from specific elements, revealing electronic, magnetic, and orbital ordering in materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2834,6 +3112,11 @@
         <Literal>Resonant Elastic X-ray Scattering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RIXS</IRI>
+        <Literal>Resonant Inelastic X-ray Scattering (RIXS) measures energy loss of X-rays scattered resonantly from a sample, providing detailed insights into electronic excitations, spin dynamics, and valence states.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RIXS</IRI>
         <Literal>RIXS</Literal>
@@ -2842,6 +3125,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#RIXS</IRI>
         <Literal>Resonant Inelastic X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RXES</IRI>
+        <Literal>Resonant X-ray Emission Spectroscopy (RXES) measures emitted X-rays following resonant excitation of core electrons, providing element- and valence-specific information about electronic structure and chemical states.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2856,7 +3144,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#S-XRD</IRI>
-        <Literal>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space.</Literal>
+        <Literal>Scanning X-ray Diffraction (S-XRD) measures diffraction patterns at many scanned positions on a sample using a focused X-ray beam, providing spatially resolved 2D maps of crystal structure, phase distribution, and strain within the sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2886,7 +3174,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#S-XRF</IRI>
-        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space.</Literal>
+        <Literal>Scanning X-ray Fluorescence (S-XRF) measures elemental composition by scanning a focused X-ray beam across a sample and detecting emitted fluorescence, producing high-resolution 2D maps of elemental distributions in the sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2899,6 +3187,11 @@
         <Literal>Scanning X-ray Fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SAD</IRI>
+        <Literal>Single-wavelength Anomalous Diffraction (SAD) measures diffraction at one specific X-ray wavelength near an absorption edge to exploit anomalous scattering for phase determination in crystallography.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SAD</IRI>
         <Literal>SAD</Literal>
@@ -2907,6 +3200,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#SAD</IRI>
         <Literal>Single-wavelength Anomalous Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SAXS</IRI>
+        <Literal>Small-Angle X-ray Scattering (SAXS) measures the X-ray scattering intensity at small angles to obtain information about the size, shape, and structural organization of nanoscale features in a sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2921,7 +3219,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SCXRD</IRI>
-        <Literal>Single crystal X-ray diffraction measured the diffraction from a single crystal to determine its crystal structure.</Literal>
+        <Literal>Single Crystal X-ray Diffraction (SCXRD) measures X-ray diffraction from a single crystal to determine its precise 3D crystal structure, including atomic positions, bonding, and symmetry.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2946,7 +3244,27 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#SCXRD</IRI>
-        <Literal>Single crystal X-ray diffraction</Literal>
+        <Literal>Single Crystal X-ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SIXES</IRI>
+        <Literal>Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SIXES</IRI>
+        <Literal>SIXES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#SIXES</IRI>
+        <Literal>Selectively Induced X-ray Emission Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SMS</IRI>
+        <Literal>The Synchrotron Mössbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant gamma rays (e.g. 14.4 keV for Fe-57), enabling Mössbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2957,6 +3275,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#SMS</IRI>
         <Literal>Synchrotron Mössbauer Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SMX</IRI>
+        <Literal>Serial Macromolecular Crystallography (SXM) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2971,7 +3294,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SSX</IRI>
-        <Literal>Like SCXRD but instead of measuring the same crystal under different orientations we measure many individual crystals with random orientation.</Literal>
+        <Literal>Serial Synchrotron Crystallography (SSX) is similar to Single Crystal X-ray Diffraction (SCXRD), but instead of measuring diffraction from one crystal in multiple orientations, SSX collects diffraction from many micro- or nano-crystals with random orientations sequentially at a synchrotron, enabling structure determination from samples that cannot grow large single crystals.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2982,6 +3305,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#SSX</IRI>
         <Literal>Serial Synchrotron Crystallography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#STXM</IRI>
+        <Literal>Scanning Transmission X-ray Microscopy (STXM) measures X-ray transmission through a sample by scanning a focused X-ray beam in 2D, providing spatially resolved chemical, elemental, and morphological maps at nanometer-scale resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2996,7 +3324,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TEM</IRI>
-        <Literal>EM in which a beam of electrons is transmitted through a specimen to form an image.</Literal>
+        <Literal>Transmission Electron Microscopy (TEM) measures electrons transmitted through an ultra-thin sample to produce high-resolution images of its internal structure, enabling atomic- to nanometer-scale imaging and analysis of morphology, crystallography, and defects.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3009,6 +3337,11 @@
         <Literal>Transmission Electron Microscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TFY-XAS</IRI>
+        <Literal>Total Fluorescence Yield X-ray Absorption Spectroscopy (TFY-XAS) measures the total emitted fluorescence photons as a function of incident X-ray energy to determine element-specific absorption spectra, providing bulk-sensitive information about electronic and structural properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TFY-XAS</IRI>
         <Literal>TFY-XAS</Literal>
@@ -3017,6 +3350,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#TFY-XAS</IRI>
         <Literal>Total Fluorescence Yield X-ray Absorption Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TR-USAXS</IRI>
+        <Literal>Time-Resolved Ultra-Small Angle X-ray Scattering (TR-USAXS) measures ultra-small angle X-ray scattering as a function of time to monitor structural evolution and dynamics of large-scale features such as aggregation, phase separation, or self-assembly.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3029,6 +3367,11 @@
         <Literal>Time Resolved Ultra-Small Angle X-ray Scattering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TR-XRD</IRI>
+        <Literal>Time-Resolved X-Ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TR-XRD</IRI>
         <Literal>TR-XRD</Literal>
@@ -3037,6 +3380,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#TR-XRD</IRI>
         <Literal>Time Resolved X-Ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TXRF</IRI>
+        <Literal>Total Reflection X-ray Fluorescence (TXRF) measures characteristic X-rays emitted by a sample under total external reflection conditions, providing highly sensitive, surface-specific elemental analysis with minimal sample preparation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3049,6 +3397,11 @@
         <Literal>Total Reflection X-ray Fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#USA-XPCS</IRI>
+        <Literal>Ultra-Small Angle X-Ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#USA-XPCS</IRI>
         <Literal>USA-XPCS</Literal>
@@ -3059,6 +3412,11 @@
         <Literal>Ultra-Small Angle X-Ray Photon Correlation Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#USAXS</IRI>
+        <Literal>Ultra-Small Angle X-ray Scattering (USAXS) measures X-ray scattering at extremely small angles to probe structural features on length scales larger than those accessible by SAXS, such as large-scale aggregates, pores, or hierarchical structures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#USAXS</IRI>
         <Literal>USAXS</Literal>
@@ -3067,6 +3425,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#USAXS</IRI>
         <Literal>Ultra-Small Angle X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WAXS</IRI>
+        <Literal>Wide-Angle X-ray Scattering (WAXS) measures X-ray scattering at larger angles than SAXS to provide information on short-range order, crystalline structure, and molecular packing in materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3096,7 +3459,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XANES</IRI>
-        <Literal>XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV.</Literal>
+        <Literal>XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element’s absorption edge, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3111,7 +3474,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XAS</IRI>
-        <Literal>XAS measures a signal related to the X-ray absorption probability (could be fluorescence, photon electrons, auger electrons, all electrons, transmission) as function of the incomming X-ray photon energy. X-rays are absorbed by atomic core excitation (remove and core-shell electron from an atom).</Literal>
+        <Literal>XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3124,6 +3487,11 @@
         <Literal>X-ray Absorption Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XBH</IRI>
+        <Literal>X-ray Bragg Holography (XBH) measures interference patterns formed by Bragg-diffracted and reference X-rays from a crystal to reconstruct 3D atomic-scale images of the crystal structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XBH</IRI>
         <Literal>XBH</Literal>
@@ -3132,6 +3500,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XBH</IRI>
         <Literal>X-ray Bragg Holography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XCL</IRI>
+        <Literal>X-ray Computed Laminography (XCL) measures X-ray transmission through flat, extended samples at multiple tilted angles to reconstruct high-resolution 3D images of internal structures that are challenging for conventional tomography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3144,6 +3517,11 @@
         <Literal>X-ray Computed Laminography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XDMR</IRI>
+        <Literal>X-ray Detected Magnetic Resonance (XDMR) measures changes in X-ray absorption or emission induced by magnetic resonance excitation, providing element-specific information on spin dynamics and magnetic excitations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XDMR</IRI>
         <Literal>XDMR</Literal>
@@ -3154,6 +3532,11 @@
         <Literal>X-ray Detected Magnetic Resonance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XDS</IRI>
+        <Literal>X-Ray Diffuse Scattering (XDS) measures scattered X-rays away from Bragg peaks to probe local disorder, defects, thermal vibrations, and nanoscale structural fluctuations in materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XDS</IRI>
         <Literal>XDS</Literal>
@@ -3162,6 +3545,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XDS</IRI>
         <Literal>X-Ray Diffuse Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XEOL</IRI>
+        <Literal>X-ray Excited Optical Luminescence (XEOL) measures visible or near-visible light emitted from a sample after X-ray excitation, providing information on electronic structure, defect states, and luminescent centers.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3176,7 +3564,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XES</IRI>
-        <Literal>XRF with a high energy resolution.</Literal>
+        <Literal>X-ray Emission Spectroscopy (XES) measures emitted X-ray photons from electronic transitions after X-ray excitation, revealing detailed information about the electronic structure and chemical state of elements. Unlike XRF, which identifies elemental composition through broad characteristic fluorescence lines, XES uses high energy resolution to resolve fine spectral features—such as valence-to-core transitions—providing deeper insight into the local chemical bonding and electronic environment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3191,7 +3579,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XFCT</IRI>
-        <Literal>XRF which provides elemental distributions in the sample 3D by measuring fluorescence in 2D or 1D projection under many orientations.</Literal>
+        <Literal>X-ray Fluorescence Tomography (XFCT) measures fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3204,6 +3592,11 @@
         <Literal>X-ray Fluorescence Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XFH</IRI>
+        <Literal>X-ray Fluorescence Holography (XFH) measures interference between fluorescent X-rays emitted from atoms and scattered reference waves to obtain 3D atomic-scale images of the local atomic arrangement around specific elements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XFH</IRI>
         <Literal>XFH</Literal>
@@ -3212,6 +3605,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XFH</IRI>
         <Literal>X-ray Fluorescence Holography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XHT</IRI>
+        <Literal>X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple angles to reconstruct high-resolution 3D electron density maps of a sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3224,6 +3622,11 @@
         <Literal>X-ray HoloTomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XLD</IRI>
+        <Literal>X-ray Linear Dichroism (XLD) measures the difference in X-ray absorption for linearly polarized light oriented along different crystallographic axes, providing information on electronic anisotropy and orbital ordering.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XLD</IRI>
         <Literal>XLD</Literal>
@@ -3232,6 +3635,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XLD</IRI>
         <Literal>X-Ray Linear Dichroism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XMCD</IRI>
+        <Literal>X-ray Magnetic Circular Dichroism (XMCD) measures the difference in absorption of left- and right-circularly polarized X-rays in a magnetized sample, probing element-specific magnetic moments and spin states.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3244,6 +3652,11 @@
         <Literal>X-ray Magnetic Circular Dichroism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XMLD</IRI>
+        <Literal>X-ray Magnetic Linear Dichroism (XMLD) measures differences in X-ray absorption of linearly polarized light depending on magnetic order, sensitive to antiferromagnetic and magnetic domain structures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XMLD</IRI>
         <Literal>XMLD</Literal>
@@ -3252,6 +3665,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XMLD</IRI>
         <Literal>X-ray Magnetic Linear Dichroism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XMχD</IRI>
+        <Literal>X-ray MagnetoChiral Dichroism (XMχD) measures differences in X-ray absorption related to the combined effects of magnetism and chirality in materials, revealing chiral magnetic structures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3264,6 +3682,11 @@
         <Literal>X-ray MagnetoChiral Dichroism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XNCD</IRI>
+        <Literal>X-ray Natural Circular Dichroism (XNCD) measures differences in absorption of circularly polarized X-rays in non-magnetic chiral materials, providing information on structural chirality and electronic asymmetry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XNCD</IRI>
         <Literal>XNCD</Literal>
@@ -3274,6 +3697,11 @@
         <Literal>X-ray Natural Circular Dichroism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XNHT</IRI>
+        <Literal>X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT, providing nanoscale 3D imaging of internal sample structure by combining holography and tomography with nanoscale focusing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XNHT</IRI>
         <Literal>XNHT</Literal>
@@ -3282,6 +3710,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XNHT</IRI>
         <Literal>X-ray Nano-HoloTomography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XPCI</IRI>
+        <Literal>X-ray Phase-Contrast Imaging (XPCI) measures phase shifts of X-rays transmitted through a sample to enhance image contrast, enabling visualization of structures with low absorption contrast such as soft tissues or light materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3304,6 +3737,11 @@
         <Literal>X-ray Phase-Contrast Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XPCS</IRI>
+        <Literal>X-Ray Photon Correlation Spectroscopy (XPCS) measures time fluctuations of coherent X-ray scattering intensity to probe nanoscale dynamics and temporal correlations in materials such as particle motion, phase transitions, or relaxation processes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XPCS</IRI>
         <Literal>XPCS</Literal>
@@ -3312,6 +3750,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XPCS</IRI>
         <Literal>X-Ray Photon Correlation Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XPCT</IRI>
+        <Literal>X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample at multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures not visible in conventional absorption tomography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3325,8 +3768,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XPS</IRI>
+        <Literal>X-ray Photoelectron Spectroscopy (XPS) measures the kinetic energy of electrons ejected by X-rays to determine elemental composition and chemical states near the surface of a material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XPS</IRI>
+        <Literal>XPS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#XPS</IRI>
+        <Literal>X-ray Photoelectron Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRAYS</IRI>
-        <Literal>Experimental technique with X-ray irradiation of the sample under investigation.</Literal>
+        <Literal>Experimental techniques based on irradiating a sample with X-rays to probe its properties by measuring interactions such as absorption, scattering, fluorescence, or diffraction, providing insights into structural, elemental, or electronic characteristics depending on the specific method used.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3337,6 +3795,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRAYS</IRI>
         <Literal>X-ray Radiation Technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRCT</IRI>
+        <Literal>X-Ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3351,7 +3814,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRD</IRI>
-        <Literal>X-ray diffraction measured the diffraction from a crystalline sample to determine the crystal structure, molecular structure, multi-phase identification and composition, ...</Literal>
+        <Literal>X-ray Diffraction (XRD) measures the diffraction pattern produced when X-rays interact with a crystalline sample. The pattern provides information about the crystal structure, phase identification, lattice parameters, and crystallite size of the material.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3366,7 +3829,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRF</IRI>
-        <Literal>XRF measures X-ray photons coming from a sample during irradition with X-rays and derives elemental composition from the energy of the fluorescence photons</Literal>
+        <Literal>X-ray Fluorescence (XRF) measures characteristic X-ray photons emitted by a sample when it is irradiated with X-rays. The energy of the emitted fluorescence photons reveals the elemental composition and chemical state of the sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3381,7 +3844,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRPD</IRI>
-        <Literal>X-ray powder diffraction measured the diffraction from a powder to determine the crystal structure or multi-phase identifiaction and composition.</Literal>
+        <Literal>X-ray Powder Diffraction (XRPD) measures diffraction patterns from polycrystalline or powdered samples to identify phases, determine crystal structure, lattice parameters, and quantify phase composition.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3396,7 +3859,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRR</IRI>
-        <Literal>A surface-sensitive analytical technique based on X-ray reflection used in chemistry, physics, and materials science to characterize surfaces, thin films and multilayers.</Literal>
+        <Literal>X-ray Reflectometry (XRR) measures the intensity of X-rays reflected from thin films or multilayers as a function of incident angle to determine film thickness, density, and interface roughness.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3419,6 +3882,11 @@
         <Literal>X-ray Reflectometry</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRS</IRI>
+        <Literal>X-ray Raman Scattering (XRS) measures inelastic scattering of hard X-rays by core electrons, enabling the study of low-Z elements’ electronic structure and bonding in bulk samples without the need for soft X-rays or vacuum conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XRS</IRI>
         <Literal>XRS</Literal>
@@ -3427,6 +3895,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRS</IRI>
         <Literal>X-ray Raman Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRT</IRI>
+        <Literal>X-Ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3537,6 +4010,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#experimental_technique</IRI>
         <Literal>A specific method or procedure used to perform experiments and gather data to investigate scientific questions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#experimental_technique</IRI>
+        <Literal>Every technique has a short description that tells what we measure and what you get out of it.
+
+In addition, experimental techniques are semantically defined by
+- *what* a technique measures
+- *what* inputs it requires
+- *how* the measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3842,8 +4325,24 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
         <IRI>#3DXRD</IRI>
         <Literal>3D X-Ray Diffraction</Literal>
     </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FS‑XANES</IRI>
+        <Literal>Energy-Resolved Scanning X-ray Fluorescence (S-XRF) Mapping repeats 2D elemental maps at many incident X-ray energies, generating spatially resolved XANES spectra by combining multiple S-XRF maps.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FS‑XANES</IRI>
+        <Literal>FS-XANES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#FS‑XANES</IRI>
+        <Literal>Full‑Spectral X-ray Absorption Near Edge Structure</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
 
 <!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

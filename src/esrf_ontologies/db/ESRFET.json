@@ -8,19 +8,27 @@
     "description": "3DXRD is a far field diffraction technique capable of reconstructing polycrystalline materials from the individual diffraction spots recorded in the diffraction pattern given that the crystallographic parameters of the material are known. The success of the technique is based on the ability of the individual diffraction spots to be separated. This means there is a trade off between the number of grains and the degree of strain that is measurable."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#ARPES",
+    "names": [
+      "ARPES",
+      "Angle-Resolved Photoemission Spectroscopy"
+    ],
+    "description": "Angle-Resolved Photoemission Spectroscopy (ARPES) measures the energy and momentum of electrons emitted from a sample when illuminated by photons, mapping the electronic band structure and Fermi surface of materials."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#BCDI",
     "names": [
       "BCDI",
       "Bragg Coherent Diffraction Imaging"
     ],
-    "description": ""
+    "description": "Bragg Coherent Diffraction Imaging (BCDI) measures the coherent diffraction around a Bragg peak from a crystalline sample to reconstruct the 3D shape and internal strain field of individual nanocrystals. The result is a high-resolution image of the crystalline structure and deformation."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#BioSAXS",
     "names": [
       "BioSAXS"
     ],
-    "description": ""
+    "description": "BioSAXS is SAXS applied to biological macromolecules in solution to determine their size, shape, flexibility, and aggregation state in near-native conditions."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#CDI",
@@ -32,7 +40,7 @@
       "Coherent X-Ray Diffraction",
       "Coherent X-ray Diffraction Imaging"
     ],
-    "description": ""
+    "description": "Coherent Diffraction Imaging (CDI) measures the far-field diffraction pattern from a sample illuminated with a coherent X-ray beam. The image of the sample is reconstructed computationally from the diffraction data using phase retrieval algorithms, yielding high-resolution, lensless imaging of the electron density or scattering potential."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#CMS",
@@ -40,7 +48,7 @@
       "CMS",
       "Conventional M\u00f6ssbauer Spectroscopy"
     ],
-    "description": ""
+    "description": "Conventional M\u00f6ssbauer Spectroscopy measures the resonant absorption of gamma rays by M\u00f6ssbauer-active nuclei (e.g. Fe-57) using a radioactive source scanned in velocity. It provides information on oxidation state, magnetic ordering, and local electronic and structural environment through hyperfine interactions."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#CRYO-EM",
@@ -49,7 +57,7 @@
       "Cryo-electron microscopy",
       "Cryogenic electron microscopy"
     ],
-    "description": "TEM applied to samples cooled to cryogenic temperatures."
+    "description": "Cryogenic Electron Microscopy (Cryo-EM) is EM performed on rapidly frozen samples to preserve native structures in a near-physiological, vitrified state. It enables high-resolution 3D reconstruction of biological macromolecules and complexes without the need for crystallization."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#CXDI",
@@ -57,7 +65,7 @@
       "CXDI",
       "Coherent X-ray Diffraction Imaging"
     ],
-    "description": ""
+    "description": "Coherent X-ray Diffraction Imaging (CXDI) measures the coherent X-ray diffraction pattern from an isolated object or nanostructure. The 3D electron density is reconstructed computationally using phase retrieval, providing high-resolution, lensless imaging of the sample's internal structure."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#DAFS",
@@ -65,7 +73,7 @@
       "DAFS",
       "Diffraction Anomalous Fine Structure"
     ],
-    "description": ""
+    "description": "Diffraction Anomalous Fine Structure (DAFS) measures the intensity of Bragg diffraction as a function of X-ray photon energy near an absorption edge. It combines diffraction and XAS to provide element-specific structural information, such as site occupancy, bonding environment, and local distortions in crystals."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#DCT",
@@ -81,7 +89,7 @@
       "DFXM",
       "Dark-Field X-ray Microscopy"
     ],
-    "description": ""
+    "description": "Dark-Field X-ray Microscopy (DFXM) measures X-ray diffraction in a dark-field imaging geometry to map crystalline structure, orientation, strain, and defects in 3D within bulk materials. It provides spatially resolved imaging of internal microstructures at micrometer to sub-micrometer resolution."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#ED-EXAFS",
@@ -89,7 +97,7 @@
       "ED-EXAFS",
       "Energy Dispersive Extended X-ray Absorption Fine Structure"
     ],
-    "description": "EXAFS can be called ED-EXAFS when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space"
+    "description": "Energy Dispersive Extended X-ray Absorption Fine Structure (ED-EXAFS) measures oscillations in X-ray absorption probability beyond the edge with energy-dispersive detection, providing local atomic structural information such as bond distances and coordination numbers, acquired quickly without angular scanning."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#ED-XANES",
@@ -97,7 +105,7 @@
       "ED-XANES",
       "Energy Dispersive X-ray Absorption Near Edge Structure"
     ],
-    "description": "XANES can be called ED-XANES when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space"
+    "description": "Energy Dispersive X-ray Absorption Near Edge Structure (ED-XANES) measures the X-ray absorption probability near the absorption edge using energy-dispersive detection, providing rapid information about the oxidation state and electronic structure without scanning incident energy."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#ED-XAS",
@@ -105,16 +113,15 @@
       "ED-XAS",
       "Energy Dispersive X-ray Absorption Spectroscopy"
     ],
-    "description": "XAS can be called ED-XAS when you measure the X-ray absorption probability as a function of energy all at once by dispersing the X-ray energies in space"
+    "description": "Energy Dispersive X-ray Absorption Spectroscopy (ED-XAS) measures X-ray absorption as a function of energy simultaneously by dispersing the X-ray beam in space with a polychromatic source and position-sensitive detector, enabling rapid acquisition of absorption spectra without scanning the incident energy."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#ED-XRD",
     "names": [
       "ED-XRD",
-      "Energy Dispersive X-ray Diffraction",
-      "XRD with an energy dispersive detector."
+      "Energy Dispersive X-ray Diffraction"
     ],
-    "description": ""
+    "description": "Energy Dispersive X-ray Diffraction (ED-XRD) measures diffraction patterns of a sample by detecting diffracted X-rays at a fixed angle while dispersing their energies, enabling fast phase identification and structural analysis without angular scanning."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#ED-XRF",
@@ -122,7 +129,7 @@
       "ED-XRF",
       "Energy Dispersive X-ray Fluorescence Spectroscopy"
     ],
-    "description": "XRF with an energy dispersive detector."
+    "description": "Energy Dispersive X-ray Fluorescence Spectroscopy (ED-XRF) measures the energies of fluorescent X-rays emitted by a sample excited by a broad-spectrum X-ray source, providing elemental composition analysis without scanning the incident energy."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#ED-XRPD",
@@ -130,7 +137,7 @@
       "ED-XRPD",
       "Energy Dispersive X-ray Powder Diffraction"
     ],
-    "description": "XRPD with an energy dispersive detector."
+    "description": "Energy Dispersive X-ray Powder Diffraction (ED-XRPD) measures diffraction patterns of powdered samples by detecting diffracted X-rays at a fixed angle while varying their energy, enabling rapid phase identification and structural analysis without scanning angles."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#EDS",
@@ -146,7 +153,7 @@
       "EM",
       "Electron Microscopy"
     ],
-    "description": "An electron microscope is a microscope that uses a beam of electrons as a source of illumination. They use electron optics that are analogous to the glass lenses of an optical light microscope to control the electron beam, for instance focusing it to produce magnified images or electron diffraction patterns."
+    "description": "Electron Microscopy (EM) uses a beam of electrons as illumination, controlled by electron optics analogous to glass lenses in light microscopes, to measure electron scattering or transmission through a sample. This technique provides high-resolution images and electron diffraction patterns, revealing structural, morphological, and compositional information at nanometer to atomic scales."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#EXAFS",
@@ -154,7 +161,15 @@
       "EXAFS",
       "Extended X-ray Absorption Fine Structure"
     ],
-    "description": "XAS can be called EXAFS when looking at the absorption probability within an X-ray photon energy range greater than 500 eV."
+    "description": "Extended X-ray Absorption Fine Structure (EXAFS) measures oscillations in X-ray absorption above an element\u2019s absorption edge, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#FF-XANES",
+    "names": [
+      "FF-XANES",
+      "Full\u2011Field X-ray Absorption Near Edge Structure"
+    ],
+    "description": "Full-field XANES measures X-ray transmission with an area detector while scanning incident photon energy, producing 2D maps of XANES spectra with spatially resolved chemical information."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#FF-XRF",
@@ -162,7 +177,15 @@
       "FF-XRF",
       "Full-Field X-ray Fluorescence Imaging"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved on the detection side."
+    "description": "Full-Field X-ray Fluorescence Imaging (FF-XRF) measures spatially resolved X-ray fluorescence spectra from every pixel simultaneously by illuminating the entire sample with a broad X-ray beam and detecting emitted fluorescence with an energy-sensitive area detector. This approach provides 2D elemental distribution maps in a single projection without the need for scanning, with spatial separation achieved on the detection side."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#FS\u2011XANES",
+    "names": [
+      "FS-XANES",
+      "Full\u2011Spectral X-ray Absorption Near Edge Structure"
+    ],
+    "description": "Energy-Resolved Scanning X-ray Fluorescence (S-XRF) Mapping repeats 2D elemental maps at many incident X-ray energies, generating spatially resolved XANES spectra by combining multiple S-XRF maps."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#FTIR",
@@ -170,7 +193,7 @@
       "FTIR",
       "Fourier Transform Infrared Spectroscopy"
     ],
-    "description": ""
+    "description": "Fourier Transform Infrared Spectroscopy (FTIR) measures the absorption of infrared light by a sample as a function of wavelength, providing information on molecular vibrations and chemical bonds to identify and characterize materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#GISAXS",
@@ -178,7 +201,7 @@
       "GISAXS",
       "Grazing Incidence Small Angle X-ray Scattering"
     ],
-    "description": ""
+    "description": "Grazing Incidence Small Angle X-ray Scattering (GISAXS) measures scattered X-rays at small angles from a sample surface under shallow incidence, providing nanoscale information about surface and thin film morphology, including size, shape, and arrangement of nanostructures."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#GIXRD",
@@ -186,17 +209,24 @@
       "GIXRD",
       "Grazing Incidence X-Ray Diffraction"
     ],
-    "description": ""
+    "description": "Grazing Incidence X-Ray Diffraction (GIXRD) measures diffraction from a sample surface using X-rays at very shallow incident angles, providing structural information about thin films, surfaces, and near-surface regions."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#HAXPES",
+    "names": [
+      "HAXPES",
+      "Hard X-ray Photoelectron Spectroscopy"
+    ],
+    "description": "Hard X-ray Photoelectron Spectroscopy (HAXPES) uses high-energy X-rays to probe deeper into materials than conventional XPS, giving bulk-sensitive chemical and electronic information."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#HERFD-XAS",
     "names": [
       "HERFD-XAS",
       "High-Energy Resolution Fluorescence Detected X-ray Absorption Spectroscopy",
-      "HERFD",
-      "High-Energy Resolution Fluorescence Detected"
+      "HERFD"
     ],
-    "description": ""
+    "description": "High-Energy Resolution Fluorescence Detected X-ray Absorption Spectroscopy (HERFD-XAS) measures X-ray absorption using fluorescence detected with high energy resolution, enhancing spectral detail by reducing core-hole lifetime broadening to reveal subtle electronic and chemical state information."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#HR-XRPD",
@@ -204,7 +234,7 @@
       "HR-XRPD",
       "High-Resolution X-ray Powder Diffraction"
     ],
-    "description": "Like XRPD but with a high resolution in Q-space (or d-spacing)."
+    "description": "High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#HiP-CT",
@@ -212,7 +242,7 @@
       "HiP-CT",
       "Hierarchical Phase-Contrast Tomography"
     ],
-    "description": ""
+    "description": "Hierarchical Phase-Contrast Tomography (HiP-CT) measures phase-contrast X-ray projections from intact large biological organs at multiple spatial resolutions, providing 3D images that reveal whole-organ structure down to cellular-level detail without destructive sectioning."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#IXS",
@@ -220,7 +250,7 @@
       "IXS",
       "Inelastic X-ray Scattering"
     ],
-    "description": ""
+    "description": "Inelastic X-ray Scattering (IXS) measures the energy and momentum change of X-rays scattered inelastically by a sample, providing information on electronic excitations, phonons, and other dynamic processes at the atomic scale."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#LDDS-XAS",
@@ -229,7 +259,7 @@
       "Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy",
       "Laser-Driven Shock Compression X-ray Absorption Spectroscopy"
     ],
-    "description": ""
+    "description": "This technique measures X-ray absorption spectra of materials compressed dynamically by laser-driven shock waves, providing time-resolved insights into electronic and structural changes under extreme pressure and temperature conditions."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MACRO-XRF",
@@ -247,7 +277,15 @@
       "MAD",
       "Multi-wavelength Anomalous Dispersion"
     ],
-    "description": ""
+    "description": "Multi-wavelength Anomalous Dispersion (MAD) measures diffraction at multiple X-ray wavelengths around an absorption edge to use anomalous scattering differences for more accurate phase determination in crystallography."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#MBS",
+    "names": [
+      "MBS",
+      "M\u00f6ssbauer Spectroscopy"
+    ],
+    "description": "M\u00f6ssbauer spectroscopy measures the resonant absorption of gamma rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of M\u00f6ssbauer-active isotopes (e.g. Fe-57)."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRD",
@@ -270,12 +308,20 @@
     "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#MPES",
+    "names": [
+      "MPES",
+      "Momentum-Resolved Photoemission Spectroscopy"
+    ],
+    "description": "Momentum-Resolved Photoemission Spectroscopy (MPES) measures electron emission as a function of momentum and energy to reveal the dispersion and symmetry of electronic states in solids."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#MRT",
     "names": [
       "MRT",
       "Microbeam Radiation Therapy"
     ],
-    "description": ""
+    "description": "Microbeam Radiation Therapy (MRT) uses arrays of microscale, high-dose X-ray beams to irradiate tissue with high spatial precision, aiming to maximize tumor damage while sparing surrounding healthy tissue."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MX",
@@ -283,7 +329,7 @@
       "MX",
       "Macromolecular Crystallography"
     ],
-    "description": ""
+    "description": "Macromolecular Crystallography (MX) measures X-ray diffraction from crystals of biological macromolecules to determine their 3D atomic structures, providing insights into protein folding, function, and interactions."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NANO-XRD",
@@ -311,7 +357,7 @@
       "NFP",
       "Near-Field Ptychography"
     ],
-    "description": ""
+    "description": "Near-Field Ptychography (NFP) measures coherent diffraction patterns collected in the near-field regime by scanning overlapping illumination spots, enabling high-resolution phase and amplitude imaging of samples."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NFS",
@@ -319,7 +365,7 @@
       "NFS",
       "Nuclear Forward Scattering"
     ],
-    "description": "Time-domain analog of M\u00f6ssbauer spectroscopy"
+    "description": "Nuclear Forward Scattering (NFS) measures the time-resolved resonant scattering of synchrotron-generated gamma rays in the forward direction, extracting hyperfine parameters (e.g. isomer shift, quadrupole splitting, magnetic splitting) from the temporal interference pattern.\nTime-domain analog of M\u00f6ssbauer spectroscopy"
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NR-XMLD",
@@ -327,7 +373,7 @@
       "NR-XMLD",
       "Non-Reciprocal X-ray Magnetic Linear Dichroism"
     ],
-    "description": ""
+    "description": "Non-Reciprocal X-ray Magnetic Linear Dichroism (NR-XMLD) measures differences in linear X-ray absorption depending on magnetization direction and X-ray polarization, revealing magnetic asymmetries that break time-reversal symmetry."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NRIXS",
@@ -335,7 +381,7 @@
       "NRIXS",
       "Nuclear Resonant Inelastic X-ray Scattering"
     ],
-    "description": "Measures phonon density of states"
+    "description": "Nuclear Resonant Inelastic X-ray Scattering (NRIXS) measures the energy distribution of X-rays scattered inelastically by nuclear resonances, providing element-specific information on phonon density of states and lattice dynamics."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NRS",
@@ -343,7 +389,7 @@
       "NRS",
       "Nuclear Resonant Scattering"
     ],
-    "description": ""
+    "description": "Nuclear Resonant Scattering (NRS) measures time-delayed resonant scattering of X-rays from M\u00f6ssbauer-active nuclei to study hyperfine interactions, magnetic order, and dynamics at the atomic scale."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#PDF",
@@ -351,7 +397,7 @@
       "PDF",
       "Pair Distribution Function"
     ],
-    "description": ""
+    "description": "Pair Distribution Function (PDF) analysis measures the distribution of interatomic distances by Fourier-transforming total scattering data, revealing local atomic arrangements and disorder in both crystalline and amorphous materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#PFY-XAS",
@@ -359,7 +405,7 @@
       "PFY-XAS",
       "Partial Fluorescence Yield X-ray Absorption Spectroscopy"
     ],
-    "description": ""
+    "description": "Partial Fluorescence Yield X-ray Absorption Spectroscopy (PFY-XAS) measures fluorescence photons from specific emission lines as a function of incident X-ray energy, providing element- and site-selective absorption spectra with reduced self-absorption effects."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#PIXE",
@@ -367,7 +413,7 @@
       "PIXE",
       "Particle Induced X-ray Emission"
     ],
-    "description": ""
+    "description": "Particle Induced X-ray Emission (PIXE) measures characteristic X-rays emitted by a sample when irradiated with energetic charged particles (e.g., protons) to determine elemental composition with high sensitivity."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#PTYCHO",
@@ -375,7 +421,15 @@
       "PTYCHO",
       "Ptychography"
     ],
-    "description": ""
+    "description": "Ptychography (PTYCHO) measures coherent diffraction patterns by scanning overlapping illumination spots on a sample in the far field, reconstructing high-resolution complex-valued images of sample structure beyond conventional lens limitations."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#PXCT",
+    "names": [
+      "PXCT",
+      "Ptychographic X-ray Computed Tomography"
+    ],
+    "description": "Ptychographic X-ray Computed Tomography (PXCT) combines ptychography and tomography to measure 3D electron density by scanning a coherent X-ray beam and recording diffraction patterns from overlapping regions at multiple angles. It provides high-resolution, quantitative 3D images of internal nanoscale structure."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#REXS",
@@ -383,7 +437,7 @@
       "REXS",
       "Resonant Elastic X-ray Scattering"
     ],
-    "description": ""
+    "description": "Resonant Elastic X-ray Scattering (REXS) measures elastic scattering near an absorption edge to enhance contrast from specific elements, revealing electronic, magnetic, and orbital ordering in materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#RIXS",
@@ -391,7 +445,7 @@
       "RIXS",
       "Resonant Inelastic X-ray Scattering"
     ],
-    "description": ""
+    "description": "Resonant Inelastic X-ray Scattering (RIXS) measures energy loss of X-rays scattered resonantly from a sample, providing detailed insights into electronic excitations, spin dynamics, and valence states."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#RXES",
@@ -399,7 +453,7 @@
       "RXES",
       "Resonant X-ray Emission Spectroscopy"
     ],
-    "description": ""
+    "description": "Resonant X-ray Emission Spectroscopy (RXES) measures emitted X-rays following resonant excitation of core electrons, providing element- and valence-specific information about electronic structure and chemical states."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#S-XRD",
@@ -410,7 +464,7 @@
       "SXRD",
       "Scanning X-ray Diffraction Microscopy"
     ],
-    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space."
+    "description": "Scanning X-ray Diffraction (S-XRD) measures diffraction patterns at many scanned positions on a sample using a focused X-ray beam, providing spatially resolved 2D maps of crystal structure, phase distribution, and strain within the sample."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#S-XRF",
@@ -418,7 +472,7 @@
       "S-XRF",
       "Scanning X-ray Fluorescence"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space."
+    "description": "Scanning X-ray Fluorescence (S-XRF) measures elemental composition by scanning a focused X-ray beam across a sample and detecting emitted fluorescence, producing high-resolution 2D maps of elemental distributions in the sample."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#SAD",
@@ -426,7 +480,7 @@
       "SAD",
       "Single-wavelength Anomalous Diffraction"
     ],
-    "description": ""
+    "description": "Single-wavelength Anomalous Diffraction (SAD) measures diffraction at one specific X-ray wavelength near an absorption edge to exploit anomalous scattering for phase determination in crystallography."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#SAXS",
@@ -434,18 +488,26 @@
       "SAXS",
       "Small-Angle X-ray Scattering"
     ],
-    "description": ""
+    "description": "Small-Angle X-ray Scattering (SAXS) measures the X-ray scattering intensity at small angles to obtain information about the size, shape, and structural organization of nanoscale features in a sample."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#SCXRD",
     "names": [
       "SCXRD",
-      "Single crystal X-ray diffraction",
+      "Single Crystal X-ray Diffraction",
       "SC-XRD",
       "SCD",
       "SXRD"
     ],
-    "description": "Single crystal X-ray diffraction measured the diffraction from a single crystal to determine its crystal structure."
+    "description": "Single Crystal X-ray Diffraction (SCXRD) measures X-ray diffraction from a single crystal to determine its precise 3D crystal structure, including atomic positions, bonding, and symmetry."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#SIXES",
+    "names": [
+      "SIXES",
+      "Selectively Induced X-ray Emission Spectroscopy"
+    ],
+    "description": "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#SMS",
@@ -453,7 +515,7 @@
       "SMS",
       "Synchrotron M\u00f6ssbauer Spectroscopy"
     ],
-    "description": ""
+    "description": "The Synchrotron M\u00f6ssbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant gamma rays (e.g. 14.4 keV for Fe-57), enabling M\u00f6ssbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#SSX",
@@ -461,7 +523,7 @@
       "SSX",
       "Serial Synchrotron Crystallography"
     ],
-    "description": "Like SCXRD but instead of measuring the same crystal under different orientations we measure many individual crystals with random orientation."
+    "description": "Serial Synchrotron Crystallography (SSX) is similar to Single Crystal X-ray Diffraction (SCXRD), but instead of measuring diffraction from one crystal in multiple orientations, SSX collects diffraction from many micro- or nano-crystals with random orientations sequentially at a synchrotron, enabling structure determination from samples that cannot grow large single crystals."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#STXM",
@@ -469,7 +531,7 @@
       "STXM",
       "Scanning Transmission X-ray Microscopy"
     ],
-    "description": ""
+    "description": "Scanning Transmission X-ray Microscopy (STXM) measures X-ray transmission through a sample by scanning a focused X-ray beam in 2D, providing spatially resolved chemical, elemental, and morphological maps at nanometer-scale resolution."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#SMX",
@@ -477,7 +539,7 @@
       "SXM",
       "Serial Macromolecular Crystallography"
     ],
-    "description": ""
+    "description": "Serial Macromolecular Crystallography (SXM) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#TEM",
@@ -485,7 +547,7 @@
       "TEM",
       "Transmission Electron Microscopy"
     ],
-    "description": "EM in which a beam of electrons is transmitted through a specimen to form an image."
+    "description": "Transmission Electron Microscopy (TEM) measures electrons transmitted through an ultra-thin sample to produce high-resolution images of its internal structure, enabling atomic- to nanometer-scale imaging and analysis of morphology, crystallography, and defects."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#TFY-XAS",
@@ -493,7 +555,7 @@
       "TFY-XAS",
       "Total Fluorescence Yield X-ray Absorption Spectroscopy"
     ],
-    "description": ""
+    "description": "Total Fluorescence Yield X-ray Absorption Spectroscopy (TFY-XAS) measures the total emitted fluorescence photons as a function of incident X-ray energy to determine element-specific absorption spectra, providing bulk-sensitive information about electronic and structural properties."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#TR-USAXS",
@@ -501,7 +563,7 @@
       "TR-USAXS",
       "Time Resolved Ultra-Small Angle X-ray Scattering"
     ],
-    "description": ""
+    "description": "Time-Resolved Ultra-Small Angle X-ray Scattering (TR-USAXS) measures ultra-small angle X-ray scattering as a function of time to monitor structural evolution and dynamics of large-scale features such as aggregation, phase separation, or self-assembly."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#TR-XRD",
@@ -509,7 +571,7 @@
       "TR-XRD",
       "Time Resolved X-Ray Diffraction"
     ],
-    "description": ""
+    "description": "Time-Resolved X-Ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#TXRF",
@@ -517,7 +579,7 @@
       "TXRF",
       "Total Reflection X-ray Fluorescence"
     ],
-    "description": ""
+    "description": "Total Reflection X-ray Fluorescence (TXRF) measures characteristic X-rays emitted by a sample under total external reflection conditions, providing highly sensitive, surface-specific elemental analysis with minimal sample preparation."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#USA-XPCS",
@@ -525,7 +587,7 @@
       "USA-XPCS",
       "Ultra-Small Angle X-Ray Photon Correlation Spectroscopy"
     ],
-    "description": ""
+    "description": "Ultra-Small Angle X-Ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#USAXS",
@@ -533,7 +595,7 @@
       "USAXS",
       "Ultra-Small Angle X-ray Scattering"
     ],
-    "description": ""
+    "description": "Ultra-Small Angle X-ray Scattering (USAXS) measures X-ray scattering at extremely small angles to probe structural features on length scales larger than those accessible by SAXS, such as large-scale aggregates, pores, or hierarchical structures."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#WAXS",
@@ -541,7 +603,7 @@
       "WAXS",
       "Wide-angle X-ray Scattering"
     ],
-    "description": ""
+    "description": "Wide-Angle X-ray Scattering (WAXS) measures X-ray scattering at larger angles than SAXS to provide information on short-range order, crystalline structure, and molecular packing in materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#WDS",
@@ -557,7 +619,7 @@
       "XANES",
       "X-ray Absorption Near Edge Structure"
     ],
-    "description": "XAS can be called XANES when looking  at the absorption probability within an X-ray photon energy range smaller than 500 eV."
+    "description": "XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element\u2019s absorption edge, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XAS",
@@ -565,7 +627,7 @@
       "XAS",
       "X-ray Absorption Spectroscopy"
     ],
-    "description": "XAS measures a signal related to the X-ray absorption probability (could be fluorescence, photon electrons, auger electrons, all electrons, transmission) as function of the incomming X-ray photon energy. X-rays are absorbed by atomic core excitation (remove and core-shell electron from an atom)."
+    "description": "XAS measures a signal related to the X-ray absorption probability\u2014such as fluorescence, photon electrons, Auger electrons, or transmission\u2014as a function of the incident X-ray photon energy. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XBH",
@@ -573,7 +635,7 @@
       "XBH",
       "X-ray Bragg Holography"
     ],
-    "description": ""
+    "description": "X-ray Bragg Holography (XBH) measures interference patterns formed by Bragg-diffracted and reference X-rays from a crystal to reconstruct 3D atomic-scale images of the crystal structure."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XCL",
@@ -581,7 +643,7 @@
       "XCL",
       "X-ray Computed Laminography"
     ],
-    "description": ""
+    "description": "X-ray Computed Laminography (XCL) measures X-ray transmission through flat, extended samples at multiple tilted angles to reconstruct high-resolution 3D images of internal structures that are challenging for conventional tomography."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XDMR",
@@ -589,7 +651,7 @@
       "XDMR",
       "X-ray Detected Magnetic Resonance"
     ],
-    "description": ""
+    "description": "X-ray Detected Magnetic Resonance (XDMR) measures changes in X-ray absorption or emission induced by magnetic resonance excitation, providing element-specific information on spin dynamics and magnetic excitations."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XDS",
@@ -597,7 +659,7 @@
       "XDS",
       "X-Ray Diffuse Scattering"
     ],
-    "description": ""
+    "description": "X-Ray Diffuse Scattering (XDS) measures scattered X-rays away from Bragg peaks to probe local disorder, defects, thermal vibrations, and nanoscale structural fluctuations in materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XEOL",
@@ -605,7 +667,7 @@
       "XEOL",
       "X-ray Excited Optical Luminescence"
     ],
-    "description": ""
+    "description": "X-ray Excited Optical Luminescence (XEOL) measures visible or near-visible light emitted from a sample after X-ray excitation, providing information on electronic structure, defect states, and luminescent centers."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XES",
@@ -613,7 +675,7 @@
       "XES",
       "X-ray Emission Spectroscopy"
     ],
-    "description": "XRF with a high energy resolution."
+    "description": "X-ray Emission Spectroscopy (XES) measures emitted X-ray photons from electronic transitions after X-ray excitation, revealing detailed information about the electronic structure and chemical state of elements. Unlike XRF, which identifies elemental composition through broad characteristic fluorescence lines, XES uses high energy resolution to resolve fine spectral features\u2014such as valence-to-core transitions\u2014providing deeper insight into the local chemical bonding and electronic environment."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XFCT",
@@ -621,7 +683,7 @@
       "XFCT",
       "X-ray Fluorescence Tomography"
     ],
-    "description": "XRF which provides elemental distributions in the sample 3D by measuring fluorescence in 2D or 1D projection under many orientations."
+    "description": "X-ray Fluorescence Tomography (XFCT) measures fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XFH",
@@ -629,7 +691,7 @@
       "XFH",
       "X-ray Fluorescence Holography"
     ],
-    "description": ""
+    "description": "X-ray Fluorescence Holography (XFH) measures interference between fluorescent X-rays emitted from atoms and scattered reference waves to obtain 3D atomic-scale images of the local atomic arrangement around specific elements."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XHT",
@@ -637,7 +699,7 @@
       "XHT",
       "X-ray HoloTomography"
     ],
-    "description": ""
+    "description": "X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple angles to reconstruct high-resolution 3D electron density maps of a sample."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XLD",
@@ -645,7 +707,7 @@
       "XLD",
       "X-Ray Linear Dichroism"
     ],
-    "description": ""
+    "description": "X-ray Linear Dichroism (XLD) measures the difference in X-ray absorption for linearly polarized light oriented along different crystallographic axes, providing information on electronic anisotropy and orbital ordering."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XMCD",
@@ -653,7 +715,7 @@
       "XMCD",
       "X-ray Magnetic Circular Dichroism"
     ],
-    "description": ""
+    "description": "X-ray Magnetic Circular Dichroism (XMCD) measures the difference in absorption of left- and right-circularly polarized X-rays in a magnetized sample, probing element-specific magnetic moments and spin states."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XMLD",
@@ -661,7 +723,7 @@
       "XMLD",
       "X-ray Magnetic Linear Dichroism"
     ],
-    "description": ""
+    "description": "X-ray Magnetic Linear Dichroism (XMLD) measures differences in X-ray absorption of linearly polarized light depending on magnetic order, sensitive to antiferromagnetic and magnetic domain structures."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XM\u03c7D",
@@ -669,7 +731,7 @@
       "XM\u03c7D",
       "X-ray MagnetoChiral Dichroism"
     ],
-    "description": ""
+    "description": "X-ray MagnetoChiral Dichroism (XM\u03c7D) measures differences in X-ray absorption related to the combined effects of magnetism and chirality in materials, revealing chiral magnetic structures."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XNCD",
@@ -677,7 +739,7 @@
       "XNCD",
       "X-ray Natural Circular Dichroism"
     ],
-    "description": ""
+    "description": "X-ray Natural Circular Dichroism (XNCD) measures differences in absorption of circularly polarized X-rays in non-magnetic chiral materials, providing information on structural chirality and electronic asymmetry."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XNHT",
@@ -685,7 +747,7 @@
       "XNHT",
       "X-ray Nano-HoloTomography"
     ],
-    "description": ""
+    "description": "X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT, providing nanoscale 3D imaging of internal sample structure by combining holography and tomography with nanoscale focusing."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XPCI",
@@ -695,7 +757,7 @@
       "PCXI",
       "Phase-Contrast X-ray Imaging"
     ],
-    "description": ""
+    "description": "X-ray Phase-Contrast Imaging (XPCI) measures phase shifts of X-rays transmitted through a sample to enhance image contrast, enabling visualization of structures with low absorption contrast such as soft tissues or light materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XPCS",
@@ -703,7 +765,7 @@
       "XPCS",
       "X-Ray Photon Correlation Spectroscopy"
     ],
-    "description": ""
+    "description": "X-Ray Photon Correlation Spectroscopy (XPCS) measures time fluctuations of coherent X-ray scattering intensity to probe nanoscale dynamics and temporal correlations in materials such as particle motion, phase transitions, or relaxation processes."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XPCT",
@@ -711,7 +773,15 @@
       "XPCT",
       "Phase-Contrast Tomography"
     ],
-    "description": ""
+    "description": "X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample at multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures not visible in conventional absorption tomography."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#XPS",
+    "names": [
+      "XPS",
+      "X-ray Photoelectron Spectroscopy"
+    ],
+    "description": "X-ray Photoelectron Spectroscopy (XPS) measures the kinetic energy of electrons ejected by X-rays to determine elemental composition and chemical states near the surface of a material."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRAYS",
@@ -719,7 +789,7 @@
       "XRAYS",
       "X-ray Radiation Technique"
     ],
-    "description": "Experimental technique with X-ray irradiation of the sample under investigation."
+    "description": "Experimental techniques based on irradiating a sample with X-rays to probe its properties by measuring interactions such as absorption, scattering, fluorescence, or diffraction, providing insights into structural, elemental, or electronic characteristics depending on the specific method used."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRCT",
@@ -727,7 +797,7 @@
       "XRCT",
       "X-Ray Computed Tomography"
     ],
-    "description": ""
+    "description": "X-Ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRD",
@@ -735,7 +805,7 @@
       "XRD",
       "X-ray diffraction"
     ],
-    "description": "X-ray diffraction measured the diffraction from a crystalline sample to determine the crystal structure, molecular structure, multi-phase identification and composition, ..."
+    "description": "X-ray Diffraction (XRD) measures the diffraction pattern produced when X-rays interact with a crystalline sample. The pattern provides information about the crystal structure, phase identification, lattice parameters, and crystallite size of the material."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRF",
@@ -743,7 +813,7 @@
       "XRF",
       "X-ray Fluorescence Spectroscopy"
     ],
-    "description": "XRF measures X-ray photons coming from a sample during irradition with X-rays and derives elemental composition from the energy of the fluorescence photons"
+    "description": "X-ray Fluorescence (XRF) measures characteristic X-ray photons emitted by a sample when it is irradiated with X-rays. The energy of the emitted fluorescence photons reveals the elemental composition and chemical state of the sample."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRPD",
@@ -751,7 +821,7 @@
       "XRPD",
       "X-ray Powder Diffraction"
     ],
-    "description": "X-ray powder diffraction measured the diffraction from a powder to determine the crystal structure or multi-phase identifiaction and composition."
+    "description": "X-ray Powder Diffraction (XRPD) measures diffraction patterns from polycrystalline or powdered samples to identify phases, determine crystal structure, lattice parameters, and quantify phase composition."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRR",
@@ -761,7 +831,7 @@
       "X-ray reflectivity",
       "X-ray specular reflectivity"
     ],
-    "description": "A surface-sensitive analytical technique based on X-ray reflection used in chemistry, physics, and materials science to characterize surfaces, thin films and multilayers."
+    "description": "X-ray Reflectometry (XRR) measures the intensity of X-rays reflected from thin films or multilayers as a function of incident angle to determine film thickness, density, and interface roughness."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRS",
@@ -769,7 +839,7 @@
       "XRS",
       "X-ray Raman Scattering"
     ],
-    "description": ""
+    "description": "X-ray Raman Scattering (XRS) measures inelastic scattering of hard X-rays by core electrons, enabling the study of low-Z elements\u2019 electronic structure and bonding in bulk samples without the need for soft X-rays or vacuum conditions."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRT",
@@ -779,6 +849,6 @@
       "X-Ray Diffraction Topography",
       "XDT"
     ],
-    "description": ""
+    "description": "X-Ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure."
   }
 ]
