@@ -27,7 +27,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#CMS\">CMS</a>",
     "Alternative names": "Conventional Mössbauer Spectroscopy",
-    "Description": "Conventional Mössbauer Spectroscopy measures the resonant absorption of gamma rays by Mössbauer-active nuclei (e.g. Fe-57) using a radioactive source scanned in velocity. It provides information on oxidation state, magnetic ordering, and local electronic and structural environment through hyperfine interactions."
+    "Description": "Conventional Mössbauer Spectroscopy measures the resonant absorption of X-rays by Mössbauer-active nuclei (e.g. Fe-57) using a radioactive source scanned in velocity. It provides information on oxidation state, magnetic ordering, and local electronic and structural environment through hyperfine interactions."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#CRYO-EM\">CRYO-EM</a>",
@@ -172,7 +172,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MBS\">MBS</a>",
     "Alternative names": "Mössbauer Spectroscopy",
-    "Description": "Mössbauer spectroscopy measures the resonant absorption of gamma rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of Mössbauer-active isotopes (e.g. Fe-57)."
+    "Description": "Mössbauer spectroscopy measures the resonant absorption of X-rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of Mössbauer-active isotopes (e.g. Fe-57)."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MICRO-XRD\">MICRO-XRD</a>",
@@ -217,7 +217,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NFS\">NFS</a>",
     "Alternative names": "Nuclear Forward Scattering",
-    "Description": "Nuclear Forward Scattering (NFS) measures the time-resolved resonant scattering of synchrotron-generated gamma rays in the forward direction, extracting hyperfine parameters (e.g. isomer shift, quadrupole splitting, magnetic splitting) from the temporal interference pattern.\nTime-domain analog of Mössbauer spectroscopy"
+    "Description": "Nuclear Forward Scattering (NFS) measures the time-resolved resonant scattering of synchrotron-generated X-rays in the forward direction, extracting hyperfine parameters (e.g. isomer shift, quadrupole splitting, magnetic splitting) from the temporal interference pattern.\nTime-domain analog of Mössbauer spectroscopy"
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NR-XMLD\">NR-XMLD</a>",
@@ -307,7 +307,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SMS\">SMS</a>",
     "Alternative names": "Synchrotron Mössbauer Spectroscopy",
-    "Description": "The Synchrotron Mössbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant gamma rays (e.g. 14.4 keV for Fe-57), enabling Mössbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques."
+    "Description": "The Synchrotron Mössbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling Mössbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SSX\">SSX</a>",
