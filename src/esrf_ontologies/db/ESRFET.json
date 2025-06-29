@@ -48,7 +48,7 @@
       "CMS",
       "Conventional M\u00f6ssbauer Spectroscopy"
     ],
-    "description": "Conventional M\u00f6ssbauer Spectroscopy measures the resonant absorption of gamma rays by M\u00f6ssbauer-active nuclei (e.g. Fe-57) using a radioactive source scanned in velocity. It provides information on oxidation state, magnetic ordering, and local electronic and structural environment through hyperfine interactions."
+    "description": "Conventional M\u00f6ssbauer Spectroscopy measures the resonant absorption of X-rays by M\u00f6ssbauer-active nuclei (e.g. Fe-57) using a radioactive source scanned in velocity. It provides information on oxidation state, magnetic ordering, and local electronic and structural environment through hyperfine interactions."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#CRYO-EM",
@@ -285,7 +285,7 @@
       "MBS",
       "M\u00f6ssbauer Spectroscopy"
     ],
-    "description": "M\u00f6ssbauer spectroscopy measures the resonant absorption of gamma rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of M\u00f6ssbauer-active isotopes (e.g. Fe-57)."
+    "description": "M\u00f6ssbauer spectroscopy measures the resonant absorption of X-rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of M\u00f6ssbauer-active isotopes (e.g. Fe-57)."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRD",
@@ -365,7 +365,7 @@
       "NFS",
       "Nuclear Forward Scattering"
     ],
-    "description": "Nuclear Forward Scattering (NFS) measures the time-resolved resonant scattering of synchrotron-generated gamma rays in the forward direction, extracting hyperfine parameters (e.g. isomer shift, quadrupole splitting, magnetic splitting) from the temporal interference pattern.\nTime-domain analog of M\u00f6ssbauer spectroscopy"
+    "description": "Nuclear Forward Scattering (NFS) measures the time-resolved resonant scattering of synchrotron-generated X-rays in the forward direction, extracting hyperfine parameters (e.g. isomer shift, quadrupole splitting, magnetic splitting) from the temporal interference pattern.\nTime-domain analog of M\u00f6ssbauer spectroscopy"
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NR-XMLD",
@@ -515,7 +515,7 @@
       "SMS",
       "Synchrotron M\u00f6ssbauer Spectroscopy"
     ],
-    "description": "The Synchrotron M\u00f6ssbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant gamma rays (e.g. 14.4 keV for Fe-57), enabling M\u00f6ssbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques."
+    "description": "The Synchrotron M\u00f6ssbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling M\u00f6ssbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#SSX",
