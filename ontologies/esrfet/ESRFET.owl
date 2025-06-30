@@ -96,7 +96,13 @@
         <Class IRI="#HERFD-XAS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#HP-XRD"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HR-XRPD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HT-XRD"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HiP-CT"/>
@@ -106,6 +112,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#LDDS-XAS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LDSC-XAS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MACRO-XRF"/>
@@ -462,6 +471,9 @@
         <Class IRI="#powder_sample"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ramp_compression"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#reflection"/>
     </Declaration>
     <Declaration>
@@ -469,6 +481,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#right_circular_polarization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sample_compression"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sample_incident_angle"/>
@@ -499,6 +514,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#serial_scanning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shock_compression"/>
     </Declaration>
     <Declaration>
         <Class IRI="#single_crystal_sample"/>
@@ -983,6 +1001,40 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#sample_compression"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#laser"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LDSC-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#shock_compression"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
@@ -1663,6 +1715,14 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HP-XRD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HT-XRD"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HiP-CT"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -2047,6 +2107,10 @@
         <Class IRI="#sample_type"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ramp_compression"/>
+        <Class IRI="#sample_compression"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#reflection"/>
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
@@ -2057,6 +2121,10 @@
     <SubClassOf>
         <Class IRI="#right_circular_polarization"/>
         <Class IRI="#polarization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sample_compression"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_incident_angle"/>
@@ -2097,6 +2165,10 @@
     <SubClassOf>
         <Class IRI="#serial_scanning"/>
         <Class IRI="#space_time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shock_compression"/>
+        <Class IRI="#sample_compression"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#single_crystal_sample"/>
@@ -2678,6 +2750,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HP-XRD</IRI>
+        <Literal>High-Pressure X-ray Diffraction (HP-XRD) measures X-ray diffraction patterns of materials compressed to high pressures, revealing structural changes such as phase transitions, lattice compression, and equation-of-state behavior.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HP-XRD</IRI>
+        <Literal>HP-XRD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#HP-XRD</IRI>
+        <Literal>High-Pressure X-ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HR-XRPD</IRI>
         <Literal>High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</Literal>
     </AnnotationAssertion>
@@ -2690,6 +2777,21 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#HR-XRPD</IRI>
         <Literal>High-Resolution X-ray Powder Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HT-XRD</IRI>
+        <Literal>High-Temperature X-ray Diffraction (HT-XRD) measures X-ray diffraction patterns of materials at elevated temperatures, providing insights into thermal expansion, phase stability, and temperature-induced structural transformations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HT-XRD</IRI>
+        <Literal>HT-XRD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#HT-XRD</IRI>
+        <Literal>High-Temperature X-ray Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2724,7 +2826,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#LDDS-XAS</IRI>
-        <Literal>This technique measures X-ray absorption spectra of materials compressed dynamically by laser-driven shock waves, providing time-resolved insights into electronic and structural changes under extreme pressure and temperature conditions.</Literal>
+        <Literal>Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy (LDDC-XAS) measures X-ray absorption spectra of materials compressed by laser-driven dynamic pressure pulses, providing time-resolved insights into electronic and structural changes under extreme conditions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2732,14 +2834,24 @@
         <Literal>LDDC-XAS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#LDDS-XAS</IRI>
-        <Literal>Laser-Driven Shock Compression X-ray Absorption Spectroscopy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#LDDS-XAS</IRI>
         <Literal>Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LDSC-XAS</IRI>
+        <Literal>Laser-Driven Shock Compression X-ray Absorption Spectroscopy (LDSC-XAS) is a specific type of Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy (LDDC-XAS) that measures X-ray absorption spectra of materials subjected to laser-driven shock waves, capturing rapid structural and electronic changes during high-strain-rate compression.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LDSC-XAS</IRI>
+        <Literal>LDSC-XAS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#LDSC-XAS</IRI>
+        <Literal>Laser-Driven Shock Compression X-ray Absorption Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4143,6 +4255,11 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ramp_compression</IRI>
+        <Literal>Lower strain rates (~10^3 to 10^6 s⁻¹)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#reflection</IRI>
         <Literal>Detect waves (photons or particles) which are reflected of the interface between two media.</Literal>
     </AnnotationAssertion>
@@ -4236,6 +4353,11 @@ and remove this class</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#serial_scanning</IRI>
         <Literal>A method of data collection where many samples of the same kind are streaming through the sample input (e.g. X-ray beam), one at a time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#shock_compression</IRI>
+        <Literal>High strain rates (~10^6 to 10^9 s⁻¹).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
