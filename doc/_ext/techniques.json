@@ -140,9 +140,19 @@
     "Description": "High-Energy Resolution Fluorescence Detected X-ray Absorption Spectroscopy (HERFD-XAS) measures X-ray absorption using fluorescence detected with high energy resolution, enhancing spectral detail by reducing core-hole lifetime broadening to reveal subtle electronic and chemical state information."
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#HP-XRD\">HP-XRD</a>",
+    "Alternative names": "High-Pressure X-ray Diffraction",
+    "Description": "High-Pressure X-ray Diffraction (HP-XRD) measures X-ray diffraction patterns of materials compressed to high pressures, revealing structural changes such as phase transitions, lattice compression, and equation-of-state behavior."
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#HR-XRPD\">HR-XRPD</a>",
     "Alternative names": "High-Resolution X-ray Powder Diffraction",
     "Description": "High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#HT-XRD\">HT-XRD</a>",
+    "Alternative names": "High-Temperature X-ray Diffraction",
+    "Description": "High-Temperature X-ray Diffraction (HT-XRD) measures X-ray diffraction patterns of materials at elevated temperatures, providing insights into thermal expansion, phase stability, and temperature-induced structural transformations."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#HiP-CT\">HiP-CT</a>",
@@ -156,8 +166,13 @@
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#LDDS-XAS\">LDDC-XAS</a>",
-    "Alternative names": "Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy, Laser-Driven Shock Compression X-ray Absorption Spectroscopy",
-    "Description": "This technique measures X-ray absorption spectra of materials compressed dynamically by laser-driven shock waves, providing time-resolved insights into electronic and structural changes under extreme pressure and temperature conditions."
+    "Alternative names": "Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy",
+    "Description": "Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy (LDDC-XAS) measures X-ray absorption spectra of materials compressed by laser-driven dynamic pressure pulses, providing time-resolved insights into electronic and structural changes under extreme conditions."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#LDSC-XAS\">LDSC-XAS</a>",
+    "Alternative names": "Laser-Driven Shock Compression X-ray Absorption Spectroscopy",
+    "Description": "Laser-Driven Shock Compression X-ray Absorption Spectroscopy (LDSC-XAS) is a specific type of Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy (LDDC-XAS) that measures X-ray absorption spectra of materials subjected to laser-driven shock waves, capturing rapid structural and electronic changes during high-strain-rate compression."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MACRO-XRF\">MACRO-XRF</a>",
