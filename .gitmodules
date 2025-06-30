@@ -1,0 +1,5 @@
+[submodule "ontologies/nexus"]
+	path = ontologies/nexus
+	url = https://github.com/FAIRmat-NFDI/NeXusOntology.git
+	branch = tanmay
+	fetchRecurseSubmodules = false
