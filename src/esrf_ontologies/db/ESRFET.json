@@ -164,12 +164,28 @@
     "description": "Extended X-ray Absorption Fine Structure (EXAFS) measures oscillations in X-ray absorption above an element\u2019s absorption edge, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#FF-EXAFS",
+    "names": [
+      "FF-EXAFS",
+      "Full-Field Extended X-ray Absorption Fine Structure Imaging"
+    ],
+    "description": "FF-EXAFS measures the extended region of the absorption spectrum across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved information on local atomic structure, such as bond lengths and coordination."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#FF-XANES",
     "names": [
       "FF-XANES",
-      "Full\u2011Field X-ray Absorption Near Edge Structure"
+      "Full\u2011Field X-ray Absorption Near Edge Structure Imaging"
     ],
-    "description": "Full-field XANES measures X-ray transmission with an area detector while scanning incident photon energy, producing 2D maps of XANES spectra with spatially resolved chemical information."
+    "description": "FF-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved information on chemical state and electronic structure."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#FF-XAS",
+    "names": [
+      "FF-XAS",
+      "Full-Field X-ray Absorption Spectroscopy Imaging"
+    ],
+    "description": "FF-XAS measures X-ray absorption spectra across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved insight into electronic and atomic structure."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#FF-XRF",
@@ -177,15 +193,31 @@
       "FF-XRF",
       "Full-Field X-ray Fluorescence Imaging"
     ],
-    "description": "Full-Field X-ray Fluorescence Imaging (FF-XRF) measures spatially resolved X-ray fluorescence spectra from every pixel simultaneously by illuminating the entire sample with a broad X-ray beam and detecting emitted fluorescence with an energy-sensitive area detector. This approach provides 2D elemental distribution maps in a single projection without the need for scanning, with spatial separation achieved on the detection side."
+    "description": "FF-XRF measures X-ray fluorescence spectra across a 2D sample area using broad X-ray beam and an area detector, providing 2D elemental distribution maps in projection."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#FS-EXAFS",
+    "names": [
+      "FS-EXAFS",
+      "Full-Spectral Extended X-ray Absorption Fine Structure Imaging"
+    ],
+    "description": "FS-EXAFS measures the extended region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on local atomic structure, such as bond lengths and coordination."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#FS\u2011XANES",
     "names": [
       "FS-XANES",
-      "Full\u2011Spectral X-ray Absorption Near Edge Structure"
+      "Full\u2011Spectral X-ray Absorption Near Edge Structure Imaging"
     ],
-    "description": "Energy-Resolved Scanning X-ray Fluorescence (S-XRF) Mapping repeats 2D elemental maps at many incident X-ray energies, generating spatially resolved XANES spectra by combining multiple S-XRF maps."
+    "description": "FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#FS-XAS",
+    "names": [
+      "FS-XAS",
+      "Full-Spectral X-ray Absorption Spectroscopy Imaging"
+    ],
+    "description": "FS-XAS measures X-ray absorption spectra across a 2D sample area using a focused X-ray beam, providing spatially resolved insight into electronic and atomic structure."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#FTIR",

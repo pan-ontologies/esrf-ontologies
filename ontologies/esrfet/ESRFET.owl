@@ -75,10 +75,22 @@
         <Class IRI="#EXAFS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FF-EXAFS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#FF-XANES"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FF-XAS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#FF-XRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FS-EXAFS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FS-XAS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FTIR"/>
@@ -1703,7 +1715,23 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FF-EXAFS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FF-XANES"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FF-XAS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FS-EXAFS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FS-XAS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -2640,8 +2668,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FF-EXAFS</IRI>
+        <Literal>FF-EXAFS measures the extended region of the absorption spectrum across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved information on local atomic structure, such as bond lengths and coordination.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FF-EXAFS</IRI>
+        <Literal>FF-EXAFS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#FF-EXAFS</IRI>
+        <Literal>Full-Field Extended X-ray Absorption Fine Structure Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#FF-XANES</IRI>
-        <Literal>Full-field XANES measures X-ray transmission with an area detector while scanning incident photon energy, producing 2D maps of XANES spectra with spatially resolved chemical information.</Literal>
+        <Literal>FF-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved information on chemical state and electronic structure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2651,12 +2694,27 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#FF-XANES</IRI>
-        <Literal>Full‑Field X-ray Absorption Near Edge Structure</Literal>
+        <Literal>Full‑Field X-ray Absorption Near Edge Structure Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FF-XAS</IRI>
+        <Literal>FF-XAS measures X-ray absorption spectra across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved insight into electronic and atomic structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FF-XAS</IRI>
+        <Literal>FF-XAS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#FF-XAS</IRI>
+        <Literal>Full-Field X-ray Absorption Spectroscopy Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#FF-XRF</IRI>
-        <Literal>Full-Field X-ray Fluorescence Imaging (FF-XRF) measures spatially resolved X-ray fluorescence spectra from every pixel simultaneously by illuminating the entire sample with a broad X-ray beam and detecting emitted fluorescence with an energy-sensitive area detector. This approach provides 2D elemental distribution maps in a single projection without the need for scanning, with spatial separation achieved on the detection side.</Literal>
+        <Literal>FF-XRF measures X-ray fluorescence spectra across a 2D sample area using broad X-ray beam and an area detector, providing 2D elemental distribution maps in projection.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2667,6 +2725,36 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#FF-XRF</IRI>
         <Literal>Full-Field X-ray Fluorescence Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FS-EXAFS</IRI>
+        <Literal>FS-EXAFS measures the extended region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on local atomic structure, such as bond lengths and coordination.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FS-EXAFS</IRI>
+        <Literal>FS-EXAFS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#FS-EXAFS</IRI>
+        <Literal>Full-Spectral Extended X-ray Absorption Fine Structure Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FS-XAS</IRI>
+        <Literal>FS-XAS measures X-ray absorption spectra across a 2D sample area using a focused X-ray beam, providing spatially resolved insight into electronic and atomic structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FS-XAS</IRI>
+        <Literal>FS-XAS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#FS-XAS</IRI>
+        <Literal>Full-Spectral X-ray Absorption Spectroscopy Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4450,7 +4538,7 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#FS‑XANES</IRI>
-        <Literal>Energy-Resolved Scanning X-ray Fluorescence (S-XRF) Mapping repeats 2D elemental maps at many incident X-ray energies, generating spatially resolved XANES spectra by combining multiple S-XRF maps.</Literal>
+        <Literal>FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4460,7 +4548,7 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#FS‑XANES</IRI>
-        <Literal>Full‑Spectral X-ray Absorption Near Edge Structure</Literal>
+        <Literal>Full‑Spectral X-ray Absorption Near Edge Structure Imaging</Literal>
     </AnnotationAssertion>
 </Ontology>
 
