@@ -653,6 +653,14 @@
     "description": "Ultra-Small Angle X-ray Scattering (USAXS) measures X-ray scattering at extremely small angles to probe structural features on length scales larger than those accessible by SAXS, such as large-scale aggregates, pores, or hierarchical structures."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#VLM",
+    "names": [
+      "VLM",
+      "Visible Light Microscopy"
+    ],
+    "description": "Visible Light Microscopy (VLM) captures images of a sample using visible light illumination and optical lenses, providing spatially resolved information about surface morphology, color, and structure at micrometer-scale resolution."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#WAXS",
     "names": [
       "WAXS",

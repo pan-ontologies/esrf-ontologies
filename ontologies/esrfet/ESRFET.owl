@@ -252,6 +252,9 @@
         <Class IRI="#UV"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#VLM"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#WAXS"/>
     </Declaration>
     <Declaration>
@@ -1861,6 +1864,10 @@
     <SubClassOf>
         <Class IRI="#UV"/>
         <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VLM"/>
+        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XBH"/>
@@ -3625,6 +3632,21 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#USAXS</IRI>
         <Literal>Ultra-Small Angle X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VLM</IRI>
+        <Literal>Visible Light Microscopy (VLM) captures images of a sample using visible light illumination and optical lenses, providing spatially resolved information about surface morphology, color, and structure at micrometer-scale resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VLM</IRI>
+        <Literal>VLM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#VLM</IRI>
+        <Literal>Visible Light Microscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
