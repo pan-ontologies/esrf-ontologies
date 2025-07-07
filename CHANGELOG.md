@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.0.0
+
 New features
 
 - ESRFET ontology for experimental techniques at the ESRF.
