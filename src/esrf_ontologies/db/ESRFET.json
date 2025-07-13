@@ -562,7 +562,7 @@
       "SIXES",
       "Selectively Induced X-ray Emission Spectroscopy"
     ],
-    "description": "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping."
+    "description": "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.\nTwo definitions seem to exist for SIXES:\nSakurai et. al. (1988): XAS with a Si(Li) detector.\nSimionovici et al (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#SMS",
