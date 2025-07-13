@@ -385,6 +385,9 @@
         <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#detection_resolution"/>
     </Declaration>
     <Declaration>
@@ -906,6 +909,60 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#fluorescence"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_with_a_detector_type"/>
+                <Class IRI="#energy_dispersive_detector"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EM"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#electrons"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EXAFS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#extended"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_with_a_detector_type"/>
+                <Class IRI="#area_detector"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FF-EXAFS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#extended"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#full-field_imaging"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#atomic_core_excitation"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
@@ -915,16 +972,54 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#FF-XRF"/>
+        <Class IRI="#FF-XANES"/>
         <ObjectIntersectionOf>
-            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
+            <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#full-field_imaging"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_with_a_detector_type"/>
-                <Class IRI="#area_detector"/>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#near_edge"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FF-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#full-field_imaging"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -958,8 +1053,30 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#GISAXS"/>
-        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01162"/>
+        <Class IRI="#FS-EXAFS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#extended"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#scanning_imaging"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#FS-XAS"/>
@@ -988,12 +1105,31 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#FTIR"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#infrared"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#GISAXS"/>
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01162"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#GISAXS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01162"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FS-XAS"/>
         <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#large_length_scales"/>
@@ -1439,6 +1575,7 @@
     <EquivalentClasses>
         <Class IRI="#SIXES"/>
         <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
                 <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
@@ -1499,6 +1636,39 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SIXES"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#scanning_imaging"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#fluorescence"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#electrons"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1590,6 +1760,7 @@
     <EquivalentClasses>
         <Class IRI="#VLM"/>
         <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#small_length_scales"/>
@@ -1849,6 +2020,32 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_type"/>
                 <Class IRI="#polycrystalline_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FS‑XANES"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#near_edge"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#scanning_imaging"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -2201,6 +2398,10 @@
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
+        <Class IRI="#detection_as_a_function_of_incident_energy"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#detection_resolution"/>
         <Class IRI="#detected_cascade_of_events_property"/>
     </SubClassOf>
@@ -2463,10 +2664,6 @@
     <SubClassOf>
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TR‑SSX"/>
-        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#cascade_of_events_being_detected"/>
@@ -3720,6 +3917,14 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SIXES</IRI>
         <Literal>Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SIXES</IRI>
+        <Literal>Two definitions seem to exist for SIXES:
+Sakurai et. al. (1988): XAS with a Si(Li) detector.
+Simionovici et al (2000): XRF maps at a few incident energies.
+The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
