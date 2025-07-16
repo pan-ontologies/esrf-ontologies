@@ -642,6 +642,14 @@
       "TR\u2011SSX",
       "Time-Resolved Serial Synchrotron Crystallography"
     ],
+    "description": "Time-Resolved Serial Synchrotron Crystallography (TR\u2011SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump\u2013probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR\u2011SSX constructs 3D \u201cmolecular movies\u201d of structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution ."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#TR\u2011SSX",
+    "names": [
+      "TR\u2011SSX",
+      "Time-Resolved Serial Synchrotron Crystallography"
+    ],
     "description": "Time-Resolved Serial Synchrotron Crystallography (TR\u2011SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump\u2013probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR\u2011SSX enables the reconstruction of 3D \u201cmolecular movies\u201d that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution."
   },
   {

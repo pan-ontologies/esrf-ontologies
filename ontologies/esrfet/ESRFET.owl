@@ -598,6 +598,9 @@
         <Class IRI="#FS‑XANES"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TR‑SSX"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#can_be_used_for_technique"/>
     </Declaration>
     <Declaration>
@@ -2664,6 +2667,10 @@
     <SubClassOf>
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TR‑SSX"/>
+        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#cascade_of_events_being_detected"/>
@@ -5062,6 +5069,21 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#FS‑XANES</IRI>
         <Literal>Full‑Spectral X-ray Absorption Near Edge Structure Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TR‑SSX</IRI>
+        <Literal>Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX constructs 3D “molecular movies” of structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TR‑SSX</IRI>
+        <Literal>TR‑SSX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#TR‑SSX</IRI>
+        <Literal>Time-Resolved Serial Synchrotron Crystallography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
