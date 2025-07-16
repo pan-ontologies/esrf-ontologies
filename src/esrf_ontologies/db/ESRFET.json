@@ -613,6 +613,14 @@
     "description": "Total Fluorescence Yield X-ray Absorption Spectroscopy (TFY-XAS) measures the total emitted fluorescence photons as a function of incident X-ray energy to determine element-specific absorption spectra, providing bulk-sensitive information about electronic and structural properties."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#TR-MX",
+    "names": [
+      "TR-MX",
+      "Time-Resolved Macromolecular Crystallography"
+    ],
+    "description": "Time-Resolved Macromolecular Crystallography (TR-MX) measures X-ray diffraction from macromolecular crystals at successive time points following a reaction trigger (e.g., laser pulse or substrate injection), enabling the observation of structural changes in biomolecules during a reaction or functional cycle."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#TR-USAXS",
     "names": [
       "TR-USAXS",
@@ -627,6 +635,14 @@
       "Time Resolved X-Ray Diffraction"
     ],
     "description": "Time-Resolved X-Ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#TR\u2011SSX",
+    "names": [
+      "TR\u2011SSX",
+      "Time-Resolved Serial Synchrotron Crystallography"
+    ],
+    "description": "Time-Resolved Serial Synchrotron Crystallography (TR\u2011SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump\u2013probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR\u2011SSX constructs 3D \u201cmolecular movies\u201d of structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution ."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#TXRF",
