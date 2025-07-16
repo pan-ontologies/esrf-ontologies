@@ -231,6 +231,9 @@
         <Class IRI="#TR-MX"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TR-MX"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TR-USAXS"/>
     </Declaration>
     <Declaration>
@@ -2914,6 +2917,10 @@
     <SubClassOf>
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TR‑SSX"/>
+        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#cascade_of_events_being_detected"/>

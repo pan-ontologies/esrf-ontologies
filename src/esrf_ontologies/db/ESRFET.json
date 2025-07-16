@@ -621,6 +621,14 @@
     "description": "Time-Resolved Macromolecular Crystallography (TR-MX) measures X-ray diffraction from macromolecular crystals at successive time points following a reaction trigger (e.g., laser pulse or substrate injection), enabling the observation of structural changes in biomolecules during a reaction or functional cycle."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#TR-MX",
+    "names": [
+      "TR-MX",
+      "Time-Resolved Macromolecular Crystallography"
+    ],
+    "description": "Time-Resolved Macromolecular Crystallography (TR-MX) measures X-ray diffraction from macromolecular crystals at successive time points following a reaction trigger (e.g., laser pulse or substrate injection), enabling the observation of structural changes in biomolecules during a reaction or functional cycle."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#TR-USAXS",
     "names": [
       "TR-USAXS",
