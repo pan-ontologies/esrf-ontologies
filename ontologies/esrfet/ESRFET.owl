@@ -234,6 +234,9 @@
         <Class IRI="#TFY-XAS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TR-MX"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TR-USAXS"/>
     </Declaration>
     <Declaration>
@@ -586,6 +589,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#FS‑XANES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TR‑SSX"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
@@ -2037,6 +2043,10 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TR-MX"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TR-USAXS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -2447,6 +2457,10 @@
     <SubClassOf>
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TR‑SSX"/>
+        <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#cascade_of_events_being_detected"/>
@@ -3751,6 +3765,21 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TR-MX</IRI>
+        <Literal>Time-Resolved Macromolecular Crystallography (TR-MX) measures X-ray diffraction from macromolecular crystals at successive time points following a reaction trigger (e.g., laser pulse or substrate injection), enabling the observation of structural changes in biomolecules during a reaction or functional cycle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TR-MX</IRI>
+        <Literal>TR-MX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#TR-MX</IRI>
+        <Literal>Time-Resolved Macromolecular Crystallography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TR-USAXS</IRI>
         <Literal>Time-Resolved Ultra-Small Angle X-ray Scattering (TR-USAXS) measures ultra-small angle X-ray scattering as a function of time to monitor structural evolution and dynamics of large-scale features such as aggregation, phase separation, or self-assembly.</Literal>
     </AnnotationAssertion>
@@ -4762,6 +4791,21 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#FS‑XANES</IRI>
         <Literal>Full‑Spectral X-ray Absorption Near Edge Structure Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TR‑SSX</IRI>
+        <Literal>Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX constructs 3D “molecular movies” of structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TR‑SSX</IRI>
+        <Literal>TR‑SSX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#TR‑SSX</IRI>
+        <Literal>Time-Resolved Serial Synchrotron Crystallography</Literal>
     </AnnotationAssertion>
 </Ontology>
 

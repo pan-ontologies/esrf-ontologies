@@ -370,6 +370,11 @@
     "Description": "Total Fluorescence Yield X-ray Absorption Spectroscopy (TFY-XAS) measures the total emitted fluorescence photons as a function of incident X-ray energy to determine element-specific absorption spectra, providing bulk-sensitive information about electronic and structural properties."
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TR-MX\">TR-MX</a>",
+    "Alternative names": "Time-Resolved Macromolecular Crystallography",
+    "Description": "Time-Resolved Macromolecular Crystallography (TR-MX) measures X-ray diffraction from macromolecular crystals at successive time points following a reaction trigger (e.g., laser pulse or substrate injection), enabling the observation of structural changes in biomolecules during a reaction or functional cycle."
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TR-USAXS\">TR-USAXS</a>",
     "Alternative names": "Time Resolved Ultra-Small Angle X-ray Scattering",
     "Description": "Time-Resolved Ultra-Small Angle X-ray Scattering (TR-USAXS) measures ultra-small angle X-ray scattering as a function of time to monitor structural evolution and dynamics of large-scale features such as aggregation, phase separation, or self-assembly."
@@ -378,6 +383,11 @@
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TR-XRD\">TR-XRD</a>",
     "Alternative names": "Time Resolved X-Ray Diffraction",
     "Description": "Time-Resolved X-Ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TR‑SSX\">TR‑SSX</a>",
+    "Alternative names": "Time-Resolved Serial Synchrotron Crystallography",
+    "Description": "Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX constructs 3D “molecular movies” of structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution ."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TXRF\">TXRF</a>",
