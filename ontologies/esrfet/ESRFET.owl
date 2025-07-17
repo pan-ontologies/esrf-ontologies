@@ -4881,7 +4881,7 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TR‑SSX</IRI>
-        <Literal>Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX constructs 3D “molecular movies” of structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution .</Literal>
+        <Literal>Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX constructs 3D “molecular movies” of structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
