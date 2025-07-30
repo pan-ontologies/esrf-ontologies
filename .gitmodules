@@ -1,4 +1,4 @@
 [submodule "NeXusOntology"]
 	path = NeXusOntology
 	url = https://github.com/FAIRmat-NFDI/NeXusOntology.git
-	branch = tanmay
+	branch = oscars-project
