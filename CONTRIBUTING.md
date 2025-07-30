@@ -59,3 +59,24 @@ echo "Name=Protégé" >> $filename
 echo "Icon=$(pwd)/protege/app/Protege.icns" >> $filename
 echo "Exec=$(pwd)/protege/run.sh" >> $filename
 ```
+## Updating local NeXus Ontology (esrf-ontologies/ontologies/nexus/NeXusOntology_full_60eb344.owl)
+
+1. **Update definitions submodule**  
+   Update the definitions submodule to the latest commit:
+   ```bash
+   cd esrf-ontologies/NeXusOntology
+   git submodule update --remote definitions
+   ```
+
+2. **Generate ontology** 
+   Check the commit hash of updated definitions submodule and update the variable in bash script esrf-ontologies/NeXusOntology/generate_ontology.sh and then run the script to generate the ontology:
+   ```bash
+   cd esrf-ontologies/NeXusOntology
+   ./generate_ontology.sh
+   ```
+
+3. **Copy the generated ontology**  
+   Copy the generated ontology file to the target location:
+   ```bash
+   cp esrf-ontologies/NeXusOntology/ontology/ esrf-ontologies/ontologies/nexus/
+   ```
