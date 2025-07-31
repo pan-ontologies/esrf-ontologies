@@ -59,24 +59,16 @@ echo "Name=Protégé" >> $filename
 echo "Icon=$(pwd)/protege/app/Protege.icns" >> $filename
 echo "Exec=$(pwd)/protege/run.sh" >> $filename
 ```
-## Updating local NeXus Ontology (ontologies/nexus/NeXusOntology_full_60eb344.owl)
+## Updating local NeXus Ontology (ontologies/nexus/NeXusOntology_full_*.owl)
 
-1. **Update definitions submodule**  
-   Update the definitions submodule to the latest commit:
+1. **Update NeXus Ontology submodule**  
+   Update the NeXus Ontology submodule to the latest commit. This should pull the the latest commit from oscars-project branch. So you now have latest owl file:
    ```bash
-   cd NeXusOntology
-   git submodule update --remote definitions
+   git submodule update --remote --recursive NeXusOntology
    ```
 
-2. **Generate ontology** 
-   Check the commit hash of updated definitions submodule and update the variable in bash script NeXusOntology/generate_ontology.sh and then run the script to generate the ontology:
-   ```bash
-   cd NeXusOntology
-   ./generate_ontology.sh
-   ```
-
-3. **Copy the generated ontology**  
-   Copy the generated ontology file to the target location:
+2. **Copy the tracked ontology to local**  
+   Copy the ontology file to the target location:
    ```bash
    cp NeXusOntology/ontology/NeXusOntology_full_*.owl ontologies/nexus/
    ```
