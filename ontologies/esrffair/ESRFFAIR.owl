@@ -11,34 +11,73 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.org/pan-science/ESRFET</Import>
+    <Import>http://www.w3.org/ns/prov-o-20130430</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Maybe we need to create the basic standalone ontologies of:
+1. Scientist
+2. ESRF infrastructure
+3. Publication
+4. Experiment metadata in assiciation with ESRFET, NeXUS
+5. Proposal
+
+We also need time in most of the above.
+But it makes sense when there is a change in the infra of an institution to work only with this ontology.
+
+Mostly depends on the questions we need to be answered by this KB. But the knowledge in each ontology can go deeper and enrich the higher-level ESRF-DATA ontology that will contain them.</Literal>
+    </Annotation>
     <Declaration>
-        <Class IRI="#experiment"/>
+        <Class IRI="#Beamline"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#participation"/>
+        <Class IRI="#Beamline_Scientist"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#person_experiment_role"/>
+        <Class IRI="#Experiment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#scientist"/>
+        <Class IRI="#Instrument"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="prov:Activity"/>
+        <Class IRI="#Local_Contact"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="prov:Association"/>
+        <Class IRI="#Participation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="prov:agent"/>
+        <Class IRI="#Principal_Investigator"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="prov:qualifiedAssociation"/>
+        <Class IRI="#Proposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scientist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hadScientist"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_proposal"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#has_role"/>
@@ -56,7 +95,37 @@
         <ObjectProperty IRI="#participates_in_experiment"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="prov:hadRole"/>
+        <ObjectProperty IRI="#used_experimental_technique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#used_instrument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#atLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#hadPlan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#hadRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#qualifiedAssociation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ORCID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#affiliation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#firstname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastname"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ESRF_HC6147"/>
@@ -65,13 +134,19 @@
         <NamedIndividual IRI="#ESRF_HC6148"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Principal_Investigator"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#local_contact"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#participant"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#principal_investigator"/>
+        <NamedIndividual IRI="#participation234"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#proposal_6148"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#proposal_scientist"/>
@@ -86,74 +161,77 @@
         <NamedIndividual IRI="#wout_de_nolf_in_HC6148"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#experiment"/>
-        <Class abbreviatedIRI="prov:Activity"/>
+        <Class IRI="#Beamline_Scientist"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#participation"/>
-        <Class abbreviatedIRI="prov:qualifiedAssociation"/>
+        <Class IRI="#Experiment"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#participation"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#has_role"/>
-            <Class IRI="#person_experiment_role"/>
-        </ObjectMinCardinality>
+        <Class IRI="#Local_Contact"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#participation"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#involves_experiment"/>
-            <Class IRI="#experiment"/>
-        </ObjectExactCardinality>
+        <Class IRI="#Participation"/>
+        <Class IRI="http://www.w3.org/ns/prov#Association"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#participation"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#involves_person"/>
-            <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
-        </ObjectExactCardinality>
+        <Class IRI="#Principal_Investigator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#scientist"/>
-        <Class abbreviatedIRI="prov:agent"/>
+        <Class IRI="#Proposal"/>
+        <Class IRI="http://www.w3.org/ns/prov#Plan"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="prov:agent"/>
+        <Class IRI="#Scientist"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scientist"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="prov:qualifiedAssociation"/>
-        <Class abbreviatedIRI="prov:Association"/>
-    </SubClassOf>
     <ClassAssertion>
-        <Class IRI="#experiment"/>
+        <Class IRI="#Experiment"/>
         <NamedIndividual IRI="#ESRF_HC6147"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#experiment"/>
+        <Class IRI="#Experiment"/>
         <NamedIndividual IRI="#ESRF_HC6148"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#person_experiment_role"/>
+        <Class IRI="#Local_Contact"/>
         <NamedIndividual IRI="#local_contact"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#person_experiment_role"/>
-        <NamedIndividual IRI="#participant"/>
+        <Class IRI="#Proposal"/>
+        <NamedIndividual IRI="#proposal_6148"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#person_experiment_role"/>
-        <NamedIndividual IRI="#principal_investigator"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#person_experiment_role"/>
-        <NamedIndividual IRI="#proposal_scientist"/>
-    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#qualifiedAssociation"/>
+        <NamedIndividual IRI="#ESRF_HC6148"/>
+        <NamedIndividual IRI="#participation234"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hadScientist"/>
+        <NamedIndividual IRI="#participation234"/>
+        <NamedIndividual IRI="#wout_de_nolf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#hadPlan"/>
+        <NamedIndividual IRI="#participation234"/>
+        <NamedIndividual IRI="#proposal_6148"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#hadRole"/>
+        <NamedIndividual IRI="#participation234"/>
+        <NamedIndividual IRI="#Principal_Investigator"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#has_role"/>
         <NamedIndividual IRI="#wout_de_nolf_in_HC6147"/>
-        <NamedIndividual IRI="#principal_investigator"/>
+        <NamedIndividual IRI="#Principal_Investigator"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#involves_experiment"/>
@@ -170,37 +248,57 @@
         <NamedIndividual IRI="#wout_de_nolf_in_HC6148"/>
         <NamedIndividual IRI="#local_contact"/>
     </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_proposal"/>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#hadPlan"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#used_experimental_technique"/>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#used_instrument"/>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
+    </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_role"/>
-        <Class IRI="#participation"/>
+        <ObjectProperty IRI="#hadScientist"/>
+        <Class IRI="#Participation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_proposal"/>
+        <Class IRI="#Experiment"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_role_in_experiment"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#involves_experiment"/>
-        <Class IRI="#participation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#involves_person"/>
-        <Class IRI="#participation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#participates_in_experiment"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#used_experimental_technique"/>
+        <Class IRI="#Experiment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#used_instrument"/>
+        <Class IRI="#Experiment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#atLocation"/>
+        <Class IRI="#Experiment"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_role"/>
-        <Class IRI="#person_experiment_role"/>
+        <ObjectProperty IRI="#hadScientist"/>
+        <Class IRI="#Scientist"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_role_in_experiment"/>
-        <Class IRI="#person_experiment_role"/>
+        <ObjectProperty IRI="#has_proposal"/>
+        <Class IRI="#Proposal"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#involves_experiment"/>
-        <Class IRI="#experiment"/>
+        <Class IRI="#Experiment"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#involves_person"/>
@@ -208,37 +306,61 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#participates_in_experiment"/>
-        <Class IRI="#experiment"/>
+        <Class IRI="#Experiment"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#used_experimental_technique"/>
+        <Class IRI="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#used_instrument"/>
+        <Class IRI="#Instrument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#atLocation"/>
+        <Class IRI="#Beamline"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ORCID"/>
+        <Class IRI="#Scientist"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#affiliation"/>
+        <Class IRI="#Scientist"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#firstname"/>
+        <Class IRI="#Scientist"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lastname"/>
+        <Class IRI="#Scientist"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ORCID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#affiliation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#firstname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#experiment</IRI>
+        <IRI>#Experiment</IRI>
         <Literal>An experiment performed at the ESRF.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#experiment</IRI>
-        <Literal>experiment</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#participation</IRI>
-        <Literal>A relation binding a person, a role, and an experiment.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#participation</IRI>
-        <Literal>participation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#person_experiment_role</IRI>
-        <Literal>A role held by a person in the context of an experiment.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#person_experiment_role</IRI>
-        <Literal>person_experiment_role</Literal>
+        <IRI>#Experiment</IRI>
+        <Literal>Experiment</Literal>
     </AnnotationAssertion>
 </Ontology>
 
