@@ -8,7 +8,7 @@ that has an "energy" counter is an "XAS" scan:
 .. code:: python
 
     from bliss import current_session
-    from bliss.scanning import scan_meta
+    from bliss.scanning.scan_meta import get_user_scan_meta, META_TIMING
     from esrf_ontologies import technique
 
     def add_xas_technique(scan):
@@ -22,8 +22,9 @@ that has an "energy" counter is an "XAS" scan:
             # For HDF5:
             return technique_metadata.get_scan_metadata()
 
+    scan_meta = get_user_scan_meta()
     scan_meta.add_categories({"techniques"})
-    scan_meta.techniques.timing = scan_meta.META_TIMING.START
+    scan_meta.techniques.timing = META_TIMING.START
     scan_meta.techniques.set("add_xas_technique", add_xas_technique)
 
 Note that `get_technique_metadata` accepts one or more technique names or acronyms.
