@@ -233,7 +233,15 @@
       "GISAXS",
       "Grazing Incidence Small Angle X-ray Scattering"
     ],
-    "description": "Grazing Incidence Small Angle X-ray Scattering (GISAXS) measures scattered X-rays at small angles from a sample surface under shallow incidence, providing nanoscale information about surface and thin film morphology, including size, shape, and arrangement of nanostructures."
+    "description": "Grazing-Incidence Small-Angle X-ray Scattering (GISAXS) measures scattered X-rays at small angles from a sample surface under shallow incidence, providing nanoscale information about thin film and surface morphology, including size, shape, and arrangement of nanostructures."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#GIWAXS",
+    "names": [
+      "GIWAXS",
+      "Grazing Incidence Wide Angle X-ray Scattering"
+    ],
+    "description": "Grazing-Incidence Wide-Angle X-ray Scattering (GIWAXS) measures scattered X-rays at wide angles under shallow incidence, providing information on molecular packing, crystalline order, and orientation in thin films and surfaces."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#GIXRD",
@@ -241,7 +249,7 @@
       "GIXRD",
       "Grazing Incidence X-Ray Diffraction"
     ],
-    "description": "Grazing Incidence X-Ray Diffraction (GIXRD) measures diffraction from a sample surface using X-rays at very shallow incident angles, providing structural information about thin films, surfaces, and near-surface regions."
+    "description": "Grazing-Incidence X-ray Diffraction (GIXRD) measures diffraction patterns from a sample surface using X-rays at very shallow incident angles, providing structural information on thin films, surfaces, and near-surface regions, including phase composition and strain."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#HAXPES",

@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - FF-EXAFS: add semantic meaning
 - TR-MX: new technique
 - TR-SSX: new technique
+- GIWAXS: new technique
 
 ## [1.0.0]
 

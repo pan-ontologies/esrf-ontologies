@@ -99,6 +99,9 @@
         <Class IRI="#GISAXS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#GIWAXS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GIXRD"/>
     </Declaration>
     <Declaration>
@@ -1935,6 +1938,10 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GIWAXS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GIXRD"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -2978,7 +2985,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GISAXS</IRI>
-        <Literal>Grazing Incidence Small Angle X-ray Scattering (GISAXS) measures scattered X-rays at small angles from a sample surface under shallow incidence, providing nanoscale information about surface and thin film morphology, including size, shape, and arrangement of nanostructures.</Literal>
+        <Literal>Grazing-Incidence Small-Angle X-ray Scattering (GISAXS) measures scattered X-rays at small angles from a sample surface under shallow incidence, providing nanoscale information about thin film and surface morphology, including size, shape, and arrangement of nanostructures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2992,8 +2999,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GIWAXS</IRI>
+        <Literal>Grazing-Incidence Wide-Angle X-ray Scattering (GIWAXS) measures scattered X-rays at wide angles under shallow incidence, providing information on molecular packing, crystalline order, and orientation in thin films and surfaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GIWAXS</IRI>
+        <Literal>GIWAXS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#GIWAXS</IRI>
+        <Literal>Grazing Incidence Wide Angle X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GIXRD</IRI>
-        <Literal>Grazing Incidence X-Ray Diffraction (GIXRD) measures diffraction from a sample surface using X-rays at very shallow incident angles, providing structural information about thin films, surfaces, and near-surface regions.</Literal>
+        <Literal>Grazing-Incidence X-ray Diffraction (GIXRD) measures diffraction patterns from a sample surface using X-rays at very shallow incident angles, providing structural information on thin films, surfaces, and near-surface regions, including phase composition and strain.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
