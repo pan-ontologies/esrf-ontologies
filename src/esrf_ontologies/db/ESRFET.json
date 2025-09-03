@@ -249,7 +249,7 @@
       "GIXRD",
       "Grazing Incidence X-Ray Diffraction"
     ],
-    "description": "Grazing-Incidence X-ray Diffraction (GIXRD) measures diffraction patterns from a sample surface using X-rays at very shallow incident angles, providing structural information on thin films, surfaces, and near-surface regions, including phase composition and strain."
+    "description": "Grazing-Incidence X-ray Diffraction (GIXRD) measures diffraction patterns from a sample surface using X-rays at shallow incident angles, providing structural information on thin films, surfaces, and near-surface regions, including phase composition and strain."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#HAXPES",

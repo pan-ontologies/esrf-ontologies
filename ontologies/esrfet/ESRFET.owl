@@ -3047,7 +3047,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GIXRD</IRI>
-        <Literal>Grazing-Incidence X-ray Diffraction (GIXRD) measures diffraction patterns from a sample surface using X-rays at very shallow incident angles, providing structural information on thin films, surfaces, and near-surface regions, including phase composition and strain.</Literal>
+        <Literal>Grazing-Incidence X-ray Diffraction (GIXRD) measures diffraction patterns from a sample surface using X-rays at shallow incident angles, providing structural information on thin films, surfaces, and near-surface regions, including phase composition and strain.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
