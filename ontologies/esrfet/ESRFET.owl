@@ -2662,7 +2662,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>#CDI</IRI>
-        <Literal>Coherent X-Ray Diffraction</Literal>
+        <Literal>Coherent X-ray Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
@@ -3057,7 +3057,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#GIXRD</IRI>
-        <Literal>Grazing Incidence X-Ray Diffraction</Literal>
+        <Literal>Grazing Incidence X-ray Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3850,7 +3850,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TR-XRD</IRI>
-        <Literal>Time-Resolved X-Ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials.</Literal>
+        <Literal>Time-Resolved X-ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3860,7 +3860,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#TR-XRD</IRI>
-        <Literal>Time Resolved X-Ray Diffraction</Literal>
+        <Literal>Time Resolved X-ray Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3880,7 +3880,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#USA-XPCS</IRI>
-        <Literal>Ultra-Small Angle X-Ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials.</Literal>
+        <Literal>Ultra-Small Angle X-ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3890,7 +3890,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#USA-XPCS</IRI>
-        <Literal>Ultra-Small Angle X-Ray Photon Correlation Spectroscopy</Literal>
+        <Literal>Ultra-Small Angle X-ray Photon Correlation Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4030,7 +4030,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XDS</IRI>
-        <Literal>X-Ray Diffuse Scattering (XDS) measures scattered X-rays away from Bragg peaks to probe local disorder, defects, thermal vibrations, and nanoscale structural fluctuations in materials.</Literal>
+        <Literal>X-ray Diffuse Scattering (XDS) measures scattered X-rays away from Bragg peaks to probe local disorder, defects, thermal vibrations, and nanoscale structural fluctuations in materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4040,7 +4040,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XDS</IRI>
-        <Literal>X-Ray Diffuse Scattering</Literal>
+        <Literal>X-ray Diffuse Scattering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4130,7 +4130,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XLD</IRI>
-        <Literal>X-Ray Linear Dichroism</Literal>
+        <Literal>X-ray Linear Dichroism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4235,7 +4235,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XPCS</IRI>
-        <Literal>X-Ray Photon Correlation Spectroscopy (XPCS) measures time fluctuations of coherent X-ray scattering intensity to probe nanoscale dynamics and temporal correlations in materials such as particle motion, phase transitions, or relaxation processes.</Literal>
+        <Literal>X-ray Photon Correlation Spectroscopy (XPCS) measures time fluctuations of coherent X-ray scattering intensity to probe nanoscale dynamics and temporal correlations in materials such as particle motion, phase transitions, or relaxation processes.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4245,7 +4245,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XPCS</IRI>
-        <Literal>X-Ray Photon Correlation Spectroscopy</Literal>
+        <Literal>X-ray Photon Correlation Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4295,7 +4295,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRCT</IRI>
-        <Literal>X-Ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample.</Literal>
+        <Literal>X-ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4305,7 +4305,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRCT</IRI>
-        <Literal>X-Ray Computed Tomography</Literal>
+        <Literal>X-ray Computed Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4395,7 +4395,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRT</IRI>
-        <Literal>X-Ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure.</Literal>
+        <Literal>X-ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4405,7 +4405,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>#XRT</IRI>
-        <Literal>X-Ray Diffraction Topography</Literal>
+        <Literal>X-ray Diffraction Topography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
@@ -4415,7 +4415,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#XRT</IRI>
-        <Literal>X-Ray Topography</Literal>
+        <Literal>X-ray Topography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4829,7 +4829,7 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#3DXRD</IRI>
-        <Literal>3D X-Ray Diffraction</Literal>
+        <Literal>3D X-ray Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

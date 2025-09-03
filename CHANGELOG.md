@@ -22,6 +22,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GIWAXS: new technique with semantic meaning
 - GIXRD: add semantic meaning
 
+### Changes
+
+- Use “X-ray”, with a lowercase r.
+
 ## [1.0.0]
 
 ### Added
