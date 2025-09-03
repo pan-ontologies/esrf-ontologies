@@ -3,7 +3,7 @@
     "iri": "http://purl.org/pan-science/ESRFET#3DXRD",
     "names": [
       "3DXRD",
-      "3D X-Ray Diffraction"
+      "3D X-ray Diffraction"
     ],
     "description": "3DXRD is a far field diffraction technique capable of reconstructing polycrystalline materials from the individual diffraction spots recorded in the diffraction pattern given that the crystallographic parameters of the material are known. The success of the technique is based on the ability of the individual diffraction spots to be separated. This means there is a trade off between the number of grains and the degree of strain that is measurable."
   },
@@ -37,7 +37,7 @@
       "Coherent Diffraction Imaging",
       "CXD",
       "CXDI",
-      "Coherent X-Ray Diffraction",
+      "Coherent X-ray Diffraction",
       "Coherent X-ray Diffraction Imaging"
     ],
     "description": "Coherent Diffraction Imaging (CDI) measures the far-field diffraction pattern from a sample illuminated with a coherent X-ray beam. The image of the sample is reconstructed computationally from the diffraction data using phase retrieval algorithms, yielding high-resolution, lensless imaging of the electron density or scattering potential."
@@ -233,15 +233,23 @@
       "GISAXS",
       "Grazing Incidence Small Angle X-ray Scattering"
     ],
-    "description": "Grazing Incidence Small Angle X-ray Scattering (GISAXS) measures scattered X-rays at small angles from a sample surface under shallow incidence, providing nanoscale information about surface and thin film morphology, including size, shape, and arrangement of nanostructures."
+    "description": "Grazing-Incidence Small-Angle X-ray Scattering (GISAXS) measures scattered X-rays at small angles from a sample surface under shallow incidence, providing nanoscale information about thin film and surface morphology, including size, shape, and arrangement of nanostructures."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#GIWAXS",
+    "names": [
+      "GIWAXS",
+      "Grazing Incidence Wide Angle X-ray Scattering"
+    ],
+    "description": "Grazing-Incidence Wide-Angle X-ray Scattering (GIWAXS) measures scattered X-rays at wide angles under shallow incidence, providing information on molecular packing, crystalline order, and orientation in thin films and surfaces."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#GIXRD",
     "names": [
       "GIXRD",
-      "Grazing Incidence X-Ray Diffraction"
+      "Grazing Incidence X-ray Diffraction"
     ],
-    "description": "Grazing Incidence X-Ray Diffraction (GIXRD) measures diffraction from a sample surface using X-rays at very shallow incident angles, providing structural information about thin films, surfaces, and near-surface regions."
+    "description": "Grazing-Incidence X-ray Diffraction (GIXRD) measures diffraction patterns from a sample surface using X-rays at shallow incident angles, providing structural information on thin films, surfaces, and near-surface regions, including phase composition and strain."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#HAXPES",
@@ -632,9 +640,9 @@
     "iri": "http://purl.org/pan-science/ESRFET#TR-XRD",
     "names": [
       "TR-XRD",
-      "Time Resolved X-Ray Diffraction"
+      "Time Resolved X-ray Diffraction"
     ],
-    "description": "Time-Resolved X-Ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials."
+    "description": "Time-Resolved X-ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#TR\u2011SSX",
@@ -656,9 +664,9 @@
     "iri": "http://purl.org/pan-science/ESRFET#USA-XPCS",
     "names": [
       "USA-XPCS",
-      "Ultra-Small Angle X-Ray Photon Correlation Spectroscopy"
+      "Ultra-Small Angle X-ray Photon Correlation Spectroscopy"
     ],
-    "description": "Ultra-Small Angle X-Ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials."
+    "description": "Ultra-Small Angle X-ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#USAXS",
@@ -736,9 +744,9 @@
     "iri": "http://purl.org/pan-science/ESRFET#XDS",
     "names": [
       "XDS",
-      "X-Ray Diffuse Scattering"
+      "X-ray Diffuse Scattering"
     ],
-    "description": "X-Ray Diffuse Scattering (XDS) measures scattered X-rays away from Bragg peaks to probe local disorder, defects, thermal vibrations, and nanoscale structural fluctuations in materials."
+    "description": "X-ray Diffuse Scattering (XDS) measures scattered X-rays away from Bragg peaks to probe local disorder, defects, thermal vibrations, and nanoscale structural fluctuations in materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XEOL",
@@ -784,7 +792,7 @@
     "iri": "http://purl.org/pan-science/ESRFET#XLD",
     "names": [
       "XLD",
-      "X-Ray Linear Dichroism"
+      "X-ray Linear Dichroism"
     ],
     "description": "X-ray Linear Dichroism (XLD) measures the difference in X-ray absorption for linearly polarized light oriented along different crystallographic axes, providing information on electronic anisotropy and orbital ordering."
   },
@@ -842,9 +850,9 @@
     "iri": "http://purl.org/pan-science/ESRFET#XPCS",
     "names": [
       "XPCS",
-      "X-Ray Photon Correlation Spectroscopy"
+      "X-ray Photon Correlation Spectroscopy"
     ],
-    "description": "X-Ray Photon Correlation Spectroscopy (XPCS) measures time fluctuations of coherent X-ray scattering intensity to probe nanoscale dynamics and temporal correlations in materials such as particle motion, phase transitions, or relaxation processes."
+    "description": "X-ray Photon Correlation Spectroscopy (XPCS) measures time fluctuations of coherent X-ray scattering intensity to probe nanoscale dynamics and temporal correlations in materials such as particle motion, phase transitions, or relaxation processes."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XPCT",
@@ -874,9 +882,9 @@
     "iri": "http://purl.org/pan-science/ESRFET#XRCT",
     "names": [
       "XRCT",
-      "X-Ray Computed Tomography"
+      "X-ray Computed Tomography"
     ],
-    "description": "X-Ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample."
+    "description": "X-ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XRD",
@@ -924,10 +932,10 @@
     "iri": "http://purl.org/pan-science/ESRFET#XRT",
     "names": [
       "XRT",
-      "X-Ray Topography",
-      "X-Ray Diffraction Topography",
+      "X-ray Topography",
+      "X-ray Diffraction Topography",
       "XDT"
     ],
-    "description": "X-Ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure."
+    "description": "X-ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure."
   }
 ]

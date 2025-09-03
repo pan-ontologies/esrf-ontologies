@@ -104,3 +104,13 @@ jobs:
       - name: Check transpilation did not modify the python project
         run: |
           git diff --exit-code
+
+      - name: Check ontology capitalization (X-ray vs X-Ray)
+        run: |
+          FILES="./ontologies/esrfet/ESRFET.owl ./ontologies/esrffair/ESRFFAIR.owl"
+          if grep -nRE "(X-Ray|x-ray)" $FILES | grep -vE 'IRI="#|<IRI>#'; then
+            echo "❌ Found incorrect capitalization 'X-Ray'. Please use 'X-ray'."
+            exit 1
+          else
+            echo "✅ No incorrect capitalization found."
+          fi
