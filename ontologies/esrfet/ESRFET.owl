@@ -4670,7 +4670,7 @@ Large structural features: supramolecular structures, particle sizes, and shapes
 
                 Another way of looking at it:
                 diffraction (cascade of events being detected) requires &apos;any of&apos; single crystal, powder, fiber
-                x-ray powder diffraction (technique) requires &apos;exactly&apos; powder</Literal>
+                X-ray powder diffraction (technique) requires &apos;exactly&apos; powder</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
