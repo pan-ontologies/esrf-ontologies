@@ -34,7 +34,7 @@ it can be done like this
 
 .. code:: python
 
-    from bliss import setup_global
+    from bliss import setup_globals
     from bliss import current_session
     from esrf_ontologies import technique
 
@@ -50,7 +50,7 @@ it can be done like this
         else:
             technique_metadata.fill_scan_info(scan_info)
 
-        setup_global.ascan(setup_global.energy, start, stop, intervals, count_time, scan_info=scan_info)
+        setup_globals.ascan(setup_globals.energy, start, stop, intervals, count_time, scan_info=scan_info)
 
 Adding the same technique to a dataset several times is not a problem; a unique list of techniques
 is maintained, preventing duplicates.
