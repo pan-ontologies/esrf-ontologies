@@ -357,7 +357,13 @@
         <Class IRI="#absorption"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ambient_temperature"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#area_detector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#atmospheric_pressure"/>
     </Declaration>
     <Declaration>
         <Class IRI="#atomic_core_excitation"/>
@@ -375,7 +381,7 @@
         <Class IRI="#charged_particles"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#cryo"/>
+        <Class IRI="#cryogenic_temperature"/>
     </Declaration>
     <Declaration>
         <Class IRI="#detected_cascade_of_events_property"/>
@@ -417,6 +423,15 @@
         <Class IRI="#extended"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#extreme_high_vacuum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#extreme_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#extreme_temperature"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#fluorescence"/>
     </Declaration>
     <Declaration>
@@ -427,6 +442,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="#high_precision_in_Q_space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#high_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#high_temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#high_vacuum"/>
     </Declaration>
     <Declaration>
         <Class IRI="#horizontal_linear_polarization"/>
@@ -444,13 +468,28 @@
         <Class IRI="#left_circular_polarization"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#low_overpressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#low_temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#low_vacuum"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#macro_sample_spatial_resolution"/>
     </Declaration>
     <Declaration>
         <Class IRI="#magnetic_field"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#medium_vacuum"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#micro_sample_spatial_resolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#moderately_high_temperature"/>
     </Declaration>
     <Declaration>
         <Class IRI="#monochromatic_beam"/>
@@ -522,6 +561,9 @@
         <Class IRI="#sample_input_property"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#sample_pressure"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#sample_spatial_resolution"/>
     </Declaration>
     <Declaration>
@@ -529,6 +571,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#sample_spatial_resolution_achived_on_input"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sample_temperature"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sample_type"/>
@@ -570,10 +615,25 @@
         <Class IRI="#transmission"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ultra_cryogenic_temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ultra_extreme_temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ultra_high_vacuum"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ultra_large_length_scales"/>
     </Declaration>
     <Declaration>
         <Class IRI="#vertical_linear_polarization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#very_high_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#very_high_temperature"/>
     </Declaration>
     <Declaration>
         <Class IRI="#visual_spectrum"/>
@@ -651,6 +711,28 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     </Declaration>
     <EquivalentClasses>
+        <Class IRI="#BioSAXS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#large_length_scales"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#biological_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#CRYO-EM"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -660,11 +742,11 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#cryo"/>
+                <Class IRI="#electrons"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#electrons"/>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#cryogenic_temperature"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1170,6 +1252,24 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#HP-XRD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#high_pressure"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#HR-XRPD"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1188,6 +1288,24 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_type"/>
                 <Class IRI="#powder_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HT-XRD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#high_temperature"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1946,10 +2064,6 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BioSAXS"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#CDI"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -2198,8 +2312,16 @@
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ambient_temperature"/>
+        <Class IRI="#sample_temperature"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#area_detector"/>
         <Class IRI="#detector_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#atmospheric_pressure"/>
+        <Class IRI="#sample_pressure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#atomic_core_excitation"/>
@@ -2222,8 +2344,8 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#cryo"/>
-        <Class IRI="#sample_input"/>
+        <Class IRI="#cryogenic_temperature"/>
+        <Class IRI="#sample_temperature"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#detected_cascade_of_events_property"/>
@@ -2274,6 +2396,18 @@
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#extreme_high_vacuum"/>
+        <Class IRI="#sample_pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#extreme_pressure"/>
+        <Class IRI="#sample_pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#extreme_temperature"/>
+        <Class IRI="#sample_temperature"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#fluorescence"/>
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
@@ -2288,6 +2422,18 @@
     <SubClassOf>
         <Class IRI="#high_precision_in_Q_space"/>
         <Class IRI="#detection_resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_pressure"/>
+        <Class IRI="#sample_pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_temperature"/>
+        <Class IRI="#sample_temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_vacuum"/>
+        <Class IRI="#sample_pressure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#horizontal_linear_polarization"/>
@@ -2310,6 +2456,18 @@
         <Class IRI="#polarization"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#low_overpressure"/>
+        <Class IRI="#sample_pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#low_temperature"/>
+        <Class IRI="#sample_temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#low_vacuum"/>
+        <Class IRI="#sample_pressure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#macro_sample_spatial_resolution"/>
         <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
@@ -2318,8 +2476,16 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#medium_vacuum"/>
+        <Class IRI="#sample_pressure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#micro_sample_spatial_resolution"/>
         <Class IRI="#sample_spatial_resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#moderately_high_temperature"/>
+        <Class IRI="#sample_temperature"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#monochromatic_beam"/>
@@ -2414,6 +2580,10 @@
         <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#sample_pressure"/>
+        <Class IRI="#sample_input_property"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#sample_spatial_resolution"/>
         <Class IRI="#space_time"/>
     </SubClassOf>
@@ -2424,6 +2594,10 @@
     <SubClassOf>
         <Class IRI="#sample_spatial_resolution_achived_on_input"/>
         <Class IRI="#sample_spatial_resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sample_temperature"/>
+        <Class IRI="#sample_input_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_type"/>
@@ -2474,12 +2648,32 @@
         <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ultra_cryogenic_temperature"/>
+        <Class IRI="#sample_temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ultra_extreme_temperature"/>
+        <Class IRI="#sample_temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ultra_high_vacuum"/>
+        <Class IRI="#sample_pressure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ultra_large_length_scales"/>
         <Class IRI="#detection_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#vertical_linear_polarization"/>
         <Class IRI="#polarization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#very_high_pressure"/>
+        <Class IRI="#sample_pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#very_high_temperature"/>
+        <Class IRI="#sample_temperature"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#visual_spectrum"/>
@@ -4419,8 +4613,23 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ambient_temperature</IRI>
+        <Literal>Reference: 20–25 °C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ambient_temperature</IRI>
+        <Literal>~300 K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#area_detector</IRI>
         <Literal>Detector that distinguishes the position of the waves (photons or particles) in a 2D plane in space by using an array of pixels which measure the waves independently.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#atmospheric_pressure</IRI>
+        <Literal>~1 × 10⁵ Pa (101 325 Pa)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4449,8 +4658,13 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#cryo</IRI>
-        <Literal>Cryogenic temperature</Literal>
+        <IRI>#cryogenic_temperature</IRI>
+        <Literal>1 - 77 K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cryogenic_temperature</IRI>
+        <Literal>Liquid He (4.2 K), superconductivity, quantum devices</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4524,6 +4738,46 @@ In addition, experimental techniques are semantically defined by
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#extreme_high_vacuum</IRI>
+        <Literal>&lt; 1 × 10⁻¹⁰ Pa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#extreme_high_vacuum</IRI>
+        <Literal>Used in fundamental physics, surface science</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#extreme_high_vacuum</IRI>
+        <Literal>XHV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#extreme_pressure</IRI>
+        <Literal>&gt; 1 × 10¹¹ Pa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#extreme_pressure</IRI>
+        <Literal>Planetary interiors, shock compression studies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#extreme_pressure</IRI>
+        <Literal>EP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#extreme_temperature</IRI>
+        <Literal>5,000 – 10⁷ K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#extreme_temperature</IRI>
+        <Literal>Fusion plasmas, stellar photospheres, inertial confinement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#fluorescence</IRI>
         <Literal>Detecting one result after atomic core excitation (fluorescence)</Literal>
     </AnnotationAssertion>
@@ -4553,12 +4807,92 @@ Resolving power (Δ2θ/θ)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#high_pressure</IRI>
+        <Literal>1 × 10⁷ – 1 × 10⁹ Pa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#high_pressure</IRI>
+        <Literal>geophysics, diamond anvil cells</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#high_pressure</IRI>
+        <Literal>HP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#high_temperature</IRI>
+        <Literal>1,000 – 2,000 K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#high_temperature</IRI>
+        <Literal>Metallurgy, refractory studies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#high_vacuum</IRI>
+        <Literal>1 × 10⁻⁷ – 1 × 10⁻³ Pa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#high_vacuum</IRI>
+        <Literal>Thin film deposition, mass spectrometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#high_vacuum</IRI>
+        <Literal>HV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#large_length_scales</IRI>
         <Literal>Length Scale d (Å) = 10 – 1000
 
 Q-Range (Å−1) = 0.01 – 0.1
 
 Large structural features: supramolecular structures, particle sizes, and shapes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#low_overpressure</IRI>
+        <Literal>1 × 10⁵ – 1 × 10⁷ Pa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#low_overpressure</IRI>
+        <Literal>autoclaves, compressed gases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#low_overpressure</IRI>
+        <Literal>LOP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#low_temperature</IRI>
+        <Literal>77 – 300 K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#low_temperature</IRI>
+        <Literal>Liquid N₂ (77 K) up to room temperature (~293 K)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#low_vacuum</IRI>
+        <Literal>100 – 1 × 10⁵ Pa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#low_vacuum</IRI>
+        <Literal>Industrial vacuum, rough pumping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#low_vacuum</IRI>
+        <Literal>LV</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4584,8 +4918,33 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#medium_vacuum</IRI>
+        <Literal>1 × 10⁻³ – 100 Pa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#medium_vacuum</IRI>
+        <Literal>Vacuum furnaces, low-pressure plasma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#medium_vacuum</IRI>
+        <Literal>MV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#micro_sample_spatial_resolution</IRI>
         <Literal>Sample properties are measured with a resolution in space between than 0.1 and 100 micron.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#moderately_high_temperature</IRI>
+        <Literal>300 – 1,000 K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#moderately_high_temperature</IRI>
+        <Literal>Industrial heating, some combustion</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4799,12 +5158,72 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ultra_cryogenic_temperature</IRI>
+        <Literal>&lt; 1 K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ultra_cryogenic_temperature</IRI>
+        <Literal>Dilution refrigerators, quantum experiments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ultra_extreme_temperature</IRI>
+        <Literal>&gt; 10⁷ K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ultra_extreme_temperature</IRI>
+        <Literal>Stellar cores, thermonuclear explosions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ultra_high_vacuum</IRI>
+        <Literal>1 × 10⁻¹⁰ – 1 × 10⁻⁷ Pa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ultra_high_vacuum</IRI>
+        <Literal>Particle accelerators, electron microscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#ultra_high_vacuum</IRI>
+        <Literal>UHV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ultra_large_length_scales</IRI>
         <Literal>Length Scale d (Å) = 1000 - 10000
 
 Q-Range (Å−1) = 0.0001 - 0.01
 
 Ultra Large structural features: large aggregates, clusters, and larger pores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#very_high_pressure</IRI>
+        <Literal>1 × 10⁹ – 1 × 10¹¹ Pa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#very_high_pressure</IRI>
+        <Literal>Deep Earth conditions, mineral physics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#very_high_pressure</IRI>
+        <Literal>VHP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#very_high_temperature</IRI>
+        <Literal>2,000 – 5,000 K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#very_high_temperature</IRI>
+        <Literal>Arc plasmas, re-entry heating</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
