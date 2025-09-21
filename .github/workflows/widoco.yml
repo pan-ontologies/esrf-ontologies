@@ -1,0 +1,40 @@
+name: Generate Ontology documentation with Widoco
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - name: Generate Documentation
+        run: |
+          java -jar tools/widoco-1.4.25-jar-with-dependencies_JDK-11.jar \
+            -ontFile ontologies/esrfet/ESRFET.owl \
+            -outFolder tools/docs \
+            -getOntologyMetadata \
+            -rewriteAll \
+            -includeImportedOntologies \
+            -includeAnnotationProperties \
+            -webVowl \
+            -htaccess \
+            -uniteSections
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./tools/docs
+          destination_dir: esrfet
