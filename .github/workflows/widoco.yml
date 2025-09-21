@@ -3,6 +3,8 @@ name: Generate Ontology documentation with Widoco
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   generate-docs:
