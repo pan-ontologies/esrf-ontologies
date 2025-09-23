@@ -16,7 +16,7 @@
     <Import>http://purl.org/pan-science/PaNET/PaNET.owl</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-        <Literal>2025-07-07</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-07-07</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
