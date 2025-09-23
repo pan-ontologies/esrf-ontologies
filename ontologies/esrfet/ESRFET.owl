@@ -28,7 +28,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
-        <Literal>CC BY 4.0</Literal>
+        <IRI>http://creativecommons.org/licenses/by/4.0/</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
