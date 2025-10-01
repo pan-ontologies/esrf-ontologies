@@ -42,6 +42,10 @@
         <IRI>http://creativecommons.org/licenses/by/4.0/</IRI>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-09-06</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:title"/>
         <Literal xml:lang="en">The ESRF Experimental Techniques Ontology</Literal>
     </Annotation>
@@ -51,7 +55,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-        <IRI>http://purl.org/pan-science/ESRFET</IRI>
+        <IRI></IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -774,6 +778,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="terms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:modified"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="terms:title"/>
