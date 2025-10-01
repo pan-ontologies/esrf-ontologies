@@ -29,7 +29,6 @@ jobs:
             -outFolder tools/docs \
             -getOntologyMetadata \
             -rewriteAll \
-            -includeImportedOntologies \
             -includeAnnotationProperties \
             -webVowl \
             -htaccess \
