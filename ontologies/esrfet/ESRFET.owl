@@ -43,19 +43,19 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:title"/>
-        <Literal>The ESRF Experimental Techniques Ontology</Literal>
+        <Literal xml:lang="en">The ESRF Experimental Techniques Ontology</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-        <Literal>ESRFET</Literal>
+        <Literal xml:lang="en">ESRFET</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-        <IRI></IRI>
+        <IRI>http://purl.org/pan-science/ESRFET</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal>The ESRF Ontologies project provides ontologies related to ESRF data acquisition.</Literal>
+        <Literal xml:lang="en">The ESRF Ontologies project provides ontologies related to ESRF data acquisition.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
