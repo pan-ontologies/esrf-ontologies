@@ -21,5 +21,6 @@ html
 # Generates
 catalog-v001.xml
 ESRFET.properties
+/tools/docs/
 
 .esrf-ontologies/
