@@ -1,4 +1,5 @@
 import pytest
+
 from ..technique import get_technique_metadata
 
 

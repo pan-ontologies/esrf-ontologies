@@ -1,12 +1,14 @@
-import os
 import json
-from typing import Set, List, Dict, Any
+import os
+from typing import Any
+from typing import Dict
+from typing import List
+from typing import Set
 
 from owlready2 import get_ontology
 from owlready2 import sync_reasoner
 from owlready2.entity import ThingClass
 from owlready2.namespace import Ontology
-
 
 from esrf_ontologies.technique import get_all_techniques
 

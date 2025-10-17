@@ -35,6 +35,7 @@ dev = [
     "black >=22",
     "flake8 >=4",
     "owlready2",
+    "isort",
 ]
 doc = [
     "esrf-ontologies[test]",
@@ -54,3 +55,8 @@ where = ["src"]
 
 [tool.coverage.run]
 omit = ['*/tests/*']
+
+[tool.isort]
+profile = "black"
+force_single_line = true
+

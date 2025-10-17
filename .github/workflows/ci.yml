@@ -43,6 +43,12 @@ jobs:
           pip install "black >=25"
           black --check .
 
+      - name: Check import sorting with isort
+        if: ${{ matrix.python-version == '3.12' }}
+        run: |
+          pip install isort
+          isort --check-only .
+
       - name: Build source distribution
         run: |
           pip install build
