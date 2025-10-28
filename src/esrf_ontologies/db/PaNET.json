@@ -84,7 +84,6 @@
     "iri": "http://purl.org/pan-science/PaNET/PaNET01316",
     "names": [
       "GIWAXS",
-      "grazing incidence wide angle scattering",
       "grazing incidence wide angle x-ray scattering"
     ],
     "description": ""
@@ -151,14 +150,6 @@
     "names": [
       "PPC-Sr\u03bcCT",
       "x-ray propagation phase contrast microtomography"
-    ],
-    "description": ""
-  },
-  {
-    "iri": "http://purl.org/pan-science/PaNET/PaNET01167",
-    "names": [
-      "PhD",
-      "photoelectron diffraction"
     ],
     "description": ""
   },
