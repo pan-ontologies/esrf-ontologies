@@ -59,7 +59,14 @@ echo "Name=Protégé" >> $filename
 echo "Icon=$(pwd)/protege/app/Protege.icns" >> $filename
 echo "Exec=$(pwd)/protege/run.sh" >> $filename
 ```
-## Updating local NeXus Ontology (ontologies/nexus/NeXusOntology_full_*.owl)
+
+## Update local PaNET Ontology (ontologies/panet/PaNET.owl)
+
+```bash
+curl -L -o ontologies/panet/PaNET.owl http://purl.org/pan-science/PaNET/PaNET.owl
+```
+
+## Update local NeXus Ontology (ontologies/nexus/NeXusOntology_full_*.owl)
 
 1. **Update NeXus Ontology submodule**  
    Update the NeXus Ontology submodule to the latest commit. This should pull the the latest commit from oscars-project branch. So you now have latest owl file:
