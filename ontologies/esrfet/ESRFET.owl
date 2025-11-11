@@ -2284,6 +2284,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.org/nexusformat/definitions/Application/NXmpes_arpes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_be_used_for_technique"/>
+            <Class IRI="#XAS"/>
+        </ObjectSomeValuesFrom>
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
     </SubClassOf>
     <SubClassOf>
