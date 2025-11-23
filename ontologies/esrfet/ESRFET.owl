@@ -639,6 +639,20 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     </Declaration>
     <EquivalentClasses>
+        <Class IRI="#BioSAXS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#SAXS"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#biological_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CDI"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01174"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#CRYO-EM"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -653,6 +667,16 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#electrons"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CXDI"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01174"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -687,29 +711,7 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ED-EXAFS"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#experimental_technique"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#extended"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#photon_count"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_result_of_interaction"/>
-                <Class IRI="#atomic_core_excitation"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#x-ray"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#requires_sample_input_property"/>
-                <Class IRI="#disperse_incident_energy_in_space"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01321"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ED-XANES"/>
@@ -875,6 +877,10 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#EXAFS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01198"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EXAFS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
@@ -893,6 +899,27 @@
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FF-EXAFS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#full-field_imaging"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01198"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FF-XANES"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#full-field_imaging"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01199"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FF-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#full-field_imaging"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01196"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -926,6 +953,17 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#FF-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#full-field_imaging"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01177"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FTIR"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01320"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#FTIR"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -938,6 +976,10 @@
                 <Class IRI="#infrared"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GISAXS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01162"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#GISAXS"/>
@@ -960,6 +1002,10 @@
                 <Class IRI="#sample_incident_angle_smaller_than_critical_angle"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GIXRD"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01161"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#HERFD-XAS"/>
@@ -988,6 +1034,21 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#HERFD-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01042"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01196"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HP-XRD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01216"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET2020048"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#HR-XRPD"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1008,6 +1069,24 @@
                 <Class IRI="#powder_sample"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HR-XRPD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01040"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01101"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HT-XRD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01216"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET2020047"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IXS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01182"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#LDDS-XAS"/>
@@ -1033,6 +1112,16 @@
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#laser"/>
             </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LDDS-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01196"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
@@ -1070,6 +1159,20 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#LDSC-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01196"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#shock_compression"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#laser"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#MACRO-XRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1096,6 +1199,16 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MACRO-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01177"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#macro_sample_spatial_resolution"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1152,6 +1265,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#MX"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01164"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#NANO-XRD"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1204,6 +1321,25 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#NFP"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01212"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NRIXS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01182"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01270"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NRS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01270"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PDF"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01181"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#PFY-XAS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1252,6 +1388,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#PTYCHO"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01212"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#S-XRD"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1294,6 +1434,10 @@
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SAXS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01188"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#SAXS"/>
@@ -1479,6 +1623,10 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#XANES"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01199"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XANES"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
@@ -1522,6 +1670,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#XES"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01200"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#XFCT"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1548,6 +1700,36 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#XFCT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01096"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XFH"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01266"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#fluorescence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XLD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01138"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#XRAYS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1556,6 +1738,10 @@
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XRD"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01216"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#XRD"/>
@@ -1712,6 +1898,49 @@
     <SubClassOf>
         <Class IRI="#DFXM"/>
         <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ED-EXAFS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ED-EXAFS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01321"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ED-EXAFS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#measures_as_a_function_of"/>
+            <Class IRI="#extended"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ED-EXAFS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#measures_interaction_result_property"/>
+            <Class IRI="#photon_count"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ED-EXAFS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#measures_result_of_interaction"/>
+            <Class IRI="#atomic_core_excitation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ED-EXAFS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires_sample_input"/>
+            <Class IRI="#x-ray"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ED-EXAFS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires_sample_input_property"/>
+            <Class IRI="#disperse_incident_energy_in_space"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EM"/>
@@ -3072,6 +3301,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MRT</IRI>
         <Literal>Microbeam Radiation Therapy (MRT) uses arrays of microscale, high-dose X-ray beams to irradiate tissue with high spatial precision, aiming to maximize tumor damage while sparing surrounding healthy tissue.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MRT</IRI>
+        <Literal>panet mapping?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4576,5 +4810,5 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
