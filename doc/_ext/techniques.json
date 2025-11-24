@@ -360,7 +360,7 @@
     "Description": "Scanning Transmission X-ray Microscopy (STXM) measures X-ray transmission through a sample by scanning a focused X-ray beam in 2D, providing spatially resolved chemical, elemental, and morphological maps at nanometer-scale resolution."
   },
   {
-    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SMX\">SXM</a>",
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SXM\">SXM</a>",
     "Alternative names": "Serial Macromolecular Crystallography",
     "Description": "Serial Macromolecular Crystallography (SXM) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize."
   },

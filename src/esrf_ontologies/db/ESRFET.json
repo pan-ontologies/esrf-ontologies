@@ -597,7 +597,7 @@
     "description": "Scanning Transmission X-ray Microscopy (STXM) measures X-ray transmission through a sample by scanning a focused X-ray beam in 2D, providing spatially resolved chemical, elemental, and morphological maps at nanometer-scale resolution."
   },
   {
-    "iri": "http://purl.org/pan-science/ESRFET#SMX",
+    "iri": "http://purl.org/pan-science/ESRFET#SXM",
     "names": [
       "SXM",
       "Serial Macromolecular Crystallography"
