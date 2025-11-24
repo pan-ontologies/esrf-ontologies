@@ -1,6 +1,8 @@
-import os
 import json
-from typing import List, Dict, Any
+import os
+from typing import Any
+from typing import Dict
+from typing import List
 
 from docutils import nodes
 from docutils.parsers.rst import Directive

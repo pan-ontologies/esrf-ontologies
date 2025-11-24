@@ -1,5 +1,5 @@
-from ..technique import get_techniques
 from ..technique import get_all_techniques
+from ..technique import get_techniques
 
 
 def test_get_all_technique():

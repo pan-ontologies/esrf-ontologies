@@ -4,9 +4,11 @@
 - PaNET: taxonomy and thesaurus of photon and neutron (PaN) experimental techniques.
 """
 
-import sys
 import json
-from typing import List, Dict, Any
+import sys
+from typing import Any
+from typing import Dict
+from typing import List
 
 if sys.version_info < (3, 9):
     import importlib_resources

@@ -84,7 +84,7 @@
     "iri": "http://purl.org/pan-science/PaNET/PaNET01316",
     "names": [
       "GIWAXS",
-      "grazing incidence wide angle scattering"
+      "grazing incidence wide angle x-ray scattering"
     ],
     "description": ""
   },
@@ -139,10 +139,17 @@
     "description": ""
   },
   {
-    "iri": "http://purl.org/pan-science/PaNET/PaNET01167",
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01331",
     "names": [
-      "PhD",
-      "photoelectron diffraction"
+      "MHz x-ray microscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01333",
+    "names": [
+      "PPC-Sr\u03bcCT",
+      "x-ray propagation phase contrast microtomography"
     ],
     "description": ""
   },
@@ -175,6 +182,15 @@
     "names": [
       "RXS",
       "resonant x-ray scattering"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01170",
+    "names": [
+      "SAD",
+      "single wavelength anomalous dispersion",
+      "single wavelength anomalous diffraction"
     ],
     "description": ""
   },
@@ -598,6 +614,13 @@
     "description": ""
   },
   {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01226",
+    "names": [
+      "x-ray interference lithography"
+    ],
+    "description": ""
+  },
+  {
     "iri": "http://purl.org/pan-science/PaNET/PaNET01300",
     "names": [
       "x-ray linear dichroism"
@@ -643,6 +666,13 @@
     "iri": "http://purl.org/pan-science/PaNET/PaNET01294",
     "names": [
       "x-ray photoemission electron microscopy"
+    ],
+    "description": ""
+  },
+  {
+    "iri": "http://purl.org/pan-science/PaNET/PaNET01332",
+    "names": [
+      "x-ray propagation phase contrast tomography"
     ],
     "description": ""
   },

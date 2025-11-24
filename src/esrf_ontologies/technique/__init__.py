@@ -1,9 +1,12 @@
-from typing import Set, Tuple, Generator, List
 from functools import lru_cache
+from typing import Generator
+from typing import List
+from typing import Set
+from typing import Tuple
 
-
-from .types import Technique, TechniqueMetadata
 from ..db import load_technniques as _load_technniques
+from .types import Technique
+from .types import TechniqueMetadata
 
 
 def get_technique_metadata(*names: Tuple[str]) -> TechniqueMetadata:

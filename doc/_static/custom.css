@@ -18,3 +18,11 @@
 html[data-theme="dark"] table.table-striped tbody tr:nth-child(odd) td {
     color: #ddd  !important;
 }
+
+button.copybtn {
+    opacity: 0.3;
+}
+
+button.copybtn:hover {
+    opacity: 1;
+}
