@@ -273,13 +273,13 @@
         <Class IRI="#SMS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SMX"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#SSX"/>
     </Declaration>
     <Declaration>
         <Class IRI="#STXM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SXM"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TEM"/>
@@ -2281,11 +2281,11 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SMX"/>
+        <Class IRI="#STXM"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#STXM"/>
+        <Class IRI="#SXM"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -4058,21 +4058,6 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SMX</IRI>
-        <Literal>Serial Macromolecular Crystallography (SXM) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#SMX</IRI>
-        <Literal>SXM</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
-        <IRI>#SMX</IRI>
-        <Literal>Serial Macromolecular Crystallography</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SSX</IRI>
         <Literal>Serial Synchrotron Crystallography (SSX) is similar to Single Crystal X-ray Diffraction (SCXRD), but instead of measuring diffraction from one crystal in multiple orientations, SSX collects diffraction from many micro- or nano-crystals with random orientations sequentially at a synchrotron, enabling structure determination from samples that cannot grow large single crystals.</Literal>
     </AnnotationAssertion>
@@ -4100,6 +4085,21 @@ The second definition is chosen for this technique.</Literal>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#STXM</IRI>
         <Literal>Scanning Transmission X-ray Microscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SXM</IRI>
+        <Literal>Serial Macromolecular Crystallography (SXM) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SXM</IRI>
+        <Literal>SXM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#SXM</IRI>
+        <Literal>Serial Macromolecular Crystallography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5437,32 +5437,32 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483693"/>
+        <AnonymousIndividual nodeID="_:genid2147484479"/>
         <Literal>Giannis Koumoutsos</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="schema:affiliation"/>
-        <AnonymousIndividual nodeID="_:genid2147483694"/>
-        <AnonymousIndividual nodeID="_:genid2147483695"/>
+        <AnonymousIndividual nodeID="_:genid2147484480"/>
+        <AnonymousIndividual nodeID="_:genid2147484481"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483694"/>
+        <AnonymousIndividual nodeID="_:genid2147484480"/>
         <Literal>Wout De Nolf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AnonymousIndividual nodeID="_:genid2147483695"/>
+        <AnonymousIndividual nodeID="_:genid2147484481"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/02550n020</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483695"/>
+        <AnonymousIndividual nodeID="_:genid2147484481"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.esrf.fr</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483695"/>
+        <AnonymousIndividual nodeID="_:genid2147484481"/>
         <Literal>ESRF</Literal>
     </AnnotationAssertion>
 </Ontology>
