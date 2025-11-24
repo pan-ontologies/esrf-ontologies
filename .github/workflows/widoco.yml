@@ -35,6 +35,9 @@ jobs:
             -webVowl \
             -htaccess \
             -uniteSections
+            
+      - name: Fix main page
+        run: mv tools/docs/index-en.html tools/docs/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
