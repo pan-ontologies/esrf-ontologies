@@ -581,6 +581,14 @@
     "description": "The Synchrotron M\u00f6ssbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling M\u00f6ssbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#SMX",
+    "names": [
+      "SMX",
+      "Serial Macromolecular Crystallography"
+    ],
+    "description": "Serial Macromolecular Crystallography (SMX) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#SSX",
     "names": [
       "SSX",
@@ -595,14 +603,6 @@
       "Scanning Transmission X-ray Microscopy"
     ],
     "description": "Scanning Transmission X-ray Microscopy (STXM) measures X-ray transmission through a sample by scanning a focused X-ray beam in 2D, providing spatially resolved chemical, elemental, and morphological maps at nanometer-scale resolution."
-  },
-  {
-    "iri": "http://purl.org/pan-science/ESRFET#SMX",
-    "names": [
-      "SXM",
-      "Serial Macromolecular Crystallography"
-    ],
-    "description": "Serial Macromolecular Crystallography (SXM) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#TEM",
