@@ -350,6 +350,11 @@
     "Description": "The Synchrotron Mössbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling Mössbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques."
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SMX\">SMX</a>",
+    "Alternative names": "Serial Macromolecular Crystallography",
+    "Description": "Serial Macromolecular Crystallography (SMX) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize."
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SSX\">SSX</a>",
     "Alternative names": "Serial Synchrotron Crystallography",
     "Description": "Serial Synchrotron Crystallography (SSX) is similar to Single Crystal X-ray Diffraction (SCXRD), but instead of measuring diffraction from one crystal in multiple orientations, SSX collects diffraction from many micro- or nano-crystals with random orientations sequentially at a synchrotron, enabling structure determination from samples that cannot grow large single crystals."
@@ -358,11 +363,6 @@
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#STXM\">STXM</a>",
     "Alternative names": "Scanning Transmission X-ray Microscopy",
     "Description": "Scanning Transmission X-ray Microscopy (STXM) measures X-ray transmission through a sample by scanning a focused X-ray beam in 2D, providing spatially resolved chemical, elemental, and morphological maps at nanometer-scale resolution."
-  },
-  {
-    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SXM\">SXM</a>",
-    "Alternative names": "Serial Macromolecular Crystallography",
-    "Description": "Serial Macromolecular Crystallography (SXM) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TEM\">TEM</a>",
