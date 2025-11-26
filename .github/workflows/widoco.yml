@@ -48,10 +48,9 @@ jobs:
             -htaccess \
             -uniteSections
 
-      - name: Fix main pages
+      - name: Fix main page
         run: |
           mv ${{ env.DOCS_DIR }}/${{ env.VERSION }}/index-en.html ${{ env.DOCS_DIR }}/${{ env.VERSION }}/index.html
-          mv ${{ env.DOCS_DIR }}/latest/index-en.html ${{ env.DOCS_DIR }}/latest/index.html
 
       - name: Update latest alias
         run: |
