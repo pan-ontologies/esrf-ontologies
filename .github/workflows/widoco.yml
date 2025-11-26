@@ -9,6 +9,9 @@ on:
 permissions:
   contents: write
 
+env:
+  DOCS_DIR: tools/docs
+
 jobs:
   generate-docs:
     runs-on: ubuntu-latest
@@ -24,11 +27,20 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
+      - name: Determine version
+        run: |
+          VERSION=$(grep -A1 '<AnnotationProperty abbreviatedIRI="owl:versionInfo"/>' ontologies/esrfet/ESRFET.owl \
+          | grep '<Literal>' \
+          | sed -E 's/.*<Literal>(.*)<\/Literal>.*/\1/' \
+          || echo "snapshot-$(date +%Y%m%d)")
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
       - name: Generate Documentation
         run: |
+          OUT_DIR=${{ env.DOCS_DIR }}/${{ env.VERSION }}
           java -jar tools/widoco-1.4.25-jar-with-dependencies_JDK-11.jar \
             -ontFile ontologies/esrfet/ESRFET.owl \
-            -outFolder tools/docs \
+            -outFolder $OUT_DIR  \
             -getOntologyMetadata \
             -rewriteAll \
             -includeAnnotationProperties \
@@ -36,13 +48,20 @@ jobs:
             -htaccess \
             -uniteSections
 
-      - name: Fix main page
-        run: mv tools/docs/index-en.html tools/docs/index.html
+      - name: Fix main pages
+        run: |
+          mv ${{ env.DOCS_DIR }}/${{ env.VERSION }}/index-en.html ${{ env.DOCS_DIR }}/${{ env.VERSION }}/index.html
+          mv ${{ env.DOCS_DIR }}/latest/index-en.html ${{ env.DOCS_DIR }}/latest/index.html
+
+      - name: Update latest alias
+        run: |
+          rm -rf ${{ env.DOCS_DIR }}/latest
+          cp -r ${{ env.DOCS_DIR }}/${{ env.VERSION }} ${{ env.DOCS_DIR }}/latest
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./tools/docs
+          publish_dir: ./${{ env.DOCS_DIR }}
           destination_dir: esrfet
           force_orphan: true
