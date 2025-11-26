@@ -1,0 +1,63 @@
+name: Generate Ontology documentation with Widoco
+
+on:
+   push:
+    branches: [ main ] 
+
+permissions:
+  contents: write
+
+env:
+  DOCS_DIR: tools/docs
+
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - name: Determine version
+        run: |
+          VERSION=$(grep -A1 '<AnnotationProperty abbreviatedIRI="owl:versionInfo"/>' ontologies/esrfet/ESRFET.owl \
+          | grep '<Literal>' \
+          | sed -E 's/.*<Literal>(.*)<\/Literal>.*/\1/' \
+          || echo "snapshot-$(date +%Y%m%d)")
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Generate Documentation
+        run: |
+          OUT_DIR=${{ env.DOCS_DIR }}/${{ env.VERSION }}
+          java -jar tools/widoco-1.4.25-jar-with-dependencies_JDK-11.jar \
+            -ontFile ontologies/esrfet/ESRFET.owl \
+            -outFolder $OUT_DIR  \
+            -getOntologyMetadata \
+            -rewriteAll \
+            -includeAnnotationProperties \
+            -webVowl \
+            -htaccess \
+            -uniteSections
+
+      - name: Fix main page
+        run: |
+          mv ${{ env.DOCS_DIR }}/${{ env.VERSION }}/index-en.html ${{ env.DOCS_DIR }}/${{ env.VERSION }}/index.html
+
+      - name: Update latest alias
+        run: |
+          rm -rf ${{ env.DOCS_DIR }}/latest
+          cp -r ${{ env.DOCS_DIR }}/${{ env.VERSION }} ${{ env.DOCS_DIR }}/latest
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./${{ env.DOCS_DIR }}
+          destination_dir: esrfet
