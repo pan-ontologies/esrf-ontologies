@@ -8,6 +8,8 @@ on:
     branches:
       - '*'
   workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'   # Runs daily at 03:00 UTC
 
 jobs:
   py-test:
