@@ -39,7 +39,7 @@ dev = [
 ]
 doc = [
     "esrf-ontologies[test]",
-    "sphinx >=4.5",
+    "sphinx >=4.5,<9.0.0rc1",
     "sphinx-autodoc-typehints >=1.16",
     "pydata-sphinx-theme",
     "sphinx-copybutton",
