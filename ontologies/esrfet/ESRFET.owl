@@ -1714,7 +1714,7 @@
         <ObjectIntersectionOf>
             <Class IRI="http://purl.org/pan-science/PaNET/PaNET01266"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#fluorescence"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
