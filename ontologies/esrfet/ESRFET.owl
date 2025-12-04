@@ -297,6 +297,9 @@
         <Class IRI="#TR-XRD"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TR-XSS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TXRF"/>
     </Declaration>
     <Declaration>
@@ -2301,6 +2304,10 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TR-XSS"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#USA-XPCS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -4175,6 +4182,23 @@ The second definition is chosen for this technique.</Literal>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#TR-XRD</IRI>
         <Literal>Time Resolved X-ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TR-XSS</IRI>
+        <Literal>Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering
+from a solution of chemicals or biomolecules following a triggering perturbation, providing insights
+into the dynamics of structural rearrangements of the solute and of the surrounding solvent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TR-XSS</IRI>
+        <Literal>TR-XSS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#TR-XSS</IRI>
+        <Literal>Time-resolved X-ray solution scattering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
