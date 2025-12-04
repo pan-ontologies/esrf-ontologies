@@ -12,6 +12,7 @@ permissions:
 env:
   DOCS_DIR: tools/docs
   WIDOCO_JAR: tools/widoco-1.4.25-jar-with-dependencies_JDK-11.jar
+  EXCLUDED_ONTOLOGIES: "panet,nexus"
 
 jobs:
   generate-docs:
@@ -33,6 +34,10 @@ jobs:
           mkdir -p ${{ env.DOCS_DIR }}
           for ONTOLOGY_DIR in ontologies/*/; do
             ONTOLOGY_NAME=$(basename "$ONTOLOGY_DIR")
+            if echo "${EXCLUDED_ONTOLOGIES}" | grep -qw "$ONTOLOGY_NAME"; then
+              echo "Skipping excluded ontology: $ONTOLOGY_NAME"
+              continue
+            fi
             ONTOLOGY_FILE=$(find "$ONTOLOGY_DIR" -maxdepth 1 -iname "*.owl" | head -n 1)
             if [ ! -f "$ONTOLOGY_FILE" ]; then
               echo "Skipping $ONTOLOGY_NAME, no OWL file found"
