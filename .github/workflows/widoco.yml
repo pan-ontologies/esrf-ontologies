@@ -1,10 +1,10 @@
 name: Generate Ontologies documentation with Widoco
 
 on:
-   push:
-    branches: [ main, '**' ] 
-   pull_request:
-    branches: [ main ]
+  push:
+    branches: [main, "**"]
+  pull_request:
+    branches: [main]
 
 permissions:
   contents: write
@@ -25,8 +25,8 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '11'
+          distribution: "temurin"
+          java-version: "11"
 
       - name: Generate Documentation for all ontologies
         run: |
@@ -66,7 +66,8 @@ jobs:
             # Update latest alias
             LATEST_DIR=${{ env.DOCS_DIR }}/$ONTOLOGY_NAME/latest
             rm -rf "$LATEST_DIR"
-            cp -r "$OUT_DIR" "$LATEST_DIR"
+            mkdir -p "$LATEST_DIR"
+            cp -r "$OUT_DIR/." "$LATEST_DIR/"
           done
 
       - name: Deploy to GitHub Pages
