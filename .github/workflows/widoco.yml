@@ -1,4 +1,4 @@
-name: Generate Ontology documentation with Widoco
+name: Generate Ontologies documentation with Widoco
 
 on:
    push:
@@ -11,6 +11,7 @@ permissions:
 
 env:
   DOCS_DIR: tools/docs
+  WIDOCO_JAR: tools/widoco-1.4.25-jar-with-dependencies_JDK-11.jar
 
 jobs:
   generate-docs:
@@ -27,40 +28,50 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
-      - name: Determine version
+      - name: Generate Documentation for all ontologies
         run: |
-          VERSION=$(grep -A1 '<AnnotationProperty abbreviatedIRI="owl:versionInfo"/>' ontologies/esrfet/ESRFET.owl \
-          | grep '<Literal>' \
-          | sed -E 's/.*<Literal>(.*)<\/Literal>.*/\1/' \
-          || echo "snapshot-$(date +%Y%m%d)")
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          mkdir -p ${{ env.DOCS_DIR }}
+          for ONTOLOGY_DIR in ontologies/*/; do
+            ONTOLOGY_NAME=$(basename "$ONTOLOGY_DIR")
+            ONTOLOGY_FILE=$(find "$ONTOLOGY_DIR" -maxdepth 1 -iname "*.owl" | head -n 1)
+            if [ ! -f "$ONTOLOGY_FILE" ]; then
+              echo "Skipping $ONTOLOGY_NAME, no OWL file found"
+              continue
+            fi
 
-      - name: Generate Documentation
-        run: |
-          OUT_DIR=${{ env.DOCS_DIR }}/${{ env.VERSION }}
-          java -jar tools/widoco-1.4.25-jar-with-dependencies_JDK-11.jar \
-            -ontFile ontologies/esrfet/ESRFET.owl \
-            -outFolder $OUT_DIR  \
-            -getOntologyMetadata \
-            -rewriteAll \
-            -includeAnnotationProperties \
-            -webVowl \
-            -htaccess \
-            -uniteSections
+            # Determine version
+            VERSION=$(grep -A1 '<AnnotationProperty abbreviatedIRI="owl:versionInfo"/>' "$ONTOLOGY_FILE" \
+              | grep '<Literal>' \
+              | sed -E 's/.*<Literal>(.*)<\/Literal>.*/\1/' \
+              || echo "snapshot-$(date +%Y%m%d)")
+            echo "VERSION=$VERSION" >> $GITHUB_ENV
 
-      - name: Fix main page
-        run: |
-          mv ${{ env.DOCS_DIR }}/${{ env.VERSION }}/index-en.html ${{ env.DOCS_DIR }}/${{ env.VERSION }}/index.html
+            OUT_DIR=${{ env.DOCS_DIR }}/$ONTOLOGY_NAME/$VERSION
+            mkdir -p "$OUT_DIR"
 
-      - name: Update latest alias
-        run: |
-          rm -rf ${{ env.DOCS_DIR }}/latest
-          cp -r ${{ env.DOCS_DIR }}/${{ env.VERSION }} ${{ env.DOCS_DIR }}/latest
+            # Generate Widoco documentation
+            java -jar ${{ env.WIDOCO_JAR }} \
+              -ontFile "$ONTOLOGY_FILE" \
+              -outFolder "$OUT_DIR"  \
+              -getOntologyMetadata \
+              -rewriteAll \
+              -includeAnnotationProperties \
+              -webVowl \
+              -htaccess \
+              -uniteSections
+
+            # Fix main page
+            mv "$OUT_DIR/index-en.html" "$OUT_DIR/index.html"
+
+            # Update latest alias
+            LATEST_DIR=${{ env.DOCS_DIR }}/$ONTOLOGY_NAME/latest
+            rm -rf "$LATEST_DIR"
+            cp -r "$OUT_DIR" "$LATEST_DIR"
+          done
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./${{ env.DOCS_DIR }}
-          destination_dir: esrfet
           force_orphan: true
