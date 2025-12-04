@@ -1,0 +1,79 @@
+name: Generate ontologies documentation with Widoco
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+env:
+  DOCS_DIR: tools/docs
+  WIDOCO_JAR: tools/widoco-1.4.25-jar-with-dependencies_JDK-11.jar
+  EXCLUDED_ONTOLOGIES: "panet,nexus"
+
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "11"
+
+      - name: Generate documentation for all ontologies
+        run: |
+          mkdir -p ${{ env.DOCS_DIR }}
+          for ONTOLOGY_DIR in ontologies/*/; do
+            ONTOLOGY_NAME=$(basename "$ONTOLOGY_DIR")
+            if echo "${EXCLUDED_ONTOLOGIES}" | grep -qw "$ONTOLOGY_NAME"; then
+              echo "Skipping excluded ontology: $ONTOLOGY_NAME"
+              continue
+            fi
+            ONTOLOGY_FILE=$(find "$ONTOLOGY_DIR" -maxdepth 1 -iname "*.owl" | head -n 1)
+            if [ ! -f "$ONTOLOGY_FILE" ]; then
+              echo "Skipping $ONTOLOGY_NAME, no OWL file found"
+              continue
+            fi
+
+            # Determine version
+            VERSION=$(grep -A1 '<AnnotationProperty abbreviatedIRI="owl:versionInfo"/>' "$ONTOLOGY_FILE" \
+              | grep '<Literal>' \
+              | sed -E 's/.*<Literal>(.*)<\/Literal>.*/\1/' \
+              || echo "snapshot-$(date +%Y%m%d)")
+            echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+            OUT_DIR=${{ env.DOCS_DIR }}/$ONTOLOGY_NAME/$VERSION
+            mkdir -p "$OUT_DIR"
+
+            # Generate Widoco documentation
+            java -jar ${{ env.WIDOCO_JAR }} \
+              -ontFile "$ONTOLOGY_FILE" \
+              -outFolder "$OUT_DIR"  \
+              -getOntologyMetadata \
+              -rewriteAll \
+              -includeAnnotationProperties \
+              -webVowl \
+              -htaccess \
+              -uniteSections
+
+            # Fix main page
+            mv "$OUT_DIR/index-en.html" "$OUT_DIR/index.html"
+
+            # Update latest alias
+            LATEST_DIR=${{ env.DOCS_DIR }}/$ONTOLOGY_NAME/latest
+            rm -rf "$LATEST_DIR"
+            rsync -a "$OUT_DIR/" "$LATEST_DIR/"
+          done
+
+      - name: Deploy to GitHub pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./${{ env.DOCS_DIR }}
