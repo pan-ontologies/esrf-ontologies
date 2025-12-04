@@ -297,6 +297,9 @@
         <Class IRI="#TR-XRD"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TR-XSS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TXRF"/>
     </Declaration>
     <Declaration>
@@ -1813,6 +1816,24 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TR-XSS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#biological_sample"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -4175,6 +4196,21 @@ The second definition is chosen for this technique.</Literal>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#TR-XRD</IRI>
         <Literal>Time Resolved X-ray Diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TR-XSS</IRI>
+        <Literal>Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TR-XSS</IRI>
+        <Literal>TR-XSS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#TR-XSS</IRI>
+        <Literal>Time-resolved X-ray solution scattering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
