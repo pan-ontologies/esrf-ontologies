@@ -1,0 +1,136 @@
+@prefix : <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#> .
+
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role
+:has_role rdf:type owl:ObjectProperty ;
+          rdfs:domain :participation ;
+          rdfs:range :person_experiment_role .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role_in_experiment
+:has_role_in_experiment rdf:type owl:ObjectProperty ;
+                        rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                        rdfs:range :person_experiment_role .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment
+:involves_experiment rdf:type owl:ObjectProperty ;
+                     rdfs:domain :participation ;
+                     rdfs:range :experiment .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person
+:involves_person rdf:type owl:ObjectProperty ;
+                 rdfs:domain :participation ;
+                 rdfs:range <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participates_in_experiment
+:participates_in_experiment rdf:type owl:ObjectProperty ;
+                            rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                            rdfs:range :experiment .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment
+:experiment rdf:type owl:Class ;
+            rdfs:comment "An experiment performed at the ESRF." ;
+            rdfs:label "experiment" .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation
+:participation rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :has_role ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :person_experiment_role
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :involves_experiment ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :experiment
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :involves_person ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass <http://xmlns.com/foaf/0.1/Person>
+                               ] ;
+               rdfs:comment "A relation binding a person, a role, and an experiment." ;
+               rdfs:label "participation" .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role
+:person_experiment_role rdf:type owl:Class ;
+                        rdfs:comment "A role held by a person in the context of an experiment." ;
+                        rdfs:label "person_experiment_role" .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147
+:ESRF_HC6147 rdf:type owl:NamedIndividual ,
+                      :experiment .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6148
+:ESRF_HC6148 rdf:type owl:NamedIndividual ,
+                      :experiment .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact
+:local_contact rdf:type owl:NamedIndividual ,
+                        :person_experiment_role .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant
+:participant rdf:type owl:NamedIndividual ,
+                      :person_experiment_role .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator
+:principal_investigator rdf:type owl:NamedIndividual ,
+                                 :person_experiment_role .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist
+:proposal_scientist rdf:type owl:NamedIndividual ,
+                             :person_experiment_role .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf
+:wout_de_nolf rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6147
+:wout_de_nolf_in_HC6147 rdf:type owl:NamedIndividual ;
+                        :has_role :principal_investigator ;
+                        :involves_experiment :ESRF_HC6147 ;
+                        :involves_person :wout_de_nolf .
+
+
+###  http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6148
+:wout_de_nolf_in_HC6148 rdf:type owl:NamedIndividual ;
+                        :has_role :local_contact .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

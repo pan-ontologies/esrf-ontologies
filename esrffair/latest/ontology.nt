@@ -1,0 +1,124 @@
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role_in_experiment
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role_in_experiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role_in_experiment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role_in_experiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participates_in_experiment
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participates_in_experiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participates_in_experiment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participates_in_experiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment> <http://www.w3.org/2000/01/rdf-schema#comment> "An experiment performed at the ESRF." .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment> <http://www.w3.org/2000/01/rdf-schema#label> "experiment" .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://xmlns.com/foaf/0.1/Person> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation binding a person, a role, and an experiment." .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation> <http://www.w3.org/2000/01/rdf-schema#label> "participation" .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role> <http://www.w3.org/2000/01/rdf-schema#comment> "A role held by a person in the context of an experiment." .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role> <http://www.w3.org/2000/01/rdf-schema#label> "person_experiment_role" .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6148
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6147
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6147> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6147> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6147> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf> .
+# 
+# http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6148
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6148> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role> <http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

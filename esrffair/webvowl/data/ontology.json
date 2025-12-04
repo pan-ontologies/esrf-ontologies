@@ -1,0 +1,173 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78" ],
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role",
+    "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "person_experiment_role",
+      "undefined" : "person_experiment_role"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact",
+      "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+      "labels" : {
+        "IRI-based" : "local_contact"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant",
+      "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+      "labels" : {
+        "IRI-based" : "participant"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist",
+      "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+      "labels" : {
+        "IRI-based" : "proposal_scientist"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator",
+      "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+      "labels" : {
+        "IRI-based" : "principal_investigator"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A role held by a person in the context of an experiment."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation",
+    "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "participation",
+      "undefined" : "participation"
+    },
+    "comment" : {
+      "undefined" : "A relation binding a person, a role, and an experiment."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment",
+    "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "experiment",
+      "undefined" : "experiment"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6148",
+      "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+      "labels" : {
+        "IRI-based" : "ESRF_HC6148"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147",
+      "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+      "labels" : {
+        "IRI-based" : "ESRF_HC6147"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An experiment performed at the ESRF."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role",
+    "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "has_role"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment",
+    "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "involves_experiment"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person",
+    "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "involves_person"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participates_in_experiment",
+    "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "participates_in_experiment"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role_in_experiment",
+    "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "has_role_in_experiment"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  } ]
+}

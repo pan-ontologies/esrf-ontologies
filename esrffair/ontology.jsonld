@@ -1,0 +1,182 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6148",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An experiment performed at the ESRF."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "experiment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role_in_experiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participates_in_experiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relation binding a person, a role, and an experiment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "participation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A role held by a person in the context of an experiment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "person_experiment_role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6147",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator"
+  } ],
+  "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147"
+  } ],
+  "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6148",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role" : [ {
+    "@id" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

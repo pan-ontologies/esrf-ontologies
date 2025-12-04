@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#"
+     xml:base="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-78="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role_in_experiment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role_in_experiment">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participates_in_experiment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participates_in_experiment">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment">
+        <rdfs:comment>An experiment performed at the ESRF.</rdfs:comment>
+        <rdfs:label>experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#has_role"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A relation binding a person, a role, and an experiment.</rdfs:comment>
+        <rdfs:label>participation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role">
+        <rdfs:comment>A role held by a person in the context of an experiment.</rdfs:comment>
+        <rdfs:label>person_experiment_role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6148 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6148">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#experiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#person_experiment_role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6147 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6147">
+        <has_role rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator"/>
+        <involves_experiment rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#ESRF_HC6147"/>
+        <involves_person rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6148 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#wout_de_nolf_in_HC6148">
+        <has_role rdf:resource="http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#local_contact"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
