@@ -4186,9 +4186,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TR-XSS</IRI>
-        <Literal>Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering
-from a solution of chemicals or biomolecules following a triggering perturbation, providing insights
-into the dynamics of structural rearrangements of the solute and of the surrounding solvent.</Literal>
+        <Literal>Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
