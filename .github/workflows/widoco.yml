@@ -66,8 +66,7 @@ jobs:
             # Update latest alias
             LATEST_DIR=${{ env.DOCS_DIR }}/$ONTOLOGY_NAME/latest
             rm -rf "$LATEST_DIR"
-            mkdir -p "$LATEST_DIR"
-            cp -r "$OUT_DIR/." "$LATEST_DIR/"
+            rsync -a "$OUT_DIR/" "$LATEST_DIR/"
           done
 
       - name: Deploy to GitHub Pages
