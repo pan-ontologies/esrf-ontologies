@@ -1820,6 +1820,24 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#TR-XSS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#biological_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#TXRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -2302,24 +2320,6 @@
     <SubClassOf>
         <Class IRI="#TR-XRD"/>
         <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TR-XSS"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#experimental_technique"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_result_of_interaction"/>
-                <Class IRI="#diffraction_of_elastic_scattering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#x-ray"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#requires_sample_type"/>
-                <Class IRI="#biological_sample"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#USA-XPCS"/>
