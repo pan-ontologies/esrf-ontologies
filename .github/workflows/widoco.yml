@@ -1,4 +1,4 @@
-name: Generate Ontologies documentation with Widoco
+name: Generate ontologies documentation with Widoco
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
           distribution: "temurin"
           java-version: "11"
 
-      - name: Generate Documentation for all ontologies
+      - name: Generate documentation for all ontologies
         run: |
           mkdir -p ${{ env.DOCS_DIR }}
           for ONTOLOGY_DIR in ontologies/*/; do
@@ -72,7 +72,7 @@ jobs:
             rsync -a "$OUT_DIR/" "$LATEST_DIR/"
           done
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
