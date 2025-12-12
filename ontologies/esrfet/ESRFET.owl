@@ -4899,6 +4899,11 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#chemical_solution</IRI>
+        <Literal>A homogeneous mixture of solutes dissolved in a solvent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#cryogenic_temperature</IRI>
         <Literal>1 - 77 K</Literal>
     </AnnotationAssertion>
