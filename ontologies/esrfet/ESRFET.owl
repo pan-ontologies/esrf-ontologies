@@ -4925,7 +4925,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#detection_as_a_function_of_time</IRI>
-        <Literal>Meant for time resolved measurement</Literal>
+        <Literal>Used to describe techniques that involve time-resolved measurements</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
