@@ -20,8 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - KESCT: new technique with sematic meaning.
 - PB-XPCI: new technique with sematic meaning.
 - PB-XPCT: new technique with sematic meaning.
-- PC-Cryo-EM: new technique with sematic meaning.
-- PC-Cryo-ET: new technique with sematic meaning.
+- Cryo-EM: new technique with sematic meaning.
+- Cryo-ET: new technique with sematic meaning.
 - PCI: new technique with sematic meaning.
 - TR-XSS: new technique with sematic meaning.
 - XACT: new technique with sematic meaning.
