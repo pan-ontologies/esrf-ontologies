@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+## [1.2.0]
+
 ### Added
 
 - Semantic properties: temperature and pressure regimes.
@@ -68,6 +71,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - API for adding scan metadata to HDF5 and dataset metadata to the ESRF data portal.
 - OWL Ontology transpilation for runtime performance.
 
-[unreleased]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.1.0...HEAD
-[1.1.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.0.0...1.1.0
+[unreleased]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/pan-ontologies/esrf-ontologies/releases/tag/v1.0.0
