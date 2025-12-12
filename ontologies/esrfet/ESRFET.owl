@@ -84,6 +84,12 @@
         <Class IRI="#CRYO-EM"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CRYO-ET"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CT"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CXDI"/>
     </Declaration>
     <Declaration>
@@ -177,6 +183,12 @@
         <Class IRI="#IXS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#KES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KESCT"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LDDS-XAS"/>
     </Declaration>
     <Declaration>
@@ -226,6 +238,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="#NRS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PB-XPCI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PB-XPCT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PCI"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PDF"/>
@@ -318,7 +339,13 @@
         <Class IRI="#WDS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#XACT"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#XANES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XAPCT"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XAS"/>
@@ -346,6 +373,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#XFH"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XGI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XGPCT"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XHT"/>
@@ -405,10 +438,19 @@
         <Class IRI="#XRT"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#XSPCI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XSPCT"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#absorption"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ambient_temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#analyzer_crystal"/>
     </Declaration>
     <Declaration>
         <Class IRI="#area_detector"/>
@@ -447,6 +489,12 @@
         <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detection_as_a_function_of_sample_to_detector_distance"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#detection_resolution"/>
     </Declaration>
     <Declaration>
@@ -457,6 +505,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#diffraction_of_elastic_scattering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diffusion"/>
     </Declaration>
     <Declaration>
         <Class IRI="#disperse_incident_energy_in_space"/>
@@ -489,6 +540,9 @@
         <Class IRI="#full-field_imaging"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#grating"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#hard_x-ray"/>
     </Declaration>
     <Declaration>
@@ -507,7 +561,16 @@
         <Class IRI="#horizontal_linear_polarization"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#imaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#individual_specimen"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#infrared"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#laminography"/>
     </Declaration>
     <Declaration>
         <Class IRI="#large_length_scales"/>
@@ -544,6 +607,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#monochromatic_beam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#multi_sample_spatial_resolution"/>
     </Declaration>
     <Declaration>
         <Class IRI="#named_photon_energy_ranges"/>
@@ -583,6 +649,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#powder_sample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#primary_beam_modification"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ramp_compression"/>
@@ -633,10 +702,13 @@
         <Class IRI="#scanning_imaging"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#serial_scanning"/>
+        <Class IRI="#serial_screening"/>
     </Declaration>
     <Declaration>
         <Class IRI="#shock_compression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#simultanious_reference"/>
     </Declaration>
     <Declaration>
         <Class IRI="#single_crystal_sample"/>
@@ -649,6 +721,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#space_time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#speckle_pattern"/>
     </Declaration>
     <Declaration>
         <Class IRI="#strip_detector"/>
@@ -676,6 +751,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ultra_large_length_scales"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unmodified_beam"/>
     </Declaration>
     <Declaration>
         <Class IRI="#vertical_linear_polarization"/>
@@ -830,6 +908,22 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#serial_screening"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#transmission"/>
             </ObjectSomeValuesFrom>
@@ -840,6 +934,50 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input_property"/>
                 <Class IRI="#cryogenic_temperature"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CRYO-ET"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#individual_specimen"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#electrons"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#cryogenic_temperature"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1403,6 +1541,72 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#HiP-CT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#multi_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#KES"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#KESCT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#LDDS-XAS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1597,6 +1801,76 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#PB-XPCI"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#unmodified_beam"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PB-XPCT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#unmodified_beam"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PCI"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#PFY-XAS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1764,7 +2038,7 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#serial_scanning"/>
+                <Class IRI="#serial_screening"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -1923,6 +2197,24 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#XACT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#XANES"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1945,6 +2237,44 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#XAPCT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffusion"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_with_a_detector_type"/>
+                <Class IRI="#analyzer_crystal"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#monochromatic_beam"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#XAS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1959,6 +2289,20 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XCL"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#laminography"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
@@ -1993,9 +2337,173 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#XGI"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#simultanious_reference"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffusion"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#speckle_pattern"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XGPCT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffusion"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#grating"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XHT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#unmodified_beam"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XNHT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#nano_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#unmodified_beam"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XPCT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#XRAYS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XRCT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
@@ -2067,6 +2575,66 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XSPCI"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffusion"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#speckle_pattern"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XSPCT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#tomography"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffusion"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#refraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#transmission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input_property"/>
+                <Class IRI="#speckle_pattern"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -2181,10 +2749,6 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#EM"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#HAXPES"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -2194,10 +2758,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HT-XRD"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HiP-CT"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -2313,10 +2873,6 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#XCL"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#XDMR"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -2337,7 +2893,7 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#XHT"/>
+        <Class IRI="#XGI"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -2361,10 +2917,6 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#XNHT"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#XPCI"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
@@ -2373,19 +2925,11 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#XPCT"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#XPS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XRAYS"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#XRCT"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -2407,6 +2951,10 @@
     <SubClassOf>
         <Class IRI="#ambient_temperature"/>
         <Class IRI="#sample_temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#analyzer_crystal"/>
+        <Class IRI="#detector_type"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#area_detector"/>
@@ -2457,6 +3005,14 @@
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"/>
+        <Class IRI="#detection_as_a_function_of_sample_to_detector_distance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detection_as_a_function_of_sample_to_detector_distance"/>
+        <Class IRI="#space_time"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#detection_resolution"/>
         <Class IRI="#detected_cascade_of_events_property"/>
     </SubClassOf>
@@ -2471,6 +3027,10 @@
     <SubClassOf>
         <Class IRI="#diffraction_of_elastic_scattering"/>
         <Class IRI="#diffraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diffusion"/>
+        <Class IRI="#cascade_of_events_being_detected"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#disperse_incident_energy_in_space"/>
@@ -2506,7 +3066,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#full-field_imaging"/>
-        <Class IRI="#space_time"/>
+        <Class IRI="#imaging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grating"/>
+        <Class IRI="#primary_beam_modification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#hard_x-ray"/>
@@ -2533,8 +3097,20 @@
         <Class IRI="#polarization"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#imaging"/>
+        <Class IRI="#space_time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#individual_specimen"/>
+        <Class IRI="#space_time"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#infrared"/>
         <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laminography"/>
+        <Class IRI="#tomography"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#large_length_scales"/>
@@ -2583,6 +3159,10 @@
     <SubClassOf>
         <Class IRI="#monochromatic_beam"/>
         <Class IRI="#photon_energy_bandwidth"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multi_sample_spatial_resolution"/>
+        <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#named_photon_energy_ranges"/>
@@ -2635,6 +3215,10 @@
     <SubClassOf>
         <Class IRI="#powder_sample"/>
         <Class IRI="#sample_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#primary_beam_modification"/>
+        <Class IRI="#sample_input_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ramp_compression"/>
@@ -2698,15 +3282,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#scanning_imaging"/>
-        <Class IRI="#space_time"/>
+        <Class IRI="#imaging"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#serial_scanning"/>
+        <Class IRI="#serial_screening"/>
         <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#shock_compression"/>
         <Class IRI="#sample_compression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#simultanious_reference"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#single_crystal_sample"/>
@@ -2723,6 +3311,10 @@
     <SubClassOf>
         <Class IRI="#space_time"/>
         <Class IRI="#technique_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#speckle_pattern"/>
+        <Class IRI="#primary_beam_modification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#strip_detector"/>
@@ -2755,6 +3347,10 @@
     <SubClassOf>
         <Class IRI="#ultra_large_length_scales"/>
         <Class IRI="#detection_resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unmodified_beam"/>
+        <Class IRI="#primary_beam_modification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#vertical_linear_polarization"/>
@@ -2991,7 +3587,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CRYO-EM</IRI>
-        <Literal>Cryogenic Electron Microscopy (Cryo-EM) is EM performed on rapidly frozen samples to preserve native structures in a near-physiological, vitrified state. It enables high-resolution 3D reconstruction of biological macromolecules and complexes without the need for crystallization.</Literal>
+        <Literal>Cryo-Electron Microscopy (Cryo-EM) measures phase shifts in electron waves transmitted through cryogenically preserved samples, producing high-contrast 2D images of biological macromolecules or soft materials at near-atomic resolution. Similar to serial crystallography, it reconstructs 3D structures from many randomly oriented single-particle images of identical molecules.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2999,14 +3595,39 @@
         <Literal>CRYO-EM</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#CRYO-EM</IRI>
-        <Literal>Cryogenic electron microscopy</Literal>
+        <Literal>Cryo-Electron Microscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CRYO-ET</IRI>
+        <Literal>Cryo-Electron Tomography (Cryo-ET) measures phase shifts in transmitted electrons from multiple tilt angles of a cryogenically preserved sample to reconstruct 3D structures of cells or macromolecular assemblies with enhanced contrast and nanometer resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CRYO-ET</IRI>
+        <Literal>CRYO-ET</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
-        <IRI>#CRYO-EM</IRI>
-        <Literal>Cryo-electron microscopy</Literal>
+        <IRI>#CRYO-ET</IRI>
+        <Literal>Cryo-Electron Tomography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CT</IRI>
+        <Literal>Computed Tomography (CT) measures projections of radiation (such as X-rays, electrons, or neutrons) through a sample from multiple angles and reconstructs 3D internal maps of material properties, providing structural information whose contrast depends on the measured interaction (e.g., absorption, phase, fluorescence, or diffraction).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CT</IRI>
+        <Literal>CT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#CT</IRI>
+        <Literal>Computed Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3456,7 +4077,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HiP-CT</IRI>
-        <Literal>Hierarchical Phase-Contrast Tomography (HiP-CT) measures phase-contrast X-ray projections from intact large biological organs at multiple spatial resolutions, providing 3D images that reveal whole-organ structure down to cellular-level detail without destructive sectioning.</Literal>
+        <Literal>Hierarchical Phase-Contrast Tomography (HiP-CT) measures X-ray phase-contrast projections at multiple spatial resolutions to reconstruct 3D images spanning from macroscopic to microscopic scales, enabling multiscale analysis of complex internal structures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3482,6 +4103,36 @@
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#IXS</IRI>
         <Literal>Inelastic X-ray Scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KES</IRI>
+        <Literal>K-edge Subtraction Imaging (KES) measures transmitted X-ray intensity across photon energies around the absorption edge of a specific element, producing element-selective 2D maps that reveal its spatial distribution in the sample.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KES</IRI>
+        <Literal>KES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#KES</IRI>
+        <Literal>K-edge Subtraction Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KESCT</IRI>
+        <Literal>K-edge Subtraction Tomography (KESCT) measures transmitted X-rays across the absorption edge of a target element at multiple projection angles to reconstruct 3D maps of elemental concentrations with high chemical specificity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KESCT</IRI>
+        <Literal>KESCT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#KESCT</IRI>
+        <Literal>K-edge Subtraction Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3795,6 +4446,51 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PB-XPCI</IRI>
+        <Literal>Propagation-Based X-ray Phase-Contrast Imaging (PB-XPCI) measures phase-induced interference fringes that form as X-rays propagate beyond a sample, producing 2D images with enhanced contrast for weakly absorbing or low-Z materials. By placing the detector at a sufficient distance from the sample, PB-XPCI converts subtle phase variations into measurable intensity modulations, revealing fine internal features and interfaces not visible in conventional absorption imaging.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PB-XPCI</IRI>
+        <Literal>PB-XPCI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#PB-XPCI</IRI>
+        <Literal>Propagation-Based X-ray Phase-Contrast Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PB-XPCT</IRI>
+        <Literal>X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample–detector distances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PB-XPCT</IRI>
+        <Literal>PB-XPCT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#PB-XPCT</IRI>
+        <Literal>Propagation-based X-ray Phase-Contrast Tomograph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PCI</IRI>
+        <Literal>Phase-Contrast X-ray Imaging (PCI) measures phase shifts of X-rays transmitted through a sample to generate 2D images with enhanced contrast for weakly absorbing or low-Z materials. By exploiting phase variations rather than absorption, PCI reveals fine structural details such as internal boundaries, fibers, and low-density regions that are invisible in conventional absorption-based X-ray imaging.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PCI</IRI>
+        <Literal>PCI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#PCI</IRI>
+        <Literal>Phase-Contrast X-ray Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PDF</IRI>
         <Literal>Pair Distribution Function (PDF) analysis measures the distribution of interatomic distances by Fourier-transforming total scattering data, revealing local atomic arrangements and disorder in both crystalline and amorphous materials.</Literal>
     </AnnotationAssertion>
@@ -3856,7 +4552,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PXCT</IRI>
-        <Literal>Ptychographic X-ray Computed Tomography (PXCT) combines ptychography and tomography to measure 3D electron density by scanning a coherent X-ray beam and recording diffraction patterns from overlapping regions at multiple angles. It provides high-resolution, quantitative 3D images of internal nanoscale structure.</Literal>
+        <Literal>Ptychographic X-ray Computed Tomography (PXCT) combines coherent diffraction imaging and tomography by scanning overlapping regions at multiple angles to reconstruct 3D quantitative electron density maps with nanometer-scale resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4268,6 +4964,21 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XACT</IRI>
+        <Literal>X-ray Absorption Tomography measures X-ray attenuation through a sample from multiple projection angles and reconstructs a 3D map of the absorption coefficient, revealing internal density variations within the material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XACT</IRI>
+        <Literal>XACT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#XACT</IRI>
+        <Literal>X-ray Absorption Tomography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XANES</IRI>
         <Literal>XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element’s absorption edge, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
     </AnnotationAssertion>
@@ -4280,6 +4991,21 @@ The second definition is chosen for this technique.</Literal>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#XANES</IRI>
         <Literal>X-ray Absorption Near Edge Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XAPCT</IRI>
+        <Literal>X-ray Analyzer-Based Phase-Contrast Tomography (XAPCT) measures angular deviations of X-rays transmitted through a sample using a crystal analyzer to map phase gradients, providing 3D images with high contrast for interfaces and internal structures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XAPCT</IRI>
+        <Literal>XAPCT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#XAPCT</IRI>
+        <Literal>X-ray Analyzer-Based Phase-Contrast Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4314,7 +5040,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XCL</IRI>
-        <Literal>X-ray Computed Laminography (XCL) measures X-ray transmission through flat, extended samples at multiple tilted angles to reconstruct high-resolution 3D images of internal structures that are challenging for conventional tomography.</Literal>
+        <Literal>X-ray Computed Laminography (XCL) measures the interaction of X-rays with flat or extended samples (through absorption, phase, or scattering contrast) at multiple tilted angles to reconstruct 3D images of internal structures that are difficult to access with conventional tomography due to sample geometry.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4389,7 +5115,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XFCT</IRI>
-        <Literal>X-ray Fluorescence Tomography (XFCT) measures fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution.</Literal>
+        <Literal>X-ray Fluorescence Tomography (XFCT) measures characteristic fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4418,8 +5144,38 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XGI</IRI>
+        <Literal>X-ray Ghost Imaging (XGI) measures correlations between structured illumination patterns and total transmitted intensities to reconstruct 2D or 3D images without spatially resolved detection. Unlike speckle imaging, ghost imaging simultaneously records reference (without sample) and sample-affected signals using a beam splitter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XGI</IRI>
+        <Literal>XGI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#XGI</IRI>
+        <Literal>X-ray Ghost Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XGPCT</IRI>
+        <Literal>X-ray Grating Phase-Contrast Tomography (XGPCT) measures X-ray phase shifts using an interferometric grating setup across multiple projection angles, providing 3D images with high sensitivity to small refractive index variations in soft or low-Z materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XGPCT</IRI>
+        <Literal>XGPCT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#XGPCT</IRI>
+        <Literal>X-ray Grating Phase-Contrast Tomography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XHT</IRI>
-        <Literal>X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple angles to reconstruct high-resolution 3D electron density maps of a sample.</Literal>
+        <Literal>X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple sample–detector distances and projection angles to reconstruct 3D electron density maps with sub-micrometer resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4509,7 +5265,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XNHT</IRI>
-        <Literal>X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT, providing nanoscale 3D imaging of internal sample structure by combining holography and tomography with nanoscale focusing.</Literal>
+        <Literal>X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT that combines nanoscale focusing and holographic tomography to obtain 3D electron density maps of internal structure at nanometer resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4564,7 +5320,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XPCT</IRI>
-        <Literal>X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample at multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures not visible in conventional absorption tomography.</Literal>
+        <Literal>X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample from multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures invisible in conventional absorption tomography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4609,7 +5365,7 @@ The second definition is chosen for this technique.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRCT</IRI>
-        <Literal>X-ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample.</Literal>
+        <Literal>X-ray Computed Tomography (XRCT) measures the interaction of X-rays with a sample (through absorption, phase, or scattering contrast) from multiple angles to reconstruct a 3D volume, providing detailed internal structural information such as density, morphology, and defects.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4733,6 +5489,36 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XSPCI</IRI>
+        <Literal>X-ray Speckle Phase-Contrast Imaging (XSPCI) measures phase shifts by analyzing distortions in speckle patterns produced by a random or structured diffuser, providing 2D images with both phase and dark-field contrast. The phase contrast enhances visibility of weakly absorbing features, while the dark-field signal quantifies sample (in)homogeneity within individual detector pixels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XSPCI</IRI>
+        <Literal>XSPCI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#XSPCI</IRI>
+        <Literal>X-ray Speckle Phase-Contrast Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XSPCT</IRI>
+        <Literal>X-ray Speckle Phase-Contrast Tomography (XSPCT) measures phase shifts by tracking speckle pattern distortions as the sample rotates, enabling 3D imaging of weakly absorbing materials and providing both phase and dark-field contrast, which is a measure for sample (in)homogeneity within one detector pixel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XSPCT</IRI>
+        <Literal>XSPCT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#XSPCT</IRI>
+        <Literal>X-ray Speckle Phase-Contrast Tomography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ambient_temperature</IRI>
         <Literal>Reference: 20–25 °C</Literal>
     </AnnotationAssertion>
@@ -4815,6 +5601,11 @@ The second definition is chosen for this technique.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#diffraction</IRI>
         <Literal>Detecting interference of elastically scattering photons or particles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#diffusion</IRI>
+        <Literal>Also referred to as &quot;dark-field&quot;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4913,6 +5704,11 @@ In addition, experimental techniques are semantically defined by
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#grating</IRI>
+        <Literal>X-ray beam goes through an absorbing periodic structured material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hard_x-ray</IRI>
         <Literal>Defined using an object property (has_photon_energy_range) to connect to another class (photon_energy_range) that has the data properties (value and unit). It creates a chain where the characteristics of other classes included in the definition define the class. Works with the reasoner!</Literal>
     </AnnotationAssertion>
@@ -4964,6 +5760,16 @@ Resolving power (Δ2θ/θ)</Literal>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>#high_vacuum</IRI>
         <Literal>HV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#individual_specimen</IRI>
+        <Literal>A method of data collection where measuring one sample providse enough data that can be analyzed. You don&apos;t necessarily need many. Although might still do it for static purposes (e.g. measuring several lungs).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#laminography</IRI>
+        <Literal>Many images of the sample under different orientations from which a 3D volume can be reconstructed. The rotation axis is titled with respect to the primary beam.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5070,6 +5876,11 @@ Large structural features: supramolecular structures, particle sizes, and shapes
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#monochromatic_beam</IRI>
         <Literal>Photon energy bandwidth is smaller than ???</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#multi_sample_spatial_resolution</IRI>
+        <Literal>Detect at different resolutions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5214,13 +6025,18 @@ and remove this class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#serial_scanning</IRI>
-        <Literal>A method of data collection where many samples of the same kind are streaming through the sample input (e.g. X-ray beam), one at a time.</Literal>
+        <IRI>#serial_screening</IRI>
+        <Literal>A method of data collection where many samples of the same kind are streaming through the sample input (e.g. X-ray beam), one at a time. Measuring only one does not provide enough data that can be analyzed, you need many.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#shock_compression</IRI>
         <Literal>High strain rates (~10^6 to 10^9 s⁻¹).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#simultanious_reference</IRI>
+        <Literal>Detect a reference compound or primary beam profile at the same time as measuring the actual sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5240,6 +6056,11 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#space_time</IRI>
         <Literal>Things that happen during the experiment as a function of space and time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#speckle_pattern</IRI>
+        <Literal>X-ray beam goes through a structured material (e.g. sandpaper).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5469,5 +6290,5 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
