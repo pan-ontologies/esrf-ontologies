@@ -318,6 +318,9 @@
         <Class IRI="#TR-XRD"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TR-XSS"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TXRF"/>
     </Declaration>
     <Declaration>
@@ -472,6 +475,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#charged_particles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chemical_solution"/>
     </Declaration>
     <Declaration>
         <Class IRI="#cryogenic_temperature"/>
@@ -880,6 +886,9 @@
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detection_as_a_function_of_time"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#BioSAXS"/>
@@ -2091,6 +2100,28 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#TR-XSS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_time"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#chemical_solution"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#TXRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -2985,6 +3016,10 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#chemical_solution"/>
+        <Class IRI="#sample_type"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#cryogenic_temperature"/>
         <Class IRI="#sample_temperature"/>
     </SubClassOf>
@@ -3010,6 +3045,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#detection_as_a_function_of_sample_to_detector_distance"/>
+        <Class IRI="#space_time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detection_as_a_function_of_time"/>
         <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
@@ -4874,6 +4913,21 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TR-XSS</IRI>
+        <Literal>Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TR-XSS</IRI>
+        <Literal>TR-XSS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#TR-XSS</IRI>
+        <Literal>Time-resolved X-ray solution scattering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TXRF</IRI>
         <Literal>Total Reflection X-ray Fluorescence (TXRF) measures characteristic X-rays emitted by a sample under total external reflection conditions, providing highly sensitive, surface-specific elemental analysis with minimal sample preparation.</Literal>
     </AnnotationAssertion>
@@ -5564,6 +5618,11 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#chemical_solution</IRI>
+        <Literal>A homogeneous mixture of solutes dissolved in a solvent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#cryogenic_temperature</IRI>
         <Literal>1 - 77 K</Literal>
     </AnnotationAssertion>
@@ -5586,6 +5645,11 @@ The second definition is chosen for this technique.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#detection_as_a_function_of_incident_energy</IRI>
         <Literal>Detect as a function of the incident photon or particle energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detection_as_a_function_of_time</IRI>
+        <Literal>Used to describe techniques that involve time-resolved measurements</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6290,5 +6354,5 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 

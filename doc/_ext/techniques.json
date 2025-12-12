@@ -425,6 +425,11 @@
     "Description": "Time-Resolved X-ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials."
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TR-XSS\">TR-XSS</a>",
+    "Alternative names": "Time-resolved X-ray solution scattering",
+    "Description": "Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent."
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TR‑SSX\">TR‑SSX</a>",
     "Alternative names": "Time-Resolved Serial Synchrotron Crystallography",
     "Description": "Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX enables the reconstruction of 3D “molecular movies” that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution."
