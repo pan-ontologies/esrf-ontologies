@@ -435,6 +435,9 @@
         <Class IRI="#charged_particles"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#chemical_solution"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#cryogenic_temperature"/>
     </Declaration>
     <Declaration>
@@ -448,6 +451,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detection_as_a_function_of_time"/>
     </Declaration>
     <Declaration>
         <Class IRI="#detection_resolution"/>
@@ -492,6 +498,9 @@
         <Class IRI="#full-field_imaging"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#gas"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#hard_x-ray"/>
     </Declaration>
     <Declaration>
@@ -520,6 +529,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#left_circular_polarization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#liquid"/>
     </Declaration>
     <Declaration>
         <Class IRI="#low_overpressure"/>
@@ -651,7 +663,13 @@
         <Class IRI="#soft_x-ray"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#solid"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#space_time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#state_of_matter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#strip_detector"/>
@@ -712,6 +730,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_state_of_matter"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
@@ -1824,6 +1845,10 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_time"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#diffraction_of_elastic_scattering"/>
             </ObjectSomeValuesFrom>
@@ -1833,7 +1858,7 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_type"/>
-                <Class IRI="#biological_sample"/>
+                <Class IRI="#chemical_solution"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -2094,6 +2119,34 @@
     <EquivalentClasses>
         <Class IRI="#absorption"/>
         <Class IRI="#atomic_core_excitation"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#chemical_solution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_state_of_matter"/>
+            <Class IRI="#liquid"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#polycrystalline_sample"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_state_of_matter"/>
+            <Class IRI="#solid"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#powder_sample"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_state_of_matter"/>
+            <Class IRI="#solid"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#single_crystal_sample"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_state_of_matter"/>
+            <Class IRI="#solid"/>
+        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#soft_x-ray"/>
@@ -2458,6 +2511,10 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#chemical_solution"/>
+        <Class IRI="#sample_type"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#cryogenic_temperature"/>
         <Class IRI="#sample_temperature"/>
     </SubClassOf>
@@ -2476,6 +2533,10 @@
     <SubClassOf>
         <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
         <Class IRI="#detection_as_a_function_of_incident_energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detection_as_a_function_of_time"/>
+        <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#detection_resolution"/>
@@ -2568,6 +2629,10 @@
     <SubClassOf>
         <Class IRI="#left_circular_polarization"/>
         <Class IRI="#polarization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#liquid"/>
+        <Class IRI="#state_of_matter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#low_overpressure"/>
@@ -2742,7 +2807,15 @@
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#solid"/>
+        <Class IRI="#state_of_matter"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#space_time"/>
+        <Class IRI="#technique_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#state_of_matter"/>
         <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
@@ -2840,6 +2913,10 @@
         <NamedIndividual IRI="#example_photon_count"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_state_of_matter"/>
+        <Class IRI="#sample_type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
@@ -2871,6 +2948,10 @@
         <ObjectProperty IRI="#requires_sample_type"/>
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_state_of_matter"/>
+        <Class IRI="#state_of_matter"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
         <Class IRI="#space_time"/>
@@ -4836,6 +4917,11 @@ The second definition is chosen for this technique.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#detection_as_a_function_of_incident_energy</IRI>
         <Literal>Detect as a function of the incident photon or particle energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detection_as_a_function_of_time</IRI>
+        <Literal>Meant for time resolved measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

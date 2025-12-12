@@ -1,13 +1,5 @@
 [
   {
-    "iri": "http://purl.org/pan-science/ESRFET#3DXRD",
-    "names": [
-      "3DXRD",
-      "3D X-ray Diffraction"
-    ],
-    "description": "3DXRD is a far field diffraction technique capable of reconstructing polycrystalline materials from the individual diffraction spots recorded in the diffraction pattern given that the crystallographic parameters of the material are known. The success of the technique is based on the ability of the individual diffraction spots to be separated. This means there is a trade off between the number of grains and the degree of strain that is measurable."
-  },
-  {
     "iri": "http://purl.org/pan-science/ESRFET#ARPES",
     "names": [
       "ARPES",
@@ -74,14 +66,6 @@
       "Diffraction Anomalous Fine Structure"
     ],
     "description": "Diffraction Anomalous Fine Structure (DAFS) measures the intensity of Bragg diffraction as a function of X-ray photon energy near an absorption edge. It combines diffraction and XAS to provide element-specific structural information, such as site occupancy, bonding environment, and local distortions in crystals."
-  },
-  {
-    "iri": "http://purl.org/pan-science/ESRFET#DCT",
-    "names": [
-      "DCT",
-      "Diffraction Contrast Tomography"
-    ],
-    "description": "DCT is a near-field diffraction-based imaging technique that provides high-resolution grain maps of polycrystalline materials (Ludwig et al. 2008). For each individual grain, the technique can provide orientation and average elastic strain tensor components with an accuracy of a few times 1e-4 (Reischig et al. 2013). The technique combines the concepts of image reconstruction from projections (tomography) and X-ray diffraction imaging (topography)."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#DFXM",
@@ -275,14 +259,6 @@
       "High-Pressure X-ray Diffraction"
     ],
     "description": "High-Pressure X-ray Diffraction (HP-XRD) measures X-ray diffraction patterns of materials compressed to high pressures, revealing structural changes such as phase transitions, lattice compression, and equation-of-state behavior."
-  },
-  {
-    "iri": "http://purl.org/pan-science/ESRFET#HR-XRPD",
-    "names": [
-      "HR-XRPD",
-      "High-Resolution X-ray Powder Diffraction"
-    ],
-    "description": "High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#HT-XRD",
