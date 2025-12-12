@@ -411,6 +411,22 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#serial_screening"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
                         <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
                     </owl:Restriction>
@@ -425,10 +441,77 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>Cryogenic Electron Microscopy (Cryo-EM) is EM performed on rapidly frozen samples to preserve native structures in a near-physiological, vitrified state. It enables high-resolution 3D reconstruction of biological macromolecules and complexes without the need for crystallization.</rdfs:comment>
+        <rdfs:comment>Cryo-Electron Microscopy (Cryo-EM) measures phase shifts in electron waves transmitted through cryogenically preserved samples, producing high-contrast 2D images of biological macromolecules or soft materials at near-atomic resolution. Similar to serial crystallography, it reconstructs 3D structures from many randomly oriented single-particle images of identical molecules.</rdfs:comment>
         <rdfs:label>CRYO-EM</rdfs:label>
-        <skos:altLabel>Cryogenic electron microscopy</skos:altLabel>
-        <skos:prefLabel>Cryo-electron microscopy</skos:prefLabel>
+        <skos:prefLabel>Cryo-Electron Microscopy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#CRYO-ET -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#CRYO-ET">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#individual_specimen"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#electrons"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input_property"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#cryogenic_temperature"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Cryo-Electron Tomography (Cryo-ET) measures phase shifts in transmitted electrons from multiple tilt angles of a cryogenically preserved sample to reconstruct 3D structures of cells or macromolecular assemblies with enhanced contrast and nanometer resolution.</rdfs:comment>
+        <rdfs:label>CRYO-ET</rdfs:label>
+        <skos:prefLabel>Cryo-Electron Tomography</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#CT -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#CT">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Computed Tomography (CT) measures projections of radiation (such as X-rays, electrons, or neutrons) through a sample from multiple angles and reconstructs 3D internal maps of material properties, providing structural information whose contrast depends on the measured interaction (e.g., absorption, phase, fluorescence, or diffraction).</rdfs:comment>
+        <rdfs:label>CT</rdfs:label>
+        <skos:prefLabel>Computed Tomography</skos:prefLabel>
     </owl:Class>
     
 
@@ -799,7 +882,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#experimental_technique"/>
         <rdfs:comment>Electron Microscopy (EM) uses a beam of electrons as illumination, controlled by electron optics analogous to glass lenses in light microscopes, to measure electron scattering or transmission through a sample. This technique provides high-resolution images and electron diffraction patterns, revealing structural, morphological, and compositional information at nanometer to atomic scales.</rdfs:comment>
         <rdfs:label>EM</rdfs:label>
         <skos:prefLabel>Electron Microscopy</skos:prefLabel>
@@ -1348,8 +1430,34 @@
 
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#HiP-CT">
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#experimental_technique"/>
-        <rdfs:comment>Hierarchical Phase-Contrast Tomography (HiP-CT) measures phase-contrast X-ray projections from intact large biological organs at multiple spatial resolutions, providing 3D images that reveal whole-organ structure down to cellular-level detail without destructive sectioning.</rdfs:comment>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#multi_sample_spatial_resolution"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Hierarchical Phase-Contrast Tomography (HiP-CT) measures X-ray phase-contrast projections at multiple spatial resolutions to reconstruct 3D images spanning from macroscopic to microscopic scales, enabling multiscale analysis of complex internal structures.</rdfs:comment>
         <rdfs:label>HiP-CT</rdfs:label>
         <skos:prefLabel>Hierarchical Phase-Contrast Tomography</skos:prefLabel>
     </owl:Class>
@@ -1364,6 +1472,70 @@
         <rdfs:comment>Inelastic X-ray Scattering (IXS) measures the energy and momentum change of X-rays scattered inelastically by a sample, providing information on electronic excitations, phonons, and other dynamic processes at the atomic scale.</rdfs:comment>
         <rdfs:label>IXS</rdfs:label>
         <skos:prefLabel>Inelastic X-ray Scattering</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#KES -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#KES">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_incident_energies"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/PaNET/PaNET01106"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>K-edge Subtraction Imaging (KES) measures transmitted X-ray intensity across photon energies around the absorption edge of a specific element, producing element-selective 2D maps that reveal its spatial distribution in the sample.</rdfs:comment>
+        <rdfs:label>KES</rdfs:label>
+        <skos:prefLabel>K-edge Subtraction Imaging</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#KESCT -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#KESCT">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_incident_energies"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>K-edge Subtraction Tomography (KESCT) measures transmitted X-rays across the absorption edge of a target element at multiple projection angles to reconstruct 3D maps of elemental concentrations with high chemical specificity.</rdfs:comment>
+        <rdfs:label>KESCT</rdfs:label>
+        <skos:prefLabel>K-edge Subtraction Tomography</skos:prefLabel>
     </owl:Class>
     
 
@@ -1777,6 +1949,112 @@
     
 
 
+    <!-- http://purl.org/pan-science/ESRFET#PB-XPCI -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#PB-XPCI">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/PaNET/PaNET01106"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input_property"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#unmodified_beam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Propagation-Based X-ray Phase-Contrast Imaging (PB-XPCI) measures phase-induced interference fringes that form as X-rays propagate beyond a sample, producing 2D images with enhanced contrast for weakly absorbing or low-Z materials. By placing the detector at a sufficient distance from the sample, PB-XPCI converts subtle phase variations into measurable intensity modulations, revealing fine internal features and interfaces not visible in conventional absorption imaging.</rdfs:comment>
+        <rdfs:label>PB-XPCI</rdfs:label>
+        <skos:prefLabel>Propagation-Based X-ray Phase-Contrast Imaging</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#PB-XPCT -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#PB-XPCT">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input_property"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#unmodified_beam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample–detector distances.</rdfs:comment>
+        <rdfs:label>PB-XPCT</rdfs:label>
+        <skos:prefLabel>Propagation-based X-ray Phase-Contrast Tomograph</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#PCI -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#PCI">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/PaNET/PaNET01106"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Phase-Contrast X-ray Imaging (PCI) measures phase shifts of X-rays transmitted through a sample to generate 2D images with enhanced contrast for weakly absorbing or low-Z materials. By exploiting phase variations rather than absorption, PCI reveals fine structural details such as internal boundaries, fibers, and low-density regions that are invisible in conventional absorption-based X-ray imaging.</rdfs:comment>
+        <rdfs:label>PCI</rdfs:label>
+        <skos:prefLabel>Phase-Contrast X-ray Imaging</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/pan-science/ESRFET#PDF -->
 
 
@@ -1878,7 +2156,7 @@
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#PXCT">
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#experimental_technique"/>
-        <rdfs:comment>Ptychographic X-ray Computed Tomography (PXCT) combines ptychography and tomography to measure 3D electron density by scanning a coherent X-ray beam and recording diffraction patterns from overlapping regions at multiple angles. It provides high-resolution, quantitative 3D images of internal nanoscale structure.</rdfs:comment>
+        <rdfs:comment>Ptychographic X-ray Computed Tomography (PXCT) combines coherent diffraction imaging and tomography by scanning overlapping regions at multiple angles to reconstruct 3D quantitative electron density maps with nanometer-scale resolution.</rdfs:comment>
         <rdfs:label>PXCT</rdfs:label>
         <skos:prefLabel>Ptychographic X-ray Computed Tomography</skos:prefLabel>
     </owl:Class>
@@ -2152,7 +2430,7 @@ The second definition is chosen for this technique.</rdfs:comment>
                     <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#serial_scanning"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#serial_screening"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
@@ -2471,6 +2749,36 @@ The second definition is chosen for this technique.</rdfs:comment>
     
 
 
+    <!-- http://purl.org/pan-science/ESRFET#XACT -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XACT">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray Absorption Tomography measures X-ray attenuation through a sample from multiple projection angles and reconstructs a 3D map of the absorption coefficient, revealing internal density variations within the material.</rdfs:comment>
+        <rdfs:label>XACT</rdfs:label>
+        <skos:prefLabel>X-ray Absorption Tomography</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/pan-science/ESRFET#XANES -->
 
 
@@ -2501,6 +2809,56 @@ The second definition is chosen for this technique.</rdfs:comment>
         <rdfs:comment>XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element’s absorption edge, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</rdfs:comment>
         <rdfs:label>XANES</rdfs:label>
         <skos:prefLabel>X-ray Absorption Near Edge Structure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#XAPCT -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XAPCT">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#diffusion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_with_a_detector_type"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#analyzer_crystal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#monochromatic_beam"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray Analyzer-Based Phase-Contrast Tomography (XAPCT) measures angular deviations of X-rays transmitted through a sample using a crystal analyzer to map phase gradients, providing 3D images with high contrast for interfaces and internal structures.</rdfs:comment>
+        <rdfs:label>XAPCT</rdfs:label>
+        <skos:prefLabel>X-ray Analyzer-Based Phase-Contrast Tomography</skos:prefLabel>
     </owl:Class>
     
 
@@ -2555,8 +2913,22 @@ The second definition is chosen for this technique.</rdfs:comment>
 
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XCL">
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#experimental_technique"/>
-        <rdfs:comment>X-ray Computed Laminography (XCL) measures X-ray transmission through flat, extended samples at multiple tilted angles to reconstruct high-resolution 3D images of internal structures that are challenging for conventional tomography.</rdfs:comment>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#laminography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray Computed Laminography (XCL) measures the interaction of X-rays with flat or extended samples (through absorption, phase, or scattering contrast) at multiple tilted angles to reconstruct 3D images of internal structures that are difficult to access with conventional tomography due to sample geometry.</rdfs:comment>
         <rdfs:label>XCL</rdfs:label>
         <skos:prefLabel>X-ray Computed Laminography</skos:prefLabel>
     </owl:Class>
@@ -2642,7 +3014,7 @@ The second definition is chosen for this technique.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>X-ray Fluorescence Tomography (XFCT) measures fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution.</rdfs:comment>
+        <rdfs:comment>X-ray Fluorescence Tomography (XFCT) measures characteristic fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution.</rdfs:comment>
         <rdfs:label>XFCT</rdfs:label>
         <skos:prefLabel>X-ray Fluorescence Tomography</skos:prefLabel>
     </owl:Class>
@@ -2661,12 +3033,131 @@ The second definition is chosen for this technique.</rdfs:comment>
     
 
 
+    <!-- http://purl.org/pan-science/ESRFET#XGI -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XGI">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#simultanious_reference"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/PaNET/PaNET01106"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#diffusion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input_property"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#speckle_pattern"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+        <rdfs:comment>X-ray Ghost Imaging (XGI) measures correlations between structured illumination patterns and total transmitted intensities to reconstruct 2D or 3D images without spatially resolved detection. Unlike speckle imaging, ghost imaging simultaneously records reference (without sample) and sample-affected signals using a beam splitter.</rdfs:comment>
+        <rdfs:label>XGI</rdfs:label>
+        <skos:prefLabel>X-ray Ghost Imaging</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#XGPCT -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XGPCT">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#diffusion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input_property"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#grating"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray Grating Phase-Contrast Tomography (XGPCT) measures X-ray phase shifts using an interferometric grating setup across multiple projection angles, providing 3D images with high sensitivity to small refractive index variations in soft or low-Z materials.</rdfs:comment>
+        <rdfs:label>XGPCT</rdfs:label>
+        <skos:prefLabel>X-ray Grating Phase-Contrast Tomography</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/pan-science/ESRFET#XHT -->
 
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XHT">
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#experimental_technique"/>
-        <rdfs:comment>X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple angles to reconstruct high-resolution 3D electron density maps of a sample.</rdfs:comment>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input_property"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#unmodified_beam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple sample–detector distances and projection angles to reconstruct 3D electron density maps with sub-micrometer resolution.</rdfs:comment>
         <rdfs:label>XHT</rdfs:label>
         <skos:prefLabel>X-ray HoloTomography</skos:prefLabel>
     </owl:Class>
@@ -2737,8 +3228,42 @@ The second definition is chosen for this technique.</rdfs:comment>
 
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XNHT">
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#experimental_technique"/>
-        <rdfs:comment>X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT, providing nanoscale 3D imaging of internal sample structure by combining holography and tomography with nanoscale focusing.</rdfs:comment>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#nano_sample_spatial_resolution"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input_property"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#unmodified_beam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT that combines nanoscale focusing and holographic tomography to obtain 3D electron density maps of internal structure at nanometer resolution.</rdfs:comment>
         <rdfs:label>XNHT</rdfs:label>
         <skos:prefLabel>X-ray Nano-HoloTomography</skos:prefLabel>
     </owl:Class>
@@ -2775,8 +3300,30 @@ The second definition is chosen for this technique.</rdfs:comment>
 
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XPCT">
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#experimental_technique"/>
-        <rdfs:comment>X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample at multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures not visible in conventional absorption tomography.</rdfs:comment>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample from multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures invisible in conventional absorption tomography.</rdfs:comment>
         <rdfs:label>XPCT</rdfs:label>
         <skos:prefLabel>Phase-Contrast Tomography</skos:prefLabel>
     </owl:Class>
@@ -2822,8 +3369,22 @@ The second definition is chosen for this technique.</rdfs:comment>
 
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XRCT">
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#experimental_technique"/>
-        <rdfs:comment>X-ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample.</rdfs:comment>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray Computed Tomography (XRCT) measures the interaction of X-rays with a sample (through absorption, phase, or scattering contrast) from multiple angles to reconstruct a 3D volume, providing detailed internal structural information such as density, morphology, and defects.</rdfs:comment>
         <rdfs:label>XRCT</rdfs:label>
         <skos:prefLabel>X-ray Computed Tomography</skos:prefLabel>
     </owl:Class>
@@ -2975,6 +3536,90 @@ The second definition is chosen for this technique.</rdfs:comment>
     
 
 
+    <!-- http://purl.org/pan-science/ESRFET#XSPCI -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XSPCI">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/PaNET/PaNET01106"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#diffusion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input_property"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#speckle_pattern"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray Speckle Phase-Contrast Imaging (XSPCI) measures phase shifts by analyzing distortions in speckle patterns produced by a random or structured diffuser, providing 2D images with both phase and dark-field contrast. The phase contrast enhances visibility of weakly absorbing features, while the dark-field signal quantifies sample (in)homogeneity within individual detector pixels.</rdfs:comment>
+        <rdfs:label>XSPCI</rdfs:label>
+        <skos:prefLabel>X-ray Speckle Phase-Contrast Imaging</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#XSPCT -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#XSPCT">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#diffusion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#refraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#transmission"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input_property"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#speckle_pattern"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>X-ray Speckle Phase-Contrast Tomography (XSPCT) measures phase shifts by tracking speckle pattern distortions as the sample rotates, enabling 3D imaging of weakly absorbing materials and providing both phase and dark-field contrast, which is a measure for sample (in)homogeneity within one detector pixel.</rdfs:comment>
+        <rdfs:label>XSPCT</rdfs:label>
+        <skos:prefLabel>X-ray Speckle Phase-Contrast Tomography</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/pan-science/ESRFET#absorption -->
 
 
@@ -2992,6 +3637,15 @@ The second definition is chosen for this technique.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#sample_temperature"/>
         <rdfs:comment>Reference: 20–25 °C</rdfs:comment>
         <rdfs:comment>~300 K</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#analyzer_crystal -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#analyzer_crystal">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#detector_type"/>
     </owl:Class>
     
 
@@ -3116,6 +3770,24 @@ The second definition is chosen for this technique.</rdfs:comment>
     
 
 
+    <!-- http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#space_time"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/pan-science/ESRFET#detection_resolution -->
 
 
@@ -3151,6 +3823,16 @@ The second definition is chosen for this technique.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering">
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#diffraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#diffusion -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#diffusion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#cascade_of_events_being_detected"/>
+        <rdfs:comment>Also referred to as &quot;dark-field&quot;.</rdfs:comment>
     </owl:Class>
     
 
@@ -3258,9 +3940,19 @@ In addition, experimental techniques are semantically defined by
 
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#full-field_imaging">
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#space_time"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#imaging"/>
         <rdfs:comment>Image of the sample in a single measurement (no motion of beam, sample or detector)</rdfs:comment>
         <rdfs:comment>Measure sample characteristics in a 2D plane in space by why of detection.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#grating -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#grating">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#primary_beam_modification"/>
+        <rdfs:comment>X-ray beam goes through an absorbing periodic structured material.</rdfs:comment>
     </owl:Class>
     
 
@@ -3333,11 +4025,40 @@ Resolving power (Δ2θ/θ)</rdfs:comment>
     
 
 
+    <!-- http://purl.org/pan-science/ESRFET#imaging -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#imaging">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#space_time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#individual_specimen -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#individual_specimen">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#space_time"/>
+        <rdfs:comment>A method of data collection where measuring one sample providse enough data that can be analyzed. You don&apos;t necessarily need many. Although might still do it for static purposes (e.g. measuring several lungs).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/pan-science/ESRFET#infrared -->
 
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#infrared">
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#named_photon_energy_ranges"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#laminography -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#laminography">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#tomography"/>
+        <rdfs:comment>Many images of the sample under different orientations from which a 3D volume can be reconstructed. The rotation axis is titled with respect to the primary beam.</rdfs:comment>
     </owl:Class>
     
 
@@ -3471,6 +4192,16 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     
 
 
+    <!-- http://purl.org/pan-science/ESRFET#multi_sample_spatial_resolution -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#multi_sample_spatial_resolution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#sample_spatial_resolution"/>
+        <rdfs:comment>Detect at different resolutions.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/pan-science/ESRFET#named_photon_energy_ranges -->
 
 
@@ -3593,6 +4324,15 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#powder_sample">
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#sample_type"/>
         <rdfs:comment>A powder is a collection of tiny, separate crystalline particles with random orientations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#primary_beam_modification -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#primary_beam_modification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#sample_input_property"/>
     </owl:Class>
     
 
@@ -3754,19 +4494,19 @@ and remove this class</rdfs:comment>
 
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#scanning_imaging">
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#space_time"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#imaging"/>
         <rdfs:comment>Image of the sample build up by many measurements (motion of beam, sample or detector)</rdfs:comment>
         <rdfs:comment>Measure sample characteristics in a 2D plane in space by why of moving the sample.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/pan-science/ESRFET#serial_scanning -->
+    <!-- http://purl.org/pan-science/ESRFET#serial_screening -->
 
 
-    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#serial_scanning">
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#serial_screening">
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#space_time"/>
-        <rdfs:comment>A method of data collection where many samples of the same kind are streaming through the sample input (e.g. X-ray beam), one at a time.</rdfs:comment>
+        <rdfs:comment>A method of data collection where many samples of the same kind are streaming through the sample input (e.g. X-ray beam), one at a time. Measuring only one does not provide enough data that can be analyzed, you need many.</rdfs:comment>
     </owl:Class>
     
 
@@ -3777,6 +4517,16 @@ and remove this class</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#shock_compression">
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#sample_compression"/>
         <rdfs:comment>High strain rates (~10^6 to 10^9 s⁻¹).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#simultanious_reference -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#simultanious_reference">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#space_time"/>
+        <rdfs:comment>Detect a reference compound or primary beam profile at the same time as measuring the actual sample.</rdfs:comment>
     </owl:Class>
     
 
@@ -3844,6 +4594,16 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#space_time">
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#technique_property"/>
         <rdfs:comment>Things that happen during the experiment as a function of space and time</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#speckle_pattern -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#speckle_pattern">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#primary_beam_modification"/>
+        <rdfs:comment>X-ray beam goes through a structured material (e.g. sandpaper).</rdfs:comment>
     </owl:Class>
     
 
@@ -3951,6 +4711,15 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
 Q-Range (Å−1) = 0.0001 - 0.01
 
 Ultra Large structural features: large aggregates, clusters, and larger pores</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#unmodified_beam -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#unmodified_beam">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#primary_beam_modification"/>
     </owl:Class>
     
 
@@ -4183,11 +4952,11 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</r
     <rdf:Description>
         <foaf:name>Giannis Koumoutsos</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid613">
-        <schema:affiliation rdf:nodeID="genid614"/>
+    <rdf:Description rdf:nodeID="genid839">
+        <schema:affiliation rdf:nodeID="genid840"/>
         <foaf:name>Wout De Nolf</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid614">
+    <rdf:Description rdf:nodeID="genid840">
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/02550n020</rdfs:seeAlso>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.esrf.fr</foaf:homepage>
         <foaf:name>ESRF</foaf:name>

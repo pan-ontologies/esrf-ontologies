@@ -244,6 +244,22 @@ xsd:date rdf:type rdfs:Datatype .
 :CRYO-EM rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_as_a_function_of ;
+                                                      owl:someValuesFrom :detection_as_a_function_of_limited_number_of_sample_to_detector_distance
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_as_a_function_of ;
+                                                      owl:someValuesFrom :serial_screening
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_as_a_function_of ;
+                                                      owl:someValuesFrom :tomography
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_result_of_interaction ;
+                                                      owl:someValuesFrom :refraction
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
                                                       owl:onProperty :measures_result_of_interaction ;
                                                       owl:someValuesFrom :transmission
                                                     ]
@@ -258,10 +274,63 @@ xsd:date rdf:type rdfs:Datatype .
                                                   ) ;
                                rdf:type owl:Class
                              ] ;
-         rdfs:comment "Cryogenic Electron Microscopy (Cryo-EM) is EM performed on rapidly frozen samples to preserve native structures in a near-physiological, vitrified state. It enables high-resolution 3D reconstruction of biological macromolecules and complexes without the need for crystallization." ;
+         rdfs:comment "Cryo-Electron Microscopy (Cryo-EM) measures phase shifts in electron waves transmitted through cryogenically preserved samples, producing high-contrast 2D images of biological macromolecules or soft materials at near-atomic resolution. Similar to serial crystallography, it reconstructs 3D structures from many randomly oriented single-particle images of identical molecules." ;
          rdfs:label "CRYO-EM" ;
-         <http://www.w3.org/2004/02/skos/core#altLabel> "Cryogenic electron microscopy" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "Cryo-electron microscopy" .
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Cryo-Electron Microscopy" .
+
+
+###  http://purl.org/pan-science/ESRFET#CRYO-ET
+:CRYO-ET rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_as_a_function_of ;
+                                                      owl:someValuesFrom :detection_as_a_function_of_limited_number_of_sample_to_detector_distance
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_as_a_function_of ;
+                                                      owl:someValuesFrom :individual_specimen
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_as_a_function_of ;
+                                                      owl:someValuesFrom :tomography
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_result_of_interaction ;
+                                                      owl:someValuesFrom :refraction
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_result_of_interaction ;
+                                                      owl:someValuesFrom :transmission
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :requires_sample_input ;
+                                                      owl:someValuesFrom :electrons
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :requires_sample_input_property ;
+                                                      owl:someValuesFrom :cryogenic_temperature
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:comment "Cryo-Electron Tomography (Cryo-ET) measures phase shifts in transmitted electrons from multiple tilt angles of a cryogenically preserved sample to reconstruct 3D structures of cells or macromolecular assemblies with enhanced contrast and nanometer resolution." ;
+         rdfs:label "CRYO-ET" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Cryo-Electron Tomography" .
+
+
+###  http://purl.org/pan-science/ESRFET#CT
+:CT rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :measures_as_a_function_of ;
+                                                 owl:someValuesFrom :tomography
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:comment "Computed Tomography (CT) measures projections of radiation (such as X-rays, electrons, or neutrons) through a sample from multiple angles and reconstructs 3D internal maps of material properties, providing structural information whose contrast depends on the measured interaction (e.g., absorption, phase, fluorescence, or diffraction)." ;
+    rdfs:label "CT" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Computed Tomography" .
 
 
 ###  http://purl.org/pan-science/ESRFET#CXDI
@@ -551,7 +620,6 @@ xsd:date rdf:type rdfs:Datatype .
                                              ) ;
                           rdf:type owl:Class
                         ] ;
-    rdfs:subClassOf :experimental_technique ;
     rdfs:comment "Electron Microscopy (EM) uses a beam of electrons as illumination, controlled by electron optics analogous to glass lenses in light microscopes, to measure electron scattering or transmission through a sample. This technique provides high-resolution images and electron diffraction patterns, revealing structural, morphological, and compositional information at nanometer to atomic scales." ;
     rdfs:label "EM" ;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Electron Microscopy" .
@@ -987,8 +1055,31 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/pan-science/ESRFET#HiP-CT
 :HiP-CT rdf:type owl:Class ;
-        rdfs:subClassOf :experimental_technique ;
-        rdfs:comment "Hierarchical Phase-Contrast Tomography (HiP-CT) measures phase-contrast X-ray projections from intact large biological organs at multiple spatial resolutions, providing 3D images that reveal whole-organ structure down to cellular-level detail without destructive sectioning." ;
+        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :measures_as_a_function_of ;
+                                                     owl:someValuesFrom :multi_sample_spatial_resolution
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :measures_as_a_function_of ;
+                                                     owl:someValuesFrom :tomography
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :measures_result_of_interaction ;
+                                                     owl:someValuesFrom :refraction
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :measures_result_of_interaction ;
+                                                     owl:someValuesFrom :transmission
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :requires_sample_input ;
+                                                     owl:someValuesFrom :x-ray
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:comment "Hierarchical Phase-Contrast Tomography (HiP-CT) measures X-ray phase-contrast projections at multiple spatial resolutions to reconstruct 3D images spanning from macroscopic to microscopic scales, enabling multiscale analysis of complex internal structures." ;
         rdfs:label "HiP-CT" ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Hierarchical Phase-Contrast Tomography" .
 
@@ -999,6 +1090,56 @@ xsd:date rdf:type rdfs:Datatype .
      rdfs:comment "Inelastic X-ray Scattering (IXS) measures the energy and momentum change of X-rays scattered inelastically by a sample, providing information on electronic excitations, phonons, and other dynamic processes at the atomic scale." ;
      rdfs:label "IXS" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Inelastic X-ray Scattering" .
+
+
+###  http://purl.org/pan-science/ESRFET#KES
+:KES rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_as_a_function_of ;
+                                                  owl:someValuesFrom :detection_as_a_function_of_limited_number_of_incident_energies
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_as_a_function_of ;
+                                                  owl:someValuesFrom <http://purl.org/pan-science/PaNET/PaNET01106>
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_result_of_interaction ;
+                                                  owl:someValuesFrom :transmission
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:comment "K-edge Subtraction Imaging (KES) measures transmitted X-ray intensity across photon energies around the absorption edge of a specific element, producing element-selective 2D maps that reveal its spatial distribution in the sample." ;
+     rdfs:label "KES" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "K-edge Subtraction Imaging" .
+
+
+###  http://purl.org/pan-science/ESRFET#KESCT
+:KESCT rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_as_a_function_of ;
+                                                    owl:someValuesFrom :detection_as_a_function_of_limited_number_of_incident_energies
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_as_a_function_of ;
+                                                    owl:someValuesFrom :tomography
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :transmission
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :requires_sample_input ;
+                                                    owl:someValuesFrom :x-ray
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:comment "K-edge Subtraction Tomography (KESCT) measures transmitted X-rays across the absorption edge of a target element at multiple projection angles to reconstruct 3D maps of elemental concentrations with high chemical specificity." ;
+       rdfs:label "KESCT" ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "K-edge Subtraction Tomography" .
 
 
 ###  http://purl.org/pan-science/ESRFET#LDDS-XAS
@@ -1321,6 +1462,91 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Resonant Scattering" .
 
 
+###  http://purl.org/pan-science/ESRFET#PB-XPCI
+:PB-XPCI rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_as_a_function_of ;
+                                                      owl:someValuesFrom <http://purl.org/pan-science/PaNET/PaNET01106>
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_result_of_interaction ;
+                                                      owl:someValuesFrom :refraction
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_result_of_interaction ;
+                                                      owl:someValuesFrom :transmission
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :requires_sample_input ;
+                                                      owl:someValuesFrom :x-ray
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :requires_sample_input_property ;
+                                                      owl:someValuesFrom :unmodified_beam
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:comment "Propagation-Based X-ray Phase-Contrast Imaging (PB-XPCI) measures phase-induced interference fringes that form as X-rays propagate beyond a sample, producing 2D images with enhanced contrast for weakly absorbing or low-Z materials. By placing the detector at a sufficient distance from the sample, PB-XPCI converts subtle phase variations into measurable intensity modulations, revealing fine internal features and interfaces not visible in conventional absorption imaging." ;
+         rdfs:label "PB-XPCI" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Propagation-Based X-ray Phase-Contrast Imaging" .
+
+
+###  http://purl.org/pan-science/ESRFET#PB-XPCT
+:PB-XPCT rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_as_a_function_of ;
+                                                      owl:someValuesFrom :tomography
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_result_of_interaction ;
+                                                      owl:someValuesFrom :refraction
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_result_of_interaction ;
+                                                      owl:someValuesFrom :transmission
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :requires_sample_input ;
+                                                      owl:someValuesFrom :x-ray
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :requires_sample_input_property ;
+                                                      owl:someValuesFrom :unmodified_beam
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:comment "X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample–detector distances." ;
+         rdfs:label "PB-XPCT" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Propagation-based X-ray Phase-Contrast Tomograph" .
+
+
+###  http://purl.org/pan-science/ESRFET#PCI
+:PCI rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_as_a_function_of ;
+                                                  owl:someValuesFrom <http://purl.org/pan-science/PaNET/PaNET01106>
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_result_of_interaction ;
+                                                  owl:someValuesFrom :refraction
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :requires_sample_input ;
+                                                  owl:someValuesFrom :x-ray
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:comment "Phase-Contrast X-ray Imaging (PCI) measures phase shifts of X-rays transmitted through a sample to generate 2D images with enhanced contrast for weakly absorbing or low-Z materials. By exploiting phase variations rather than absorption, PCI reveals fine structural details such as internal boundaries, fibers, and low-density regions that are invisible in conventional absorption-based X-ray imaging." ;
+     rdfs:label "PCI" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Phase-Contrast X-ray Imaging" .
+
+
 ###  http://purl.org/pan-science/ESRFET#PDF
 :PDF rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
@@ -1398,7 +1624,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/pan-science/ESRFET#PXCT
 :PXCT rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
-      rdfs:comment "Ptychographic X-ray Computed Tomography (PXCT) combines ptychography and tomography to measure 3D electron density by scanning a coherent X-ray beam and recording diffraction patterns from overlapping regions at multiple angles. It provides high-resolution, quantitative 3D images of internal nanoscale structure." ;
+      rdfs:comment "Ptychographic X-ray Computed Tomography (PXCT) combines coherent diffraction imaging and tomography by scanning overlapping regions at multiple angles to reconstruct 3D quantitative electron density maps with nanometer-scale resolution." ;
       rdfs:label "PXCT" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Ptychographic X-ray Computed Tomography" .
 
@@ -1606,7 +1832,7 @@ The second definition is chosen for this technique.""" ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :measures_as_a_function_of ;
-                                                  owl:someValuesFrom :serial_scanning
+                                                  owl:someValuesFrom :serial_screening
                                                 ]
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :measures_result_of_interaction ;
@@ -1850,6 +2076,29 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Wavelength Dispersive X-ray Spectroscopy" .
 
 
+###  http://purl.org/pan-science/ESRFET#XACT
+:XACT rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_as_a_function_of ;
+                                                   owl:someValuesFrom :tomography
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_result_of_interaction ;
+                                                   owl:someValuesFrom :transmission
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :requires_sample_input ;
+                                                   owl:someValuesFrom :x-ray
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:comment "X-ray Absorption Tomography measures X-ray attenuation through a sample from multiple projection angles and reconstructs a 3D map of the absorption coefficient, revealing internal density variations within the material." ;
+      rdfs:label "XACT" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Absorption Tomography" .
+
+
 ###  http://purl.org/pan-science/ESRFET#XANES
 :XANES rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
@@ -1875,6 +2124,49 @@ The second definition is chosen for this technique.""" ;
        rdfs:comment "XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element’s absorption edge, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms." ;
        rdfs:label "XANES" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Absorption Near Edge Structure" .
+
+
+###  http://purl.org/pan-science/ESRFET#XAPCT
+:XAPCT rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_as_a_function_of ;
+                                                    owl:someValuesFrom :tomography
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :diffraction_of_elastic_scattering
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :diffusion
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :refraction
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :transmission
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_with_a_detector_type ;
+                                                    owl:someValuesFrom :analyzer_crystal
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :requires_sample_input ;
+                                                    owl:someValuesFrom :monochromatic_beam
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :requires_sample_input ;
+                                                    owl:someValuesFrom :x-ray
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:comment "X-ray Analyzer-Based Phase-Contrast Tomography (XAPCT) measures angular deviations of X-rays transmitted through a sample using a crystal analyzer to map phase gradients, providing 3D images with high contrast for interfaces and internal structures." ;
+       rdfs:label "XAPCT" ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Analyzer-Based Phase-Contrast Tomography" .
 
 
 ###  http://purl.org/pan-science/ESRFET#XAS
@@ -1914,8 +2206,19 @@ The second definition is chosen for this technique.""" ;
 
 ###  http://purl.org/pan-science/ESRFET#XCL
 :XCL rdf:type owl:Class ;
-     rdfs:subClassOf :experimental_technique ;
-     rdfs:comment "X-ray Computed Laminography (XCL) measures X-ray transmission through flat, extended samples at multiple tilted angles to reconstruct high-resolution 3D images of internal structures that are challenging for conventional tomography." ;
+     owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_as_a_function_of ;
+                                                  owl:someValuesFrom :laminography
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :requires_sample_input ;
+                                                  owl:someValuesFrom :x-ray
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:comment "X-ray Computed Laminography (XCL) measures the interaction of X-rays with flat or extended samples (through absorption, phase, or scattering contrast) at multiple tilted angles to reconstruct 3D images of internal structures that are difficult to access with conventional tomography due to sample geometry." ;
      rdfs:label "XCL" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Computed Laminography" .
 
@@ -1978,7 +2281,7 @@ The second definition is chosen for this technique.""" ;
                                                ) ;
                             rdf:type owl:Class
                           ] ;
-      rdfs:comment "X-ray Fluorescence Tomography (XFCT) measures fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution." ;
+      rdfs:comment "X-ray Fluorescence Tomography (XFCT) measures characteristic fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution." ;
       rdfs:label "XFCT" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Fluorescence Tomography" .
 
@@ -1991,10 +2294,112 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Fluorescence Holography" .
 
 
+###  http://purl.org/pan-science/ESRFET#XGI
+:XGI rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_as_a_function_of ;
+                                                  owl:someValuesFrom :simultanious_reference
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_as_a_function_of ;
+                                                  owl:someValuesFrom <http://purl.org/pan-science/PaNET/PaNET01106>
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_result_of_interaction ;
+                                                  owl:someValuesFrom :diffusion
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_result_of_interaction ;
+                                                  owl:someValuesFrom :refraction
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_result_of_interaction ;
+                                                  owl:someValuesFrom :transmission
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :requires_sample_input ;
+                                                  owl:someValuesFrom :x-ray
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :requires_sample_input_property ;
+                                                  owl:someValuesFrom :speckle_pattern
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:subClassOf :experimental_technique ;
+     rdfs:comment "X-ray Ghost Imaging (XGI) measures correlations between structured illumination patterns and total transmitted intensities to reconstruct 2D or 3D images without spatially resolved detection. Unlike speckle imaging, ghost imaging simultaneously records reference (without sample) and sample-affected signals using a beam splitter." ;
+     rdfs:label "XGI" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Ghost Imaging" .
+
+
+###  http://purl.org/pan-science/ESRFET#XGPCT
+:XGPCT rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_as_a_function_of ;
+                                                    owl:someValuesFrom :tomography
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :diffusion
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :refraction
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :transmission
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :requires_sample_input ;
+                                                    owl:someValuesFrom :x-ray
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :requires_sample_input_property ;
+                                                    owl:someValuesFrom :grating
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:comment "X-ray Grating Phase-Contrast Tomography (XGPCT) measures X-ray phase shifts using an interferometric grating setup across multiple projection angles, providing 3D images with high sensitivity to small refractive index variations in soft or low-Z materials." ;
+       rdfs:label "XGPCT" ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Grating Phase-Contrast Tomography" .
+
+
 ###  http://purl.org/pan-science/ESRFET#XHT
 :XHT rdf:type owl:Class ;
-     rdfs:subClassOf :experimental_technique ;
-     rdfs:comment "X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple angles to reconstruct high-resolution 3D electron density maps of a sample." ;
+     owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_as_a_function_of ;
+                                                  owl:someValuesFrom :detection_as_a_function_of_limited_number_of_sample_to_detector_distance
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_as_a_function_of ;
+                                                  owl:someValuesFrom :tomography
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_result_of_interaction ;
+                                                  owl:someValuesFrom :refraction
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :measures_result_of_interaction ;
+                                                  owl:someValuesFrom :transmission
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :requires_sample_input ;
+                                                  owl:someValuesFrom :x-ray
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :requires_sample_input_property ;
+                                                  owl:someValuesFrom :unmodified_beam
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:comment "X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple sample–detector distances and projection angles to reconstruct 3D electron density maps with sub-micrometer resolution." ;
      rdfs:label "XHT" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray HoloTomography" .
 
@@ -2041,8 +2446,39 @@ The second definition is chosen for this technique.""" ;
 
 ###  http://purl.org/pan-science/ESRFET#XNHT
 :XNHT rdf:type owl:Class ;
-      rdfs:subClassOf :experimental_technique ;
-      rdfs:comment "X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT, providing nanoscale 3D imaging of internal sample structure by combining holography and tomography with nanoscale focusing." ;
+      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_as_a_function_of ;
+                                                   owl:someValuesFrom :detection_as_a_function_of_limited_number_of_sample_to_detector_distance
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_as_a_function_of ;
+                                                   owl:someValuesFrom :nano_sample_spatial_resolution
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_as_a_function_of ;
+                                                   owl:someValuesFrom :tomography
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_result_of_interaction ;
+                                                   owl:someValuesFrom :refraction
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_result_of_interaction ;
+                                                   owl:someValuesFrom :transmission
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :requires_sample_input ;
+                                                   owl:someValuesFrom :x-ray
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :requires_sample_input_property ;
+                                                   owl:someValuesFrom :unmodified_beam
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:comment "X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT that combines nanoscale focusing and holographic tomography to obtain 3D electron density maps of internal structure at nanometer resolution." ;
       rdfs:label "XNHT" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Nano-HoloTomography" .
 
@@ -2067,8 +2503,27 @@ The second definition is chosen for this technique.""" ;
 
 ###  http://purl.org/pan-science/ESRFET#XPCT
 :XPCT rdf:type owl:Class ;
-      rdfs:subClassOf :experimental_technique ;
-      rdfs:comment "X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample at multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures not visible in conventional absorption tomography." ;
+      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_as_a_function_of ;
+                                                   owl:someValuesFrom :tomography
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_result_of_interaction ;
+                                                   owl:someValuesFrom :refraction
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_result_of_interaction ;
+                                                   owl:someValuesFrom :transmission
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :requires_sample_input ;
+                                                   owl:someValuesFrom :x-ray
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:comment "X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample from multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures invisible in conventional absorption tomography." ;
       rdfs:label "XPCT" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Phase-Contrast Tomography" .
 
@@ -2099,8 +2554,19 @@ The second definition is chosen for this technique.""" ;
 
 ###  http://purl.org/pan-science/ESRFET#XRCT
 :XRCT rdf:type owl:Class ;
-      rdfs:subClassOf :experimental_technique ;
-      rdfs:comment "X-ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample." ;
+      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :measures_as_a_function_of ;
+                                                   owl:someValuesFrom :tomography
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :requires_sample_input ;
+                                                   owl:someValuesFrom :x-ray
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:comment "X-ray Computed Tomography (XRCT) measures the interaction of X-rays with a sample (through absorption, phase, or scattering contrast) from multiple angles to reconstruct a 3D volume, providing detailed internal structural information such as density, morphology, and defects." ;
       rdfs:label "XRCT" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Computed Tomography" .
 
@@ -2214,6 +2680,76 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Topography" .
 
 
+###  http://purl.org/pan-science/ESRFET#XSPCI
+:XSPCI rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_as_a_function_of ;
+                                                    owl:someValuesFrom <http://purl.org/pan-science/PaNET/PaNET01106>
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :diffusion
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :refraction
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :transmission
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :requires_sample_input ;
+                                                    owl:someValuesFrom :x-ray
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :requires_sample_input_property ;
+                                                    owl:someValuesFrom :speckle_pattern
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:comment "X-ray Speckle Phase-Contrast Imaging (XSPCI) measures phase shifts by analyzing distortions in speckle patterns produced by a random or structured diffuser, providing 2D images with both phase and dark-field contrast. The phase contrast enhances visibility of weakly absorbing features, while the dark-field signal quantifies sample (in)homogeneity within individual detector pixels." ;
+       rdfs:label "XSPCI" ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Speckle Phase-Contrast Imaging" .
+
+
+###  http://purl.org/pan-science/ESRFET#XSPCT
+:XSPCT rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_as_a_function_of ;
+                                                    owl:someValuesFrom :tomography
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :diffusion
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :refraction
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :measures_result_of_interaction ;
+                                                    owl:someValuesFrom :transmission
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :requires_sample_input ;
+                                                    owl:someValuesFrom :x-ray
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :requires_sample_input_property ;
+                                                    owl:someValuesFrom :speckle_pattern
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:comment "X-ray Speckle Phase-Contrast Tomography (XSPCT) measures phase shifts by tracking speckle pattern distortions as the sample rotates, enabling 3D imaging of weakly absorbing materials and providing both phase and dark-field contrast, which is a measure for sample (in)homogeneity within one detector pixel." ;
+       rdfs:label "XSPCT" ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Speckle Phase-Contrast Tomography" .
+
+
 ###  http://purl.org/pan-science/ESRFET#absorption
 :absorption rdf:type owl:Class ;
             owl:equivalentClass :atomic_core_excitation ;
@@ -2225,6 +2761,11 @@ The second definition is chosen for this technique.""" ;
                      rdfs:subClassOf :sample_temperature ;
                      rdfs:comment "Reference: 20–25 °C" ,
                                   "~300 K" .
+
+
+###  http://purl.org/pan-science/ESRFET#analyzer_crystal
+:analyzer_crystal rdf:type owl:Class ;
+                  rdfs:subClassOf :detector_type .
 
 
 ###  http://purl.org/pan-science/ESRFET#area_detector
@@ -2299,6 +2840,16 @@ The second definition is chosen for this technique.""" ;
                                                                 rdfs:subClassOf :detection_as_a_function_of_incident_energy .
 
 
+###  http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance
+:detection_as_a_function_of_limited_number_of_sample_to_detector_distance rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :detection_as_a_function_of_sample_to_detector_distance .
+
+
+###  http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance
+:detection_as_a_function_of_sample_to_detector_distance rdf:type owl:Class ;
+                                                        rdfs:subClassOf :space_time .
+
+
 ###  http://purl.org/pan-science/ESRFET#detection_resolution
 :detection_resolution rdf:type owl:Class ;
                       rdfs:subClassOf :detected_cascade_of_events_property ;
@@ -2320,6 +2871,12 @@ The second definition is chosen for this technique.""" ;
 ###  http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering
 :diffraction_of_elastic_scattering rdf:type owl:Class ;
                                    rdfs:subClassOf :diffraction .
+
+
+###  http://purl.org/pan-science/ESRFET#diffusion
+:diffusion rdf:type owl:Class ;
+           rdfs:subClassOf :cascade_of_events_being_detected ;
+           rdfs:comment "Also referred to as \"dark-field\"." .
 
 
 ###  http://purl.org/pan-science/ESRFET#disperse_incident_energy_in_space
@@ -2387,9 +2944,15 @@ In addition, experimental techniques are semantically defined by
 
 ###  http://purl.org/pan-science/ESRFET#full-field_imaging
 :full-field_imaging rdf:type owl:Class ;
-                    rdfs:subClassOf :space_time ;
+                    rdfs:subClassOf :imaging ;
                     rdfs:comment "Image of the sample in a single measurement (no motion of beam, sample or detector)" ,
                                  "Measure sample characteristics in a 2D plane in space by why of detection." .
+
+
+###  http://purl.org/pan-science/ESRFET#grating
+:grating rdf:type owl:Class ;
+         rdfs:subClassOf :primary_beam_modification ;
+         rdfs:comment "X-ray beam goes through an absorbing periodic structured material." .
 
 
 ###  http://purl.org/pan-science/ESRFET#hard_x-ray
@@ -2436,9 +2999,26 @@ Resolving power (Δ2θ/θ)""" .
                                 rdfs:subClassOf :polarization .
 
 
+###  http://purl.org/pan-science/ESRFET#imaging
+:imaging rdf:type owl:Class ;
+         rdfs:subClassOf :space_time .
+
+
+###  http://purl.org/pan-science/ESRFET#individual_specimen
+:individual_specimen rdf:type owl:Class ;
+                     rdfs:subClassOf :space_time ;
+                     rdfs:comment "A method of data collection where measuring one sample providse enough data that can be analyzed. You don't necessarily need many. Although might still do it for static purposes (e.g. measuring several lungs)." .
+
+
 ###  http://purl.org/pan-science/ESRFET#infrared
 :infrared rdf:type owl:Class ;
           rdfs:subClassOf :named_photon_energy_ranges .
+
+
+###  http://purl.org/pan-science/ESRFET#laminography
+:laminography rdf:type owl:Class ;
+              rdfs:subClassOf :tomography ;
+              rdfs:comment "Many images of the sample under different orientations from which a 3D volume can be reconstructed. The rotation axis is titled with respect to the primary beam." .
 
 
 ###  http://purl.org/pan-science/ESRFET#large_length_scales
@@ -2522,6 +3102,12 @@ Large structural features: supramolecular structures, particle sizes, and shapes
                     rdfs:comment "Photon energy bandwidth is smaller than ???" .
 
 
+###  http://purl.org/pan-science/ESRFET#multi_sample_spatial_resolution
+:multi_sample_spatial_resolution rdf:type owl:Class ;
+                                 rdfs:subClassOf :sample_spatial_resolution ;
+                                 rdfs:comment "Detect at different resolutions." .
+
+
 ###  http://purl.org/pan-science/ESRFET#named_photon_energy_ranges
 :named_photon_energy_ranges rdf:type owl:Class ;
                             rdfs:subClassOf :sample_input .
@@ -2594,6 +3180,11 @@ Large structural features: supramolecular structures, particle sizes, and shapes
 :powder_sample rdf:type owl:Class ;
                rdfs:subClassOf :sample_type ;
                rdfs:comment "A powder is a collection of tiny, separate crystalline particles with random orientations." .
+
+
+###  http://purl.org/pan-science/ESRFET#primary_beam_modification
+:primary_beam_modification rdf:type owl:Class ;
+                           rdfs:subClassOf :sample_input_property .
 
 
 ###  http://purl.org/pan-science/ESRFET#ramp_compression
@@ -2691,21 +3282,27 @@ and remove this class""" .
 
 ###  http://purl.org/pan-science/ESRFET#scanning_imaging
 :scanning_imaging rdf:type owl:Class ;
-                  rdfs:subClassOf :space_time ;
+                  rdfs:subClassOf :imaging ;
                   rdfs:comment "Image of the sample build up by many measurements (motion of beam, sample or detector)" ,
                                "Measure sample characteristics in a 2D plane in space by why of moving the sample." .
 
 
-###  http://purl.org/pan-science/ESRFET#serial_scanning
-:serial_scanning rdf:type owl:Class ;
-                 rdfs:subClassOf :space_time ;
-                 rdfs:comment "A method of data collection where many samples of the same kind are streaming through the sample input (e.g. X-ray beam), one at a time." .
+###  http://purl.org/pan-science/ESRFET#serial_screening
+:serial_screening rdf:type owl:Class ;
+                  rdfs:subClassOf :space_time ;
+                  rdfs:comment "A method of data collection where many samples of the same kind are streaming through the sample input (e.g. X-ray beam), one at a time. Measuring only one does not provide enough data that can be analyzed, you need many." .
 
 
 ###  http://purl.org/pan-science/ESRFET#shock_compression
 :shock_compression rdf:type owl:Class ;
                    rdfs:subClassOf :sample_compression ;
                    rdfs:comment "High strain rates (~10^6 to 10^9 s⁻¹)." .
+
+
+###  http://purl.org/pan-science/ESRFET#simultanious_reference
+:simultanious_reference rdf:type owl:Class ;
+                        rdfs:subClassOf :space_time ;
+                        rdfs:comment "Detect a reference compound or primary beam profile at the same time as measuring the actual sample." .
 
 
 ###  http://purl.org/pan-science/ESRFET#single_crystal_sample
@@ -2750,6 +3347,12 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
 :space_time rdf:type owl:Class ;
             rdfs:subClassOf :technique_property ;
             rdfs:comment "Things that happen during the experiment as a function of space and time" .
+
+
+###  http://purl.org/pan-science/ESRFET#speckle_pattern
+:speckle_pattern rdf:type owl:Class ;
+                 rdfs:subClassOf :primary_beam_modification ;
+                 rdfs:comment "X-ray beam goes through a structured material (e.g. sandpaper)." .
 
 
 ###  http://purl.org/pan-science/ESRFET#strip_detector
@@ -2818,6 +3421,11 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
 Q-Range (Å−1) = 0.0001 - 0.01
 
 Ultra Large structural features: large aggregates, clusters, and larger pores""" .
+
+
+###  http://purl.org/pan-science/ESRFET#unmodified_beam
+:unmodified_beam rdf:type owl:Class ;
+                 rdfs:subClassOf :primary_beam_modification .
 
 
 ###  http://purl.org/pan-science/ESRFET#vertical_linear_polarization
@@ -2974,10 +3582,10 @@ Ultra Large structural features: large aggregates, clusters, and larger pores"""
 [ <http://xmlns.com/foaf/0.1/name> "Giannis Koumoutsos"
 ] .
 
-_:genid613 <http://schema.org/affiliation> _:genid614 ;
+_:genid839 <http://schema.org/affiliation> _:genid840 ;
             <http://xmlns.com/foaf/0.1/name> "Wout De Nolf" .
 
-_:genid614 rdfs:seeAlso "https://ror.org/02550n020"^^xsd:anyURI ;
+_:genid840 rdfs:seeAlso "https://ror.org/02550n020"^^xsd:anyURI ;
             <http://xmlns.com/foaf/0.1/homepage> "http://www.esrf.fr"^^xsd:anyURI ;
             <http://xmlns.com/foaf/0.1/name> "ESRF" .
 
