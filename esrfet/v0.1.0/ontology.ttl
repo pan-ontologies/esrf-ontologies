@@ -3614,7 +3614,7 @@ Ultra Large structural features: large aggregates, clusters, and larger pores"""
                                                              <http://xmlns.com/foaf/0.1/Person> ;
                                                     <http://schema.org/affiliation> :ESRF ;
                                                     rdfs:seeAlso <http://orcid.org/0000-0003-2258-9402> ;
-                                                    <http://xmlns.com/foaf/0.1/mbox> "wout.de_nolf@esrf.eu"^^rdfs:Literal ;
+                                                    <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr"^^rdfs:Literal ;
                                                     <http://xmlns.com/foaf/0.1/name> "Wout De Nolf" .
 
 

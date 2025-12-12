@@ -7231,7 +7231,7 @@
   } ],
   "http://xmlns.com/foaf/0.1/mbox" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "wout.de_nolf@esrf.eu"
+    "@value" : "dau-pydev@esrf.fr"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Wout De Nolf"

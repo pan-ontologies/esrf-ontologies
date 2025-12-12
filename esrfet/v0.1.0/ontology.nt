@@ -4170,7 +4170,7 @@ _:genid847 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://schema.org/affiliation> <http://purl.org/pan-science/ESRFET#ESRF> .
 <http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://orcid.org/0000-0003-2258-9402> .
-<http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://xmlns.com/foaf/0.1/mbox> "wout.de_nolf@esrf.eu"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://xmlns.com/foaf/0.1/name> "Wout De Nolf" .
 # 
 _:genid848 <http://xmlns.com/foaf/0.1/name> "Giannis Koumoutsos" .

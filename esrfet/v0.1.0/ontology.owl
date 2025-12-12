@@ -5000,7 +5000,7 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</r
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <schema:affiliation rdf:resource="http://purl.org/pan-science/ESRFET#ESRF"/>
         <rdfs:seeAlso rdf:resource="http://orcid.org/0000-0003-2258-9402"/>
-        <foaf:mbox rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">wout.de_nolf@esrf.eu</foaf:mbox>
+        <foaf:mbox rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">dau-pydev@esrf.fr</foaf:mbox>
         <foaf:name>Wout De Nolf</foaf:name>
     </owl:NamedIndividual>
     <rdf:Description>
