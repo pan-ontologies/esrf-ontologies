@@ -1932,6 +1932,33 @@ The second definition is chosen for this technique.""" ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Time Resolved X-ray Diffraction" .
 
 
+###  http://purl.org/pan-science/ESRFET#TR-XSS
+:TR-XSS rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :measures_as_a_function_of ;
+                                                     owl:someValuesFrom :detection_as_a_function_of_time
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :measures_result_of_interaction ;
+                                                     owl:someValuesFrom :diffraction_of_elastic_scattering
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :requires_sample_input ;
+                                                     owl:someValuesFrom :x-ray
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :requires_sample_type ;
+                                                     owl:someValuesFrom :chemical_solution
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:comment "Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent." ;
+        rdfs:label "TR-XSS" ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Time-resolved X-ray solution scattering" .
+
+
 ###  http://purl.org/pan-science/ESRFET#TXRF
 :TXRF rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
@@ -2810,6 +2837,12 @@ The second definition is chosen for this technique.""" ;
                    rdfs:comment "For example protons or helium ions" .
 
 
+###  http://purl.org/pan-science/ESRFET#chemical_solution
+:chemical_solution rdf:type owl:Class ;
+                   rdfs:subClassOf :sample_type ;
+                   rdfs:comment "A homogeneous mixture of solutes dissolved in a solvent." .
+
+
 ###  http://purl.org/pan-science/ESRFET#cryogenic_temperature
 :cryogenic_temperature rdf:type owl:Class ;
                        rdfs:subClassOf :sample_temperature ;
@@ -2848,6 +2881,12 @@ The second definition is chosen for this technique.""" ;
 ###  http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance
 :detection_as_a_function_of_sample_to_detector_distance rdf:type owl:Class ;
                                                         rdfs:subClassOf :space_time .
+
+
+###  http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time
+:detection_as_a_function_of_time rdf:type owl:Class ;
+                                 rdfs:subClassOf :space_time ;
+                                 rdfs:comment "Used to describe techniques that involve time-resolved measurements" .
 
 
 ###  http://purl.org/pan-science/ESRFET#detection_resolution
@@ -3582,10 +3621,10 @@ Ultra Large structural features: large aggregates, clusters, and larger pores"""
 [ <http://xmlns.com/foaf/0.1/name> "Giannis Koumoutsos"
 ] .
 
-_:genid839 <http://schema.org/affiliation> _:genid840 ;
+_:genid849 <http://schema.org/affiliation> _:genid850 ;
             <http://xmlns.com/foaf/0.1/name> "Wout De Nolf" .
 
-_:genid840 rdfs:seeAlso "https://ror.org/02550n020"^^xsd:anyURI ;
+_:genid850 rdfs:seeAlso "https://ror.org/02550n020"^^xsd:anyURI ;
             <http://xmlns.com/foaf/0.1/homepage> "http://www.esrf.fr"^^xsd:anyURI ;
             <http://xmlns.com/foaf/0.1/name> "ESRF" .
 

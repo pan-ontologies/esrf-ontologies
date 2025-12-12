@@ -2647,8 +2647,6 @@
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
     }, {
-      "@id" : "_:genid564"
-    }, {
       "@id" : "_:genid562"
     }, {
       "@id" : "_:genid560"
@@ -2662,10 +2660,10 @@
   "@id" : "_:genid556",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_type"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#sample_incident_angle_smaller_than_critical_angle"
+    "@id" : "http://purl.org/pan-science/ESRFET#chemical_solution"
   } ]
 }, {
   "@id" : "_:genid558",
@@ -2692,39 +2690,43 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#fluorescence"
+    "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
   } ]
 }, {
   "@id" : "_:genid562",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_energy"
+    "@id" : "http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time"
   } ]
 }, {
   "@id" : "_:genid564",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
-  } ]
-}, {
-  "@id" : "_:genid566",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid574"
     }, {
       "@id" : "_:genid572"
     }, {
       "@id" : "_:genid570"
     }, {
       "@id" : "_:genid568"
+    }, {
+      "@id" : "_:genid566"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid566",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#sample_incident_angle_smaller_than_critical_angle"
   } ]
 }, {
   "@id" : "_:genid568",
@@ -2742,7 +2744,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
+    "@id" : "http://purl.org/pan-science/ESRFET#fluorescence"
   } ]
 }, {
   "@id" : "_:genid572",
@@ -2751,39 +2753,39 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#ultra_large_length_scales"
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_energy"
   } ]
 }, {
   "@id" : "_:genid574",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
+  } ]
+}, {
+  "@id" : "_:genid576",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
     }, {
+      "@id" : "_:genid582"
+    }, {
       "@id" : "_:genid580"
     }, {
       "@id" : "_:genid578"
-    }, {
-      "@id" : "_:genid576"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid576",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#visual_spectrum"
   } ]
 }, {
   "@id" : "_:genid578",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#micro_sample_spatial_resolution"
+    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
   "@id" : "_:genid58",
@@ -2798,87 +2800,83 @@
   "@id" : "_:genid580",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#full-field_imaging"
-  } ]
-}, {
-  "@id" : "_:genid582",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid588"
-    }, {
-      "@id" : "_:genid586"
-    }, {
-      "@id" : "_:genid584"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid584",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
-  } ]
-}, {
-  "@id" : "_:genid586",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
   } ]
 }, {
-  "@id" : "_:genid588",
+  "@id" : "_:genid582",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#small_length_scales"
+    "@id" : "http://purl.org/pan-science/ESRFET#ultra_large_length_scales"
   } ]
 }, {
-  "@id" : "_:genid590",
+  "@id" : "_:genid584",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
     }, {
-      "@id" : "_:genid600"
+      "@id" : "_:genid590"
+    }, {
+      "@id" : "_:genid588"
+    }, {
+      "@id" : "_:genid586"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid586",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#visual_spectrum"
+  } ]
+}, {
+  "@id" : "_:genid588",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#micro_sample_spatial_resolution"
+  } ]
+}, {
+  "@id" : "_:genid590",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#full-field_imaging"
+  } ]
+}, {
+  "@id" : "_:genid592",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
     }, {
       "@id" : "_:genid598"
     }, {
       "@id" : "_:genid596"
     }, {
       "@id" : "_:genid594"
-    }, {
-      "@id" : "_:genid592"
     } ]
   } ]
 }, {
-  "@id" : "_:genid592",
+  "@id" : "_:genid594",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
-  } ]
-}, {
-  "@id" : "_:genid594",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_with_a_detector_type"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#wavelength_dispersive_detector"
   } ]
 }, {
   "@id" : "_:genid596",
@@ -2887,7 +2885,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#fluorescence"
+    "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
   } ]
 }, {
   "@id" : "_:genid598",
@@ -2896,7 +2894,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_energy"
+    "@id" : "http://purl.org/pan-science/ESRFET#small_length_scales"
   } ]
 }, {
   "@id" : "_:genid60",
@@ -2918,29 +2916,24 @@
   } ]
 }, {
   "@id" : "_:genid600",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
-  } ]
-}, {
-  "@id" : "_:genid602",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid610"
     }, {
       "@id" : "_:genid608"
     }, {
       "@id" : "_:genid606"
     }, {
       "@id" : "_:genid604"
+    }, {
+      "@id" : "_:genid602"
     } ]
   } ]
 }, {
-  "@id" : "_:genid604",
+  "@id" : "_:genid602",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
@@ -2949,25 +2942,43 @@
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
+  "@id" : "_:genid604",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_with_a_detector_type"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#wavelength_dispersive_detector"
+  } ]
+}, {
   "@id" : "_:genid606",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#transmission"
+    "@id" : "http://purl.org/pan-science/ESRFET#fluorescence"
   } ]
 }, {
   "@id" : "_:genid608",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_energy"
   } ]
 }, {
   "@id" : "_:genid610",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
+  } ]
+}, {
+  "@id" : "_:genid612",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
@@ -2978,12 +2989,10 @@
       "@id" : "_:genid616"
     }, {
       "@id" : "_:genid614"
-    }, {
-      "@id" : "_:genid612"
     } ]
   } ]
 }, {
-  "@id" : "_:genid612",
+  "@id" : "_:genid614",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
@@ -2992,22 +3001,13 @@
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
-  "@id" : "_:genid614",
+  "@id" : "_:genid616",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#atomic_core_excitation"
-  } ]
-}, {
-  "@id" : "_:genid616",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
+    "@id" : "http://purl.org/pan-science/ESRFET#transmission"
   } ]
 }, {
   "@id" : "_:genid618",
@@ -3016,7 +3016,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#near_edge"
+    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
   } ]
 }, {
   "@id" : "_:genid62",
@@ -3033,14 +3033,6 @@
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid636"
-    }, {
-      "@id" : "_:genid634"
-    }, {
-      "@id" : "_:genid632"
-    }, {
-      "@id" : "_:genid630"
     }, {
       "@id" : "_:genid628"
     }, {
@@ -3064,67 +3056,31 @@
   "@id" : "_:genid624",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#monochromatic_beam"
+    "@id" : "http://purl.org/pan-science/ESRFET#atomic_core_excitation"
   } ]
 }, {
   "@id" : "_:genid626",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_with_a_detector_type"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#analyzer_crystal"
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
   } ]
 }, {
   "@id" : "_:genid628",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#transmission"
-  } ]
-}, {
-  "@id" : "_:genid630",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#refraction"
-  } ]
-}, {
-  "@id" : "_:genid632",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#diffusion"
-  } ]
-}, {
-  "@id" : "_:genid634",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
-  } ]
-}, {
-  "@id" : "_:genid636",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
+    "@id" : "http://purl.org/pan-science/ESRFET#near_edge"
   } ]
 }, {
-  "@id" : "_:genid638",
+  "@id" : "_:genid630",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
@@ -3137,7 +3093,51 @@
       "@id" : "_:genid642"
     }, {
       "@id" : "_:genid640"
+    }, {
+      "@id" : "_:genid638"
+    }, {
+      "@id" : "_:genid636"
+    }, {
+      "@id" : "_:genid634"
+    }, {
+      "@id" : "_:genid632"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid632",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
+  } ]
+}, {
+  "@id" : "_:genid634",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#monochromatic_beam"
+  } ]
+}, {
+  "@id" : "_:genid636",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_with_a_detector_type"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#analyzer_crystal"
+  } ]
+}, {
+  "@id" : "_:genid638",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#transmission"
   } ]
 }, {
   "@id" : "_:genid64",
@@ -3152,10 +3152,10 @@
   "@id" : "_:genid640",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
+    "@id" : "http://purl.org/pan-science/ESRFET#refraction"
   } ]
 }, {
   "@id" : "_:genid642",
@@ -3164,16 +3164,16 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#atomic_core_excitation"
+    "@id" : "http://purl.org/pan-science/ESRFET#diffusion"
   } ]
 }, {
   "@id" : "_:genid644",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
+    "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
   } ]
 }, {
   "@id" : "_:genid646",
@@ -3182,7 +3182,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#detection_as_a_function_of_incident_energy"
+    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
   } ]
 }, {
   "@id" : "_:genid648",
@@ -3190,6 +3190,10 @@
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid656"
+    }, {
+      "@id" : "_:genid654"
     }, {
       "@id" : "_:genid652"
     }, {
@@ -3209,46 +3213,40 @@
   "@id" : "_:genid652",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#laminography"
+    "@id" : "http://purl.org/pan-science/ESRFET#atomic_core_excitation"
   } ]
 }, {
   "@id" : "_:genid654",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid664"
-    }, {
-      "@id" : "_:genid662"
-    }, {
-      "@id" : "_:genid660"
-    }, {
-      "@id" : "_:genid658"
-    }, {
-      "@id" : "_:genid656"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
   } ]
 }, {
   "@id" : "_:genid656",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
+    "@id" : "http://purl.org/pan-science/ESRFET#detection_as_a_function_of_incident_energy"
   } ]
 }, {
   "@id" : "_:genid658",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#fluorescence"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid662"
+    }, {
+      "@id" : "_:genid660"
+    } ]
   } ]
 }, {
   "@id" : "_:genid66",
@@ -3263,41 +3261,26 @@
   "@id" : "_:genid660",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_energy"
+    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
   "@id" : "_:genid662",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
-  } ]
-}, {
-  "@id" : "_:genid664",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
+    "@id" : "http://purl.org/pan-science/ESRFET#laminography"
   } ]
 }, {
-  "@id" : "_:genid666",
+  "@id" : "_:genid664",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid680"
-    }, {
-      "@id" : "_:genid678"
-    }, {
-      "@id" : "_:genid676"
     }, {
       "@id" : "_:genid674"
     }, {
@@ -3306,19 +3289,12 @@
       "@id" : "_:genid670"
     }, {
       "@id" : "_:genid668"
+    }, {
+      "@id" : "_:genid666"
     } ]
   } ]
 }, {
-  "@id" : "_:genid668",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#speckle_pattern"
-  } ]
-}, {
-  "@id" : "_:genid670",
+  "@id" : "_:genid666",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
@@ -3327,40 +3303,71 @@
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
-  "@id" : "_:genid672",
+  "@id" : "_:genid668",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#transmission"
+    "@id" : "http://purl.org/pan-science/ESRFET#fluorescence"
+  } ]
+}, {
+  "@id" : "_:genid670",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_energy"
+  } ]
+}, {
+  "@id" : "_:genid672",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
   } ]
 }, {
   "@id" : "_:genid674",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#refraction"
+    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
   } ]
 }, {
   "@id" : "_:genid676",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#diffusion"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid690"
+    }, {
+      "@id" : "_:genid688"
+    }, {
+      "@id" : "_:genid686"
+    }, {
+      "@id" : "_:genid684"
+    }, {
+      "@id" : "_:genid682"
+    }, {
+      "@id" : "_:genid680"
+    }, {
+      "@id" : "_:genid678"
+    } ]
   } ]
 }, {
   "@id" : "_:genid678",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+    "@id" : "http://purl.org/pan-science/ESRFET#speckle_pattern"
   } ]
 }, {
   "@id" : "_:genid68",
@@ -3375,51 +3382,13 @@
   "@id" : "_:genid680",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#simultanious_reference"
-  } ]
-}, {
-  "@id" : "_:genid682",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid694"
-    }, {
-      "@id" : "_:genid692"
-    }, {
-      "@id" : "_:genid690"
-    }, {
-      "@id" : "_:genid688"
-    }, {
-      "@id" : "_:genid686"
-    }, {
-      "@id" : "_:genid684"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid684",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#grating"
-  } ]
-}, {
-  "@id" : "_:genid686",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
-  "@id" : "_:genid688",
+  "@id" : "_:genid682",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
@@ -3428,7 +3397,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#transmission"
   } ]
 }, {
-  "@id" : "_:genid690",
+  "@id" : "_:genid684",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
@@ -3437,7 +3406,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#refraction"
   } ]
 }, {
-  "@id" : "_:genid692",
+  "@id" : "_:genid686",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
@@ -3446,24 +3415,29 @@
     "@id" : "http://purl.org/pan-science/ESRFET#diffusion"
   } ]
 }, {
-  "@id" : "_:genid694",
+  "@id" : "_:genid688",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
   } ]
 }, {
-  "@id" : "_:genid696",
+  "@id" : "_:genid690",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#simultanious_reference"
+  } ]
+}, {
+  "@id" : "_:genid692",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid708"
-    }, {
-      "@id" : "_:genid706"
     }, {
       "@id" : "_:genid704"
     }, {
@@ -3472,16 +3446,38 @@
       "@id" : "_:genid700"
     }, {
       "@id" : "_:genid698"
+    }, {
+      "@id" : "_:genid696"
+    }, {
+      "@id" : "_:genid694"
     } ]
   } ]
 }, {
-  "@id" : "_:genid698",
+  "@id" : "_:genid694",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#unmodified_beam"
+    "@id" : "http://purl.org/pan-science/ESRFET#grating"
+  } ]
+}, {
+  "@id" : "_:genid696",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
+  } ]
+}, {
+  "@id" : "_:genid698",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#transmission"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -3505,10 +3501,10 @@
   "@id" : "_:genid700",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
+    "@id" : "http://purl.org/pan-science/ESRFET#refraction"
   } ]
 }, {
   "@id" : "_:genid702",
@@ -3517,19 +3513,10 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#transmission"
+    "@id" : "http://purl.org/pan-science/ESRFET#diffusion"
   } ]
 }, {
   "@id" : "_:genid704",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#refraction"
-  } ]
-}, {
-  "@id" : "_:genid706",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
@@ -3538,26 +3525,11 @@
     "@id" : "http://purl.org/pan-science/ESRFET#tomography"
   } ]
 }, {
-  "@id" : "_:genid708",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"
-  } ]
-}, {
-  "@id" : "_:genid710",
+  "@id" : "_:genid706",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid724"
-    }, {
-      "@id" : "_:genid722"
-    }, {
-      "@id" : "_:genid720"
     }, {
       "@id" : "_:genid718"
     }, {
@@ -3566,10 +3538,14 @@
       "@id" : "_:genid714"
     }, {
       "@id" : "_:genid712"
+    }, {
+      "@id" : "_:genid710"
+    }, {
+      "@id" : "_:genid708"
     } ]
   } ]
 }, {
-  "@id" : "_:genid712",
+  "@id" : "_:genid708",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
@@ -3578,7 +3554,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#unmodified_beam"
   } ]
 }, {
-  "@id" : "_:genid714",
+  "@id" : "_:genid710",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
@@ -3587,7 +3563,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
-  "@id" : "_:genid716",
+  "@id" : "_:genid712",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
@@ -3596,13 +3572,31 @@
     "@id" : "http://purl.org/pan-science/ESRFET#transmission"
   } ]
 }, {
-  "@id" : "_:genid718",
+  "@id" : "_:genid714",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#refraction"
+  } ]
+}, {
+  "@id" : "_:genid716",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
+  } ]
+}, {
+  "@id" : "_:genid718",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"
   } ]
 }, {
   "@id" : "_:genid72",
@@ -3624,33 +3618,6 @@
   } ]
 }, {
   "@id" : "_:genid720",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
-  } ]
-}, {
-  "@id" : "_:genid722",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#nano_sample_spatial_resolution"
-  } ]
-}, {
-  "@id" : "_:genid724",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"
-  } ]
-}, {
-  "@id" : "_:genid726",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
@@ -3663,10 +3630,25 @@
       "@id" : "_:genid730"
     }, {
       "@id" : "_:genid728"
+    }, {
+      "@id" : "_:genid726"
+    }, {
+      "@id" : "_:genid724"
+    }, {
+      "@id" : "_:genid722"
     } ]
   } ]
 }, {
-  "@id" : "_:genid728",
+  "@id" : "_:genid722",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#unmodified_beam"
+  } ]
+}, {
+  "@id" : "_:genid724",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
@@ -3675,7 +3657,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
-  "@id" : "_:genid730",
+  "@id" : "_:genid726",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
@@ -3684,7 +3666,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#transmission"
   } ]
 }, {
-  "@id" : "_:genid732",
+  "@id" : "_:genid728",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
@@ -3693,7 +3675,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#refraction"
   } ]
 }, {
-  "@id" : "_:genid734",
+  "@id" : "_:genid730",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
@@ -3702,11 +3684,35 @@
     "@id" : "http://purl.org/pan-science/ESRFET#tomography"
   } ]
 }, {
+  "@id" : "_:genid732",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#nano_sample_spatial_resolution"
+  } ]
+}, {
+  "@id" : "_:genid734",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"
+  } ]
+}, {
   "@id" : "_:genid736",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid744"
+    }, {
+      "@id" : "_:genid742"
+    }, {
+      "@id" : "_:genid740"
     }, {
       "@id" : "_:genid738"
     } ]
@@ -3731,24 +3737,21 @@
   } ]
 }, {
   "@id" : "_:genid740",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid744"
-    }, {
-      "@id" : "_:genid742"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#transmission"
   } ]
 }, {
   "@id" : "_:genid742",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
+    "@id" : "http://purl.org/pan-science/ESRFET#refraction"
   } ]
 }, {
   "@id" : "_:genid744",
@@ -3766,8 +3769,6 @@
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
     }, {
-      "@id" : "_:genid750"
-    }, {
       "@id" : "_:genid748"
     } ]
   } ]
@@ -3782,31 +3783,18 @@
   } ]
 }, {
   "@id" : "_:genid750",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
-  } ]
-}, {
-  "@id" : "_:genid752",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
     }, {
-      "@id" : "_:genid760"
-    }, {
-      "@id" : "_:genid758"
-    }, {
-      "@id" : "_:genid756"
-    }, {
       "@id" : "_:genid754"
+    }, {
+      "@id" : "_:genid752"
     } ]
   } ]
 }, {
-  "@id" : "_:genid754",
+  "@id" : "_:genid752",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
@@ -3815,22 +3803,34 @@
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
-  "@id" : "_:genid756",
+  "@id" : "_:genid754",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#fluorescence"
+    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
+  } ]
+}, {
+  "@id" : "_:genid756",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid760"
+    }, {
+      "@id" : "_:genid758"
+    } ]
   } ]
 }, {
   "@id" : "_:genid758",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_energy"
+    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
   "@id" : "_:genid76",
@@ -3845,10 +3845,10 @@
   "@id" : "_:genid760",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
+    "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
   } ]
 }, {
   "@id" : "_:genid762",
@@ -3856,6 +3856,8 @@
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid770"
     }, {
       "@id" : "_:genid768"
     }, {
@@ -3868,13 +3870,63 @@
   "@id" : "_:genid764",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
+  } ]
+}, {
+  "@id" : "_:genid766",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#fluorescence"
+  } ]
+}, {
+  "@id" : "_:genid768",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_energy"
+  } ]
+}, {
+  "@id" : "_:genid770",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
+  } ]
+}, {
+  "@id" : "_:genid772",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid778"
+    }, {
+      "@id" : "_:genid776"
+    }, {
+      "@id" : "_:genid774"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid774",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_type"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#powder_sample"
   } ]
 }, {
-  "@id" : "_:genid766",
+  "@id" : "_:genid776",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
@@ -3883,72 +3935,13 @@
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
-  "@id" : "_:genid768",
+  "@id" : "_:genid778",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
-  } ]
-}, {
-  "@id" : "_:genid770",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid774"
-    }, {
-      "@id" : "_:genid772"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid772",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
-  } ]
-}, {
-  "@id" : "_:genid774",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#reflection"
-  } ]
-}, {
-  "@id" : "_:genid776",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid788"
-    }, {
-      "@id" : "_:genid786"
-    }, {
-      "@id" : "_:genid784"
-    }, {
-      "@id" : "_:genid782"
-    }, {
-      "@id" : "_:genid780"
-    }, {
-      "@id" : "_:genid778"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid778",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#speckle_pattern"
   } ]
 }, {
   "@id" : "_:genid78",
@@ -3961,21 +3954,24 @@
   } ]
 }, {
   "@id" : "_:genid780",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid784"
+    }, {
+      "@id" : "_:genid782"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid782",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
-  } ]
-}, {
-  "@id" : "_:genid782",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#transmission"
   } ]
 }, {
   "@id" : "_:genid784",
@@ -3984,36 +3980,14 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#refraction"
+    "@id" : "http://purl.org/pan-science/ESRFET#reflection"
   } ]
 }, {
   "@id" : "_:genid786",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#diffusion"
-  } ]
-}, {
-  "@id" : "_:genid788",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
-  } ]
-}, {
-  "@id" : "_:genid790",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid802"
-    }, {
-      "@id" : "_:genid800"
     }, {
       "@id" : "_:genid798"
     }, {
@@ -4022,10 +3996,14 @@
       "@id" : "_:genid794"
     }, {
       "@id" : "_:genid792"
+    }, {
+      "@id" : "_:genid790"
+    }, {
+      "@id" : "_:genid788"
     } ]
   } ]
 }, {
-  "@id" : "_:genid792",
+  "@id" : "_:genid788",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
@@ -4034,7 +4012,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#speckle_pattern"
   } ]
 }, {
-  "@id" : "_:genid794",
+  "@id" : "_:genid790",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
@@ -4043,7 +4021,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
-  "@id" : "_:genid796",
+  "@id" : "_:genid792",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
@@ -4052,13 +4030,31 @@
     "@id" : "http://purl.org/pan-science/ESRFET#transmission"
   } ]
 }, {
-  "@id" : "_:genid798",
+  "@id" : "_:genid794",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#refraction"
+  } ]
+}, {
+  "@id" : "_:genid796",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#diffusion"
+  } ]
+}, {
+  "@id" : "_:genid798",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
   } ]
 }, {
   "@id" : "_:genid80",
@@ -4071,6 +4067,62 @@
   } ]
 }, {
   "@id" : "_:genid800",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid812"
+    }, {
+      "@id" : "_:genid810"
+    }, {
+      "@id" : "_:genid808"
+    }, {
+      "@id" : "_:genid806"
+    }, {
+      "@id" : "_:genid804"
+    }, {
+      "@id" : "_:genid802"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid802",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#speckle_pattern"
+  } ]
+}, {
+  "@id" : "_:genid804",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
+  } ]
+}, {
+  "@id" : "_:genid806",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#transmission"
+  } ]
+}, {
+  "@id" : "_:genid808",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#refraction"
+  } ]
+}, {
+  "@id" : "_:genid810",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
@@ -4079,7 +4131,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#diffusion"
   } ]
 }, {
-  "@id" : "_:genid802",
+  "@id" : "_:genid812",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
@@ -4088,19 +4140,19 @@
     "@id" : "http://purl.org/pan-science/ESRFET#tomography"
   } ]
 }, {
-  "@id" : "_:genid804",
+  "@id" : "_:genid814",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#named_photon_energy_ranges"
     }, {
-      "@id" : "_:genid808"
+      "@id" : "_:genid818"
     }, {
-      "@id" : "_:genid806"
+      "@id" : "_:genid816"
     } ]
   } ]
 }, {
-  "@id" : "_:genid806",
+  "@id" : "_:genid816",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@value" : "eV"
@@ -4109,65 +4161,24 @@
     "@id" : "http://purl.org/pan-science/ESRFET#energy_range_unit"
   } ]
 }, {
-  "@id" : "_:genid808",
+  "@id" : "_:genid818",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#energy_range_value"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid809"
+    "@id" : "_:genid819"
   } ]
 }, {
-  "@id" : "_:genid809",
+  "@id" : "_:genid819",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#onDatatype" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ],
   "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
     "@list" : [ {
-      "@id" : "_:genid811"
+      "@id" : "_:genid821"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid811",
-  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#float",
-    "@value" : "5.0"
-  } ]
-}, {
-  "@id" : "_:genid813",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/pan-science/ESRFET#auger_electrons"
-    }, {
-      "@id" : "http://purl.org/pan-science/ESRFET#photo_electrons"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid816",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid824"
-    }, {
-      "@id" : "_:genid822"
-    }, {
-      "@id" : "_:genid820"
-    }, {
-      "@id" : "_:genid818"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid818",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_type"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#polycrystalline_sample"
   } ]
 }, {
   "@id" : "_:genid82",
@@ -4179,31 +4190,20 @@
     "@id" : "http://purl.org/pan-science/ESRFET#near_edge"
   } ]
 }, {
-  "@id" : "_:genid820",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
+  "@id" : "_:genid821",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "5.0"
   } ]
 }, {
-  "@id" : "_:genid822",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
-  } ]
-}, {
-  "@id" : "_:genid824",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
+  "@id" : "_:genid823",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/pan-science/ESRFET#auger_electrons"
+    }, {
+      "@id" : "http://purl.org/pan-science/ESRFET#photo_electrons"
+    } ]
   } ]
 }, {
   "@id" : "_:genid826",
@@ -4211,8 +4211,6 @@
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
-    }, {
-      "@id" : "_:genid836"
     }, {
       "@id" : "_:genid834"
     }, {
@@ -4227,28 +4225,28 @@
   "@id" : "_:genid828",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_type"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#polycrystalline_sample"
+  } ]
+}, {
+  "@id" : "_:genid830",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
-  "@id" : "_:genid830",
+  "@id" : "_:genid832",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#atomic_core_excitation"
-  } ]
-}, {
-  "@id" : "_:genid832",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
+    "@id" : "http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"
   } ]
 }, {
   "@id" : "_:genid834",
@@ -4257,29 +4255,34 @@
     "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#scanning_imaging"
+    "@id" : "http://purl.org/pan-science/ESRFET#tomography"
   } ]
 }, {
   "@id" : "_:genid836",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/pan-science/ESRFET#near_edge"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
+    }, {
+      "@id" : "_:genid846"
+    }, {
+      "@id" : "_:genid844"
+    }, {
+      "@id" : "_:genid842"
+    }, {
+      "@id" : "_:genid840"
+    }, {
+      "@id" : "_:genid838"
+    } ]
   } ]
 }, {
   "@id" : "_:genid838",
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Giannis Koumoutsos"
-  } ]
-}, {
-  "@id" : "_:genid839",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "_:genid840"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#requires_sample_input"
   } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Wout De Nolf"
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#x-ray"
   } ]
 }, {
   "@id" : "_:genid84",
@@ -4301,6 +4304,55 @@
   } ]
 }, {
   "@id" : "_:genid840",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_result_of_interaction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#atomic_core_excitation"
+  } ]
+}, {
+  "@id" : "_:genid842",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_interaction_result_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#photon_count"
+  } ]
+}, {
+  "@id" : "_:genid844",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#scanning_imaging"
+  } ]
+}, {
+  "@id" : "_:genid846",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#measures_as_a_function_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#near_edge"
+  } ]
+}, {
+  "@id" : "_:genid848",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Giannis Koumoutsos"
+  } ]
+}, {
+  "@id" : "_:genid849",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "_:genid850"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Wout De Nolf"
+  } ]
+}, {
+  "@id" : "_:genid850",
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "@value" : "https://ror.org/02550n020"
@@ -4313,7 +4365,7 @@
     "@value" : "ESRF"
   } ]
 }, {
-  "@id" : "_:genid841",
+  "@id" : "_:genid851",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -4482,7 +4534,7 @@
     "@value" : "3DXRD"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid816"
+    "@id" : "_:genid826"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "3D X-ray Diffraction"
@@ -4932,7 +4984,7 @@
     "@value" : "FS-XANES"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid826"
+    "@id" : "_:genid836"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "Full‑Spectral X-ray Absorption Near Edge Structure Imaging"
@@ -5833,6 +5885,21 @@
     "@value" : "Time Resolved X-ray Diffraction"
   } ]
 }, {
+  "@id" : "http://purl.org/pan-science/ESRFET#TR-XSS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TR-XSS"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid554"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Time-resolved X-ray solution scattering"
+  } ]
+}, {
   "@id" : "http://purl.org/pan-science/ESRFET#TR‑SSX",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5857,7 +5924,7 @@
     "@value" : "TXRF"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid554"
+    "@id" : "_:genid564"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "Total Reflection X-ray Fluorescence"
@@ -5887,7 +5954,7 @@
     "@value" : "USAXS"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid566"
+    "@id" : "_:genid576"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "Ultra-Small Angle X-ray Scattering"
@@ -5908,7 +5975,7 @@
     "@value" : "VLM"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid574"
+    "@id" : "_:genid584"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "Visible Light Microscopy"
@@ -5923,7 +5990,7 @@
     "@value" : "WAXS"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid582"
+    "@id" : "_:genid592"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "Wide-angle X-ray Scattering"
@@ -5938,7 +6005,7 @@
     "@value" : "WDS"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid590"
+    "@id" : "_:genid600"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "Wavelength Dispersive X-ray Spectroscopy"
@@ -5953,7 +6020,7 @@
     "@value" : "XACT"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid602"
+    "@id" : "_:genid612"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Absorption Tomography"
@@ -5968,7 +6035,7 @@
     "@value" : "XANES"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid610"
+    "@id" : "_:genid620"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Absorption Near Edge Structure"
@@ -5983,7 +6050,7 @@
     "@value" : "XAPCT"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid620"
+    "@id" : "_:genid630"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Analyzer-Based Phase-Contrast Tomography"
@@ -5998,7 +6065,7 @@
     "@value" : "XAS"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid638"
+    "@id" : "_:genid648"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Absorption Spectroscopy"
@@ -6028,7 +6095,7 @@
     "@value" : "XCL"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid648"
+    "@id" : "_:genid658"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Computed Laminography"
@@ -6103,7 +6170,7 @@
     "@value" : "XFCT"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid654"
+    "@id" : "_:genid664"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Fluorescence Tomography"
@@ -6136,7 +6203,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid666"
+    "@id" : "_:genid676"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Ghost Imaging"
@@ -6151,7 +6218,7 @@
     "@value" : "XGPCT"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid682"
+    "@id" : "_:genid692"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Grating Phase-Contrast Tomography"
@@ -6166,7 +6233,7 @@
     "@value" : "XHT"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid696"
+    "@id" : "_:genid706"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray HoloTomography"
@@ -6256,7 +6323,7 @@
     "@value" : "XNHT"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid710"
+    "@id" : "_:genid720"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Nano-HoloTomography"
@@ -6306,7 +6373,7 @@
     "@value" : "XPCT"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid726"
+    "@id" : "_:genid736"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "Phase-Contrast Tomography"
@@ -6339,7 +6406,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid736"
+    "@id" : "_:genid746"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Radiation Technique"
@@ -6354,7 +6421,7 @@
     "@value" : "XRCT"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid740"
+    "@id" : "_:genid750"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Computed Tomography"
@@ -6369,7 +6436,7 @@
     "@value" : "XRD"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid746"
+    "@id" : "_:genid756"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray diffraction"
@@ -6384,7 +6451,7 @@
     "@value" : "XRF"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid752"
+    "@id" : "_:genid762"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Fluorescence Spectroscopy"
@@ -6402,7 +6469,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#experimental_technique"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid762"
+    "@id" : "_:genid772"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Powder Diffraction"
@@ -6417,7 +6484,7 @@
     "@value" : "XRR"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid770"
+    "@id" : "_:genid780"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "X-ray reflectivity"
@@ -6472,7 +6539,7 @@
     "@value" : "XSPCI"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid776"
+    "@id" : "_:genid786"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Speckle Phase-Contrast Imaging"
@@ -6487,7 +6554,7 @@
     "@value" : "XSPCT"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid790"
+    "@id" : "_:genid800"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "X-ray Speckle Phase-Contrast Tomography"
@@ -6594,6 +6661,15 @@
     "@id" : "http://purl.org/pan-science/ESRFET#sample_input"
   } ]
 }, {
+  "@id" : "http://purl.org/pan-science/ESRFET#chemical_solution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A homogeneous mixture of solutes dissolved in a solvent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#sample_type"
+  } ]
+}, {
   "@id" : "http://purl.org/pan-science/ESRFET#cryogenic_temperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -6646,6 +6722,15 @@
 }, {
   "@id" : "http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#space_time"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Used to describe techniques that involve time-resolved measurements"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#space_time"
   } ]
@@ -7465,7 +7550,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#named_photon_energy_ranges"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid804"
+    "@id" : "_:genid814"
   } ]
 }, {
   "@id" : "http://purl.org/pan-science/ESRFET#space_time",
@@ -7523,7 +7608,7 @@
     "@id" : "http://purl.org/pan-science/ESRFET#cascade_of_events_being_detected"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid813"
+    "@id" : "_:genid823"
   } ]
 }, {
   "@id" : "http://purl.org/pan-science/ESRFET#transmission",

@@ -186,6 +186,12 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#chemical_solution"
+         title="http://purl.org/pan-science/ESRFET#chemical_solution">
+         <span>chemical solution</span>
+      </a>
+   </li>
+   <li>
       <a href="#CMS" title="http://purl.org/pan-science/ESRFET#CMS">CMS</a>
    </li>
    <li>
@@ -251,6 +257,12 @@ This ontology has the following classes and properties.</span>
       <a href="#detection_as_a_function_of_sample_to_detector_distance"
          title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance">
          <span>detection as a function of sample to detector distance</span>
+      </a>
+   </li>
+   <li>
+      <a href="#detection_as_a_function_of_time"
+         title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time">
+         <span>detection as a function of time</span>
       </a>
    </li>
    <li>
@@ -935,6 +947,9 @@ This ontology has the following classes and properties.</span>
       <a href="#TR-XRD" title="http://purl.org/pan-science/ESRFET#TR-XRD">TR-XRD</a>
    </li>
    <li>
+      <a href="#TR-XSS" title="http://purl.org/pan-science/ESRFET#TR-XSS">TR-XSS</a>
+   </li>
+   <li>
       <a href="#transmission" title="http://purl.org/pan-science/ESRFET#transmission">
          <span>transmission</span>
       </a>
@@ -1329,6 +1344,7 @@ This section provides details for each class and property defined by The ESRF Ex
   <li><a href="#cascade_of_events_being_detected" title="http://purl.org/pan-science/ESRFET#cascade_of_events_being_detected"> <span>cascade of events being detected</span> </a></li>
   <li><a href="#CDI" title="http://purl.org/pan-science/ESRFET#CDI">CDI</a></li>
   <li><a href="#charged_particles" title="http://purl.org/pan-science/ESRFET#charged_particles"> <span>charged particles</span> </a></li>
+  <li><a href="#chemical_solution" title="http://purl.org/pan-science/ESRFET#chemical_solution"> <span>chemical solution</span> </a></li>
   <li><a href="#CMS" title="http://purl.org/pan-science/ESRFET#CMS">CMS</a></li>
   <li><a href="#CRYO-EM" title="http://purl.org/pan-science/ESRFET#CRYO-EM">CRYO-EM</a></li>
   <li><a href="#CRYO-ET" title="http://purl.org/pan-science/ESRFET#CRYO-ET">CRYO-ET</a></li>
@@ -1344,6 +1360,7 @@ This section provides details for each class and property defined by The ESRF Ex
   <li><a href="#detection_as_a_function_of_limited_number_of_incident_energies" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_incident_energies"> <span>detection as a function of limited number of incident energies</span> </a></li>
   <li><a href="#detection_as_a_function_of_limited_number_of_sample_to_detector_distance" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance"> <span>detection as a function of limited number of sample to detector distance</span> </a></li>
   <li><a href="#detection_as_a_function_of_sample_to_detector_distance" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance"> <span>detection as a function of sample to detector distance</span> </a></li>
+  <li><a href="#detection_as_a_function_of_time" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time"> <span>detection as a function of time</span> </a></li>
   <li><a href="#detection_resolution" title="http://purl.org/pan-science/ESRFET#detection_resolution"> <span>detection resolution</span> </a></li>
   <li><a href="#detector_type" title="http://purl.org/pan-science/ESRFET#detector_type"> <span>detector type</span> </a></li>
   <li><a href="#DFXM" title="http://purl.org/pan-science/ESRFET#DFXM">DFXM</a></li>
@@ -1498,6 +1515,7 @@ This section provides details for each class and property defined by The ESRF Ex
   <li><a href="#TR-MX" title="http://purl.org/pan-science/ESRFET#TR-MX">TR-MX</a></li>
   <li><a href="#TR-USAXS" title="http://purl.org/pan-science/ESRFET#TR-USAXS">TR-USAXS</a></li>
   <li><a href="#TR-XRD" title="http://purl.org/pan-science/ESRFET#TR-XRD">TR-XRD</a></li>
+  <li><a href="#TR-XSS" title="http://purl.org/pan-science/ESRFET#TR-XSS">TR-XSS</a></li>
   <li><a href="#transmission" title="http://purl.org/pan-science/ESRFET#transmission"> <span>transmission</span> </a></li>
   <li><a href="#TR‑SSX" title="http://purl.org/pan-science/ESRFET#TR‑SSX">TR‑SSX</a></li>
   <li><a href="#TXRF" title="http://purl.org/pan-science/ESRFET#TXRF">TXRF</a></li>
@@ -1798,6 +1816,21 @@ This section provides details for each class and property defined by The ESRF Ex
    </dd>
   </dl>
  </div>
+ <div class="entity" id="chemical_solution">
+  <h3>chemical solution<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/pan-science/ESRFET#chemical_solution</p>
+  <div class="comment">
+   <span class="markdown">A homogeneous mixture of solutes dissolved in a solvent.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#sample_type" title="http://purl.org/pan-science/ESRFET#sample_type">sample type</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="CMS">
   <h3>CMS<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/pan-science/ESRFET#CMS</p>
@@ -2047,6 +2080,21 @@ This section provides details for each class and property defined by The ESRF Ex
    </dt>
    <dd>
     <a href="#detection_as_a_function_of_limited_number_of_sample_to_detector_distance" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance">detection as a function of limited number of sample to detector distance</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="detection_as_a_function_of_time">
+  <h3>detection as a function of time<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time</p>
+  <div class="comment">
+   <span class="markdown">Used to describe techniques that involve time-resolved measurements</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#space_time" title="http://purl.org/pan-science/ESRFET#space_time">space time</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -4101,7 +4149,7 @@ This section provides details for each class and property defined by The ESRF Ex
     has sub-classes
    </dt>
    <dd>
-    <a href="#biological_sample" title="http://purl.org/pan-science/ESRFET#biological_sample">biological sample</a> <sup class="type-c" title="class">c</sup>, <a href="#polycrystalline_sample" title="http://purl.org/pan-science/ESRFET#polycrystalline_sample">polycrystalline sample</a> <sup class="type-c" title="class">c</sup>, <a href="#powder_sample" title="http://purl.org/pan-science/ESRFET#powder_sample">powder sample</a> <sup class="type-c" title="class">c</sup>, <a href="#single_crystal_sample" title="http://purl.org/pan-science/ESRFET#single_crystal_sample">single crystal sample</a> <sup class="type-c" title="class">c</sup>
+    <a href="#biological_sample" title="http://purl.org/pan-science/ESRFET#biological_sample">biological sample</a> <sup class="type-c" title="class">c</sup>, <a href="#chemical_solution" title="http://purl.org/pan-science/ESRFET#chemical_solution">chemical solution</a> <sup class="type-c" title="class">c</sup>, <a href="#polycrystalline_sample" title="http://purl.org/pan-science/ESRFET#polycrystalline_sample">polycrystalline sample</a> <sup class="type-c" title="class">c</sup>, <a href="#powder_sample" title="http://purl.org/pan-science/ESRFET#powder_sample">powder sample</a> <sup class="type-c" title="class">c</sup>, <a href="#single_crystal_sample" title="http://purl.org/pan-science/ESRFET#single_crystal_sample">single crystal sample</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in range of
@@ -4317,7 +4365,7 @@ This section provides details for each class and property defined by The ESRF Ex
     has sub-classes
    </dt>
    <dd>
-    <a href="#detection_as_a_function_of_incident_energy" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_incident_energy">detection as a function of incident energy</a> <sup class="type-c" title="class">c</sup>, <a href="#detection_as_a_function_of_sample_to_detector_distance" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance">detection as a function of sample to detector distance</a> <sup class="type-c" title="class">c</sup>, <a href="#imaging" title="http://purl.org/pan-science/ESRFET#imaging">imaging</a> <sup class="type-c" title="class">c</sup>, <a href="#individual_specimen" title="http://purl.org/pan-science/ESRFET#individual_specimen">individual specimen</a> <sup class="type-c" title="class">c</sup>, <a href="#sample_compression" title="http://purl.org/pan-science/ESRFET#sample_compression">sample compression</a> <sup class="type-c" title="class">c</sup>, <a href="#sample_spatial_resolution" title="http://purl.org/pan-science/ESRFET#sample_spatial_resolution">sample spatial resolution</a> <sup class="type-c" title="class">c</sup>, <a href="#serial_screening" title="http://purl.org/pan-science/ESRFET#serial_screening">serial screening</a> <sup class="type-c" title="class">c</sup>, <a href="#simultanious_reference" title="http://purl.org/pan-science/ESRFET#simultanious_reference">simultanious reference</a> <sup class="type-c" title="class">c</sup>, <a href="#tomography" title="http://purl.org/pan-science/ESRFET#tomography">tomography</a> <sup class="type-c" title="class">c</sup>
+    <a href="#detection_as_a_function_of_incident_energy" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_incident_energy">detection as a function of incident energy</a> <sup class="type-c" title="class">c</sup>, <a href="#detection_as_a_function_of_sample_to_detector_distance" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance">detection as a function of sample to detector distance</a> <sup class="type-c" title="class">c</sup>, <a href="#detection_as_a_function_of_time" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time">detection as a function of time</a> <sup class="type-c" title="class">c</sup>, <a href="#imaging" title="http://purl.org/pan-science/ESRFET#imaging">imaging</a> <sup class="type-c" title="class">c</sup>, <a href="#individual_specimen" title="http://purl.org/pan-science/ESRFET#individual_specimen">individual specimen</a> <sup class="type-c" title="class">c</sup>, <a href="#sample_compression" title="http://purl.org/pan-science/ESRFET#sample_compression">sample compression</a> <sup class="type-c" title="class">c</sup>, <a href="#sample_spatial_resolution" title="http://purl.org/pan-science/ESRFET#sample_spatial_resolution">sample spatial resolution</a> <sup class="type-c" title="class">c</sup>, <a href="#serial_screening" title="http://purl.org/pan-science/ESRFET#serial_screening">serial screening</a> <sup class="type-c" title="class">c</sup>, <a href="#simultanious_reference" title="http://purl.org/pan-science/ESRFET#simultanious_reference">simultanious reference</a> <sup class="type-c" title="class">c</sup>, <a href="#tomography" title="http://purl.org/pan-science/ESRFET#tomography">tomography</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in range of
@@ -4522,6 +4570,21 @@ This section provides details for each class and property defined by The ESRF Ex
    </dt>
    <dd>
     <a href="#experimental_technique" title="http://purl.org/pan-science/ESRFET#experimental_technique">experimental technique</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TR-XSS">
+  <h3>TR-XSS<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/pan-science/ESRFET#TR-XSS</p>
+  <div class="comment">
+   <span class="markdown">Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#experimental_technique" title="http://purl.org/pan-science/ESRFET#experimental_technique">experimental technique</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#measures_as_a_function_of" title="http://purl.org/pan-science/ESRFET#measures_as_a_function_of">measures as a function of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#detection_as_a_function_of_time" title="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time">detection as a function of time</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#measures_result_of_interaction" title="http://purl.org/pan-science/ESRFET#measures_result_of_interaction">measures result of interaction</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#diffraction_of_elastic_scattering" title="http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering">diffraction of elastic scattering</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#requires_sample_input" title="http://purl.org/pan-science/ESRFET#requires_sample_input">requires sample input</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#x-ray" title="http://purl.org/pan-science/ESRFET#x-ray">x ray</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#requires_sample_type" title="http://purl.org/pan-science/ESRFET#requires_sample_type">requires sample type</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#chemical_solution" title="http://purl.org/pan-science/ESRFET#chemical_solution">chemical solution</a> <sup class="type-c" title="class">c</sup>)
    </dd>
   </dl>
  </div>

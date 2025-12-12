@@ -2562,6 +2562,40 @@ The second definition is chosen for this technique.</rdfs:comment>
     
 
 
+    <!-- http://purl.org/pan-science/ESRFET#TR-XSS -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#TR-XSS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/pan-science/ESRFET#requires_sample_type"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/pan-science/ESRFET#chemical_solution"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent.</rdfs:comment>
+        <rdfs:label>TR-XSS</rdfs:label>
+        <skos:prefLabel>Time-resolved X-ray solution scattering</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/pan-science/ESRFET#TXRF -->
 
 
@@ -3720,6 +3754,16 @@ The second definition is chosen for this technique.</rdfs:comment>
     
 
 
+    <!-- http://purl.org/pan-science/ESRFET#chemical_solution -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#chemical_solution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#sample_type"/>
+        <rdfs:comment>A homogeneous mixture of solutes dissolved in a solvent.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/pan-science/ESRFET#cryogenic_temperature -->
 
 
@@ -3784,6 +3828,16 @@ The second definition is chosen for this technique.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance">
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#space_time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#space_time"/>
+        <rdfs:comment>Used to describe techniques that involve time-resolved measurements</rdfs:comment>
     </owl:Class>
     
 
@@ -4952,11 +5006,11 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</r
     <rdf:Description>
         <foaf:name>Giannis Koumoutsos</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid839">
-        <schema:affiliation rdf:nodeID="genid840"/>
+    <rdf:Description rdf:nodeID="genid849">
+        <schema:affiliation rdf:nodeID="genid850"/>
         <foaf:name>Wout De Nolf</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid840">
+    <rdf:Description rdf:nodeID="genid850">
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/02550n020</rdfs:seeAlso>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.esrf.fr</foaf:homepage>
         <foaf:name>ESRF</foaf:name>
