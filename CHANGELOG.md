@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Semantic properties: temperature and pressure regimes
 - Replace cryo (sample input) with cryogenic_temperature (sample_input_property)
 - TR-XSS
+- state of matter properties
 
 ## [1.1.0]
 

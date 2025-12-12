@@ -2591,6 +2591,10 @@
         <Class IRI="#space_time"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#gas"/>
+        <Class IRI="#state_of_matter"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#hard_x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
