@@ -31,8 +31,18 @@
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#CRYO-EM\">CRYO-EM</a>",
-    "Alternative names": "Cryo-electron microscopy, Cryogenic electron microscopy",
-    "Description": "Cryogenic Electron Microscopy (Cryo-EM) is EM performed on rapidly frozen samples to preserve native structures in a near-physiological, vitrified state. It enables high-resolution 3D reconstruction of biological macromolecules and complexes without the need for crystallization."
+    "Alternative names": "Cryo-Electron Microscopy",
+    "Description": "Cryo-Electron Microscopy (Cryo-EM) measures phase shifts in electron waves transmitted through cryogenically preserved samples, producing high-contrast 2D images of biological macromolecules or soft materials at near-atomic resolution. Similar to serial crystallography, it reconstructs 3D structures from many randomly oriented single-particle images of identical molecules."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#CRYO-ET\">CRYO-ET</a>",
+    "Alternative names": "Cryo-Electron Tomography",
+    "Description": "Cryo-Electron Tomography (Cryo-ET) measures phase shifts in transmitted electrons from multiple tilt angles of a cryogenically preserved sample to reconstruct 3D structures of cells or macromolecular assemblies with enhanced contrast and nanometer resolution."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#CT\">CT</a>",
+    "Alternative names": "Computed Tomography",
+    "Description": "Computed Tomography (CT) measures projections of radiation (such as X-rays, electrons, or neutrons) through a sample from multiple angles and reconstructs 3D internal maps of material properties, providing structural information whose contrast depends on the measured interaction (e.g., absorption, phase, fluorescence, or diffraction)."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#CXDI\">CXDI</a>",
@@ -182,12 +192,22 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#HiP-CT\">HiP-CT</a>",
     "Alternative names": "Hierarchical Phase-Contrast Tomography",
-    "Description": "Hierarchical Phase-Contrast Tomography (HiP-CT) measures phase-contrast X-ray projections from intact large biological organs at multiple spatial resolutions, providing 3D images that reveal whole-organ structure down to cellular-level detail without destructive sectioning."
+    "Description": "Hierarchical Phase-Contrast Tomography (HiP-CT) measures X-ray phase-contrast projections at multiple spatial resolutions to reconstruct 3D images spanning from macroscopic to microscopic scales, enabling multiscale analysis of complex internal structures."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#IXS\">IXS</a>",
     "Alternative names": "Inelastic X-ray Scattering",
     "Description": "Inelastic X-ray Scattering (IXS) measures the energy and momentum change of X-rays scattered inelastically by a sample, providing information on electronic excitations, phonons, and other dynamic processes at the atomic scale."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#KES\">KES</a>",
+    "Alternative names": "K-edge Subtraction Imaging",
+    "Description": "K-edge Subtraction Imaging (KES) measures transmitted X-ray intensity across photon energies around the absorption edge of a specific element, producing element-selective 2D maps that reveal its spatial distribution in the sample."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#KESCT\">KESCT</a>",
+    "Alternative names": "K-edge Subtraction Tomography",
+    "Description": "K-edge Subtraction Tomography (KESCT) measures transmitted X-rays across the absorption edge of a target element at multiple projection angles to reconstruct 3D maps of elemental concentrations with high chemical specificity."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#LDDS-XAS\">LDDC-XAS</a>",
@@ -275,6 +295,21 @@
     "Description": "Nuclear Resonant Scattering (NRS) measures time-delayed resonant scattering of X-rays from Mössbauer-active nuclei to study hyperfine interactions, magnetic order, and dynamics at the atomic scale."
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#PB-XPCI\">PB-XPCI</a>",
+    "Alternative names": "Propagation-Based X-ray Phase-Contrast Imaging",
+    "Description": "Propagation-Based X-ray Phase-Contrast Imaging (PB-XPCI) measures phase-induced interference fringes that form as X-rays propagate beyond a sample, producing 2D images with enhanced contrast for weakly absorbing or low-Z materials. By placing the detector at a sufficient distance from the sample, PB-XPCI converts subtle phase variations into measurable intensity modulations, revealing fine internal features and interfaces not visible in conventional absorption imaging."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#PB-XPCT\">PB-XPCT</a>",
+    "Alternative names": "Propagation-based X-ray Phase-Contrast Tomograph",
+    "Description": "X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample–detector distances."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#PCI\">PCI</a>",
+    "Alternative names": "Phase-Contrast X-ray Imaging",
+    "Description": "Phase-Contrast X-ray Imaging (PCI) measures phase shifts of X-rays transmitted through a sample to generate 2D images with enhanced contrast for weakly absorbing or low-Z materials. By exploiting phase variations rather than absorption, PCI reveals fine structural details such as internal boundaries, fibers, and low-density regions that are invisible in conventional absorption-based X-ray imaging."
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#PDF\">PDF</a>",
     "Alternative names": "Pair Distribution Function",
     "Description": "Pair Distribution Function (PDF) analysis measures the distribution of interatomic distances by Fourier-transforming total scattering data, revealing local atomic arrangements and disorder in both crystalline and amorphous materials."
@@ -297,7 +332,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#PXCT\">PXCT</a>",
     "Alternative names": "Ptychographic X-ray Computed Tomography",
-    "Description": "Ptychographic X-ray Computed Tomography (PXCT) combines ptychography and tomography to measure 3D electron density by scanning a coherent X-ray beam and recording diffraction patterns from overlapping regions at multiple angles. It provides high-resolution, quantitative 3D images of internal nanoscale structure."
+    "Description": "Ptychographic X-ray Computed Tomography (PXCT) combines coherent diffraction imaging and tomography by scanning overlapping regions at multiple angles to reconstruct 3D quantitative electron density maps with nanometer-scale resolution."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#REXS\">REXS</a>",
@@ -430,9 +465,19 @@
     "Description": "WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons"
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XACT\">XACT</a>",
+    "Alternative names": "X-ray Absorption Tomography",
+    "Description": "X-ray Absorption Tomography measures X-ray attenuation through a sample from multiple projection angles and reconstructs a 3D map of the absorption coefficient, revealing internal density variations within the material."
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XANES\">XANES</a>",
     "Alternative names": "X-ray Absorption Near Edge Structure",
     "Description": "XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element’s absorption edge, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XAPCT\">XAPCT</a>",
+    "Alternative names": "X-ray Analyzer-Based Phase-Contrast Tomography",
+    "Description": "X-ray Analyzer-Based Phase-Contrast Tomography (XAPCT) measures angular deviations of X-rays transmitted through a sample using a crystal analyzer to map phase gradients, providing 3D images with high contrast for interfaces and internal structures."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XAS\">XAS</a>",
@@ -447,7 +492,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XCL\">XCL</a>",
     "Alternative names": "X-ray Computed Laminography",
-    "Description": "X-ray Computed Laminography (XCL) measures X-ray transmission through flat, extended samples at multiple tilted angles to reconstruct high-resolution 3D images of internal structures that are challenging for conventional tomography."
+    "Description": "X-ray Computed Laminography (XCL) measures the interaction of X-rays with flat or extended samples (through absorption, phase, or scattering contrast) at multiple tilted angles to reconstruct 3D images of internal structures that are difficult to access with conventional tomography due to sample geometry."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XDMR\">XDMR</a>",
@@ -472,7 +517,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XFCT\">XFCT</a>",
     "Alternative names": "X-ray Fluorescence Tomography",
-    "Description": "X-ray Fluorescence Tomography (XFCT) measures fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution."
+    "Description": "X-ray Fluorescence Tomography (XFCT) measures characteristic fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XFH\">XFH</a>",
@@ -480,9 +525,19 @@
     "Description": "X-ray Fluorescence Holography (XFH) measures interference between fluorescent X-rays emitted from atoms and scattered reference waves to obtain 3D atomic-scale images of the local atomic arrangement around specific elements."
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XGI\">XGI</a>",
+    "Alternative names": "X-ray Ghost Imaging",
+    "Description": "X-ray Ghost Imaging (XGI) measures correlations between structured illumination patterns and total transmitted intensities to reconstruct 2D or 3D images without spatially resolved detection. Unlike speckle imaging, ghost imaging simultaneously records reference (without sample) and sample-affected signals using a beam splitter."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XGPCT\">XGPCT</a>",
+    "Alternative names": "X-ray Grating Phase-Contrast Tomography",
+    "Description": "X-ray Grating Phase-Contrast Tomography (XGPCT) measures X-ray phase shifts using an interferometric grating setup across multiple projection angles, providing 3D images with high sensitivity to small refractive index variations in soft or low-Z materials."
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XHT\">XHT</a>",
     "Alternative names": "X-ray HoloTomography",
-    "Description": "X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple angles to reconstruct high-resolution 3D electron density maps of a sample."
+    "Description": "X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple sample–detector distances and projection angles to reconstruct 3D electron density maps with sub-micrometer resolution."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XLD\">XLD</a>",
@@ -512,7 +567,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XNHT\">XNHT</a>",
     "Alternative names": "X-ray Nano-HoloTomography",
-    "Description": "X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT, providing nanoscale 3D imaging of internal sample structure by combining holography and tomography with nanoscale focusing."
+    "Description": "X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT that combines nanoscale focusing and holographic tomography to obtain 3D electron density maps of internal structure at nanometer resolution."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XPCI\">XPCI</a>",
@@ -527,7 +582,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XPCT\">XPCT</a>",
     "Alternative names": "Phase-Contrast Tomography",
-    "Description": "X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample at multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures not visible in conventional absorption tomography."
+    "Description": "X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample from multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures invisible in conventional absorption tomography."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XPS\">XPS</a>",
@@ -542,7 +597,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRCT\">XRCT</a>",
     "Alternative names": "X-ray Computed Tomography",
-    "Description": "X-ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample."
+    "Description": "X-ray Computed Tomography (XRCT) measures the interaction of X-rays with a sample (through absorption, phase, or scattering contrast) from multiple angles to reconstruct a 3D volume, providing detailed internal structural information such as density, morphology, and defects."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRD\">XRD</a>",
@@ -573,5 +628,15 @@
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRT\">XRT</a>",
     "Alternative names": "X-ray Topography, X-ray Diffraction Topography, XDT",
     "Description": "X-ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XSPCI\">XSPCI</a>",
+    "Alternative names": "X-ray Speckle Phase-Contrast Imaging",
+    "Description": "X-ray Speckle Phase-Contrast Imaging (XSPCI) measures phase shifts by analyzing distortions in speckle patterns produced by a random or structured diffuser, providing 2D images with both phase and dark-field contrast. The phase contrast enhances visibility of weakly absorbing features, while the dark-field signal quantifies sample (in)homogeneity within individual detector pixels."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XSPCT\">XSPCT</a>",
+    "Alternative names": "X-ray Speckle Phase-Contrast Tomography",
+    "Description": "X-ray Speckle Phase-Contrast Tomography (XSPCT) measures phase shifts by tracking speckle pattern distortions as the sample rotates, enabling 3D imaging of weakly absorbing materials and providing both phase and dark-field contrast, which is a measure for sample (in)homogeneity within one detector pixel."
   }
 ]
