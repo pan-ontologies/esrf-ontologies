@@ -35,6 +35,18 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <IRI>#person/LBroche</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <IRI>#person/MBodin</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <IRI>#person/POAutran</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
         <IRI>#person/WDeNolf</IRI>
     </Annotation>
     <Annotation>
@@ -501,6 +513,9 @@
         <Class IRI="#detection_as_a_function_of_sample_to_detector_distance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#detection_as_a_function_of_time"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#detection_resolution"/>
     </Declaration>
     <Declaration>
@@ -849,6 +864,15 @@
         <NamedIndividual IRI="#person/GKoumoutsos"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#person/LBroche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#person/MBodin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#person/POAutran"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#person/WDeNolf"/>
     </Declaration>
     <Declaration>
@@ -886,9 +910,6 @@
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:date"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#detection_as_a_function_of_time"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#BioSAXS"/>
@@ -3443,6 +3464,18 @@
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
         <NamedIndividual IRI="#person/GKoumoutsos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#person/LBroche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#person/MBodin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#person/POAutran"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
@@ -6288,7 +6321,7 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#person/GKoumoutsos</IRI>
-        <IRI>http://orcid.org/0009-0000-6215-8493</IRI>
+        <IRI>https://orcid.org/0009-0000-6215-8493</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
@@ -6302,13 +6335,73 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="schema:affiliation"/>
+        <IRI>#person/LBroche</IRI>
+        <IRI>#ESRF</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#person/LBroche</IRI>
+        <IRI>https://orcid.org/0000-0001-7704-0762</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
+        <IRI>#person/LBroche</IRI>
+        <Literal>dau-pydev@esrf.fr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:name"/>
+        <IRI>#person/LBroche</IRI>
+        <Literal>Ludovic Broche</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:affiliation"/>
+        <IRI>#person/MBodin</IRI>
+        <IRI>#ESRF</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#person/MBodin</IRI>
+        <IRI>https://orcid.org/0000-0003-0321-3952</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
+        <IRI>#person/MBodin</IRI>
+        <Literal>dau-pydev@esrf.fr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:name"/>
+        <IRI>#person/MBodin</IRI>
+        <Literal>Marjolaine Bodin Ligeon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:affiliation"/>
+        <IRI>#person/POAutran</IRI>
+        <IRI>#ESRF</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#person/POAutran</IRI>
+        <IRI>https://orcid.org/0000-0003-4600-6371</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
+        <IRI>#person/POAutran</IRI>
+        <Literal>dau-pydev@esrf.fr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:name"/>
+        <IRI>#person/POAutran</IRI>
+        <Literal>Pierre-Olivier Autran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:affiliation"/>
         <IRI>#person/WDeNolf</IRI>
         <IRI>#ESRF</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#person/WDeNolf</IRI>
-        <IRI>http://orcid.org/0000-0003-2258-9402</IRI>
+        <IRI>https://orcid.org/0000-0003-2258-9402</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
@@ -6354,4 +6447,5 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
