@@ -1,4 +1,5 @@
 <http://purl.org/pan-science/ESRFET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/pan-science/ESRFET> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/pan-science/ESRFET/v0.1.0> .
 <http://purl.org/pan-science/ESRFET> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/pan-science/PaNET/PaNET.owl> .
 <http://purl.org/pan-science/ESRFET> <http://purl.org/dc/terms/abstract> "The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques." .
 <http://purl.org/pan-science/ESRFET> <http://purl.org/dc/terms/created> "2025-07-07"^^<http://www.w3.org/2001/XMLSchema#date> .

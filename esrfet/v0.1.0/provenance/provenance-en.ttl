@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<..\index-en.html> a prov:Entity;
+<http://purl.org/pan-science/ESRFET/v0.1.0> a prov:Entity;
 	 dc:title "The ESRF Experimental Techniques Ontology";
 	 prov:wasAttributedTo <http://purl.org/pan-science/ESRFET#person/GKoumoutsos>;
 	 dc:creator <http://purl.org/pan-science/ESRFET#person/GKoumoutsos>;

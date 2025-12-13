@@ -7,6 +7,7 @@
 @base <http://purl.org/pan-science/ESRFET#> .
 
 <http://purl.org/pan-science/ESRFET> rdf:type owl:Ontology ;
+                                      owl:versionIRI <http://purl.org/pan-science/ESRFET/v0.1.0> ;
                                       owl:imports <http://purl.org/pan-science/PaNET/PaNET.owl> ;
                                       <http://purl.org/dc/terms/abstract> "The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques." ;
                                       <http://purl.org/dc/terms/created> "2025-07-07"^^xsd:date ;

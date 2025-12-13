@@ -4521,6 +4521,9 @@
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://purl.org/pan-science/PaNET/PaNET.owl"
   } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET/v0.1.0"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "v0.1.0"
   } ]
