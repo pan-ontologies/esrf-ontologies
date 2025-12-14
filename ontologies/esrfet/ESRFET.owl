@@ -34,15 +34,15 @@
         <IRI>#person/GKoumoutsos</IRI>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
         <IRI>#person/LBroche</IRI>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
         <IRI>#person/MBodin</IRI>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
         <IRI>#person/POAutran</IRI>
     </Annotation>
     <Annotation>
