@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- S-XEOL: new technique without sematic meaning.
+- S-XEOL: new technique without semantic meaning.
 
 ## [1.2.0]
 
@@ -18,21 +18,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Semantic properties: temperature and pressure regimes.
 - Replace cryo (sample input) with cryogenic_temperature (sample_input_property).
 
-- CT: new technique with sematic meaning.
-- KES: new technique with sematic meaning.
-- KESCT: new technique with sematic meaning.
-- PB-XPCI: new technique with sematic meaning.
-- PB-XPCT: new technique with sematic meaning.
-- Cryo-EM: new technique with sematic meaning.
-- Cryo-ET: new technique with sematic meaning.
-- PCI: new technique with sematic meaning.
-- TR-XSS: new technique with sematic meaning.
-- XACT: new technique with sematic meaning.
-- XAPCT: new technique with sematic meaning.
-- XGI: new technique with sematic meaning.
-- XGPCT: new technique with sematic meaning.
-- XSPCI: new technique with sematic meaning.
-- XSPCT: new technique with sematic meaning.
+- CT: new technique with semantic meaning.
+- KES: new technique with semantic meaning.
+- KESCT: new technique with semantic meaning.
+- PB-XPCI: new technique with semantic meaning.
+- PB-XPCT: new technique with semantic meaning.
+- Cryo-EM: new technique with semantic meaning.
+- Cryo-ET: new technique with semantic meaning.
+- PCI: new technique with semantic meaning.
+- TR-XSS: new technique with semantic meaning.
+- XACT: new technique with semantic meaning.
+- XAPCT: new technique with semantic meaning.
+- XGI: new technique with semantic meaning.
+- XGPCT: new technique with semantic meaning.
+- XSPCI: new technique with semantic meaning.
+- XSPCT: new technique with semantic meaning.
 
 - HP-XRD: add semantic meaning.
 - HT-XRD: add semantic meaning.
@@ -57,8 +57,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - FF-XAS: add semantic meaning.
 - FF-XANES: add semantic meaning.
 - FF-EXAFS: add semantic meaning.
-- TR-MX: new technique without sematic meaning.
-- TR-SSX: new technique without sematic meaning.
+- TR-MX: new technique without semantic meaning.
+- TR-SSX: new technique without semantic meaning.
 - GIWAXS: new technique with semantic meaning.
 - GIXRD: add semantic meaning.
 
