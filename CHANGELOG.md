@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- S-XEOL: new technique without sematic meaning.
 
 ## [1.2.0]
 
@@ -54,8 +57,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - FF-XAS: add semantic meaning.
 - FF-XANES: add semantic meaning.
 - FF-EXAFS: add semantic meaning.
-- TR-MX: new technique.
-- TR-SSX: new technique.
+- TR-MX: new technique without sematic meaning.
+- TR-SSX: new technique without sematic meaning.
 - GIWAXS: new technique with semantic meaning.
 - GIXRD: add semantic meaning.
 
