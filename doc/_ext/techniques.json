@@ -350,6 +350,11 @@
     "Description": "Resonant X-ray Emission Spectroscopy (RXES) measures emitted X-rays following resonant excitation of core electrons, providing element- and valence-specific information about electronic structure and chemical states."
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#S-XEOL\">S-XEOL</a>",
+    "Alternative names": "X-ray Excited Optical Luminescence",
+    "Description": "Scanning X-ray Excited Optical Luminescence (S-XEOL) measures spatially resolved optical emission induced by X-ray excitation by scanning a focused X-ray beam across a sample, providing 2D maps of luminescence associated with electronic and defect-related states."
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#S-XRD\">S-XRD</a>",
     "Alternative names": "Scanning X-ray Diffraction, SXDM, SXRD, Scanning X-ray Diffraction Microscopy",
     "Description": "Scanning X-ray Diffraction (S-XRD) measures diffraction patterns at many scanned positions on a sample using a focused X-ray beam, providing spatially resolved 2D maps of crystal structure, phase distribution, and strain within the sample."
