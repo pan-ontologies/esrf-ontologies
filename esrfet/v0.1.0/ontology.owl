@@ -2200,6 +2200,18 @@
     
 
 
+    <!-- http://purl.org/pan-science/ESRFET#S-XEOL -->
+
+
+    <owl:Class rdf:about="http://purl.org/pan-science/ESRFET#S-XEOL">
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/ESRFET#experimental_technique"/>
+        <rdfs:comment>Scanning X-ray Excited Optical Luminescence (S-XEOL) measures spatially resolved optical emission induced by X-ray excitation by scanning a focused X-ray beam across a sample, providing 2D maps of luminescence associated with electronic and defect-related states.</rdfs:comment>
+        <rdfs:label>S-XEOL</rdfs:label>
+        <skos:prefLabel>X-ray Excited Optical Luminescence</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/pan-science/ESRFET#S-XRD -->
 
 
