@@ -715,6 +715,10 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ED-XANES"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01321"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-XANES"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
@@ -741,6 +745,10 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ED-XAS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01193"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-XAS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
@@ -764,6 +772,10 @@
                 <Class IRI="#disperse_incident_energy_in_space"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-XRD"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01160"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ED-XRD"/>
@@ -814,6 +826,13 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#ED-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01193"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#ED-XRPD"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -840,6 +859,17 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#ED-XRPD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01101"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01159"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EDS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01193"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#EDS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -864,6 +894,10 @@
                 <Class IRI="#electrons"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EM"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01145"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#EM"/>
@@ -1008,6 +1042,10 @@
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01161"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#HAXPES"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01103"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#HERFD-XAS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1124,7 +1162,7 @@
             <Class IRI="http://purl.org/pan-science/PaNET/PaNET01196"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
-                <Class IRI="#x-ray"/>
+                <Class IRI="#laser"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1236,6 +1274,10 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#MICRO-XRF"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01254"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MICRO-XRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
@@ -1265,8 +1307,23 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#MPES"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01093"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET2013001"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#MX"/>
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01164"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NANO-XRD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#diffraction"/>
+            <Class IRI="#nano_sample_spatial_resolution"/>
+            <Class IRI="#scanning_imaging"/>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#NANO-XRD"/>
@@ -1318,6 +1375,14 @@
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NANO-XRF"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#fluorescence"/>
+            <Class IRI="#nano_sample_spatial_resolution"/>
+            <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -1392,6 +1457,14 @@
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01212"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#REXS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01260"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RIXS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01183"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#S-XRD"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1408,6 +1481,10 @@
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#S-XRF"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01288"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#S-XRF"/>
@@ -1436,6 +1513,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#SAD"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01170"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#SAXS"/>
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01188"/>
     </EquivalentClasses>
@@ -1456,6 +1537,10 @@
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SCXRD"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01102"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#SCXRD"/>
@@ -1492,6 +1577,10 @@
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#STXM"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01219"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#TEM"/>
@@ -1561,6 +1650,10 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#USAXS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01241"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#USAXS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
@@ -1576,6 +1669,10 @@
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WAXS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01191"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#WAXS"/>
@@ -1649,6 +1746,10 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#XAS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01196"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XAS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
@@ -1668,6 +1769,20 @@
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XDS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01021"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XEOL"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01140"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#XES"/>
@@ -1720,6 +1835,17 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#XHT"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#tomography"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01105"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#XLD"/>
         <ObjectIntersectionOf>
             <Class IRI="http://purl.org/pan-science/PaNET/PaNET01138"/>
@@ -1730,14 +1856,41 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#XRAYS"/>
+        <Class IRI="#XMCD"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01137"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XMLD"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01259"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XMχD"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01301"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XNCD"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01303"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XPCI"/>
         <ObjectIntersectionOf>
-            <Class IRI="#experimental_technique"/>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01116"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XPCS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01205"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XRAYS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires_sample_input"/>
+            <Class IRI="#x-ray"/>
+        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#XRD"/>
@@ -1756,6 +1909,10 @@
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XRF"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01095"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#XRF"/>
@@ -1778,6 +1935,10 @@
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XRPD"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01101"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#XRPD"/>
@@ -1805,6 +1966,16 @@
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#reflection"/>
             </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XRR"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/pan-science/PaNET/PaNET01121"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
@@ -2705,6 +2876,11 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CXDI</IRI>
+        <Literal>Beamline: ID16A</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CXDI</IRI>
         <Literal>Coherent X-ray Diffraction Imaging (CXDI) measures the coherent X-ray diffraction pattern from an isolated object or nanostructure. The 3D electron density is reconstructed computationally using phase retrieval, providing high-resolution, lensless imaging of the sample&apos;s internal structure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2743,6 +2919,11 @@
         <Literal>DCT is a near-field diffraction-based imaging technique that provides high-resolution grain maps of polycrystalline materials (Ludwig et al. 2008). For each individual grain, the technique can provide orientation and average elastic strain tensor components with an accuracy of a few times 1e-4 (Reischig et al. 2013). The technique combines the concepts of image reconstruction from projections (tomography) and X-ray diffraction imaging (topography).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DCT</IRI>
+        <Literal>PaNET: &quot;contrast imaging&quot; exists but not tomography.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DCT</IRI>
         <Literal>DCT</Literal>
@@ -2756,6 +2937,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DFXM</IRI>
         <Literal>Dark-Field X-ray Microscopy (DFXM) measures X-ray diffraction in a dark-field imaging geometry to map crystalline structure, orientation, strain, and defects in 3D within bulk materials. It provides spatially resolved imaging of internal microstructures at micrometer to sub-micrometer resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DFXM</IRI>
+        <Literal>PaNET: &quot;x-ray microscopy&quot; and dark-field?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2968,6 +3154,12 @@
         <Literal>FS-EXAFS measures the extended region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on local atomic structure, such as bond lengths and coordination.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FS-EXAFS</IRI>
+        <Literal>Panet mapping misses Full-spectral 
+&apos;extended x-ray absorption fine structure&apos; and imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FS-EXAFS</IRI>
         <Literal>FS-EXAFS</Literal>
@@ -2981,6 +3173,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#FS-XAS</IRI>
         <Literal>FS-XAS measures X-ray absorption spectra across a 2D sample area using a focused X-ray beam, providing spatially resolved insight into electronic and atomic structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FS-XAS</IRI>
+        <Literal>Panet mapping misses &apos;full-spectral&apos;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3078,6 +3275,11 @@
         <Literal>High-Pressure X-ray Diffraction (HP-XRD) measures X-ray diffraction patterns of materials compressed to high pressures, revealing structural changes such as phase transitions, lattice compression, and equation-of-state behavior.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HP-XRD</IRI>
+        <Literal>Panet mapping missing the vocabulary to define &apos;high&apos; in &apos;sample pressure&apos;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HP-XRD</IRI>
         <Literal>HP-XRD</Literal>
@@ -3091,6 +3293,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HR-XRPD</IRI>
         <Literal>High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HR-XRPD</IRI>
+        <Literal>Panet mapping: here a higher level class was used but the addition of the technique in panet along its neutron equivalent is required</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3108,6 +3315,11 @@
         <Literal>High-Temperature X-ray Diffraction (HT-XRD) measures X-ray diffraction patterns of materials at elevated temperatures, providing insights into thermal expansion, phase stability, and temperature-induced structural transformations.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HT-XRD</IRI>
+        <Literal>Panet mapping &apos;high&apos; in &apos;sample temperature&apos; is missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HT-XRD</IRI>
         <Literal>HT-XRD</Literal>
@@ -3121,6 +3333,12 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HiP-CT</IRI>
         <Literal>Hierarchical Phase-Contrast Tomography (HiP-CT) measures phase-contrast X-ray projections from intact large biological organs at multiple spatial resolutions, providing 3D images that reveal whole-organ structure down to cellular-level detail without destructive sectioning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HiP-CT</IRI>
+        <Literal>Panet mapping: missing &apos;hierarchical&apos; and &apos;phase-contrast tomography&apos;
+There is a &apos;phase-contrast imaging though&apos;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3151,6 +3369,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#LDDS-XAS</IRI>
         <Literal>Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy (LDDC-XAS) measures X-ray absorption spectra of materials compressed by laser-driven dynamic pressure pulses, providing time-resolved insights into electronic and structural changes under extreme conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LDDS-XAS</IRI>
+        <Literal>Panet mapping: dynamic compresion should be expressed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3208,6 +3431,11 @@
         <Literal>Multi-wavelength Anomalous Dispersion (MAD) measures diffraction at multiple X-ray wavelengths around an absorption edge to use anomalous scattering differences for more accurate phase determination in crystallography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MAD</IRI>
+        <Literal>Panet mapping: dispersion exists but the rest cannot be composed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MAD</IRI>
         <Literal>MAD</Literal>
@@ -3223,6 +3451,11 @@
         <Literal>Mössbauer spectroscopy measures the resonant absorption of X-rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of Mössbauer-active isotopes (e.g. Fe-57).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MBS</IRI>
+        <Literal>Panet mapping: &apos;Mössbauer&apos; is missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MBS</IRI>
         <Literal>MBS</Literal>
@@ -3231,6 +3464,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#MBS</IRI>
         <Literal>Mössbauer Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MICRO-XRD</IRI>
+        <Literal>Panet mapping: analysis is needed regarding the semantics</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3305,7 +3543,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MRT</IRI>
-        <Literal>panet mapping?</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3405,6 +3643,11 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NFS</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NFS</IRI>
         <Literal>Time-domain analog of Mössbauer spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -3421,6 +3664,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NR-XMLD</IRI>
         <Literal>Non-Reciprocal X-ray Magnetic Linear Dichroism (NR-XMLD) measures differences in linear X-ray absorption depending on magnetization direction and X-ray polarization, revealing magnetic asymmetries that break time-reversal symmetry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NR-XMLD</IRI>
+        <Literal>Panet mapping: missing the concept of non-reciprocal</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3480,6 +3728,11 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PFY-XAS</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PFY-XAS</IRI>
         <Literal>Partial Fluorescence Yield X-ray Absorption Spectroscopy (PFY-XAS) measures fluorescence photons from specific emission lines as a function of incident X-ray energy, providing element- and site-selective absorption spectra with reduced self-absorption effects.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -3491,6 +3744,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#PFY-XAS</IRI>
         <Literal>Partial Fluorescence Yield X-ray Absorption Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PIXE</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3521,6 +3779,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>#PTYCHO</IRI>
         <Literal>Ptychography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PXCT</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3570,6 +3833,11 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#RXES</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RXES</IRI>
         <Literal>Resonant X-ray Emission Spectroscopy (RXES) measures emitted X-rays following resonant excitation of core electrons, providing element- and valence-specific information about electronic structure and chemical states.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -3586,6 +3854,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#S-XRD</IRI>
         <Literal>Scanning X-ray Diffraction (S-XRD) measures diffraction patterns at many scanned positions on a sample using a focused X-ray beam, providing spatially resolved 2D maps of crystal structure, phase distribution, and strain within the sample.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#S-XRD</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3693,6 +3966,11 @@
         <Literal>Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SIXES</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SIXES</IRI>
         <Literal>SIXES</Literal>
@@ -3708,6 +3986,11 @@
         <Literal>The Synchrotron Mössbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling Mössbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SMS</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SMS</IRI>
         <Literal>SMS</Literal>
@@ -3721,6 +4004,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SMX</IRI>
         <Literal>Serial Macromolecular Crystallography (SXM) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SMX</IRI>
+        <Literal>Panet mapping missing, relative: serial synchrotron crystallography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3768,6 +4056,11 @@
         <Literal>Transmission Electron Microscopy (TEM) measures electrons transmitted through an ultra-thin sample to produce high-resolution images of its internal structure, enabling atomic- to nanometer-scale imaging and analysis of morphology, crystallography, and defects.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TEM</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TEM</IRI>
         <Literal>TEM</Literal>
@@ -3781,6 +4074,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TFY-XAS</IRI>
         <Literal>Total Fluorescence Yield X-ray Absorption Spectroscopy (TFY-XAS) measures the total emitted fluorescence photons as a function of incident X-ray energy to determine element-specific absorption spectra, providing bulk-sensitive information about electronic and structural properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TFY-XAS</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3798,6 +4096,11 @@
         <Literal>Time-Resolved Ultra-Small Angle X-ray Scattering (TR-USAXS) measures ultra-small angle X-ray scattering as a function of time to monitor structural evolution and dynamics of large-scale features such as aggregation, phase separation, or self-assembly.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TR-USAXS</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TR-USAXS</IRI>
         <Literal>TR-USAXS</Literal>
@@ -3811,6 +4114,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TR-XRD</IRI>
         <Literal>Time-Resolved X-Ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TR-XRD</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3828,6 +4136,11 @@
         <Literal>Total Reflection X-ray Fluorescence (TXRF) measures characteristic X-rays emitted by a sample under total external reflection conditions, providing highly sensitive, surface-specific elemental analysis with minimal sample preparation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TXRF</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TXRF</IRI>
         <Literal>TXRF</Literal>
@@ -3841,6 +4154,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#USA-XPCS</IRI>
         <Literal>Ultra-Small Angle X-Ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#USA-XPCS</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3873,6 +4191,11 @@
         <Literal>Visible Light Microscopy (VLM) captures images of a sample using visible light illumination and optical lenses, providing spatially resolved information about surface morphology, color, and structure at micrometer-scale resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VLM</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VLM</IRI>
         <Literal>VLM</Literal>
@@ -3901,6 +4224,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#WDS</IRI>
         <Literal>WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WDS</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3948,6 +4276,11 @@
         <Literal>X-ray Bragg Holography (XBH) measures interference patterns formed by Bragg-diffracted and reference X-rays from a crystal to reconstruct 3D atomic-scale images of the crystal structure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XBH</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XBH</IRI>
         <Literal>XBH</Literal>
@@ -3963,6 +4296,11 @@
         <Literal>X-ray Computed Laminography (XCL) measures X-ray transmission through flat, extended samples at multiple tilted angles to reconstruct high-resolution 3D images of internal structures that are challenging for conventional tomography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XCL</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XCL</IRI>
         <Literal>XCL</Literal>
@@ -3976,6 +4314,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XDMR</IRI>
         <Literal>X-ray Detected Magnetic Resonance (XDMR) measures changes in X-ray absorption or emission induced by magnetic resonance excitation, providing element-specific information on spin dynamics and magnetic excitations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XDMR</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4158,6 +4501,11 @@
         <Literal>X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT, providing nanoscale 3D imaging of internal sample structure by combining holography and tomography with nanoscale focusing.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XNHT</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XNHT</IRI>
         <Literal>XNHT</Literal>
@@ -4213,6 +4561,11 @@
         <Literal>X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample at multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures not visible in conventional absorption tomography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XPCT</IRI>
+        <Literal>Panet mapping: x-ray propagation phase contrast tomography?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#XPCT</IRI>
         <Literal>XPCT</Literal>
@@ -4226,6 +4579,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XPS</IRI>
         <Literal>X-ray Photoelectron Spectroscopy (XPS) measures the kinetic energy of electrons ejected by X-rays to determine elemental composition and chemical states near the surface of a material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XPS</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4256,6 +4614,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRCT</IRI>
         <Literal>X-Ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRCT</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4340,7 +4703,17 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRS</IRI>
+        <Literal>Panet mapping: raman spectroscopy exists</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRS</IRI>
         <Literal>X-ray Raman Scattering (XRS) measures inelastic scattering of hard X-rays by core electrons, enabling the study of low-Z elements’ electronic structure and bonding in bulk samples without the need for soft X-rays or vacuum conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRS</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4356,6 +4729,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRT</IRI>
         <Literal>X-Ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRT</IRI>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4795,6 +5173,11 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#FS‑XANES</IRI>
         <Literal>FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FS‑XANES</IRI>
+        <Literal>Panet mapping misses &apos;full-spectral&apos;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
