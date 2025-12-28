@@ -1243,7 +1243,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
-           rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size greater that 100 micron." ;
+           rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron." ;
            rdfs:label "MACRO-XRF" ;
            <http://www.w3.org/2004/02/skos/core#altLabel> "MA-XRF" ,
                                                           "Macro-XRF" ;
@@ -1288,11 +1288,11 @@ xsd:date rdf:type rdfs:Datatype .
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
-           rdfs:comment "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron." ;
+           rdfs:comment "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron." ;
            rdfs:label "MICRO-XRD" ;
            <http://www.w3.org/2004/02/skos/core#altLabel> "Micro-XRD" ,
                                                           "μ-XRD" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning Micro X-ray diffraction" .
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning Micro X-ray Diffraction" .
 
 
 ###  http://purl.org/pan-science/ESRFET#MICRO-XRF
@@ -1325,7 +1325,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
-           rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron." ;
+           rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron." ;
            rdfs:label "MICRO-XRF" ;
            <http://www.w3.org/2004/02/skos/core#altLabel> "Micro-XRF" ,
                                                           "μ-XRF" ;
@@ -1378,7 +1378,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                    ) ;
                                 rdf:type owl:Class
                               ] ;
-          rdfs:comment "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers." ;
+          rdfs:comment "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers." ;
           rdfs:label "NANO-XRD" ;
           <http://www.w3.org/2004/02/skos/core#altLabel> "Nano-XRD" ,
                                                          "nXRD" ;
@@ -1415,7 +1415,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                    ) ;
                                 rdf:type owl:Class
                               ] ;
-          rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers." ;
+          rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers." ;
           rdfs:label "NANO-XRF" ;
           <http://www.w3.org/2004/02/skos/core#altLabel> "Nano-XRF" ,
                                                          "n-XRF" ;
@@ -1522,7 +1522,7 @@ xsd:date rdf:type rdfs:Datatype .
                              ] ;
          rdfs:comment "X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample–detector distances." ;
          rdfs:label "PB-XPCT" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "Propagation-based X-ray Phase-Contrast Tomograph" .
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Propagation-based X-ray Phase-Contrast Tomography" .
 
 
 ###  http://purl.org/pan-science/ESRFET#PCI
@@ -1813,8 +1813,8 @@ xsd:date rdf:type rdfs:Datatype .
                            ] ;
        rdfs:comment "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping." ,
                     """Two definitions seem to exist for SIXES:
-Sakurai et. al. (1988): XAS with a Si(Li) detector.
-Simionovici et al (2000): XRF maps at a few incident energies.
+Sakurai et al. (1988): XAS with a Si(Li) detector.
+Simionovici et al. (2000): XRF maps at a few incident energies.
 The second definition is chosen for this technique.""" ;
        rdfs:label "SIXES" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Selectively Induced X-ray Emission Spectroscopy" .
@@ -1965,7 +1965,7 @@ The second definition is chosen for this technique.""" ;
                             ] ;
         rdfs:comment "Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent." ;
         rdfs:label "TR-XSS" ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Time-resolved X-ray solution scattering" .
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Time-Resolved X-ray solution scattering" .
 
 
 ###  http://purl.org/pan-science/ESRFET#TXRF
@@ -2107,7 +2107,7 @@ The second definition is chosen for this technique.""" ;
                                               ) ;
                            rdf:type owl:Class
                          ] ;
-     rdfs:comment "WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons" ;
+     rdfs:comment "WDS measures X-ray photons coming from a sample during irradiation with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons" ;
      rdfs:label "WDS" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Wavelength Dispersive X-ray Spectroscopy" .
 
@@ -2623,7 +2623,7 @@ The second definition is chosen for this technique.""" ;
                          ] ;
      rdfs:comment "X-ray Diffraction (XRD) measures the diffraction pattern produced when X-rays interact with a crystalline sample. The pattern provides information about the crystal structure, phase identification, lattice parameters, and crystallite size of the material." ;
      rdfs:label "XRD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray diffraction" .
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Diffraction" .
 
 
 ###  http://purl.org/pan-science/ESRFET#XRF

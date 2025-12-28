@@ -5230,7 +5230,7 @@
   "@id" : "http://purl.org/pan-science/ESRFET#MACRO-XRF",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size greater that 100 micron."
+    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "MACRO-XRF"
@@ -5280,7 +5280,7 @@
   "@id" : "http://purl.org/pan-science/ESRFET#MICRO-XRD",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
+    "@value" : "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "MICRO-XRD"
@@ -5294,13 +5294,13 @@
     "@value" : "μ-XRD"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Scanning Micro X-ray diffraction"
+    "@value" : "Scanning Micro X-ray Diffraction"
   } ]
 }, {
   "@id" : "http://purl.org/pan-science/ESRFET#MICRO-XRF",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
+    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "MICRO-XRF"
@@ -5365,7 +5365,7 @@
   "@id" : "http://purl.org/pan-science/ESRFET#NANO-XRD",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
+    "@value" : "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "NANO-XRD"
@@ -5385,7 +5385,7 @@
   "@id" : "http://purl.org/pan-science/ESRFET#NANO-XRF",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
+    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "NANO-XRF"
@@ -5506,7 +5506,7 @@
     "@id" : "_:genid434"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Propagation-based X-ray Phase-Contrast Tomograph"
+    "@value" : "Propagation-based X-ray Phase-Contrast Tomography"
   } ]
 }, {
   "@id" : "http://purl.org/pan-science/ESRFET#PCI",
@@ -5756,7 +5756,7 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping."
   }, {
-    "@value" : "Two definitions seem to exist for SIXES:\nSakurai et. al. (1988): XAS with a Si(Li) detector.\nSimionovici et al (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique."
+    "@value" : "Two definitions seem to exist for SIXES:\nSakurai et al. (1988): XAS with a Si(Li) detector.\nSimionovici et al. (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "SIXES"
@@ -5915,7 +5915,7 @@
     "@id" : "_:genid554"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Time-resolved X-ray solution scattering"
+    "@value" : "Time-Resolved X-ray solution scattering"
   } ]
 }, {
   "@id" : "http://purl.org/pan-science/ESRFET#TR‑SSX",
@@ -6017,7 +6017,7 @@
   "@id" : "http://purl.org/pan-science/ESRFET#WDS",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons"
+    "@value" : "WDS measures X-ray photons coming from a sample during irradiation with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "WDS"
@@ -6457,7 +6457,7 @@
     "@id" : "_:genid756"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "X-ray diffraction"
+    "@value" : "X-ray Diffraction"
   } ]
 }, {
   "@id" : "http://purl.org/pan-science/ESRFET#XRF",

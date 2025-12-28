@@ -1660,7 +1660,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size greater that 100 micron.</rdfs:comment>
+        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron.</rdfs:comment>
         <rdfs:label>MACRO-XRF</rdfs:label>
         <skos:altLabel>MA-XRF</skos:altLabel>
         <skos:altLabel>Macro-XRF</skos:altLabel>
@@ -1720,11 +1720,11 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron.</rdfs:comment>
+        <rdfs:comment>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.</rdfs:comment>
         <rdfs:label>MICRO-XRD</rdfs:label>
         <skos:altLabel>Micro-XRD</skos:altLabel>
         <skos:altLabel>μ-XRD</skos:altLabel>
-        <skos:prefLabel>Scanning Micro X-ray diffraction</skos:prefLabel>
+        <skos:prefLabel>Scanning Micro X-ray Diffraction</skos:prefLabel>
     </owl:Class>
     
 
@@ -1764,7 +1764,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron.</rdfs:comment>
+        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.</rdfs:comment>
         <rdfs:label>MICRO-XRF</rdfs:label>
         <skos:altLabel>Micro-XRF</skos:altLabel>
         <skos:altLabel>μ-XRF</skos:altLabel>
@@ -1836,7 +1836,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers.</rdfs:comment>
+        <rdfs:comment>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers.</rdfs:comment>
         <rdfs:label>NANO-XRD</rdfs:label>
         <skos:altLabel>Nano-XRD</skos:altLabel>
         <skos:altLabel>nXRD</skos:altLabel>
@@ -1880,7 +1880,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers.</rdfs:comment>
+        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers.</rdfs:comment>
         <rdfs:label>NANO-XRF</rdfs:label>
         <skos:altLabel>Nano-XRF</skos:altLabel>
         <skos:altLabel>n-XRF</skos:altLabel>
@@ -2021,7 +2021,7 @@
         </owl:equivalentClass>
         <rdfs:comment>X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample–detector distances.</rdfs:comment>
         <rdfs:label>PB-XPCT</rdfs:label>
-        <skos:prefLabel>Propagation-based X-ray Phase-Contrast Tomograph</skos:prefLabel>
+        <skos:prefLabel>Propagation-based X-ray Phase-Contrast Tomography</skos:prefLabel>
     </owl:Class>
     
 
@@ -2400,8 +2400,8 @@
         </owl:equivalentClass>
         <rdfs:comment>Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.</rdfs:comment>
         <rdfs:comment>Two definitions seem to exist for SIXES:
-Sakurai et. al. (1988): XAS with a Si(Li) detector.
-Simionovici et al (2000): XRF maps at a few incident energies.
+Sakurai et al. (1988): XAS with a Si(Li) detector.
+Simionovici et al. (2000): XRF maps at a few incident energies.
 The second definition is chosen for this technique.</rdfs:comment>
         <rdfs:label>SIXES</rdfs:label>
         <skos:prefLabel>Selectively Induced X-ray Emission Spectroscopy</skos:prefLabel>
@@ -2604,7 +2604,7 @@ The second definition is chosen for this technique.</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:comment>Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent.</rdfs:comment>
         <rdfs:label>TR-XSS</rdfs:label>
-        <skos:prefLabel>Time-resolved X-ray solution scattering</skos:prefLabel>
+        <skos:prefLabel>Time-Resolved X-ray solution scattering</skos:prefLabel>
     </owl:Class>
     
 
@@ -2789,7 +2789,7 @@ The second definition is chosen for this technique.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons</rdfs:comment>
+        <rdfs:comment>WDS measures X-ray photons coming from a sample during irradiation with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons</rdfs:comment>
         <rdfs:label>WDS</rdfs:label>
         <skos:prefLabel>Wavelength Dispersive X-ray Spectroscopy</skos:prefLabel>
     </owl:Class>
@@ -3459,7 +3459,7 @@ The second definition is chosen for this technique.</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:comment>X-ray Diffraction (XRD) measures the diffraction pattern produced when X-rays interact with a crystalline sample. The pattern provides information about the crystal structure, phase identification, lattice parameters, and crystallite size of the material.</rdfs:comment>
         <rdfs:label>XRD</rdfs:label>
-        <skos:prefLabel>X-ray diffraction</skos:prefLabel>
+        <skos:prefLabel>X-ray Diffraction</skos:prefLabel>
     </owl:Class>
     
 

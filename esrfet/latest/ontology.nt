@@ -1555,7 +1555,7 @@ _:genid372 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid371 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid373 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/pan-science/ESRFET#experimental_technique> .
 _:genid373 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://purl.org/pan-science/ESRFET#MACRO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size greater that 100 micron." .
+<http://purl.org/pan-science/ESRFET#MACRO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron." .
 <http://purl.org/pan-science/ESRFET#MACRO-XRF> <http://www.w3.org/2000/01/rdf-schema#label> "MACRO-XRF" .
 <http://purl.org/pan-science/ESRFET#MACRO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "MA-XRF" .
 <http://purl.org/pan-science/ESRFET#MACRO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "Macro-XRF" .
@@ -1607,11 +1607,11 @@ _:genid382 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/pan-science/ESRFET#experimental_technique> .
 _:genid383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://purl.org/pan-science/ESRFET#MICRO-XRD> <http://www.w3.org/2000/01/rdf-schema#comment> "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron." .
+<http://purl.org/pan-science/ESRFET#MICRO-XRD> <http://www.w3.org/2000/01/rdf-schema#comment> "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron." .
 <http://purl.org/pan-science/ESRFET#MICRO-XRD> <http://www.w3.org/2000/01/rdf-schema#label> "MICRO-XRD" .
 <http://purl.org/pan-science/ESRFET#MICRO-XRD> <http://www.w3.org/2004/02/skos/core#altLabel> "Micro-XRD" .
 <http://purl.org/pan-science/ESRFET#MICRO-XRD> <http://www.w3.org/2004/02/skos/core#altLabel> "μ-XRD" .
-<http://purl.org/pan-science/ESRFET#MICRO-XRD> <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning Micro X-ray diffraction" .
+<http://purl.org/pan-science/ESRFET#MICRO-XRD> <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning Micro X-ray Diffraction" .
 # 
 # http://purl.org/pan-science/ESRFET#MICRO-XRF
 <http://purl.org/pan-science/ESRFET#MICRO-XRF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1657,7 +1657,7 @@ _:genid396 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/pan-science/ESRFET#experimental_technique> .
 _:genid397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://purl.org/pan-science/ESRFET#MICRO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron." .
+<http://purl.org/pan-science/ESRFET#MICRO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron." .
 <http://purl.org/pan-science/ESRFET#MICRO-XRF> <http://www.w3.org/2000/01/rdf-schema#label> "MICRO-XRF" .
 <http://purl.org/pan-science/ESRFET#MICRO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "Micro-XRF" .
 <http://purl.org/pan-science/ESRFET#MICRO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "μ-XRF" .
@@ -1716,7 +1716,7 @@ _:genid406 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid405 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/pan-science/ESRFET#experimental_technique> .
 _:genid407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://purl.org/pan-science/ESRFET#NANO-XRD> <http://www.w3.org/2000/01/rdf-schema#comment> "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers." .
+<http://purl.org/pan-science/ESRFET#NANO-XRD> <http://www.w3.org/2000/01/rdf-schema#comment> "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers." .
 <http://purl.org/pan-science/ESRFET#NANO-XRD> <http://www.w3.org/2000/01/rdf-schema#label> "NANO-XRD" .
 <http://purl.org/pan-science/ESRFET#NANO-XRD> <http://www.w3.org/2004/02/skos/core#altLabel> "Nano-XRD" .
 <http://purl.org/pan-science/ESRFET#NANO-XRD> <http://www.w3.org/2004/02/skos/core#altLabel> "nXRD" .
@@ -1766,7 +1766,7 @@ _:genid420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/pan-science/ESRFET#experimental_technique> .
 _:genid421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://purl.org/pan-science/ESRFET#NANO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers." .
+<http://purl.org/pan-science/ESRFET#NANO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers." .
 <http://purl.org/pan-science/ESRFET#NANO-XRF> <http://www.w3.org/2000/01/rdf-schema#label> "NANO-XRF" .
 <http://purl.org/pan-science/ESRFET#NANO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "Nano-XRF" .
 <http://purl.org/pan-science/ESRFET#NANO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "n-XRF" .
@@ -1890,7 +1890,7 @@ _:genid445 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/p
 _:genid445 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/pan-science/ESRFET#PB-XPCT> <http://www.w3.org/2000/01/rdf-schema#comment> "X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample–detector distances." .
 <http://purl.org/pan-science/ESRFET#PB-XPCT> <http://www.w3.org/2000/01/rdf-schema#label> "PB-XPCT" .
-<http://purl.org/pan-science/ESRFET#PB-XPCT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Propagation-based X-ray Phase-Contrast Tomograph" .
+<http://purl.org/pan-science/ESRFET#PB-XPCT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Propagation-based X-ray Phase-Contrast Tomography" .
 # 
 # http://purl.org/pan-science/ESRFET#PCI
 <http://purl.org/pan-science/ESRFET#PCI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2246,7 +2246,7 @@ _:genid525 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid527 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/pan-science/ESRFET#experimental_technique> .
 _:genid527 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/pan-science/ESRFET#SIXES> <http://www.w3.org/2000/01/rdf-schema#comment> "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping." .
-<http://purl.org/pan-science/ESRFET#SIXES> <http://www.w3.org/2000/01/rdf-schema#comment> "Two definitions seem to exist for SIXES:\nSakurai et. al. (1988): XAS with a Si(Li) detector.\nSimionovici et al (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique." .
+<http://purl.org/pan-science/ESRFET#SIXES> <http://www.w3.org/2000/01/rdf-schema#comment> "Two definitions seem to exist for SIXES:\nSakurai et al. (1988): XAS with a Si(Li) detector.\nSimionovici et al. (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique." .
 <http://purl.org/pan-science/ESRFET#SIXES> <http://www.w3.org/2000/01/rdf-schema#label> "SIXES" .
 <http://purl.org/pan-science/ESRFET#SIXES> <http://www.w3.org/2004/02/skos/core#prefLabel> "Selectively Induced X-ray Emission Spectroscopy" .
 # 
@@ -2422,7 +2422,7 @@ _:genid563 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/p
 _:genid563 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/pan-science/ESRFET#TR-XSS> <http://www.w3.org/2000/01/rdf-schema#comment> "Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent." .
 <http://purl.org/pan-science/ESRFET#TR-XSS> <http://www.w3.org/2000/01/rdf-schema#label> "TR-XSS" .
-<http://purl.org/pan-science/ESRFET#TR-XSS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Time-resolved X-ray solution scattering" .
+<http://purl.org/pan-science/ESRFET#TR-XSS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Time-Resolved X-ray solution scattering" .
 # 
 # http://purl.org/pan-science/ESRFET#TXRF
 <http://purl.org/pan-science/ESRFET#TXRF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2605,7 +2605,7 @@ _:genid610 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid609 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid611 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/pan-science/ESRFET#experimental_technique> .
 _:genid611 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://purl.org/pan-science/ESRFET#WDS> <http://www.w3.org/2000/01/rdf-schema#comment> "WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons" .
+<http://purl.org/pan-science/ESRFET#WDS> <http://www.w3.org/2000/01/rdf-schema#comment> "WDS measures X-ray photons coming from a sample during irradiation with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons" .
 <http://purl.org/pan-science/ESRFET#WDS> <http://www.w3.org/2000/01/rdf-schema#label> "WDS" .
 <http://purl.org/pan-science/ESRFET#WDS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wavelength Dispersive X-ray Spectroscopy" .
 # 
@@ -3243,7 +3243,7 @@ _:genid761 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/p
 _:genid761 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://purl.org/pan-science/ESRFET#XRD> <http://www.w3.org/2000/01/rdf-schema#comment> "X-ray Diffraction (XRD) measures the diffraction pattern produced when X-rays interact with a crystalline sample. The pattern provides information about the crystal structure, phase identification, lattice parameters, and crystallite size of the material." .
 <http://purl.org/pan-science/ESRFET#XRD> <http://www.w3.org/2000/01/rdf-schema#label> "XRD" .
-<http://purl.org/pan-science/ESRFET#XRD> <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray diffraction" .
+<http://purl.org/pan-science/ESRFET#XRD> <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Diffraction" .
 # 
 # http://purl.org/pan-science/ESRFET#XRF
 <http://purl.org/pan-science/ESRFET#XRF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
