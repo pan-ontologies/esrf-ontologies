@@ -363,7 +363,7 @@
       "MA-XRF",
       "Macro-XRF"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size greater that 100 micron."
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MAD",
@@ -385,11 +385,11 @@
     "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRD",
     "names": [
       "MICRO-XRD",
-      "Scanning Micro X-ray diffraction",
+      "Scanning Micro X-ray Diffraction",
       "Micro-XRD",
       "\u03bc-XRD"
     ],
-    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
+    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRF",
@@ -399,7 +399,7 @@
       "Micro-XRF",
       "\u03bc-XRF"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MPES",
@@ -433,7 +433,7 @@
       "Nano-XRD",
       "nXRD"
     ],
-    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
+    "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NANO-XRF",
@@ -443,7 +443,7 @@
       "Nano-XRF",
       "n-XRF"
     ],
-    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
+    "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NFP",
@@ -497,7 +497,7 @@
     "iri": "http://purl.org/pan-science/ESRFET#PB-XPCT",
     "names": [
       "PB-XPCT",
-      "Propagation-based X-ray Phase-Contrast Tomograph"
+      "Propagation-based X-ray Phase-Contrast Tomography"
     ],
     "description": "X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample\u2013detector distances."
   },
@@ -633,7 +633,7 @@
       "SIXES",
       "Selectively Induced X-ray Emission Spectroscopy"
     ],
-    "description": "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.\nTwo definitions seem to exist for SIXES:\nSakurai et. al. (1988): XAS with a Si(Li) detector.\nSimionovici et al (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique."
+    "description": "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.\nTwo definitions seem to exist for SIXES:\nSakurai et al. (1988): XAS with a Si(Li) detector.\nSimionovici et al. (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#SMS",
@@ -711,7 +711,7 @@
     "iri": "http://purl.org/pan-science/ESRFET#TR-XSS",
     "names": [
       "TR-XSS",
-      "Time-resolved X-ray solution scattering"
+      "Time-Resolved X-ray solution scattering"
     ],
     "description": "Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent."
   },
@@ -769,7 +769,7 @@
       "WDS",
       "Wavelength Dispersive X-ray Spectroscopy"
     ],
-    "description": "WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons"
+    "description": "WDS measures X-ray photons coming from a sample during irradiation with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons"
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#XACT",
@@ -993,7 +993,7 @@
     "iri": "http://purl.org/pan-science/ESRFET#XRD",
     "names": [
       "XRD",
-      "X-ray diffraction"
+      "X-ray Diffraction"
     ],
     "description": "X-ray Diffraction (XRD) measures the diffraction pattern produced when X-rays interact with a crystalline sample. The pattern provides information about the crystal structure, phase identification, lattice parameters, and crystallite size of the material."
   },

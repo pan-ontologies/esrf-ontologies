@@ -222,7 +222,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MACRO-XRF\">MACRO-XRF</a>",
     "Alternative names": "Scanning Macro X-ray fluorescence, MA-XRF, Macro-XRF",
-    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size greater that 100 micron."
+    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MAD\">MAD</a>",
@@ -236,13 +236,13 @@
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MICRO-XRD\">MICRO-XRD</a>",
-    "Alternative names": "Scanning Micro X-ray diffraction, Micro-XRD, μ-XRD",
-    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
+    "Alternative names": "Scanning Micro X-ray Diffraction, Micro-XRD, μ-XRD",
+    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MICRO-XRF\">MICRO-XRF</a>",
     "Alternative names": "Scanning Micro X-ray fluorescence, Micro-XRF, μ-XRF",
-    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 micron."
+    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MPES\">MPES</a>",
@@ -262,12 +262,12 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NANO-XRD\">NANO-XRD</a>",
     "Alternative names": "Scanning Nano X-ray diffraction, Nano-XRD, nXRD",
-    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
+    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NANO-XRF\">NANO-XRF</a>",
     "Alternative names": "Scanning Nano X-ray fluorescence, Nano-XRF, n-XRF",
-    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam is beam size between 0.1 and 100 nanometers."
+    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NFP\">NFP</a>",
@@ -301,7 +301,7 @@
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#PB-XPCT\">PB-XPCT</a>",
-    "Alternative names": "Propagation-based X-ray Phase-Contrast Tomograph",
+    "Alternative names": "Propagation-based X-ray Phase-Contrast Tomography",
     "Description": "X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample–detector distances."
   },
   {
@@ -382,7 +382,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SIXES\">SIXES</a>",
     "Alternative names": "Selectively Induced X-ray Emission Spectroscopy",
-    "Description": "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.\nTwo definitions seem to exist for SIXES:\nSakurai et. al. (1988): XAS with a Si(Li) detector.\nSimionovici et al (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique."
+    "Description": "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.\nTwo definitions seem to exist for SIXES:\nSakurai et al. (1988): XAS with a Si(Li) detector.\nSimionovici et al. (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#SMS\">SMS</a>",
@@ -431,7 +431,7 @@
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#TR-XSS\">TR-XSS</a>",
-    "Alternative names": "Time-resolved X-ray solution scattering",
+    "Alternative names": "Time-Resolved X-ray solution scattering",
     "Description": "Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent."
   },
   {
@@ -467,7 +467,7 @@
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#WDS\">WDS</a>",
     "Alternative names": "Wavelength Dispersive X-ray Spectroscopy",
-    "Description": "WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons"
+    "Description": "WDS measures X-ray photons coming from a sample during irradiation with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons"
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XACT\">XACT</a>",
@@ -606,7 +606,7 @@
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#XRD\">XRD</a>",
-    "Alternative names": "X-ray diffraction",
+    "Alternative names": "X-ray Diffraction",
     "Description": "X-ray Diffraction (XRD) measures the diffraction pattern produced when X-rays interact with a crystalline sample. The pattern provides information about the crystal structure, phase identification, lattice parameters, and crystallite size of the material."
   },
   {
