@@ -630,6 +630,240 @@
         <NamedIndividual IRI="#example_photon_count"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#technique-ARPES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-BCDI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-BioSAXS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-CDI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-CMS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-CRYO-EM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-CXDI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-DAFS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-DCT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-DFXM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-ED-EXAFS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-ED-XANES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-ED-XAS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-ED-XRD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-ED-XRF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-ED-XRPD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-EDS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-EM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-EXAFS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-FF-EXAFS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-FF-XANES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-FF-XAS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-FS-EXAFS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-FS-XAS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-GIXRD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-HAXPES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-HP-XRD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-HT-XRD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-HiP-CT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-IXS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-LDDS-XAS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-LDSC-XAS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-MACRO-XRF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-MICRO-XRD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-MICRO-XRF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-MPES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-MX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-NANO-XRD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-NANO-XRF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-NFP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-NFS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-NR-XMLD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-NRIXS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-NRS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-PDF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-PFY-XAS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-PIXE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-PTYCHO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-PXCT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-REXS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-RIXS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-RXES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-S-XRD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-S-XRF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-SAD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-SAXS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-SCXRD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-SIXES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-SMS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-SMX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-SSX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-STXM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-TEM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-TFY-XAS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-TR-USAXS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-TR-XRD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-TXRF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-USA-XPCS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-USAXS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-VLM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-WAXS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-WDS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-XANES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-XAS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-XES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-XFCT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-XMCD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#technique-XPS"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#wrong"/>
     </Declaration>
     <Declaration>
@@ -1320,14 +1554,6 @@
     <EquivalentClasses>
         <Class IRI="#NANO-XRD"/>
         <ObjectIntersectionOf>
-            <Class IRI="#diffraction"/>
-            <Class IRI="#nano_sample_spatial_resolution"/>
-            <Class IRI="#scanning_imaging"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#NANO-XRD"/>
-        <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
@@ -1375,14 +1601,6 @@
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#NANO-XRF"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#fluorescence"/>
-            <Class IRI="#nano_sample_spatial_resolution"/>
-            <Class IRI="#x-ray"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -2678,6 +2896,318 @@
         <Class IRI="#photon_count"/>
         <NamedIndividual IRI="#example_photon_count"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ARPES"/>
+        <NamedIndividual IRI="#technique-ARPES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BCDI"/>
+        <NamedIndividual IRI="#technique-BCDI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BioSAXS"/>
+        <NamedIndividual IRI="#technique-BioSAXS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CDI"/>
+        <NamedIndividual IRI="#technique-CDI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CMS"/>
+        <NamedIndividual IRI="#technique-CMS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CRYO-EM"/>
+        <NamedIndividual IRI="#technique-CRYO-EM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CXDI"/>
+        <NamedIndividual IRI="#technique-CXDI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DAFS"/>
+        <NamedIndividual IRI="#technique-DAFS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DCT"/>
+        <NamedIndividual IRI="#technique-DCT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DFXM"/>
+        <NamedIndividual IRI="#technique-DFXM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ED-EXAFS"/>
+        <NamedIndividual IRI="#technique-ED-EXAFS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ED-XANES"/>
+        <NamedIndividual IRI="#technique-ED-XANES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ED-XAS"/>
+        <NamedIndividual IRI="#technique-ED-XAS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ED-XRD"/>
+        <NamedIndividual IRI="#technique-ED-XRD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ED-XRF"/>
+        <NamedIndividual IRI="#technique-ED-XRF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ED-XRPD"/>
+        <NamedIndividual IRI="#technique-ED-XRPD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EDS"/>
+        <NamedIndividual IRI="#technique-EDS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EM"/>
+        <NamedIndividual IRI="#technique-EM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EXAFS"/>
+        <NamedIndividual IRI="#technique-EXAFS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FF-EXAFS"/>
+        <NamedIndividual IRI="#technique-FF-EXAFS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FF-XANES"/>
+        <NamedIndividual IRI="#technique-FF-XANES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FF-XAS"/>
+        <NamedIndividual IRI="#technique-FF-XAS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FS-EXAFS"/>
+        <NamedIndividual IRI="#technique-FS-EXAFS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FS-XAS"/>
+        <NamedIndividual IRI="#technique-FS-XAS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GIXRD"/>
+        <NamedIndividual IRI="#technique-GIXRD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HAXPES"/>
+        <NamedIndividual IRI="#technique-HAXPES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HP-XRD"/>
+        <NamedIndividual IRI="#technique-HP-XRD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HT-XRD"/>
+        <NamedIndividual IRI="#technique-HT-XRD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HiP-CT"/>
+        <NamedIndividual IRI="#technique-HiP-CT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IXS"/>
+        <NamedIndividual IRI="#technique-IXS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LDDS-XAS"/>
+        <NamedIndividual IRI="#technique-LDDS-XAS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LDSC-XAS"/>
+        <NamedIndividual IRI="#technique-LDSC-XAS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MACRO-XRF"/>
+        <NamedIndividual IRI="#technique-MACRO-XRF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MICRO-XRD"/>
+        <NamedIndividual IRI="#technique-MICRO-XRD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MICRO-XRF"/>
+        <NamedIndividual IRI="#technique-MICRO-XRF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MPES"/>
+        <NamedIndividual IRI="#technique-MPES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MX"/>
+        <NamedIndividual IRI="#technique-MX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NANO-XRD"/>
+        <NamedIndividual IRI="#technique-NANO-XRD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NANO-XRF"/>
+        <NamedIndividual IRI="#technique-NANO-XRF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NFP"/>
+        <NamedIndividual IRI="#technique-NFP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NFS"/>
+        <NamedIndividual IRI="#technique-NFS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NR-XMLD"/>
+        <NamedIndividual IRI="#technique-NR-XMLD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NRIXS"/>
+        <NamedIndividual IRI="#technique-NRIXS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NRS"/>
+        <NamedIndividual IRI="#technique-NRS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PDF"/>
+        <NamedIndividual IRI="#technique-PDF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PFY-XAS"/>
+        <NamedIndividual IRI="#technique-PFY-XAS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PIXE"/>
+        <NamedIndividual IRI="#technique-PIXE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PTYCHO"/>
+        <NamedIndividual IRI="#technique-PTYCHO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PXCT"/>
+        <NamedIndividual IRI="#technique-PXCT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#REXS"/>
+        <NamedIndividual IRI="#technique-REXS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RIXS"/>
+        <NamedIndividual IRI="#technique-RIXS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RXES"/>
+        <NamedIndividual IRI="#technique-RXES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#S-XRD"/>
+        <NamedIndividual IRI="#technique-S-XRD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#S-XRF"/>
+        <NamedIndividual IRI="#technique-S-XRF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SAD"/>
+        <NamedIndividual IRI="#technique-SAD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SAXS"/>
+        <NamedIndividual IRI="#technique-SAXS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SCXRD"/>
+        <NamedIndividual IRI="#technique-SCXRD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SIXES"/>
+        <NamedIndividual IRI="#technique-SIXES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SMS"/>
+        <NamedIndividual IRI="#technique-SMS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SMX"/>
+        <NamedIndividual IRI="#technique-SMX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SSX"/>
+        <NamedIndividual IRI="#technique-SSX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#STXM"/>
+        <NamedIndividual IRI="#technique-STXM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEM"/>
+        <NamedIndividual IRI="#technique-TEM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TFY-XAS"/>
+        <NamedIndividual IRI="#technique-TFY-XAS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TR-USAXS"/>
+        <NamedIndividual IRI="#technique-TR-USAXS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TR-XRD"/>
+        <NamedIndividual IRI="#technique-TR-XRD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TXRF"/>
+        <NamedIndividual IRI="#technique-TXRF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#USA-XPCS"/>
+        <NamedIndividual IRI="#technique-USA-XPCS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#USAXS"/>
+        <NamedIndividual IRI="#technique-USAXS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VLM"/>
+        <NamedIndividual IRI="#technique-VLM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WAXS"/>
+        <NamedIndividual IRI="#technique-WAXS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WDS"/>
+        <NamedIndividual IRI="#technique-WDS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XANES"/>
+        <NamedIndividual IRI="#technique-XANES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAS"/>
+        <NamedIndividual IRI="#technique-XAS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XES"/>
+        <NamedIndividual IRI="#technique-XES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XFCT"/>
+        <NamedIndividual IRI="#technique-XFCT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XMCD"/>
+        <NamedIndividual IRI="#technique-XMCD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XPS"/>
+        <NamedIndividual IRI="#technique-XPS"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#measures_interaction_result_property"/>
         <NamedIndividual IRI="#wrong"/>
@@ -3853,12 +4383,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#S-XRD</IRI>
-        <Literal>Scanning X-ray Diffraction (S-XRD) measures diffraction patterns at many scanned positions on a sample using a focused X-ray beam, providing spatially resolved 2D maps of crystal structure, phase distribution, and strain within the sample.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#S-XRD</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>Scanning X-ray Diffraction (S-XRD) measures diffraction patterns at many scanned positions on a sample using a focused X-ray beam, providing spatially resolved 2D maps of crystal structure, phase distribution, and strain within the sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3963,12 +4493,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SIXES</IRI>
-        <Literal>Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SIXES</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3983,12 +4513,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SMS</IRI>
-        <Literal>The Synchrotron Mössbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling Mössbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SMS</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>The Synchrotron Mössbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling Mössbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4003,12 +4533,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SMX</IRI>
-        <Literal>Serial Macromolecular Crystallography (SXM) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize.</Literal>
+        <Literal>Panet mapping missing, relative: serial synchrotron crystallography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SMX</IRI>
-        <Literal>Panet mapping missing, relative: serial synchrotron crystallography</Literal>
+        <Literal>Serial Macromolecular Crystallography (SXM) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4053,12 +4583,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TEM</IRI>
-        <Literal>Transmission Electron Microscopy (TEM) measures electrons transmitted through an ultra-thin sample to produce high-resolution images of its internal structure, enabling atomic- to nanometer-scale imaging and analysis of morphology, crystallography, and defects.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TEM</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>Transmission Electron Microscopy (TEM) measures electrons transmitted through an ultra-thin sample to produce high-resolution images of its internal structure, enabling atomic- to nanometer-scale imaging and analysis of morphology, crystallography, and defects.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4073,12 +4603,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TFY-XAS</IRI>
-        <Literal>Total Fluorescence Yield X-ray Absorption Spectroscopy (TFY-XAS) measures the total emitted fluorescence photons as a function of incident X-ray energy to determine element-specific absorption spectra, providing bulk-sensitive information about electronic and structural properties.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TFY-XAS</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>Total Fluorescence Yield X-ray Absorption Spectroscopy (TFY-XAS) measures the total emitted fluorescence photons as a function of incident X-ray energy to determine element-specific absorption spectra, providing bulk-sensitive information about electronic and structural properties.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4093,12 +4623,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TR-USAXS</IRI>
-        <Literal>Time-Resolved Ultra-Small Angle X-ray Scattering (TR-USAXS) measures ultra-small angle X-ray scattering as a function of time to monitor structural evolution and dynamics of large-scale features such as aggregation, phase separation, or self-assembly.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TR-USAXS</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>Time-Resolved Ultra-Small Angle X-ray Scattering (TR-USAXS) measures ultra-small angle X-ray scattering as a function of time to monitor structural evolution and dynamics of large-scale features such as aggregation, phase separation, or self-assembly.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4113,12 +4643,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TR-XRD</IRI>
-        <Literal>Time-Resolved X-Ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TR-XRD</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>Time-Resolved X-Ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4133,12 +4663,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TXRF</IRI>
-        <Literal>Total Reflection X-ray Fluorescence (TXRF) measures characteristic X-rays emitted by a sample under total external reflection conditions, providing highly sensitive, surface-specific elemental analysis with minimal sample preparation.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TXRF</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>Total Reflection X-ray Fluorescence (TXRF) measures characteristic X-rays emitted by a sample under total external reflection conditions, providing highly sensitive, surface-specific elemental analysis with minimal sample preparation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4153,12 +4683,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#USA-XPCS</IRI>
-        <Literal>Ultra-Small Angle X-Ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#USA-XPCS</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>Ultra-Small Angle X-Ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4188,12 +4718,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VLM</IRI>
-        <Literal>Visible Light Microscopy (VLM) captures images of a sample using visible light illumination and optical lenses, providing spatially resolved information about surface morphology, color, and structure at micrometer-scale resolution.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VLM</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>Visible Light Microscopy (VLM) captures images of a sample using visible light illumination and optical lenses, providing spatially resolved information about surface morphology, color, and structure at micrometer-scale resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4223,12 +4753,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#WDS</IRI>
-        <Literal>WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#WDS</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>WDS measures X-ray photons coming from a sample during irradition with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4273,12 +4803,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XBH</IRI>
-        <Literal>X-ray Bragg Holography (XBH) measures interference patterns formed by Bragg-diffracted and reference X-rays from a crystal to reconstruct 3D atomic-scale images of the crystal structure.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XBH</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>X-ray Bragg Holography (XBH) measures interference patterns formed by Bragg-diffracted and reference X-rays from a crystal to reconstruct 3D atomic-scale images of the crystal structure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4293,12 +4823,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XCL</IRI>
-        <Literal>X-ray Computed Laminography (XCL) measures X-ray transmission through flat, extended samples at multiple tilted angles to reconstruct high-resolution 3D images of internal structures that are challenging for conventional tomography.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XCL</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>X-ray Computed Laminography (XCL) measures X-ray transmission through flat, extended samples at multiple tilted angles to reconstruct high-resolution 3D images of internal structures that are challenging for conventional tomography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4313,12 +4843,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XDMR</IRI>
-        <Literal>X-ray Detected Magnetic Resonance (XDMR) measures changes in X-ray absorption or emission induced by magnetic resonance excitation, providing element-specific information on spin dynamics and magnetic excitations.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XDMR</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>X-ray Detected Magnetic Resonance (XDMR) measures changes in X-ray absorption or emission induced by magnetic resonance excitation, providing element-specific information on spin dynamics and magnetic excitations.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4498,12 +5028,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XNHT</IRI>
-        <Literal>X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT, providing nanoscale 3D imaging of internal sample structure by combining holography and tomography with nanoscale focusing.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XNHT</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT, providing nanoscale 3D imaging of internal sample structure by combining holography and tomography with nanoscale focusing.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4558,12 +5088,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XPCT</IRI>
-        <Literal>X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample at multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures not visible in conventional absorption tomography.</Literal>
+        <Literal>Panet mapping: x-ray propagation phase contrast tomography?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XPCT</IRI>
-        <Literal>Panet mapping: x-ray propagation phase contrast tomography?</Literal>
+        <Literal>X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample at multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures not visible in conventional absorption tomography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4578,12 +5108,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XPS</IRI>
-        <Literal>X-ray Photoelectron Spectroscopy (XPS) measures the kinetic energy of electrons ejected by X-rays to determine elemental composition and chemical states near the surface of a material.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XPS</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>X-ray Photoelectron Spectroscopy (XPS) measures the kinetic energy of electrons ejected by X-rays to determine elemental composition and chemical states near the surface of a material.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4613,12 +5143,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRCT</IRI>
-        <Literal>X-Ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRCT</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>X-Ray Computed Tomography (XRCT) measures X-ray absorption (transmission) of a sample from multiple angles and reconstructs a 3D volume, providing detailed internal structural information such as density variations, morphology, and defects without destroying the sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4703,17 +5233,17 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRS</IRI>
+        <Literal>Panet mapping missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XRS</IRI>
         <Literal>Panet mapping: raman spectroscopy exists</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRS</IRI>
         <Literal>X-ray Raman Scattering (XRS) measures inelastic scattering of hard X-rays by core electrons, enabling the study of low-Z elements’ electronic structure and bonding in bulk samples without the need for soft X-rays or vacuum conditions.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#XRS</IRI>
-        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4728,12 +5258,12 @@ There is a &apos;phase-contrast imaging though&apos;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRT</IRI>
-        <Literal>X-Ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure.</Literal>
+        <Literal>Panet mapping missing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XRT</IRI>
-        <Literal>Panet mapping missing</Literal>
+        <Literal>X-Ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
