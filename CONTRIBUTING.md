@@ -8,7 +8,7 @@ pip install [--user] [-e] .[dev]
 
 ## Formatting
 
-[black](https://black.readthedocs.io/en/stable) is used the auto-format the code.
+[black](https://black.readthedocs.io/en/stable) is used to auto-format the code.
 
 ```bash
 black .
@@ -69,7 +69,7 @@ curl -L -o ontologies/panet/PaNET.owl http://purl.org/pan-science/PaNET/PaNET.ow
 ## Update local NeXus Ontology (ontologies/nexus/NeXusOntology_full_*.owl)
 
 1. **Update NeXus Ontology submodule**  
-   Update the NeXus Ontology submodule to the latest commit. This should pull the the latest commit from oscars-project branch. So you now have latest owl file:
+   Update the NeXus Ontology submodule to the latest commit. This should pull the latest commit from oscars-project branch. So you now have latest owl file:
    ```bash
    git submodule update --remote --recursive NeXusOntology
    ```
