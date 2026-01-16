@@ -2,6 +2,9 @@
 <http://purl.org/pan-science/ESRFET> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/pan-science/ESRFET/v0.1.0> .
 <http://purl.org/pan-science/ESRFET> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/pan-science/PaNET/PaNET.owl> .
 <http://purl.org/pan-science/ESRFET> <http://purl.org/dc/terms/abstract> "The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques." .
+<http://purl.org/pan-science/ESRFET> <http://purl.org/dc/terms/contributor> <http://purl.org/pan-science/ESRFET#person/LBroche> .
+<http://purl.org/pan-science/ESRFET> <http://purl.org/dc/terms/contributor> <http://purl.org/pan-science/ESRFET#person/MBodin> .
+<http://purl.org/pan-science/ESRFET> <http://purl.org/dc/terms/contributor> <http://purl.org/pan-science/ESRFET#person/POAutran> .
 <http://purl.org/pan-science/ESRFET> <http://purl.org/dc/terms/created> "2025-07-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/pan-science/ESRFET> <http://purl.org/dc/terms/creator> <http://purl.org/pan-science/ESRFET#person/GKoumoutsos> .
 <http://purl.org/pan-science/ESRFET> <http://purl.org/dc/terms/creator> <http://purl.org/pan-science/ESRFET#person/WDeNolf> .
@@ -23,6 +26,9 @@
 # 
 # http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -4169,15 +4175,39 @@ _:genid847 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # http://purl.org/pan-science/ESRFET#person/GKoumoutsos
 <http://purl.org/pan-science/ESRFET#person/GKoumoutsos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/pan-science/ESRFET#person/GKoumoutsos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://purl.org/pan-science/ESRFET#person/GKoumoutsos> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://orcid.org/0009-0000-6215-8493> .
+<http://purl.org/pan-science/ESRFET#person/GKoumoutsos> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0009-0000-6215-8493> .
 <http://purl.org/pan-science/ESRFET#person/GKoumoutsos> <http://xmlns.com/foaf/0.1/mbox> "koumoutsosgian@yahoo.gr"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://purl.org/pan-science/ESRFET#person/GKoumoutsos> <http://xmlns.com/foaf/0.1/name> "Giannis Koumoutsos" .
+# 
+# http://purl.org/pan-science/ESRFET#person/LBroche
+<http://purl.org/pan-science/ESRFET#person/LBroche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/pan-science/ESRFET#person/LBroche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/pan-science/ESRFET#person/LBroche> <http://schema.org/affiliation> <http://purl.org/pan-science/ESRFET#ESRF> .
+<http://purl.org/pan-science/ESRFET#person/LBroche> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0000-0001-7704-0762> .
+<http://purl.org/pan-science/ESRFET#person/LBroche> <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" .
+<http://purl.org/pan-science/ESRFET#person/LBroche> <http://xmlns.com/foaf/0.1/name> "Ludovic Broche" .
+# 
+# http://purl.org/pan-science/ESRFET#person/MBodin
+<http://purl.org/pan-science/ESRFET#person/MBodin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/pan-science/ESRFET#person/MBodin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/pan-science/ESRFET#person/MBodin> <http://schema.org/affiliation> <http://purl.org/pan-science/ESRFET#ESRF> .
+<http://purl.org/pan-science/ESRFET#person/MBodin> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0000-0003-0321-3952> .
+<http://purl.org/pan-science/ESRFET#person/MBodin> <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" .
+<http://purl.org/pan-science/ESRFET#person/MBodin> <http://xmlns.com/foaf/0.1/name> "Marjolaine Bodin Ligeon" .
+# 
+# http://purl.org/pan-science/ESRFET#person/POAutran
+<http://purl.org/pan-science/ESRFET#person/POAutran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/pan-science/ESRFET#person/POAutran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/pan-science/ESRFET#person/POAutran> <http://schema.org/affiliation> <http://purl.org/pan-science/ESRFET#ESRF> .
+<http://purl.org/pan-science/ESRFET#person/POAutran> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0000-0003-4600-6371> .
+<http://purl.org/pan-science/ESRFET#person/POAutran> <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" .
+<http://purl.org/pan-science/ESRFET#person/POAutran> <http://xmlns.com/foaf/0.1/name> "Pierre-Olivier Autran" .
 # 
 # http://purl.org/pan-science/ESRFET#person/WDeNolf
 <http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://schema.org/affiliation> <http://purl.org/pan-science/ESRFET#ESRF> .
-<http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://orcid.org/0000-0003-2258-9402> .
+<http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0000-0003-2258-9402> .
 <http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://purl.org/pan-science/ESRFET#person/WDeNolf> <http://xmlns.com/foaf/0.1/name> "Wout De Nolf" .
 # 

@@ -8,6 +8,12 @@
 	 dc:creator <http://purl.org/pan-science/ESRFET#person/GKoumoutsos>;
 	 prov:wasAttributedTo <http://purl.org/pan-science/ESRFET#person/WDeNolf>;
 	 dc:creator <http://purl.org/pan-science/ESRFET#person/WDeNolf>;
+	 prov:wasAttributedTo <http://purl.org/pan-science/ESRFET#person/LBroche>;
+	 dc:contributor <http://purl.org/pan-science/ESRFET#person/LBroche>;
+	 prov:wasAttributedTo <http://purl.org/pan-science/ESRFET#person/MBodin>;
+	 dc:contributor <http://purl.org/pan-science/ESRFET#person/MBodin>;
+	 prov:wasAttributedTo <http://purl.org/pan-science/ESRFET#person/POAutran>;
+	 dc:contributor <http://purl.org/pan-science/ESRFET#person/POAutran>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasGeneratedAt "2025-07-07";
 .

@@ -10,6 +10,9 @@
                                       owl:versionIRI <http://purl.org/pan-science/ESRFET/v0.1.0> ;
                                       owl:imports <http://purl.org/pan-science/PaNET/PaNET.owl> ;
                                       <http://purl.org/dc/terms/abstract> "The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques." ;
+                                      <http://purl.org/dc/terms/contributor> <http://purl.org/pan-science/ESRFET#person/LBroche> ,
+                                                                             <http://purl.org/pan-science/ESRFET#person/MBodin> ,
+                                                                             <http://purl.org/pan-science/ESRFET#person/POAutran> ;
                                       <http://purl.org/dc/terms/created> "2025-07-07"^^xsd:date ;
                                       <http://purl.org/dc/terms/creator> <http://purl.org/pan-science/ESRFET#person/GKoumoutsos> ,
                                                                          <http://purl.org/pan-science/ESRFET#person/WDeNolf> ;
@@ -27,6 +30,10 @@
 
 ###  http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/created
@@ -3613,16 +3620,43 @@ Ultra Large structural features: large aggregates, clusters, and larger pores"""
 ###  http://purl.org/pan-science/ESRFET#person/GKoumoutsos
 <http://purl.org/pan-science/ESRFET#person/GKoumoutsos> rdf:type owl:NamedIndividual ,
                                                                  <http://xmlns.com/foaf/0.1/Person> ;
-                                                        rdfs:seeAlso <http://orcid.org/0009-0000-6215-8493> ;
+                                                        rdfs:seeAlso <https://orcid.org/0009-0000-6215-8493> ;
                                                         <http://xmlns.com/foaf/0.1/mbox> "koumoutsosgian@yahoo.gr"^^rdfs:Literal ;
                                                         <http://xmlns.com/foaf/0.1/name> "Giannis Koumoutsos" .
+
+
+###  http://purl.org/pan-science/ESRFET#person/LBroche
+<http://purl.org/pan-science/ESRFET#person/LBroche> rdf:type owl:NamedIndividual ,
+                                                             <http://xmlns.com/foaf/0.1/Person> ;
+                                                    <http://schema.org/affiliation> :ESRF ;
+                                                    rdfs:seeAlso <https://orcid.org/0000-0001-7704-0762> ;
+                                                    <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" ;
+                                                    <http://xmlns.com/foaf/0.1/name> "Ludovic Broche" .
+
+
+###  http://purl.org/pan-science/ESRFET#person/MBodin
+<http://purl.org/pan-science/ESRFET#person/MBodin> rdf:type owl:NamedIndividual ,
+                                                            <http://xmlns.com/foaf/0.1/Person> ;
+                                                   <http://schema.org/affiliation> :ESRF ;
+                                                   rdfs:seeAlso <https://orcid.org/0000-0003-0321-3952> ;
+                                                   <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" ;
+                                                   <http://xmlns.com/foaf/0.1/name> "Marjolaine Bodin Ligeon" .
+
+
+###  http://purl.org/pan-science/ESRFET#person/POAutran
+<http://purl.org/pan-science/ESRFET#person/POAutran> rdf:type owl:NamedIndividual ,
+                                                              <http://xmlns.com/foaf/0.1/Person> ;
+                                                     <http://schema.org/affiliation> :ESRF ;
+                                                     rdfs:seeAlso <https://orcid.org/0000-0003-4600-6371> ;
+                                                     <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" ;
+                                                     <http://xmlns.com/foaf/0.1/name> "Pierre-Olivier Autran" .
 
 
 ###  http://purl.org/pan-science/ESRFET#person/WDeNolf
 <http://purl.org/pan-science/ESRFET#person/WDeNolf> rdf:type owl:NamedIndividual ,
                                                              <http://xmlns.com/foaf/0.1/Person> ;
                                                     <http://schema.org/affiliation> :ESRF ;
-                                                    rdfs:seeAlso <http://orcid.org/0000-0003-2258-9402> ;
+                                                    rdfs:seeAlso <https://orcid.org/0000-0003-2258-9402> ;
                                                     <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr"^^rdfs:Literal ;
                                                     <http://xmlns.com/foaf/0.1/name> "Wout De Nolf" .
 

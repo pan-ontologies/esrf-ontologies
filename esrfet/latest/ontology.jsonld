@@ -4467,6 +4467,9 @@
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -4486,6 +4489,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@value" : "The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques."
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#person/LBroche"
+  }, {
+    "@id" : "http://purl.org/pan-science/ESRFET#person/MBodin"
+  }, {
+    "@id" : "http://purl.org/pan-science/ESRFET#person/POAutran"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -7229,7 +7239,7 @@
   "@id" : "http://purl.org/pan-science/ESRFET#person/GKoumoutsos",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "http://orcid.org/0009-0000-6215-8493"
+    "@id" : "https://orcid.org/0009-0000-6215-8493"
   } ],
   "http://xmlns.com/foaf/0.1/mbox" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -7239,13 +7249,58 @@
     "@value" : "Giannis Koumoutsos"
   } ]
 }, {
+  "@id" : "http://purl.org/pan-science/ESRFET#person/LBroche",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://schema.org/affiliation" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#ESRF"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://orcid.org/0000-0001-7704-0762"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "dau-pydev@esrf.fr"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Ludovic Broche"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/ESRFET#person/MBodin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://schema.org/affiliation" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#ESRF"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://orcid.org/0000-0003-0321-3952"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "dau-pydev@esrf.fr"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Marjolaine Bodin Ligeon"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/ESRFET#person/POAutran",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://schema.org/affiliation" : [ {
+    "@id" : "http://purl.org/pan-science/ESRFET#ESRF"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://orcid.org/0000-0003-4600-6371"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "dau-pydev@esrf.fr"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Pierre-Olivier Autran"
+  } ]
+}, {
   "@id" : "http://purl.org/pan-science/ESRFET#person/WDeNolf",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
   "http://schema.org/affiliation" : [ {
     "@id" : "http://purl.org/pan-science/ESRFET#ESRF"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "http://orcid.org/0000-0003-2258-9402"
+    "@id" : "https://orcid.org/0000-0003-2258-9402"
   } ],
   "http://xmlns.com/foaf/0.1/mbox" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",

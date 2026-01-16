@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://purl.org/pan-science/ESRFET","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://purl.org/pan-science/ESRFET","name":"The ESRF Experimental Techniques Ontology", "headline":"The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques.", "dateReleased":"2025-07-07", "dateModified":"2025-09-06", "version":"v0.1.0", "license":"http://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Giannis Koumoutsos","url":"http://purl.org/pan-science/ESRFET#person/GKoumoutsos"},{"@type":"Person","name":"Wout De Nolf","url":"http://purl.org/pan-science/ESRFET#person/WDeNolf"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://purl.org/pan-science/ESRFET","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://purl.org/pan-science/ESRFET","name":"The ESRF Experimental Techniques Ontology", "headline":"The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques.", "dateReleased":"2025-07-07", "dateModified":"2025-09-06", "version":"v0.1.0", "license":"http://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Giannis Koumoutsos","url":"http://purl.org/pan-science/ESRFET#person/GKoumoutsos"},{"@type":"Person","name":"Wout De Nolf","url":"http://purl.org/pan-science/ESRFET#person/WDeNolf"}], "contributor":[{"@type":"Person","name":"Ludovic Broche","url":"http://purl.org/pan-science/ESRFET#person/LBroche"},{"@type":"Person","name":"Marjolaine Bodin Ligeon","url":"http://purl.org/pan-science/ESRFET#person/MBodin"},{"@type":"Person","name":"Pierre-Olivier Autran","url":"http://purl.org/pan-science/ESRFET#person/POAutran"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -77,6 +77,9 @@ $(function(){
 <dd>v0.1.0</dd>
 <dt>Authors:</dt>
 <dd><a href="http://purl.org/pan-science/ESRFET#person/GKoumoutsos">Giannis Koumoutsos</a><a href="mailto:koumoutsosgian@yahoo.gr">&#9993;</a></dd><dd><a href="http://purl.org/pan-science/ESRFET#person/WDeNolf">Wout De Nolf</a>, <a href="http://www.esrf.fr">ESRF</a><a href="mailto:dau-pydev@esrf.fr">&#9993;</a></dd>
+
+<dt>Contributors:</dt>
+<dd><a href="http://purl.org/pan-science/ESRFET#person/LBroche">Ludovic Broche</a>, <a href="http://www.esrf.fr">ESRF</a><a href="mailto:dau-pydev@esrf.fr">&#9993;</a></dd><dd><a href="http://purl.org/pan-science/ESRFET#person/MBodin">Marjolaine Bodin Ligeon</a>, <a href="http://www.esrf.fr">ESRF</a><a href="mailto:dau-pydev@esrf.fr">&#9993;</a></dd><dd><a href="http://purl.org/pan-science/ESRFET#person/POAutran">Pierre-Olivier Autran</a>, <a href="http://www.esrf.fr">ESRF</a><a href="mailto:dau-pydev@esrf.fr">&#9993;</a></dd>
 
 <dt>Imported Ontologies:</dt>
 <dd><a href="http://purl.org/pan-science/PaNET/PaNET.owl">PaNET.owl</a></dd>
@@ -1242,6 +1245,11 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">
+         <span>contributor</span>
+      </a>
+   </li>
+   <li>
       <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
          <span>created</span>
       </a>
@@ -1305,6 +1313,24 @@ This ontology has the following classes and properties.</span>
       <a href="#person/GKoumoutsos"
          title="http://purl.org/pan-science/ESRFET#person/GKoumoutsos">
          <span>person/ G Koumoutsos</span>
+      </a>
+   </li>
+   <li>
+      <a href="#person/LBroche"
+         title="http://purl.org/pan-science/ESRFET#person/LBroche">
+         <span>person/ L Broche</span>
+      </a>
+   </li>
+   <li>
+      <a href="#person/MBodin"
+         title="http://purl.org/pan-science/ESRFET#person/MBodin">
+         <span>person/ M Bodin</span>
+      </a>
+   </li>
+   <li>
+      <a href="#person/POAutran"
+         title="http://purl.org/pan-science/ESRFET#person/POAutran">
+         <span>person/ P O Autran</span>
       </a>
    </li>
    <li>
@@ -5705,6 +5731,7 @@ This section provides details for each class and property defined by The ESRF Ex
  <ul class="hlist">
   <li><a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract"> <span>abstract</span> </a></li>
   <li><a href="#http://www.w3.org/2004/02/skos/core#altLabel" title="http://www.w3.org/2004/02/skos/core#altLabel"> <span>alt Label</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor"> <span>contributor</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
@@ -5722,6 +5749,10 @@ This section provides details for each class and property defined by The ESRF Ex
  <div class="entity" id="http://www.w3.org/2004/02/skos/core#altLabel">
   <h3>alt Label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#altLabel</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/contributor">
+  <h3>contributor<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
  </div>
  <div class="entity" id="http://purl.org/dc/terms/created">
   <h3>created<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
@@ -5765,6 +5796,9 @@ This section provides details for each class and property defined by The ESRF Ex
   <li><a href="#ESRF" title="http://purl.org/pan-science/ESRFET#ESRF"> <span>E S R F</span> </a></li>
   <li><a href="#example_photon_count" title="http://purl.org/pan-science/ESRFET#example_photon_count"> <span>example photon count</span> </a></li>
   <li><a href="#person/GKoumoutsos" title="http://purl.org/pan-science/ESRFET#person/GKoumoutsos"> <span>person/ G Koumoutsos</span> </a></li>
+  <li><a href="#person/LBroche" title="http://purl.org/pan-science/ESRFET#person/LBroche"> <span>person/ L Broche</span> </a></li>
+  <li><a href="#person/MBodin" title="http://purl.org/pan-science/ESRFET#person/MBodin"> <span>person/ M Bodin</span> </a></li>
+  <li><a href="#person/POAutran" title="http://purl.org/pan-science/ESRFET#person/POAutran"> <span>person/ P O Autran</span> </a></li>
   <li><a href="#person/WDeNolf" title="http://purl.org/pan-science/ESRFET#person/WDeNolf"> <span>person/ W De Nolf</span> </a></li>
   <li><a href="#wrong" title="http://purl.org/pan-science/ESRFET#wrong"> <span>wrong</span> </a></li>
  </ul>
@@ -5819,6 +5853,78 @@ This section provides details for each class and property defined by The ESRF Ex
    </dd>
    <dd>
     <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Giannis Koumoutsos"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="person/LBroche">
+  <h3>person/ L Broche<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/pan-science/ESRFET#person/LBroche</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://schema.org/affiliation" target="_blank" title="http://schema.org/affiliation">affiliation</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#ESRF" title="http://purl.org/pan-science/ESRFET#ESRF">E S R F</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/mbox" target="_blank" title="http://xmlns.com/foaf/0.1/mbox">mbox</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"dau-pydev@esrf.fr"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Ludovic Broche"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="person/MBodin">
+  <h3>person/ M Bodin<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/pan-science/ESRFET#person/MBodin</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://schema.org/affiliation" target="_blank" title="http://schema.org/affiliation">affiliation</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#ESRF" title="http://purl.org/pan-science/ESRFET#ESRF">E S R F</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/mbox" target="_blank" title="http://xmlns.com/foaf/0.1/mbox">mbox</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"dau-pydev@esrf.fr"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Marjolaine Bodin Ligeon"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="person/POAutran">
+  <h3>person/ P O Autran<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/pan-science/ESRFET#person/POAutran</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://schema.org/affiliation" target="_blank" title="http://schema.org/affiliation">affiliation</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#ESRF" title="http://purl.org/pan-science/ESRFET#ESRF">E S R F</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/mbox" target="_blank" title="http://xmlns.com/foaf/0.1/mbox">mbox</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"dau-pydev@esrf.fr"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Pierre-Olivier Autran"</span>
    </dd>
   </dl>
  </div>
