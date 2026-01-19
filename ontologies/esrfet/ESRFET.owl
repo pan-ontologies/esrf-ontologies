@@ -949,10 +949,6 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ED-XANES"/>
-        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01321"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ED-XANES"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
