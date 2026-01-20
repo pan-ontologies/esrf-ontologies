@@ -938,6 +938,10 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#CDI"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01174"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#CRYO-EM"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1043,6 +1047,10 @@
                 <Class IRI="#polycrystalline_sample"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ED-EXAFS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01321"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ED-EXAFS"/>
@@ -1234,6 +1242,10 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#EXAFS"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01198"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EXAFS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
@@ -1413,6 +1425,10 @@
                 <Class IRI="#x-ray"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FTIR"/>
+        <Class IRI="http://purl.org/pan-science/PaNET/PaNET01320"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#FTIR"/>
@@ -6438,32 +6454,32 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147484479"/>
+        <AnonymousIndividual nodeID="_:genid2147485310"/>
         <Literal>Giannis Koumoutsos</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="schema:affiliation"/>
-        <AnonymousIndividual nodeID="_:genid2147484480"/>
-        <AnonymousIndividual nodeID="_:genid2147484481"/>
+        <AnonymousIndividual nodeID="_:genid2147485311"/>
+        <AnonymousIndividual nodeID="_:genid2147485312"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147484480"/>
+        <AnonymousIndividual nodeID="_:genid2147485311"/>
         <Literal>Wout De Nolf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AnonymousIndividual nodeID="_:genid2147484481"/>
+        <AnonymousIndividual nodeID="_:genid2147485312"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/02550n020</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147484481"/>
+        <AnonymousIndividual nodeID="_:genid2147485312"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.esrf.fr</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147484481"/>
+        <AnonymousIndividual nodeID="_:genid2147485312"/>
         <Literal>ESRF</Literal>
     </AnnotationAssertion>
 </Ontology>
