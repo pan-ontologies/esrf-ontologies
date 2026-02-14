@@ -79,7 +79,7 @@ def get_esrfet_techniques():
         sync_reasoner()
 
     experimental_technique_base = ontology.search_one(
-        iri="http://w3id.org/PaN/ESRFET#experimental_technique"
+        iri="http://purl.org/pan-science/ESRFET#experimental_technique"
     )
 
     techniques = []
@@ -99,7 +99,7 @@ def get_esrfet_building_blocks():
     ontology = load_ontology("esrfet", "ESRFET.owl")
 
     building_blocks = ontology.search_one(
-        iri="http://w3id.org/PaN/ESRFET#technique_property"
+        iri="http://purl.org/pan-science/ESRFET#technique_property"
     )
 
     subclasses = get_subclass_tree(building_blocks)
