@@ -7,8 +7,8 @@ def test_get_dataset_metadata():
         "definition": "XAS XRF",
         "technique_pid": " ".join(
             [
-                "http://purl.org/pan-science/ESRFET#XAS",
-                "http://purl.org/pan-science/ESRFET#XRF",
+                "http://w3id.org/PaN/ESRFET#XAS",
+                "http://w3id.org/PaN/ESRFET#XRF",
             ]
         ),
     }
@@ -22,8 +22,8 @@ def test_fill_dataset_metadata():
         "definition": "XAS XRF",
         "technique_pid": " ".join(
             [
-                "http://purl.org/pan-science/ESRFET#XAS",
-                "http://purl.org/pan-science/ESRFET#XRF",
+                "http://w3id.org/PaN/ESRFET#XAS",
+                "http://w3id.org/PaN/ESRFET#XRF",
             ]
         ),
     }
@@ -34,7 +34,7 @@ def test_fill_dataset_metadata():
 
     dataset = {
         "definition": "XRF",
-        "technique_pid": "http://purl.org/pan-science/ESRFET#XRF",
+        "technique_pid": "http://w3id.org/PaN/ESRFET#XRF",
     }
     metadata.fill_dataset_metadata(dataset)
     assert dataset == dataset_metadata
@@ -45,15 +45,15 @@ def test_fill_dataset_metadata():
 
     dataset = {
         "definition": "XRD",
-        "technique_pid": "http://purl.org/pan-science/ESRFET#XRD",
+        "technique_pid": "http://w3id.org/PaN/ESRFET#XRD",
     }
     dataset_metadata = {
         "definition": "XAS XRD XRF",
         "technique_pid": " ".join(
             [
-                "http://purl.org/pan-science/ESRFET#XAS",
-                "http://purl.org/pan-science/ESRFET#XRD",
-                "http://purl.org/pan-science/ESRFET#XRF",
+                "http://w3id.org/PaN/ESRFET#XAS",
+                "http://w3id.org/PaN/ESRFET#XRD",
+                "http://w3id.org/PaN/ESRFET#XRF",
             ]
         ),
     }
@@ -69,8 +69,8 @@ def test_get_scan_info():
             "@NX_class": "NXnote",
             "names": ["XAS", "XRF"],
             "iris": [
-                "http://purl.org/pan-science/ESRFET#XAS",
-                "http://purl.org/pan-science/ESRFET#XRF",
+                "http://w3id.org/PaN/ESRFET#XAS",
+                "http://w3id.org/PaN/ESRFET#XRF",
             ],
         },
     }
@@ -86,8 +86,8 @@ def test_fill_scan_info():
             "@NX_class": "NXnote",
             "names": ["XAS", "XRF"],
             "iris": [
-                "http://purl.org/pan-science/ESRFET#XAS",
-                "http://purl.org/pan-science/ESRFET#XRF",
+                "http://w3id.org/PaN/ESRFET#XAS",
+                "http://w3id.org/PaN/ESRFET#XRF",
             ],
         },
     }
@@ -108,8 +108,8 @@ def test_double_technique_metadata():
         "definition": "XAS XRF",
         "technique_pid": " ".join(
             [
-                "http://purl.org/pan-science/ESRFET#XAS",
-                "http://purl.org/pan-science/ESRFET#XRF",
+                "http://w3id.org/PaN/ESRFET#XAS",
+                "http://w3id.org/PaN/ESRFET#XRF",
             ]
         ),
     }
@@ -121,8 +121,8 @@ def test_double_technique_metadata():
             "@NX_class": "NXnote",
             "names": ["XAS", "XRF"],
             "iris": [
-                "http://purl.org/pan-science/ESRFET#XAS",
-                "http://purl.org/pan-science/ESRFET#XRF",
+                "http://w3id.org/PaN/ESRFET#XAS",
+                "http://w3id.org/PaN/ESRFET#XRF",
             ],
         },
     }
