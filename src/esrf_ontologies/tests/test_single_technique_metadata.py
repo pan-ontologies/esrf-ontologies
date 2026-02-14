@@ -7,7 +7,7 @@ def test_get_dataset_metadata():
     metadata = get_technique_metadata("XAS")
     dataset_metadata = {
         "definition": "XAS",
-        "technique_pid": "http://w3id.org/PaN/ESRFET#XAS",
+        "technique_pid": "https://w3id.org/PaN/ESRFET#XAS",
     }
 
     assert metadata.get_dataset_metadata() == dataset_metadata
@@ -17,7 +17,7 @@ def test_fill_dataset_metadata():
     metadata = get_technique_metadata("XAS")
     dataset_metadata = {
         "definition": "XAS",
-        "technique_pid": "http://w3id.org/PaN/ESRFET#XAS",
+        "technique_pid": "https://w3id.org/PaN/ESRFET#XAS",
     }
 
     dataset = {}
@@ -36,7 +36,7 @@ def test_get_scan_info():
         "techniques": {
             "@NX_class": "NXnote",
             "names": ["XAS"],
-            "iris": ["http://w3id.org/PaN/ESRFET#XAS"],
+            "iris": ["https://w3id.org/PaN/ESRFET#XAS"],
         },
     }
     assert metadata.get_scan_info() == scan_info
@@ -50,7 +50,7 @@ def test_fill_scan_info():
         "techniques": {
             "@NX_class": "NXnote",
             "names": ["XAS"],
-            "iris": ["http://w3id.org/PaN/ESRFET#XAS"],
+            "iris": ["https://w3id.org/PaN/ESRFET#XAS"],
         },
     }
 
@@ -64,8 +64,8 @@ def test_fill_scan_info():
             "@NX_class": "NXnote",
             "names": ["XAS", "XRF"],
             "iris": [
-                "http://w3id.org/PaN/ESRFET#XAS",
-                "http://w3id.org/PaN/ESRFET#XRF",
+                "https://w3id.org/PaN/ESRFET#XAS",
+                "https://w3id.org/PaN/ESRFET#XRF",
             ],
         },
     }
@@ -74,7 +74,7 @@ def test_fill_scan_info():
         "techniques": {
             "@NX_class": "NXnote",
             "names": ["XRF"],
-            "iris": ["http://w3id.org/PaN/ESRFET#XRF"],
+            "iris": ["https://w3id.org/PaN/ESRFET#XRF"],
         },
     }
     metadata.fill_scan_info(info)
