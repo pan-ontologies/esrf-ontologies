@@ -2,6 +2,8 @@ import re
 import sys
 from pathlib import Path
 
+from owlready2 import get_ontology
+
 ONTOLOGIES_DIR = Path(__file__).parent
 
 ONTOLOGY_FILES = [
@@ -12,8 +14,6 @@ version_pattern = re.compile(r"^v\d+\.\d+\.\d+$")
 
 
 def check_version_format(owl_path: Path) -> str:
-    from owlready2 import get_ontology
-
     onto = get_ontology(str(owl_path)).load()
     version = onto.metadata.versionInfo.first()
 
