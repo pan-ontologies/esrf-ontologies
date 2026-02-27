@@ -123,6 +123,9 @@ jobs:
           else
             echo "✅ No incorrect capitalization found."
           fi
+      - name: Check ontology version format
+        run: |
+          python ontologies/check_version.py
 
   doc-test:
     runs-on: ${{ matrix.os }}
