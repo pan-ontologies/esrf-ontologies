@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Test `owl:versionInfo` to follow `v.MAJOR.MINOR.PATCH` pattern. 
+
 ## [1.3.0]
 
 ### Added
