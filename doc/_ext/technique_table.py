@@ -7,8 +7,11 @@ from typing import List
 from docutils import nodes
 from docutils.parsers.rst import Directive
 
+VISIBLE_COLUMNS = ["Name", "Alternative names", "Description"]
+
 
 class InsertTechniqueTable(Directive):
+
     def run(self):
         rows = _generate_table_data()
         count_paragraph = self._create_technique_count(len(rows))
@@ -24,6 +27,39 @@ class InsertTechniqueTable(Directive):
         paragraph += nodes.Text(".")
         return paragraph
 
+    def _create_row(self, row_data: Dict[str, Any]) -> nodes.row:
+        row = nodes.row()
+        row["classes"].append("table-row")
+        for key in VISIBLE_COLUMNS:
+            entry = nodes.entry()
+            if key == "Name":
+                entry += self._create_name_cell(row_data)
+            else:
+                entry += nodes.paragraph(text=str(row_data.get(key, "")))
+            row += entry
+        return row
+
+    def _create_name_cell(self, row_data: Dict[str, Any]) -> nodes.paragraph:
+        name = str(row_data.get("Name", ""))
+        copy_iri = row_data.get("copyIRI", "")
+        versioned_link = row_data.get("Link", "")
+
+        html = f"""
+        <div class="technique-entry">
+            <span onclick="navigator.clipboard.writeText('{copy_iri}');"
+                title="Copy stable IRI"
+                style="cursor:pointer; margin-right:4px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M10 1.5v1h1A1.5 1.5 0 0 1 12.5 4v10A1.5 1.5 0 0 1 11 15.5H5A1.5 1.5 0 0 1 3.5 14V4A1.5 1.5 0 0 1 5 2.5h1v-1h4zM5 2a.5.5 0 0 0-.5.5v1h7v-1a.5.5 0 0 0-.5-.5H5z"/>
+                </svg>
+            </span>
+            <a href="{versioned_link}" target="_blank" rel="noreferrer">
+                {name}
+            </a>
+        </div>
+        """
+        return nodes.raw("", html, format="html")
+
     def _create_table(self, rows: List[Dict[str, Any]]) -> nodes.container:
         # Create a container for the scrollable table
         scrollable_container = nodes.container(classes=["scrollable-table"])
@@ -31,19 +67,18 @@ class InsertTechniqueTable(Directive):
         # Create the table node
         table_node = nodes.table(classes=["table", "table-bordered", "table-striped"])
         table_node["ids"] = ["technique-table"]
-        tgroup = nodes.tgroup(cols=len(rows[0]))
+
+        tgroup = nodes.tgroup(cols=len(VISIBLE_COLUMNS))
         table_node += tgroup
 
-        # Create column specifications
-        for _ in rows[0]:
-            colspec = nodes.colspec(colwidth=1)
-            tgroup += colspec
+        for _ in VISIBLE_COLUMNS:
+            tgroup += nodes.colspec(colwidth=1)
 
         # Create and add table header
         thead = nodes.thead()
         tgroup += thead
         header_row = nodes.row()
-        for key in rows[0]:
+        for key in VISIBLE_COLUMNS:
             entry = nodes.entry()
             entry += nodes.paragraph(text=key)
             header_row += entry
@@ -53,17 +88,7 @@ class InsertTechniqueTable(Directive):
         tbody = nodes.tbody()
         tgroup += tbody
         for row_data in rows:
-            row = nodes.row()
-            row["classes"].append("table-row")
-            for key, value in row_data.items():
-                entry = nodes.entry()
-                value = str(value)
-                if value.startswith("<a "):
-                    entry += nodes.raw("", value, format="html")
-                else:
-                    entry += nodes.paragraph(text=value)
-                row += entry
-            tbody += row
+            tbody += self._create_row(row_data)
 
         # Add the table node to the scrollable container
         scrollable_container += table_node

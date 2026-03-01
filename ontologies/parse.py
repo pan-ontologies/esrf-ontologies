@@ -144,7 +144,8 @@ def generate_docs():
 
     table = [
         {
-            "Name": f'<a href="{technique.versioned_iri}">{technique.primary_name}</a>',  # noqa W604
+            "Name": technique.primary_name,
+            "Link": technique.versioned_iri,
             "Alternative names": ", ".join(technique.names[1:]),
             "Description": technique.description,
             "copyIRI": technique.iri,
