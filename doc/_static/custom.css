@@ -26,3 +26,26 @@ button.copybtn {
 button.copybtn:hover {
     opacity: 1;
 }
+
+.scrollable-table table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.scrollable-table th,
+.scrollable-table td {
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    padding: 4px 8px;
+}
+.scrollable-table th:nth-child(1),
+.scrollable-table td:nth-child(1) { width: 15%; }
+.scrollable-table th:nth-child(2),
+.scrollable-table td:nth-child(2) { width: 25%; } 
+.scrollable-table th:nth-child(3),
+.scrollable-table td:nth-child(3) { width: 60%; } 
+
+.technique-entry svg {
+    fill: #888;
+    vertical-align: middle;
+}

@@ -18,6 +18,14 @@ def load_ontology(*args) -> Ontology:
     return get_ontology(owl_file).load()
 
 
+def get_ontology_version(ontology: Ontology) -> str:
+    if ontology.metadata.versionInfo:
+        version = ontology.metadata.versionInfo.first()
+        if version:
+            return version
+    return "latest"
+
+
 def get_all_subclasses(cls: ThingClass) -> Set[ThingClass]:
     subclasses = set(cls.subclasses())
     subclasses |= {
@@ -73,13 +81,15 @@ def save_techniques(name: str, techniques: List[Dict[str, Any]]):
 
 
 def get_esrfet_techniques():
+    esrfet_prefix = "https://w3id.org/PaN/ESRFET"
     ontology = load_ontology("esrfet", "ESRFET.owl")
+    version = get_ontology_version(ontology)
 
     with ontology:
         sync_reasoner()
 
     experimental_technique_base = ontology.search_one(
-        iri="http://purl.org/pan-science/ESRFET#experimental_technique"
+        iri=f"{esrfet_prefix}#experimental_technique"
     )
 
     techniques = []
@@ -88,7 +98,13 @@ def get_esrfet_techniques():
         names = get_names(cls)
         description = "\n".join(cls.comment)
         techniques.append(
-            {"iri": cls.iri.strip(), "names": names, "description": description}
+            {
+                "iri": cls.iri.strip(),
+                "names": names,
+                "description": description,
+                "versionedIRI": f"{esrfet_prefix}/{version}/#{cls.name}",
+                "ontology_version": version,
+            }
         )
 
     save_techniques("ESRFET.json", techniques)
@@ -98,9 +114,7 @@ def get_esrfet_building_blocks():
 
     ontology = load_ontology("esrfet", "ESRFET.owl")
 
-    building_blocks = ontology.search_one(
-        iri="http://purl.org/pan-science/ESRFET#technique_property"
-    )
+    building_blocks = ontology.search_one(iri="f{esrfet_prefix}#technique_property")
 
     subclasses = get_subclass_tree(building_blocks)
     for name in subclasses:
@@ -130,9 +144,11 @@ def generate_docs():
 
     table = [
         {
-            "Name": f'<a href="{technique.iri}">{technique.primary_name}</a>',  # noqa W604
+            "Name": technique.primary_name,
+            "Link": technique.versioned_iri,
             "Alternative names": ", ".join(technique.names[1:]),
             "Description": technique.description,
+            "copyIRI": technique.iri,
         }
         for technique in sorted(
             get_all_techniques(), key=lambda technique: technique.names

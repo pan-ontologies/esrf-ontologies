@@ -4,7 +4,7 @@ from typing import List
 from typing import Set
 from typing import Tuple
 
-from ..db import load_technniques as _load_technniques
+from ..db import load_techniques as _load_techniques
 from .types import Technique
 from .types import TechniqueMetadata
 
@@ -25,12 +25,13 @@ def get_all_techniques() -> List[Technique]:
     """Returns a list of techniques."""
     return [
         Technique(
-            iri=techique["iri"],
-            names=tuple(techique["names"]),
-            description=techique["description"],
+            iri=technique["iri"],
+            names=tuple(technique["names"]),
+            description=technique["description"],
+            ontology_version=technique["ontology_version"],
         )
         for ontology_name in ["ESRFET"]
-        for techique in _load_technniques(ontology_name)
+        for technique in _load_techniques(ontology_name)
     ]
 
 

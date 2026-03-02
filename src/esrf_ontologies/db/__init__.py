@@ -16,7 +16,7 @@ else:
     import importlib.resources as importlib_resources
 
 
-def load_technniques(name: str) -> List[Dict[str, Any]]:
+def load_techniques(name: str) -> List[Dict[str, Any]]:
     json_file = importlib_resources.files(__package__).joinpath(f"{name}.json")
     with open(json_file, "r") as f:
         return json.load(f)
