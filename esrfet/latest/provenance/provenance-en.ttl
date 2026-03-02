@@ -2,18 +2,18 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<http://purl.org/pan-science/ESRFET/v0.1.0> a prov:Entity;
+<https://w3id.org/PaN/ESRFET/v0.1.0> a prov:Entity;
 	 dc:title "The ESRF Experimental Techniques Ontology";
-	 prov:wasAttributedTo <http://purl.org/pan-science/ESRFET#person/GKoumoutsos>;
-	 dc:creator <http://purl.org/pan-science/ESRFET#person/GKoumoutsos>;
-	 prov:wasAttributedTo <http://purl.org/pan-science/ESRFET#person/WDeNolf>;
-	 dc:creator <http://purl.org/pan-science/ESRFET#person/WDeNolf>;
-	 prov:wasAttributedTo <http://purl.org/pan-science/ESRFET#person/LBroche>;
-	 dc:contributor <http://purl.org/pan-science/ESRFET#person/LBroche>;
-	 prov:wasAttributedTo <http://purl.org/pan-science/ESRFET#person/MBodin>;
-	 dc:contributor <http://purl.org/pan-science/ESRFET#person/MBodin>;
-	 prov:wasAttributedTo <http://purl.org/pan-science/ESRFET#person/POAutran>;
-	 dc:contributor <http://purl.org/pan-science/ESRFET#person/POAutran>;
+	 prov:wasAttributedTo <https://w3id.org/PaN/ESRFET#person/GKoumoutsos>;
+	 dc:creator <https://w3id.org/PaN/ESRFET#person/GKoumoutsos>;
+	 prov:wasAttributedTo <https://w3id.org/PaN/ESRFET#person/WDeNolf>;
+	 dc:creator <https://w3id.org/PaN/ESRFET#person/WDeNolf>;
+	 prov:wasAttributedTo <https://w3id.org/PaN/ESRFET#person/LBroche>;
+	 dc:contributor <https://w3id.org/PaN/ESRFET#person/LBroche>;
+	 prov:wasAttributedTo <https://w3id.org/PaN/ESRFET#person/MBodin>;
+	 dc:contributor <https://w3id.org/PaN/ESRFET#person/MBodin>;
+	 prov:wasAttributedTo <https://w3id.org/PaN/ESRFET#person/POAutran>;
+	 dc:contributor <https://w3id.org/PaN/ESRFET#person/POAutran>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasGeneratedAt "2025-07-07";
 .

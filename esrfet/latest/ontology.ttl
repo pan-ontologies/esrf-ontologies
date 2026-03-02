@@ -1,28 +1,28 @@
-@prefix : <http://purl.org/pan-science/ESRFET#> .
+@prefix : <https://w3id.org/PaN/ESRFET#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.org/pan-science/ESRFET#> .
+@base <https://w3id.org/PaN/ESRFET#> .
 
-<http://purl.org/pan-science/ESRFET> rdf:type owl:Ontology ;
-                                      owl:versionIRI <http://purl.org/pan-science/ESRFET/v0.1.0> ;
-                                      owl:imports <http://purl.org/pan-science/PaNET/PaNET.owl> ;
-                                      <http://purl.org/dc/terms/abstract> "The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques." ;
-                                      <http://purl.org/dc/terms/contributor> <http://purl.org/pan-science/ESRFET#person/LBroche> ,
-                                                                             <http://purl.org/pan-science/ESRFET#person/MBodin> ,
-                                                                             <http://purl.org/pan-science/ESRFET#person/POAutran> ;
-                                      <http://purl.org/dc/terms/created> "2025-07-07"^^xsd:date ;
-                                      <http://purl.org/dc/terms/creator> <http://purl.org/pan-science/ESRFET#person/GKoumoutsos> ,
-                                                                         <http://purl.org/pan-science/ESRFET#person/WDeNolf> ;
-                                      <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
-                                      <http://purl.org/dc/terms/modified> "2025-09-06"^^xsd:date ;
-                                      <http://purl.org/dc/terms/title> "The ESRF Experimental Techniques Ontology"@en ;
-                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "ESRFET"@en ;
-                                      <http://purl.org/vocab/vann/preferredNamespaceUri> <http://purl.org/pan-science/ESRFET> ;
-                                      rdfs:comment "The ESRF Ontologies project provides ontologies related to ESRF data acquisition."@en ;
-                                      owl:versionInfo "v0.1.0" .
+<https://w3id.org/PaN/ESRFET> rdf:type owl:Ontology ;
+                               owl:versionIRI <https://w3id.org/PaN/ESRFET/v0.1.0> ;
+                               owl:imports <http://purl.org/pan-science/PaNET/PaNET.owl> ;
+                               <http://purl.org/dc/terms/abstract> "The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques." ;
+                               <http://purl.org/dc/terms/contributor> <https://w3id.org/PaN/ESRFET#person/LBroche> ,
+                                                                      <https://w3id.org/PaN/ESRFET#person/MBodin> ,
+                                                                      <https://w3id.org/PaN/ESRFET#person/POAutran> ;
+                               <http://purl.org/dc/terms/created> "2025-07-07"^^xsd:date ;
+                               <http://purl.org/dc/terms/creator> <https://w3id.org/PaN/ESRFET#person/GKoumoutsos> ,
+                                                                  <https://w3id.org/PaN/ESRFET#person/WDeNolf> ;
+                               <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
+                               <http://purl.org/dc/terms/modified> "2025-09-06"^^xsd:date ;
+                               <http://purl.org/dc/terms/title> "The ESRF Experimental Techniques Ontology"@en ;
+                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "ESRFET"@en ;
+                               <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/PaN/ESRFET> ;
+                               rdfs:comment "The ESRF Ontologies project provides ontologies related to ESRF data acquisition."@en ;
+                               owl:versionInfo "v0.1.0" .
 
 #################################################################
 #    Annotation properties
@@ -88,7 +88,7 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://purl.org/pan-science/ESRFET#measures_as_a_function_of
+###  https://w3id.org/PaN/ESRFET#measures_as_a_function_of
 :measures_as_a_function_of rdf:type owl:ObjectProperty ;
                            rdfs:domain :experimental_technique ;
                            rdfs:range :space_time ;
@@ -97,46 +97,46 @@ xsd:date rdf:type rdfs:Datatype .
                 Scanning Micro X-ray fluorescence measures as function of sample translation""" .
 
 
-###  http://purl.org/pan-science/ESRFET#measures_interaction_result_property
+###  https://w3id.org/PaN/ESRFET#measures_interaction_result_property
 :measures_interaction_result_property rdf:type owl:ObjectProperty ;
                                       rdfs:domain :experimental_technique ;
                                       rdfs:range :detected_cascade_of_events_property ;
                                       rdfs:comment "Example: XRF measures photon energy" .
 
 
-###  http://purl.org/pan-science/ESRFET#measures_result_of_interaction
+###  https://w3id.org/PaN/ESRFET#measures_result_of_interaction
 :measures_result_of_interaction rdf:type owl:ObjectProperty ;
                                 rdfs:domain :experimental_technique ;
                                 rdfs:range :cascade_of_events_being_detected ;
                                 rdfs:comment "Example: XRF measures fluorscence" .
 
 
-###  http://purl.org/pan-science/ESRFET#measures_transmission_with_detector_type
+###  https://w3id.org/PaN/ESRFET#measures_transmission_with_detector_type
 :measures_transmission_with_detector_type rdf:type owl:ObjectProperty ;
                                           rdfs:domain :transmission ;
                                           rdfs:range :detector_type .
 
 
-###  http://purl.org/pan-science/ESRFET#measures_with_a_detector_type
+###  https://w3id.org/PaN/ESRFET#measures_with_a_detector_type
 :measures_with_a_detector_type rdf:type owl:ObjectProperty ;
                                rdfs:domain :experimental_technique ;
                                rdfs:range :detector_type .
 
 
-###  http://purl.org/pan-science/ESRFET#requires_sample_input
+###  https://w3id.org/PaN/ESRFET#requires_sample_input
 :requires_sample_input rdf:type owl:ObjectProperty ;
                        rdfs:domain :experimental_technique ;
                        rdfs:range :sample_input ;
                        rdfs:comment "Example: Soft X-ray Absorption Spectroscopy uses soft X-ray as sample input" .
 
 
-###  http://purl.org/pan-science/ESRFET#requires_sample_input_property
+###  https://w3id.org/PaN/ESRFET#requires_sample_input_property
 :requires_sample_input_property rdf:type owl:ObjectProperty ;
                                 rdfs:domain :experimental_technique ;
                                 rdfs:range :sample_input_property .
 
 
-###  http://purl.org/pan-science/ESRFET#requires_sample_type
+###  https://w3id.org/PaN/ESRFET#requires_sample_type
 :requires_sample_type rdf:type owl:ObjectProperty ;
                       rdfs:domain :experimental_technique ;
                       rdfs:range :sample_type ;
@@ -152,33 +152,33 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  http://purl.org/pan-science/ESRFET#atomic_distance_resolution_unit
+###  https://w3id.org/PaN/ESRFET#atomic_distance_resolution_unit
 :atomic_distance_resolution_unit rdf:type owl:DatatypeProperty .
 
 
-###  http://purl.org/pan-science/ESRFET#atomic_distance_unit
+###  https://w3id.org/PaN/ESRFET#atomic_distance_unit
 :atomic_distance_unit rdf:type owl:DatatypeProperty ;
                       rdfs:domain :diffraction_of_elastic_scattering ;
                       rdfs:range xsd:string .
 
 
-###  http://purl.org/pan-science/ESRFET#energy_range_unit
+###  https://w3id.org/PaN/ESRFET#energy_range_unit
 :energy_range_unit rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:string ;
                    rdfs:label "has energy range unit" .
 
 
-###  http://purl.org/pan-science/ESRFET#energy_range_value
+###  https://w3id.org/PaN/ESRFET#energy_range_value
 :energy_range_value rdf:type owl:DatatypeProperty ;
                     rdfs:range xsd:float ;
                     rdfs:label "has energy range value" .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_spatial_resolution
+###  https://w3id.org/PaN/ESRFET#sample_spatial_resolution
 :sample_spatial_resolution rdf:type owl:DatatypeProperty .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_spatial_resolution_unit
+###  https://w3id.org/PaN/ESRFET#sample_spatial_resolution_unit
 :sample_spatial_resolution_unit rdf:type owl:DatatypeProperty .
 
 
@@ -186,7 +186,11 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://purl.org/pan-science/ESRFET#ARPES
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+
+
+###  https://w3id.org/PaN/ESRFET#ARPES
 :ARPES rdf:type owl:Class ;
        rdfs:subClassOf :experimental_technique ;
        rdfs:comment "Angle-Resolved Photoemission Spectroscopy (ARPES) measures the energy and momentum of electrons emitted from a sample when illuminated by photons, mapping the electronic band structure and Fermi surface of materials." ;
@@ -194,7 +198,7 @@ xsd:date rdf:type rdfs:Datatype .
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Angle-Resolved Photoemission Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#BCDI
+###  https://w3id.org/PaN/ESRFET#BCDI
 :BCDI rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "Bragg Coherent Diffraction Imaging (BCDI) measures the coherent diffraction around a Bragg peak from a crystalline sample to reconstruct the 3D shape and internal strain field of individual nanocrystals. The result is a high-resolution image of the crystalline structure and deformation." ;
@@ -202,7 +206,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Bragg Coherent Diffraction Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#BioSAXS
+###  https://w3id.org/PaN/ESRFET#BioSAXS
 :BioSAXS rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
@@ -228,7 +232,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "BioSAXS" .
 
 
-###  http://purl.org/pan-science/ESRFET#CDI
+###  https://w3id.org/PaN/ESRFET#CDI
 :CDI rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Coherent Diffraction Imaging (CDI) measures the far-field diffraction pattern from a sample illuminated with a coherent X-ray beam. The image of the sample is reconstructed computationally from the diffraction data using phase retrieval algorithms, yielding high-resolution, lensless imaging of the electron density or scattering potential." ;
@@ -240,7 +244,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Coherent Diffraction Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#CMS
+###  https://w3id.org/PaN/ESRFET#CMS
 :CMS rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Conventional Mössbauer Spectroscopy measures the resonant absorption of X-rays by Mössbauer-active nuclei (e.g. Fe-57) using a radioactive source scanned in velocity. It provides information on oxidation state, magnetic ordering, and local electronic and structural environment through hyperfine interactions." ;
@@ -248,7 +252,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Conventional Mössbauer Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#CRYO-EM
+###  https://w3id.org/PaN/ESRFET#CRYO-EM
 :CRYO-EM rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
@@ -287,7 +291,7 @@ xsd:date rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Cryo-Electron Microscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#CRYO-ET
+###  https://w3id.org/PaN/ESRFET#CRYO-ET
 :CRYO-ET rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
@@ -326,7 +330,7 @@ xsd:date rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Cryo-Electron Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#CT
+###  https://w3id.org/PaN/ESRFET#CT
 :CT rdf:type owl:Class ;
     owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                [ rdf:type owl:Restriction ;
@@ -341,7 +345,7 @@ xsd:date rdf:type rdfs:Datatype .
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Computed Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#CXDI
+###  https://w3id.org/PaN/ESRFET#CXDI
 :CXDI rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "Coherent X-ray Diffraction Imaging (CXDI) measures the coherent X-ray diffraction pattern from an isolated object or nanostructure. The 3D electron density is reconstructed computationally using phase retrieval, providing high-resolution, lensless imaging of the sample's internal structure." ;
@@ -349,13 +353,13 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Coherent X-ray Diffraction Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#DAC
+###  https://w3id.org/PaN/ESRFET#DAC
 :DAC rdf:type owl:Class ;
      rdfs:subClassOf :sample_input ;
      rdfs:comment "Diamond Anvil Cell to apply pressure on the sample" .
 
 
-###  http://purl.org/pan-science/ESRFET#DAFS
+###  https://w3id.org/PaN/ESRFET#DAFS
 :DAFS rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "Diffraction Anomalous Fine Structure (DAFS) measures the intensity of Bragg diffraction as a function of X-ray photon energy near an absorption edge. It combines diffraction and XAS to provide element-specific structural information, such as site occupancy, bonding environment, and local distortions in crystals." ;
@@ -363,7 +367,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Diffraction Anomalous Fine Structure" .
 
 
-###  http://purl.org/pan-science/ESRFET#DCT
+###  https://w3id.org/PaN/ESRFET#DCT
 :DCT rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -397,7 +401,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Diffraction Contrast Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#DFXM
+###  https://w3id.org/PaN/ESRFET#DFXM
 :DFXM rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "Dark-Field X-ray Microscopy (DFXM) measures X-ray diffraction in a dark-field imaging geometry to map crystalline structure, orientation, strain, and defects in 3D within bulk materials. It provides spatially resolved imaging of internal microstructures at micrometer to sub-micrometer resolution." ;
@@ -405,7 +409,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Dark-Field X-ray Microscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#ED-EXAFS
+###  https://w3id.org/PaN/ESRFET#ED-EXAFS
 :ED-EXAFS rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                      [ rdf:type owl:Restriction ;
@@ -436,7 +440,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Energy Dispersive Extended X-ray Absorption Fine Structure" .
 
 
-###  http://purl.org/pan-science/ESRFET#ED-XANES
+###  https://w3id.org/PaN/ESRFET#ED-XANES
 :ED-XANES rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                      [ rdf:type owl:Restriction ;
@@ -467,7 +471,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Energy Dispersive X-ray Absorption Near Edge Structure" .
 
 
-###  http://purl.org/pan-science/ESRFET#ED-XAS
+###  https://w3id.org/PaN/ESRFET#ED-XAS
 :ED-XAS rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -498,7 +502,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Energy Dispersive X-ray Absorption Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#ED-XRD
+###  https://w3id.org/PaN/ESRFET#ED-XRD
 :ED-XRD rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -525,7 +529,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Energy Dispersive X-ray Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#ED-XRF
+###  https://w3id.org/PaN/ESRFET#ED-XRF
 :ED-XRF rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -556,7 +560,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Energy Dispersive X-ray Fluorescence Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#ED-XRPD
+###  https://w3id.org/PaN/ESRFET#ED-XRPD
 :ED-XRPD rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
@@ -587,7 +591,7 @@ xsd:date rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Energy Dispersive X-ray Powder Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#EDS
+###  https://w3id.org/PaN/ESRFET#EDS
 :EDS rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -618,7 +622,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Energy Dispersive X-ray Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#EM
+###  https://w3id.org/PaN/ESRFET#EM
 :EM rdf:type owl:Class ;
     owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                [ rdf:type owl:Restriction ;
@@ -633,7 +637,7 @@ xsd:date rdf:type rdfs:Datatype .
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Electron Microscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#EXAFS
+###  https://w3id.org/PaN/ESRFET#EXAFS
 :EXAFS rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -660,7 +664,7 @@ xsd:date rdf:type rdfs:Datatype .
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Extended X-ray Absorption Fine Structure" .
 
 
-###  http://purl.org/pan-science/ESRFET#FF-EXAFS
+###  https://w3id.org/PaN/ESRFET#FF-EXAFS
 :FF-EXAFS rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                      [ rdf:type owl:Restriction ;
@@ -691,7 +695,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Full-Field Extended X-ray Absorption Fine Structure Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#FF-XANES
+###  https://w3id.org/PaN/ESRFET#FF-XANES
 :FF-XANES rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                      [ rdf:type owl:Restriction ;
@@ -722,7 +726,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Full‑Field X-ray Absorption Near Edge Structure Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#FF-XAS
+###  https://w3id.org/PaN/ESRFET#FF-XAS
 :FF-XAS rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -753,7 +757,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Full-Field X-ray Absorption Spectroscopy Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#FF-XRF
+###  https://w3id.org/PaN/ESRFET#FF-XRF
 :FF-XRF rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -788,7 +792,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Full-Field X-ray Fluorescence Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#FS-EXAFS
+###  https://w3id.org/PaN/ESRFET#FS-EXAFS
 :FS-EXAFS rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                      [ rdf:type owl:Restriction ;
@@ -819,7 +823,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Full-Spectral Extended X-ray Absorption Fine Structure Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#FS-XAS
+###  https://w3id.org/PaN/ESRFET#FS-XAS
 :FS-XAS rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -850,7 +854,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Full-Spectral X-ray Absorption Spectroscopy Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#FTIR
+###  https://w3id.org/PaN/ESRFET#FTIR
 :FTIR rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -869,7 +873,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Fourier Transform Infrared Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#GISAXS
+###  https://w3id.org/PaN/ESRFET#GISAXS
 :GISAXS rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -896,7 +900,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Grazing Incidence Small Angle X-ray Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#GIWAXS
+###  https://w3id.org/PaN/ESRFET#GIWAXS
 :GIWAXS rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -923,7 +927,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Grazing Incidence Wide Angle X-ray Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#GIXRD
+###  https://w3id.org/PaN/ESRFET#GIXRD
 :GIXRD rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -946,7 +950,7 @@ xsd:date rdf:type rdfs:Datatype .
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Grazing Incidence X-ray Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#HAXPES
+###  https://w3id.org/PaN/ESRFET#HAXPES
 :HAXPES rdf:type owl:Class ;
         rdfs:subClassOf :experimental_technique ;
         rdfs:comment "Hard X-ray Photoelectron Spectroscopy (HAXPES) uses high-energy X-rays to probe deeper into materials than conventional XPS, giving bulk-sensitive chemical and electronic information." ;
@@ -954,7 +958,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Hard X-ray Photoelectron Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#HERFD-XAS
+###  https://w3id.org/PaN/ESRFET#HERFD-XAS
 :HERFD-XAS rdf:type owl:Class ;
            owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                       [ rdf:type owl:Restriction ;
@@ -986,7 +990,7 @@ xsd:date rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#prefLabel> "High-Energy Resolution Fluorescence Detected X-ray Absorption Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#HP-XRD
+###  https://w3id.org/PaN/ESRFET#HP-XRD
 :HP-XRD rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -1010,7 +1014,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "High-Pressure X-ray Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#HR-XRPD
+###  https://w3id.org/PaN/ESRFET#HR-XRPD
 :HR-XRPD rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
@@ -1037,7 +1041,7 @@ xsd:date rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#prefLabel> "High-Resolution X-ray Powder Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#HT-XRD
+###  https://w3id.org/PaN/ESRFET#HT-XRD
 :HT-XRD rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -1061,7 +1065,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "High-Temperature X-ray Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#HiP-CT
+###  https://w3id.org/PaN/ESRFET#HiP-CT
 :HiP-CT rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -1092,7 +1096,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Hierarchical Phase-Contrast Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#IXS
+###  https://w3id.org/PaN/ESRFET#IXS
 :IXS rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Inelastic X-ray Scattering (IXS) measures the energy and momentum change of X-rays scattered inelastically by a sample, providing information on electronic excitations, phonons, and other dynamic processes at the atomic scale." ;
@@ -1100,16 +1104,16 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Inelastic X-ray Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#KES
+###  https://w3id.org/PaN/ESRFET#KES
 :KES rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :measures_as_a_function_of ;
-                                                  owl:someValuesFrom :detection_as_a_function_of_limited_number_of_incident_energies
+                                                  owl:someValuesFrom <http://purl.org/pan-science/PaNET/PaNET01106>
                                                 ]
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :measures_as_a_function_of ;
-                                                  owl:someValuesFrom <http://purl.org/pan-science/PaNET/PaNET01106>
+                                                  owl:someValuesFrom :detection_as_a_function_of_limited_number_of_incident_energies
                                                 ]
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :measures_result_of_interaction ;
@@ -1123,7 +1127,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "K-edge Subtraction Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#KESCT
+###  https://w3id.org/PaN/ESRFET#KESCT
 :KESCT rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -1150,7 +1154,7 @@ xsd:date rdf:type rdfs:Datatype .
        <http://www.w3.org/2004/02/skos/core#prefLabel> "K-edge Subtraction Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#LDDS-XAS
+###  https://w3id.org/PaN/ESRFET#LDDS-XAS
 :LDDS-XAS rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                      [ rdf:type owl:Restriction ;
@@ -1185,7 +1189,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#LDSC-XAS
+###  https://w3id.org/PaN/ESRFET#LDSC-XAS
 :LDSC-XAS rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                      [ rdf:type owl:Restriction ;
@@ -1220,7 +1224,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Laser-Driven Shock Compression X-ray Absorption Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#MACRO-XRF
+###  https://w3id.org/PaN/ESRFET#MACRO-XRF
 :MACRO-XRF rdf:type owl:Class ;
            owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                       [ rdf:type owl:Restriction ;
@@ -1257,7 +1261,7 @@ xsd:date rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning Macro X-ray fluorescence" .
 
 
-###  http://purl.org/pan-science/ESRFET#MAD
+###  https://w3id.org/PaN/ESRFET#MAD
 :MAD rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Multi-wavelength Anomalous Dispersion (MAD) measures diffraction at multiple X-ray wavelengths around an absorption edge to use anomalous scattering differences for more accurate phase determination in crystallography." ;
@@ -1265,7 +1269,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multi-wavelength Anomalous Dispersion" .
 
 
-###  http://purl.org/pan-science/ESRFET#MBS
+###  https://w3id.org/PaN/ESRFET#MBS
 :MBS rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Mössbauer spectroscopy measures the resonant absorption of X-rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of Mössbauer-active isotopes (e.g. Fe-57)." ;
@@ -1273,7 +1277,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Mössbauer Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#MICRO-XRD
+###  https://w3id.org/PaN/ESRFET#MICRO-XRD
 :MICRO-XRD rdf:type owl:Class ;
            owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                       [ rdf:type owl:Restriction ;
@@ -1302,7 +1306,7 @@ xsd:date rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning Micro X-ray Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#MICRO-XRF
+###  https://w3id.org/PaN/ESRFET#MICRO-XRF
 :MICRO-XRF rdf:type owl:Class ;
            owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                       [ rdf:type owl:Restriction ;
@@ -1339,7 +1343,7 @@ xsd:date rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning Micro X-ray fluorescence" .
 
 
-###  http://purl.org/pan-science/ESRFET#MPES
+###  https://w3id.org/PaN/ESRFET#MPES
 :MPES rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "Momentum-Resolved Photoemission Spectroscopy (MPES) measures electron emission as a function of momentum and energy to reveal the dispersion and symmetry of electronic states in solids." ;
@@ -1347,7 +1351,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Momentum-Resolved Photoemission Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#MRT
+###  https://w3id.org/PaN/ESRFET#MRT
 :MRT rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Microbeam Radiation Therapy (MRT) uses arrays of microscale, high-dose X-ray beams to irradiate tissue with high spatial precision, aiming to maximize tumor damage while sparing surrounding healthy tissue." ;
@@ -1355,7 +1359,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Microbeam Radiation Therapy" .
 
 
-###  http://purl.org/pan-science/ESRFET#MX
+###  https://w3id.org/PaN/ESRFET#MX
 :MX rdf:type owl:Class ;
     rdfs:subClassOf :experimental_technique ;
     rdfs:comment "Macromolecular Crystallography (MX) measures X-ray diffraction from crystals of biological macromolecules to determine their 3D atomic structures, providing insights into protein folding, function, and interactions." ;
@@ -1363,7 +1367,7 @@ xsd:date rdf:type rdfs:Datatype .
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Macromolecular Crystallography" .
 
 
-###  http://purl.org/pan-science/ESRFET#NANO-XRD
+###  https://w3id.org/PaN/ESRFET#NANO-XRD
 :NANO-XRD rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                      [ rdf:type owl:Restriction ;
@@ -1392,7 +1396,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning Nano X-ray diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#NANO-XRF
+###  https://w3id.org/PaN/ESRFET#NANO-XRF
 :NANO-XRF rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                      [ rdf:type owl:Restriction ;
@@ -1429,7 +1433,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning Nano X-ray fluorescence" .
 
 
-###  http://purl.org/pan-science/ESRFET#NFP
+###  https://w3id.org/PaN/ESRFET#NFP
 :NFP rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Near-Field Ptychography (NFP) measures coherent diffraction patterns collected in the near-field regime by scanning overlapping illumination spots, enabling high-resolution phase and amplitude imaging of samples." ;
@@ -1437,7 +1441,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Near-Field Ptychography" .
 
 
-###  http://purl.org/pan-science/ESRFET#NFS
+###  https://w3id.org/PaN/ESRFET#NFS
 :NFS rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Nuclear Forward Scattering (NFS) measures the time-resolved resonant scattering of synchrotron-generated X-rays in the forward direction, extracting hyperfine parameters (e.g. isomer shift, quadrupole splitting, magnetic splitting) from the temporal interference pattern." ,
@@ -1446,7 +1450,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Forward Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#NR-XMLD
+###  https://w3id.org/PaN/ESRFET#NR-XMLD
 :NR-XMLD rdf:type owl:Class ;
          rdfs:subClassOf :experimental_technique ;
          rdfs:comment "Non-Reciprocal X-ray Magnetic Linear Dichroism (NR-XMLD) measures differences in linear X-ray absorption depending on magnetization direction and X-ray polarization, revealing magnetic asymmetries that break time-reversal symmetry." ;
@@ -1454,7 +1458,7 @@ xsd:date rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Non-Reciprocal X-ray Magnetic Linear Dichroism" .
 
 
-###  http://purl.org/pan-science/ESRFET#NRIXS
+###  https://w3id.org/PaN/ESRFET#NRIXS
 :NRIXS rdf:type owl:Class ;
        rdfs:subClassOf :experimental_technique ;
        rdfs:comment "Nuclear Resonant Inelastic X-ray Scattering (NRIXS) measures the energy distribution of X-rays scattered inelastically by nuclear resonances, providing element-specific information on phonon density of states and lattice dynamics." ;
@@ -1462,7 +1466,7 @@ xsd:date rdf:type rdfs:Datatype .
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Resonant Inelastic X-ray Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#NRS
+###  https://w3id.org/PaN/ESRFET#NRS
 :NRS rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Nuclear Resonant Scattering (NRS) measures time-delayed resonant scattering of X-rays from Mössbauer-active nuclei to study hyperfine interactions, magnetic order, and dynamics at the atomic scale." ;
@@ -1470,7 +1474,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Resonant Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#PB-XPCI
+###  https://w3id.org/PaN/ESRFET#PB-XPCI
 :PB-XPCI rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
@@ -1501,7 +1505,7 @@ xsd:date rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Propagation-Based X-ray Phase-Contrast Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#PB-XPCT
+###  https://w3id.org/PaN/ESRFET#PB-XPCT
 :PB-XPCT rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
@@ -1532,7 +1536,7 @@ xsd:date rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Propagation-based X-ray Phase-Contrast Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#PCI
+###  https://w3id.org/PaN/ESRFET#PCI
 :PCI rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -1555,7 +1559,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Phase-Contrast X-ray Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#PDF
+###  https://w3id.org/PaN/ESRFET#PDF
 :PDF rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Pair Distribution Function (PDF) analysis measures the distribution of interatomic distances by Fourier-transforming total scattering data, revealing local atomic arrangements and disorder in both crystalline and amorphous materials." ;
@@ -1563,7 +1567,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Pair Distribution Function" .
 
 
-###  http://purl.org/pan-science/ESRFET#PFY-XAS
+###  https://w3id.org/PaN/ESRFET#PFY-XAS
 :PFY-XAS rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
@@ -1594,7 +1598,7 @@ xsd:date rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Partial Fluorescence Yield X-ray Absorption Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#PIXE
+###  https://w3id.org/PaN/ESRFET#PIXE
 :PIXE rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -1621,7 +1625,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Particle Induced X-ray Emission" .
 
 
-###  http://purl.org/pan-science/ESRFET#PTYCHO
+###  https://w3id.org/PaN/ESRFET#PTYCHO
 :PTYCHO rdf:type owl:Class ;
         rdfs:subClassOf :experimental_technique ;
         rdfs:comment "Ptychography (PTYCHO) measures coherent diffraction patterns by scanning overlapping illumination spots on a sample in the far field, reconstructing high-resolution complex-valued images of sample structure beyond conventional lens limitations." ;
@@ -1629,7 +1633,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Ptychography" .
 
 
-###  http://purl.org/pan-science/ESRFET#PXCT
+###  https://w3id.org/PaN/ESRFET#PXCT
 :PXCT rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "Ptychographic X-ray Computed Tomography (PXCT) combines coherent diffraction imaging and tomography by scanning overlapping regions at multiple angles to reconstruct 3D quantitative electron density maps with nanometer-scale resolution." ;
@@ -1637,7 +1641,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Ptychographic X-ray Computed Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#REXS
+###  https://w3id.org/PaN/ESRFET#REXS
 :REXS rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "Resonant Elastic X-ray Scattering (REXS) measures elastic scattering near an absorption edge to enhance contrast from specific elements, revealing electronic, magnetic, and orbital ordering in materials." ;
@@ -1645,7 +1649,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Resonant Elastic X-ray Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#RIXS
+###  https://w3id.org/PaN/ESRFET#RIXS
 :RIXS rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "Resonant Inelastic X-ray Scattering (RIXS) measures energy loss of X-rays scattered resonantly from a sample, providing detailed insights into electronic excitations, spin dynamics, and valence states." ;
@@ -1653,7 +1657,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Resonant Inelastic X-ray Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#RXES
+###  https://w3id.org/PaN/ESRFET#RXES
 :RXES rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "Resonant X-ray Emission Spectroscopy (RXES) measures emitted X-rays following resonant excitation of core electrons, providing element- and valence-specific information about electronic structure and chemical states." ;
@@ -1661,7 +1665,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Resonant X-ray Emission Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#S-XEOL
+###  https://w3id.org/PaN/ESRFET#S-XEOL
 :S-XEOL rdf:type owl:Class ;
         rdfs:subClassOf :experimental_technique ;
         rdfs:comment "Scanning X-ray Excited Optical Luminescence (S-XEOL) measures spatially resolved optical emission induced by X-ray excitation by scanning a focused X-ray beam across a sample, providing 2D maps of luminescence associated with electronic and defect-related states." ;
@@ -1669,7 +1673,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Excited Optical Luminescence" .
 
 
-###  http://purl.org/pan-science/ESRFET#S-XRD
+###  https://w3id.org/PaN/ESRFET#S-XRD
 :S-XRD rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -1696,7 +1700,7 @@ xsd:date rdf:type rdfs:Datatype .
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning X-ray Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#S-XRF
+###  https://w3id.org/PaN/ESRFET#S-XRF
 :S-XRF rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -1727,7 +1731,7 @@ xsd:date rdf:type rdfs:Datatype .
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning X-ray Fluorescence" .
 
 
-###  http://purl.org/pan-science/ESRFET#SAD
+###  https://w3id.org/PaN/ESRFET#SAD
 :SAD rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Single-wavelength Anomalous Diffraction (SAD) measures diffraction at one specific X-ray wavelength near an absorption edge to exploit anomalous scattering for phase determination in crystallography." ;
@@ -1735,7 +1739,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Single-wavelength Anomalous Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#SAXS
+###  https://w3id.org/PaN/ESRFET#SAXS
 :SAXS rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -1758,7 +1762,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Small-Angle X-ray Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#SCXRD
+###  https://w3id.org/PaN/ESRFET#SCXRD
 :SCXRD rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -1784,7 +1788,7 @@ xsd:date rdf:type rdfs:Datatype .
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Single Crystal X-ray Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#SIXES
+###  https://w3id.org/PaN/ESRFET#SIXES
 :SIXES rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -1827,7 +1831,7 @@ The second definition is chosen for this technique.""" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Selectively Induced X-ray Emission Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#SMS
+###  https://w3id.org/PaN/ESRFET#SMS
 :SMS rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "The Synchrotron Mössbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling Mössbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques." ;
@@ -1835,7 +1839,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Synchrotron Mössbauer Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#SMX
+###  https://w3id.org/PaN/ESRFET#SMX
 :SMX rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "Serial Macromolecular Crystallography (SMX) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize." ;
@@ -1843,7 +1847,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Serial Macromolecular Crystallography" .
 
 
-###  http://purl.org/pan-science/ESRFET#SSX
+###  https://w3id.org/PaN/ESRFET#SSX
 :SSX rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -1866,7 +1870,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Serial Synchrotron Crystallography" .
 
 
-###  http://purl.org/pan-science/ESRFET#STXM
+###  https://w3id.org/PaN/ESRFET#STXM
 :STXM rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "Scanning Transmission X-ray Microscopy (STXM) measures X-ray transmission through a sample by scanning a focused X-ray beam in 2D, providing spatially resolved chemical, elemental, and morphological maps at nanometer-scale resolution." ;
@@ -1874,7 +1878,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Scanning Transmission X-ray Microscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#TEM
+###  https://w3id.org/PaN/ESRFET#TEM
 :TEM rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -1893,7 +1897,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Transmission Electron Microscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#TFY-XAS
+###  https://w3id.org/PaN/ESRFET#TFY-XAS
 :TFY-XAS rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
@@ -1924,7 +1928,7 @@ The second definition is chosen for this technique.""" ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Total Fluorescence Yield X-ray Absorption Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#TR-MX
+###  https://w3id.org/PaN/ESRFET#TR-MX
 :TR-MX rdf:type owl:Class ;
        rdfs:subClassOf :experimental_technique ;
        rdfs:comment "Time-Resolved Macromolecular Crystallography (TR-MX) measures X-ray diffraction from macromolecular crystals at successive time points following a reaction trigger (e.g., laser pulse or substrate injection), enabling the observation of structural changes in biomolecules during a reaction or functional cycle." ;
@@ -1932,7 +1936,7 @@ The second definition is chosen for this technique.""" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Time-Resolved Macromolecular Crystallography" .
 
 
-###  http://purl.org/pan-science/ESRFET#TR-USAXS
+###  https://w3id.org/PaN/ESRFET#TR-USAXS
 :TR-USAXS rdf:type owl:Class ;
           rdfs:subClassOf :experimental_technique ;
           rdfs:comment "Time-Resolved Ultra-Small Angle X-ray Scattering (TR-USAXS) measures ultra-small angle X-ray scattering as a function of time to monitor structural evolution and dynamics of large-scale features such as aggregation, phase separation, or self-assembly." ;
@@ -1940,7 +1944,7 @@ The second definition is chosen for this technique.""" ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Time Resolved Ultra-Small Angle X-ray Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#TR-XRD
+###  https://w3id.org/PaN/ESRFET#TR-XRD
 :TR-XRD rdf:type owl:Class ;
         rdfs:subClassOf :experimental_technique ;
         rdfs:comment "Time-Resolved X-ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials." ;
@@ -1948,7 +1952,7 @@ The second definition is chosen for this technique.""" ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Time Resolved X-ray Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#TR-XSS
+###  https://w3id.org/PaN/ESRFET#TR-XSS
 :TR-XSS rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                    [ rdf:type owl:Restriction ;
@@ -1975,7 +1979,7 @@ The second definition is chosen for this technique.""" ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Time-Resolved X-ray solution scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#TXRF
+###  https://w3id.org/PaN/ESRFET#TXRF
 :TXRF rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -2006,7 +2010,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Total Reflection X-ray Fluorescence" .
 
 
-###  http://purl.org/pan-science/ESRFET#USA-XPCS
+###  https://w3id.org/PaN/ESRFET#USA-XPCS
 :USA-XPCS rdf:type owl:Class ;
           rdfs:subClassOf :experimental_technique ;
           rdfs:comment "Ultra-Small Angle X-ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials." ;
@@ -2014,7 +2018,7 @@ The second definition is chosen for this technique.""" ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Ultra-Small Angle X-ray Photon Correlation Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#USAXS
+###  https://w3id.org/PaN/ESRFET#USAXS
 :USAXS rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -2037,12 +2041,12 @@ The second definition is chosen for this technique.""" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "Ultra-Small Angle X-ray Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#UV
+###  https://w3id.org/PaN/ESRFET#UV
 :UV rdf:type owl:Class ;
     rdfs:subClassOf :named_photon_energy_ranges .
 
 
-###  http://purl.org/pan-science/ESRFET#VLM
+###  https://w3id.org/PaN/ESRFET#VLM
 :VLM rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -2065,7 +2069,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Visible Light Microscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#WAXS
+###  https://w3id.org/PaN/ESRFET#WAXS
 :WAXS rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -2088,7 +2092,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Wide-angle X-ray Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#WDS
+###  https://w3id.org/PaN/ESRFET#WDS
 :WDS rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -2119,7 +2123,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "Wavelength Dispersive X-ray Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#XACT
+###  https://w3id.org/PaN/ESRFET#XACT
 :XACT rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -2142,7 +2146,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Absorption Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XANES
+###  https://w3id.org/PaN/ESRFET#XANES
 :XANES rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -2169,7 +2173,7 @@ The second definition is chosen for this technique.""" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Absorption Near Edge Structure" .
 
 
-###  http://purl.org/pan-science/ESRFET#XAPCT
+###  https://w3id.org/PaN/ESRFET#XAPCT
 :XAPCT rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -2212,7 +2216,7 @@ The second definition is chosen for this technique.""" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Analyzer-Based Phase-Contrast Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XAS
+###  https://w3id.org/PaN/ESRFET#XAS
 :XAS rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -2239,7 +2243,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Absorption Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#XBH
+###  https://w3id.org/PaN/ESRFET#XBH
 :XBH rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "X-ray Bragg Holography (XBH) measures interference patterns formed by Bragg-diffracted and reference X-rays from a crystal to reconstruct 3D atomic-scale images of the crystal structure." ;
@@ -2247,7 +2251,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Bragg Holography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XCL
+###  https://w3id.org/PaN/ESRFET#XCL
 :XCL rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -2266,7 +2270,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Computed Laminography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XDMR
+###  https://w3id.org/PaN/ESRFET#XDMR
 :XDMR rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "X-ray Detected Magnetic Resonance (XDMR) measures changes in X-ray absorption or emission induced by magnetic resonance excitation, providing element-specific information on spin dynamics and magnetic excitations." ;
@@ -2274,7 +2278,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Detected Magnetic Resonance" .
 
 
-###  http://purl.org/pan-science/ESRFET#XDS
+###  https://w3id.org/PaN/ESRFET#XDS
 :XDS rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "X-ray Diffuse Scattering (XDS) measures scattered X-rays away from Bragg peaks to probe local disorder, defects, thermal vibrations, and nanoscale structural fluctuations in materials." ;
@@ -2282,7 +2286,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Diffuse Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#XEOL
+###  https://w3id.org/PaN/ESRFET#XEOL
 :XEOL rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "X-ray Excited Optical Luminescence (XEOL) measures visible or near-visible light emitted from a sample after X-ray excitation, providing information on electronic structure, defect states, and luminescent centers." ;
@@ -2290,7 +2294,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Excited Optical Luminescence" .
 
 
-###  http://purl.org/pan-science/ESRFET#XES
+###  https://w3id.org/PaN/ESRFET#XES
 :XES rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "X-ray Emission Spectroscopy (XES) measures emitted X-ray photons from electronic transitions after X-ray excitation, revealing detailed information about the electronic structure and chemical state of elements. Unlike XRF, which identifies elemental composition through broad characteristic fluorescence lines, XES uses high energy resolution to resolve fine spectral features—such as valence-to-core transitions—providing deeper insight into the local chemical bonding and electronic environment." ;
@@ -2298,7 +2302,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Emission Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#XFCT
+###  https://w3id.org/PaN/ESRFET#XFCT
 :XFCT rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -2329,7 +2333,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Fluorescence Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XFH
+###  https://w3id.org/PaN/ESRFET#XFH
 :XFH rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "X-ray Fluorescence Holography (XFH) measures interference between fluorescent X-rays emitted from atoms and scattered reference waves to obtain 3D atomic-scale images of the local atomic arrangement around specific elements." ;
@@ -2337,16 +2341,16 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Fluorescence Holography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XGI
+###  https://w3id.org/PaN/ESRFET#XGI
 :XGI rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :measures_as_a_function_of ;
-                                                  owl:someValuesFrom :simultanious_reference
+                                                  owl:someValuesFrom <http://purl.org/pan-science/PaNET/PaNET01106>
                                                 ]
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :measures_as_a_function_of ;
-                                                  owl:someValuesFrom <http://purl.org/pan-science/PaNET/PaNET01106>
+                                                  owl:someValuesFrom :simultanious_reference
                                                 ]
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :measures_result_of_interaction ;
@@ -2377,7 +2381,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Ghost Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#XGPCT
+###  https://w3id.org/PaN/ESRFET#XGPCT
 :XGPCT rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -2412,7 +2416,7 @@ The second definition is chosen for this technique.""" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Grating Phase-Contrast Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XHT
+###  https://w3id.org/PaN/ESRFET#XHT
 :XHT rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -2447,7 +2451,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray HoloTomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XLD
+###  https://w3id.org/PaN/ESRFET#XLD
 :XLD rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "X-ray Linear Dichroism (XLD) measures the difference in X-ray absorption for linearly polarized light oriented along different crystallographic axes, providing information on electronic anisotropy and orbital ordering." ;
@@ -2455,7 +2459,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Linear Dichroism" .
 
 
-###  http://purl.org/pan-science/ESRFET#XMCD
+###  https://w3id.org/PaN/ESRFET#XMCD
 :XMCD rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "X-ray Magnetic Circular Dichroism (XMCD) measures the difference in absorption of left- and right-circularly polarized X-rays in a magnetized sample, probing element-specific magnetic moments and spin states." ;
@@ -2463,7 +2467,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Magnetic Circular Dichroism" .
 
 
-###  http://purl.org/pan-science/ESRFET#XMLD
+###  https://w3id.org/PaN/ESRFET#XMLD
 :XMLD rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "X-ray Magnetic Linear Dichroism (XMLD) measures differences in X-ray absorption of linearly polarized light depending on magnetic order, sensitive to antiferromagnetic and magnetic domain structures." ;
@@ -2471,7 +2475,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Magnetic Linear Dichroism" .
 
 
-###  http://purl.org/pan-science/ESRFET#XMχD
+###  https://w3id.org/PaN/ESRFET#XMχD
 :XMχD rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "X-ray MagnetoChiral Dichroism (XMχD) measures differences in X-ray absorption related to the combined effects of magnetism and chirality in materials, revealing chiral magnetic structures." ;
@@ -2479,7 +2483,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray MagnetoChiral Dichroism" .
 
 
-###  http://purl.org/pan-science/ESRFET#XNCD
+###  https://w3id.org/PaN/ESRFET#XNCD
 :XNCD rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "X-ray Natural Circular Dichroism (XNCD) measures differences in absorption of circularly polarized X-rays in non-magnetic chiral materials, providing information on structural chirality and electronic asymmetry." ;
@@ -2487,7 +2491,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Natural Circular Dichroism" .
 
 
-###  http://purl.org/pan-science/ESRFET#XNHT
+###  https://w3id.org/PaN/ESRFET#XNHT
 :XNHT rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -2526,7 +2530,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Nano-HoloTomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XPCI
+###  https://w3id.org/PaN/ESRFET#XPCI
 :XPCI rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "X-ray Phase-Contrast Imaging (XPCI) measures phase shifts of X-rays transmitted through a sample to enhance image contrast, enabling visualization of structures with low absorption contrast such as soft tissues or light materials." ;
@@ -2536,7 +2540,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Phase-Contrast Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#XPCS
+###  https://w3id.org/PaN/ESRFET#XPCS
 :XPCS rdf:type owl:Class ;
       rdfs:subClassOf :experimental_technique ;
       rdfs:comment "X-ray Photon Correlation Spectroscopy (XPCS) measures time fluctuations of coherent X-ray scattering intensity to probe nanoscale dynamics and temporal correlations in materials such as particle motion, phase transitions, or relaxation processes." ;
@@ -2544,7 +2548,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Photon Correlation Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#XPCT
+###  https://w3id.org/PaN/ESRFET#XPCT
 :XPCT rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -2571,7 +2575,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Phase-Contrast Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XPS
+###  https://w3id.org/PaN/ESRFET#XPS
 :XPS rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "X-ray Photoelectron Spectroscopy (XPS) measures the kinetic energy of electrons ejected by X-rays to determine elemental composition and chemical states near the surface of a material." ;
@@ -2579,7 +2583,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Photoelectron Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#XRAYS
+###  https://w3id.org/PaN/ESRFET#XRAYS
 :XRAYS rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -2595,7 +2599,7 @@ The second definition is chosen for this technique.""" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Radiation Technique" .
 
 
-###  http://purl.org/pan-science/ESRFET#XRCT
+###  https://w3id.org/PaN/ESRFET#XRCT
 :XRCT rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -2614,7 +2618,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Computed Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XRD
+###  https://w3id.org/PaN/ESRFET#XRD
 :XRD rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -2633,7 +2637,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#XRF
+###  https://w3id.org/PaN/ESRFET#XRF
 :XRF rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -2660,7 +2664,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Fluorescence Spectroscopy" .
 
 
-###  http://purl.org/pan-science/ESRFET#XRPD
+###  https://w3id.org/PaN/ESRFET#XRPD
 :XRPD rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                  [ rdf:type owl:Restriction ;
@@ -2684,7 +2688,7 @@ The second definition is chosen for this technique.""" ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Powder Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#XRR
+###  https://w3id.org/PaN/ESRFET#XRR
 :XRR rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                 [ rdf:type owl:Restriction ;
@@ -2705,7 +2709,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Reflectometry" .
 
 
-###  http://purl.org/pan-science/ESRFET#XRS
+###  https://w3id.org/PaN/ESRFET#XRS
 :XRS rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "X-ray Raman Scattering (XRS) measures inelastic scattering of hard X-rays by core electrons, enabling the study of low-Z elements’ electronic structure and bonding in bulk samples without the need for soft X-rays or vacuum conditions." ;
@@ -2713,7 +2717,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Raman Scattering" .
 
 
-###  http://purl.org/pan-science/ESRFET#XRT
+###  https://w3id.org/PaN/ESRFET#XRT
 :XRT rdf:type owl:Class ;
      rdfs:subClassOf :experimental_technique ;
      rdfs:comment "X-ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure." ;
@@ -2723,7 +2727,7 @@ The second definition is chosen for this technique.""" ;
      <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Topography" .
 
 
-###  http://purl.org/pan-science/ESRFET#XSPCI
+###  https://w3id.org/PaN/ESRFET#XSPCI
 :XSPCI rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -2758,7 +2762,7 @@ The second definition is chosen for this technique.""" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Speckle Phase-Contrast Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#XSPCT
+###  https://w3id.org/PaN/ESRFET#XSPCT
 :XSPCT rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                   [ rdf:type owl:Restriction ;
@@ -2793,165 +2797,165 @@ The second definition is chosen for this technique.""" ;
        <http://www.w3.org/2004/02/skos/core#prefLabel> "X-ray Speckle Phase-Contrast Tomography" .
 
 
-###  http://purl.org/pan-science/ESRFET#absorption
+###  https://w3id.org/PaN/ESRFET#absorption
 :absorption rdf:type owl:Class ;
             owl:equivalentClass :atomic_core_excitation ;
             rdfs:subClassOf :cascade_of_events_being_detected .
 
 
-###  http://purl.org/pan-science/ESRFET#ambient_temperature
+###  https://w3id.org/PaN/ESRFET#ambient_temperature
 :ambient_temperature rdf:type owl:Class ;
                      rdfs:subClassOf :sample_temperature ;
                      rdfs:comment "Reference: 20–25 °C" ,
                                   "~300 K" .
 
 
-###  http://purl.org/pan-science/ESRFET#analyzer_crystal
+###  https://w3id.org/PaN/ESRFET#analyzer_crystal
 :analyzer_crystal rdf:type owl:Class ;
                   rdfs:subClassOf :detector_type .
 
 
-###  http://purl.org/pan-science/ESRFET#area_detector
+###  https://w3id.org/PaN/ESRFET#area_detector
 :area_detector rdf:type owl:Class ;
                rdfs:subClassOf :detector_type ;
                rdfs:comment "Detector that distinguishes the position of the waves (photons or particles) in a 2D plane in space by using an array of pixels which measure the waves independently." .
 
 
-###  http://purl.org/pan-science/ESRFET#atmospheric_pressure
+###  https://w3id.org/PaN/ESRFET#atmospheric_pressure
 :atmospheric_pressure rdf:type owl:Class ;
                       rdfs:subClassOf :sample_pressure ;
                       rdfs:comment "~1 × 10⁵ Pa (101 325 Pa)" .
 
 
-###  http://purl.org/pan-science/ESRFET#atomic_core_excitation
+###  https://w3id.org/PaN/ESRFET#atomic_core_excitation
 :atomic_core_excitation rdf:type owl:Class ;
                         rdfs:subClassOf :cascade_of_events_being_detected ;
                         rdfs:comment "Detecting any of the results after atomic core excitation (fluorescence, photo-electrons or auger-electrons)" .
 
 
-###  http://purl.org/pan-science/ESRFET#auger_electrons
+###  https://w3id.org/PaN/ESRFET#auger_electrons
 :auger_electrons rdf:type owl:Class ;
                  rdfs:subClassOf :cascade_of_events_being_detected ;
                  rdfs:comment "Detecting one result after atomic core excitation (auger electrons)" .
 
 
-###  http://purl.org/pan-science/ESRFET#biological_sample
+###  https://w3id.org/PaN/ESRFET#biological_sample
 :biological_sample rdf:type owl:Class ;
                    rdfs:subClassOf :sample_type ;
                    rdfs:comment "Any material taken from a living organism or made of biological molecules, such as cells, tissues, membranes, proteins, nucleic acid, DNA, or viruses" .
 
 
-###  http://purl.org/pan-science/ESRFET#cascade_of_events_being_detected
+###  https://w3id.org/PaN/ESRFET#cascade_of_events_being_detected
 :cascade_of_events_being_detected rdf:type owl:Class ;
                                   rdfs:subClassOf :technique_property ;
                                   rdfs:comment "The interaction between the sample and sample input(s) leads to a cascade of events, the result of which is being detected." .
 
 
-###  http://purl.org/pan-science/ESRFET#charged_particles
+###  https://w3id.org/PaN/ESRFET#charged_particles
 :charged_particles rdf:type owl:Class ;
                    rdfs:subClassOf :sample_input ;
                    rdfs:comment "For example protons or helium ions" .
 
 
-###  http://purl.org/pan-science/ESRFET#chemical_solution
+###  https://w3id.org/PaN/ESRFET#chemical_solution
 :chemical_solution rdf:type owl:Class ;
                    rdfs:subClassOf :sample_type ;
                    rdfs:comment "A homogeneous mixture of solutes dissolved in a solvent." .
 
 
-###  http://purl.org/pan-science/ESRFET#cryogenic_temperature
+###  https://w3id.org/PaN/ESRFET#cryogenic_temperature
 :cryogenic_temperature rdf:type owl:Class ;
                        rdfs:subClassOf :sample_temperature ;
                        rdfs:comment "1 - 77 K" ,
                                     "Liquid He (4.2 K), superconductivity, quantum devices" .
 
 
-###  http://purl.org/pan-science/ESRFET#detected_cascade_of_events_property
+###  https://w3id.org/PaN/ESRFET#detected_cascade_of_events_property
 :detected_cascade_of_events_property rdf:type owl:Class ;
                                      rdfs:subClassOf :technique_property ;
                                      rdfs:comment "The interaction between the sample and sample input(s) leads to a cascade of events, the result has properties which are being detected." .
 
 
-###  http://purl.org/pan-science/ESRFET#detected_photon_property
+###  https://w3id.org/PaN/ESRFET#detected_photon_property
 :detected_photon_property rdf:type owl:Class ;
                           rdfs:subClassOf :detected_cascade_of_events_property ;
                           rdfs:comment "The interaction between the sample and sample input(s) leads to a cascade of events, the result being photons which properties are being measured." .
 
 
-###  http://purl.org/pan-science/ESRFET#detection_as_a_function_of_incident_energy
+###  https://w3id.org/PaN/ESRFET#detection_as_a_function_of_incident_energy
 :detection_as_a_function_of_incident_energy rdf:type owl:Class ;
                                             rdfs:subClassOf :space_time ;
                                             rdfs:comment "Detect as a function of the incident photon or particle energy" .
 
 
-###  http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_incident_energies
+###  https://w3id.org/PaN/ESRFET#detection_as_a_function_of_limited_number_of_incident_energies
 :detection_as_a_function_of_limited_number_of_incident_energies rdf:type owl:Class ;
                                                                 rdfs:subClassOf :detection_as_a_function_of_incident_energy .
 
 
-###  http://purl.org/pan-science/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance
+###  https://w3id.org/PaN/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance
 :detection_as_a_function_of_limited_number_of_sample_to_detector_distance rdf:type owl:Class ;
                                                                           rdfs:subClassOf :detection_as_a_function_of_sample_to_detector_distance .
 
 
-###  http://purl.org/pan-science/ESRFET#detection_as_a_function_of_sample_to_detector_distance
+###  https://w3id.org/PaN/ESRFET#detection_as_a_function_of_sample_to_detector_distance
 :detection_as_a_function_of_sample_to_detector_distance rdf:type owl:Class ;
                                                         rdfs:subClassOf :space_time .
 
 
-###  http://purl.org/pan-science/ESRFET#detection_as_a_function_of_time
+###  https://w3id.org/PaN/ESRFET#detection_as_a_function_of_time
 :detection_as_a_function_of_time rdf:type owl:Class ;
                                  rdfs:subClassOf :space_time ;
                                  rdfs:comment "Used to describe techniques that involve time-resolved measurements" .
 
 
-###  http://purl.org/pan-science/ESRFET#detection_resolution
+###  https://w3id.org/PaN/ESRFET#detection_resolution
 :detection_resolution rdf:type owl:Class ;
                       rdfs:subClassOf :detected_cascade_of_events_property ;
                       rdfs:comment "The interaction between the sample and sample input(s) leads to a cascade of events, the resolution of the certain result properties are measured." .
 
 
-###  http://purl.org/pan-science/ESRFET#detector_type
+###  https://w3id.org/PaN/ESRFET#detector_type
 :detector_type rdf:type owl:Class ;
                rdfs:subClassOf :technique_property ;
                rdfs:comment "The interaction between the sample and sample input(s) leads to a cascade of events, the result has properties which are being detected with a detector that has certain characteristics." .
 
 
-###  http://purl.org/pan-science/ESRFET#diffraction
+###  https://w3id.org/PaN/ESRFET#diffraction
 :diffraction rdf:type owl:Class ;
              rdfs:subClassOf :cascade_of_events_being_detected ;
              rdfs:comment "Detecting interference of elastically scattering photons or particles" .
 
 
-###  http://purl.org/pan-science/ESRFET#diffraction_of_elastic_scattering
+###  https://w3id.org/PaN/ESRFET#diffraction_of_elastic_scattering
 :diffraction_of_elastic_scattering rdf:type owl:Class ;
                                    rdfs:subClassOf :diffraction .
 
 
-###  http://purl.org/pan-science/ESRFET#diffusion
+###  https://w3id.org/PaN/ESRFET#diffusion
 :diffusion rdf:type owl:Class ;
            rdfs:subClassOf :cascade_of_events_being_detected ;
            rdfs:comment "Also referred to as \"dark-field\"." .
 
 
-###  http://purl.org/pan-science/ESRFET#disperse_incident_energy_in_space
+###  https://w3id.org/PaN/ESRFET#disperse_incident_energy_in_space
 :disperse_incident_energy_in_space rdf:type owl:Class ;
                                    rdfs:subClassOf :sample_input_property ;
                                    rdfs:comment "Disperse incident wave photons in space with a polychromator (e.g. elliptically curved crystal in Bragg or Laue geometry)." .
 
 
-###  http://purl.org/pan-science/ESRFET#electrons
+###  https://w3id.org/PaN/ESRFET#electrons
 :electrons rdf:type owl:Class ;
            rdfs:subClassOf :sample_input .
 
 
-###  http://purl.org/pan-science/ESRFET#energy_dispersive_detector
+###  https://w3id.org/PaN/ESRFET#energy_dispersive_detector
 :energy_dispersive_detector rdf:type owl:Class ;
                             rdfs:subClassOf :detector_type ;
                             rdfs:comment "Detector that distinguishes the energy of the waves (photons or particles) it measures with a semiconductor material which seperates energies based on the electrical current they generate in the semiconductor material." .
 
 
-###  http://purl.org/pan-science/ESRFET#experimental_technique
+###  https://w3id.org/PaN/ESRFET#experimental_technique
 :experimental_technique rdf:type owl:Class ;
                         rdfs:comment "A specific method or procedure used to perform experiments and gather data to investigate scientific questions." ,
                                      """Every technique has a short description that tells what we measure and what you get out of it.
@@ -2962,13 +2966,13 @@ In addition, experimental techniques are semantically defined by
 - *how* the measurement""" .
 
 
-###  http://purl.org/pan-science/ESRFET#extended
+###  https://w3id.org/PaN/ESRFET#extended
 :extended rdf:type owl:Class ;
           rdfs:subClassOf :detection_as_a_function_of_incident_energy ;
           rdfs:comment "Incident energy is scanned over a range > 200 eV" .
 
 
-###  http://purl.org/pan-science/ESRFET#extreme_high_vacuum
+###  https://w3id.org/PaN/ESRFET#extreme_high_vacuum
 :extreme_high_vacuum rdf:type owl:Class ;
                      rdfs:subClassOf :sample_pressure ;
                      rdfs:comment "< 1 × 10⁻¹⁰ Pa" ,
@@ -2976,7 +2980,7 @@ In addition, experimental techniques are semantically defined by
                      <http://www.w3.org/2004/02/skos/core#altLabel> "XHV" .
 
 
-###  http://purl.org/pan-science/ESRFET#extreme_pressure
+###  https://w3id.org/PaN/ESRFET#extreme_pressure
 :extreme_pressure rdf:type owl:Class ;
                   rdfs:subClassOf :sample_pressure ;
                   rdfs:comment "> 1 × 10¹¹ Pa" ,
@@ -2984,39 +2988,39 @@ In addition, experimental techniques are semantically defined by
                   <http://www.w3.org/2004/02/skos/core#altLabel> "EP" .
 
 
-###  http://purl.org/pan-science/ESRFET#extreme_temperature
+###  https://w3id.org/PaN/ESRFET#extreme_temperature
 :extreme_temperature rdf:type owl:Class ;
                      rdfs:subClassOf :sample_temperature ;
                      rdfs:comment "5,000 – 10⁷ K" ,
                                   "Fusion plasmas, stellar photospheres, inertial confinement" .
 
 
-###  http://purl.org/pan-science/ESRFET#fluorescence
+###  https://w3id.org/PaN/ESRFET#fluorescence
 :fluorescence rdf:type owl:Class ;
               rdfs:subClassOf :cascade_of_events_being_detected ;
               rdfs:comment "Detecting one result after atomic core excitation (fluorescence)" .
 
 
-###  http://purl.org/pan-science/ESRFET#full-field_imaging
+###  https://w3id.org/PaN/ESRFET#full-field_imaging
 :full-field_imaging rdf:type owl:Class ;
                     rdfs:subClassOf :imaging ;
                     rdfs:comment "Image of the sample in a single measurement (no motion of beam, sample or detector)" ,
                                  "Measure sample characteristics in a 2D plane in space by why of detection." .
 
 
-###  http://purl.org/pan-science/ESRFET#grating
+###  https://w3id.org/PaN/ESRFET#grating
 :grating rdf:type owl:Class ;
          rdfs:subClassOf :primary_beam_modification ;
          rdfs:comment "X-ray beam goes through an absorbing periodic structured material." .
 
 
-###  http://purl.org/pan-science/ESRFET#hard_x-ray
+###  https://w3id.org/PaN/ESRFET#hard_x-ray
 :hard_x-ray rdf:type owl:Class ;
             rdfs:subClassOf :named_photon_energy_ranges ;
             rdfs:comment "Defined using an object property (has_photon_energy_range) to connect to another class (photon_energy_range) that has the data properties (value and unit). It creates a chain where the characteristics of other classes included in the definition define the class. Works with the reasoner!" .
 
 
-###  http://purl.org/pan-science/ESRFET#high_precision_in_Q_space
+###  https://w3id.org/PaN/ESRFET#high_precision_in_Q_space
 :high_precision_in_Q_space rdf:type owl:Class ;
                            rdfs:subClassOf :detection_resolution ;
                            rdfs:comment """For example min(ΔQ) = 1e-4 Å-1 to 5e-4 Å-1
@@ -3026,7 +3030,7 @@ Angular resolution: min(Δ2θ) = 0.001° to 0.005°
 Resolving power (Δ2θ/θ)""" .
 
 
-###  http://purl.org/pan-science/ESRFET#high_pressure
+###  https://w3id.org/PaN/ESRFET#high_pressure
 :high_pressure rdf:type owl:Class ;
                rdfs:subClassOf :sample_pressure ;
                rdfs:comment "1 × 10⁷ – 1 × 10⁹ Pa" ,
@@ -3034,14 +3038,14 @@ Resolving power (Δ2θ/θ)""" .
                <http://www.w3.org/2004/02/skos/core#altLabel> "HP" .
 
 
-###  http://purl.org/pan-science/ESRFET#high_temperature
+###  https://w3id.org/PaN/ESRFET#high_temperature
 :high_temperature rdf:type owl:Class ;
                   rdfs:subClassOf :sample_temperature ;
                   rdfs:comment "1,000 – 2,000 K" ,
                                "Metallurgy, refractory studies" .
 
 
-###  http://purl.org/pan-science/ESRFET#high_vacuum
+###  https://w3id.org/PaN/ESRFET#high_vacuum
 :high_vacuum rdf:type owl:Class ;
              rdfs:subClassOf :sample_pressure ;
              rdfs:comment "1 × 10⁻⁷ – 1 × 10⁻³ Pa" ,
@@ -3049,34 +3053,34 @@ Resolving power (Δ2θ/θ)""" .
              <http://www.w3.org/2004/02/skos/core#altLabel> "HV" .
 
 
-###  http://purl.org/pan-science/ESRFET#horizontal_linear_polarization
+###  https://w3id.org/PaN/ESRFET#horizontal_linear_polarization
 :horizontal_linear_polarization rdf:type owl:Class ;
                                 rdfs:subClassOf :polarization .
 
 
-###  http://purl.org/pan-science/ESRFET#imaging
+###  https://w3id.org/PaN/ESRFET#imaging
 :imaging rdf:type owl:Class ;
          rdfs:subClassOf :space_time .
 
 
-###  http://purl.org/pan-science/ESRFET#individual_specimen
+###  https://w3id.org/PaN/ESRFET#individual_specimen
 :individual_specimen rdf:type owl:Class ;
                      rdfs:subClassOf :space_time ;
                      rdfs:comment "A method of data collection where measuring one sample providse enough data that can be analyzed. You don't necessarily need many. Although might still do it for static purposes (e.g. measuring several lungs)." .
 
 
-###  http://purl.org/pan-science/ESRFET#infrared
+###  https://w3id.org/PaN/ESRFET#infrared
 :infrared rdf:type owl:Class ;
           rdfs:subClassOf :named_photon_energy_ranges .
 
 
-###  http://purl.org/pan-science/ESRFET#laminography
+###  https://w3id.org/PaN/ESRFET#laminography
 :laminography rdf:type owl:Class ;
               rdfs:subClassOf :tomography ;
               rdfs:comment "Many images of the sample under different orientations from which a 3D volume can be reconstructed. The rotation axis is titled with respect to the primary beam." .
 
 
-###  http://purl.org/pan-science/ESRFET#large_length_scales
+###  https://w3id.org/PaN/ESRFET#large_length_scales
 :large_length_scales rdf:type owl:Class ;
                      rdfs:subClassOf :detection_resolution ;
                      rdfs:comment """Length Scale d (Å) = 10 – 1000
@@ -3086,17 +3090,17 @@ Q-Range (Å−1) = 0.01 – 0.1
 Large structural features: supramolecular structures, particle sizes, and shapes""" .
 
 
-###  http://purl.org/pan-science/ESRFET#laser
+###  https://w3id.org/PaN/ESRFET#laser
 :laser rdf:type owl:Class ;
        rdfs:subClassOf :sample_input .
 
 
-###  http://purl.org/pan-science/ESRFET#left_circular_polarization
+###  https://w3id.org/PaN/ESRFET#left_circular_polarization
 :left_circular_polarization rdf:type owl:Class ;
                             rdfs:subClassOf :polarization .
 
 
-###  http://purl.org/pan-science/ESRFET#low_overpressure
+###  https://w3id.org/PaN/ESRFET#low_overpressure
 :low_overpressure rdf:type owl:Class ;
                   rdfs:subClassOf :sample_pressure ;
                   rdfs:comment "1 × 10⁵ – 1 × 10⁷ Pa" ,
@@ -3104,14 +3108,14 @@ Large structural features: supramolecular structures, particle sizes, and shapes
                   <http://www.w3.org/2004/02/skos/core#altLabel> "LOP" .
 
 
-###  http://purl.org/pan-science/ESRFET#low_temperature
+###  https://w3id.org/PaN/ESRFET#low_temperature
 :low_temperature rdf:type owl:Class ;
                  rdfs:subClassOf :sample_temperature ;
                  rdfs:comment "77 – 300 K" ,
                               "Liquid N₂ (77 K) up to room temperature (~293 K)" .
 
 
-###  http://purl.org/pan-science/ESRFET#low_vacuum
+###  https://w3id.org/PaN/ESRFET#low_vacuum
 :low_vacuum rdf:type owl:Class ;
             rdfs:subClassOf :sample_pressure ;
             rdfs:comment "100 – 1 × 10⁵ Pa" ,
@@ -3119,18 +3123,18 @@ Large structural features: supramolecular structures, particle sizes, and shapes
             <http://www.w3.org/2004/02/skos/core#altLabel> "LV" .
 
 
-###  http://purl.org/pan-science/ESRFET#macro_sample_spatial_resolution
+###  https://w3id.org/PaN/ESRFET#macro_sample_spatial_resolution
 :macro_sample_spatial_resolution rdf:type owl:Class ;
                                  rdfs:subClassOf :sample_spatial_resolution ;
                                  rdfs:comment "Sample properties are measured with a resolution in space greater than 100 micron." .
 
 
-###  http://purl.org/pan-science/ESRFET#magnetic_field
+###  https://w3id.org/PaN/ESRFET#magnetic_field
 :magnetic_field rdf:type owl:Class ;
                 rdfs:subClassOf :sample_input .
 
 
-###  http://purl.org/pan-science/ESRFET#medium_vacuum
+###  https://w3id.org/PaN/ESRFET#medium_vacuum
 :medium_vacuum rdf:type owl:Class ;
                rdfs:subClassOf :sample_pressure ;
                rdfs:comment "1 × 10⁻³ – 100 Pa" ,
@@ -3138,174 +3142,174 @@ Large structural features: supramolecular structures, particle sizes, and shapes
                <http://www.w3.org/2004/02/skos/core#altLabel> "MV" .
 
 
-###  http://purl.org/pan-science/ESRFET#micro_sample_spatial_resolution
+###  https://w3id.org/PaN/ESRFET#micro_sample_spatial_resolution
 :micro_sample_spatial_resolution rdf:type owl:Class ;
                                  rdfs:subClassOf :sample_spatial_resolution ;
                                  rdfs:comment "Sample properties are measured with a resolution in space between than 0.1 and 100 micron." .
 
 
-###  http://purl.org/pan-science/ESRFET#moderately_high_temperature
+###  https://w3id.org/PaN/ESRFET#moderately_high_temperature
 :moderately_high_temperature rdf:type owl:Class ;
                              rdfs:subClassOf :sample_temperature ;
                              rdfs:comment "300 – 1,000 K" ,
                                           "Industrial heating, some combustion" .
 
 
-###  http://purl.org/pan-science/ESRFET#monochromatic_beam
+###  https://w3id.org/PaN/ESRFET#monochromatic_beam
 :monochromatic_beam rdf:type owl:Class ;
                     rdfs:subClassOf :photon_energy_bandwidth ;
                     rdfs:comment "Photon energy bandwidth is smaller than ???" .
 
 
-###  http://purl.org/pan-science/ESRFET#multi_sample_spatial_resolution
+###  https://w3id.org/PaN/ESRFET#multi_sample_spatial_resolution
 :multi_sample_spatial_resolution rdf:type owl:Class ;
                                  rdfs:subClassOf :sample_spatial_resolution ;
                                  rdfs:comment "Detect at different resolutions." .
 
 
-###  http://purl.org/pan-science/ESRFET#named_photon_energy_ranges
+###  https://w3id.org/PaN/ESRFET#named_photon_energy_ranges
 :named_photon_energy_ranges rdf:type owl:Class ;
                             rdfs:subClassOf :sample_input .
 
 
-###  http://purl.org/pan-science/ESRFET#nano_sample_spatial_resolution
+###  https://w3id.org/PaN/ESRFET#nano_sample_spatial_resolution
 :nano_sample_spatial_resolution rdf:type owl:Class ;
                                 rdfs:subClassOf :sample_spatial_resolution ;
                                 rdfs:comment "Sample properties are measured with a resolution in space between than 0.1 and 100 nanometer." .
 
 
-###  http://purl.org/pan-science/ESRFET#near_edge
+###  https://w3id.org/PaN/ESRFET#near_edge
 :near_edge rdf:type owl:Class ;
            rdfs:subClassOf :detection_as_a_function_of_incident_energy ;
            rdfs:comment "Incident energy is scanned of a range <200 eV" .
 
 
-###  http://purl.org/pan-science/ESRFET#photo_electrons
+###  https://w3id.org/PaN/ESRFET#photo_electrons
 :photo_electrons rdf:type owl:Class ;
                  rdfs:subClassOf :cascade_of_events_being_detected ;
                  rdfs:comment "Detecting one result after atomic core excitation (photo electrons)" .
 
 
-###  http://purl.org/pan-science/ESRFET#photon_count
+###  https://w3id.org/PaN/ESRFET#photon_count
 :photon_count rdf:type owl:Class ;
               rdfs:subClassOf :detected_photon_property .
 
 
-###  http://purl.org/pan-science/ESRFET#photon_direction_with_respect_to_primary_beam
+###  https://w3id.org/PaN/ESRFET#photon_direction_with_respect_to_primary_beam
 :photon_direction_with_respect_to_primary_beam rdf:type owl:Class ;
                                                rdfs:subClassOf :detected_photon_property ;
                                                rdfs:comment "Not sure we need this. This was XRPD (angular dispersive) vs. ED-XRPD (energy dispersive)." .
 
 
-###  http://purl.org/pan-science/ESRFET#photon_energy
+###  https://w3id.org/PaN/ESRFET#photon_energy
 :photon_energy rdf:type owl:Class ;
                rdfs:subClassOf :detected_photon_property ;
                rdfs:comment "Counting photons and their energy by semiconductors" .
 
 
-###  http://purl.org/pan-science/ESRFET#photon_energy_bandwidth
+###  https://w3id.org/PaN/ESRFET#photon_energy_bandwidth
 :photon_energy_bandwidth rdf:type owl:Class ;
                          rdfs:subClassOf :sample_input .
 
 
-###  http://purl.org/pan-science/ESRFET#pink_beam
+###  https://w3id.org/PaN/ESRFET#pink_beam
 :pink_beam rdf:type owl:Class ;
            rdfs:subClassOf :photon_energy_bandwidth ;
            rdfs:comment "Photon energy bandwidth is between ???" .
 
 
-###  http://purl.org/pan-science/ESRFET#point_detector
+###  https://w3id.org/PaN/ESRFET#point_detector
 :point_detector rdf:type owl:Class ;
                 rdfs:subClassOf :detector_type ;
                 rdfs:comment "Detector that cannot distinguish the position of the waves (photons or particles) in space." .
 
 
-###  http://purl.org/pan-science/ESRFET#polarization
+###  https://w3id.org/PaN/ESRFET#polarization
 :polarization rdf:type owl:Class ;
               rdfs:subClassOf :detected_photon_property .
 
 
-###  http://purl.org/pan-science/ESRFET#polycrystalline_sample
+###  https://w3id.org/PaN/ESRFET#polycrystalline_sample
 :polycrystalline_sample rdf:type owl:Class ;
                         rdfs:subClassOf :sample_type ;
                         rdfs:comment "A polycrystalline material is composed of many small single crystals (grains) with different orientations joined together." .
 
 
-###  http://purl.org/pan-science/ESRFET#powder_sample
+###  https://w3id.org/PaN/ESRFET#powder_sample
 :powder_sample rdf:type owl:Class ;
                rdfs:subClassOf :sample_type ;
                rdfs:comment "A powder is a collection of tiny, separate crystalline particles with random orientations." .
 
 
-###  http://purl.org/pan-science/ESRFET#primary_beam_modification
+###  https://w3id.org/PaN/ESRFET#primary_beam_modification
 :primary_beam_modification rdf:type owl:Class ;
                            rdfs:subClassOf :sample_input_property .
 
 
-###  http://purl.org/pan-science/ESRFET#ramp_compression
+###  https://w3id.org/PaN/ESRFET#ramp_compression
 :ramp_compression rdf:type owl:Class ;
                   rdfs:subClassOf :sample_compression ;
                   rdfs:comment "Lower strain rates (~10^3 to 10^6 s⁻¹)" .
 
 
-###  http://purl.org/pan-science/ESRFET#reflection
+###  https://w3id.org/PaN/ESRFET#reflection
 :reflection rdf:type owl:Class ;
             rdfs:subClassOf :cascade_of_events_being_detected ;
             rdfs:comment "Detect waves (photons or particles) which are reflected of the interface between two media." ;
             <http://www.w3.org/2004/02/skos/core#altLabel> "total reflection" .
 
 
-###  http://purl.org/pan-science/ESRFET#refraction
+###  https://w3id.org/PaN/ESRFET#refraction
 :refraction rdf:type owl:Class ;
             rdfs:subClassOf :cascade_of_events_being_detected ;
             rdfs:comment "Detect waves (photons or particles) which are redirected as a result of passing from one medium to another." .
 
 
-###  http://purl.org/pan-science/ESRFET#right_circular_polarization
+###  https://w3id.org/PaN/ESRFET#right_circular_polarization
 :right_circular_polarization rdf:type owl:Class ;
                              rdfs:subClassOf :polarization .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_compression
+###  https://w3id.org/PaN/ESRFET#sample_compression
 :sample_compression rdf:type owl:Class ;
                     rdfs:subClassOf :space_time .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_incident_angle
+###  https://w3id.org/PaN/ESRFET#sample_incident_angle
 :sample_incident_angle rdf:type owl:Class ;
                        rdfs:subClassOf :sample_input_property ;
                        rdfs:comment "The angle between the incident wave (photons or particles) and the sample surface." .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_incident_angle_smaller_than_critical_angle
+###  https://w3id.org/PaN/ESRFET#sample_incident_angle_smaller_than_critical_angle
 :sample_incident_angle_smaller_than_critical_angle rdf:type owl:Class ;
                                                    rdfs:subClassOf :sample_incident_angle ;
                                                    rdfs:comment "The angle between the incident wave (photons or particles) and the sample surface is below the critical angle for reflection." .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_input
+###  https://w3id.org/PaN/ESRFET#sample_input
 :sample_input rdf:type owl:Class ;
               rdfs:subClassOf :technique_property ;
               rdfs:comment "Everything that influences the sample during an experiment." .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_input_property
+###  https://w3id.org/PaN/ESRFET#sample_input_property
 :sample_input_property rdf:type owl:Class ;
                        rdfs:subClassOf :technique_property ;
                        rdfs:comment "Properties of everything that influences the sample during an experiment." .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_pressure
+###  https://w3id.org/PaN/ESRFET#sample_pressure
 :sample_pressure rdf:type owl:Class ;
                  rdfs:subClassOf :sample_input_property .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_spatial_resolution
+###  https://w3id.org/PaN/ESRFET#sample_spatial_resolution
 :sample_spatial_resolution rdf:type owl:Class ;
                            rdfs:subClassOf :space_time .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_spatial_resolution_achieved_on_detection
+###  https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_detection
 :sample_spatial_resolution_achieved_on_detection rdf:type owl:Class ;
                                                  rdfs:subClassOf :sample_spatial_resolution ;
                                                  rdfs:comment "Sample properties are measured with a resolution in space determined by the detection mechanism (e.g. detector resolution or beam size)." ,
@@ -3318,55 +3322,55 @@ Large structural features: supramolecular structures, particle sizes, and shapes
 and remove this class""" .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_spatial_resolution_achived_on_input
+###  https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achived_on_input
 :sample_spatial_resolution_achived_on_input rdf:type owl:Class ;
                                             rdfs:subClassOf :sample_spatial_resolution ;
                                             rdfs:comment "Sample properties are measured with a resolution in space determined by the sample input." .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_temperature
+###  https://w3id.org/PaN/ESRFET#sample_temperature
 :sample_temperature rdf:type owl:Class ;
                     rdfs:subClassOf :sample_input_property .
 
 
-###  http://purl.org/pan-science/ESRFET#sample_type
+###  https://w3id.org/PaN/ESRFET#sample_type
 :sample_type rdf:type owl:Class ;
              rdfs:subClassOf :technique_property ;
              rdfs:comment "Charateristics of the sample being investigated." .
 
 
-###  http://purl.org/pan-science/ESRFET#scanning_imaging
+###  https://w3id.org/PaN/ESRFET#scanning_imaging
 :scanning_imaging rdf:type owl:Class ;
                   rdfs:subClassOf :imaging ;
                   rdfs:comment "Image of the sample build up by many measurements (motion of beam, sample or detector)" ,
                                "Measure sample characteristics in a 2D plane in space by why of moving the sample." .
 
 
-###  http://purl.org/pan-science/ESRFET#serial_screening
+###  https://w3id.org/PaN/ESRFET#serial_screening
 :serial_screening rdf:type owl:Class ;
                   rdfs:subClassOf :space_time ;
                   rdfs:comment "A method of data collection where many samples of the same kind are streaming through the sample input (e.g. X-ray beam), one at a time. Measuring only one does not provide enough data that can be analyzed, you need many." .
 
 
-###  http://purl.org/pan-science/ESRFET#shock_compression
+###  https://w3id.org/PaN/ESRFET#shock_compression
 :shock_compression rdf:type owl:Class ;
                    rdfs:subClassOf :sample_compression ;
                    rdfs:comment "High strain rates (~10^6 to 10^9 s⁻¹)." .
 
 
-###  http://purl.org/pan-science/ESRFET#simultanious_reference
+###  https://w3id.org/PaN/ESRFET#simultanious_reference
 :simultanious_reference rdf:type owl:Class ;
                         rdfs:subClassOf :space_time ;
                         rdfs:comment "Detect a reference compound or primary beam profile at the same time as measuring the actual sample." .
 
 
-###  http://purl.org/pan-science/ESRFET#single_crystal_sample
+###  https://w3id.org/PaN/ESRFET#single_crystal_sample
 :single_crystal_sample rdf:type owl:Class ;
                        rdfs:subClassOf :sample_type ;
                        rdfs:comment "A solid material in which the component atoms are arranged in a definite pattern and whose surface regularity reflects its internal symmetry." .
 
 
-###  http://purl.org/pan-science/ESRFET#small_length_scales
+###  https://w3id.org/PaN/ESRFET#small_length_scales
 :small_length_scales rdf:type owl:Class ;
                      rdfs:subClassOf :detection_resolution ;
                      rdfs:comment """Length Scale d (Å) = 1 – 10
@@ -3376,7 +3380,7 @@ Q-Range (Å−1) = 0.1 – 2.5
 Small structural features: Atomic distances, crystal lattice spacings, molecular packing""" .
 
 
-###  http://purl.org/pan-science/ESRFET#soft_x-ray
+###  https://w3id.org/PaN/ESRFET#soft_x-ray
 :soft_x-ray rdf:type owl:Class ;
             owl:equivalentClass [ owl:intersectionOf ( :named_photon_energy_ranges
                                                        [ rdf:type owl:Restriction ;
@@ -3398,38 +3402,38 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
             rdfs:subClassOf :named_photon_energy_ranges .
 
 
-###  http://purl.org/pan-science/ESRFET#space_time
+###  https://w3id.org/PaN/ESRFET#space_time
 :space_time rdf:type owl:Class ;
             rdfs:subClassOf :technique_property ;
             rdfs:comment "Things that happen during the experiment as a function of space and time" .
 
 
-###  http://purl.org/pan-science/ESRFET#speckle_pattern
+###  https://w3id.org/PaN/ESRFET#speckle_pattern
 :speckle_pattern rdf:type owl:Class ;
                  rdfs:subClassOf :primary_beam_modification ;
                  rdfs:comment "X-ray beam goes through a structured material (e.g. sandpaper)." .
 
 
-###  http://purl.org/pan-science/ESRFET#strip_detector
+###  https://w3id.org/PaN/ESRFET#strip_detector
 :strip_detector rdf:type owl:Class ;
                 rdfs:subClassOf :detector_type ;
                 rdfs:comment "Detector that distinguishes the position of the waves (photons or particles) in a 1D strip (line with a certain thickness) in space by using an array of pixels which measure the waves independently." .
 
 
-###  http://purl.org/pan-science/ESRFET#technique_property
+###  https://w3id.org/PaN/ESRFET#technique_property
 :technique_property rdf:type owl:Class ;
                     rdfs:comment "A characteristic or feature that describes what an experimental technique can do, how it works, or what kind of information it provides (like resolution, sensitivity, or the type of data it collects)." ,
                                  "All the ranges of the object properties with experimental technique as domain." .
 
 
-###  http://purl.org/pan-science/ESRFET#tomography
+###  https://w3id.org/PaN/ESRFET#tomography
 :tomography rdf:type owl:Class ;
             rdfs:subClassOf :space_time ;
             rdfs:comment "Many images of the sample under different orientations from which a 3D volume can be reconstructed" ,
                          "Measure sample characteristics is 3D by measuring characteristics in 2D or 1D projection under many orientations." .
 
 
-###  http://purl.org/pan-science/ESRFET#total_electrons
+###  https://w3id.org/PaN/ESRFET#total_electrons
 :total_electrons rdf:type owl:Class ;
                  owl:equivalentClass [ rdf:type owl:Class ;
                                        owl:unionOf ( :auger_electrons
@@ -3440,27 +3444,27 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
                  rdfs:comment "Detecting electron results after atomic core excitation (photo-electrons or auger-electrons)" .
 
 
-###  http://purl.org/pan-science/ESRFET#transmission
+###  https://w3id.org/PaN/ESRFET#transmission
 :transmission rdf:type owl:Class ;
               rdfs:subClassOf :cascade_of_events_being_detected ;
               rdfs:comment "Detect incident photon or particles after passing through the sample without interaction" .
 
 
-###  http://purl.org/pan-science/ESRFET#ultra_cryogenic_temperature
+###  https://w3id.org/PaN/ESRFET#ultra_cryogenic_temperature
 :ultra_cryogenic_temperature rdf:type owl:Class ;
                              rdfs:subClassOf :sample_temperature ;
                              rdfs:comment "< 1 K" ,
                                           "Dilution refrigerators, quantum experiments" .
 
 
-###  http://purl.org/pan-science/ESRFET#ultra_extreme_temperature
+###  https://w3id.org/PaN/ESRFET#ultra_extreme_temperature
 :ultra_extreme_temperature rdf:type owl:Class ;
                            rdfs:subClassOf :sample_temperature ;
                            rdfs:comment "> 10⁷ K" ,
                                         "Stellar cores, thermonuclear explosions" .
 
 
-###  http://purl.org/pan-science/ESRFET#ultra_high_vacuum
+###  https://w3id.org/PaN/ESRFET#ultra_high_vacuum
 :ultra_high_vacuum rdf:type owl:Class ;
                    rdfs:subClassOf :sample_pressure ;
                    rdfs:comment "1 × 10⁻¹⁰ – 1 × 10⁻⁷ Pa" ,
@@ -3468,7 +3472,7 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
                    <http://www.w3.org/2004/02/skos/core#altLabel> "UHV" .
 
 
-###  http://purl.org/pan-science/ESRFET#ultra_large_length_scales
+###  https://w3id.org/PaN/ESRFET#ultra_large_length_scales
 :ultra_large_length_scales rdf:type owl:Class ;
                            rdfs:subClassOf :detection_resolution ;
                            rdfs:comment """Length Scale d (Å) = 1000 - 10000
@@ -3478,17 +3482,17 @@ Q-Range (Å−1) = 0.0001 - 0.01
 Ultra Large structural features: large aggregates, clusters, and larger pores""" .
 
 
-###  http://purl.org/pan-science/ESRFET#unmodified_beam
+###  https://w3id.org/PaN/ESRFET#unmodified_beam
 :unmodified_beam rdf:type owl:Class ;
                  rdfs:subClassOf :primary_beam_modification .
 
 
-###  http://purl.org/pan-science/ESRFET#vertical_linear_polarization
+###  https://w3id.org/PaN/ESRFET#vertical_linear_polarization
 :vertical_linear_polarization rdf:type owl:Class ;
                               rdfs:subClassOf :polarization .
 
 
-###  http://purl.org/pan-science/ESRFET#very_high_pressure
+###  https://w3id.org/PaN/ESRFET#very_high_pressure
 :very_high_pressure rdf:type owl:Class ;
                     rdfs:subClassOf :sample_pressure ;
                     rdfs:comment "1 × 10⁹ – 1 × 10¹¹ Pa" ,
@@ -3496,110 +3500,106 @@ Ultra Large structural features: large aggregates, clusters, and larger pores"""
                     <http://www.w3.org/2004/02/skos/core#altLabel> "VHP" .
 
 
-###  http://purl.org/pan-science/ESRFET#very_high_temperature
+###  https://w3id.org/PaN/ESRFET#very_high_temperature
 :very_high_temperature rdf:type owl:Class ;
                        rdfs:subClassOf :sample_temperature ;
                        rdfs:comment "2,000 – 5,000 K" ,
                                     "Arc plasmas, re-entry heating" .
 
 
-###  http://purl.org/pan-science/ESRFET#visual_spectrum
+###  https://w3id.org/PaN/ESRFET#visual_spectrum
 :visual_spectrum rdf:type owl:Class ;
                  rdfs:subClassOf :named_photon_energy_ranges .
 
 
-###  http://purl.org/pan-science/ESRFET#wavelength_dispersive_detector
+###  https://w3id.org/PaN/ESRFET#wavelength_dispersive_detector
 :wavelength_dispersive_detector rdf:type owl:Class ;
                                 rdfs:subClassOf :detector_type ;
                                 rdfs:comment "Detector that distinguishes the energy of the waves (photons or particles) it measures with a crystal monochromator which separates the energies in space." .
 
 
-###  http://purl.org/pan-science/ESRFET#white_beam
+###  https://w3id.org/PaN/ESRFET#white_beam
 :white_beam rdf:type owl:Class ;
             rdfs:subClassOf :photon_energy_bandwidth ;
             rdfs:comment "Photon energy bandwidth is greater than ???" .
 
 
-###  http://purl.org/pan-science/ESRFET#x-ray
+###  https://w3id.org/PaN/ESRFET#x-ray
 :x-ray rdf:type owl:Class ;
        rdfs:subClassOf :named_photon_energy_ranges .
 
 
-###  http://purl.org/pan-science/ESRFET#3DXRD
-<http://purl.org/pan-science/ESRFET#3DXRD> rdf:type owl:Class ;
-                                           owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
-                                                                                      [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty :measures_as_a_function_of ;
-                                                                                        owl:someValuesFrom :tomography
-                                                                                      ]
-                                                                                      [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty :measures_result_of_interaction ;
-                                                                                        owl:someValuesFrom :diffraction_of_elastic_scattering
-                                                                                      ]
-                                                                                      [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty :requires_sample_input ;
-                                                                                        owl:someValuesFrom :x-ray
-                                                                                      ]
-                                                                                      [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty :requires_sample_type ;
-                                                                                        owl:someValuesFrom :polycrystalline_sample
-                                                                                      ]
-                                                                                    ) ;
-                                                                 rdf:type owl:Class
-                                                               ] ;
-                                           rdfs:comment "3DXRD is a far field diffraction technique capable of reconstructing polycrystalline materials from the individual diffraction spots recorded in the diffraction pattern given that the crystallographic parameters of the material are known. The success of the technique is based on the ability of the individual diffraction spots to be separated. This means there is a trade off between the number of grains and the degree of strain that is measurable." ;
-                                           rdfs:label "3DXRD" ;
-                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "3D X-ray Diffraction" .
+###  https://w3id.org/PaN/ESRFET#3DXRD
+<https://w3id.org/PaN/ESRFET#3DXRD> rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :measures_as_a_function_of ;
+                                                                                 owl:someValuesFrom :tomography
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :measures_result_of_interaction ;
+                                                                                 owl:someValuesFrom :diffraction_of_elastic_scattering
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :requires_sample_input ;
+                                                                                 owl:someValuesFrom :x-ray
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :requires_sample_type ;
+                                                                                 owl:someValuesFrom :polycrystalline_sample
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    rdfs:comment "3DXRD is a far field diffraction technique capable of reconstructing polycrystalline materials from the individual diffraction spots recorded in the diffraction pattern given that the crystallographic parameters of the material are known. The success of the technique is based on the ability of the individual diffraction spots to be separated. This means there is a trade off between the number of grains and the degree of strain that is measurable." ;
+                                    rdfs:label "3DXRD" ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "3D X-ray Diffraction" .
 
 
-###  http://purl.org/pan-science/ESRFET#FS‑XANES
-<http://purl.org/pan-science/ESRFET#FS‑XANES> rdf:type owl:Class ;
-                                              owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty :measures_as_a_function_of ;
-                                                                                           owl:someValuesFrom :near_edge
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty :measures_as_a_function_of ;
-                                                                                           owl:someValuesFrom :scanning_imaging
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty :measures_interaction_result_property ;
-                                                                                           owl:someValuesFrom :photon_count
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty :measures_result_of_interaction ;
-                                                                                           owl:someValuesFrom :atomic_core_excitation
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty :requires_sample_input ;
-                                                                                           owl:someValuesFrom :x-ray
-                                                                                         ]
-                                                                                       ) ;
-                                                                    rdf:type owl:Class
-                                                                  ] ;
-                                              rdfs:comment "FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure." ;
-                                              rdfs:label "FS-XANES" ;
-                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Full‑Spectral X-ray Absorption Near Edge Structure Imaging" .
+###  https://w3id.org/PaN/ESRFET#FS‑XANES
+<https://w3id.org/PaN/ESRFET#FS‑XANES> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :measures_as_a_function_of ;
+                                                                                    owl:someValuesFrom :near_edge
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :measures_as_a_function_of ;
+                                                                                    owl:someValuesFrom :scanning_imaging
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :measures_interaction_result_property ;
+                                                                                    owl:someValuesFrom :photon_count
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :measures_result_of_interaction ;
+                                                                                    owl:someValuesFrom :atomic_core_excitation
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :requires_sample_input ;
+                                                                                    owl:someValuesFrom :x-ray
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:comment "FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure." ;
+                                       rdfs:label "FS-XANES" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Full‑Spectral X-ray Absorption Near Edge Structure Imaging" .
 
 
-###  http://purl.org/pan-science/ESRFET#TR‑SSX
-<http://purl.org/pan-science/ESRFET#TR‑SSX> rdf:type owl:Class ;
-                                            rdfs:subClassOf :experimental_technique ;
-                                            rdfs:comment "Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX enables the reconstruction of 3D “molecular movies” that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution." ;
-                                            rdfs:label "TR‑SSX" ;
-                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Time-Resolved Serial Synchrotron Crystallography" .
-
-
-###  http://xmlns.com/foaf/0.1/Organization
-<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+###  https://w3id.org/PaN/ESRFET#TR‑SSX
+<https://w3id.org/PaN/ESRFET#TR‑SSX> rdf:type owl:Class ;
+                                     rdfs:subClassOf :experimental_technique ;
+                                     rdfs:comment "Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX enables the reconstruction of 3D “molecular movies” that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution." ;
+                                     rdfs:label "TR‑SSX" ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Time-Resolved Serial Synchrotron Crystallography" .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/pan-science/ESRFET#ESRF
+###  https://w3id.org/PaN/ESRFET#ESRF
 :ESRF rdf:type owl:NamedIndividual ,
                <http://xmlns.com/foaf/0.1/Organization> ;
       rdfs:seeAlso <https://ror.org/02550n020> ;
@@ -3607,58 +3607,58 @@ Ultra Large structural features: large aggregates, clusters, and larger pores"""
       <http://xmlns.com/foaf/0.1/name> "ESRF" .
 
 
-###  http://purl.org/pan-science/ESRFET#example_photon_count
+###  https://w3id.org/PaN/ESRFET#example_photon_count
 :example_photon_count rdf:type owl:NamedIndividual ,
                                :photon_count .
 
 
-###  http://purl.org/pan-science/ESRFET#wrong
+###  https://w3id.org/PaN/ESRFET#wrong
 :wrong rdf:type owl:NamedIndividual ;
        :measures_interaction_result_property :example_photon_count .
 
 
-###  http://purl.org/pan-science/ESRFET#person/GKoumoutsos
-<http://purl.org/pan-science/ESRFET#person/GKoumoutsos> rdf:type owl:NamedIndividual ,
-                                                                 <http://xmlns.com/foaf/0.1/Person> ;
-                                                        rdfs:seeAlso <https://orcid.org/0009-0000-6215-8493> ;
-                                                        <http://xmlns.com/foaf/0.1/mbox> "koumoutsosgian@yahoo.gr"^^rdfs:Literal ;
-                                                        <http://xmlns.com/foaf/0.1/name> "Giannis Koumoutsos" .
+###  https://w3id.org/PaN/ESRFET#person/GKoumoutsos
+<https://w3id.org/PaN/ESRFET#person/GKoumoutsos> rdf:type owl:NamedIndividual ,
+                                                          <http://xmlns.com/foaf/0.1/Person> ;
+                                                 rdfs:seeAlso <https://orcid.org/0009-0000-6215-8493> ;
+                                                 <http://xmlns.com/foaf/0.1/mbox> "koumoutsosgian@yahoo.gr"^^rdfs:Literal ;
+                                                 <http://xmlns.com/foaf/0.1/name> "Giannis Koumoutsos" .
 
 
-###  http://purl.org/pan-science/ESRFET#person/LBroche
-<http://purl.org/pan-science/ESRFET#person/LBroche> rdf:type owl:NamedIndividual ,
-                                                             <http://xmlns.com/foaf/0.1/Person> ;
-                                                    <http://schema.org/affiliation> :ESRF ;
-                                                    rdfs:seeAlso <https://orcid.org/0000-0001-7704-0762> ;
-                                                    <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" ;
-                                                    <http://xmlns.com/foaf/0.1/name> "Ludovic Broche" .
+###  https://w3id.org/PaN/ESRFET#person/LBroche
+<https://w3id.org/PaN/ESRFET#person/LBroche> rdf:type owl:NamedIndividual ,
+                                                      <http://xmlns.com/foaf/0.1/Person> ;
+                                             <http://schema.org/affiliation> :ESRF ;
+                                             rdfs:seeAlso <https://orcid.org/0000-0001-7704-0762> ;
+                                             <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" ;
+                                             <http://xmlns.com/foaf/0.1/name> "Ludovic Broche" .
 
 
-###  http://purl.org/pan-science/ESRFET#person/MBodin
-<http://purl.org/pan-science/ESRFET#person/MBodin> rdf:type owl:NamedIndividual ,
-                                                            <http://xmlns.com/foaf/0.1/Person> ;
-                                                   <http://schema.org/affiliation> :ESRF ;
-                                                   rdfs:seeAlso <https://orcid.org/0000-0003-0321-3952> ;
-                                                   <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" ;
-                                                   <http://xmlns.com/foaf/0.1/name> "Marjolaine Bodin Ligeon" .
+###  https://w3id.org/PaN/ESRFET#person/MBodin
+<https://w3id.org/PaN/ESRFET#person/MBodin> rdf:type owl:NamedIndividual ,
+                                                     <http://xmlns.com/foaf/0.1/Person> ;
+                                            <http://schema.org/affiliation> :ESRF ;
+                                            rdfs:seeAlso <https://orcid.org/0000-0003-0321-3952> ;
+                                            <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" ;
+                                            <http://xmlns.com/foaf/0.1/name> "Marjolaine Bodin Ligeon" .
 
 
-###  http://purl.org/pan-science/ESRFET#person/POAutran
-<http://purl.org/pan-science/ESRFET#person/POAutran> rdf:type owl:NamedIndividual ,
-                                                              <http://xmlns.com/foaf/0.1/Person> ;
-                                                     <http://schema.org/affiliation> :ESRF ;
-                                                     rdfs:seeAlso <https://orcid.org/0000-0003-4600-6371> ;
-                                                     <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" ;
-                                                     <http://xmlns.com/foaf/0.1/name> "Pierre-Olivier Autran" .
+###  https://w3id.org/PaN/ESRFET#person/POAutran
+<https://w3id.org/PaN/ESRFET#person/POAutran> rdf:type owl:NamedIndividual ,
+                                                       <http://xmlns.com/foaf/0.1/Person> ;
+                                              <http://schema.org/affiliation> :ESRF ;
+                                              rdfs:seeAlso <https://orcid.org/0000-0003-4600-6371> ;
+                                              <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr" ;
+                                              <http://xmlns.com/foaf/0.1/name> "Pierre-Olivier Autran" .
 
 
-###  http://purl.org/pan-science/ESRFET#person/WDeNolf
-<http://purl.org/pan-science/ESRFET#person/WDeNolf> rdf:type owl:NamedIndividual ,
-                                                             <http://xmlns.com/foaf/0.1/Person> ;
-                                                    <http://schema.org/affiliation> :ESRF ;
-                                                    rdfs:seeAlso <https://orcid.org/0000-0003-2258-9402> ;
-                                                    <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr"^^rdfs:Literal ;
-                                                    <http://xmlns.com/foaf/0.1/name> "Wout De Nolf" .
+###  https://w3id.org/PaN/ESRFET#person/WDeNolf
+<https://w3id.org/PaN/ESRFET#person/WDeNolf> rdf:type owl:NamedIndividual ,
+                                                      <http://xmlns.com/foaf/0.1/Person> ;
+                                             <http://schema.org/affiliation> :ESRF ;
+                                             rdfs:seeAlso <https://orcid.org/0000-0003-2258-9402> ;
+                                             <http://xmlns.com/foaf/0.1/mbox> "dau-pydev@esrf.fr"^^rdfs:Literal ;
+                                             <http://xmlns.com/foaf/0.1/name> "Wout De Nolf" .
 
 
 [ <http://xmlns.com/foaf/0.1/name> "Giannis Koumoutsos"
