@@ -107,7 +107,7 @@ class TechniqueMetadata:
         for technique in self.techniques:
             techniques[technique.iri] = technique.primary_name
         metadata = self._get_icat_metadata(techniques)
-        ontology_version = next(iter(self.techniques)).ontology_version
+        ontology_version = self._get_ontology_version_number()
         metadata["technique_pid_esrfet_version"] = ontology_version
         for key, value in metadata.items():
             try:
@@ -119,6 +119,9 @@ class TechniqueMetadata:
                     )
                     continue
                 raise
+
+    def _get_ontology_version_number(self) -> str:
+        return next(iter(self.techniques)).ontology_version.lstrip("v")
 
     def get_dataset_metadata(self) -> Dict[str, str]:
         if not self.techniques:
@@ -135,7 +138,7 @@ class TechniqueMetadata:
             "definition": " ".join(definitions),
         }
         if self.techniques:
-            metadata["technique_pid_esrfet_version"] = next(
-                iter(self.techniques)
-            ).ontology_version
+            metadata["technique_pid_esrfet_version"] = (
+                self._get_ontology_version_number()
+            )
         return metadata

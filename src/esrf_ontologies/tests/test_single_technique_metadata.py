@@ -1,12 +1,12 @@
 import pytest
 
-from ..technique import get_ontology_version
+from ..technique import get_ontology_version_number
 from ..technique import get_technique_metadata
 
 
 def test_get_dataset_metadata():
     metadata = get_technique_metadata("XAS")
-    ontology_version = get_ontology_version(metadata)
+    ontology_version = get_ontology_version_number(metadata)
     dataset_metadata = {
         "definition": "XAS",
         "technique_pid": "https://w3id.org/PaN/ESRFET#XAS",
@@ -18,7 +18,7 @@ def test_get_dataset_metadata():
 
 def test_fill_dataset_metadata():
     metadata = get_technique_metadata("XAS")
-    ontology_version = get_ontology_version(metadata)
+    ontology_version = get_ontology_version_number(metadata)
     dataset_metadata = {
         "definition": "XAS",
         "technique_pid": "https://w3id.org/PaN/ESRFET#XAS",

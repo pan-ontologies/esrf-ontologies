@@ -1,10 +1,10 @@
-from ..technique import get_ontology_version
+from ..technique import get_ontology_version_number
 from ..technique import get_technique_metadata
 
 
 def test_get_dataset_metadata():
     metadata = get_technique_metadata("XRF", "XAS")
-    ontology_version = get_ontology_version(metadata)
+    ontology_version = get_ontology_version_number(metadata)
     dataset_metadata = {
         "definition": "XAS XRF",
         "technique_pid": " ".join(
@@ -21,7 +21,7 @@ def test_get_dataset_metadata():
 
 def test_fill_dataset_metadata():
     metadata = get_technique_metadata("XRF", "XAS")
-    ontology_version = get_ontology_version(metadata)
+    ontology_version = get_ontology_version_number(metadata)
     dataset_metadata = {
         "definition": "XAS XRF",
         "technique_pid": " ".join(
@@ -109,7 +109,7 @@ def test_fill_scan_info():
 
 def test_double_technique_metadata():
     metadata = get_technique_metadata("XRF", "XAS", "XRF", "XAS")
-    ontology_version = get_ontology_version(metadata)
+    ontology_version = get_ontology_version_number(metadata)
     assert len(metadata.techniques) == 2
 
     dataset_metadata = {
