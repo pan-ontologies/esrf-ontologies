@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Test `owl:versionInfo` to follow `v.MAJOR.MINOR.PATCH` pattern. 
+- `technique_pid_esrfet_version` added in ICAT metadata.
 
 ## [1.3.0]
 

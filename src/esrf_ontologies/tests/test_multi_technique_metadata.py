@@ -1,8 +1,10 @@
+from ..technique import get_ontology_version
 from ..technique import get_technique_metadata
 
 
 def test_get_dataset_metadata():
     metadata = get_technique_metadata("XRF", "XAS")
+    ontology_version = get_ontology_version(metadata)
     dataset_metadata = {
         "definition": "XAS XRF",
         "technique_pid": " ".join(
@@ -11,6 +13,7 @@ def test_get_dataset_metadata():
                 "https://w3id.org/PaN/ESRFET#XRF",
             ]
         ),
+        "technique_pid_esrfet_version": ontology_version,
     }
 
     assert metadata.get_dataset_metadata() == dataset_metadata
@@ -18,6 +21,7 @@ def test_get_dataset_metadata():
 
 def test_fill_dataset_metadata():
     metadata = get_technique_metadata("XRF", "XAS")
+    ontology_version = get_ontology_version(metadata)
     dataset_metadata = {
         "definition": "XAS XRF",
         "technique_pid": " ".join(
@@ -26,6 +30,7 @@ def test_fill_dataset_metadata():
                 "https://w3id.org/PaN/ESRFET#XRF",
             ]
         ),
+        "technique_pid_esrfet_version": ontology_version,
     }
 
     dataset = dict(dataset_metadata)
@@ -46,6 +51,7 @@ def test_fill_dataset_metadata():
     dataset = {
         "definition": "XRD",
         "technique_pid": "https://w3id.org/PaN/ESRFET#XRD",
+        "technique_pid_esrfet_version": ontology_version,
     }
     dataset_metadata = {
         "definition": "XAS XRD XRF",
@@ -56,6 +62,7 @@ def test_fill_dataset_metadata():
                 "https://w3id.org/PaN/ESRFET#XRF",
             ]
         ),
+        "technique_pid_esrfet_version": ontology_version,
     }
     metadata.fill_dataset_metadata(dataset)
     assert dataset == dataset_metadata
@@ -102,6 +109,7 @@ def test_fill_scan_info():
 
 def test_double_technique_metadata():
     metadata = get_technique_metadata("XRF", "XAS", "XRF", "XAS")
+    ontology_version = get_ontology_version(metadata)
     assert len(metadata.techniques) == 2
 
     dataset_metadata = {
@@ -112,6 +120,7 @@ def test_double_technique_metadata():
                 "https://w3id.org/PaN/ESRFET#XRF",
             ]
         ),
+        "technique_pid_esrfet_version": ontology_version,
     }
     assert metadata.get_dataset_metadata() == dataset_metadata
 

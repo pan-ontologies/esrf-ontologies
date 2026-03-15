@@ -106,13 +106,16 @@ class TechniqueMetadata:
         techniques = dict(zip(pids, definitions))
         for technique in self.techniques:
             techniques[technique.iri] = technique.primary_name
-        for key, value in self._get_icat_metadata(techniques).items():
+        metadata = self._get_icat_metadata(techniques)
+        ontology_version = next(iter(self.techniques)).ontology_version
+        metadata["technique_pid_esrfet_version"] = ontology_version
+        for key, value in metadata.items():
             try:
                 dataset[key] = value
             except KeyError:
-                if key == "technique_pid":
+                if key in ("technique_pid", "technique_pid_esrfet_version"):
                     _logger.warning(
-                        "Skip ICAT field 'technique_pid' (requires pyicat-plus>=0.2)"
+                        f"Skip ICAT field '{key}' (requires pyicat-plus>=0.2)"
                     )
                     continue
                 raise
@@ -127,4 +130,12 @@ class TechniqueMetadata:
 
     def _get_icat_metadata(self, techniques: Dict[str, str]) -> Dict[str, str]:
         iris, definitions = zip(*sorted(techniques.items(), key=lambda tpl: tpl[1]))
-        return {"technique_pid": " ".join(iris), "definition": " ".join(definitions)}
+        metadata = {
+            "technique_pid": " ".join(iris),
+            "definition": " ".join(definitions),
+        }
+        if self.techniques:
+            metadata["technique_pid_esrfet_version"] = next(
+                iter(self.techniques)
+            ).ontology_version
+        return metadata
