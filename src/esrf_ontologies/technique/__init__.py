@@ -21,8 +21,12 @@ def get_techniques(*names: Tuple[str]) -> Set[Technique]:
     return set(_iter_from_names(*names))
 
 
+def get_ontology_version(metadata: TechniqueMetadata) -> str:
+    return next(iter(metadata.techniques)).ontology_version
+
+
 def get_ontology_version_number(metadata: TechniqueMetadata) -> str:
-    return next(iter(metadata.techniques)).ontology_version.lstrip("v")
+    return get_ontology_version(metadata).lstrip("v")
 
 
 @lru_cache(maxsize=1)

@@ -76,7 +76,7 @@ class TechniqueMetadata:
 
         for i, technique in enumerate(sorted_techniques, 1):
             key = f"{_NEXUS_IDENTIFIER_PREFIX}{i}"
-            nxentry_children[key] = technique.iri
+            nxentry_children[key] = technique.versioned_iri
             nxentry_children[f"{key}@type"] = "W3ID"
 
         return nxentry_children
@@ -101,7 +101,7 @@ class TechniqueMetadata:
                 continue
 
             key = f"{_NEXUS_IDENTIFIER_PREFIX}{next_index}"
-            nxentry_children[key] = technique.iri
+            nxentry_children[key] = technique.versioned_iri
             nxentry_children[f"{key}@type"] = "W3ID"
 
             next_index += 1
