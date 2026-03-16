@@ -34,16 +34,16 @@
         "IRI-based" : "local_contact"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist",
-      "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
-      "labels" : {
-        "IRI-based" : "proposal_scientist"
-      }
-    }, {
       "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant",
       "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
       "labels" : {
         "IRI-based" : "participant"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist",
+      "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+      "labels" : {
+        "IRI-based" : "proposal_scientist"
       }
     }, {
       "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator",
