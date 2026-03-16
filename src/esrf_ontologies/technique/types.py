@@ -42,11 +42,13 @@ class TechniqueMetadata:
 
     techniques: Set[Technique]
 
-    def get_scan_metadata(self) -> Optional[Dict[str, Union[List[str], str]]]:
+    def get_scan_metadata(
+        self,
+    ) -> Optional[Dict[str, Union[List[str], Dict[str, str]]]]:
         if self.techniques:
             return self._get_nxentry_children()
 
-    def get_scan_info(self) -> Dict[str, Dict[str, Union[List[str], str]]]:
+    def get_scan_info(self) -> Dict[str, Union[List[str], Dict[str, str]]]:
         if not self.techniques:
             return dict()
         return {
@@ -68,7 +70,7 @@ class TechniqueMetadata:
 
         self._fill_nxentry_children(nxentry_children)
 
-    def _get_nxentry_children(self) -> Dict[str, Union[List[str], str]]:
+    def _get_nxentry_children(self) -> Dict[str, str]:
         nxentry_children = dict()
         sorted_techniques = sorted(
             self.techniques, key=lambda technique: technique.primary_name
