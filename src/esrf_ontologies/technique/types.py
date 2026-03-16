@@ -72,19 +72,17 @@ class TechniqueMetadata:
 
     def _get_nxentry_children(self) -> Dict[str, str]:
         nxentry_children = dict()
-        sorted_techniques = sorted(
-            self.techniques, key=lambda technique: technique.primary_name
-        )
+        sorted_techniques = self._get_sorted_techniques()
+
         for i, technique in enumerate(sorted_techniques, 1):
             key = f"{_NEXUS_IDENTIFIER_PREFIX}{i}"
             nxentry_children[key] = technique.iri
             nxentry_children[f"{key}@type"] = "W3ID"
+
         return nxentry_children
 
     def _fill_nxentry_children(self, nxentry_children: MutableMapping) -> None:
-        sorted_techniques = sorted(
-            self.techniques, key=lambda technique: technique.primary_name
-        )
+        sorted_techniques = self._get_sorted_techniques()
 
         existing = {
             key: value
@@ -107,6 +105,9 @@ class TechniqueMetadata:
             nxentry_children[f"{key}@type"] = "W3ID"
 
             next_index += 1
+
+    def _get_sorted_techniques(self) -> List[Technique]:
+        return sorted(self.techniques, key=lambda technique: technique.primary_name)
 
     def fill_dataset_metadata(self, dataset: MutableMapping) -> None:
         if not self.techniques:
