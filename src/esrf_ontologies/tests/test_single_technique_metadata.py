@@ -1,5 +1,6 @@
 import pytest
 
+from ..technique import BLISS_SCANINFO_CATEGORY
 from ..technique import get_technique_metadata
 
 
@@ -32,49 +33,44 @@ def test_fill_dataset_metadata():
 def test_get_scan_info():
     metadata = get_technique_metadata("XAS")
     scan_info = {
-        "scan_meta_categories": ["techniques"],
-        "techniques": {
-            "@NX_class": "NXnote",
-            "names": ["XAS"],
-            "iris": ["https://w3id.org/PaN/ESRFET#XAS"],
+        "scan_meta_categories": [BLISS_SCANINFO_CATEGORY],
+        BLISS_SCANINFO_CATEGORY: {
+            "identifier_technique_1": "https://w3id.org/PaN/ESRFET#XAS",
+            "identifier_technique_1@type": "W3ID",
         },
     }
     assert metadata.get_scan_info() == scan_info
-    assert metadata.get_scan_metadata() == scan_info["techniques"]
+    assert metadata.get_scan_metadata() == scan_info[BLISS_SCANINFO_CATEGORY]
 
 
 def test_fill_scan_info():
     metadata = get_technique_metadata("XAS")
+
     scan_info = {
-        "scan_meta_categories": ["techniques"],
-        "techniques": {
-            "@NX_class": "NXnote",
-            "names": ["XAS"],
-            "iris": ["https://w3id.org/PaN/ESRFET#XAS"],
+        "scan_meta_categories": [BLISS_SCANINFO_CATEGORY],
+        BLISS_SCANINFO_CATEGORY: {
+            "identifier_technique_1": "https://w3id.org/PaN/ESRFET#XAS",
+            "identifier_technique_1@type": "W3ID",
         },
     }
-
     info = {}
     metadata.fill_scan_info(info)
     assert info == scan_info
 
     scan_info = {
-        "scan_meta_categories": ["techniques", "technique"],
-        "techniques": {
-            "@NX_class": "NXnote",
-            "names": ["XAS", "XRF"],
-            "iris": [
-                "https://w3id.org/PaN/ESRFET#XAS",
-                "https://w3id.org/PaN/ESRFET#XRF",
-            ],
+        "scan_meta_categories": [BLISS_SCANINFO_CATEGORY, "technique"],
+        BLISS_SCANINFO_CATEGORY: {
+            "identifier_technique_1": "https://w3id.org/PaN/ESRFET#XRF",
+            "identifier_technique_1@type": "W3ID",
+            "identifier_technique_2": "https://w3id.org/PaN/ESRFET#XAS",
+            "identifier_technique_2@type": "W3ID",
         },
     }
     info = {
-        "scan_meta_categories": ["techniques", "technique"],
-        "techniques": {
-            "@NX_class": "NXnote",
-            "names": ["XRF"],
-            "iris": ["https://w3id.org/PaN/ESRFET#XRF"],
+        "scan_meta_categories": [BLISS_SCANINFO_CATEGORY, "technique"],
+        BLISS_SCANINFO_CATEGORY: {
+            "identifier_technique_1": "https://w3id.org/PaN/ESRFET#XRF",
+            "identifier_technique_1@type": "W3ID",
         },
     }
     metadata.fill_scan_info(info)

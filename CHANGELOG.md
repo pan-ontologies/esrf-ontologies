@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Changed ontology base IRI and all entity IRIs from http://purl.org/pan-science/ESRFET to https://w3id.org/PaN/ESRFET.
+- Save technique metadata in HDF5 using the `/NXobject/identifierNAME-field` fields.
 
 ### Added
 

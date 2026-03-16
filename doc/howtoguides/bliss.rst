@@ -23,9 +23,10 @@ that has an "energy" counter is an "XAS" scan:
             return technique_metadata.get_scan_metadata()
 
     scan_meta = get_user_scan_meta()
-    scan_meta.add_categories({"techniques"})
-    scan_meta.techniques.timing = META_TIMING.START
-    scan_meta.techniques.set("add_xas_technique", add_xas_technique)
+    scan_meta.add_categories({technique.BLISS_SCANINFO_CATEGORY})
+    root_category = getattr(scan_meta, technique.BLISS_SCANINFO_CATEGORY)
+    root_category.timing = META_TIMING.START
+    root_category.set("add_xas_technique", add_xas_technique)
 
 Note that `get_technique_metadata` accepts one or more technique names or acronyms.
 
