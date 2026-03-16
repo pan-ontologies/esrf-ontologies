@@ -5,6 +5,7 @@ from typing import Set
 from typing import Tuple
 
 from ..db import load_techniques as _load_techniques
+from .types import BLISS_SCANINFO_CATEGORY  # noqa F401
 from .types import Technique
 from .types import TechniqueMetadata
 
