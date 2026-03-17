@@ -76,7 +76,7 @@ class TechniqueMetadata:
 
         for i, technique in enumerate(sorted_techniques, 1):
             key = f"{_NEXUS_IDENTIFIER_PREFIX}{i}"
-            nxentry_children[key] = technique.iri
+            nxentry_children[key] = technique.versioned_iri
             nxentry_children[f"{key}@type"] = "W3ID"
 
         return nxentry_children
@@ -101,7 +101,7 @@ class TechniqueMetadata:
                 continue
 
             key = f"{_NEXUS_IDENTIFIER_PREFIX}{next_index}"
-            nxentry_children[key] = technique.iri
+            nxentry_children[key] = technique.versioned_iri
             nxentry_children[f"{key}@type"] = "W3ID"
 
             next_index += 1
@@ -125,16 +125,22 @@ class TechniqueMetadata:
         techniques = dict(zip(pids, definitions))
         for technique in self.techniques:
             techniques[technique.iri] = technique.primary_name
-        for key, value in self._get_icat_metadata(techniques).items():
+        metadata = self._get_icat_metadata(techniques)
+        ontology_version = self._get_ontology_version_number()
+        metadata["technique_pid_esrfet_version"] = ontology_version
+        for key, value in metadata.items():
             try:
                 dataset[key] = value
             except KeyError:
-                if key == "technique_pid":
+                if key in ("technique_pid", "technique_pid_esrfet_version"):
                     _logger.warning(
-                        "Skip ICAT field 'technique_pid' (requires pyicat-plus>=0.2)"
+                        f"Skip ICAT field '{key}' (requires pyicat-plus>=0.2)"
                     )
                     continue
                 raise
+
+    def _get_ontology_version_number(self) -> str:
+        return next(iter(self.techniques)).ontology_version.lstrip("v")
 
     def get_dataset_metadata(self) -> Dict[str, str]:
         if not self.techniques:
@@ -146,4 +152,12 @@ class TechniqueMetadata:
 
     def _get_icat_metadata(self, techniques: Dict[str, str]) -> Dict[str, str]:
         iris, definitions = zip(*sorted(techniques.items(), key=lambda tpl: tpl[1]))
-        return {"technique_pid": " ".join(iris), "definition": " ".join(definitions)}
+        metadata = {
+            "technique_pid": " ".join(iris),
+            "definition": " ".join(definitions),
+        }
+        if self.techniques:
+            metadata["technique_pid_esrfet_version"] = (
+                self._get_ontology_version_number()
+            )
+        return metadata

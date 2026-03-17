@@ -11,10 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Changed ontology base IRI and all entity IRIs from http://purl.org/pan-science/ESRFET to https://w3id.org/PaN/ESRFET.
 - Save technique metadata in HDF5 using the `/NXobject/identifierNAME-field` fields.
+- Versioned IRI stored for the NeXus-compliant format instead of IRI.
 
 ### Added
 
 - Test `owl:versionInfo` to follow `v.MAJOR.MINOR.PATCH` pattern. 
+- `technique_pid_esrfet_version` added in ICAT metadata.
 
 ## [1.3.0]
 
