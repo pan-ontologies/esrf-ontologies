@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0]
+
 ### Changed
 
 - Changed ontology base IRI and all entity IRIs from http://purl.org/pan-science/ESRFET to https://w3id.org/PaN/ESRFET.
@@ -88,7 +90,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - API for adding scan metadata to HDF5 and dataset metadata to the ESRF data portal.
 - OWL Ontology transpilation for runtime performance.
 
-[unreleased]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.3.0...HEAD
+[unreleased]: https://github.com/pan-ontologies/esrf-ontologies/compare/v2.0.0...HEAD
+[1.3.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.3.0...v2.0.0
 [1.3.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.0.0...v1.1.0
