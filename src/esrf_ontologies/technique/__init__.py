@@ -1,6 +1,7 @@
 from functools import lru_cache
 from typing import Generator
 from typing import List
+from typing import Optional
 from typing import Set
 from typing import Tuple
 
@@ -21,12 +22,21 @@ def get_techniques(*names: Tuple[str]) -> Set[Technique]:
     return set(_iter_from_names(*names))
 
 
-def get_ontology_version(metadata: TechniqueMetadata) -> str:
-    return next(iter(metadata.techniques)).ontology_version
+def get_technique(name: str) -> Technique:
+    """Returns a technique referenced by the provided technique name."""
+    return next(_iter_from_names(name))
 
 
-def get_ontology_version_number(metadata: TechniqueMetadata) -> str:
-    return get_ontology_version(metadata).lstrip("v")
+def get_ontology_version(metadata: Optional[TechniqueMetadata] = None) -> str:
+    if metadata is None:
+        technique = get_technique("XRAYS")
+    else:
+        technique = next(iter(metadata.techniques))
+    return technique.ontology_version
+
+
+def get_ontology_version_number(metadata: Optional[TechniqueMetadata] = None) -> str:
+    return get_ontology_version(metadata=metadata).lstrip("v")
 
 
 @lru_cache(maxsize=1)
