@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `get_technique`: get a single technique from a name.
+
+### Changed
+
+- `get_ontology_version` and `get_ontology_version_number` can be called without argument.
+
 ## [2.0.0]
 
 ### Changed
