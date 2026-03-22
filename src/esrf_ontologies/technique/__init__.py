@@ -59,7 +59,11 @@ def _iter_from_identifiers(*identifiers: str) -> Generator[Technique, None, None
         identifier_lower = identifier.lower()
         for technique in techniques:
             technique_names = set(map(str.lower, technique.names))
-            if identifier_lower in technique_names or identifier == technique.iri:
+            if (
+                identifier_lower in technique_names
+                or identifier == technique.iri
+                or identifier == technique.versioned_iri
+            ):
                 yield technique
                 break
         else:

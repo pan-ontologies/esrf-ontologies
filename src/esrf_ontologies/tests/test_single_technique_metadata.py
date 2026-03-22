@@ -104,6 +104,15 @@ def test_get_metadata_from_iri():
     assert dataset_metadata["technique_pid"] == "https://w3id.org/PaN/ESRFET#XAS"
 
 
+def test_get_metadata_from_versioned_iri():
+    version = get_ontology_version()
+    metadata = get_technique_metadata(f"https://w3id.org/PaN/ESRFET/{version}/#XAS")
+    dataset_metadata = metadata.get_dataset_metadata()
+
+    assert dataset_metadata["definition"] == "XAS"
+    assert dataset_metadata["technique_pid"] == "https://w3id.org/PaN/ESRFET#XAS"
+
+
 def test_get_metadata_from_name():
     metadata = get_technique_metadata("xas")
     dataset_metadata = metadata.get_dataset_metadata()
