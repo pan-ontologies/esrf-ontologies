@@ -102,7 +102,7 @@ def get_esrfet_techniques():
                 "iri": cls.iri.strip(),
                 "names": names,
                 "description": description,
-                "versionedIRI": f"{esrfet_prefix}/{version}/#{cls.name}",
+                "versioned_iri": f"{esrfet_prefix}/{version}/#{cls.name}",
                 "ontology_version": version,
             }
         )

@@ -47,7 +47,7 @@ def get_all_techniques() -> List[Technique]:
             names=tuple(technique["names"]),
             description=technique["description"],
             ontology_version=technique["ontology_version"],
-            versioned_iri=f'{technique["iri"].split("#")[0]}/{technique["ontology_version"]}/#{technique["iri"].split("#")[1]}',
+            versioned_iri=technique["versioned_iri"],
         )
         for ontology_name in ["ESRFET"]
         for technique in _load_techniques(ontology_name)
