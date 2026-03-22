@@ -19,16 +19,11 @@ class Technique:
     names: Tuple[str]  # Human readable name (first is the perferred one)
     description: str  # Human readable description
     ontology_version: str  # Ontology version extracted from OWL
+    versioned_iri: str  # Versioned IRI derived from stable IRI and ontology version
 
     @property
     def primary_name(self) -> str:
         return self.names[0]
-
-    @property
-    def versioned_iri(self) -> str:
-        """Return versioned IRI derived from stable IRI and ontology version"""
-        base, fragment = self.iri.split("#", 1)
-        return f"{base}/{self.ontology_version}/#{fragment}"
 
 
 BLISS_SCANINFO_CATEGORY = ""

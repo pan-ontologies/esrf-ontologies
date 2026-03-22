@@ -136,3 +136,34 @@ def test_double_technique_metadata():
     }
     assert metadata.get_scan_info() == scan_info
     assert metadata.get_scan_metadata() == scan_info[BLISS_SCANINFO_CATEGORY]
+
+
+def test_multiple_identifiers_with_iri():
+    metadata = get_technique_metadata(
+        "XRF",
+        "https://w3id.org/PaN/ESRFET#XAS",
+    )
+
+    dataset = metadata.get_dataset_metadata()
+
+    assert set(dataset["definition"].split()) == {"XAS", "XRF"}
+    assert set(dataset["technique_pid"].split()) == {
+        "https://w3id.org/PaN/ESRFET#XAS",
+        "https://w3id.org/PaN/ESRFET#XRF",
+    }
+
+
+def test_multiple_identifiers_with_versioned_iri():
+    version = get_ontology_version()
+    metadata = get_technique_metadata(
+        "XRF",
+        f"https://w3id.org/PaN/ESRFET/{version}/#XAS",
+    )
+
+    dataset = metadata.get_dataset_metadata()
+
+    assert set(dataset["definition"].split()) == {"XAS", "XRF"}
+    assert set(dataset["technique_pid"].split()) == {
+        "https://w3id.org/PaN/ESRFET#XAS",
+        "https://w3id.org/PaN/ESRFET#XRF",
+    }

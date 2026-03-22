@@ -6,7 +6,7 @@
       "3D X-ray Diffraction"
     ],
     "description": "3DXRD is a far field diffraction technique capable of reconstructing polycrystalline materials from the individual diffraction spots recorded in the diffraction pattern given that the crystallographic parameters of the material are known. The success of the technique is based on the ability of the individual diffraction spots to be separated. This means there is a trade off between the number of grains and the degree of strain that is measurable.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#3DXRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#3DXRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -16,7 +16,7 @@
       "Angle-Resolved Photoemission Spectroscopy"
     ],
     "description": "Angle-Resolved Photoemission Spectroscopy (ARPES) measures the energy and momentum of electrons emitted from a sample when illuminated by photons, mapping the electronic band structure and Fermi surface of materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#ARPES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#ARPES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -26,7 +26,7 @@
       "Bragg Coherent Diffraction Imaging"
     ],
     "description": "Bragg Coherent Diffraction Imaging (BCDI) measures the coherent diffraction around a Bragg peak from a crystalline sample to reconstruct the 3D shape and internal strain field of individual nanocrystals. The result is a high-resolution image of the crystalline structure and deformation.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#BCDI",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#BCDI",
     "ontology_version": "v0.1.0"
   },
   {
@@ -35,7 +35,7 @@
       "BioSAXS"
     ],
     "description": "BioSAXS is SAXS applied to biological macromolecules in solution to determine their size, shape, flexibility, and aggregation state in near-native conditions.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#BioSAXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#BioSAXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -49,7 +49,7 @@
       "Coherent X-ray Diffraction Imaging"
     ],
     "description": "Coherent Diffraction Imaging (CDI) measures the far-field diffraction pattern from a sample illuminated with a coherent X-ray beam. The image of the sample is reconstructed computationally from the diffraction data using phase retrieval algorithms, yielding high-resolution, lensless imaging of the electron density or scattering potential.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#CDI",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#CDI",
     "ontology_version": "v0.1.0"
   },
   {
@@ -59,7 +59,7 @@
       "Conventional M\u00f6ssbauer Spectroscopy"
     ],
     "description": "Conventional M\u00f6ssbauer Spectroscopy measures the resonant absorption of X-rays by M\u00f6ssbauer-active nuclei (e.g. Fe-57) using a radioactive source scanned in velocity. It provides information on oxidation state, magnetic ordering, and local electronic and structural environment through hyperfine interactions.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#CMS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#CMS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -69,7 +69,7 @@
       "Cryo-Electron Microscopy"
     ],
     "description": "Cryo-Electron Microscopy (Cryo-EM) measures phase shifts in electron waves transmitted through cryogenically preserved samples, producing high-contrast 2D images of biological macromolecules or soft materials at near-atomic resolution. Similar to serial crystallography, it reconstructs 3D structures from many randomly oriented single-particle images of identical molecules.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#CRYO-EM",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#CRYO-EM",
     "ontology_version": "v0.1.0"
   },
   {
@@ -79,7 +79,7 @@
       "Cryo-Electron Tomography"
     ],
     "description": "Cryo-Electron Tomography (Cryo-ET) measures phase shifts in transmitted electrons from multiple tilt angles of a cryogenically preserved sample to reconstruct 3D structures of cells or macromolecular assemblies with enhanced contrast and nanometer resolution.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#CRYO-ET",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#CRYO-ET",
     "ontology_version": "v0.1.0"
   },
   {
@@ -89,7 +89,7 @@
       "Computed Tomography"
     ],
     "description": "Computed Tomography (CT) measures projections of radiation (such as X-rays, electrons, or neutrons) through a sample from multiple angles and reconstructs 3D internal maps of material properties, providing structural information whose contrast depends on the measured interaction (e.g., absorption, phase, fluorescence, or diffraction).",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#CT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#CT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -99,7 +99,7 @@
       "Coherent X-ray Diffraction Imaging"
     ],
     "description": "Coherent X-ray Diffraction Imaging (CXDI) measures the coherent X-ray diffraction pattern from an isolated object or nanostructure. The 3D electron density is reconstructed computationally using phase retrieval, providing high-resolution, lensless imaging of the sample's internal structure.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#CXDI",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#CXDI",
     "ontology_version": "v0.1.0"
   },
   {
@@ -109,7 +109,7 @@
       "Diffraction Anomalous Fine Structure"
     ],
     "description": "Diffraction Anomalous Fine Structure (DAFS) measures the intensity of Bragg diffraction as a function of X-ray photon energy near an absorption edge. It combines diffraction and XAS to provide element-specific structural information, such as site occupancy, bonding environment, and local distortions in crystals.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#DAFS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#DAFS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -119,7 +119,7 @@
       "Diffraction Contrast Tomography"
     ],
     "description": "DCT is a near-field diffraction-based imaging technique that provides high-resolution grain maps of polycrystalline materials (Ludwig et al. 2008). For each individual grain, the technique can provide orientation and average elastic strain tensor components with an accuracy of a few times 1e-4 (Reischig et al. 2013). The technique combines the concepts of image reconstruction from projections (tomography) and X-ray diffraction imaging (topography).",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#DCT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#DCT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -129,7 +129,7 @@
       "Dark-Field X-ray Microscopy"
     ],
     "description": "Dark-Field X-ray Microscopy (DFXM) measures X-ray diffraction in a dark-field imaging geometry to map crystalline structure, orientation, strain, and defects in 3D within bulk materials. It provides spatially resolved imaging of internal microstructures at micrometer to sub-micrometer resolution.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#DFXM",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#DFXM",
     "ontology_version": "v0.1.0"
   },
   {
@@ -139,7 +139,7 @@
       "Energy Dispersive Extended X-ray Absorption Fine Structure"
     ],
     "description": "Energy Dispersive Extended X-ray Absorption Fine Structure (ED-EXAFS) measures oscillations in X-ray absorption probability beyond the edge with energy-dispersive detection, providing local atomic structural information such as bond distances and coordination numbers, acquired quickly without angular scanning.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-EXAFS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-EXAFS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -149,7 +149,7 @@
       "Energy Dispersive X-ray Absorption Near Edge Structure"
     ],
     "description": "Energy Dispersive X-ray Absorption Near Edge Structure (ED-XANES) measures the X-ray absorption probability near the absorption edge using energy-dispersive detection, providing rapid information about the oxidation state and electronic structure without scanning incident energy.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-XANES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-XANES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -159,7 +159,7 @@
       "Energy Dispersive X-ray Absorption Spectroscopy"
     ],
     "description": "Energy Dispersive X-ray Absorption Spectroscopy (ED-XAS) measures X-ray absorption as a function of energy simultaneously by dispersing the X-ray beam in space with a polychromatic source and position-sensitive detector, enabling rapid acquisition of absorption spectra without scanning the incident energy.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-XAS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-XAS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -169,7 +169,7 @@
       "Energy Dispersive X-ray Diffraction"
     ],
     "description": "Energy Dispersive X-ray Diffraction (ED-XRD) measures diffraction patterns of a sample by detecting diffracted X-rays at a fixed angle while dispersing their energies, enabling fast phase identification and structural analysis without angular scanning.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-XRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-XRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -179,7 +179,7 @@
       "Energy Dispersive X-ray Fluorescence Spectroscopy"
     ],
     "description": "Energy Dispersive X-ray Fluorescence Spectroscopy (ED-XRF) measures the energies of fluorescent X-rays emitted by a sample excited by a broad-spectrum X-ray source, providing elemental composition analysis without scanning the incident energy.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-XRF",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-XRF",
     "ontology_version": "v0.1.0"
   },
   {
@@ -189,7 +189,7 @@
       "Energy Dispersive X-ray Powder Diffraction"
     ],
     "description": "Energy Dispersive X-ray Powder Diffraction (ED-XRPD) measures diffraction patterns of powdered samples by detecting diffracted X-rays at a fixed angle while varying their energy, enabling rapid phase identification and structural analysis without scanning angles.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-XRPD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#ED-XRPD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -199,7 +199,7 @@
       "Energy Dispersive X-ray Spectroscopy"
     ],
     "description": "EDS measures X-ray photons coming from a sample during electron irradition  with an energy dispersive detector and derives elemental composition from the energy of the fluorescence photons",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#EDS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#EDS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -209,7 +209,7 @@
       "Electron Microscopy"
     ],
     "description": "Electron Microscopy (EM) uses a beam of electrons as illumination, controlled by electron optics analogous to glass lenses in light microscopes, to measure electron scattering or transmission through a sample. This technique provides high-resolution images and electron diffraction patterns, revealing structural, morphological, and compositional information at nanometer to atomic scales.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#EM",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#EM",
     "ontology_version": "v0.1.0"
   },
   {
@@ -219,7 +219,7 @@
       "Extended X-ray Absorption Fine Structure"
     ],
     "description": "Extended X-ray Absorption Fine Structure (EXAFS) measures oscillations in X-ray absorption above an element\u2019s absorption edge, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#EXAFS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#EXAFS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -229,7 +229,7 @@
       "Full-Field Extended X-ray Absorption Fine Structure Imaging"
     ],
     "description": "FF-EXAFS measures the extended region of the absorption spectrum across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved information on local atomic structure, such as bond lengths and coordination.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#FF-EXAFS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FF-EXAFS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -239,7 +239,7 @@
       "Full\u2011Field X-ray Absorption Near Edge Structure Imaging"
     ],
     "description": "FF-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved information on chemical state and electronic structure.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#FF-XANES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FF-XANES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -249,7 +249,7 @@
       "Full-Field X-ray Absorption Spectroscopy Imaging"
     ],
     "description": "FF-XAS measures X-ray absorption spectra across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved insight into electronic and atomic structure.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#FF-XAS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FF-XAS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -259,7 +259,7 @@
       "Full-Field X-ray Fluorescence Imaging"
     ],
     "description": "FF-XRF measures X-ray fluorescence spectra across a 2D sample area using broad X-ray beam and an area detector, providing 2D elemental distribution maps in projection.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#FF-XRF",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FF-XRF",
     "ontology_version": "v0.1.0"
   },
   {
@@ -269,7 +269,7 @@
       "Full-Spectral Extended X-ray Absorption Fine Structure Imaging"
     ],
     "description": "FS-EXAFS measures the extended region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on local atomic structure, such as bond lengths and coordination.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#FS-EXAFS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FS-EXAFS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -279,7 +279,7 @@
       "Full\u2011Spectral X-ray Absorption Near Edge Structure Imaging"
     ],
     "description": "FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#FS\u2011XANES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FS\u2011XANES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -289,7 +289,7 @@
       "Full-Spectral X-ray Absorption Spectroscopy Imaging"
     ],
     "description": "FS-XAS measures X-ray absorption spectra across a 2D sample area using a focused X-ray beam, providing spatially resolved insight into electronic and atomic structure.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#FS-XAS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FS-XAS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -299,7 +299,7 @@
       "Fourier Transform Infrared Spectroscopy"
     ],
     "description": "Fourier Transform Infrared Spectroscopy (FTIR) measures the absorption of infrared light by a sample as a function of wavelength, providing information on molecular vibrations and chemical bonds to identify and characterize materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#FTIR",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FTIR",
     "ontology_version": "v0.1.0"
   },
   {
@@ -309,7 +309,7 @@
       "Grazing Incidence Small Angle X-ray Scattering"
     ],
     "description": "Grazing-Incidence Small-Angle X-ray Scattering (GISAXS) measures scattered X-rays at small angles from a sample surface under shallow incidence, providing nanoscale information about thin film and surface morphology, including size, shape, and arrangement of nanostructures.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#GISAXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#GISAXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -319,7 +319,7 @@
       "Grazing Incidence Wide Angle X-ray Scattering"
     ],
     "description": "Grazing-Incidence Wide-Angle X-ray Scattering (GIWAXS) measures scattered X-rays at wide angles under shallow incidence, providing information on molecular packing, crystalline order, and orientation in thin films and surfaces.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#GIWAXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#GIWAXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -329,7 +329,7 @@
       "Grazing Incidence X-ray Diffraction"
     ],
     "description": "Grazing-Incidence X-ray Diffraction (GIXRD) measures diffraction patterns from a sample surface using X-rays at shallow incident angles, providing structural information on thin films, surfaces, and near-surface regions, including phase composition and strain.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#GIXRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#GIXRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -339,7 +339,7 @@
       "Hard X-ray Photoelectron Spectroscopy"
     ],
     "description": "Hard X-ray Photoelectron Spectroscopy (HAXPES) uses high-energy X-rays to probe deeper into materials than conventional XPS, giving bulk-sensitive chemical and electronic information.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#HAXPES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#HAXPES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -350,7 +350,7 @@
       "HERFD"
     ],
     "description": "High-Energy Resolution Fluorescence Detected X-ray Absorption Spectroscopy (HERFD-XAS) measures X-ray absorption using fluorescence detected with high energy resolution, enhancing spectral detail by reducing core-hole lifetime broadening to reveal subtle electronic and chemical state information.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#HERFD-XAS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#HERFD-XAS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -360,7 +360,7 @@
       "High-Pressure X-ray Diffraction"
     ],
     "description": "High-Pressure X-ray Diffraction (HP-XRD) measures X-ray diffraction patterns of materials compressed to high pressures, revealing structural changes such as phase transitions, lattice compression, and equation-of-state behavior.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#HP-XRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#HP-XRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -370,7 +370,7 @@
       "High-Resolution X-ray Powder Diffraction"
     ],
     "description": "High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#HR-XRPD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#HR-XRPD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -380,7 +380,7 @@
       "High-Temperature X-ray Diffraction"
     ],
     "description": "High-Temperature X-ray Diffraction (HT-XRD) measures X-ray diffraction patterns of materials at elevated temperatures, providing insights into thermal expansion, phase stability, and temperature-induced structural transformations.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#HT-XRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#HT-XRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -390,7 +390,7 @@
       "Hierarchical Phase-Contrast Tomography"
     ],
     "description": "Hierarchical Phase-Contrast Tomography (HiP-CT) measures X-ray phase-contrast projections at multiple spatial resolutions to reconstruct 3D images spanning from macroscopic to microscopic scales, enabling multiscale analysis of complex internal structures.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#HiP-CT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#HiP-CT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -400,7 +400,7 @@
       "Inelastic X-ray Scattering"
     ],
     "description": "Inelastic X-ray Scattering (IXS) measures the energy and momentum change of X-rays scattered inelastically by a sample, providing information on electronic excitations, phonons, and other dynamic processes at the atomic scale.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#IXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#IXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -410,7 +410,7 @@
       "K-edge Subtraction Imaging"
     ],
     "description": "K-edge Subtraction Imaging (KES) measures transmitted X-ray intensity across photon energies around the absorption edge of a specific element, producing element-selective 2D maps that reveal its spatial distribution in the sample.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#KES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#KES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -420,7 +420,7 @@
       "K-edge Subtraction Tomography"
     ],
     "description": "K-edge Subtraction Tomography (KESCT) measures transmitted X-rays across the absorption edge of a target element at multiple projection angles to reconstruct 3D maps of elemental concentrations with high chemical specificity.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#KESCT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#KESCT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -430,7 +430,7 @@
       "Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy"
     ],
     "description": "Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy (LDDC-XAS) measures X-ray absorption spectra of materials compressed by laser-driven dynamic pressure pulses, providing time-resolved insights into electronic and structural changes under extreme conditions.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#LDDS-XAS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#LDDS-XAS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -440,7 +440,7 @@
       "Laser-Driven Shock Compression X-ray Absorption Spectroscopy"
     ],
     "description": "Laser-Driven Shock Compression X-ray Absorption Spectroscopy (LDSC-XAS) is a specific type of Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy (LDDC-XAS) that measures X-ray absorption spectra of materials subjected to laser-driven shock waves, capturing rapid structural and electronic changes during high-strain-rate compression.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#LDSC-XAS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#LDSC-XAS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -452,7 +452,7 @@
       "Macro-XRF"
     ],
     "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-XRF",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-XRF",
     "ontology_version": "v0.1.0"
   },
   {
@@ -462,7 +462,7 @@
       "Multi-wavelength Anomalous Dispersion"
     ],
     "description": "Multi-wavelength Anomalous Dispersion (MAD) measures diffraction at multiple X-ray wavelengths around an absorption edge to use anomalous scattering differences for more accurate phase determination in crystallography.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#MAD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MAD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -472,7 +472,7 @@
       "M\u00f6ssbauer Spectroscopy"
     ],
     "description": "M\u00f6ssbauer spectroscopy measures the resonant absorption of X-rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of M\u00f6ssbauer-active isotopes (e.g. Fe-57).",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#MBS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MBS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -484,7 +484,7 @@
       "\u03bc-XRD"
     ],
     "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -496,7 +496,7 @@
       "\u03bc-XRF"
     ],
     "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XRF",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XRF",
     "ontology_version": "v0.1.0"
   },
   {
@@ -506,7 +506,7 @@
       "Momentum-Resolved Photoemission Spectroscopy"
     ],
     "description": "Momentum-Resolved Photoemission Spectroscopy (MPES) measures electron emission as a function of momentum and energy to reveal the dispersion and symmetry of electronic states in solids.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#MPES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MPES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -516,7 +516,7 @@
       "Microbeam Radiation Therapy"
     ],
     "description": "Microbeam Radiation Therapy (MRT) uses arrays of microscale, high-dose X-ray beams to irradiate tissue with high spatial precision, aiming to maximize tumor damage while sparing surrounding healthy tissue.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#MRT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MRT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -526,7 +526,7 @@
       "Macromolecular Crystallography"
     ],
     "description": "Macromolecular Crystallography (MX) measures X-ray diffraction from crystals of biological macromolecules to determine their 3D atomic structures, providing insights into protein folding, function, and interactions.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#MX",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MX",
     "ontology_version": "v0.1.0"
   },
   {
@@ -538,7 +538,7 @@
       "nXRD"
     ],
     "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -550,7 +550,7 @@
       "n-XRF"
     ],
     "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XRF",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XRF",
     "ontology_version": "v0.1.0"
   },
   {
@@ -560,7 +560,7 @@
       "Near-Field Ptychography"
     ],
     "description": "Near-Field Ptychography (NFP) measures coherent diffraction patterns collected in the near-field regime by scanning overlapping illumination spots, enabling high-resolution phase and amplitude imaging of samples.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#NFP",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NFP",
     "ontology_version": "v0.1.0"
   },
   {
@@ -570,7 +570,7 @@
       "Nuclear Forward Scattering"
     ],
     "description": "Nuclear Forward Scattering (NFS) measures the time-resolved resonant scattering of synchrotron-generated X-rays in the forward direction, extracting hyperfine parameters (e.g. isomer shift, quadrupole splitting, magnetic splitting) from the temporal interference pattern.\nTime-domain analog of M\u00f6ssbauer spectroscopy",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#NFS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NFS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -580,7 +580,7 @@
       "Non-Reciprocal X-ray Magnetic Linear Dichroism"
     ],
     "description": "Non-Reciprocal X-ray Magnetic Linear Dichroism (NR-XMLD) measures differences in linear X-ray absorption depending on magnetization direction and X-ray polarization, revealing magnetic asymmetries that break time-reversal symmetry.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#NR-XMLD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NR-XMLD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -590,7 +590,7 @@
       "Nuclear Resonant Inelastic X-ray Scattering"
     ],
     "description": "Nuclear Resonant Inelastic X-ray Scattering (NRIXS) measures the energy distribution of X-rays scattered inelastically by nuclear resonances, providing element-specific information on phonon density of states and lattice dynamics.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#NRIXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NRIXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -600,7 +600,7 @@
       "Nuclear Resonant Scattering"
     ],
     "description": "Nuclear Resonant Scattering (NRS) measures time-delayed resonant scattering of X-rays from M\u00f6ssbauer-active nuclei to study hyperfine interactions, magnetic order, and dynamics at the atomic scale.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#NRS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NRS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -610,7 +610,7 @@
       "Propagation-Based X-ray Phase-Contrast Imaging"
     ],
     "description": "Propagation-Based X-ray Phase-Contrast Imaging (PB-XPCI) measures phase-induced interference fringes that form as X-rays propagate beyond a sample, producing 2D images with enhanced contrast for weakly absorbing or low-Z materials. By placing the detector at a sufficient distance from the sample, PB-XPCI converts subtle phase variations into measurable intensity modulations, revealing fine internal features and interfaces not visible in conventional absorption imaging.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#PB-XPCI",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#PB-XPCI",
     "ontology_version": "v0.1.0"
   },
   {
@@ -620,7 +620,7 @@
       "Propagation-based X-ray Phase-Contrast Tomography"
     ],
     "description": "X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample\u2013detector distances.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#PB-XPCT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#PB-XPCT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -630,7 +630,7 @@
       "Phase-Contrast X-ray Imaging"
     ],
     "description": "Phase-Contrast X-ray Imaging (PCI) measures phase shifts of X-rays transmitted through a sample to generate 2D images with enhanced contrast for weakly absorbing or low-Z materials. By exploiting phase variations rather than absorption, PCI reveals fine structural details such as internal boundaries, fibers, and low-density regions that are invisible in conventional absorption-based X-ray imaging.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#PCI",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#PCI",
     "ontology_version": "v0.1.0"
   },
   {
@@ -640,7 +640,7 @@
       "Pair Distribution Function"
     ],
     "description": "Pair Distribution Function (PDF) analysis measures the distribution of interatomic distances by Fourier-transforming total scattering data, revealing local atomic arrangements and disorder in both crystalline and amorphous materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#PDF",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#PDF",
     "ontology_version": "v0.1.0"
   },
   {
@@ -650,7 +650,7 @@
       "Partial Fluorescence Yield X-ray Absorption Spectroscopy"
     ],
     "description": "Partial Fluorescence Yield X-ray Absorption Spectroscopy (PFY-XAS) measures fluorescence photons from specific emission lines as a function of incident X-ray energy, providing element- and site-selective absorption spectra with reduced self-absorption effects.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#PFY-XAS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#PFY-XAS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -660,7 +660,7 @@
       "Particle Induced X-ray Emission"
     ],
     "description": "Particle Induced X-ray Emission (PIXE) measures characteristic X-rays emitted by a sample when irradiated with energetic charged particles (e.g., protons) to determine elemental composition with high sensitivity.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#PIXE",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#PIXE",
     "ontology_version": "v0.1.0"
   },
   {
@@ -670,7 +670,7 @@
       "Ptychography"
     ],
     "description": "Ptychography (PTYCHO) measures coherent diffraction patterns by scanning overlapping illumination spots on a sample in the far field, reconstructing high-resolution complex-valued images of sample structure beyond conventional lens limitations.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#PTYCHO",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#PTYCHO",
     "ontology_version": "v0.1.0"
   },
   {
@@ -680,7 +680,7 @@
       "Ptychographic X-ray Computed Tomography"
     ],
     "description": "Ptychographic X-ray Computed Tomography (PXCT) combines coherent diffraction imaging and tomography by scanning overlapping regions at multiple angles to reconstruct 3D quantitative electron density maps with nanometer-scale resolution.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#PXCT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#PXCT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -690,7 +690,7 @@
       "Resonant Elastic X-ray Scattering"
     ],
     "description": "Resonant Elastic X-ray Scattering (REXS) measures elastic scattering near an absorption edge to enhance contrast from specific elements, revealing electronic, magnetic, and orbital ordering in materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#REXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#REXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -700,7 +700,7 @@
       "Resonant Inelastic X-ray Scattering"
     ],
     "description": "Resonant Inelastic X-ray Scattering (RIXS) measures energy loss of X-rays scattered resonantly from a sample, providing detailed insights into electronic excitations, spin dynamics, and valence states.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#RIXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#RIXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -710,7 +710,7 @@
       "Resonant X-ray Emission Spectroscopy"
     ],
     "description": "Resonant X-ray Emission Spectroscopy (RXES) measures emitted X-rays following resonant excitation of core electrons, providing element- and valence-specific information about electronic structure and chemical states.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#RXES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#RXES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -720,7 +720,7 @@
       "X-ray Excited Optical Luminescence"
     ],
     "description": "Scanning X-ray Excited Optical Luminescence (S-XEOL) measures spatially resolved optical emission induced by X-ray excitation by scanning a focused X-ray beam across a sample, providing 2D maps of luminescence associated with electronic and defect-related states.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#S-XEOL",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#S-XEOL",
     "ontology_version": "v0.1.0"
   },
   {
@@ -733,7 +733,7 @@
       "Scanning X-ray Diffraction Microscopy"
     ],
     "description": "Scanning X-ray Diffraction (S-XRD) measures diffraction patterns at many scanned positions on a sample using a focused X-ray beam, providing spatially resolved 2D maps of crystal structure, phase distribution, and strain within the sample.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#S-XRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#S-XRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -743,7 +743,7 @@
       "Scanning X-ray Fluorescence"
     ],
     "description": "Scanning X-ray Fluorescence (S-XRF) measures elemental composition by scanning a focused X-ray beam across a sample and detecting emitted fluorescence, producing high-resolution 2D maps of elemental distributions in the sample.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#S-XRF",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#S-XRF",
     "ontology_version": "v0.1.0"
   },
   {
@@ -753,7 +753,7 @@
       "Single-wavelength Anomalous Diffraction"
     ],
     "description": "Single-wavelength Anomalous Diffraction (SAD) measures diffraction at one specific X-ray wavelength near an absorption edge to exploit anomalous scattering for phase determination in crystallography.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#SAD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#SAD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -763,7 +763,7 @@
       "Small-Angle X-ray Scattering"
     ],
     "description": "Small-Angle X-ray Scattering (SAXS) measures the X-ray scattering intensity at small angles to obtain information about the size, shape, and structural organization of nanoscale features in a sample.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#SAXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#SAXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -776,7 +776,7 @@
       "SXRD"
     ],
     "description": "Single Crystal X-ray Diffraction (SCXRD) measures X-ray diffraction from a single crystal to determine its precise 3D crystal structure, including atomic positions, bonding, and symmetry.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#SCXRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#SCXRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -786,7 +786,7 @@
       "Selectively Induced X-ray Emission Spectroscopy"
     ],
     "description": "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping.\nTwo definitions seem to exist for SIXES:\nSakurai et al. (1988): XAS with a Si(Li) detector.\nSimionovici et al. (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#SIXES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#SIXES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -796,7 +796,7 @@
       "Synchrotron M\u00f6ssbauer Spectroscopy"
     ],
     "description": "The Synchrotron M\u00f6ssbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling M\u00f6ssbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#SMS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#SMS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -806,7 +806,7 @@
       "Serial Macromolecular Crystallography"
     ],
     "description": "Serial Macromolecular Crystallography (SMX) is a subset of SSX focused on collecting diffraction data from many small macromolecular crystals, allowing high-resolution structural analysis of proteins and complexes that are challenging to crystallize.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#SMX",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#SMX",
     "ontology_version": "v0.1.0"
   },
   {
@@ -816,7 +816,7 @@
       "Serial Synchrotron Crystallography"
     ],
     "description": "Serial Synchrotron Crystallography (SSX) is similar to Single Crystal X-ray Diffraction (SCXRD), but instead of measuring diffraction from one crystal in multiple orientations, SSX collects diffraction from many micro- or nano-crystals with random orientations sequentially at a synchrotron, enabling structure determination from samples that cannot grow large single crystals.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#SSX",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#SSX",
     "ontology_version": "v0.1.0"
   },
   {
@@ -826,7 +826,7 @@
       "Scanning Transmission X-ray Microscopy"
     ],
     "description": "Scanning Transmission X-ray Microscopy (STXM) measures X-ray transmission through a sample by scanning a focused X-ray beam in 2D, providing spatially resolved chemical, elemental, and morphological maps at nanometer-scale resolution.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#STXM",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#STXM",
     "ontology_version": "v0.1.0"
   },
   {
@@ -836,7 +836,7 @@
       "Transmission Electron Microscopy"
     ],
     "description": "Transmission Electron Microscopy (TEM) measures electrons transmitted through an ultra-thin sample to produce high-resolution images of its internal structure, enabling atomic- to nanometer-scale imaging and analysis of morphology, crystallography, and defects.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#TEM",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#TEM",
     "ontology_version": "v0.1.0"
   },
   {
@@ -846,7 +846,7 @@
       "Total Fluorescence Yield X-ray Absorption Spectroscopy"
     ],
     "description": "Total Fluorescence Yield X-ray Absorption Spectroscopy (TFY-XAS) measures the total emitted fluorescence photons as a function of incident X-ray energy to determine element-specific absorption spectra, providing bulk-sensitive information about electronic and structural properties.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#TFY-XAS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#TFY-XAS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -856,7 +856,7 @@
       "Time-Resolved Macromolecular Crystallography"
     ],
     "description": "Time-Resolved Macromolecular Crystallography (TR-MX) measures X-ray diffraction from macromolecular crystals at successive time points following a reaction trigger (e.g., laser pulse or substrate injection), enabling the observation of structural changes in biomolecules during a reaction or functional cycle.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR-MX",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR-MX",
     "ontology_version": "v0.1.0"
   },
   {
@@ -866,7 +866,7 @@
       "Time Resolved Ultra-Small Angle X-ray Scattering"
     ],
     "description": "Time-Resolved Ultra-Small Angle X-ray Scattering (TR-USAXS) measures ultra-small angle X-ray scattering as a function of time to monitor structural evolution and dynamics of large-scale features such as aggregation, phase separation, or self-assembly.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR-USAXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR-USAXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -876,7 +876,7 @@
       "Time Resolved X-ray Diffraction"
     ],
     "description": "Time-Resolved X-ray Diffraction (TR-XRD) measures changes in X-ray diffraction patterns as a function of time to study dynamic processes such as phase transitions, chemical reactions, and structural changes in materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR-XRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR-XRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -886,7 +886,7 @@
       "Time-Resolved X-ray solution scattering"
     ],
     "description": "Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR-XSS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR-XSS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -896,7 +896,7 @@
       "Time-Resolved Serial Synchrotron Crystallography"
     ],
     "description": "Time-Resolved Serial Synchrotron Crystallography (TR\u2011SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump\u2013probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR\u2011SSX enables the reconstruction of 3D \u201cmolecular movies\u201d that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR\u2011SSX",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR\u2011SSX",
     "ontology_version": "v0.1.0"
   },
   {
@@ -906,7 +906,7 @@
       "Total Reflection X-ray Fluorescence"
     ],
     "description": "Total Reflection X-ray Fluorescence (TXRF) measures characteristic X-rays emitted by a sample under total external reflection conditions, providing highly sensitive, surface-specific elemental analysis with minimal sample preparation.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#TXRF",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#TXRF",
     "ontology_version": "v0.1.0"
   },
   {
@@ -916,7 +916,7 @@
       "Ultra-Small Angle X-ray Photon Correlation Spectroscopy"
     ],
     "description": "Ultra-Small Angle X-ray Photon Correlation Spectroscopy (USA-XPCS) measures time-dependent fluctuations of coherent X-ray scattering at ultra-small angles to probe slow dynamics and structural rearrangements on large length scales in complex materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#USA-XPCS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#USA-XPCS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -926,7 +926,7 @@
       "Ultra-Small Angle X-ray Scattering"
     ],
     "description": "Ultra-Small Angle X-ray Scattering (USAXS) measures X-ray scattering at extremely small angles to probe structural features on length scales larger than those accessible by SAXS, such as large-scale aggregates, pores, or hierarchical structures.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#USAXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#USAXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -936,7 +936,7 @@
       "Visible Light Microscopy"
     ],
     "description": "Visible Light Microscopy (VLM) captures images of a sample using visible light illumination and optical lenses, providing spatially resolved information about surface morphology, color, and structure at micrometer-scale resolution.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#VLM",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#VLM",
     "ontology_version": "v0.1.0"
   },
   {
@@ -946,7 +946,7 @@
       "Wide-angle X-ray Scattering"
     ],
     "description": "Wide-Angle X-ray Scattering (WAXS) measures X-ray scattering at larger angles than SAXS to provide information on short-range order, crystalline structure, and molecular packing in materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#WAXS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#WAXS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -956,7 +956,7 @@
       "Wavelength Dispersive X-ray Spectroscopy"
     ],
     "description": "WDS measures X-ray photons coming from a sample during irradiation with a wavelength dispersive detector and derives elemental composition from the energy of the fluorescence photons",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#WDS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#WDS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -966,7 +966,7 @@
       "X-ray Absorption Tomography"
     ],
     "description": "X-ray Absorption Tomography measures X-ray attenuation through a sample from multiple projection angles and reconstructs a 3D map of the absorption coefficient, revealing internal density variations within the material.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XACT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XACT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -976,7 +976,7 @@
       "X-ray Absorption Near Edge Structure"
     ],
     "description": "XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element\u2019s absorption edge, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XANES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XANES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -986,7 +986,7 @@
       "X-ray Analyzer-Based Phase-Contrast Tomography"
     ],
     "description": "X-ray Analyzer-Based Phase-Contrast Tomography (XAPCT) measures angular deviations of X-rays transmitted through a sample using a crystal analyzer to map phase gradients, providing 3D images with high contrast for interfaces and internal structures.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XAPCT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XAPCT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -996,7 +996,7 @@
       "X-ray Absorption Spectroscopy"
     ],
     "description": "XAS measures a signal related to the X-ray absorption probability\u2014such as fluorescence, photon electrons, Auger electrons, or transmission\u2014as a function of the incident X-ray photon energy. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XAS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XAS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1006,7 +1006,7 @@
       "X-ray Bragg Holography"
     ],
     "description": "X-ray Bragg Holography (XBH) measures interference patterns formed by Bragg-diffracted and reference X-rays from a crystal to reconstruct 3D atomic-scale images of the crystal structure.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XBH",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XBH",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1016,7 +1016,7 @@
       "X-ray Computed Laminography"
     ],
     "description": "X-ray Computed Laminography (XCL) measures the interaction of X-rays with flat or extended samples (through absorption, phase, or scattering contrast) at multiple tilted angles to reconstruct 3D images of internal structures that are difficult to access with conventional tomography due to sample geometry.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XCL",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XCL",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1026,7 +1026,7 @@
       "X-ray Detected Magnetic Resonance"
     ],
     "description": "X-ray Detected Magnetic Resonance (XDMR) measures changes in X-ray absorption or emission induced by magnetic resonance excitation, providing element-specific information on spin dynamics and magnetic excitations.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XDMR",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XDMR",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1036,7 +1036,7 @@
       "X-ray Diffuse Scattering"
     ],
     "description": "X-ray Diffuse Scattering (XDS) measures scattered X-rays away from Bragg peaks to probe local disorder, defects, thermal vibrations, and nanoscale structural fluctuations in materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XDS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XDS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1046,7 +1046,7 @@
       "X-ray Excited Optical Luminescence"
     ],
     "description": "X-ray Excited Optical Luminescence (XEOL) measures visible or near-visible light emitted from a sample after X-ray excitation, providing information on electronic structure, defect states, and luminescent centers.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XEOL",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XEOL",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1056,7 +1056,7 @@
       "X-ray Emission Spectroscopy"
     ],
     "description": "X-ray Emission Spectroscopy (XES) measures emitted X-ray photons from electronic transitions after X-ray excitation, revealing detailed information about the electronic structure and chemical state of elements. Unlike XRF, which identifies elemental composition through broad characteristic fluorescence lines, XES uses high energy resolution to resolve fine spectral features\u2014such as valence-to-core transitions\u2014providing deeper insight into the local chemical bonding and electronic environment.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1066,7 +1066,7 @@
       "X-ray Fluorescence Tomography"
     ],
     "description": "X-ray Fluorescence Tomography (XFCT) measures characteristic fluorescence X-rays emitted from a sample at multiple angles to reconstruct 3D elemental distributions with high sensitivity and spatial resolution.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XFCT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XFCT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1076,7 +1076,7 @@
       "X-ray Fluorescence Holography"
     ],
     "description": "X-ray Fluorescence Holography (XFH) measures interference between fluorescent X-rays emitted from atoms and scattered reference waves to obtain 3D atomic-scale images of the local atomic arrangement around specific elements.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XFH",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XFH",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1086,7 +1086,7 @@
       "X-ray Ghost Imaging"
     ],
     "description": "X-ray Ghost Imaging (XGI) measures correlations between structured illumination patterns and total transmitted intensities to reconstruct 2D or 3D images without spatially resolved detection. Unlike speckle imaging, ghost imaging simultaneously records reference (without sample) and sample-affected signals using a beam splitter.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XGI",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XGI",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1096,7 +1096,7 @@
       "X-ray Grating Phase-Contrast Tomography"
     ],
     "description": "X-ray Grating Phase-Contrast Tomography (XGPCT) measures X-ray phase shifts using an interferometric grating setup across multiple projection angles, providing 3D images with high sensitivity to small refractive index variations in soft or low-Z materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XGPCT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XGPCT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1106,7 +1106,7 @@
       "X-ray HoloTomography"
     ],
     "description": "X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple sample\u2013detector distances and projection angles to reconstruct 3D electron density maps with sub-micrometer resolution.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XHT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XHT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1116,7 +1116,7 @@
       "X-ray Linear Dichroism"
     ],
     "description": "X-ray Linear Dichroism (XLD) measures the difference in X-ray absorption for linearly polarized light oriented along different crystallographic axes, providing information on electronic anisotropy and orbital ordering.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XLD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XLD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1126,7 +1126,7 @@
       "X-ray Magnetic Circular Dichroism"
     ],
     "description": "X-ray Magnetic Circular Dichroism (XMCD) measures the difference in absorption of left- and right-circularly polarized X-rays in a magnetized sample, probing element-specific magnetic moments and spin states.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XMCD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XMCD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1136,7 +1136,7 @@
       "X-ray Magnetic Linear Dichroism"
     ],
     "description": "X-ray Magnetic Linear Dichroism (XMLD) measures differences in X-ray absorption of linearly polarized light depending on magnetic order, sensitive to antiferromagnetic and magnetic domain structures.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XMLD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XMLD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1146,7 +1146,7 @@
       "X-ray MagnetoChiral Dichroism"
     ],
     "description": "X-ray MagnetoChiral Dichroism (XM\u03c7D) measures differences in X-ray absorption related to the combined effects of magnetism and chirality in materials, revealing chiral magnetic structures.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XM\u03c7D",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XM\u03c7D",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1156,7 +1156,7 @@
       "X-ray Natural Circular Dichroism"
     ],
     "description": "X-ray Natural Circular Dichroism (XNCD) measures differences in absorption of circularly polarized X-rays in non-magnetic chiral materials, providing information on structural chirality and electronic asymmetry.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XNCD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XNCD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1166,7 +1166,7 @@
       "X-ray Nano-HoloTomography"
     ],
     "description": "X-ray Nano-HoloTomography (XNHT) is a high-resolution variant of XHT that combines nanoscale focusing and holographic tomography to obtain 3D electron density maps of internal structure at nanometer resolution.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XNHT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XNHT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1178,7 +1178,7 @@
       "Phase-Contrast X-ray Imaging"
     ],
     "description": "X-ray Phase-Contrast Imaging (XPCI) measures phase shifts of X-rays transmitted through a sample to enhance image contrast, enabling visualization of structures with low absorption contrast such as soft tissues or light materials.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XPCI",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XPCI",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1188,7 +1188,7 @@
       "X-ray Photon Correlation Spectroscopy"
     ],
     "description": "X-ray Photon Correlation Spectroscopy (XPCS) measures time fluctuations of coherent X-ray scattering intensity to probe nanoscale dynamics and temporal correlations in materials such as particle motion, phase transitions, or relaxation processes.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XPCS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XPCS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1198,7 +1198,7 @@
       "Phase-Contrast Tomography"
     ],
     "description": "X-ray Phase-Contrast Tomography (XPCT) measures phase shifts of X-rays passing through a sample from multiple angles to reconstruct 3D images with enhanced contrast for weakly absorbing materials, revealing internal structures invisible in conventional absorption tomography.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XPCT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XPCT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1208,7 +1208,7 @@
       "X-ray Photoelectron Spectroscopy"
     ],
     "description": "X-ray Photoelectron Spectroscopy (XPS) measures the kinetic energy of electrons ejected by X-rays to determine elemental composition and chemical states near the surface of a material.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XPS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XPS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1218,7 +1218,7 @@
       "X-ray Radiation Technique"
     ],
     "description": "Experimental techniques based on irradiating a sample with X-rays to probe its properties by measuring interactions such as absorption, scattering, fluorescence, or diffraction, providing insights into structural, elemental, or electronic characteristics depending on the specific method used.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRAYS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRAYS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1228,7 +1228,7 @@
       "X-ray Computed Tomography"
     ],
     "description": "X-ray Computed Tomography (XRCT) measures the interaction of X-rays with a sample (through absorption, phase, or scattering contrast) from multiple angles to reconstruct a 3D volume, providing detailed internal structural information such as density, morphology, and defects.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRCT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRCT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1238,7 +1238,7 @@
       "X-ray Diffraction"
     ],
     "description": "X-ray Diffraction (XRD) measures the diffraction pattern produced when X-rays interact with a crystalline sample. The pattern provides information about the crystal structure, phase identification, lattice parameters, and crystallite size of the material.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1248,7 +1248,7 @@
       "X-ray Fluorescence Spectroscopy"
     ],
     "description": "X-ray Fluorescence (XRF) measures characteristic X-ray photons emitted by a sample when it is irradiated with X-rays. The energy of the emitted fluorescence photons reveals the elemental composition and chemical state of the sample.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRF",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRF",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1258,7 +1258,7 @@
       "X-ray Powder Diffraction"
     ],
     "description": "X-ray Powder Diffraction (XRPD) measures diffraction patterns from polycrystalline or powdered samples to identify phases, determine crystal structure, lattice parameters, and quantify phase composition.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRPD",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRPD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1270,7 +1270,7 @@
       "X-ray specular reflectivity"
     ],
     "description": "X-ray Reflectometry (XRR) measures the intensity of X-rays reflected from thin films or multilayers as a function of incident angle to determine film thickness, density, and interface roughness.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRR",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRR",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1280,7 +1280,7 @@
       "X-ray Raman Scattering"
     ],
     "description": "X-ray Raman Scattering (XRS) measures inelastic scattering of hard X-rays by core electrons, enabling the study of low-Z elements\u2019 electronic structure and bonding in bulk samples without the need for soft X-rays or vacuum conditions.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRS",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRS",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1292,7 +1292,7 @@
       "XDT"
     ],
     "description": "X-ray Diffraction Topography (XRT) records spatial variations in the intensity of X-ray diffraction from a crystal to image defects, dislocations, and strain fields with high spatial resolution, revealing crystal quality and internal microstructure.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRT",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1302,7 +1302,7 @@
       "X-ray Speckle Phase-Contrast Imaging"
     ],
     "description": "X-ray Speckle Phase-Contrast Imaging (XSPCI) measures phase shifts by analyzing distortions in speckle patterns produced by a random or structured diffuser, providing 2D images with both phase and dark-field contrast. The phase contrast enhances visibility of weakly absorbing features, while the dark-field signal quantifies sample (in)homogeneity within individual detector pixels.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XSPCI",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XSPCI",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1312,7 +1312,7 @@
       "X-ray Speckle Phase-Contrast Tomography"
     ],
     "description": "X-ray Speckle Phase-Contrast Tomography (XSPCT) measures phase shifts by tracking speckle pattern distortions as the sample rotates, enabling 3D imaging of weakly absorbing materials and providing both phase and dark-field contrast, which is a measure for sample (in)homogeneity within one detector pixel.",
-    "versionedIRI": "https://w3id.org/PaN/ESRFET/v0.1.0/#XSPCT",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XSPCT",
     "ontology_version": "v0.1.0"
   }
 ]
