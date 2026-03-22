@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `get_ontology_version` and `get_ontology_version_number` can be called without argument.
 
+### Fixed
+
+- ICAT metadata: avoid empty-string values.
+
 ## [2.0.0]
 
 ### Changed
