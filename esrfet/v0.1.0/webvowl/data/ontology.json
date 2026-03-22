@@ -22,20 +22,15 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://w3id.org/PaN/ESRFET#person/GKoumoutsos",
+        "value" : "https://w3id.org/PaN/ESRFET#person/WDeNolf",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://w3id.org/PaN/ESRFET#person/WDeNolf",
+        "value" : "https://w3id.org/PaN/ESRFET#person/GKoumoutsos",
         "type" : "iri"
       } ],
       "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "https://w3id.org/PaN/ESRFET#person/LBroche",
-        "type" : "iri"
-      }, {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "https://w3id.org/PaN/ESRFET#person/POAutran",
@@ -44,6 +39,11 @@
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "https://w3id.org/PaN/ESRFET#person/MBodin",
+        "type" : "iri"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/PaN/ESRFET#person/LBroche",
         "type" : "iri"
       } ],
       "created" : [ {
@@ -144,10 +144,10 @@
     "type" : "owl:Class"
   }, {
     "id" : "264",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "267",
     "type" : "owl:Class"
+  }, {
+    "id" : "266",
+    "type" : "owl:intersectionOf"
   }, {
     "id" : "269",
     "type" : "owl:intersectionOf"
@@ -233,7 +233,7 @@
     "id" : "418",
     "type" : "owl:Class"
   }, {
-    "id" : "380",
+    "id" : "385",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "513",
@@ -329,13 +329,13 @@
     "id" : "495",
     "type" : "owl:Class"
   }, {
-    "id" : "265",
+    "id" : "267",
     "type" : "owl:Class"
   }, {
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "708",
+    "id" : "710",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "516",
@@ -356,10 +356,10 @@
     "id" : "493",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "710",
+    "id" : "712",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "717",
+    "id" : "719",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "187",
@@ -404,7 +404,7 @@
     "id" : "741",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "705",
+    "id" : "707",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "190",
@@ -422,10 +422,10 @@
     "id" : "282",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "497",
+    "id" : "500",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "500",
+    "id" : "503",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "767",
@@ -497,7 +497,7 @@
     "id" : "300",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "714",
+    "id" : "716",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "161",
@@ -506,7 +506,7 @@
     "id" : "148",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "712",
+    "id" : "714",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "24",
@@ -536,7 +536,7 @@
     "id" : "63",
     "type" : "owl:Class"
   }, {
-    "id" : "704",
+    "id" : "706",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "781",
@@ -575,7 +575,7 @@
     "id" : "229",
     "type" : "owl:Class"
   }, {
-    "id" : "703",
+    "id" : "705",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "791",
@@ -584,17 +584,17 @@
     "id" : "172",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "793",
+    "id" : "794",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "80",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "796",
-    "type" : "owl:intersectionOf"
+    "type" : "owl:Class"
   }, {
     "id" : "797",
-    "type" : "owl:Class"
+    "type" : "owl:intersectionOf"
   }, {
     "id" : "479",
     "type" : "owl:Class"
@@ -656,7 +656,7 @@
     "id" : "617",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "709",
+    "id" : "711",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "621",
@@ -803,7 +803,7 @@
     "id" : "732",
     "type" : "owl:Class"
   }, {
-    "id" : "722",
+    "id" : "723",
     "type" : "owl:Class"
   }, {
     "id" : "777",
@@ -929,7 +929,7 @@
     "id" : "272",
     "type" : "owl:Class"
   }, {
-    "id" : "266",
+    "id" : "268",
     "type" : "owl:Class"
   }, {
     "id" : "260",
@@ -941,7 +941,7 @@
     "id" : "398",
     "type" : "owl:Class"
   }, {
-    "id" : "498",
+    "id" : "501",
     "type" : "owl:Class"
   }, {
     "id" : "505",
@@ -1001,7 +1001,7 @@
     "id" : "877",
     "type" : "owl:Class"
   }, {
-    "id" : "422",
+    "id" : "377",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "682",
@@ -1100,7 +1100,7 @@
     "id" : "934",
     "type" : "owl:Class"
   }, {
-    "id" : "690",
+    "id" : "692",
     "type" : "owl:Class"
   }, {
     "id" : "45",
@@ -1190,11 +1190,11 @@
     "id" : "1297",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "303",
-    "type" : "owl:Class"
-  }, {
     "id" : "1298",
     "type" : "owl:intersectionOf"
+  }, {
+    "id" : "303",
+    "type" : "owl:Class"
   }, {
     "id" : "212",
     "type" : "owl:Class"
@@ -1322,7 +1322,7 @@
     "id" : "375",
     "type" : "owl:Class"
   }, {
-    "id" : "268",
+    "id" : "265",
     "type" : "owl:Class"
   }, {
     "id" : "256",
@@ -1421,10 +1421,10 @@
     "id" : "438",
     "type" : "owl:Class"
   }, {
-    "id" : "1435",
+    "id" : "356",
     "type" : "owl:Class"
   }, {
-    "id" : "356",
+    "id" : "1435",
     "type" : "owl:Class"
   }, {
     "id" : "1505",
@@ -1433,26 +1433,26 @@
     "id" : "1546",
     "type" : "owl:Class"
   }, {
-    "id" : "1617",
-    "type" : "owl:Class"
-  }, {
     "id" : "792",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "659",
+    "id" : "1617",
     "type" : "owl:Class"
   }, {
     "id" : "1436",
     "type" : "owl:Class"
   }, {
-    "id" : "1497",
+    "id" : "659",
     "type" : "owl:Class"
   }, {
-    "id" : "1426",
+    "id" : "1497",
     "type" : "owl:Class"
   }, {
     "id" : "736",
     "type" : "owl:intersectionOf"
+  }, {
+    "id" : "1426",
+    "type" : "owl:Class"
   }, {
     "id" : "1427",
     "type" : "owl:Class"
@@ -1460,16 +1460,16 @@
     "id" : "1519",
     "type" : "owl:Class"
   }, {
-    "id" : "577",
-    "type" : "owl:intersectionOf"
-  }, {
     "id" : "1429",
     "type" : "owl:Class"
   }, {
-    "id" : "821",
-    "type" : "owl:Class"
+    "id" : "577",
+    "type" : "owl:intersectionOf"
   }, {
     "id" : "1434",
+    "type" : "owl:Class"
+  }, {
+    "id" : "821",
     "type" : "owl:Class"
   }, {
     "id" : "52",
@@ -1508,11 +1508,11 @@
     "id" : "362",
     "type" : "owl:Class"
   }, {
-    "id" : "1048",
-    "type" : "owl:Class"
-  }, {
     "id" : "589",
     "type" : "owl:intersectionOf"
+  }, {
+    "id" : "1048",
+    "type" : "owl:Class"
   }, {
     "id" : "1501",
     "type" : "owl:Class"
@@ -1526,19 +1526,19 @@
     "id" : "361",
     "type" : "owl:Class"
   }, {
-    "id" : "1428",
-    "type" : "owl:Class"
-  }, {
     "id" : "542",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "1488",
+    "id" : "1428",
     "type" : "owl:Class"
   }, {
     "id" : "545",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "502",
+    "id" : "1488",
+    "type" : "owl:Class"
+  }, {
+    "id" : "497",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "1510",
@@ -1763,13 +1763,13 @@
     "id" : "1599",
     "type" : "owl:Class"
   }, {
-    "id" : "1606",
-    "type" : "owl:Class"
-  }, {
     "id" : "383",
     "type" : "owl:Class"
   }, {
-    "id" : "1135",
+    "id" : "1606",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1148",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "1597",
@@ -1781,7 +1781,7 @@
     "id" : "324",
     "type" : "owl:Class"
   }, {
-    "id" : "385",
+    "id" : "420",
     "type" : "owl:Class"
   }, {
     "id" : "411",
@@ -1940,7 +1940,7 @@
     "id" : "382",
     "type" : "owl:Class"
   }, {
-    "id" : "388",
+    "id" : "387",
     "type" : "owl:Class"
   }, {
     "id" : "392",
@@ -1997,13 +1997,13 @@
     "id" : "1512",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "691",
+    "id" : "689",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "754",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "706",
+    "id" : "708",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "931",
@@ -2066,16 +2066,16 @@
     "id" : "786",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "707",
+    "id" : "709",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "715",
+    "id" : "717",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "845",
     "type" : "owl:Class"
   }, {
-    "id" : "711",
+    "id" : "713",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "1185",
@@ -2192,7 +2192,7 @@
     "id" : "829",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "702",
+    "id" : "704",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "1089",
@@ -2207,13 +2207,13 @@
     "id" : "508",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "727",
+    "id" : "694",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "719",
+    "id" : "721",
     "type" : "owl:Class"
   }, {
-    "id" : "721",
+    "id" : "690",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "160",
@@ -2222,7 +2222,7 @@
     "id" : "579",
     "type" : "owl:Class"
   }, {
-    "id" : "699",
+    "id" : "701",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "598",
@@ -2234,7 +2234,7 @@
     "id" : "477",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "503",
+    "id" : "498",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "509",
@@ -2258,10 +2258,10 @@
     "id" : "1255",
     "type" : "owl:Class"
   }, {
-    "id" : "420",
+    "id" : "422",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "386",
+    "id" : "389",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "390",
@@ -2321,7 +2321,7 @@
     "id" : "140",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "697",
+    "id" : "699",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "971",
@@ -2366,7 +2366,7 @@
     "id" : "771",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "377",
+    "id" : "380",
     "type" : "owl:intersectionOf"
   } ],
   "classAttribute" : [ {
@@ -2592,6 +2592,18 @@
     "id" : "263",
     "superClasses" : [ "195" ]
   }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2014008",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET2014008",
+      "undefined" : "manufacturing"
+    },
+    "subClasses" : [ "265", "50" ],
+    "attributes" : [ "external" ],
+    "id" : "264",
+    "superClasses" : [ "195" ]
+  }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01097",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
@@ -2607,22 +2619,10 @@
       "IRI-based" : "PaNET01097",
       "undefined" : "gamma spectroscopy"
     },
-    "intersection" : [ "265", "266" ],
+    "intersection" : [ "267", "268" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "264",
-    "superClasses" : [ "265", "266" ]
-  }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2014008",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PaNET2014008",
-      "undefined" : "manufacturing"
-    },
-    "subClasses" : [ "268", "50" ],
-    "attributes" : [ "external" ],
-    "id" : "267",
-    "superClasses" : [ "195" ]
+    "id" : "266",
+    "superClasses" : [ "267", "268" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01096",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -2656,10 +2656,10 @@
       "undefined" : "dichroism spectroscopy"
     },
     "subClasses" : [ "276" ],
-    "intersection" : [ "275", "265" ],
+    "intersection" : [ "275", "267" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "274",
-    "superClasses" : [ "275", "265" ]
+    "superClasses" : [ "275", "267" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01090",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -2728,12 +2728,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "GISAS",
+        "value" : "grazing incidence SAS",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "grazing incidence SAS",
+        "value" : "GISAS",
         "type" : "label"
       } ]
     },
@@ -3032,7 +3032,7 @@
     "superClasses" : [ "47" ]
   }, {
     "iri" : "https://www.wikidata.org/wiki/Q133900",
-    "equivalent" : [ "422" ],
+    "equivalent" : [ "377" ],
     "baseIri" : "https://www.wikidata.org/wiki",
     "instances" : 0,
     "label" : {
@@ -3040,7 +3040,7 @@
     },
     "subClasses" : [ "483", "368", "484", "358", "485", "399", "68", "486", "487", "488", "489", "490", "491", "492", "493" ],
     "attributes" : [ "equivalent", "external" ],
-    "id" : "380",
+    "id" : "385",
     "superClasses" : [ "378" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#high_precision_in_Q_space",
@@ -3105,7 +3105,7 @@
     },
     "intersection" : [ "47" ],
     "comment" : {
-      "undefined" : "Two definitions seem to exist for SIXES:\nSakurai et al. (1988): XAS with a Si(Li) detector.\nSimionovici et al. (2000): XRF maps at a few incident energies.\nThe second definition is chosen for this technique."
+      "undefined" : "Selectively Induced X-ray Emission Spectroscopy (SIXES) measures element- and state-specific X-ray emission by selectively exciting particular electronic states, recording a limited number of scanning X-ray fluorescence (S-XRF) maps at selected incident energies. This approach provides detailed insights into the electronic structure and chemical environment of complex materials while reducing data volume compared to full XANES mapping."
     },
     "attributes" : [ "intersection" ],
     "id" : "518"
@@ -3137,7 +3137,7 @@
       "IRI-based" : "PaNET2002000",
       "undefined" : "purpose"
     },
-    "subClasses" : [ "241", "244", "194", "248", "196", "197", "250", "253", "255", "257", "263", "267", "273", "247" ],
+    "subClasses" : [ "241", "244", "194", "248", "196", "197", "250", "253", "255", "257", "263", "264", "273", "247" ],
     "attributes" : [ "external" ],
     "id" : "195",
     "superClasses" : [ "325" ]
@@ -3527,10 +3527,10 @@
       "IRI-based" : "PaNET01129",
       "undefined" : "tomography"
     },
-    "subClasses" : [ "537", "269", "540", "240", "691", "110" ],
+    "subClasses" : [ "537", "269", "540", "240", "689", "110" ],
     "attributes" : [ "external" ],
     "id" : "270",
-    "superClasses" : [ "690" ]
+    "superClasses" : [ "692" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01128",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -3559,9 +3559,9 @@
       "IRI-based" : "PaNET01125",
       "undefined" : "spectroscopy"
     },
-    "subClasses" : [ "703", "264", "704", "274", "705", "81", "706", "463", "296", "707", "377" ],
+    "subClasses" : [ "705", "266", "706", "274", "707", "81", "708", "463", "296", "709", "380" ],
     "attributes" : [ "external" ],
-    "id" : "265",
+    "id" : "267",
     "superClasses" : [ "402" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01124",
@@ -3577,12 +3577,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "SAS",
+        "value" : "small angle diffraction",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "small angle diffraction",
+        "value" : "SAS",
         "type" : "label"
       } ]
     },
@@ -3590,7 +3590,7 @@
       "IRI-based" : "PaNET01124",
       "undefined" : "small angle scattering"
     },
-    "subClasses" : [ "477", "481", "509", "708", "288", "617", "466", "709" ],
+    "subClasses" : [ "477", "481", "509", "710", "288", "617", "466", "711" ],
     "attributes" : [ "external" ],
     "id" : "18",
     "superClasses" : [ "505" ]
@@ -3612,7 +3612,7 @@
     },
     "intersection" : [ "187", "18" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "708",
+    "id" : "710",
     "superClasses" : [ "187", "18", "681" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01126",
@@ -3668,7 +3668,7 @@
       "IRI-based" : "PaNET01121",
       "undefined" : "reflectometry"
     },
-    "subClasses" : [ "710", "711", "712" ],
+    "subClasses" : [ "712", "713", "714" ],
     "intersection" : [ "661", "409" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "662",
@@ -3715,7 +3715,7 @@
       "undefined" : "scanning transmission microscopy"
     },
     "subClasses" : [ "286" ],
-    "intersection" : [ "388", "685" ],
+    "intersection" : [ "387", "685" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "180",
     "superClasses" : [ "24", "686" ]
@@ -3735,10 +3735,10 @@
       "IRI-based" : "PaNET01122",
       "undefined" : "resonant diffraction"
     },
-    "intersection" : [ "668", "422", "173" ],
+    "intersection" : [ "668", "377", "173" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "493",
-    "superClasses" : [ "668", "422", "173", "380" ]
+    "superClasses" : [ "668", "377", "173", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01118",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -3747,10 +3747,10 @@
       "IRI-based" : "PaNET01118",
       "undefined" : "polarised reflectivity"
     },
-    "subClasses" : [ "715" ],
+    "subClasses" : [ "717" ],
     "intersection" : [ "661", "277", "409" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "710",
+    "id" : "712",
     "superClasses" : [ "277", "662" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01117",
@@ -3777,7 +3777,7 @@
     "subClasses" : [ "628" ],
     "intersection" : [ "382", "409", "491" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "717",
+    "id" : "719",
     "superClasses" : [ "382", "409", "491" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01119",
@@ -3787,11 +3787,11 @@
       "IRI-based" : "PaNET01119",
       "undefined" : "spin echo  scattering"
     },
-    "subClasses" : [ "708", "516", "473" ],
-    "intersection" : [ "188", "722" ],
+    "subClasses" : [ "710", "516", "473" ],
+    "intersection" : [ "188", "723" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "187",
-    "superClasses" : [ "188", "722" ]
+    "superClasses" : [ "188", "723" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#laser",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -3909,10 +3909,10 @@
       "undefined" : "infrared microspectroscopy"
     },
     "subClasses" : [ "736", "737" ],
-    "intersection" : [ "705", "9" ],
+    "intersection" : [ "707", "9" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "735",
-    "superClasses" : [ "705", "56" ]
+    "superClasses" : [ "707", "56" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01112",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -3961,7 +3961,7 @@
       "IRI-based" : "PaNET01107",
       "undefined" : "inelastic small angle scattering"
     },
-    "subClasses" : [ "702" ],
+    "subClasses" : [ "704" ],
     "intersection" : [ "18", "425" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "481",
@@ -3975,7 +3975,7 @@
       "IRI-based" : "PaNET01106",
       "undefined" : "imaging"
     },
-    "subClasses" : [ "739", "690", "68", "161", "9", "75", "664", "686", "153", "740", "721", "217", "271" ],
+    "subClasses" : [ "739", "692", "68", "161", "9", "75", "664", "686", "153", "740", "690", "217", "271" ],
     "attributes" : [ "equivalent", "external" ],
     "id" : "440",
     "superClasses" : [ "432" ]
@@ -4024,10 +4024,10 @@
       "undefined" : "infrared spectroscopy"
     },
     "subClasses" : [ "735", "659" ],
-    "intersection" : [ "265", "743" ],
+    "intersection" : [ "267", "743" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "705",
-    "superClasses" : [ "265", "743" ]
+    "id" : "707",
+    "superClasses" : [ "267", "743" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01108",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4048,12 +4048,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "hard photoelectron spectroscopy",
+        "value" : "HAXPES",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "HAXPES",
+        "value" : "hard photoelectron spectroscopy",
         "type" : "label"
       } ]
     },
@@ -4120,10 +4120,10 @@
       "undefined" : "high resolution photoelectron spectroscopy"
     },
     "subClasses" : [ "756", "757", "553" ],
-    "intersection" : [ "265", "281" ],
+    "intersection" : [ "267", "281" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "282",
-    "superClasses" : [ "673", "279", "706" ]
+    "superClasses" : [ "673", "279", "708" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01101",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4140,10 +4140,10 @@
       "IRI-based" : "PaNET01101",
       "undefined" : "x-ray powder diffraction"
     },
-    "intersection" : [ "498", "259" ],
+    "intersection" : [ "501", "259" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "497",
-    "superClasses" : [ "498", "484" ]
+    "id" : "500",
+    "superClasses" : [ "501", "484" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01100",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4167,10 +4167,10 @@
       "undefined" : "neutron powder diffraction"
     },
     "subClasses" : [ "758" ],
-    "intersection" : [ "498", "483" ],
+    "intersection" : [ "501", "483" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "500",
-    "superClasses" : [ "498", "483" ]
+    "id" : "503",
+    "superClasses" : [ "501", "483" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#detection_as_a_function_of_limited_number_of_sample_to_detector_distance",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -4269,10 +4269,10 @@
       "undefined" : "grazing incidence small angle x-ray scattering"
     },
     "subClasses" : [ "579" ],
-    "intersection" : [ "288", "709" ],
+    "intersection" : [ "288", "711" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "289",
-    "superClasses" : [ "292", "288", "709" ]
+    "superClasses" : [ "292", "288", "711" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01169",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4350,7 +4350,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "200",
-    "superClasses" : [ "402", "434", "446", "173", "259" ]
+    "superClasses" : [ "402", "434", "173", "446", "259" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01164",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4440,11 +4440,11 @@
       "IRI-based" : "PaNET01152",
       "undefined" : "propagation phase contrast tomography"
     },
-    "subClasses" : [ "386", "385", "60" ],
+    "subClasses" : [ "389", "420", "60" ],
     "intersection" : [ "270", "663", "684" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "537",
-    "superClasses" : [ "270", "684", "664" ]
+    "superClasses" : [ "270", "664", "684" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01151",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4481,7 +4481,7 @@
     "subClasses" : [ "520" ],
     "attributes" : [ "external" ],
     "id" : "486",
-    "superClasses" : [ "422", "380" ]
+    "superClasses" : [ "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01159",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4501,7 +4501,7 @@
     "subClasses" : [ "522" ],
     "attributes" : [ "external" ],
     "id" : "487",
-    "superClasses" : [ "660", "422", "380" ]
+    "superClasses" : [ "660", "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01154",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4553,10 +4553,10 @@
       "undefined" : "x-ray spectroscopy"
     },
     "subClasses" : [ "172", "80", "533", "295", "298" ],
-    "intersection" : [ "265", "259" ],
+    "intersection" : [ "267", "259" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "296",
-    "superClasses" : [ "265", "259" ]
+    "superClasses" : [ "267", "259" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01155",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4614,7 +4614,7 @@
     },
     "intersection" : [ "262", "259" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "714",
+    "id" : "716",
     "superClasses" : [ "262", "259" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01147",
@@ -4625,10 +4625,10 @@
       "undefined" : "scanning probe imaging"
     },
     "subClasses" : [ "24", "160" ],
-    "intersection" : [ "388", "440", "777" ],
+    "intersection" : [ "387", "440", "777" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "161",
-    "superClasses" : [ "388", "440", "777", "457" ]
+    "superClasses" : [ "387", "440", "777", "457" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01146",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4675,12 +4675,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "XRR",
+        "value" : "x-ray reflectometry",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "x-ray reflectometry",
+        "value" : "XRR",
         "type" : "label"
       } ]
     },
@@ -4690,7 +4690,7 @@
     },
     "intersection" : [ "662", "259" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "712",
+    "id" : "714",
     "superClasses" : [ "662", "259" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01148",
@@ -4872,10 +4872,10 @@
       "IRI-based" : "PaNET01130",
       "undefined" : "UV VUV spectroscopy"
     },
-    "intersection" : [ "780", "265" ],
+    "intersection" : [ "780", "267" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "704",
-    "superClasses" : [ "780", "265" ]
+    "id" : "706",
+    "superClasses" : [ "780", "267" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#EDS",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -4915,10 +4915,10 @@
       "undefined" : "diffraction imaging"
     },
     "subClasses" : [ "67", "70", "75" ],
-    "intersection" : [ "440", "422" ],
+    "intersection" : [ "440", "377" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "68",
-    "superClasses" : [ "440", "457", "422", "380" ]
+    "superClasses" : [ "440", "457", "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01135",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -4928,10 +4928,10 @@
       "undefined" : "absorption spectroscopy"
     },
     "subClasses" : [ "80" ],
-    "intersection" : [ "265", "685" ],
+    "intersection" : [ "267", "685" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "81",
-    "superClasses" : [ "265", "685" ]
+    "superClasses" : [ "267", "685" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01138",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -5104,10 +5104,10 @@
       "undefined" : "microfocus spectroscopy"
     },
     "subClasses" : [ "790" ],
-    "intersection" : [ "789", "265" ],
+    "intersection" : [ "789", "267" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "703",
-    "superClasses" : [ "789", "265" ]
+    "id" : "705",
+    "superClasses" : [ "789", "267" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#HT-XRD",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -5179,7 +5179,7 @@
       "undefined" : "Visible Light Microscopy (VLM) captures images of a sample using visible light illumination and optical lenses, providing spatially resolved information about surface morphology, color, and structure at micrometer-scale resolution."
     },
     "attributes" : [ "intersection" ],
-    "id" : "793"
+    "id" : "794"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01196",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -5208,6 +5208,15 @@
     "id" : "80",
     "superClasses" : [ "632", "81", "173", "296" ]
   }, {
+    "iri" : "https://w3id.org/PaN/ESRFET#analyzer_crystal",
+    "baseIri" : "https://w3id.org/PaN/ESRFET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "analyzer_crystal"
+    },
+    "id" : "796",
+    "superClasses" : [ "333" ]
+  }, {
     "iri" : "https://w3id.org/PaN/ESRFET#XGPCT",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
     "instances" : 0,
@@ -5228,16 +5237,7 @@
       "undefined" : "X-ray Grating Phase-Contrast Tomography (XGPCT) measures X-ray phase shifts using an interferometric grating setup across multiple projection angles, providing 3D images with high sensitivity to small refractive index variations in soft or low-Z materials."
     },
     "attributes" : [ "intersection" ],
-    "id" : "796"
-  }, {
-    "iri" : "https://w3id.org/PaN/ESRFET#analyzer_crystal",
-    "baseIri" : "https://w3id.org/PaN/ESRFET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "analyzer_crystal"
-    },
-    "id" : "797",
-    "superClasses" : [ "333" ]
+    "id" : "797"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01195",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -5485,7 +5485,7 @@
       "IRI-based" : "PaNET01182",
       "undefined" : "inelastic x-ray scattering"
     },
-    "subClasses" : [ "818", "702", "298" ],
+    "subClasses" : [ "818", "704", "298" ],
     "intersection" : [ "259", "425" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "475",
@@ -5524,7 +5524,7 @@
       "IRI-based" : "PaNET01184",
       "undefined" : "x-ray scattering"
     },
-    "subClasses" : [ "292", "699", "475", "484", "556", "709" ],
+    "subClasses" : [ "292", "701", "475", "484", "556", "711" ],
     "intersection" : [ "677", "259" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "680",
@@ -5552,10 +5552,10 @@
       "undefined" : "pair distribution function"
     },
     "subClasses" : [ "404" ],
-    "intersection" : [ "120", "422" ],
+    "intersection" : [ "120", "377" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "485",
-    "superClasses" : [ "120", "422", "380" ]
+    "superClasses" : [ "120", "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01180",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -5576,7 +5576,7 @@
     "intersection" : [ "9", "259" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "16",
-    "superClasses" : [ "9", "721" ]
+    "superClasses" : [ "9", "690" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01187",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -5613,7 +5613,7 @@
       "IRI-based" : "PaNET01186",
       "undefined" : "resonant x-ray scattering"
     },
-    "subClasses" : [ "818", "420", "825" ],
+    "subClasses" : [ "818", "422", "825" ],
     "intersection" : [ "680", "668", "173" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "556",
@@ -5667,10 +5667,10 @@
       "IRI-based" : "PaNET01188",
       "undefined" : "small angle x-ray scattering"
     },
-    "subClasses" : [ "829", "702", "289", "508", "719", "786", "453" ],
+    "subClasses" : [ "829", "704", "289", "508", "721", "786", "453" ],
     "intersection" : [ "18", "259" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "709",
+    "id" : "711",
     "superClasses" : [ "680", "18" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01172",
@@ -5692,12 +5692,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "chemical crystallography",
+        "value" : "small molecule crystallography",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "small molecule crystallography",
+        "value" : "chemical crystallography",
         "type" : "label"
       } ]
     },
@@ -5722,12 +5722,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "coherent diffractive imaging",
+        "value" : "CDI",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "CDI",
+        "value" : "coherent diffractive imaging",
         "type" : "label"
       } ]
     },
@@ -5765,7 +5765,7 @@
     "subClasses" : [ "438" ],
     "attributes" : [ "external" ],
     "id" : "624",
-    "superClasses" : [ "632", "484", "685", "459", "259", "492" ]
+    "superClasses" : [ "632", "484", "459", "685", "259", "492" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01170",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -5780,12 +5780,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "SAD",
+        "value" : "single wavelength anomalous dispersion",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "single wavelength anomalous dispersion",
+        "value" : "SAD",
         "type" : "label"
       } ]
     },
@@ -5873,7 +5873,7 @@
       "IRI-based" : "PaNET01175",
       "undefined" : "infrared nanospectroscopy imaging"
     },
-    "intersection" : [ "45", "265", "743" ],
+    "intersection" : [ "45", "267", "743" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "737",
     "superClasses" : [ "45", "735" ]
@@ -5970,7 +5970,7 @@
     "label" : {
       "IRI-based" : "detector_type"
     },
-    "subClasses" : [ "797", "845", "846", "847", "848", "849" ],
+    "subClasses" : [ "796", "845", "846", "847", "848", "849" ],
     "comment" : {
       "undefined" : "The interaction between the sample and sample input(s) leads to a cascade of events, the result has properties which are being detected with a detector that has certain characteristics."
     },
@@ -6172,7 +6172,7 @@
     },
     "subClasses" : [ "927", "304", "611", "928", "46", "310", "929", "930", "931", "418", "932", "933", "791", "926", "934", "935", "936", "937", "938", "939", "940", "941", "942", "943", "944", "945", "946", "346", "947", "948", "949", "950", "951", "952", "953", "954", "955", "956", "957", "958", "959", "960", "961", "962", "517", "672", "963", "964", "965", "966", "366", "967", "968", "831", "969", "970", "971" ],
     "comment" : {
-      "undefined" : "Every technique has a short description that tells what we measure and what you get out of it.\n\nIn addition, experimental techniques are semantically defined by\n- *what* a technique measures\n- *what* inputs it requires\n- *how* the measurement"
+      "undefined" : "A specific method or procedure used to perform experiments and gather data to investigate scientific questions."
     },
     "id" : "47"
   }, {
@@ -6462,7 +6462,7 @@
       "IRI-based" : "PaNET00106",
       "undefined" : "microfocussed probe"
     },
-    "subClasses" : [ "703", "699", "1001", "697" ],
+    "subClasses" : [ "705", "701", "1001", "699" ],
     "attributes" : [ "external" ],
     "id" : "789",
     "superClasses" : [ "416" ]
@@ -6528,9 +6528,9 @@
       "IRI-based" : "PaNET00101",
       "undefined" : "neutron probe"
     },
-    "subClasses" : [ "231", "1230", "711", "1232", "187", "1020", "1125", "681", "1153" ],
+    "subClasses" : [ "231", "1230", "713", "1232", "187", "1020", "1125", "681", "1153" ],
     "attributes" : [ "external" ],
-    "id" : "722",
+    "id" : "723",
     "superClasses" : [ "416" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET00104",
@@ -6685,7 +6685,7 @@
       "IRI-based" : "PaNET01009",
       "undefined" : "UV photon probe"
     },
-    "subClasses" : [ "704", "893", "783", "1034" ],
+    "subClasses" : [ "706", "893", "783", "1034" ],
     "attributes" : [ "external" ],
     "id" : "780",
     "superClasses" : [ "784" ]
@@ -6855,7 +6855,7 @@
       "IRI-based" : "PaNET01004",
       "undefined" : "nanofocussed probe"
     },
-    "subClasses" : [ "182", "503" ],
+    "subClasses" : [ "182", "498" ],
     "attributes" : [ "external" ],
     "id" : "1001",
     "superClasses" : [ "789" ]
@@ -6891,7 +6891,7 @@
       "IRI-based" : "PaNET01005",
       "undefined" : "IR photon probe"
     },
-    "subClasses" : [ "705", "56" ],
+    "subClasses" : [ "707", "56" ],
     "attributes" : [ "external" ],
     "id" : "743",
     "superClasses" : [ "278" ]
@@ -6943,11 +6943,11 @@
       "IRI-based" : "PaNET01001",
       "undefined" : "neutron time of flight technique"
     },
-    "subClasses" : [ "707", "828" ],
+    "subClasses" : [ "709", "828" ],
     "intersection" : [ "1183" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "1153",
-    "superClasses" : [ "722", "1183" ]
+    "superClasses" : [ "723", "1183" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#MBS",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -6998,7 +6998,7 @@
       "IRI-based" : "very_high_temperature"
     },
     "comment" : {
-      "undefined" : "Arc plasmas, re-entry heating"
+      "undefined" : "2,000 – 5,000 K"
     },
     "id" : "600",
     "superClasses" : [ "572" ]
@@ -7126,7 +7126,7 @@
       "IRI-based" : "PaNET01047",
       "undefined" : "electron emission technique"
     },
-    "subClasses" : [ "706", "281", "614", "58" ],
+    "subClasses" : [ "708", "281", "614", "58" ],
     "attributes" : [ "external" ],
     "id" : "676",
     "superClasses" : [ "283" ]
@@ -7158,7 +7158,7 @@
       "IRI-based" : "PaNET01044",
       "undefined" : "visible photon emission technique"
     },
-    "subClasses" : [ "77", "714", "11" ],
+    "subClasses" : [ "77", "716", "11" ],
     "attributes" : [ "external" ],
     "id" : "262",
     "superClasses" : [ "272" ]
@@ -7170,7 +7170,7 @@
       "IRI-based" : "PaNET01043",
       "undefined" : "photon emission technique"
     },
-    "subClasses" : [ "262", "266", "271", "298", "260" ],
+    "subClasses" : [ "262", "268", "271", "298", "260" ],
     "attributes" : [ "external" ],
     "id" : "272",
     "superClasses" : [ "283" ]
@@ -7182,9 +7182,9 @@
       "IRI-based" : "PaNET01046",
       "undefined" : "gamma-ray emission technique"
     },
-    "subClasses" : [ "264" ],
+    "subClasses" : [ "266" ],
     "attributes" : [ "external" ],
-    "id" : "266",
+    "id" : "268",
     "superClasses" : [ "272" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01045",
@@ -7194,7 +7194,7 @@
       "IRI-based" : "PaNET01045",
       "undefined" : "x-ray emission technique"
     },
-    "subClasses" : [ "258", "34", "697" ],
+    "subClasses" : [ "258", "34", "699" ],
     "attributes" : [ "external" ],
     "id" : "260",
     "superClasses" : [ "272" ]
@@ -7240,9 +7240,9 @@
       "IRI-based" : "PaNET01030",
       "undefined" : "powder diffraction"
     },
-    "subClasses" : [ "497", "500" ],
+    "subClasses" : [ "500", "503" ],
     "attributes" : [ "external" ],
-    "id" : "498",
+    "id" : "501",
     "superClasses" : [ "876" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01037",
@@ -7334,7 +7334,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "490",
-    "superClasses" : [ "422", "380" ]
+    "superClasses" : [ "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01035",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -7610,7 +7610,7 @@
       "IRI-based" : "PaNET01020",
       "undefined" : "elastic scattering"
     },
-    "subClasses" : [ "420", "422", "377", "380" ],
+    "subClasses" : [ "422", "377", "380", "385" ],
     "attributes" : [ "external" ],
     "id" : "378",
     "superClasses" : [ "677" ]
@@ -7655,7 +7655,7 @@
     "subClasses" : [ "398", "404", "407", "877" ],
     "attributes" : [ "external" ],
     "id" : "399",
-    "superClasses" : [ "422", "380" ]
+    "superClasses" : [ "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01025",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -7690,7 +7690,7 @@
       "IRI-based" : "PaNET01028",
       "undefined" : "atomic scale diffraction 3D volume 3D periodic"
     },
-    "subClasses" : [ "498", "428" ],
+    "subClasses" : [ "501", "428" ],
     "attributes" : [ "external" ],
     "id" : "876",
     "superClasses" : [ "877" ]
@@ -7708,7 +7708,7 @@
     "superClasses" : [ "399" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01022",
-    "equivalent" : [ "380" ],
+    "equivalent" : [ "385" ],
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "annotations" : {
@@ -7725,7 +7725,7 @@
     },
     "subClasses" : [ "483", "368", "484", "358", "485", "399", "68", "486", "487", "488", "489", "490", "491", "492", "493" ],
     "attributes" : [ "equivalent", "external" ],
-    "id" : "422",
+    "id" : "377",
     "superClasses" : [ "378" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01021",
@@ -7735,7 +7735,7 @@
       "IRI-based" : "PaNET01021",
       "undefined" : "diffuse scattering"
     },
-    "subClasses" : [ "509", "1135" ],
+    "subClasses" : [ "509", "1148" ],
     "attributes" : [ "external" ],
     "id" : "682",
     "superClasses" : [ "677" ]
@@ -7755,10 +7755,10 @@
       "IRI-based" : "PaNET01024",
       "undefined" : "coherent diffraction"
     },
-    "subClasses" : [ "67", "717" ],
+    "subClasses" : [ "67", "719" ],
     "attributes" : [ "external" ],
     "id" : "491",
-    "superClasses" : [ "422", "380" ]
+    "superClasses" : [ "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01023",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -7778,7 +7778,7 @@
     "subClasses" : [ "624", "438" ],
     "attributes" : [ "external" ],
     "id" : "492",
-    "superClasses" : [ "422", "380" ]
+    "superClasses" : [ "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01019",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -7789,7 +7789,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "1230",
-    "superClasses" : [ "773", "722" ]
+    "superClasses" : [ "773", "723" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01018",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -7800,7 +7800,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "1232",
-    "superClasses" : [ "722" ]
+    "superClasses" : [ "723" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01015",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -7809,7 +7809,7 @@
       "IRI-based" : "PaNET01015",
       "undefined" : "soft x-ray probe"
     },
-    "subClasses" : [ "829", "626", "727", "825" ],
+    "subClasses" : [ "829", "626", "694", "825" ],
     "attributes" : [ "external" ],
     "id" : "826",
     "superClasses" : [ "259" ]
@@ -7864,7 +7864,7 @@
     "subClasses" : [ "1127", "1110", "1164", "1007" ],
     "attributes" : [ "external" ],
     "id" : "1125",
-    "superClasses" : [ "722" ]
+    "superClasses" : [ "723" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01011",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -7921,7 +7921,7 @@
       "IRI-based" : "PaNET01012",
       "undefined" : "x-ray probe"
     },
-    "subClasses" : [ "632", "258", "621", "714", "624", "680", "202", "826", "639", "184", "1113", "712", "638", "905", "150", "200", "721", "753", "296", "385" ],
+    "subClasses" : [ "632", "258", "621", "716", "624", "680", "202", "826", "639", "184", "1113", "714", "638", "905", "150", "200", "690", "753", "296", "420" ],
     "attributes" : [ "external" ],
     "id" : "259",
     "superClasses" : [ "278" ]
@@ -8260,7 +8260,7 @@
     },
     "subClasses" : [ "270" ],
     "attributes" : [ "external" ],
-    "id" : "690",
+    "id" : "692",
     "superClasses" : [ "440", "457" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01070",
@@ -8659,18 +8659,6 @@
     "attributes" : [ "intersection" ],
     "id" : "1297"
   }, {
-    "iri" : "https://w3id.org/PaN/ESRFET#technique_property",
-    "baseIri" : "https://w3id.org/PaN/ESRFET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "technique_property"
-    },
-    "subClasses" : [ "302", "205", "307", "63", "320", "339", "333" ],
-    "comment" : {
-      "undefined" : "All the ranges of the object properties with experimental technique as domain."
-    },
-    "id" : "303"
-  }, {
     "iri" : "https://w3id.org/PaN/ESRFET#LDDS-XAS",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
     "instances" : 0,
@@ -8692,6 +8680,18 @@
     },
     "attributes" : [ "intersection" ],
     "id" : "1298"
+  }, {
+    "iri" : "https://w3id.org/PaN/ESRFET#technique_property",
+    "baseIri" : "https://w3id.org/PaN/ESRFET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "technique_property"
+    },
+    "subClasses" : [ "302", "205", "307", "63", "320", "339", "333" ],
+    "comment" : {
+      "undefined" : "All the ranges of the object properties with experimental technique as domain."
+    },
+    "id" : "303"
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#detection_as_a_function_of_time",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -8795,12 +8795,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "Nano-XRD",
+        "value" : "nXRD",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "nXRD",
+        "value" : "Nano-XRD",
         "type" : "label"
       } ]
     },
@@ -8978,17 +8978,17 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
+        "value" : "SCD",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "undefined",
         "value" : "SC-XRD",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
         "value" : "SXRD",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "undefined",
-        "value" : "SCD",
         "type" : "label"
       } ]
     },
@@ -9408,7 +9408,7 @@
       "IRI-based" : "low_temperature"
     },
     "comment" : {
-      "undefined" : "Liquid N₂ (77 K) up to room temperature (~293 K)"
+      "undefined" : "77 – 300 K"
     },
     "id" : "602",
     "superClasses" : [ "572" ]
@@ -9443,8 +9443,8 @@
       "undefined" : "polymer micro and nanografting"
     },
     "attributes" : [ "external" ],
-    "id" : "268",
-    "superClasses" : [ "267" ]
+    "id" : "265",
+    "superClasses" : [ "264" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020082",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -9645,7 +9645,7 @@
       "IRI-based" : "PaNET00403",
       "undefined" : "obtain dynamics"
     },
-    "subClasses" : [ "377" ],
+    "subClasses" : [ "380" ],
     "attributes" : [ "external" ],
     "id" : "431",
     "superClasses" : [ "432" ]
@@ -9694,7 +9694,7 @@
       "IRI-based" : "PaNET00401",
       "undefined" : "obtain spatial map"
     },
-    "subClasses" : [ "739", "690", "68", "161", "664", "686", "153", "740", "721", "217", "271" ],
+    "subClasses" : [ "739", "692", "68", "161", "664", "686", "153", "740", "690", "217", "271" ],
     "attributes" : [ "equivalent", "external" ],
     "id" : "457",
     "superClasses" : [ "432" ]
@@ -9825,10 +9825,10 @@
       "IRI-based" : "PaNET01328",
       "undefined" : "divergent beam diffraction"
     },
-    "subClasses" : [ "832", "1135" ],
+    "subClasses" : [ "832", "1148" ],
     "attributes" : [ "external" ],
     "id" : "358",
-    "superClasses" : [ "422", "380" ]
+    "superClasses" : [ "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01323",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -9865,7 +9865,7 @@
     "intersection" : [ "80", "789" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "790",
-    "superClasses" : [ "703", "80" ]
+    "superClasses" : [ "705", "80" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01325",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -9886,18 +9886,6 @@
     "id" : "438",
     "superClasses" : [ "624", "428", "434", "492" ]
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020030",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PaNET2020030",
-      "undefined" : "photon emission"
-    },
-    "subClasses" : [ "1505", "1546", "1617" ],
-    "attributes" : [ "external" ],
-    "id" : "1435",
-    "superClasses" : [ "920" ]
-  }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01324",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
@@ -9916,6 +9904,18 @@
     "attributes" : [ "external" ],
     "id" : "356",
     "superClasses" : [ "459" ]
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020030",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET2020030",
+      "undefined" : "photon emission"
+    },
+    "subClasses" : [ "1505", "1546", "1617" ],
+    "attributes" : [ "external" ],
+    "id" : "1435",
+    "superClasses" : [ "920" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020031",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -9939,17 +9939,6 @@
     "subClasses" : [ "35" ],
     "attributes" : [ "external" ],
     "id" : "1546",
-    "superClasses" : [ "1435" ]
-  }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020033",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PaNET2020033",
-      "undefined" : "gamma-ray emission"
-    },
-    "attributes" : [ "external" ],
-    "id" : "1617",
     "superClasses" : [ "1435" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01321",
@@ -9977,6 +9966,28 @@
     "id" : "792",
     "superClasses" : [ "172", "799" ]
   }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020033",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET2020033",
+      "undefined" : "gamma-ray emission"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1617",
+    "superClasses" : [ "1435" ]
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020034",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET2020034",
+      "undefined" : "electron emission"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1436",
+    "superClasses" : [ "920" ]
+  }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01320",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
@@ -10000,18 +10011,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "659",
-    "superClasses" : [ "657", "705" ]
-  }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020034",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PaNET2020034",
-      "undefined" : "electron emission"
-    },
-    "attributes" : [ "external" ],
-    "id" : "1436",
-    "superClasses" : [ "920" ]
+    "superClasses" : [ "657", "707" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020024",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -10023,18 +10023,6 @@
     "attributes" : [ "external" ],
     "id" : "1497",
     "superClasses" : [ "362" ]
-  }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020025",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PaNET2020025",
-      "undefined" : "high momentum transfer scattering"
-    },
-    "subClasses" : [ "27" ],
-    "attributes" : [ "external" ],
-    "id" : "1426",
-    "superClasses" : [ "916" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01319",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -10057,10 +10045,22 @@
       "IRI-based" : "PaNET01319",
       "undefined" : "atomic force microscope infrared spectroscopy"
     },
-    "intersection" : [ "705", "52" ],
+    "intersection" : [ "707", "52" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "736",
     "superClasses" : [ "52", "735" ]
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020025",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET2020025",
+      "undefined" : "high momentum transfer scattering"
+    },
+    "subClasses" : [ "27" ],
+    "attributes" : [ "external" ],
+    "id" : "1426",
+    "superClasses" : [ "916" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020026",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -10085,6 +10085,18 @@
     "id" : "1519",
     "superClasses" : [ "1427" ]
   }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020028",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET2020028",
+      "undefined" : "low surface momentum transfer scattering"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "1429",
+    "superClasses" : [ "916" ]
+  }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01316",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
@@ -10105,17 +10117,16 @@
     "id" : "577",
     "superClasses" : [ "292", "407" ]
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020028",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020029",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PaNET2020028",
-      "undefined" : "low surface momentum transfer scattering"
+      "IRI-based" : "PaNET2020029",
+      "undefined" : "coherent emission"
     },
-    "subClasses" : [ "2" ],
     "attributes" : [ "external" ],
-    "id" : "1429",
-    "superClasses" : [ "916" ]
+    "id" : "1434",
+    "superClasses" : [ "920" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01315",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -10127,17 +10138,6 @@
     "attributes" : [ "external" ],
     "id" : "821",
     "superClasses" : [ "16" ]
-  }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020029",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PaNET2020029",
-      "undefined" : "coherent emission"
-    },
-    "attributes" : [ "external" ],
-    "id" : "1434",
-    "superClasses" : [ "920" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01318",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -10274,10 +10274,10 @@
       "IRI-based" : "PaNET01313",
       "undefined" : "magnetic x-ray tomography"
     },
-    "intersection" : [ "444", "691" ],
+    "intersection" : [ "444", "689" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "665",
-    "superClasses" : [ "444", "691" ]
+    "superClasses" : [ "444", "689" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020020",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -10344,18 +10344,6 @@
     "id" : "362",
     "superClasses" : [ "1430" ]
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020013",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PaNET2020013",
-      "undefined" : "thermal neutron beam"
-    },
-    "subClasses" : [ "1501" ],
-    "attributes" : [ "external" ],
-    "id" : "1048",
-    "superClasses" : [ "808" ]
-  }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01309",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
@@ -10375,6 +10363,18 @@
     "attributes" : [ "external", "intersection" ],
     "id" : "589",
     "superClasses" : [ "581", "584" ]
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020013",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET2020013",
+      "undefined" : "thermal neutron beam"
+    },
+    "subClasses" : [ "1501" ],
+    "attributes" : [ "external" ],
+    "id" : "1048",
+    "superClasses" : [ "808" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020014",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -10435,17 +10435,6 @@
     "id" : "361",
     "superClasses" : [ "916" ]
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020017",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PaNET2020017",
-      "undefined" : "diffuse scattering"
-    },
-    "attributes" : [ "external" ],
-    "id" : "1428",
-    "superClasses" : [ "916" ]
-  }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01305",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
@@ -10456,19 +10445,18 @@
     "intersection" : [ "1113", "446" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "542",
-    "superClasses" : [ "434", "1113", "446" ]
+    "superClasses" : [ "1113", "434", "446" ]
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020018",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020017",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PaNET2020018",
-      "undefined" : "diffraction"
+      "IRI-based" : "PaNET2020017",
+      "undefined" : "diffuse scattering"
     },
-    "subClasses" : [ "1510", "359", "1516", "369" ],
     "attributes" : [ "external" ],
-    "id" : "1488",
-    "superClasses" : [ "361" ]
+    "id" : "1428",
+    "superClasses" : [ "916" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01304",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -10496,6 +10484,18 @@
     "id" : "545",
     "superClasses" : [ "448", "446" ]
   }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020018",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET2020018",
+      "undefined" : "diffraction"
+    },
+    "subClasses" : [ "1510", "359", "1516", "369" ],
+    "attributes" : [ "external" ],
+    "id" : "1488",
+    "superClasses" : [ "361" ]
+  }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01307",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
@@ -10511,10 +10511,10 @@
       "IRI-based" : "PaNET01307",
       "undefined" : "nanofocus macromolecular crystallography"
     },
-    "intersection" : [ "503", "446" ],
+    "intersection" : [ "498", "446" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "502",
-    "superClasses" : [ "503", "549" ]
+    "id" : "497",
+    "superClasses" : [ "498", "549" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020019",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -10542,11 +10542,11 @@
       "IRI-based" : "PaNET01306",
       "undefined" : "microfocus macromolecular crystallography"
     },
-    "subClasses" : [ "502" ],
-    "intersection" : [ "699", "446" ],
+    "subClasses" : [ "497" ],
+    "intersection" : [ "701", "446" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "549",
-    "superClasses" : [ "699", "434", "446" ]
+    "superClasses" : [ "701", "434", "446" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#XPCS",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -10647,12 +10647,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "PCXI",
+        "value" : "Phase-Contrast X-ray Imaging",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "Phase-Contrast X-ray Imaging",
+        "value" : "PCXI",
         "type" : "label"
       } ]
     },
@@ -10737,7 +10737,7 @@
     "intersection" : [ "259", "151" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "150",
-    "superClasses" : [ "151", "259" ]
+    "superClasses" : [ "259", "151" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020010",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -10898,12 +10898,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "X-ray specular reflectivity",
+        "value" : "X-ray reflectivity",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "X-ray reflectivity",
+        "value" : "X-ray specular reflectivity",
         "type" : "label"
       } ]
     },
@@ -11128,7 +11128,7 @@
     "subClasses" : [ "372", "375" ],
     "attributes" : [ "external" ],
     "id" : "50",
-    "superClasses" : [ "267" ]
+    "superClasses" : [ "264" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020078",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -11523,7 +11523,7 @@
       "IRI-based" : "PaNET00002",
       "undefined" : "defined by experimental probe"
     },
-    "subClasses" : [ "789", "773", "732", "722", "777", "812", "278" ],
+    "subClasses" : [ "789", "773", "732", "723", "777", "812", "278" ],
     "attributes" : [ "external" ],
     "id" : "416",
     "superClasses" : [ "324" ]
@@ -11545,7 +11545,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "594",
-    "superClasses" : [ "385" ]
+    "superClasses" : [ "420" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET00005",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -11578,17 +11578,6 @@
     "id" : "1599",
     "superClasses" : [ "1440" ]
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020041",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PaNET2020041",
-      "undefined" : "photo excitation"
-    },
-    "attributes" : [ "external" ],
-    "id" : "1606",
-    "superClasses" : [ "1440" ]
-  }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET00004",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
@@ -11604,10 +11593,21 @@
       "IRI-based" : "PaNET00004",
       "undefined" : "defined by functional dependence"
     },
-    "subClasses" : [ "382", "388", "392", "396", "402", "277", "409" ],
+    "subClasses" : [ "382", "387", "392", "396", "402", "277", "409" ],
     "attributes" : [ "external" ],
     "id" : "383",
     "superClasses" : [ "324" ]
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET2020041",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET2020041",
+      "undefined" : "photo excitation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1606",
+    "superClasses" : [ "1440" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01330",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -11618,7 +11618,7 @@
     },
     "intersection" : [ "358", "682" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "1135",
+    "id" : "1148",
     "superClasses" : [ "358", "682" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020042",
@@ -11672,8 +11672,8 @@
     },
     "subClasses" : [ "594" ],
     "attributes" : [ "external" ],
-    "id" : "385",
-    "superClasses" : [ "537", "386", "259" ]
+    "id" : "420",
+    "superClasses" : [ "389", "537", "259" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET2020044",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -11736,7 +11736,7 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "CXD",
+        "value" : "Coherent X-ray Diffraction",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -11746,12 +11746,12 @@
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "Coherent X-ray Diffraction Imaging",
+        "value" : "CXD",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "Coherent X-ray Diffraction",
+        "value" : "Coherent X-ray Diffraction Imaging",
         "type" : "label"
       } ]
     },
@@ -12141,7 +12141,7 @@
       "IRI-based" : "extreme_temperature"
     },
     "comment" : {
-      "undefined" : "Fusion plasmas, stellar photospheres, inertial confinement"
+      "undefined" : "5,000 – 10⁷ K"
     },
     "id" : "604",
     "superClasses" : [ "572" ]
@@ -12264,7 +12264,7 @@
       "IRI-based" : "extreme_pressure"
     },
     "comment" : {
-      "undefined" : "Planetary interiors, shock compression studies"
+      "undefined" : "> 1 × 10¹¹ Pa"
     },
     "id" : "1221",
     "superClasses" : [ "144" ]
@@ -12637,7 +12637,7 @@
       "IRI-based" : "PaNET00304",
       "undefined" : "versus time"
     },
-    "subClasses" : [ "1054", "103", "717", "226" ],
+    "subClasses" : [ "1054", "103", "719", "226" ],
     "attributes" : [ "external" ],
     "id" : "382",
     "superClasses" : [ "383" ]
@@ -12651,7 +12651,7 @@
     },
     "subClasses" : [ "161" ],
     "attributes" : [ "external" ],
-    "id" : "388",
+    "id" : "387",
     "superClasses" : [ "383" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET00306",
@@ -12685,7 +12685,7 @@
       "IRI-based" : "PaNET00300",
       "undefined" : "versus energy"
     },
-    "subClasses" : [ "191", "265", "733", "200", "284", "261" ],
+    "subClasses" : [ "191", "267", "733", "200", "284", "261" ],
     "attributes" : [ "external" ],
     "id" : "402",
     "superClasses" : [ "383" ]
@@ -12697,7 +12697,7 @@
       "IRI-based" : "PaNET00302",
       "undefined" : "versus polarization"
     },
-    "subClasses" : [ "129", "89", "710", "275", "135" ],
+    "subClasses" : [ "129", "89", "712", "275", "135" ],
     "attributes" : [ "external" ],
     "id" : "277",
     "superClasses" : [ "383" ]
@@ -12709,7 +12709,7 @@
       "IRI-based" : "PaNET00301",
       "undefined" : "versus momentum transfer"
     },
-    "subClasses" : [ "717", "662" ],
+    "subClasses" : [ "719", "662" ],
     "attributes" : [ "external" ],
     "id" : "409",
     "superClasses" : [ "383" ]
@@ -12865,7 +12865,7 @@
       "IRI-based" : "PaNET01206",
       "undefined" : "microtomography"
     },
-    "subClasses" : [ "539", "1512", "525", "719", "529", "60" ],
+    "subClasses" : [ "539", "1512", "525", "721", "529", "60" ],
     "intersection" : [ "270", "217" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "240",
@@ -12893,10 +12893,10 @@
       "undefined" : "x-ray photon correlation spectroscopy"
     },
     "subClasses" : [ "1185" ],
-    "intersection" : [ "717", "259" ],
+    "intersection" : [ "719", "259" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "628",
-    "superClasses" : [ "717", "484" ]
+    "superClasses" : [ "719", "484" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01208",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -12913,11 +12913,11 @@
       "IRI-based" : "PaNET01208",
       "undefined" : "x-ray microtomography"
     },
-    "subClasses" : [ "719" ],
+    "subClasses" : [ "721" ],
     "intersection" : [ "240", "259" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "1512",
-    "superClasses" : [ "240", "691" ]
+    "superClasses" : [ "240", "689" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01207",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -12940,11 +12940,11 @@
       "IRI-based" : "PaNET01207",
       "undefined" : "x-ray tomography"
     },
-    "subClasses" : [ "386", "1512", "665" ],
+    "subClasses" : [ "389", "1512", "665" ],
     "intersection" : [ "270", "259" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "691",
-    "superClasses" : [ "270", "721" ]
+    "id" : "689",
+    "superClasses" : [ "270", "690" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01202",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -12968,10 +12968,10 @@
       "undefined" : "photoelectron spectroscopy"
     },
     "subClasses" : [ "295", "134" ],
-    "intersection" : [ "1098", "706", "278" ],
+    "intersection" : [ "1098", "708", "278" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "754",
-    "superClasses" : [ "1098", "706", "281" ]
+    "superClasses" : [ "1098", "708", "281" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01201",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -12989,10 +12989,10 @@
       "undefined" : "electron spectroscopy"
     },
     "subClasses" : [ "754", "282" ],
-    "intersection" : [ "265", "676" ],
+    "intersection" : [ "267", "676" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "706",
-    "superClasses" : [ "265", "676" ]
+    "id" : "708",
+    "superClasses" : [ "267", "676" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#STXM",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -13217,7 +13217,7 @@
     "intersection" : [ "440", "1110" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "739",
-    "superClasses" : [ "440", "1110", "457" ]
+    "superClasses" : [ "440", "457", "1110" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01240",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -13227,7 +13227,7 @@
       "undefined" : "ultra small angle neutron scattering"
     },
     "subClasses" : [ "827" ],
-    "intersection" : [ "722", "466" ],
+    "intersection" : [ "723", "466" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "785",
     "superClasses" : [ "681", "466" ]
@@ -13271,10 +13271,10 @@
       "undefined" : "inelastic neutron spectroscopy"
     },
     "subClasses" : [ "1004", "1007", "771" ],
-    "intersection" : [ "265", "722", "425" ],
+    "intersection" : [ "267", "723", "425" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "463",
-    "superClasses" : [ "265", "681", "425" ]
+    "superClasses" : [ "267", "681", "425" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01248",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -13283,10 +13283,10 @@
       "IRI-based" : "PaNET01248",
       "undefined" : "neutron transmission radiography"
     },
-    "intersection" : [ "440", "722", "685" ],
+    "intersection" : [ "440", "723", "685" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "1020",
-    "superClasses" : [ "722", "686" ]
+    "superClasses" : [ "723", "686" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01247",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -13314,11 +13314,11 @@
       "IRI-based" : "PaNET01242",
       "undefined" : "neutron scattering"
     },
-    "subClasses" : [ "785", "483", "463", "708", "516", "473", "377" ],
-    "intersection" : [ "722", "677" ],
+    "subClasses" : [ "785", "483", "463", "710", "516", "473", "380" ],
+    "intersection" : [ "723", "677" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "681",
-    "superClasses" : [ "677", "722" ]
+    "superClasses" : [ "723", "677" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01241",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -13338,7 +13338,7 @@
     "intersection" : [ "259", "466" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "786",
-    "superClasses" : [ "709", "466" ]
+    "superClasses" : [ "466", "711" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01244",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -13360,10 +13360,10 @@
       "IRI-based" : "PaNET01244",
       "undefined" : "time-of-flight spectrometry"
     },
-    "intersection" : [ "265", "1153" ],
+    "intersection" : [ "267", "1153" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "707",
-    "superClasses" : [ "265", "1153" ]
+    "id" : "709",
+    "superClasses" : [ "267", "1153" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01243",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -13380,10 +13380,10 @@
       "IRI-based" : "PaNET01243",
       "undefined" : "polarized neutron reflectometry"
     },
-    "intersection" : [ "711", "277" ],
+    "intersection" : [ "713", "277" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "715",
-    "superClasses" : [ "710", "711" ]
+    "id" : "717",
+    "superClasses" : [ "713", "712" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#energy_dispersive_detector",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -13418,11 +13418,11 @@
       "IRI-based" : "PaNET01239",
       "undefined" : "neutron reflectometry"
     },
-    "subClasses" : [ "715" ],
-    "intersection" : [ "722", "662" ],
+    "subClasses" : [ "717" ],
+    "intersection" : [ "723", "662" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "711",
-    "superClasses" : [ "722", "662" ]
+    "id" : "713",
+    "superClasses" : [ "723", "662" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01238",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -13456,10 +13456,10 @@
       "undefined" : "high resolution neutron powder diffraction"
     },
     "subClasses" : [ "1127" ],
-    "intersection" : [ "678", "500" ],
+    "intersection" : [ "678", "503" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "758",
-    "superClasses" : [ "678", "500" ]
+    "superClasses" : [ "678", "503" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01237",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -13570,7 +13570,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "368",
-    "superClasses" : [ "422", "380" ]
+    "superClasses" : [ "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01227",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -13774,7 +13774,7 @@
     "intersection" : [ "22", "614" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "21",
-    "superClasses" : [ "22", "905", "614" ]
+    "superClasses" : [ "905", "22", "614" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#GISAXS",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -13835,11 +13835,11 @@
       "IRI-based" : "PaNET01217",
       "undefined" : "neutron diffraction"
     },
-    "subClasses" : [ "442", "617", "500" ],
-    "intersection" : [ "722", "422" ],
+    "subClasses" : [ "442", "617", "503" ],
+    "intersection" : [ "723", "377" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "483",
-    "superClasses" : [ "422", "681", "380" ]
+    "superClasses" : [ "377", "681", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01216",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -13856,11 +13856,11 @@
       "IRI-based" : "PaNET01216",
       "undefined" : "x-ray diffraction"
     },
-    "subClasses" : [ "621", "522", "624", "626", "628", "407", "70", "434", "497" ],
-    "intersection" : [ "422", "259" ],
+    "subClasses" : [ "621", "522", "624", "626", "628", "407", "70", "434", "500" ],
+    "intersection" : [ "377", "259" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "484",
-    "superClasses" : [ "680", "422", "380" ]
+    "superClasses" : [ "680", "377", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01219",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14014,10 +14014,10 @@
       "IRI-based" : "PaNET01282",
       "undefined" : "soft x-ray small angle scattering"
     },
-    "intersection" : [ "826", "709" ],
+    "intersection" : [ "826", "711" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "829",
-    "superClasses" : [ "826", "709" ]
+    "superClasses" : [ "826", "711" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01281",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14026,10 +14026,10 @@
       "IRI-based" : "PaNET01281",
       "undefined" : "inelastic x-ray small angle scattering"
     },
-    "intersection" : [ "475", "477", "709" ],
+    "intersection" : [ "475", "477", "711" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "702",
-    "superClasses" : [ "475", "477", "481", "709" ]
+    "id" : "704",
+    "superClasses" : [ "475", "477", "481", "711" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#infrared",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -14059,7 +14059,7 @@
       "IRI-based" : "PaNET01283",
       "undefined" : "soft x-ray diffraction"
     },
-    "intersection" : [ "826", "422" ],
+    "intersection" : [ "826", "377" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "626",
     "superClasses" : [ "484", "826" ]
@@ -14074,7 +14074,7 @@
     "intersection" : [ "509", "259" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "508",
-    "superClasses" : [ "509", "709" ]
+    "superClasses" : [ "509", "711" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01289",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14083,10 +14083,10 @@
       "IRI-based" : "PaNET01289",
       "undefined" : "soft x-ray imaging"
     },
-    "intersection" : [ "826", "721" ],
+    "intersection" : [ "826", "690" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "727",
-    "superClasses" : [ "826", "721" ]
+    "id" : "694",
+    "superClasses" : [ "826", "690" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01286",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14105,8 +14105,8 @@
     },
     "subClasses" : [ "579" ],
     "attributes" : [ "external" ],
-    "id" : "719",
-    "superClasses" : [ "240", "1512", "709" ]
+    "id" : "721",
+    "superClasses" : [ "240", "1512", "711" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01285",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14123,10 +14123,10 @@
       "IRI-based" : "PaNET01285",
       "undefined" : "x-ray imaging"
     },
-    "subClasses" : [ "390", "16", "691", "70", "727" ],
+    "subClasses" : [ "390", "16", "689", "70", "694" ],
     "intersection" : [ "440", "259" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "721",
+    "id" : "690",
     "superClasses" : [ "440", "457", "259" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01288",
@@ -14158,7 +14158,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "579",
-    "superClasses" : [ "289", "719" ]
+    "superClasses" : [ "289", "721" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01271",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14167,10 +14167,10 @@
       "IRI-based" : "PaNET01271",
       "undefined" : "microfocus x-ray scattering"
     },
-    "subClasses" : [ "503", "549" ],
+    "subClasses" : [ "498", "549" ],
     "intersection" : [ "680", "789" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "699",
+    "id" : "701",
     "superClasses" : [ "680", "789" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#ultra_extreme_temperature",
@@ -14180,7 +14180,7 @@
       "IRI-based" : "ultra_extreme_temperature"
     },
     "comment" : {
-      "undefined" : "> 10⁷ K"
+      "undefined" : "Stellar cores, thermonuclear explosions"
     },
     "id" : "598",
     "superClasses" : [ "572" ]
@@ -14204,7 +14204,7 @@
       "IRI-based" : "PaNET01273",
       "undefined" : "small angle inelastic scattering"
     },
-    "subClasses" : [ "702" ],
+    "subClasses" : [ "704" ],
     "intersection" : [ "18", "425" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "477",
@@ -14217,11 +14217,11 @@
       "IRI-based" : "PaNET01272",
       "undefined" : "nanofocus x-ray scattering"
     },
-    "subClasses" : [ "502" ],
-    "intersection" : [ "699", "1001" ],
+    "subClasses" : [ "497" ],
+    "intersection" : [ "701", "1001" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "503",
-    "superClasses" : [ "699", "1001" ]
+    "id" : "498",
+    "superClasses" : [ "701", "1001" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01279",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14294,7 +14294,7 @@
     "intersection" : [ "18", "556" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "453",
-    "superClasses" : [ "420", "709" ]
+    "superClasses" : [ "422", "711" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01277",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14364,7 +14364,7 @@
     "subClasses" : [ "453" ],
     "intersection" : [ "378", "668", "556" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "420",
+    "id" : "422",
     "superClasses" : [ "378", "556" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01262",
@@ -14374,11 +14374,11 @@
       "IRI-based" : "PaNET01262",
       "undefined" : "x-ray refraction tomography"
     },
-    "subClasses" : [ "385" ],
+    "subClasses" : [ "420" ],
     "intersection" : [ "537", "259" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "386",
-    "superClasses" : [ "537", "390", "691" ]
+    "id" : "389",
+    "superClasses" : [ "537", "390", "689" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01261",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14395,11 +14395,11 @@
       "IRI-based" : "PaNET01261",
       "undefined" : "x-ray refraction imaging"
     },
-    "subClasses" : [ "386", "394" ],
+    "subClasses" : [ "389", "394" ],
     "intersection" : [ "663", "440", "259" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "390",
-    "superClasses" : [ "664", "721" ]
+    "superClasses" : [ "664", "690" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#SAD",
     "baseIri" : "https://w3id.org/PaN/ESRFET",
@@ -14490,10 +14490,10 @@
       "undefined" : "time dependent diffraction"
     },
     "subClasses" : [ "581" ],
-    "intersection" : [ "422", "683" ],
+    "intersection" : [ "377", "683" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "489",
-    "superClasses" : [ "422", "683", "380" ]
+    "superClasses" : [ "377", "683", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01263",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14589,10 +14589,10 @@
       "IRI-based" : "PaNET01250",
       "undefined" : "high-resolution neutron imaging "
     },
-    "intersection" : [ "440", "722", "217" ],
+    "intersection" : [ "440", "723", "217" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "231",
-    "superClasses" : [ "722", "217" ]
+    "superClasses" : [ "723", "217" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01257",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14657,10 +14657,10 @@
       "IRI-based" : "PaNET01253",
       "undefined" : "magnetic diffraction"
     },
-    "intersection" : [ "422", "666" ],
+    "intersection" : [ "377", "666" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "488",
-    "superClasses" : [ "422", "666", "380" ]
+    "superClasses" : [ "377", "666", "385" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01252",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14703,7 +14703,7 @@
     },
     "intersection" : [ "789", "260" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "697",
+    "id" : "699",
     "superClasses" : [ "789", "260" ]
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#PXCT",
@@ -14754,7 +14754,7 @@
       "IRI-based" : "very_high_pressure"
     },
     "comment" : {
-      "undefined" : "Deep Earth conditions, mineral physics"
+      "undefined" : "1 × 10⁹ – 1 × 10¹¹ Pa"
     },
     "id" : "1224",
     "superClasses" : [ "144" ]
@@ -14883,7 +14883,7 @@
     "intersection" : [ "68", "259" ],
     "attributes" : [ "external", "intersection" ],
     "id" : "70",
-    "superClasses" : [ "484", "68", "721" ]
+    "superClasses" : [ "484", "68", "690" ]
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01297",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -14949,10 +14949,10 @@
       "IRI-based" : "PaNET01298",
       "undefined" : "elastic neutron scattering spectroscopy"
     },
-    "intersection" : [ "378", "722" ],
+    "intersection" : [ "378", "723" ],
     "attributes" : [ "external", "intersection" ],
-    "id" : "377",
-    "superClasses" : [ "378", "431", "265", "681" ]
+    "id" : "380",
+    "superClasses" : [ "378", "431", "267", "681" ]
   } ],
   "property" : [ {
     "id" : "0",
@@ -15378,10 +15378,10 @@
     "id" : "384",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "387",
+    "id" : "386",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "389",
+    "id" : "388",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "391",
@@ -15525,7 +15525,7 @@
     "id" : "499",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "501",
+    "id" : "502",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "504",
@@ -15753,16 +15753,10 @@
     "id" : "688",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "689",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "692",
+    "id" : "691",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "693",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "694",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "695",
@@ -15771,19 +15765,22 @@
     "id" : "696",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "697",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "698",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "700",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "701",
+    "id" : "702",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "713",
+    "id" : "703",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "716",
+    "id" : "715",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "718",
@@ -15792,7 +15789,7 @@
     "id" : "720",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "723",
+    "id" : "722",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "724",
@@ -15802,6 +15799,9 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "726",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "727",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "728",
@@ -15870,7 +15870,7 @@
     "id" : "770",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "794",
+    "id" : "793",
     "type" : "owl:objectProperty"
   }, {
     "id" : "802",
@@ -16464,6 +16464,9 @@
     "id" : "1134",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "1135",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "1136",
     "type" : "rdfs:SubClassOf"
   }, {
@@ -16498,9 +16501,6 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "1147",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "1148",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "1149",
@@ -18439,7 +18439,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "0"
   }, {
     "range" : "6",
@@ -18461,7 +18461,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "11",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "10"
   }, {
     "range" : "6",
@@ -18483,7 +18483,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "18",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "17"
   }, {
     "range" : "22",
@@ -18505,7 +18505,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "26",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "25"
   }, {
     "range" : "30",
@@ -18527,7 +18527,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "34",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "33"
   }, {
     "range" : "9",
@@ -18544,7 +18544,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "39",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "38"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -18556,7 +18556,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "42",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "41"
   }, {
     "range" : "9",
@@ -18573,7 +18573,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "49",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "48"
   }, {
     "range" : "9",
@@ -18625,7 +18625,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "72",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "71"
   }, {
     "range" : "68",
@@ -18642,7 +18642,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "77",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "76"
   }, {
     "range" : "81",
@@ -18659,7 +18659,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "83",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "82"
   }, {
     "range" : "63",
@@ -18681,7 +18681,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "91",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "90"
   }, {
     "range" : "63",
@@ -18703,7 +18703,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "97",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "96"
   }, {
     "range" : "63",
@@ -18725,7 +18725,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "105",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "104"
   }, {
     "range" : "63",
@@ -18747,7 +18747,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "112",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "111"
   }, {
     "range" : "63",
@@ -18764,7 +18764,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "117",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "116"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -18776,7 +18776,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "120",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "119"
   }, {
     "range" : "89",
@@ -18793,7 +18793,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "125",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "124"
   }, {
     "range" : "129",
@@ -18810,7 +18810,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "131",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "130"
   }, {
     "range" : "135",
@@ -18862,7 +18862,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "155",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "154"
   }, {
     "range" : "5",
@@ -19142,7 +19142,7 @@
     },
     "domain" : "324",
     "subproperty" : [ "326", "327", "328", "329" ],
-    "attributes" : [ "object", "asymmetric", "external", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external" ],
     "id" : "3"
   }, {
     "range" : "307",
@@ -19222,14 +19222,14 @@
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
     "baseIri" : "http://purl.org/pan-science/PaNET",
-    "range" : "268",
+    "range" : "265",
     "label" : {
       "IRI-based" : "PaNET1004000",
       "undefined" : "supports"
     },
     "superproperty" : [ "3" ],
     "domain" : "352",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "351"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -19241,7 +19241,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "354",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "353"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -19253,7 +19253,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "356",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "355"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -19265,7 +19265,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "358",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "357"
   }, {
     "range" : "362",
@@ -19292,7 +19292,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "368",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "367"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -19304,7 +19304,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "371",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "370"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -19316,7 +19316,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "374",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "373"
   }, {
     "range" : "378",
@@ -19334,20 +19334,20 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "381"
   }, {
-    "range" : "386",
+    "range" : "378",
     "domain" : "385",
     "attributes" : [ "object", "anonymous" ],
     "id" : "384"
   }, {
     "range" : "383",
-    "domain" : "388",
+    "domain" : "387",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "387"
+    "id" : "386"
   }, {
     "range" : "390",
-    "domain" : "386",
+    "domain" : "389",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "389"
+    "id" : "388"
   }, {
     "range" : "383",
     "domain" : "392",
@@ -19409,7 +19409,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "415"
   }, {
-    "range" : "378",
+    "range" : "389",
     "domain" : "420",
     "attributes" : [ "object", "anonymous" ],
     "id" : "419"
@@ -19489,7 +19489,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "450"
   }, {
-    "range" : "420",
+    "range" : "422",
     "domain" : "453",
     "attributes" : [ "object", "anonymous" ],
     "id" : "452"
@@ -19579,15 +19579,15 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "496"
   }, {
-    "range" : "498",
+    "range" : "501",
     "domain" : "500",
     "attributes" : [ "object", "anonymous" ],
     "id" : "499"
   }, {
-    "range" : "503",
-    "domain" : "502",
+    "range" : "501",
+    "domain" : "503",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "501"
+    "id" : "502"
   }, {
     "range" : "505",
     "domain" : "18",
@@ -19730,7 +19730,7 @@
     "id" : "560"
   }, {
     "range" : "537",
-    "domain" : "386",
+    "domain" : "389",
     "attributes" : [ "object", "anonymous" ],
     "id" : "561"
   }, {
@@ -19740,7 +19740,7 @@
     "id" : "562"
   }, {
     "range" : "537",
-    "domain" : "385",
+    "domain" : "420",
     "attributes" : [ "object", "anonymous" ],
     "id" : "563"
   }, {
@@ -19809,7 +19809,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "592"
   }, {
-    "range" : "385",
+    "range" : "420",
     "domain" : "594",
     "attributes" : [ "object", "anonymous" ],
     "id" : "593"
@@ -19880,7 +19880,7 @@
     "id" : "616"
   }, {
     "range" : "483",
-    "domain" : "500",
+    "domain" : "503",
     "attributes" : [ "object", "anonymous" ],
     "id" : "619"
   }, {
@@ -19969,103 +19969,103 @@
     "attributes" : [ "datatype" ],
     "id" : "644"
   }, {
-    "range" : "272",
-    "domain" : "271",
+    "range" : "690",
+    "domain" : "689",
     "attributes" : [ "object", "anonymous" ],
     "id" : "688"
   }, {
-    "range" : "272",
-    "domain" : "298",
+    "range" : "690",
+    "domain" : "70",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "689"
+    "id" : "691"
   }, {
-    "range" : "272",
-    "domain" : "260",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "692"
-  }, {
-    "range" : "266",
-    "domain" : "264",
+    "range" : "690",
+    "domain" : "694",
     "attributes" : [ "object", "anonymous" ],
     "id" : "693"
   }, {
-    "range" : "260",
-    "domain" : "258",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "694"
-  }, {
-    "range" : "260",
-    "domain" : "34",
+    "range" : "268",
+    "domain" : "266",
     "attributes" : [ "object", "anonymous" ],
     "id" : "695"
   }, {
     "range" : "260",
-    "domain" : "697",
+    "domain" : "258",
     "attributes" : [ "object", "anonymous" ],
     "id" : "696"
   }, {
-    "range" : "699",
-    "domain" : "503",
+    "range" : "260",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "697"
+  }, {
+    "range" : "260",
+    "domain" : "699",
     "attributes" : [ "object", "anonymous" ],
     "id" : "698"
   }, {
-    "range" : "699",
-    "domain" : "549",
+    "range" : "701",
+    "domain" : "498",
     "attributes" : [ "object", "anonymous" ],
     "id" : "700"
   }, {
-    "range" : "477",
-    "domain" : "702",
+    "range" : "701",
+    "domain" : "549",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "701"
+    "id" : "702"
+  }, {
+    "range" : "477",
+    "domain" : "704",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "703"
   }, {
     "range" : "262",
-    "domain" : "714",
+    "domain" : "716",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "713"
+    "id" : "715"
   }, {
     "range" : "262",
     "domain" : "11",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "716"
-  }, {
-    "range" : "719",
-    "domain" : "579",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "718"
   }, {
     "range" : "721",
-    "domain" : "390",
+    "domain" : "579",
     "attributes" : [ "object", "anonymous" ],
     "id" : "720"
-  }, {
-    "range" : "721",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "723"
-  }, {
-    "range" : "721",
-    "domain" : "691",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "724"
-  }, {
-    "range" : "721",
-    "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "725"
-  }, {
-    "range" : "721",
-    "domain" : "727",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "726"
   }, {
     "range" : "272",
     "domain" : "262",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "728"
+    "id" : "722"
   }, {
     "range" : "272",
-    "domain" : "266",
+    "domain" : "268",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "724"
+  }, {
+    "range" : "272",
+    "domain" : "271",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "725"
+  }, {
+    "range" : "272",
+    "domain" : "298",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "726"
+  }, {
+    "range" : "272",
+    "domain" : "260",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "727"
+  }, {
+    "range" : "690",
+    "domain" : "390",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "728"
+  }, {
+    "range" : "690",
+    "domain" : "16",
     "attributes" : [ "object", "anonymous" ],
     "id" : "730"
   }, {
@@ -20080,7 +20080,7 @@
     "id" : "742"
   }, {
     "range" : "676",
-    "domain" : "706",
+    "domain" : "708",
     "attributes" : [ "object", "anonymous" ],
     "id" : "744"
   }, {
@@ -20135,7 +20135,7 @@
     "id" : "761"
   }, {
     "range" : "484",
-    "domain" : "497",
+    "domain" : "500",
     "attributes" : [ "object", "anonymous" ],
     "id" : "762"
   }, {
@@ -20180,7 +20180,7 @@
       "undefined" : "Example: XRPD requires powder\n                XRD does not require any sample type\n\n                Another way of looking at it:\n                diffraction (cascade of events being detected) requires 'any of' single crystal, powder, fiber\n                X-ray powder diffraction (technique) requires 'exactly' powder"
     },
     "attributes" : [ "object" ],
-    "id" : "794"
+    "id" : "793"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1003000",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -20191,7 +20191,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "383",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "802"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -20203,7 +20203,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "432",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "804"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -20215,7 +20215,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "278",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "805"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -20226,8 +20226,8 @@
       "undefined" : "definedbyprobe"
     },
     "superproperty" : [ "3" ],
-    "domain" : "722",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "domain" : "723",
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "807"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -20239,7 +20239,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "732",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "809"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -20251,7 +20251,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "812",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "811"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -20263,7 +20263,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "777",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "814"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -20275,7 +20275,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "773",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "816"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -20287,7 +20287,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "416",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "819"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -20299,7 +20299,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "414",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "823"
   }, {
     "range" : "339",
@@ -20358,7 +20358,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "843"
   }, {
-    "range" : "500",
+    "range" : "503",
     "domain" : "758",
     "attributes" : [ "object", "anonymous" ],
     "id" : "850"
@@ -20393,12 +20393,12 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "857"
   }, {
-    "range" : "705",
+    "range" : "707",
     "domain" : "735",
     "attributes" : [ "object", "anonymous" ],
     "id" : "859"
   }, {
-    "range" : "705",
+    "range" : "707",
     "domain" : "659",
     "attributes" : [ "object", "anonymous" ],
     "id" : "860"
@@ -20418,8 +20418,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "863"
   }, {
-    "range" : "422",
-    "domain" : "485",
+    "range" : "377",
+    "domain" : "358",
     "attributes" : [ "object", "anonymous" ],
     "id" : "864"
   }, {
@@ -20428,8 +20428,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "865"
   }, {
-    "range" : "422",
-    "domain" : "358",
+    "range" : "377",
+    "domain" : "484",
     "attributes" : [ "object", "anonymous" ],
     "id" : "866"
   }, {
@@ -20438,8 +20438,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "867"
   }, {
-    "range" : "422",
-    "domain" : "68",
+    "range" : "377",
+    "domain" : "399",
     "attributes" : [ "object", "anonymous" ],
     "id" : "868"
   }, {
@@ -20448,18 +20448,18 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "869"
   }, {
-    "range" : "422",
-    "domain" : "399",
+    "range" : "377",
+    "domain" : "485",
     "attributes" : [ "object", "anonymous" ],
     "id" : "870"
   }, {
     "range" : "440",
-    "domain" : "721",
+    "domain" : "690",
     "attributes" : [ "object", "anonymous" ],
     "id" : "871"
   }, {
-    "range" : "422",
-    "domain" : "483",
+    "range" : "489",
+    "domain" : "581",
     "attributes" : [ "object", "anonymous" ],
     "id" : "872"
   }, {
@@ -20478,28 +20478,28 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "878"
   }, {
-    "range" : "422",
-    "domain" : "484",
+    "range" : "377",
+    "domain" : "368",
     "attributes" : [ "object", "anonymous" ],
     "id" : "879"
   }, {
-    "range" : "422",
-    "domain" : "368",
+    "range" : "377",
+    "domain" : "483",
     "attributes" : [ "object", "anonymous" ],
     "id" : "880"
   }, {
-    "range" : "422",
-    "domain" : "487",
+    "range" : "377",
+    "domain" : "486",
     "attributes" : [ "object", "anonymous" ],
     "id" : "881"
   }, {
-    "range" : "422",
-    "domain" : "486",
+    "range" : "377",
+    "domain" : "68",
     "attributes" : [ "object", "anonymous" ],
     "id" : "882"
   }, {
-    "range" : "422",
-    "domain" : "488",
+    "range" : "377",
+    "domain" : "487",
     "attributes" : [ "object", "anonymous" ],
     "id" : "883"
   }, {
@@ -20559,7 +20559,7 @@
     "id" : "896"
   }, {
     "range" : "481",
-    "domain" : "702",
+    "domain" : "704",
     "attributes" : [ "object", "anonymous" ],
     "id" : "897"
   }, {
@@ -20574,12 +20574,12 @@
     "id" : "899"
   }, {
     "range" : "440",
-    "domain" : "690",
+    "domain" : "692",
     "attributes" : [ "object", "anonymous" ],
     "id" : "900"
   }, {
     "range" : "876",
-    "domain" : "498",
+    "domain" : "501",
     "attributes" : [ "object", "anonymous" ],
     "id" : "901"
   }, {
@@ -20657,7 +20657,7 @@
     "id" : "980"
   }, {
     "range" : "416",
-    "domain" : "722",
+    "domain" : "723",
     "attributes" : [ "object", "anonymous" ],
     "id" : "981"
   }, {
@@ -20747,7 +20747,7 @@
     "id" : "1000"
   }, {
     "range" : "1001",
-    "domain" : "503",
+    "domain" : "498",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1002"
   }, {
@@ -20837,7 +20837,7 @@
     "id" : "1028"
   }, {
     "range" : "780",
-    "domain" : "704",
+    "domain" : "706",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1029"
   }, {
@@ -20877,7 +20877,7 @@
     "id" : "1038"
   }, {
     "range" : "259",
-    "domain" : "712",
+    "domain" : "714",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1040"
   }, {
@@ -20912,7 +20912,7 @@
     "id" : "1049"
   }, {
     "range" : "259",
-    "domain" : "385",
+    "domain" : "420",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1051"
   }, {
@@ -20937,7 +20937,7 @@
     "id" : "1056"
   }, {
     "range" : "259",
-    "domain" : "721",
+    "domain" : "690",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1057"
   }, {
@@ -21076,7 +21076,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1090"
   }, {
-    "range" : "690",
+    "range" : "692",
     "domain" : "270",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1092"
@@ -21132,7 +21132,7 @@
     "id" : "1106"
   }, {
     "range" : "826",
-    "domain" : "727",
+    "domain" : "694",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1107"
   }, {
@@ -21185,7 +21185,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "324",
-    "attributes" : [ "object", "asymmetric", "external", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external" ],
     "id" : "327"
   }, {
     "range" : "664",
@@ -21229,107 +21229,107 @@
     "id" : "1126"
   }, {
     "range" : "187",
-    "domain" : "708",
+    "domain" : "710",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1128"
   }, {
     "range" : "18",
-    "domain" : "709",
+    "domain" : "711",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1129"
   }, {
-    "range" : "489",
-    "domain" : "581",
+    "range" : "377",
+    "domain" : "493",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1130"
   }, {
     "range" : "662",
-    "domain" : "710",
+    "domain" : "712",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1131"
   }, {
-    "range" : "422",
-    "domain" : "493",
+    "range" : "377",
+    "domain" : "492",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1132"
   }, {
     "range" : "662",
-    "domain" : "711",
+    "domain" : "713",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1133"
   }, {
     "range" : "682",
-    "domain" : "1135",
+    "domain" : "509",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1134"
   }, {
     "range" : "662",
-    "domain" : "712",
+    "domain" : "714",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "1136"
-  }, {
-    "range" : "682",
-    "domain" : "509",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1137"
-  }, {
-    "range" : "40",
-    "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1138"
-  }, {
-    "range" : "422",
-    "domain" : "490",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1139"
-  }, {
-    "range" : "50",
-    "domain" : "372",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1140"
-  }, {
-    "range" : "422",
-    "domain" : "489",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1141"
-  }, {
-    "range" : "50",
-    "domain" : "375",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1142"
-  }, {
-    "range" : "422",
-    "domain" : "492",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1143"
-  }, {
-    "range" : "180",
-    "domain" : "286",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1144"
-  }, {
-    "range" : "422",
-    "domain" : "491",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1145"
-  }, {
-    "range" : "710",
-    "domain" : "715",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1146"
-  }, {
-    "range" : "717",
-    "domain" : "628",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "1147"
+    "id" : "1135"
   }, {
     "range" : "683",
     "domain" : "489",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "1148"
+    "id" : "1136"
+  }, {
+    "range" : "40",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1137"
+  }, {
+    "range" : "377",
+    "domain" : "489",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1138"
+  }, {
+    "range" : "180",
+    "domain" : "286",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1139"
+  }, {
+    "range" : "377",
+    "domain" : "488",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1140"
+  }, {
+    "range" : "50",
+    "domain" : "372",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1141"
+  }, {
+    "range" : "377",
+    "domain" : "491",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1142"
+  }, {
+    "range" : "50",
+    "domain" : "375",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1143"
+  }, {
+    "range" : "377",
+    "domain" : "490",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1144"
+  }, {
+    "range" : "712",
+    "domain" : "717",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1145"
+  }, {
+    "range" : "719",
+    "domain" : "628",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1146"
+  }, {
+    "range" : "682",
+    "domain" : "1148",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1147"
   }, {
     "range" : "491",
-    "domain" : "717",
+    "domain" : "719",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1149"
   }, {
@@ -21339,7 +21339,7 @@
     "id" : "1150"
   }, {
     "range" : "1153",
-    "domain" : "707",
+    "domain" : "709",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1152"
   }, {
@@ -21348,7 +21348,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1154"
   }, {
-    "range" : "265",
+    "range" : "267",
     "domain" : "296",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1155"
@@ -21363,18 +21363,18 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1157"
   }, {
-    "range" : "265",
-    "domain" : "707",
+    "range" : "267",
+    "domain" : "709",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1158"
   }, {
-    "range" : "711",
-    "domain" : "715",
+    "range" : "713",
+    "domain" : "717",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1159"
   }, {
-    "range" : "265",
-    "domain" : "377",
+    "range" : "267",
+    "domain" : "380",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1160"
   }, {
@@ -21424,12 +21424,12 @@
     "id" : "1170"
   }, {
     "range" : "259",
-    "domain" : "714",
+    "domain" : "716",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1171"
   }, {
     "range" : "18",
-    "domain" : "708",
+    "domain" : "710",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1172"
   }, {
@@ -21538,13 +21538,13 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1196"
   }, {
-    "range" : "265",
-    "domain" : "703",
+    "range" : "267",
+    "domain" : "705",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1198"
   }, {
     "range" : "681",
-    "domain" : "708",
+    "domain" : "710",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1199"
   }, {
@@ -21553,8 +21553,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1200"
   }, {
-    "range" : "265",
-    "domain" : "264",
+    "range" : "267",
+    "domain" : "266",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1201"
   }, {
@@ -21568,8 +21568,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1203"
   }, {
-    "range" : "265",
-    "domain" : "704",
+    "range" : "267",
+    "domain" : "706",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1204"
   }, {
@@ -21583,13 +21583,13 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1206"
   }, {
-    "range" : "265",
+    "range" : "267",
     "domain" : "274",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1207"
   }, {
     "range" : "681",
-    "domain" : "377",
+    "domain" : "380",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1208"
   }, {
@@ -21598,22 +21598,22 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1209"
   }, {
-    "range" : "265",
-    "domain" : "705",
+    "range" : "267",
+    "domain" : "707",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1210"
   }, {
-    "range" : "265",
+    "range" : "267",
     "domain" : "81",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1211"
   }, {
-    "range" : "265",
-    "domain" : "706",
+    "range" : "267",
+    "domain" : "708",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1212"
   }, {
-    "range" : "265",
+    "range" : "267",
     "domain" : "463",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1213"
@@ -21657,7 +21657,7 @@
     "id" : "1220"
   }, {
     "range" : "743",
-    "domain" : "705",
+    "domain" : "707",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1228"
   }, {
@@ -21721,47 +21721,47 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1243"
   }, {
-    "range" : "722",
+    "range" : "723",
     "domain" : "231",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1244"
   }, {
-    "range" : "722",
+    "range" : "723",
     "domain" : "1230",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1245"
   }, {
-    "range" : "722",
-    "domain" : "711",
+    "range" : "723",
+    "domain" : "713",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1246"
   }, {
-    "range" : "722",
+    "range" : "723",
     "domain" : "1232",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1247"
   }, {
-    "range" : "722",
+    "range" : "723",
     "domain" : "187",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1248"
   }, {
-    "range" : "722",
+    "range" : "723",
     "domain" : "1020",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1249"
   }, {
-    "range" : "722",
+    "range" : "723",
     "domain" : "1125",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1250"
   }, {
-    "range" : "722",
+    "range" : "723",
     "domain" : "681",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1251"
   }, {
-    "range" : "722",
+    "range" : "723",
     "domain" : "1153",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1252"
@@ -21777,12 +21777,12 @@
     "id" : "1254"
   }, {
     "range" : "789",
-    "domain" : "703",
+    "domain" : "705",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1256"
   }, {
     "range" : "789",
-    "domain" : "699",
+    "domain" : "701",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1257"
   }, {
@@ -21792,7 +21792,7 @@
     "id" : "1258"
   }, {
     "range" : "789",
-    "domain" : "697",
+    "domain" : "699",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1259"
   }, {
@@ -21821,7 +21821,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1264"
   }, {
-    "range" : "691",
+    "range" : "689",
     "domain" : "665",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1266"
@@ -21836,12 +21836,12 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1268"
   }, {
-    "range" : "706",
+    "range" : "708",
     "domain" : "754",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1269"
   }, {
-    "range" : "706",
+    "range" : "708",
     "domain" : "282",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1270"
@@ -22011,8 +22011,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1325"
   }, {
-    "range" : "655",
-    "domain" : "533",
+    "range" : "14",
+    "domain" : "158",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1328"
   }, {
@@ -22061,8 +22061,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1338"
   }, {
-    "range" : "14",
-    "domain" : "158",
+    "range" : "655",
+    "domain" : "533",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1339"
   }, {
@@ -22112,7 +22112,7 @@
     "id" : "1351"
   }, {
     "range" : "270",
-    "domain" : "691",
+    "domain" : "689",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1352"
   }, {
@@ -22272,7 +22272,7 @@
     "id" : "1394"
   }, {
     "range" : "382",
-    "domain" : "717",
+    "domain" : "719",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1395"
   }, {
@@ -22290,10 +22290,10 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "459",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1397"
   }, {
-    "range" : "388",
+    "range" : "387",
     "domain" : "161",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1398"
@@ -22329,7 +22329,7 @@
     "id" : "1405"
   }, {
     "range" : "402",
-    "domain" : "265",
+    "domain" : "267",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1406"
   }, {
@@ -22342,7 +22342,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "392",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1408"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1003000",
@@ -22354,7 +22354,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "396",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1409"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1003000",
@@ -22366,7 +22366,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "277",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1410"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1003000",
@@ -22378,7 +22378,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "409",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1411"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1003000",
@@ -22390,7 +22390,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "382",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1412"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1003000",
@@ -22401,8 +22401,8 @@
       "undefined" : "definedbydependence"
     },
     "superproperty" : [ "3" ],
-    "domain" : "388",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "domain" : "387",
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1413"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22414,7 +22414,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "656",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1414"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22426,7 +22426,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "657",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1415"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1003000",
@@ -22438,7 +22438,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "402",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1416"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22450,7 +22450,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "655",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1417"
   }, {
     "range" : "47",
@@ -22512,7 +22512,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "444",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1441"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22524,7 +22524,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "667",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1442"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22536,7 +22536,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "660",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1443"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22548,7 +22548,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "684",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1444"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22560,7 +22560,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "685",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1445"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22572,7 +22572,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "661",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1446"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22584,7 +22584,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "663",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1447"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -22596,7 +22596,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "789",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1448"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22608,7 +22608,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "283",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1449"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22620,7 +22620,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "677",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1450"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -22632,7 +22632,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1197",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1451"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -22644,7 +22644,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "753",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1453"
   }, {
     "range" : "47",
@@ -22661,7 +22661,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "259",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1455"
   }, {
     "range" : "47",
@@ -22718,7 +22718,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "734",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1465"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -22730,7 +22730,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "784",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1466"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -22742,7 +22742,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1034",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1467"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -22754,7 +22754,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "780",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1468"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -22766,7 +22766,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1001",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1469"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -22778,7 +22778,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "774",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1470"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -22790,7 +22790,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1079",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1471"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -22802,7 +22802,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "743",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1472"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -22814,7 +22814,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "461",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1473"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -22826,7 +22826,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "455",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1474"
   }, {
     "range" : "47",
@@ -22888,7 +22888,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "975",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1485"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -22900,7 +22900,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "731",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1486"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -22912,19 +22912,19 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "448",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1487"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
     "baseIri" : "http://purl.org/pan-science/PaNET",
-    "range" : "267",
+    "range" : "264",
     "label" : {
       "IRI-based" : "PaNET1004000",
       "undefined" : "supports"
     },
     "superproperty" : [ "3" ],
     "domain" : "977",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1489"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -22936,7 +22936,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "986",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1490"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -22948,7 +22948,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "436",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1491"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -22960,7 +22960,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "457",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1492"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -22972,7 +22972,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "451",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1493"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -22984,7 +22984,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "431",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1494"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -22996,7 +22996,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "674",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1495"
   }, {
     "range" : "362",
@@ -23018,7 +23018,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "291",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1499"
   }, {
     "range" : "1048",
@@ -23040,7 +23040,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "262",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1504"
   }, {
     "range" : "361",
@@ -23062,7 +23062,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "272",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1508"
   }, {
     "range" : "1488",
@@ -23071,7 +23071,7 @@
     "id" : "1509"
   }, {
     "range" : "1512",
-    "domain" : "719",
+    "domain" : "721",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1511"
   }, {
@@ -23080,8 +23080,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1513"
   }, {
-    "range" : "691",
-    "domain" : "386",
+    "range" : "689",
+    "domain" : "389",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1514"
   }, {
@@ -23090,7 +23090,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1515"
   }, {
-    "range" : "691",
+    "range" : "689",
     "domain" : "1512",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1517"
@@ -23104,7 +23104,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "467",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1518"
   }, {
     "range" : "1488",
@@ -23113,7 +23113,7 @@
     "id" : "1520"
   }, {
     "range" : "549",
-    "domain" : "502",
+    "domain" : "497",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1521"
   }, {
@@ -23136,7 +23136,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "505",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1526"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -23148,7 +23148,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "511",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1527"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -23160,7 +23160,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "469",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1528"
   }, {
     "range" : "240",
@@ -23177,7 +23177,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "755",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1530"
   }, {
     "range" : "240",
@@ -23194,7 +23194,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "424",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1532"
   }, {
     "range" : "240",
@@ -23211,11 +23211,11 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "425",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1534"
   }, {
     "range" : "240",
-    "domain" : "719",
+    "domain" : "721",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1535"
   }, {
@@ -23227,8 +23227,8 @@
       "undefined" : "definedbyprocess"
     },
     "superproperty" : [ "3" ],
-    "domain" : "422",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "domain" : "377",
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1536"
   }, {
     "range" : "144",
@@ -23245,7 +23245,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "682",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1538"
   }, {
     "range" : "1505",
@@ -23267,7 +23267,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "491",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1541"
   }, {
     "range" : "1505",
@@ -23289,7 +23289,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "492",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1544"
   }, {
     "range" : "1546",
@@ -23361,7 +23361,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "378",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1559"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -23373,7 +23373,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1232",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1560"
   }, {
     "range" : "425",
@@ -23390,7 +23390,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "826",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1562"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1001000",
@@ -23402,7 +23402,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1113",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1563"
   }, {
     "range" : "144",
@@ -23419,7 +23419,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1110",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1565"
   }, {
     "range" : "144",
@@ -23436,7 +23436,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1125",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1567"
   }, {
     "range" : "144",
@@ -23453,7 +23453,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "217",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1569"
   }, {
     "range" : "1377",
@@ -23470,7 +23470,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1287",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1571"
   }, {
     "range" : "1377",
@@ -23487,7 +23487,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1102",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1575"
   }, {
     "range" : "1381",
@@ -23503,8 +23503,8 @@
       "undefined" : "supports"
     },
     "superproperty" : [ "3" ],
-    "domain" : "690",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "domain" : "692",
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1578"
   }, {
     "range" : "1375",
@@ -23521,7 +23521,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1285",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1581"
   }, {
     "range" : "1375",
@@ -23543,7 +23543,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1286",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1586"
   }, {
     "range" : "1375",
@@ -23560,7 +23560,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "235",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1588"
   }, {
     "range" : "144",
@@ -23577,7 +23577,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "164",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1591"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1003000",
@@ -23589,7 +23589,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "284",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1592"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1003000",
@@ -23601,7 +23601,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "135",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1593"
   }, {
     "range" : "409",
@@ -23618,7 +23618,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "191",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1595"
   }, {
     "range" : "1377",
@@ -23635,7 +23635,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "173",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1598"
   }, {
     "range" : "402",
@@ -23652,7 +23652,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "252",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1601"
   }, {
     "range" : "402",
@@ -23669,7 +23669,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "261",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1603"
   }, {
     "range" : "402",
@@ -23686,7 +23686,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "178",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1605"
   }, {
     "range" : "277",
@@ -23700,7 +23700,7 @@
     "id" : "1608"
   }, {
     "range" : "277",
-    "domain" : "710",
+    "domain" : "712",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1609"
   }, {
@@ -23713,7 +23713,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "188",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1610"
   }, {
     "range" : "277",
@@ -23730,7 +23730,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "324",
-    "attributes" : [ "object", "asymmetric", "external", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external" ],
     "id" : "328"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -23742,7 +23742,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "227",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1612"
   }, {
     "range" : "277",
@@ -23751,7 +23751,7 @@
     "id" : "1613"
   }, {
     "range" : "409",
-    "domain" : "717",
+    "domain" : "719",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1614"
   }, {
@@ -23764,7 +23764,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "222",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1615"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -23775,8 +23775,8 @@
       "undefined" : "definedbyprocess"
     },
     "superproperty" : [ "3" ],
-    "domain" : "266",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "domain" : "268",
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1616"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -23788,7 +23788,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "260",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1618"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -23800,7 +23800,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "675",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1619"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1002000",
@@ -23812,7 +23812,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "676",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1620"
   }, {
     "range" : "402",
@@ -23829,7 +23829,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1101",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1622"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -23841,7 +23841,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1098",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1623"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET1004000",
@@ -23853,7 +23853,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1094",
-    "attributes" : [ "object", "asymmetric", "external", "someValues", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external", "someValues" ],
     "id" : "1624"
   }, {
     "range" : "47",
@@ -24002,7 +24002,7 @@
     "id" : "1659"
   }, {
     "range" : "358",
-    "domain" : "1135",
+    "domain" : "1148",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1660"
   }, {
@@ -24052,7 +24052,7 @@
     "id" : "1671"
   }, {
     "range" : "457",
-    "domain" : "721",
+    "domain" : "690",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1672"
   }, {
@@ -24066,17 +24066,17 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1674"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "491",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1681"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "492",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1682"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "493",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1683"
@@ -24101,57 +24101,57 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1687"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "488",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1688"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "489",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1689"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "490",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1690"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "368",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1691"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "484",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1693"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "358",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1694"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "485",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1695"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "399",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1696"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "68",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1697"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "486",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1698"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "487",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1699"
@@ -24161,7 +24161,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1700"
   }, {
-    "range" : "380",
+    "range" : "385",
     "domain" : "483",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1701"
@@ -24372,7 +24372,7 @@
     "id" : "1742"
   }, {
     "range" : "457",
-    "domain" : "690",
+    "domain" : "692",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1743"
   }, {
@@ -24422,7 +24422,7 @@
     "id" : "1752"
   }, {
     "range" : "431",
-    "domain" : "377",
+    "domain" : "380",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1753"
   }, {
@@ -24482,7 +24482,7 @@
     "id" : "1764"
   }, {
     "range" : "195",
-    "domain" : "267",
+    "domain" : "264",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1765"
   }, {
@@ -24607,7 +24607,7 @@
     "id" : "1790"
   }, {
     "range" : "556",
-    "domain" : "420",
+    "domain" : "422",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1791"
   }, {
@@ -24632,7 +24632,7 @@
     "id" : "1796"
   }, {
     "range" : "475",
-    "domain" : "702",
+    "domain" : "704",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1797"
   }, {
@@ -24647,7 +24647,7 @@
     "id" : "1799"
   }, {
     "range" : "680",
-    "domain" : "699",
+    "domain" : "701",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1800"
   }, {
@@ -24667,7 +24667,7 @@
     "id" : "1803"
   }, {
     "range" : "680",
-    "domain" : "709",
+    "domain" : "711",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1804"
   }, {
@@ -24690,7 +24690,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "324",
-    "attributes" : [ "object", "asymmetric", "external", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external" ],
     "id" : "326"
   }, {
     "range" : "80",
@@ -24783,7 +24783,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1824"
   }, {
-    "range" : "703",
+    "range" : "705",
     "domain" : "790",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1825"
@@ -24904,7 +24904,7 @@
     "id" : "1851"
   }, {
     "range" : "333",
-    "domain" : "797",
+    "domain" : "796",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1852"
   }, {
@@ -24943,37 +24943,37 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1860"
   }, {
-    "range" : "709",
+    "range" : "711",
     "domain" : "829",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1861"
   }, {
-    "range" : "709",
-    "domain" : "702",
+    "range" : "711",
+    "domain" : "704",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1862"
   }, {
-    "range" : "709",
+    "range" : "711",
     "domain" : "289",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1863"
   }, {
-    "range" : "709",
+    "range" : "711",
     "domain" : "508",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1864"
   }, {
-    "range" : "709",
-    "domain" : "719",
+    "range" : "711",
+    "domain" : "721",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1865"
   }, {
-    "range" : "709",
+    "range" : "711",
     "domain" : "786",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1866"
   }, {
-    "range" : "709",
+    "range" : "711",
     "domain" : "453",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1867"
@@ -24997,7 +24997,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "324",
-    "attributes" : [ "object", "asymmetric", "external", "irreflexive" ],
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external" ],
     "id" : "329"
   }, {
     "iri" : "https://w3id.org/PaN/ESRFET#requires_sample_input",
@@ -25073,12 +25073,12 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "1886"
   }, {
-    "range" : "267",
-    "domain" : "268",
+    "range" : "264",
+    "domain" : "265",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1887"
   }, {
-    "range" : "267",
+    "range" : "264",
     "domain" : "50",
     "attributes" : [ "object", "anonymous" ],
     "id" : "1888"
