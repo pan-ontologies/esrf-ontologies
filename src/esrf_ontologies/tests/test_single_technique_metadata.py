@@ -85,7 +85,7 @@ def test_fill_scan_info():
 
 
 def test_wrong_technique_metadata():
-    with pytest.raises(KeyError, match="'WRONG' is not a known technique name"):
+    with pytest.raises(KeyError, match="'WRONG' is not a known technique name or IRI"):
         get_technique_metadata("XAS", "WRONG")
 
 
@@ -94,3 +94,19 @@ def test_empty_technique_metadata():
     assert metadata.get_dataset_metadata() == dict()
     assert metadata.get_scan_info() == dict()
     assert metadata.get_scan_metadata() is None
+
+
+def test_get_metadata_from_iri():
+    metadata = get_technique_metadata("https://w3id.org/PaN/ESRFET#XAS")
+    dataset_metadata = metadata.get_dataset_metadata()
+
+    assert dataset_metadata["definition"] == "XAS"
+    assert dataset_metadata["technique_pid"] == "https://w3id.org/PaN/ESRFET#XAS"
+
+
+def test_get_metadata_from_name():
+    metadata = get_technique_metadata("xas")
+    dataset_metadata = metadata.get_dataset_metadata()
+
+    assert dataset_metadata["definition"] == "XAS"
+    assert dataset_metadata["technique_pid"] == "https://w3id.org/PaN/ESRFET#XAS"
