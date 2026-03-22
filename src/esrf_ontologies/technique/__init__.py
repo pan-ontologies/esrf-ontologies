@@ -2,7 +2,6 @@ from functools import lru_cache
 from typing import Generator
 from typing import List
 from typing import Set
-from typing import Tuple
 
 from ..db import load_techniques as _load_techniques
 from .types import BLISS_SCANINFO_CATEGORY  # noqa F401
@@ -10,13 +9,13 @@ from .types import Technique
 from .types import TechniqueMetadata
 
 
-def get_technique_metadata(*identifiers: Tuple[str]) -> TechniqueMetadata:
+def get_technique_metadata(*identifiers: str) -> TechniqueMetadata:
     """Returns an object that can generate several types of metadata
     associated to the provided technique names or IRIs."""
     return TechniqueMetadata(techniques=set(_iter_from_identifiers(*identifiers)))
 
 
-def get_techniques(*identifiers: Tuple[str]) -> Set[Technique]:
+def get_techniques(*identifiers: str) -> Set[Technique]:
     """Returns a set of techniques referenced by the provided technique names or IRIs."""
     return set(_iter_from_identifiers(*identifiers))
 
