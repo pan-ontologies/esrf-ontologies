@@ -21,9 +21,9 @@ def get_techniques(*identifiers: str) -> Set[Technique]:
     return set(_iter_from_identifiers(*identifiers))
 
 
-def get_technique(name: str) -> Technique:
-    """Returns a technique referenced by the provided technique name."""
-    return next(_iter_from_names(name))
+def get_technique(identifier: str) -> Technique:
+    """Returns a technique referenced by the provided technique name or IRI."""
+    return next(_iter_from_identifiers(identifier))
 
 
 def get_ontology_version(metadata: Optional[TechniqueMetadata] = None) -> str:
