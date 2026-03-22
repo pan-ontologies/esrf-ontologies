@@ -47,6 +47,7 @@ class TechniqueMetadata:
     ) -> Optional[Dict[str, Union[List[str], Dict[str, str]]]]:
         if self.techniques:
             return self._get_nxentry_children()
+        return None
 
     def get_scan_info(self) -> Dict[str, Union[List[str], Dict[str, str]]]:
         if not self.techniques:
@@ -112,8 +113,12 @@ class TechniqueMetadata:
     def fill_dataset_metadata(self, dataset: MutableMapping) -> None:
         if not self.techniques:
             return
-        # Currently handles mutable mappings by only using __getitem__ and __setitem__
+
+        # The 'dataset' object from Bliss handles mutable mappings by only using
+        # __getitem__ and __setitem__
         # https://gitlab.esrf.fr/bliss/bliss/-/blob/master/bliss/icat/policy.py
+
+        # Get existing dataset technique names and pid's
         try:
             definitions = dataset["definition"].split(" ")
         except KeyError:
@@ -122,12 +127,14 @@ class TechniqueMetadata:
             pids = dataset["technique_pid"].split(" ")
         except KeyError:
             pids = list()
+
+        # Add technique names and pid's
         techniques = dict(zip(pids, definitions))
         for technique in self.techniques:
             techniques[technique.iri] = technique.primary_name
+
+        # Replace ICAT metadata associated to 'techniques'
         metadata = self._get_icat_metadata(techniques)
-        ontology_version = self._get_ontology_version_number()
-        metadata["technique_pid_esrfet_version"] = ontology_version
         for key, value in metadata.items():
             try:
                 dataset[key] = value
@@ -139,9 +146,6 @@ class TechniqueMetadata:
                     continue
                 raise
 
-    def _get_ontology_version_number(self) -> str:
-        return next(iter(self.techniques)).ontology_version.lstrip("v")
-
     def get_dataset_metadata(self) -> Dict[str, str]:
         if not self.techniques:
             return dict()
@@ -151,6 +155,8 @@ class TechniqueMetadata:
         return self._get_icat_metadata(techniques)
 
     def _get_icat_metadata(self, techniques: Dict[str, str]) -> Dict[str, str]:
+        if not techniques:
+            return dict()
         iris, definitions = zip(*sorted(techniques.items(), key=lambda tpl: tpl[1]))
         metadata = {
             "technique_pid": " ".join(iris),
@@ -161,3 +167,8 @@ class TechniqueMetadata:
                 self._get_ontology_version_number()
             )
         return metadata
+
+    def _get_ontology_version_number(self) -> Optional[str]:
+        if self.techniques:
+            return next(iter(self.techniques)).ontology_version.lstrip("v")
+        return None
