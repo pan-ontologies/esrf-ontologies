@@ -6,7 +6,7 @@ Development requirements are listed in `pyproject.toml` and can be installed wit
 pip install [--user] [-e] .[dev]
 ```
 
-The Java Runtime (JRE) needs to be installed for the HermiT reasoner
+The Java Runtime (JRE) needs to be installed for the [HermiT](http://www.hermit-reasoner.com/) reasoner
 
 ```bash
 sudo apt install default-jre
