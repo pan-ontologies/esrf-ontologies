@@ -1097,6 +1097,18 @@
     
 
 
+    <!-- https://w3id.org/PaN/ESRFET#FPDI -->
+
+
+    <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#FPDI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/PaN/ESRFET#experimental_technique"/>
+        <rdfs:comment>Fabry-Pérot displacement interferometry (FPDI) measures minute changes in position by tracking shifts in the resonant frequencies of an optical cavity formed by two reflective surfaces. This technique provides sub-nanometer accuracy and resolution for dynamic displacement metrology.</rdfs:comment>
+        <rdfs:label>FPDI</rdfs:label>
+        <skos:prefLabel>Fabry-Pérot displacement interferometry</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/PaN/ESRFET#FS-EXAFS -->
 
 
