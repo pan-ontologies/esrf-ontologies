@@ -27,14 +27,6 @@
         <Literal>The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques.</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="terms:created"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-07-07</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="terms:creator"/>
-        <IRI>#person/GKoumoutsos</IRI>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:contributor"/>
         <IRI>#person/LBroche</IRI>
     </Annotation>
@@ -45,6 +37,14 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:contributor"/>
         <IRI>#person/POAutran</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-07-07</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <IRI>#person/GKoumoutsos</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:creator"/>
@@ -78,6 +78,9 @@
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal>v0.1.0</Literal>
     </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#ARPES"/>
     </Declaration>
@@ -155,6 +158,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#FF-XRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FPDI"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FS-EXAFS"/>
@@ -811,9 +817,6 @@
         <Class IRI="#TR‑SSX"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="foaf:Organization"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
     </Declaration>
     <Declaration>
@@ -914,6 +917,9 @@
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#BioSAXS"/>
@@ -1606,11 +1612,11 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
+                <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -2398,11 +2404,11 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#simultanious_reference"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
+                <Class IRI="#simultanious_reference"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -2802,6 +2808,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFXM"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FPDI"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -3983,6 +3993,21 @@
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#FF-XRF</IRI>
         <Literal>Full-Field X-ray Fluorescence Imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FPDI</IRI>
+        <Literal>Fabry-Perot displacement interferometry measures minute changes in position by tracking shifts in the resonant frequencies of an optical cavity formed by two reflective surfaces. This technique provides sub-nanometer accuracy and resolution for dynamic displacement metrology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FPDI</IRI>
+        <Literal>FPDI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#FPDI</IRI>
+        <Literal>Fabry-Pérot displacement interferometry</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

@@ -263,6 +263,16 @@
     "ontology_version": "v0.1.0"
   },
   {
+    "iri": "https://w3id.org/PaN/ESRFET#FPDI",
+    "names": [
+      "FPDI",
+      "Fabry-P\u00e9rot displacement interferometry"
+    ],
+    "description": "Fabry-Perot displacement interferometry measures minute changes in position by tracking shifts in the resonant frequencies of an optical cavity formed by two reflective surfaces. This technique provides sub-nanometer accuracy and resolution for dynamic displacement metrology.",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FPDI",
+    "ontology_version": "v0.1.0"
+  },
+  {
     "iri": "https://w3id.org/PaN/ESRFET#FS-EXAFS",
     "names": [
       "FS-EXAFS",
