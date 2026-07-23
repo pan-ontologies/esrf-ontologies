@@ -56,9 +56,9 @@
     "iri": "https://w3id.org/PaN/ESRFET#CMS",
     "names": [
       "CMS",
-      "Conventional M\u00f6ssbauer Spectroscopy"
+      "Conventional Mössbauer Spectroscopy"
     ],
-    "description": "Conventional M\u00f6ssbauer Spectroscopy measures the resonant absorption of X-rays by M\u00f6ssbauer-active nuclei (e.g. Fe-57) using a radioactive source scanned in velocity. It provides information on oxidation state, magnetic ordering, and local electronic and structural environment through hyperfine interactions.",
+    "description": "Conventional Mössbauer Spectroscopy measures the resonant absorption of X-rays by Mössbauer-active nuclei (e.g. Fe-57) using a radioactive source scanned in velocity. It provides information on oxidation state, magnetic ordering, and local electronic and structural environment through hyperfine interactions.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#CMS",
     "ontology_version": "v0.1.0"
   },
@@ -218,7 +218,7 @@
       "EXAFS",
       "Extended X-ray Absorption Fine Structure"
     ],
-    "description": "Extended X-ray Absorption Fine Structure (EXAFS) measures oscillations in X-ray absorption above an element\u2019s absorption edge, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.",
+    "description": "Extended X-ray Absorption Fine Structure (EXAFS) measures oscillations in X-ray absorption above an element’s absorption edge, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#EXAFS",
     "ontology_version": "v0.1.0"
   },
@@ -236,7 +236,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#FF-XANES",
     "names": [
       "FF-XANES",
-      "Full\u2011Field X-ray Absorption Near Edge Structure Imaging"
+      "Full‑Field X-ray Absorption Near Edge Structure Imaging"
     ],
     "description": "FF-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved information on chemical state and electronic structure.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FF-XANES",
@@ -263,6 +263,16 @@
     "ontology_version": "v0.1.0"
   },
   {
+    "iri": "https://w3id.org/PaN/ESRFET#FPDI",
+    "names": [
+      "FPDI",
+      "Fabry-Pérot displacement interferometry"
+    ],
+    "description": "Fabry-Pérot displacement interferometry (FPDI) measures minute changes in position by tracking shifts in the resonant frequencies of an optical cavity formed by two reflective surfaces. This technique provides sub-nanometer accuracy and resolution for dynamic displacement metrology.",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FPDI",
+    "ontology_version": "v0.1.0"
+  },
+  {
     "iri": "https://w3id.org/PaN/ESRFET#FS-EXAFS",
     "names": [
       "FS-EXAFS",
@@ -273,13 +283,13 @@
     "ontology_version": "v0.1.0"
   },
   {
-    "iri": "https://w3id.org/PaN/ESRFET#FS\u2011XANES",
+    "iri": "https://w3id.org/PaN/ESRFET#FS‑XANES",
     "names": [
       "FS-XANES",
-      "Full\u2011Spectral X-ray Absorption Near Edge Structure Imaging"
+      "Full‑Spectral X-ray Absorption Near Edge Structure Imaging"
     ],
     "description": "FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure.",
-    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FS\u2011XANES",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#FS‑XANES",
     "ontology_version": "v0.1.0"
   },
   {
@@ -469,9 +479,9 @@
     "iri": "https://w3id.org/PaN/ESRFET#MBS",
     "names": [
       "MBS",
-      "M\u00f6ssbauer Spectroscopy"
+      "Mössbauer Spectroscopy"
     ],
-    "description": "M\u00f6ssbauer spectroscopy measures the resonant absorption of X-rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of M\u00f6ssbauer-active isotopes (e.g. Fe-57).",
+    "description": "Mössbauer spectroscopy measures the resonant absorption of X-rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of Mössbauer-active isotopes (e.g. Fe-57).",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MBS",
     "ontology_version": "v0.1.0"
   },
@@ -481,7 +491,7 @@
       "MICRO-XRD",
       "Scanning Micro X-ray Diffraction",
       "Micro-XRD",
-      "\u03bc-XRD"
+      "μ-XRD"
     ],
     "description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XRD",
@@ -493,7 +503,7 @@
       "MICRO-XRF",
       "Scanning Micro X-ray fluorescence",
       "Micro-XRF",
-      "\u03bc-XRF"
+      "μ-XRF"
     ],
     "description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XRF",
@@ -569,7 +579,7 @@
       "NFS",
       "Nuclear Forward Scattering"
     ],
-    "description": "Nuclear Forward Scattering (NFS) measures the time-resolved resonant scattering of synchrotron-generated X-rays in the forward direction, extracting hyperfine parameters (e.g. isomer shift, quadrupole splitting, magnetic splitting) from the temporal interference pattern.\nTime-domain analog of M\u00f6ssbauer spectroscopy",
+    "description": "Nuclear Forward Scattering (NFS) measures the time-resolved resonant scattering of synchrotron-generated X-rays in the forward direction, extracting hyperfine parameters (e.g. isomer shift, quadrupole splitting, magnetic splitting) from the temporal interference pattern.\nTime-domain analog of Mössbauer spectroscopy",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NFS",
     "ontology_version": "v0.1.0"
   },
@@ -599,7 +609,7 @@
       "NRS",
       "Nuclear Resonant Scattering"
     ],
-    "description": "Nuclear Resonant Scattering (NRS) measures time-delayed resonant scattering of X-rays from M\u00f6ssbauer-active nuclei to study hyperfine interactions, magnetic order, and dynamics at the atomic scale.",
+    "description": "Nuclear Resonant Scattering (NRS) measures time-delayed resonant scattering of X-rays from Mössbauer-active nuclei to study hyperfine interactions, magnetic order, and dynamics at the atomic scale.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NRS",
     "ontology_version": "v0.1.0"
   },
@@ -619,7 +629,7 @@
       "PB-XPCT",
       "Propagation-based X-ray Phase-Contrast Tomography"
     ],
-    "description": "X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample\u2013detector distances.",
+    "description": "X-ray Propagation Phase-Contrast Tomography (PB-XPCT) measures phase-induced interference patterns that form as X-rays propagate beyond the sample, reconstructing 3D phase-contrast images by recording projections at sufficient sample–detector distances.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#PB-XPCT",
     "ontology_version": "v0.1.0"
   },
@@ -793,9 +803,9 @@
     "iri": "https://w3id.org/PaN/ESRFET#SMS",
     "names": [
       "SMS",
-      "Synchrotron M\u00f6ssbauer Spectroscopy"
+      "Synchrotron Mössbauer Spectroscopy"
     ],
-    "description": "The Synchrotron M\u00f6ssbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling M\u00f6ssbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques.",
+    "description": "The Synchrotron Mössbauer Source (SMS) provides a highly collimated, monochromatic beam of resonant X-rays (e.g. 14.4 keV for Fe-57), enabling Mössbauer spectroscopy with high spatial resolution, fast time resolution, and compatibility with micro- and nano-focused X-ray techniques.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#SMS",
     "ontology_version": "v0.1.0"
   },
@@ -890,13 +900,13 @@
     "ontology_version": "v0.1.0"
   },
   {
-    "iri": "https://w3id.org/PaN/ESRFET#TR\u2011SSX",
+    "iri": "https://w3id.org/PaN/ESRFET#TR‑SSX",
     "names": [
-      "TR\u2011SSX",
+      "TR‑SSX",
       "Time-Resolved Serial Synchrotron Crystallography"
     ],
-    "description": "Time-Resolved Serial Synchrotron Crystallography (TR\u2011SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump\u2013probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR\u2011SSX enables the reconstruction of 3D \u201cmolecular movies\u201d that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution.",
-    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR\u2011SSX",
+    "description": "Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX enables the reconstruction of 3D “molecular movies” that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution.",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR‑SSX",
     "ontology_version": "v0.1.0"
   },
   {
@@ -975,7 +985,7 @@
       "XANES",
       "X-ray Absorption Near Edge Structure"
     ],
-    "description": "XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element\u2019s absorption edge, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.",
+    "description": "XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element’s absorption edge, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XANES",
     "ontology_version": "v0.1.0"
   },
@@ -995,7 +1005,7 @@
       "XAS",
       "X-ray Absorption Spectroscopy"
     ],
-    "description": "XAS measures a signal related to the X-ray absorption probability\u2014such as fluorescence, photon electrons, Auger electrons, or transmission\u2014as a function of the incident X-ray photon energy. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.",
+    "description": "XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XAS",
     "ontology_version": "v0.1.0"
   },
@@ -1055,7 +1065,7 @@
       "XES",
       "X-ray Emission Spectroscopy"
     ],
-    "description": "X-ray Emission Spectroscopy (XES) measures emitted X-ray photons from electronic transitions after X-ray excitation, revealing detailed information about the electronic structure and chemical state of elements. Unlike XRF, which identifies elemental composition through broad characteristic fluorescence lines, XES uses high energy resolution to resolve fine spectral features\u2014such as valence-to-core transitions\u2014providing deeper insight into the local chemical bonding and electronic environment.",
+    "description": "X-ray Emission Spectroscopy (XES) measures emitted X-ray photons from electronic transitions after X-ray excitation, revealing detailed information about the electronic structure and chemical state of elements. Unlike XRF, which identifies elemental composition through broad characteristic fluorescence lines, XES uses high energy resolution to resolve fine spectral features—such as valence-to-core transitions—providing deeper insight into the local chemical bonding and electronic environment.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XES",
     "ontology_version": "v0.1.0"
   },
@@ -1105,7 +1115,7 @@
       "XHT",
       "X-ray HoloTomography"
     ],
-    "description": "X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple sample\u2013detector distances and projection angles to reconstruct 3D electron density maps with sub-micrometer resolution.",
+    "description": "X-ray HoloTomography (XHT) combines holographic imaging and tomography by recording holograms at multiple sample–detector distances and projection angles to reconstruct 3D electron density maps with sub-micrometer resolution.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XHT",
     "ontology_version": "v0.1.0"
   },
@@ -1140,13 +1150,13 @@
     "ontology_version": "v0.1.0"
   },
   {
-    "iri": "https://w3id.org/PaN/ESRFET#XM\u03c7D",
+    "iri": "https://w3id.org/PaN/ESRFET#XMχD",
     "names": [
-      "XM\u03c7D",
+      "XMχD",
       "X-ray MagnetoChiral Dichroism"
     ],
-    "description": "X-ray MagnetoChiral Dichroism (XM\u03c7D) measures differences in X-ray absorption related to the combined effects of magnetism and chirality in materials, revealing chiral magnetic structures.",
-    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XM\u03c7D",
+    "description": "X-ray MagnetoChiral Dichroism (XMχD) measures differences in X-ray absorption related to the combined effects of magnetism and chirality in materials, revealing chiral magnetic structures.",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XMχD",
     "ontology_version": "v0.1.0"
   },
   {
@@ -1279,7 +1289,7 @@
       "XRS",
       "X-ray Raman Scattering"
     ],
-    "description": "X-ray Raman Scattering (XRS) measures inelastic scattering of hard X-rays by core electrons, enabling the study of low-Z elements\u2019 electronic structure and bonding in bulk samples without the need for soft X-rays or vacuum conditions.",
+    "description": "X-ray Raman Scattering (XRS) measures inelastic scattering of hard X-rays by core electrons, enabling the study of low-Z elements’ electronic structure and bonding in bulk samples without the need for soft X-rays or vacuum conditions.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#XRS",
     "ontology_version": "v0.1.0"
   },

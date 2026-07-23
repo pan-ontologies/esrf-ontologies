@@ -77,7 +77,7 @@ def save_techniques(name: str, techniques: List[Dict[str, Any]]):
     )
     techniques = sorted(techniques, key=lambda technique: technique["names"][0])
     with open(json_file, "w", encoding="utf-8") as f:
-        json.dump(techniques, f, indent=2)
+        json.dump(techniques, f, indent=2, ensure_ascii=False)
 
 
 def get_esrfet_techniques():
