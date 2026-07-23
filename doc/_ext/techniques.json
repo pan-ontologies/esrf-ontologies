@@ -262,7 +262,7 @@
     "Name": "HR-XRPD",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#HR-XRPD",
     "Alternative names": "High-Resolution X-ray Powder Diffraction",
-    "Description": "High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.",
+    "Description": "High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced angular resolution and accuracy provided by an analyzer crystal, enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#HR-XRPD"
   },
   {

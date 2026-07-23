@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.1.0]
 
+### Changed
+
+- New `high_angular_resolution` equivalent to deprecated `high_precision_in_Q_space`.
+- HR-XRPD: add `analyzer_crystal` and use `high_angular_resolution` instead of `high_precision_in_Q_space`.
+
 ### Added
 
 - `get_technique`: get a single technique from a technique identifier.
