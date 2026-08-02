@@ -32,10 +32,8 @@ test = [
 ]
 dev = [
     "esrf-ontologies[test]",
-    "black >=22",
-    "flake8 >=4",
+    "ruff",
     "owlready2",
-    "isort",
 ]
 doc = [
     "esrf-ontologies[test]",
@@ -57,7 +55,24 @@ where = ["src"]
 [tool.coverage.run]
 omit = ['*/tests/*']
 
-[tool.isort]
-profile = "black"
-force_single_line = true
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle errors
+    "F", # pyflakes
+    "I", # isort
+    "S", # flake8-bandit
+]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**" = [
+    "S101", # allow asserts
+]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+known-first-party = ["esrf_ontologies"]
 

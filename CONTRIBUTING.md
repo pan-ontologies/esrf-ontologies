@@ -6,20 +6,13 @@ Development requirements are listed in `pyproject.toml` and can be installed wit
 pip install [--user] [-e] .[dev]
 ```
 
-## Formatting
+## Formatting and linting
 
-[black](https://black.readthedocs.io/en/stable) is used to auto-format the code.
-
-```bash
-black .
-```
-
-## Linting
-
-[flake8](https://flake8.pycqa.org/en/latest/index.html) is used to lint the code.
+[ruff](https://docs.astral.sh/ruff/) is used to auto-format and lint the code.
 
 ```bash
-flake8
+ruff format .
+ruff check .
 ```
 
 ## Ontology transpilation

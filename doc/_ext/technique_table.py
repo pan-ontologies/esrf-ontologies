@@ -11,7 +11,6 @@ VISIBLE_COLUMNS = ["Name", "Alternative names", "Description"]
 
 
 class InsertTechniqueTable(Directive):
-
     def run(self):
         rows = _generate_table_data()
         count_paragraph = self._create_technique_count(len(rows))
@@ -128,8 +127,8 @@ class InsertTechniqueTable(Directive):
 
 def _generate_table_data() -> List[Dict[str, Any]]:
     filename = os.path.join(os.path.dirname(__file__), "techniques.json")
-    with open(filename, "r") as f:
-        return json.load(f, ensure_ascii=False)
+    with open(filename, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def setup(app):
