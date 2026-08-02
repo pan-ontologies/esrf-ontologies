@@ -18,5 +18,5 @@ else:
 
 def load_techniques(name: str) -> List[Dict[str, Any]]:
     json_file = importlib_resources.files(__package__).joinpath(f"{name}.json")
-    with open(json_file, "r") as f:
+    with open(json_file, "r", encoding="utf-8") as f:
         return json.load(f)
