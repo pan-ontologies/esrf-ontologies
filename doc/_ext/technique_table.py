@@ -11,7 +11,6 @@ VISIBLE_COLUMNS = ["Name", "Alternative names", "Description"]
 
 
 class InsertTechniqueTable(Directive):
-
     def run(self):
         rows = _generate_table_data()
         count_paragraph = self._create_technique_count(len(rows))
