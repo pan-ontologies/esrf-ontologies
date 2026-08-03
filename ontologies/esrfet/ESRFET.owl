@@ -5887,7 +5887,7 @@ In addition, experimental techniques are semantically defined by
 
 Angular resolution: min(Δ2θ) = 0.001° to 0.005°
 
-Resolving power (Δ2θ/θ)</Literal>
+Resolving power (Δ2θ/2θ)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
