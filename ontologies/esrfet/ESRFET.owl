@@ -5679,6 +5679,11 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#analyzer_crystal</IRI>
+        <Literal>Detect photons with an analyzer crystal set at the Bragg diffraction condition which reduces the angular and energy spread of the photons before they reach the detector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#area_detector</IRI>
         <Literal>Detector that distinguishes the position of the waves (photons or particles) in a 2D plane in space by using an array of pixels which measure the waves independently.</Literal>
     </AnnotationAssertion>
