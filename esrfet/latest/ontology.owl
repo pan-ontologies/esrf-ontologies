@@ -1401,11 +1401,15 @@
                     <rdf:Description rdf:about="https://w3id.org/PaN/ESRFET#experimental_technique"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_interaction_result_property"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#high_precision_in_Q_space"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#high_angular_resolution"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_result_of_interaction"/>
                         <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#diffraction_of_elastic_scattering"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_with_a_detector_type"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#analyzer_crystal"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#requires_sample_input"/>
@@ -1418,7 +1422,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</rdfs:comment>
+        <rdfs:comment>High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced angular resolution and accuracy provided by an analyzer crystal, enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</rdfs:comment>
         <rdfs:label>HR-XRPD</rdfs:label>
         <skos:prefLabel>High-Resolution X-ray Powder Diffraction</skos:prefLabel>
     </owl:Class>
@@ -3722,6 +3726,7 @@ The second definition is chosen for this technique.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#analyzer_crystal">
         <rdfs:subClassOf rdf:resource="https://w3id.org/PaN/ESRFET#detector_type"/>
+        <rdfs:comment>Detect photons with an analyzer crystal set at the Bragg diffraction condition which reduces the angular and energy spread of the photons before they reach the detector.</rdfs:comment>
     </owl:Class>
     
 
@@ -4063,16 +4068,28 @@ In addition, experimental techniques are semantically defined by
     
 
 
-    <!-- https://w3id.org/PaN/ESRFET#high_precision_in_Q_space -->
+    <!-- https://w3id.org/PaN/ESRFET#high_angular_resolution -->
 
 
-    <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#high_precision_in_Q_space">
+    <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#high_angular_resolution">
+        <owl:equivalentClass rdf:resource="https://w3id.org/PaN/ESRFET#high_precision_in_Q_space"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/PaN/ESRFET#detection_resolution"/>
         <rdfs:comment>For example min(ΔQ) = 1e-4 Å-1 to 5e-4 Å-1
 
 Angular resolution: min(Δ2θ) = 0.001° to 0.005°
 
-Resolving power (Δ2θ/θ)</rdfs:comment>
+Resolving power (Δ2θ/2θ)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/PaN/ESRFET#high_precision_in_Q_space -->
+
+
+    <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#high_precision_in_Q_space">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/PaN/ESRFET#detection_resolution"/>
+        <rdfs:comment>Deprecated as a relative resolution in scattering angle is a more common way, in which can we talk about angles and not Q which should be reflected in the name of the property.</rdfs:comment>
+        <rdfs:comment>Relative angular resolution (Δ2θ/2θ) &lt;= 5e-4. The angle is the scattering angle with respect to the primary beam.</rdfs:comment>
     </owl:Class>
     
 
@@ -5080,11 +5097,11 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</r
     <rdf:Description>
         <foaf:name>Giannis Koumoutsos</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid849">
-        <schema:affiliation rdf:nodeID="genid850"/>
+    <rdf:Description rdf:nodeID="genid851">
+        <schema:affiliation rdf:nodeID="genid852"/>
         <foaf:name>Wout De Nolf</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid850">
+    <rdf:Description rdf:nodeID="genid852">
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/02550n020</rdfs:seeAlso>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.esrf.fr</foaf:homepage>
         <foaf:name>ESRF</foaf:name>

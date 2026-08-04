@@ -426,6 +426,12 @@ This ontology has the following classes and properties.</span>
       <a href="#HERFD-XAS" title="https://w3id.org/PaN/ESRFET#HERFD-XAS">HERFD-XAS</a>
    </li>
    <li>
+      <a href="#high_angular_resolution"
+         title="https://w3id.org/PaN/ESRFET#high_angular_resolution">
+         <span>high angular resolution</span>
+      </a>
+   </li>
+   <li>
       <a href="#high_precision_in_Q_space"
          title="https://w3id.org/PaN/ESRFET#high_precision_in_Q_space">
          <span>high precision in Q space</span>
@@ -1386,6 +1392,7 @@ This section provides details for each class and property defined by The ESRF Ex
   <li><a href="#hard_x-ray" title="https://w3id.org/PaN/ESRFET#hard_x-ray"> <span>hard x ray</span> </a></li>
   <li><a href="#HAXPES" title="https://w3id.org/PaN/ESRFET#HAXPES">HAXPES</a></li>
   <li><a href="#HERFD-XAS" title="https://w3id.org/PaN/ESRFET#HERFD-XAS">HERFD-XAS</a></li>
+  <li><a href="#high_angular_resolution" title="https://w3id.org/PaN/ESRFET#high_angular_resolution"> <span>high angular resolution</span> </a></li>
   <li><a href="#high_precision_in_Q_space" title="https://w3id.org/PaN/ESRFET#high_precision_in_Q_space"> <span>high precision in Q space</span> </a></li>
   <li><a href="#high_pressure" title="https://w3id.org/PaN/ESRFET#high_pressure"> <span>high pressure</span> </a></li>
   <li><a href="#high_temperature" title="https://w3id.org/PaN/ESRFET#high_temperature"> <span>high temperature</span> </a></li>
@@ -1610,6 +1617,9 @@ This section provides details for each class and property defined by The ESRF Ex
  <div class="entity" id="analyzer_crystal">
   <h3>analyzer crystal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/PaN/ESRFET#analyzer_crystal</p>
+  <div class="comment">
+   <span class="markdown">Detect photons with an analyzer crystal set at the Bragg diffraction condition which reduces the angular and energy spread of the photons before they reach the detector.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -2101,7 +2111,7 @@ This section provides details for each class and property defined by The ESRF Ex
     has sub-classes
    </dt>
    <dd>
-    <a href="#high_precision_in_Q_space" title="https://w3id.org/PaN/ESRFET#high_precision_in_Q_space">high precision in Q space</a> <sup class="type-c" title="class">c</sup>, <a href="#large_length_scales" title="https://w3id.org/PaN/ESRFET#large_length_scales">large length scales</a> <sup class="type-c" title="class">c</sup>, <a href="#small_length_scales" title="https://w3id.org/PaN/ESRFET#small_length_scales">small length scales</a> <sup class="type-c" title="class">c</sup>, <a href="#ultra_large_length_scales" title="https://w3id.org/PaN/ESRFET#ultra_large_length_scales">ultra large length scales</a> <sup class="type-c" title="class">c</sup>
+    <a href="#high_angular_resolution" title="https://w3id.org/PaN/ESRFET#high_angular_resolution">high angular resolution</a> <sup class="type-c" title="class">c</sup>, <a href="#high_precision_in_Q_space" title="https://w3id.org/PaN/ESRFET#high_precision_in_Q_space">high precision in Q space</a> <sup class="type-c" title="class">c</sup>, <a href="#large_length_scales" title="https://w3id.org/PaN/ESRFET#large_length_scales">large length scales</a> <sup class="type-c" title="class">c</sup>, <a href="#small_length_scales" title="https://w3id.org/PaN/ESRFET#small_length_scales">small length scales</a> <sup class="type-c" title="class">c</sup>, <a href="#ultra_large_length_scales" title="https://w3id.org/PaN/ESRFET#ultra_large_length_scales">ultra large length scales</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -2735,11 +2745,32 @@ This section provides details for each class and property defined by The ESRF Ex
    </dd>
   </dl>
  </div>
+ <div class="entity" id="high_angular_resolution">
+  <h3>high angular resolution<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/PaN/ESRFET#high_angular_resolution</p>
+  <div class="comment">
+   <span class="markdown">For example min(ΔQ) = 1e-4 Å-1 to 5e-4 Å-1 Angular resolution: min(Δ2θ) = 0.001° to 0.005° Resolving power (Δ2θ/2θ)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#high_precision_in_Q_space" title="https://w3id.org/PaN/ESRFET#high_precision_in_Q_space">high precision in Q space</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#detection_resolution" title="https://w3id.org/PaN/ESRFET#detection_resolution">detection resolution</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="high_precision_in_Q_space">
   <h3>high precision in Q space<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/PaN/ESRFET#high_precision_in_Q_space</p>
   <div class="comment">
-   <span class="markdown">For example min(ΔQ) = 1e-4 Å-1 to 5e-4 Å-1 Angular resolution: min(Δ2θ) = 0.001° to 0.005° Resolving power (Δ2θ/θ)</span>
+   <span class="markdown">Deprecated as a relative resolution in scattering angle is a more common way, in which can we talk about angles and not Q which should be reflected in the name of the property.</span>
   </div>
   <dl class="description">
    <dt>
@@ -2847,14 +2878,14 @@ This section provides details for each class and property defined by The ESRF Ex
   <h3>HR-XRPD<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/PaN/ESRFET#HR-XRPD</p>
   <div class="comment">
-   <span class="markdown">High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</span>
+   <span class="markdown">High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced angular resolution and accuracy provided by an analyzer crystal, enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</span>
   </div>
   <dl class="description">
    <dt>
     is equivalent to
    </dt>
    <dd>
-    <a href="#experimental_technique" title="https://w3id.org/PaN/ESRFET#experimental_technique">experimental technique</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#measures_interaction_result_property" title="https://w3id.org/PaN/ESRFET#measures_interaction_result_property">measures interaction result property</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#high_precision_in_Q_space" title="https://w3id.org/PaN/ESRFET#high_precision_in_Q_space">high precision in Q space</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#measures_result_of_interaction" title="https://w3id.org/PaN/ESRFET#measures_result_of_interaction">measures result of interaction</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#diffraction_of_elastic_scattering" title="https://w3id.org/PaN/ESRFET#diffraction_of_elastic_scattering">diffraction of elastic scattering</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#requires_sample_input" title="https://w3id.org/PaN/ESRFET#requires_sample_input">requires sample input</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#x-ray" title="https://w3id.org/PaN/ESRFET#x-ray">x ray</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#requires_sample_type" title="https://w3id.org/PaN/ESRFET#requires_sample_type">requires sample type</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#powder_sample" title="https://w3id.org/PaN/ESRFET#powder_sample">powder sample</a> <sup class="type-c" title="class">c</sup>)
+    <a href="#experimental_technique" title="https://w3id.org/PaN/ESRFET#experimental_technique">experimental technique</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#measures_interaction_result_property" title="https://w3id.org/PaN/ESRFET#measures_interaction_result_property">measures interaction result property</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#high_angular_resolution" title="https://w3id.org/PaN/ESRFET#high_angular_resolution">high angular resolution</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#measures_result_of_interaction" title="https://w3id.org/PaN/ESRFET#measures_result_of_interaction">measures result of interaction</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#diffraction_of_elastic_scattering" title="https://w3id.org/PaN/ESRFET#diffraction_of_elastic_scattering">diffraction of elastic scattering</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#measures_with_a_detector_type" title="https://w3id.org/PaN/ESRFET#measures_with_a_detector_type">measures with a detector type</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#analyzer_crystal" title="https://w3id.org/PaN/ESRFET#analyzer_crystal">analyzer crystal</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#requires_sample_input" title="https://w3id.org/PaN/ESRFET#requires_sample_input">requires sample input</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#x-ray" title="https://w3id.org/PaN/ESRFET#x-ray">x ray</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#requires_sample_type" title="https://w3id.org/PaN/ESRFET#requires_sample_type">requires sample type</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#powder_sample" title="https://w3id.org/PaN/ESRFET#powder_sample">powder sample</a> <sup class="type-c" title="class">c</sup>)
    </dd>
   </dl>
  </div>

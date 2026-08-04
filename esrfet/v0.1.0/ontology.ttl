@@ -1027,11 +1027,15 @@ xsd:date rdf:type rdfs:Datatype .
          owl:equivalentClass [ owl:intersectionOf ( :experimental_technique
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty :measures_interaction_result_property ;
-                                                      owl:someValuesFrom :high_precision_in_Q_space
+                                                      owl:someValuesFrom :high_angular_resolution
                                                     ]
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty :measures_result_of_interaction ;
                                                       owl:someValuesFrom :diffraction_of_elastic_scattering
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :measures_with_a_detector_type ;
+                                                      owl:someValuesFrom :analyzer_crystal
                                                     ]
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty :requires_sample_input ;
@@ -1044,7 +1048,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                   ) ;
                                rdf:type owl:Class
                              ] ;
-         rdfs:comment "High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials." ;
+         rdfs:comment "High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced angular resolution and accuracy provided by an analyzer crystal, enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials." ;
          rdfs:label "HR-XRPD" ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "High-Resolution X-ray Powder Diffraction" .
 
@@ -2820,7 +2824,8 @@ The second definition is chosen for this technique.""" ;
 
 ###  https://w3id.org/PaN/ESRFET#analyzer_crystal
 :analyzer_crystal rdf:type owl:Class ;
-                  rdfs:subClassOf :detector_type .
+                  rdfs:subClassOf :detector_type ;
+                  rdfs:comment "Detect photons with an analyzer crystal set at the Bragg diffraction condition which reduces the angular and energy spread of the photons before they reach the detector." .
 
 
 ###  https://w3id.org/PaN/ESRFET#area_detector
@@ -3028,14 +3033,22 @@ In addition, experimental techniques are semantically defined by
             rdfs:comment "Defined using an object property (has_photon_energy_range) to connect to another class (photon_energy_range) that has the data properties (value and unit). It creates a chain where the characteristics of other classes included in the definition define the class. Works with the reasoner!" .
 
 
-###  https://w3id.org/PaN/ESRFET#high_precision_in_Q_space
-:high_precision_in_Q_space rdf:type owl:Class ;
-                           rdfs:subClassOf :detection_resolution ;
-                           rdfs:comment """For example min(ΔQ) = 1e-4 Å-1 to 5e-4 Å-1
+###  https://w3id.org/PaN/ESRFET#high_angular_resolution
+:high_angular_resolution rdf:type owl:Class ;
+                         owl:equivalentClass :high_precision_in_Q_space ;
+                         rdfs:subClassOf :detection_resolution ;
+                         rdfs:comment """For example min(ΔQ) = 1e-4 Å-1 to 5e-4 Å-1
 
 Angular resolution: min(Δ2θ) = 0.001° to 0.005°
 
-Resolving power (Δ2θ/θ)""" .
+Resolving power (Δ2θ/2θ)""" .
+
+
+###  https://w3id.org/PaN/ESRFET#high_precision_in_Q_space
+:high_precision_in_Q_space rdf:type owl:Class ;
+                           rdfs:subClassOf :detection_resolution ;
+                           rdfs:comment "Deprecated as a relative resolution in scattering angle is a more common way, in which can we talk about angles and not Q which should be reflected in the name of the property." ,
+                                        "Relative angular resolution (Δ2θ/2θ) <= 5e-4. The angle is the scattering angle with respect to the primary beam." .
 
 
 ###  https://w3id.org/PaN/ESRFET#high_pressure
@@ -3672,10 +3685,10 @@ Ultra Large structural features: large aggregates, clusters, and larger pores"""
 [ <http://xmlns.com/foaf/0.1/name> "Giannis Koumoutsos"
 ] .
 
-_:genid849 <http://schema.org/affiliation> _:genid850 ;
+_:genid851 <http://schema.org/affiliation> _:genid852 ;
             <http://xmlns.com/foaf/0.1/name> "Wout De Nolf" .
 
-_:genid850 rdfs:seeAlso "https://ror.org/02550n020"^^xsd:anyURI ;
+_:genid852 rdfs:seeAlso "https://ror.org/02550n020"^^xsd:anyURI ;
             <http://xmlns.com/foaf/0.1/homepage> "http://www.esrf.fr"^^xsd:anyURI ;
             <http://xmlns.com/foaf/0.1/name> "ESRF" .
 
