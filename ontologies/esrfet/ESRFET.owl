@@ -577,6 +577,9 @@
         <Class IRI="#hard_x-ray"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#high_angular_resolution"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#high_precision_in_Q_space"/>
     </Declaration>
     <Declaration>
@@ -1546,11 +1549,15 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#high_precision_in_Q_space"/>
+                <Class IRI="#high_angular_resolution"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_with_a_detector_type"/>
+                <Class IRI="#analyzer_crystal"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
@@ -2705,6 +2712,10 @@
         <Class IRI="#atomic_core_excitation"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#high_angular_resolution"/>
+        <Class IRI="#high_precision_in_Q_space"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#soft_x-ray"/>
         <ObjectIntersectionOf>
             <Class IRI="#named_photon_energy_ranges"/>
@@ -3153,6 +3164,10 @@
     <SubClassOf>
         <Class IRI="#hard_x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_angular_resolution"/>
+        <Class IRI="#detection_resolution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#high_precision_in_Q_space"/>
@@ -4152,7 +4167,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HR-XRPD</IRI>
-        <Literal>High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</Literal>
+        <Literal>High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced angular resolution and accuracy provided by an analyzer crystal, enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5664,6 +5679,11 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#analyzer_crystal</IRI>
+        <Literal>Detect photons with an analyzer crystal set at the Bragg diffraction condition which reduces the angular and energy spread of the photons before they reach the detector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#area_detector</IRI>
         <Literal>Detector that distinguishes the position of the waves (photons or particles) in a 2D plane in space by using an array of pixels which measure the waves independently.</Literal>
     </AnnotationAssertion>
@@ -5859,12 +5879,22 @@ In addition, experimental techniques are semantically defined by
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#high_precision_in_Q_space</IRI>
+        <IRI>#high_angular_resolution</IRI>
         <Literal>For example min(ΔQ) = 1e-4 Å-1 to 5e-4 Å-1
 
 Angular resolution: min(Δ2θ) = 0.001° to 0.005°
 
-Resolving power (Δ2θ/θ)</Literal>
+Resolving power (Δ2θ/2θ)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#high_precision_in_Q_space</IRI>
+        <Literal>Deprecated as a relative resolution in scattering angle is a more common way, in which can we talk about angles and not Q which should be reflected in the name of the property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#high_precision_in_Q_space</IRI>
+        <Literal>Relative angular resolution (Δ2θ/2θ) &lt;= 5e-4. The angle is the scattering angle with respect to the primary beam.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

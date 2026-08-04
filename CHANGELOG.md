@@ -10,6 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - FPDI: new technique without semantic meaning.
+- New `high_angular_resolution` equivalent to deprecated `high_precision_in_Q_space`.
+
+### Changed
+
+- HR-XRPD: add `analyzer_crystal` and use `high_angular_resolution` instead of `high_precision_in_Q_space`.
 
 ## [2.1.0]
 
