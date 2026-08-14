@@ -33,23 +33,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
 
-      - name: Run linting with Flake8
+      - name: Lint and format check with Ruff
         if: ${{ matrix.python-version == '3.12' }}
         run: |
-          pip install "flake8 >=4"
-          flake8 .
-
-      - name: Check code formatting with Black
-        if: ${{ matrix.python-version == '3.12' }}
-        run: |
-          pip install "black >=25"
-          black --check .
-
-      - name: Check import sorting with isort
-        if: ${{ matrix.python-version == '3.12' }}
-        run: |
-          pip install isort
-          isort --check-only .
+          pip install ruff
+          ruff --version
+          ruff check .
+          ruff format --check .
 
       - name: Build source distribution
         run: |
@@ -123,6 +113,9 @@ jobs:
           else
             echo "✅ No incorrect capitalization found."
           fi
+      - name: Check ontology version format
+        run: |
+          python ontologies/check_version.py
 
   doc-test:
     runs-on: ${{ matrix.os }}

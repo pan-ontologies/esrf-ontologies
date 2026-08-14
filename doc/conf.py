@@ -5,7 +5,10 @@ import os
 import sys
 from importlib.metadata import version as get_version
 
+from esrf_ontologies.technique import get_ontology_version
+
 release = get_version("esrf-ontologies")
+esrfet_version = get_ontology_version()
 
 sys.path.append(os.path.abspath("_ext"))
 
@@ -40,6 +43,10 @@ autodoc_default_flags = [
     "undoc-members",
     "show-inheritance",
 ]
+
+rst_epilog = f"""
+.. _esrfet: https://w3id.org/PaN/ESRFET/{esrfet_version}
+"""
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

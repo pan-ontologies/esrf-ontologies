@@ -1,7 +1,7 @@
 How-to Guides
 =============
 
-This sesction presents several ways of using the ontologies.
+This section presents several ways of using the ontologies.
 
 .. toctree::
 

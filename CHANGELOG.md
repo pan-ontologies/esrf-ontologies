@@ -7,6 +7,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- FPDI: new technique without semantic meaning.
+- New `high_angular_resolution` equivalent to deprecated `high_precision_in_Q_space`.
+
+### Changed
+
+- HR-XRPD: add `analyzer_crystal` and use `high_angular_resolution` instead of `high_precision_in_Q_space`.
+
+## [2.1.0]
+
+### Added
+
+- `get_technique`: get a single technique from a technique identifier.
+
+### Changed
+
+- `get_ontology_version` and `get_ontology_version_number` can be called without argument.
+- `get_technique_metadata` and `get_techniques` now support both technique names and IRIs as input identifiers.
+
+### Fixed
+
+- ICAT metadata: avoid empty-string values.
+
+## [2.0.0]
+
+### Changed
+
+- Changed ontology base IRI and all entity IRIs from http://purl.org/pan-science/ESRFET to https://w3id.org/PaN/ESRFET.
+- Save technique metadata in HDF5 using the `/NXobject/identifierNAME-field` fields.
+- Versioned IRI stored for the NeXus-compliant format instead of IRI.
+
+### Added
+
+- Test `owl:versionInfo` to follow `v.MAJOR.MINOR.PATCH` pattern. 
+- `technique_pid_esrfet_version` added in ICAT metadata.
+
 ## [1.3.0]
 
 ### Added
@@ -77,7 +114,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - API for adding scan metadata to HDF5 and dataset metadata to the ESRF data portal.
 - OWL Ontology transpilation for runtime performance.
 
-[unreleased]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.3.0...HEAD
+[unreleased]: https://github.com/pan-ontologies/esrf-ontologies/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v2.0.0...v2.1.0
+[1.3.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.3.0...v2.0.0
 [1.3.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/pan-ontologies/esrf-ontologies/compare/v1.0.0...v1.1.0

@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://purl.org/pan-science/ESRFET"
+     xml:base="https://w3id.org/PaN/ESRFET"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://purl.org/pan-science/ESRFET"
-     versionIRI="http://purl.org/pan-science/ESRFET/v0.1.0">
-    <Prefix name="" IRI="http://purl.org/pan-science/ESRFET/"/>
+     ontologyIRI="https://w3id.org/PaN/ESRFET"
+     versionIRI="https://w3id.org/PaN/ESRFET/v0.1.0">
+    <Prefix name="" IRI="https://w3id.org/PaN/ESRFET/"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -19,12 +19,24 @@
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
-    <Prefix name="ESRFET" IRI="http://purl.org/pan-science/ESRFET#"/>
+    <Prefix name="ESRFET" IRI="https://w3id.org/PaN/ESRFET#"/>
     <Prefix name="schema" IRI="http://schema.org/"/>
     <Import>http://purl.org/pan-science/PaNET/PaNET.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:abstract"/>
         <Literal>The ESRFET ontology describes beamline experimental techniques at ESRF to enhance the FAIRness of experimental metadata. It supports semantic interoperability and reasoning over relationships between techniques.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <IRI>#person/LBroche</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <IRI>#person/MBodin</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <IRI>#person/POAutran</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:created"/>
@@ -66,6 +78,9 @@
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal>v0.1.0</Literal>
     </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#ARPES"/>
     </Declaration>
@@ -143,6 +158,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#FF-XRF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FPDI"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FS-EXAFS"/>
@@ -586,6 +604,9 @@
         <Class IRI="#hard_x-ray"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#high_angular_resolution"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#high_precision_in_Q_space"/>
     </Declaration>
     <Declaration>
@@ -826,9 +847,6 @@
         <Class IRI="#TR‑SSX"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="foaf:Organization"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
     </Declaration>
     <Declaration>
@@ -883,10 +901,22 @@
         <NamedIndividual IRI="#person/GKoumoutsos"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#person/LBroche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#person/MBodin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#person/POAutran"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#person/WDeNolf"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="terms:abstract"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="terms:created"/>
@@ -1546,11 +1576,15 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#high_precision_in_Q_space"/>
+                <Class IRI="#high_angular_resolution"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_with_a_detector_type"/>
+                <Class IRI="#analyzer_crystal"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
@@ -1612,11 +1646,11 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
+                <Class IRI="#detection_as_a_function_of_limited_number_of_incident_energies"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -2638,11 +2672,11 @@
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="#simultanious_reference"/>
+                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_as_a_function_of"/>
-                <Class IRI="http://purl.org/pan-science/PaNET/PaNET01106"/>
+                <Class IRI="#simultanious_reference"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -2939,6 +2973,10 @@
         <Class IRI="#atomic_core_excitation"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#high_angular_resolution"/>
+        <Class IRI="#high_precision_in_Q_space"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#soft_x-ray"/>
         <ObjectIntersectionOf>
             <Class IRI="#named_photon_energy_ranges"/>
@@ -3042,6 +3080,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFXM"/>
+        <Class IRI="#experimental_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FPDI"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -3385,6 +3427,10 @@
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#high_angular_resolution"/>
+        <Class IRI="#detection_resolution"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#high_precision_in_Q_space"/>
         <Class IRI="#detection_resolution"/>
     </SubClassOf>
@@ -3712,6 +3758,18 @@
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
         <NamedIndividual IRI="#person/GKoumoutsos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#person/LBroche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#person/MBodin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#person/POAutran"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
@@ -4214,6 +4272,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FPDI</IRI>
+        <Literal>Fabry-Pérot displacement interferometry (FPDI) measures minute changes in position by tracking shifts in the resonant frequencies of an optical cavity formed by two reflective surfaces. This technique provides sub-nanometer accuracy and resolution for dynamic displacement metrology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FPDI</IRI>
+        <Literal>FPDI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#FPDI</IRI>
+        <Literal>Fabry-Pérot displacement interferometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#FS-EXAFS</IRI>
         <Literal>FS-EXAFS measures the extended region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on local atomic structure, such as bond lengths and coordination.</Literal>
     </AnnotationAssertion>
@@ -4355,7 +4428,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HR-XRPD</IRI>
-        <Literal>High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced resolution in Q-space (or d-spacing), enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</Literal>
+        <Literal>High-Resolution X-ray Powder Diffraction (HR-XRPD) measures diffraction patterns from powdered samples with enhanced angular resolution and accuracy provided by an analyzer crystal, enabling precise phase identification, accurate lattice parameter determination, and detailed structural analysis of complex materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6002,6 +6075,11 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#analyzer_crystal</IRI>
+        <Literal>Detect photons with an analyzer crystal set at the Bragg diffraction condition which reduces the angular and energy spread of the photons before they reach the detector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#area_detector</IRI>
         <Literal>Detector that distinguishes the position of the waves (photons or particles) in a 2D plane in space by using an array of pixels which measure the waves independently.</Literal>
     </AnnotationAssertion>
@@ -6197,12 +6275,22 @@ In addition, experimental techniques are semantically defined by
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#high_precision_in_Q_space</IRI>
+        <IRI>#high_angular_resolution</IRI>
         <Literal>For example min(ΔQ) = 1e-4 Å-1 to 5e-4 Å-1
 
 Angular resolution: min(Δ2θ) = 0.001° to 0.005°
 
-Resolving power (Δ2θ/θ)</Literal>
+Resolving power (Δ2θ/2θ)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#high_precision_in_Q_space</IRI>
+        <Literal>Deprecated as a relative resolution in scattering angle is a more common way, in which can we talk about angles and not Q which should be reflected in the name of the property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#high_precision_in_Q_space</IRI>
+        <Literal>Relative angular resolution (Δ2θ/2θ) &lt;= 5e-4. The angle is the scattering angle with respect to the primary beam.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6707,7 +6795,7 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#person/GKoumoutsos</IRI>
-        <IRI>http://orcid.org/0009-0000-6215-8493</IRI>
+        <IRI>https://orcid.org/0009-0000-6215-8493</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
@@ -6721,13 +6809,73 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="schema:affiliation"/>
+        <IRI>#person/LBroche</IRI>
+        <IRI>#ESRF</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#person/LBroche</IRI>
+        <IRI>https://orcid.org/0000-0001-7704-0762</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
+        <IRI>#person/LBroche</IRI>
+        <Literal>dau-pydev@esrf.fr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:name"/>
+        <IRI>#person/LBroche</IRI>
+        <Literal>Ludovic Broche</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:affiliation"/>
+        <IRI>#person/MBodin</IRI>
+        <IRI>#ESRF</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#person/MBodin</IRI>
+        <IRI>https://orcid.org/0000-0003-0321-3952</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
+        <IRI>#person/MBodin</IRI>
+        <Literal>dau-pydev@esrf.fr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:name"/>
+        <IRI>#person/MBodin</IRI>
+        <Literal>Marjolaine Bodin Ligeon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:affiliation"/>
+        <IRI>#person/POAutran</IRI>
+        <IRI>#ESRF</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#person/POAutran</IRI>
+        <IRI>https://orcid.org/0000-0003-4600-6371</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:mbox"/>
+        <IRI>#person/POAutran</IRI>
+        <Literal>dau-pydev@esrf.fr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="foaf:name"/>
+        <IRI>#person/POAutran</IRI>
+        <Literal>Pierre-Olivier Autran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="schema:affiliation"/>
         <IRI>#person/WDeNolf</IRI>
         <IRI>#ESRF</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#person/WDeNolf</IRI>
-        <IRI>http://orcid.org/0000-0003-2258-9402</IRI>
+        <IRI>https://orcid.org/0000-0003-2258-9402</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:mbox"/>

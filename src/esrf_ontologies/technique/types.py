@@ -18,10 +18,16 @@ class Technique:
     iri: str  # Internationalized Resource Identifier
     names: Tuple[str]  # Human readable name (first is the perferred one)
     description: str  # Human readable description
+    ontology_version: str  # Ontology version extracted from OWL
+    versioned_iri: str  # Versioned IRI derived from stable IRI and ontology version
 
     @property
     def primary_name(self) -> str:
         return self.names[0]
+
+
+BLISS_SCANINFO_CATEGORY = ""
+_NEXUS_IDENTIFIER_PREFIX = "identifier_technique_"
 
 
 @dataclasses.dataclass
@@ -31,63 +37,83 @@ class TechniqueMetadata:
 
     techniques: Set[Technique]
 
-    def get_scan_metadata(self) -> Optional[Dict[str, Union[List[str], str]]]:
+    def get_scan_metadata(
+        self,
+    ) -> Optional[Dict[str, Union[List[str], Dict[str, str]]]]:
         if self.techniques:
-            return self._get_nxnote()
+            return self._get_nxentry_children()
+        return None
 
-    def get_scan_info(self) -> Dict[str, Dict[str, Union[List[str], str]]]:
+    def get_scan_info(self) -> Dict[str, Union[List[str], Dict[str, str]]]:
         if not self.techniques:
             return dict()
         return {
-            "techniques": self._get_nxnote(),
-            "scan_meta_categories": ["techniques"],
+            BLISS_SCANINFO_CATEGORY: self._get_nxentry_children(),
+            "scan_meta_categories": [BLISS_SCANINFO_CATEGORY],
         }
 
     def fill_scan_info(self, scan_info: MutableMapping) -> None:
         if not self.techniques:
             return
         scan_meta_categories = scan_info.setdefault("scan_meta_categories", list())
-        if "techniques" not in scan_meta_categories:
-            scan_meta_categories.append("techniques")
-        nxnote = scan_info.get("techniques")
-        if nxnote is None:
-            nxnote = scan_info["techniques"] = dict()
-        self._fill_nxnote(nxnote)
 
-    def _get_nxnote(self) -> Dict[str, Union[List[str], str]]:
-        names = list()
-        iris = list()
-        for technique in sorted(
-            self.techniques, key=lambda technique: technique.primary_name
-        ):
-            names.append(technique.primary_name)
-            iris.append(technique.iri)
-        return {
-            "@NX_class": "NXnote",
-            "names": names,
-            "iris": iris,
+        if BLISS_SCANINFO_CATEGORY not in scan_meta_categories:
+            scan_meta_categories.append(BLISS_SCANINFO_CATEGORY)
+
+        nxentry_children = scan_info.get(BLISS_SCANINFO_CATEGORY)
+        if nxentry_children is None:
+            nxentry_children = scan_info[BLISS_SCANINFO_CATEGORY] = dict()
+
+        self._fill_nxentry_children(nxentry_children)
+
+    def _get_nxentry_children(self) -> Dict[str, str]:
+        nxentry_children = dict()
+        sorted_techniques = self._get_sorted_techniques()
+
+        for i, technique in enumerate(sorted_techniques, 1):
+            key = f"{_NEXUS_IDENTIFIER_PREFIX}{i}"
+            nxentry_children[key] = technique.versioned_iri
+            nxentry_children[f"{key}@type"] = "W3ID"
+
+        return nxentry_children
+
+    def _fill_nxentry_children(self, nxentry_children: MutableMapping) -> None:
+        sorted_techniques = self._get_sorted_techniques()
+
+        existing = {
+            key: value
+            for key, value in nxentry_children.items()
+            if key.startswith(_NEXUS_IDENTIFIER_PREFIX) and not key.endswith("@type")
         }
 
-    def _fill_nxnote(self, nxnote: MutableMapping) -> None:
-        names = nxnote.get("names", [])
-        iris = nxnote.get("iris", [])
-        techniques = dict(zip(iris, names))
-        for technique in self.techniques:
-            techniques[technique.iri] = technique.primary_name
-        iris, names = zip(*sorted(techniques.items(), key=lambda tpl: tpl[1]))
-        nxnote.update(
-            {
-                "@NX_class": "NXnote",
-                "names": list(names),
-                "iris": list(iris),
-            }
-        )
+        existing_iris = set(existing.values())
+
+        used_indices = {int(key.split("_")[-1]) for key in existing}
+
+        next_index = max(used_indices, default=0) + 1
+
+        for technique in sorted_techniques:
+            if technique.iri in existing_iris:
+                continue
+
+            key = f"{_NEXUS_IDENTIFIER_PREFIX}{next_index}"
+            nxentry_children[key] = technique.versioned_iri
+            nxentry_children[f"{key}@type"] = "W3ID"
+
+            next_index += 1
+
+    def _get_sorted_techniques(self) -> List[Technique]:
+        return sorted(self.techniques, key=lambda technique: technique.primary_name)
 
     def fill_dataset_metadata(self, dataset: MutableMapping) -> None:
         if not self.techniques:
             return
-        # Currently handles mutable mappings by only using __getitem__ and __setitem__
+
+        # The 'dataset' object from Bliss handles mutable mappings by only using
+        # __getitem__ and __setitem__
         # https://gitlab.esrf.fr/bliss/bliss/-/blob/master/bliss/icat/policy.py
+
+        # Get existing dataset technique names and pid's
         try:
             definitions = dataset["definition"].split(" ")
         except KeyError:
@@ -96,16 +122,21 @@ class TechniqueMetadata:
             pids = dataset["technique_pid"].split(" ")
         except KeyError:
             pids = list()
+
+        # Add technique names and pid's
         techniques = dict(zip(pids, definitions))
         for technique in self.techniques:
             techniques[technique.iri] = technique.primary_name
-        for key, value in self._get_icat_metadata(techniques).items():
+
+        # Replace ICAT metadata associated to 'techniques'
+        metadata = self._get_icat_metadata(techniques)
+        for key, value in metadata.items():
             try:
                 dataset[key] = value
             except KeyError:
-                if key == "technique_pid":
+                if key in ("technique_pid", "technique_pid_esrfet_version"):
                     _logger.warning(
-                        "Skip ICAT field 'technique_pid' (requires pyicat-plus>=0.2)"
+                        f"Skip ICAT field '{key}' (requires pyicat-plus>=0.2)"
                     )
                     continue
                 raise
@@ -119,5 +150,20 @@ class TechniqueMetadata:
         return self._get_icat_metadata(techniques)
 
     def _get_icat_metadata(self, techniques: Dict[str, str]) -> Dict[str, str]:
+        if not techniques:
+            return dict()
         iris, definitions = zip(*sorted(techniques.items(), key=lambda tpl: tpl[1]))
-        return {"technique_pid": " ".join(iris), "definition": " ".join(definitions)}
+        metadata = {
+            "technique_pid": " ".join(iris),
+            "definition": " ".join(definitions),
+        }
+        if self.techniques:
+            metadata["technique_pid_esrfet_version"] = (
+                self._get_ontology_version_number()
+            )
+        return metadata
+
+    def _get_ontology_version_number(self) -> Optional[str]:
+        if self.techniques:
+            return next(iter(self.techniques)).ontology_version.lstrip("v")
+        return None
