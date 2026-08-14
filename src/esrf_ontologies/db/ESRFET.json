@@ -356,6 +356,30 @@
     "description": "Laser-Driven Shock Compression X-ray Absorption Spectroscopy (LDSC-XAS) is a specific type of Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy (LDDC-XAS) that measures X-ray absorption spectra of materials subjected to laser-driven shock waves, capturing rapid structural and electronic changes during high-strain-rate compression."
   },
   {
+    "iri": "http://purl.org/pan-science/ESRFET#MACRO-EXAFS",
+    "names": [
+      "MACRO-EXAFS",
+      "Macro Extended X-ray Absorption Fine Structure"
+    ],
+    "description": "Extended X-ray Absorption Fine Structure (MACRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with macroscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#MACRO-XANES",
+    "names": [
+      "MACRO-XANES",
+      "Macro X-ray Absorption Near Edge Structure"
+    ],
+    "description": "MACRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with macroscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#MACRO-XAS",
+    "names": [
+      "MACRO-XAS",
+      "Macro X-ray Absorption Spectroscopy"
+    ],
+    "description": "MACRO-XAS measures a signal related to the X-ray absorption probability\u2014such as fluorescence, photon electrons, Auger electrons, or transmission\u2014as a function of the incident X-ray photon energy, with macroscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms."
+  },
+  {
     "iri": "http://purl.org/pan-science/ESRFET#MACRO-XRF",
     "names": [
       "MACRO-XRF",
@@ -380,6 +404,30 @@
       "M\u00f6ssbauer Spectroscopy"
     ],
     "description": "M\u00f6ssbauer spectroscopy measures the resonant absorption of X-rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of M\u00f6ssbauer-active isotopes (e.g. Fe-57)."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#MICRO-EXAFS",
+    "names": [
+      "MICRO-EXAFS",
+      "Micro Extended X-ray Absorption Fine Structure"
+    ],
+    "description": "Extended X-ray Absorption Fine Structure (MICRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with microscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#MICRO-XANES",
+    "names": [
+      "MICRO-XANES",
+      "Micro X-ray Absorption Near Edge Structure"
+    ],
+    "description": "MICRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with microscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#MICRO-XAS",
+    "names": [
+      "MICRO-XAS",
+      "Micro X-ray Absorption Spectroscopy"
+    ],
+    "description": "MICRO-XAS measures a signal related to the X-ray absorption probability\u2014such as fluorescence, photon electrons, Auger electrons, or transmission\u2014as a function of the incident X-ray photon energy, with microscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#MICRO-XRD",
@@ -424,6 +472,30 @@
       "Macromolecular Crystallography"
     ],
     "description": "Macromolecular Crystallography (MX) measures X-ray diffraction from crystals of biological macromolecules to determine their 3D atomic structures, providing insights into protein folding, function, and interactions."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#NANO-EXAFS",
+    "names": [
+      "NANO-EXAFS",
+      "Nano Extended X-ray Absorption Fine Structure"
+    ],
+    "description": "Extended X-ray Absorption Fine Structure (NANO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with nanoscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#NANO-XANES",
+    "names": [
+      "NANO-XANES",
+      "Nano X-ray Absorption Near Edge Structure"
+    ],
+    "description": "NANO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with nanoscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms."
+  },
+  {
+    "iri": "http://purl.org/pan-science/ESRFET#NANO-XAS",
+    "names": [
+      "NANO-XAS",
+      "Nano X-ray Absorption Spectroscopy"
+    ],
+    "description": "NANO-XAS measures a signal related to the X-ray absorption probability\u2014such as fluorescence, photon electrons, Auger electrons, or transmission\u2014as a function of the incident X-ray photon energy, with nanoscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms."
   },
   {
     "iri": "http://purl.org/pan-science/ESRFET#NANO-XRD",

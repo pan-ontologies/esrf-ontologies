@@ -220,6 +220,21 @@
     "Description": "Laser-Driven Shock Compression X-ray Absorption Spectroscopy (LDSC-XAS) is a specific type of Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy (LDDC-XAS) that measures X-ray absorption spectra of materials subjected to laser-driven shock waves, capturing rapid structural and electronic changes during high-strain-rate compression."
   },
   {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MACRO-EXAFS\">MACRO-EXAFS</a>",
+    "Alternative names": "Macro Extended X-ray Absorption Fine Structure",
+    "Description": "Extended X-ray Absorption Fine Structure (MACRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with macroscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MACRO-XANES\">MACRO-XANES</a>",
+    "Alternative names": "Macro X-ray Absorption Near Edge Structure",
+    "Description": "MACRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with macroscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MACRO-XAS\">MACRO-XAS</a>",
+    "Alternative names": "Macro X-ray Absorption Spectroscopy",
+    "Description": "MACRO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with macroscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms."
+  },
+  {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MACRO-XRF\">MACRO-XRF</a>",
     "Alternative names": "Scanning Macro X-ray fluorescence, MA-XRF, Macro-XRF",
     "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron."
@@ -233,6 +248,21 @@
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MBS\">MBS</a>",
     "Alternative names": "Mössbauer Spectroscopy",
     "Description": "Mössbauer spectroscopy measures the resonant absorption of X-rays by atomic nuclei in a solid to derive information on oxidation state, magnetic properties, and local chemical environment of Mössbauer-active isotopes (e.g. Fe-57)."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MICRO-EXAFS\">MICRO-EXAFS</a>",
+    "Alternative names": "Micro Extended X-ray Absorption Fine Structure",
+    "Description": "Extended X-ray Absorption Fine Structure (MICRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with microscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MICRO-XANES\">MICRO-XANES</a>",
+    "Alternative names": "Micro X-ray Absorption Near Edge Structure",
+    "Description": "MICRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with microscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MICRO-XAS\">MICRO-XAS</a>",
+    "Alternative names": "Micro X-ray Absorption Spectroscopy",
+    "Description": "MICRO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with microscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MICRO-XRD\">MICRO-XRD</a>",
@@ -258,6 +288,21 @@
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#MX\">MX</a>",
     "Alternative names": "Macromolecular Crystallography",
     "Description": "Macromolecular Crystallography (MX) measures X-ray diffraction from crystals of biological macromolecules to determine their 3D atomic structures, providing insights into protein folding, function, and interactions."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NANO-EXAFS\">NANO-EXAFS</a>",
+    "Alternative names": "Nano Extended X-ray Absorption Fine Structure",
+    "Description": "Extended X-ray Absorption Fine Structure (NANO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with nanoscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NANO-XANES\">NANO-XANES</a>",
+    "Alternative names": "Nano X-ray Absorption Near Edge Structure",
+    "Description": "NANO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with nanoscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms."
+  },
+  {
+    "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NANO-XAS\">NANO-XAS</a>",
+    "Alternative names": "Nano X-ray Absorption Spectroscopy",
+    "Description": "NANO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with nanoscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms."
   },
   {
     "Name": "<a href=\"http://purl.org/pan-science/ESRFET#NANO-XRD\">NANO-XRD</a>",
