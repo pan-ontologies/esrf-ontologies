@@ -318,7 +318,7 @@
     "Name": "MACRO-XRF",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-XRF",
     "Alternative names": "Scanning Macro X-ray fluorescence, MA-XRF, Macro-XRF",
-    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron.",
+    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro spacial resolution.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MACRO-XRF"
   },
   {
@@ -339,14 +339,14 @@
     "Name": "MICRO-XRD",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XRD",
     "Alternative names": "Scanning Micro X-ray Diffraction, Micro-XRD, μ-XRD",
-    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.",
+    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MICRO-XRD"
   },
   {
     "Name": "MICRO-XRF",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XRF",
     "Alternative names": "Scanning Micro X-ray fluorescence, Micro-XRF, μ-XRF",
-    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.",
+    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MICRO-XRF"
   },
   {
@@ -374,14 +374,14 @@
     "Name": "NANO-XRD",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XRD",
     "Alternative names": "Scanning Nano X-ray diffraction, Nano-XRD, nXRD",
-    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers.",
+    "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano spatial resolution.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#NANO-XRD"
   },
   {
     "Name": "NANO-XRF",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XRF",
     "Alternative names": "Scanning Nano X-ray fluorescence, Nano-XRF, n-XRF",
-    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers.",
+    "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano sample spatial resolution.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#NANO-XRF"
   },
   {
