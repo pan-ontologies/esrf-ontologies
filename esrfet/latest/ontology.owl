@@ -1693,7 +1693,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron.</rdfs:comment>
+        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro spacial resolution.</rdfs:comment>
         <rdfs:label>MACRO-XRF</rdfs:label>
         <skos:altLabel>MA-XRF</skos:altLabel>
         <skos:altLabel>Macro-XRF</skos:altLabel>
@@ -1753,7 +1753,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.</rdfs:comment>
+        <rdfs:comment>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution.</rdfs:comment>
         <rdfs:label>MICRO-XRD</rdfs:label>
         <skos:altLabel>Micro-XRD</skos:altLabel>
         <skos:altLabel>μ-XRD</skos:altLabel>
@@ -1797,7 +1797,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.</rdfs:comment>
+        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution.</rdfs:comment>
         <rdfs:label>MICRO-XRF</rdfs:label>
         <skos:altLabel>Micro-XRF</skos:altLabel>
         <skos:altLabel>μ-XRF</skos:altLabel>
@@ -1869,7 +1869,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers.</rdfs:comment>
+        <rdfs:comment>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano spatial resolution.</rdfs:comment>
         <rdfs:label>NANO-XRD</rdfs:label>
         <skos:altLabel>Nano-XRD</skos:altLabel>
         <skos:altLabel>nXRD</skos:altLabel>
@@ -1913,7 +1913,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers.</rdfs:comment>
+        <rdfs:comment>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano sample spatial resolution.</rdfs:comment>
         <rdfs:label>NANO-XRF</rdfs:label>
         <skos:altLabel>Nano-XRF</skos:altLabel>
         <skos:altLabel>n-XRF</skos:altLabel>
@@ -4279,7 +4279,7 @@ Large structural features: supramolecular structures, particle sizes, and shapes
 
     <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#micro_sample_spatial_resolution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/PaN/ESRFET#sample_spatial_resolution"/>
-        <rdfs:comment>Sample properties are measured with a resolution in space between than 0.1 and 100 micron.</rdfs:comment>
+        <rdfs:comment>Sample properties are measured with a resolution in space between 0.5 and 500 micron.</rdfs:comment>
     </owl:Class>
     
 
@@ -4329,7 +4329,7 @@ Large structural features: supramolecular structures, particle sizes, and shapes
 
     <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#nano_sample_spatial_resolution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/PaN/ESRFET#sample_spatial_resolution"/>
-        <rdfs:comment>Sample properties are measured with a resolution in space between than 0.1 and 100 nanometer.</rdfs:comment>
+        <rdfs:comment>Sample properties are measured with a resolution in space between 0.5 and 500 nanometer.</rdfs:comment>
     </owl:Class>
     
 

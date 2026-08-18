@@ -1266,7 +1266,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
-           rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron." ;
+           rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro spacial resolution." ;
            rdfs:label "MACRO-XRF" ;
            <http://www.w3.org/2004/02/skos/core#altLabel> "MA-XRF" ,
                                                           "Macro-XRF" ;
@@ -1311,7 +1311,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
-           rdfs:comment "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron." ;
+           rdfs:comment "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution." ;
            rdfs:label "MICRO-XRD" ;
            <http://www.w3.org/2004/02/skos/core#altLabel> "Micro-XRD" ,
                                                           "μ-XRD" ;
@@ -1348,7 +1348,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
-           rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron." ;
+           rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution." ;
            rdfs:label "MICRO-XRF" ;
            <http://www.w3.org/2004/02/skos/core#altLabel> "Micro-XRF" ,
                                                           "μ-XRF" ;
@@ -1401,7 +1401,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                    ) ;
                                 rdf:type owl:Class
                               ] ;
-          rdfs:comment "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers." ;
+          rdfs:comment "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano spatial resolution." ;
           rdfs:label "NANO-XRD" ;
           <http://www.w3.org/2004/02/skos/core#altLabel> "Nano-XRD" ,
                                                          "nXRD" ;
@@ -1438,7 +1438,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                    ) ;
                                 rdf:type owl:Class
                               ] ;
-          rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers." ;
+          rdfs:comment "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano sample spatial resolution." ;
           rdfs:label "NANO-XRF" ;
           <http://www.w3.org/2004/02/skos/core#altLabel> "Nano-XRF" ,
                                                          "n-XRF" ;
@@ -3166,7 +3166,7 @@ Large structural features: supramolecular structures, particle sizes, and shapes
 ###  https://w3id.org/PaN/ESRFET#micro_sample_spatial_resolution
 :micro_sample_spatial_resolution rdf:type owl:Class ;
                                  rdfs:subClassOf :sample_spatial_resolution ;
-                                 rdfs:comment "Sample properties are measured with a resolution in space between than 0.1 and 100 micron." .
+                                 rdfs:comment "Sample properties are measured with a resolution in space between 0.5 and 500 micron." .
 
 
 ###  https://w3id.org/PaN/ESRFET#moderately_high_temperature
@@ -3196,7 +3196,7 @@ Large structural features: supramolecular structures, particle sizes, and shapes
 ###  https://w3id.org/PaN/ESRFET#nano_sample_spatial_resolution
 :nano_sample_spatial_resolution rdf:type owl:Class ;
                                 rdfs:subClassOf :sample_spatial_resolution ;
-                                rdfs:comment "Sample properties are measured with a resolution in space between than 0.1 and 100 nanometer." .
+                                rdfs:comment "Sample properties are measured with a resolution in space between 0.5 and 500 nanometer." .
 
 
 ###  https://w3id.org/PaN/ESRFET#near_edge

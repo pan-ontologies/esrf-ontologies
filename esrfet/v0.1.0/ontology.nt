@@ -1577,7 +1577,7 @@ _:genid374 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid373 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid375 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/PaN/ESRFET#experimental_technique> .
 _:genid375 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/PaN/ESRFET#MACRO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron." .
+<https://w3id.org/PaN/ESRFET#MACRO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro spacial resolution." .
 <https://w3id.org/PaN/ESRFET#MACRO-XRF> <http://www.w3.org/2000/01/rdf-schema#label> "MACRO-XRF" .
 <https://w3id.org/PaN/ESRFET#MACRO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "MA-XRF" .
 <https://w3id.org/PaN/ESRFET#MACRO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "Macro-XRF" .
@@ -1629,7 +1629,7 @@ _:genid384 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/PaN/ESRFET#experimental_technique> .
 _:genid385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/PaN/ESRFET#MICRO-XRD> <http://www.w3.org/2000/01/rdf-schema#comment> "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron." .
+<https://w3id.org/PaN/ESRFET#MICRO-XRD> <http://www.w3.org/2000/01/rdf-schema#comment> "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution." .
 <https://w3id.org/PaN/ESRFET#MICRO-XRD> <http://www.w3.org/2000/01/rdf-schema#label> "MICRO-XRD" .
 <https://w3id.org/PaN/ESRFET#MICRO-XRD> <http://www.w3.org/2004/02/skos/core#altLabel> "Micro-XRD" .
 <https://w3id.org/PaN/ESRFET#MICRO-XRD> <http://www.w3.org/2004/02/skos/core#altLabel> "μ-XRD" .
@@ -1679,7 +1679,7 @@ _:genid398 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/PaN/ESRFET#experimental_technique> .
 _:genid399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/PaN/ESRFET#MICRO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron." .
+<https://w3id.org/PaN/ESRFET#MICRO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution." .
 <https://w3id.org/PaN/ESRFET#MICRO-XRF> <http://www.w3.org/2000/01/rdf-schema#label> "MICRO-XRF" .
 <https://w3id.org/PaN/ESRFET#MICRO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "Micro-XRF" .
 <https://w3id.org/PaN/ESRFET#MICRO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "μ-XRF" .
@@ -1738,7 +1738,7 @@ _:genid408 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/PaN/ESRFET#experimental_technique> .
 _:genid409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/PaN/ESRFET#NANO-XRD> <http://www.w3.org/2000/01/rdf-schema#comment> "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers." .
+<https://w3id.org/PaN/ESRFET#NANO-XRD> <http://www.w3.org/2000/01/rdf-schema#comment> "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano spatial resolution." .
 <https://w3id.org/PaN/ESRFET#NANO-XRD> <http://www.w3.org/2000/01/rdf-schema#label> "NANO-XRD" .
 <https://w3id.org/PaN/ESRFET#NANO-XRD> <http://www.w3.org/2004/02/skos/core#altLabel> "Nano-XRD" .
 <https://w3id.org/PaN/ESRFET#NANO-XRD> <http://www.w3.org/2004/02/skos/core#altLabel> "nXRD" .
@@ -1788,7 +1788,7 @@ _:genid422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid423 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/PaN/ESRFET#experimental_technique> .
 _:genid423 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/PaN/ESRFET#NANO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers." .
+<https://w3id.org/PaN/ESRFET#NANO-XRF> <http://www.w3.org/2000/01/rdf-schema#comment> "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano sample spatial resolution." .
 <https://w3id.org/PaN/ESRFET#NANO-XRF> <http://www.w3.org/2000/01/rdf-schema#label> "NANO-XRF" .
 <https://w3id.org/PaN/ESRFET#NANO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "Nano-XRF" .
 <https://w3id.org/PaN/ESRFET#NANO-XRF> <http://www.w3.org/2004/02/skos/core#altLabel> "n-XRF" .
@@ -3761,7 +3761,7 @@ _:genid815 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/PaN/ESRFET#micro_sample_spatial_resolution
 <https://w3id.org/PaN/ESRFET#micro_sample_spatial_resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/PaN/ESRFET#micro_sample_spatial_resolution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/PaN/ESRFET#sample_spatial_resolution> .
-<https://w3id.org/PaN/ESRFET#micro_sample_spatial_resolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample properties are measured with a resolution in space between than 0.1 and 100 micron." .
+<https://w3id.org/PaN/ESRFET#micro_sample_spatial_resolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample properties are measured with a resolution in space between 0.5 and 500 micron." .
 # 
 # https://w3id.org/PaN/ESRFET#moderately_high_temperature
 <https://w3id.org/PaN/ESRFET#moderately_high_temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -3786,7 +3786,7 @@ _:genid815 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/PaN/ESRFET#nano_sample_spatial_resolution
 <https://w3id.org/PaN/ESRFET#nano_sample_spatial_resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/PaN/ESRFET#nano_sample_spatial_resolution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/PaN/ESRFET#sample_spatial_resolution> .
-<https://w3id.org/PaN/ESRFET#nano_sample_spatial_resolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample properties are measured with a resolution in space between than 0.1 and 100 nanometer." .
+<https://w3id.org/PaN/ESRFET#nano_sample_spatial_resolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample properties are measured with a resolution in space between 0.5 and 500 nanometer." .
 # 
 # https://w3id.org/PaN/ESRFET#near_edge
 <https://w3id.org/PaN/ESRFET#near_edge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

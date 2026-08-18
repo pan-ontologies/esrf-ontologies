@@ -5287,7 +5287,7 @@
   "@id" : "https://w3id.org/PaN/ESRFET#MACRO-XRF",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron."
+    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro spacial resolution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "MACRO-XRF"
@@ -5337,7 +5337,7 @@
   "@id" : "https://w3id.org/PaN/ESRFET#MICRO-XRD",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron."
+    "@value" : "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "MICRO-XRD"
@@ -5357,7 +5357,7 @@
   "@id" : "https://w3id.org/PaN/ESRFET#MICRO-XRF",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron."
+    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "MICRO-XRF"
@@ -5422,7 +5422,7 @@
   "@id" : "https://w3id.org/PaN/ESRFET#NANO-XRD",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers."
+    "@value" : "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano spatial resolution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "NANO-XRD"
@@ -5442,7 +5442,7 @@
   "@id" : "https://w3id.org/PaN/ESRFET#NANO-XRF",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers."
+    "@value" : "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano sample spatial resolution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "NANO-XRF"
@@ -7241,7 +7241,7 @@
   "@id" : "https://w3id.org/PaN/ESRFET#micro_sample_spatial_resolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Sample properties are measured with a resolution in space between than 0.1 and 100 micron."
+    "@value" : "Sample properties are measured with a resolution in space between 0.5 and 500 micron."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/PaN/ESRFET#sample_spatial_resolution"
@@ -7285,7 +7285,7 @@
   "@id" : "https://w3id.org/PaN/ESRFET#nano_sample_spatial_resolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Sample properties are measured with a resolution in space between than 0.1 and 100 nanometer."
+    "@value" : "Sample properties are measured with a resolution in space between 0.5 and 500 nanometer."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/PaN/ESRFET#sample_spatial_resolution"
