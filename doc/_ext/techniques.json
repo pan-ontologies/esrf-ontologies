@@ -163,7 +163,7 @@
   {
     "Name": "FF-XANES",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#FF-XANES",
-    "Alternative names": "Full‑Field X-ray Absorption Near Edge Structure Imaging",
+    "Alternative names": "Full-Field X-ray Absorption Near Edge Structure Imaging",
     "Description": "FF-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved information on chemical state and electronic structure.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#FF-XANES"
   },
@@ -197,10 +197,10 @@
   },
   {
     "Name": "FS-XANES",
-    "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#FS‑XANES",
-    "Alternative names": "Full‑Spectral X-ray Absorption Near Edge Structure Imaging",
+    "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#FS-XANES",
+    "Alternative names": "Full-Spectral X-ray Absorption Near Edge Structure Imaging",
     "Description": "FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure.",
-    "copyIRI": "https://w3id.org/PaN/ESRFET#FS‑XANES"
+    "copyIRI": "https://w3id.org/PaN/ESRFET#FS-XANES"
   },
   {
     "Name": "FS-XAS",
@@ -595,6 +595,13 @@
     "copyIRI": "https://w3id.org/PaN/ESRFET#TR-MX"
   },
   {
+    "Name": "TR-SSX",
+    "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR-SSX",
+    "Alternative names": "Time-Resolved Serial Synchrotron Crystallography",
+    "Description": "Time-Resolved Serial Synchrotron Crystallography (TR-SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR-SSX enables the reconstruction of 3D “molecular movies” that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution.",
+    "copyIRI": "https://w3id.org/PaN/ESRFET#TR-SSX"
+  },
+  {
     "Name": "TR-USAXS",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR-USAXS",
     "Alternative names": "Time Resolved Ultra-Small Angle X-ray Scattering",
@@ -614,13 +621,6 @@
     "Alternative names": "Time-Resolved X-ray solution scattering",
     "Description": "Time-Resolved X-ray Solution Scattering (TR-XSS) measures transient changes in X-ray scattering from a solution of chemicals or biomolecules following a triggering perturbation, providing insights into the dynamics of structural rearrangements of the solute and of the surrounding solvent.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#TR-XSS"
-  },
-  {
-    "Name": "TR‑SSX",
-    "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#TR‑SSX",
-    "Alternative names": "Time-Resolved Serial Synchrotron Crystallography",
-    "Description": "Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX enables the reconstruction of 3D “molecular movies” that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution.",
-    "copyIRI": "https://w3id.org/PaN/ESRFET#TR‑SSX"
   },
   {
     "Name": "TXRF",
