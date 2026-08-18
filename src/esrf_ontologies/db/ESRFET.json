@@ -457,7 +457,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#MACRO-EXAFS",
     "names": [
       "MACRO-EXAFS",
-      "Macro Extended X-ray Absorption Fine Structure"
+      "Macro Extended X-ray Absorption Fine Structure (MACRO-EXAFS)"
     ],
     "description": "Extended X-ray Absorption Fine Structure (MACRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with macroscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-EXAFS",
@@ -467,7 +467,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#MACRO-XANES",
     "names": [
       "MACRO-XANES",
-      "Macro X-ray Absorption Near Edge Structure"
+      "Macro X-ray Absorption Near Edge Structure (MACRO-XANES)"
     ],
     "description": "MACRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with macroscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-XANES",
@@ -477,17 +477,27 @@
     "iri": "https://w3id.org/PaN/ESRFET#MACRO-XAS",
     "names": [
       "MACRO-XAS",
-      "Macro X-ray Absorption Spectroscopy"
+      "Macro X-ray Absorption Spectroscopy (MACRO-XAS)"
     ],
     "description": "MACRO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with macroscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-XAS",
     "ontology_version": "v0.1.0"
   },
   {
+    "iri": "https://w3id.org/PaN/ESRFET#MACRO-XRD",
+    "names": [
+      "MACRO-XRD",
+      "Scanning Macro X-ray Diffraction (MACRO-XRD)"
+    ],
+    "description": "XRD which provides large-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro_sample_spatial_resolution.",
+    "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-XRD",
+    "ontology_version": "v0.1.0"
+  },
+  {
     "iri": "https://w3id.org/PaN/ESRFET#MACRO-XRF",
     "names": [
       "MACRO-XRF",
-      "Scanning Macro X-ray fluorescence",
+      "Scanning Macro X-ray Fluorescence (MACRO-XRF)",
       "MA-XRF",
       "Macro-XRF"
     ],
@@ -519,7 +529,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#MICRO-EXAFS",
     "names": [
       "MICRO-EXAFS",
-      "Micro Extended X-ray Absorption Fine Structure"
+      "Micro Extended X-ray Absorption Fine Structure (MICRO-EXAFS)"
     ],
     "description": "Extended X-ray Absorption Fine Structure (MICRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with microscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-EXAFS",
@@ -529,7 +539,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#MICRO-XANES",
     "names": [
       "MICRO-XANES",
-      "Micro X-ray Absorption Near Edge Structure"
+      "Micro X-ray Absorption Near Edge Structure (MICRO-XANES)"
     ],
     "description": "MICRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with microscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XANES",
@@ -539,7 +549,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#MICRO-XAS",
     "names": [
       "MICRO-XAS",
-      "Micro X-ray Absorption Spectroscopy"
+      "Micro X-ray Absorption Spectroscopy (MICRO-XAS)"
     ],
     "description": "MICRO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with microscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XAS",
@@ -549,7 +559,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#MICRO-XRD",
     "names": [
       "MICRO-XRD",
-      "Scanning Micro X-ray Diffraction",
+      "Scanning Micro X-ray Diffraction (MICRO-XRD)",
       "Micro-XRD",
       "μ-XRD"
     ],
@@ -561,7 +571,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#MICRO-XRF",
     "names": [
       "MICRO-XRF",
-      "Scanning Micro X-ray fluorescence",
+      "Scanning Micro X-ray Fluorescence (MICRO-XRF)",
       "Micro-XRF",
       "μ-XRF"
     ],
@@ -603,7 +613,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#NANO-EXAFS",
     "names": [
       "NANO-EXAFS",
-      "Nano Extended X-ray Absorption Fine Structure"
+      "Nano Extended X-ray Absorption Fine Structure (NANO-EXAFS)"
     ],
     "description": "Extended X-ray Absorption Fine Structure (NANO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with nanoscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-EXAFS",
@@ -613,7 +623,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#NANO-XANES",
     "names": [
       "NANO-XANES",
-      "Nano X-ray Absorption Near Edge Structure"
+      "Nano X-ray Absorption Near Edge Structure (NANO-XANES)"
     ],
     "description": "NANO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with nanoscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XANES",
@@ -623,7 +633,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#NANO-XAS",
     "names": [
       "NANO-XAS",
-      "Nano X-ray Absorption Spectroscopy"
+      "Nano X-ray Absorption Spectroscopy (NANO-XAS)"
     ],
     "description": "NANO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with nanoscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XAS",
@@ -633,7 +643,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#NANO-XRD",
     "names": [
       "NANO-XRD",
-      "Scanning Nano X-ray diffraction",
+      "Scanning Nano X-ray Diffraction (NANO-XRD)",
       "Nano-XRD",
       "nXRD"
     ],
@@ -645,7 +655,7 @@
     "iri": "https://w3id.org/PaN/ESRFET#NANO-XRF",
     "names": [
       "NANO-XRF",
-      "Scanning Nano X-ray fluorescence",
+      "Scanning Nano X-ray Fluorescence (NANO-XRF)",
       "Nano-XRF",
       "n-XRF"
     ],

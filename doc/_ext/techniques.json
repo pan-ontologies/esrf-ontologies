@@ -317,28 +317,35 @@
   {
     "Name": "MACRO-EXAFS",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-EXAFS",
-    "Alternative names": "Macro Extended X-ray Absorption Fine Structure",
+    "Alternative names": "Macro Extended X-ray Absorption Fine Structure (MACRO-EXAFS)",
     "Description": "Extended X-ray Absorption Fine Structure (MACRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with macroscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MACRO-EXAFS"
   },
   {
     "Name": "MACRO-XANES",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-XANES",
-    "Alternative names": "Macro X-ray Absorption Near Edge Structure",
+    "Alternative names": "Macro X-ray Absorption Near Edge Structure (MACRO-XANES)",
     "Description": "MACRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with macroscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MACRO-XANES"
   },
   {
     "Name": "MACRO-XAS",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-XAS",
-    "Alternative names": "Macro X-ray Absorption Spectroscopy",
+    "Alternative names": "Macro X-ray Absorption Spectroscopy (MACRO-XAS)",
     "Description": "MACRO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with macroscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MACRO-XAS"
   },
   {
+    "Name": "MACRO-XRD",
+    "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-XRD",
+    "Alternative names": "Scanning Macro X-ray Diffraction (MACRO-XRD)",
+    "Description": "XRD which provides large-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro_sample_spatial_resolution.",
+    "copyIRI": "https://w3id.org/PaN/ESRFET#MACRO-XRD"
+  },
+  {
     "Name": "MACRO-XRF",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MACRO-XRF",
-    "Alternative names": "Scanning Macro X-ray fluorescence, MA-XRF, Macro-XRF",
+    "Alternative names": "Scanning Macro X-ray Fluorescence (MACRO-XRF), MA-XRF, Macro-XRF",
     "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size greater than 100 micron.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MACRO-XRF"
   },
@@ -359,35 +366,35 @@
   {
     "Name": "MICRO-EXAFS",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-EXAFS",
-    "Alternative names": "Micro Extended X-ray Absorption Fine Structure",
+    "Alternative names": "Micro Extended X-ray Absorption Fine Structure (MICRO-EXAFS)",
     "Description": "Extended X-ray Absorption Fine Structure (MICRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with microscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MICRO-EXAFS"
   },
   {
     "Name": "MICRO-XANES",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XANES",
-    "Alternative names": "Micro X-ray Absorption Near Edge Structure",
+    "Alternative names": "Micro X-ray Absorption Near Edge Structure (MICRO-XANES)",
     "Description": "MICRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with microscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MICRO-XANES"
   },
   {
     "Name": "MICRO-XAS",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XAS",
-    "Alternative names": "Micro X-ray Absorption Spectroscopy",
+    "Alternative names": "Micro X-ray Absorption Spectroscopy (MICRO-XAS)",
     "Description": "MICRO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with microscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MICRO-XAS"
   },
   {
     "Name": "MICRO-XRD",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XRD",
-    "Alternative names": "Scanning Micro X-ray Diffraction, Micro-XRD, μ-XRD",
+    "Alternative names": "Scanning Micro X-ray Diffraction (MICRO-XRD), Micro-XRD, μ-XRD",
     "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MICRO-XRD"
   },
   {
     "Name": "MICRO-XRF",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#MICRO-XRF",
-    "Alternative names": "Scanning Micro X-ray fluorescence, Micro-XRF, μ-XRF",
+    "Alternative names": "Scanning Micro X-ray Fluorescence (MICRO-XRF), Micro-XRF, μ-XRF",
     "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 micron.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#MICRO-XRF"
   },
@@ -415,35 +422,35 @@
   {
     "Name": "NANO-EXAFS",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-EXAFS",
-    "Alternative names": "Nano Extended X-ray Absorption Fine Structure",
+    "Alternative names": "Nano Extended X-ray Absorption Fine Structure (NANO-EXAFS)",
     "Description": "Extended X-ray Absorption Fine Structure (NANO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with nanoscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#NANO-EXAFS"
   },
   {
     "Name": "NANO-XANES",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XANES",
-    "Alternative names": "Nano X-ray Absorption Near Edge Structure",
+    "Alternative names": "Nano X-ray Absorption Near Edge Structure (NANO-XANES)",
     "Description": "NANO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with nanoscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#NANO-XANES"
   },
   {
     "Name": "NANO-XAS",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XAS",
-    "Alternative names": "Nano X-ray Absorption Spectroscopy",
+    "Alternative names": "Nano X-ray Absorption Spectroscopy (NANO-XAS)",
     "Description": "NANO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with nanoscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#NANO-XAS"
   },
   {
     "Name": "NANO-XRD",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XRD",
-    "Alternative names": "Scanning Nano X-ray diffraction, Nano-XRD, nXRD",
+    "Alternative names": "Scanning Nano X-ray Diffraction (NANO-XRD), Nano-XRD, nXRD",
     "Description": "XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#NANO-XRD"
   },
   {
     "Name": "NANO-XRF",
     "Link": "https://w3id.org/PaN/ESRFET/v0.1.0/#NANO-XRF",
-    "Alternative names": "Scanning Nano X-ray fluorescence, Nano-XRF, n-XRF",
+    "Alternative names": "Scanning Nano X-ray Fluorescence (NANO-XRF), Nano-XRF, n-XRF",
     "Description": "XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam with a size between 0.1 and 100 nanometers.",
     "copyIRI": "https://w3id.org/PaN/ESRFET#NANO-XRF"
   },
