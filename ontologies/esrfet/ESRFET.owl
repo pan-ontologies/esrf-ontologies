@@ -214,6 +214,18 @@
         <Class IRI="#LDSC-XAS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MACRO-EXAFS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MACRO-XANES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MACRO-XAS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MACRO-XRD"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MACRO-XRF"/>
     </Declaration>
     <Declaration>
@@ -221,6 +233,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="#MBS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MICRO-EXAFS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MICRO-XANES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MICRO-XAS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MICRO-XRD"/>
@@ -236,6 +257,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="#MX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NANO-EXAFS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NANO-XANES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NANO-XAS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NANO-XRD"/>
@@ -1714,6 +1744,106 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#MACRO-EXAFS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#extended"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#macro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MACRO-XANES"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#near_edge"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#macro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MACRO-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#macro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MACRO-XRD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#macro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#scanning_imaging"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#MACRO-XRF"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1736,6 +1866,84 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#fluorescence"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MICRO-EXAFS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#extended"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#micro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MICRO-XANES"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#near_edge"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#micro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MICRO-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#micro_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
@@ -1788,6 +1996,84 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#fluorescence"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NANO-EXAFS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#extended"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#nano_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NANO-XANES"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#near_edge"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#nano_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NANO-XAS"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#nano_sample_spatial_resolution"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#atomic_core_excitation"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
@@ -4286,6 +4572,66 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MACRO-EXAFS</IRI>
+        <Literal>Extended X-ray Absorption Fine Structure (MACRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with macroscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MACRO-EXAFS</IRI>
+        <Literal>MACRO-EXAFS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#MACRO-EXAFS</IRI>
+        <Literal>Macro Extended X-ray Absorption Fine Structure (MACRO-EXAFS)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MACRO-XANES</IRI>
+        <Literal>MACRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with macroscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MACRO-XANES</IRI>
+        <Literal>MACRO-XANES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#MACRO-XANES</IRI>
+        <Literal>Macro X-ray Absorption Near Edge Structure (MACRO-XANES)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MACRO-XAS</IRI>
+        <Literal>MACRO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with macroscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MACRO-XAS</IRI>
+        <Literal>MACRO-XAS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#MACRO-XAS</IRI>
+        <Literal>Macro X-ray Absorption Spectroscopy (MACRO-XAS)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MACRO-XRD</IRI>
+        <Literal>XRD which provides large-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro_sample_spatial_resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MACRO-XRD</IRI>
+        <Literal>MACRO-XRD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#MACRO-XRD</IRI>
+        <Literal>Scanning Macro X-ray Diffraction (MACRO-XRD)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MACRO-XRF</IRI>
         <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro spacial resolution.</Literal>
     </AnnotationAssertion>
@@ -4307,7 +4653,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MACRO-XRF</IRI>
-        <Literal>Scanning Macro X-ray fluorescence</Literal>
+        <Literal>Scanning Macro X-ray Fluorescence (MACRO-XRF)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4341,6 +4687,51 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MICRO-EXAFS</IRI>
+        <Literal>Extended X-ray Absorption Fine Structure (MICRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with microscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MICRO-EXAFS</IRI>
+        <Literal>MICRO-EXAFS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#MICRO-EXAFS</IRI>
+        <Literal>Micro Extended X-ray Absorption Fine Structure (MICRO-EXAFS)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MICRO-XANES</IRI>
+        <Literal>MICRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with microscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MICRO-XANES</IRI>
+        <Literal>MICRO-XANES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#MICRO-XANES</IRI>
+        <Literal>Micro X-ray Absorption Near Edge Structure (MICRO-XANES)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MICRO-XAS</IRI>
+        <Literal>MICRO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with microscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MICRO-XAS</IRI>
+        <Literal>MICRO-XAS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#MICRO-XAS</IRI>
+        <Literal>Micro X-ray Absorption Spectroscopy (MICRO-XAS)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MICRO-XRD</IRI>
         <Literal>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution.</Literal>
     </AnnotationAssertion>
@@ -4362,7 +4753,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-XRD</IRI>
-        <Literal>Scanning Micro X-ray Diffraction</Literal>
+        <Literal>Scanning Micro X-ray Diffraction (MICRO-XRD)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4387,7 +4778,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-XRF</IRI>
-        <Literal>Scanning Micro X-ray fluorescence</Literal>
+        <Literal>Scanning Micro X-ray Fluorescence (MICRO-XRF)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4436,6 +4827,51 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NANO-EXAFS</IRI>
+        <Literal>Extended X-ray Absorption Fine Structure (NANO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with nanoscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NANO-EXAFS</IRI>
+        <Literal>NANO-EXAFS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#NANO-EXAFS</IRI>
+        <Literal>Nano Extended X-ray Absorption Fine Structure (NANO-EXAFS)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NANO-XANES</IRI>
+        <Literal>NANO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with nanoscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NANO-XANES</IRI>
+        <Literal>NANO-XANES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#NANO-XANES</IRI>
+        <Literal>Nano X-ray Absorption Near Edge Structure (NANO-XANES)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NANO-XAS</IRI>
+        <Literal>NANO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with nanoscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NANO-XAS</IRI>
+        <Literal>NANO-XAS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#NANO-XAS</IRI>
+        <Literal>Nano X-ray Absorption Spectroscopy (NANO-XAS)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NANO-XRD</IRI>
         <Literal>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano spatial resolution.</Literal>
     </AnnotationAssertion>
@@ -4457,7 +4893,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-XRD</IRI>
-        <Literal>Scanning Nano X-ray diffraction</Literal>
+        <Literal>Scanning Nano X-ray Diffraction (NANO-XRD)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4482,7 +4918,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-XRF</IRI>
-        <Literal>Scanning Nano X-ray fluorescence</Literal>
+        <Literal>Scanning Nano X-ray Fluorescence (NANO-XRF)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
