@@ -4558,7 +4558,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MACRO-EXAFS</IRI>
-        <Literal>Macro Extended X-ray Absorption Fine Structure</Literal>
+        <Literal>Macro Extended X-ray Absorption Fine Structure (MACRO-EXAFS)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4573,7 +4573,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MACRO-XANES</IRI>
-        <Literal>Macro X-ray Absorption Near Edge Structure</Literal>
+        <Literal>Macro X-ray Absorption Near Edge Structure (MACRO-XANES)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4588,7 +4588,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MACRO-XAS</IRI>
-        <Literal>Macro X-ray Absorption Spectroscopy</Literal>
+        <Literal>Macro X-ray Absorption Spectroscopy (MACRO-XAS)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4613,7 +4613,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MACRO-XRF</IRI>
-        <Literal>Scanning Macro X-ray fluorescence</Literal>
+        <Literal>Scanning Macro X-ray Fluorescence (MACRO-XRF)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4658,7 +4658,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-EXAFS</IRI>
-        <Literal>Micro Extended X-ray Absorption Fine Structure</Literal>
+        <Literal>Micro Extended X-ray Absorption Fine Structure (MICRO-EXAFS)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4673,7 +4673,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-XANES</IRI>
-        <Literal>Micro X-ray Absorption Near Edge Structure</Literal>
+        <Literal>Micro X-ray Absorption Near Edge Structure (MICRO-XANES)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4688,7 +4688,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-XAS</IRI>
-        <Literal>Micro X-ray Absorption Spectroscopy</Literal>
+        <Literal>Micro X-ray Absorption Spectroscopy (MICRO-XAS)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4713,7 +4713,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-XRD</IRI>
-        <Literal>Scanning Micro X-ray Diffraction</Literal>
+        <Literal>Scanning Micro X-ray Diffraction (MICRO-XRD)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4738,7 +4738,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-XRF</IRI>
-        <Literal>Scanning Micro X-ray fluorescence</Literal>
+        <Literal>Scanning Micro X-ray Fluorescence (MICRO-XRF)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4798,7 +4798,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-EXAFS</IRI>
-        <Literal>Nano Extended X-ray Absorption Fine Structure</Literal>
+        <Literal>Nano Extended X-ray Absorption Fine Structure (NANO-EXAFS)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4813,7 +4813,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-XANES</IRI>
-        <Literal>Nano X-ray Absorption Near Edge Structure</Literal>
+        <Literal>Nano X-ray Absorption Near Edge Structure (NANO-XANES)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4828,7 +4828,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-XAS</IRI>
-        <Literal>Nano X-ray Absorption Spectroscopy</Literal>
+        <Literal>Nano X-ray Absorption Spectroscopy (NANO-XAS)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4853,7 +4853,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-XRD</IRI>
-        <Literal>Scanning Nano X-ray diffraction</Literal>
+        <Literal>Scanning Nano X-ray Diffraction (NANO-XRD)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4878,7 +4878,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-XRF</IRI>
-        <Literal>Scanning Nano X-ray fluorescence</Literal>
+        <Literal>Scanning Nano X-ray Fluorescence (NANO-XRF)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
