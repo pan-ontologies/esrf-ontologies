@@ -6060,7 +6060,7 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#nano_sample_spatial_resolution</IRI>
-        <Literal>Sample properties are measured with a resolution in space between 0.1 and 500 nanometer.</Literal>
+        <Literal>Sample properties are measured with a resolution in space between 0.5 and 500 nanometer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
