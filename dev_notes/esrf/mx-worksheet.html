@@ -1,0 +1,817 @@
+<meta charset="utf-8">
+<title>MX Axiom Worksheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&display=swap">
+
+<style>
+:root{
+  --ground:#F4F6F4; --surface:#FFFFFF; --surface-2:#EAEEEC; --surface-3:#E1E7E4;
+  --ink:#10201E; --ink-2:#465855; --ink-3:#6E8783;
+  --rule:#D3DBD8; --rule-strong:#B7C4C0;
+  --accent:#0A6A66; --accent-ink:#08514E; --accent-soft:#DCEBE9;
+  --signal:#8C5C06; --signal-soft:#F6EAD1; --signal-rule:#D8B76A;
+  --screen:#0F1E1D; --screen-ink:#DDE7E4; --screen-dim:#8FB0AB; --screen-rule:#2A4441;
+  --shadow:0 1px 2px rgba(16,32,30,.05), 0 8px 24px -14px rgba(16,32,30,.22);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0A1312; --surface:#111E1D; --surface-2:#172624; --surface-3:#1D2F2C;
+    --ink:#E5EDEA; --ink-2:#A8BAB6; --ink-3:#87A09B;
+    --rule:#22352F; --rule-strong:#354B45;
+    --accent:#54C3B8; --accent-ink:#7FD6CD; --accent-soft:#15302D;
+    --signal:#E2AA43; --signal-soft:#2B2213; --signal-rule:#66531C;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0A1312; --surface:#111E1D; --surface-2:#172624; --surface-3:#1D2F2C;
+  --ink:#E5EDEA; --ink-2:#A8BAB6; --ink-3:#87A09B;
+  --rule:#22352F; --rule-strong:#354B45;
+  --accent:#54C3B8; --accent-ink:#7FD6CD; --accent-soft:#15302D;
+  --signal:#E2AA43; --signal-soft:#2B2213; --signal-rule:#66531C;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -14px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Literata",Georgia,"Times New Roman",serif;
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+body.dock-open{padding-bottom:min(52vh,420px)}
+.wrap{max-width:1120px; margin:0 auto; padding:0 24px 96px}
+.prose{max-width:68ch}
+h1,h2,h3,h4,.ui{font-family:"Archivo","Helvetica Neue",Arial,sans-serif}
+h2{font-size:clamp(1.5rem,1.2rem + 1.1vw,2.05rem); font-weight:700; letter-spacing:-.018em; line-height:1.15; margin:0; text-wrap:balance}
+h3{font-size:1.13rem; font-weight:600; letter-spacing:-.008em; margin:0; text-wrap:balance}
+h4{font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); margin:0}
+p{margin:0}
+a{color:var(--accent-ink)}
+code,.mono,.chip,th,td.d,.axiom{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--rule); background:var(--surface)}
+.mast .wrap{padding-top:44px; padding-bottom:38px; display:flex; flex-direction:column; gap:22px}
+.eyebrow{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+.eyebrow::before{content:""; width:26px; height:2px; background:var(--accent); flex:none}
+h1{font-size:clamp(2.1rem,1.4rem + 3.1vw,3.5rem); font-weight:700; letter-spacing:-.032em; line-height:1.03; margin:0; text-wrap:balance}
+.standfirst{font-size:1.09rem; color:var(--ink-2); max-width:64ch}
+.meta{display:flex; flex-wrap:wrap; gap:8px 10px; font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--ink-3)}
+.meta span{background:var(--surface-2); border:1px solid var(--rule); border-radius:2px; padding:4px 9px}
+
+/* ---------- how to use ---------- */
+.howto{background:var(--surface-2); border-bottom:1px solid var(--rule); margin-bottom:56px}
+.howto .wrap{padding-top:26px; padding-bottom:28px; display:flex; flex-direction:column; gap:14px}
+.howto h4{color:var(--ink-2)}
+.howto ol{margin:0; padding-left:0; list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:14px; counter-reset:h}
+.howto li{counter-increment:h; background:var(--surface); border:1px solid var(--rule); border-radius:3px; padding:14px 16px 15px; font-size:.87rem; color:var(--ink-2); display:flex; flex-direction:column; gap:5px}
+.howto li strong{font-family:"Archivo",sans-serif; font-size:.95rem; color:var(--ink); font-weight:600; display:flex; gap:8px; align-items:baseline}
+.howto li strong::before{content:counter(h); font-family:"IBM Plex Mono",monospace; font-size:.75rem; color:var(--accent); font-weight:600}
+
+/* ---------- sections ---------- */
+section.step{margin-bottom:64px; scroll-margin-top:20px}
+.step-head{display:flex; flex-direction:column; gap:10px; margin-bottom:26px; padding-bottom:16px; border-bottom:2px solid var(--ink)}
+.step-tag{font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3)}
+.step-head p{color:var(--ink-2); max-width:70ch; margin-top:4px}
+
+/* ---------- axiom / screen ---------- */
+.axiom{background:var(--screen); color:var(--screen-ink); border:1px solid var(--screen-rule); border-radius:3px; padding:20px 22px; overflow-x:auto; font-size:.85rem; line-height:1.85; margin:22px 0; white-space:pre}
+.axiom .k{color:#7FD6CD}
+.axiom .v{color:#E2AA43}
+.axiom .c{color:#8FA9A4; font-style:italic}
+.screen{background:var(--screen); border:1px solid var(--screen-rule); border-radius:3px; padding:22px 18px; overflow-x:auto; margin:22px 0}
+.screen .cap{font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--screen-dim); margin-bottom:16px; display:block}
+.screen pre.mermaid{margin:0; background:none; text-align:center}
+
+/* ---------- FIG 1: hand-built, guaranteed contrast ---------- */
+.fig1{border:1px solid var(--rule); border-radius:3px; background:var(--surface); box-shadow:var(--shadow); margin:22px 0; overflow:hidden}
+.fig1 .cap{display:block; font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); padding:14px 18px; border-bottom:1px solid var(--rule); background:var(--surface-2)}
+.fig1 .zones{display:grid; grid-template-columns:1fr auto 1fr auto 1fr; gap:0; align-items:stretch; padding:18px; overflow-x:auto}
+.zone{display:flex; flex-direction:column; gap:10px; min-width:230px}
+.zone > h4{padding-bottom:8px; border-bottom:1px solid var(--rule-strong)}
+.arrowcol{display:flex; align-items:center; justify-content:center; padding:0 14px; color:var(--accent); font-size:1.5rem; line-height:1; font-family:"IBM Plex Mono",monospace}
+.pnode{border:1px solid var(--rule-strong); border-left:3px solid var(--accent); border-radius:3px; background:var(--surface); padding:11px 13px; display:flex; flex-direction:column; gap:4px}
+.pnode .n{font-family:"IBM Plex Mono",monospace; font-size:.775rem; font-weight:600; color:var(--accent-ink); word-break:break-word; line-height:1.35}
+.pnode .w{font-size:.79rem; color:var(--ink-2); line-height:1.45}
+.pnode.sample{border-left-color:var(--signal); background:var(--signal-soft); align-items:center; text-align:center}
+.pnode.sample .n{color:var(--signal); font-size:.95rem; letter-spacing:.14em}
+.fig1 .sweep{border-top:1px solid var(--rule); background:var(--surface-2); padding:14px 18px; display:flex; gap:14px; align-items:baseline; flex-wrap:wrap}
+.fig1 .sweep .lbl{font-family:"Archivo",sans-serif; font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); flex:none}
+.fig1 .sweep .n{font-family:"IBM Plex Mono",monospace; font-size:.8rem; font-weight:600; color:var(--accent-ink)}
+.fig1 .sweep .w{font-size:.84rem; color:var(--ink-2)}
+@media (max-width:860px){
+  .fig1 .zones{grid-template-columns:1fr; gap:16px}
+  .arrowcol{padding:0; transform:rotate(90deg); height:22px}
+}
+
+/* ---------- vocabulary blocks ---------- */
+.blocks{display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:18px}
+.block{background:var(--surface); border:1px solid var(--rule); border-radius:3px; box-shadow:var(--shadow); display:flex; flex-direction:column; overflow:hidden}
+.block > header{padding:14px 16px 13px; border-bottom:1px solid var(--rule); background:var(--surface-2); display:flex; flex-direction:column; gap:5px}
+.block .prop{font-family:"IBM Plex Mono",monospace; font-size:.86rem; font-weight:600; color:var(--accent-ink); word-break:break-word}
+.block .range{font-family:"IBM Plex Mono",monospace; font-size:.7rem; color:var(--ink-3)}
+.grps{padding:14px 16px 18px; display:flex; flex-direction:column; gap:14px}
+.grp{display:flex; flex-direction:column; gap:7px}
+.chips{display:flex; flex-wrap:wrap; gap:5px}
+.chip{font-family:"IBM Plex Mono",monospace; font-size:.735rem; line-height:1.3; padding:4px 8px 4px 20px; border-radius:2px; border:1px solid var(--rule-strong); background:var(--surface); color:var(--ink); cursor:pointer; text-align:left; position:relative; transition:background .12s,border-color .12s,color .12s}
+.chip::before{content:"+"; position:absolute; left:7px; top:50%; transform:translateY(-50%); color:var(--ink-3); font-weight:600}
+.chip:hover{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink)}
+.chip:hover::before{color:var(--accent)}
+.chip:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.chip[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:#fff}
+.chip[aria-pressed="true"]::before{content:"\2713"; color:#fff}
+.chip.flag{border-style:dashed; border-color:var(--signal-rule); color:var(--signal)}
+.hint{font-size:.78rem; color:var(--ink-3); font-style:italic; font-family:"Literata",serif}
+
+/* ---------- table ---------- */
+.tablewrap{overflow-x:auto; border:1px solid var(--rule); border-radius:3px; background:var(--surface); box-shadow:var(--shadow)}
+table{border-collapse:collapse; width:100%; min-width:660px}
+thead th{font-family:"Archivo",sans-serif; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); text-align:left; padding:12px 12px; background:var(--surface-2); border-bottom:1px solid var(--rule-strong); font-weight:600}
+tbody td{padding:11px 12px; border-bottom:1px solid var(--rule); vertical-align:top; font-size:.82rem; line-height:1.55}
+tbody tr:last-child td{border-bottom:none}
+td.t{font-family:"IBM Plex Mono",monospace; font-weight:600; color:var(--ink); white-space:nowrap}
+td.t.l1{padding-left:24px} td.t.l2{padding-left:40px} td.t.l3{padding-left:56px} td.t.l4{padding-left:72px}
+td.t .g{color:var(--ink-3); font-weight:400; margin-right:5px}
+td.d{font-size:.775rem; color:var(--ink-2); word-break:break-word}
+td.d b{color:var(--accent-ink); font-weight:500}
+tr.parent{background:var(--accent-soft)}
+tr.parent td{border-bottom-color:var(--accent)}
+.pill{display:inline-block; font-family:"Archivo",sans-serif; font-size:.63rem; font-weight:600; letter-spacing:.07em; text-transform:uppercase; padding:3px 7px; border-radius:2px; white-space:nowrap}
+.pill.done{background:var(--accent-soft); color:var(--accent-ink); border:1px solid var(--accent)}
+.pill.todo{background:var(--signal-soft); color:var(--signal); border:1px solid var(--signal-rule)}
+td.fill{background:var(--signal-soft); border-left:2px solid var(--signal-rule)}
+[contenteditable]{outline:none; display:block; border-bottom:1px dashed var(--signal-rule); padding-bottom:2px; cursor:text; min-height:1.4em}
+[contenteditable]:empty::before{content:attr(data-ph); color:var(--ink-3); opacity:.75}
+[contenteditable]:focus{background:var(--surface); box-shadow:0 0 0 2px var(--signal); border-radius:2px; border-bottom-color:transparent}
+.scrollnote{font-size:.78rem; color:var(--ink-3); font-style:italic; margin-top:8px}
+tr.flash td{animation:flash 1.4s ease-out}
+@keyframes flash{0%,35%{background:var(--signal-soft)}100%{background:transparent}}
+tr.parent.flash td{animation:flashp 1.4s ease-out}
+@keyframes flashp{0%,35%{background:var(--signal-soft)}100%{background:var(--accent-soft)}}
+
+/* ---------- gaps ---------- */
+.gaps{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px}
+.gap{background:var(--surface); border:1px solid var(--rule); border-left:3px solid var(--signal); border-radius:3px; padding:16px 18px; display:flex; flex-direction:column; gap:8px; box-shadow:var(--shadow)}
+.gap h3{font-size:1rem}
+.gap p{font-size:.87rem; color:var(--ink-2)}
+.gap .tag{font-family:"IBM Plex Mono",monospace; font-size:.67rem; letter-spacing:.1em; text-transform:uppercase; color:var(--signal)}
+
+.bar{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:18px 0 0}
+button.act{font-family:"Archivo",sans-serif; font-size:.78rem; font-weight:600; letter-spacing:.02em; padding:9px 15px; border-radius:2px; border:1px solid var(--accent); background:var(--accent); color:#fff; cursor:pointer}
+button.act.ghost{background:transparent; color:var(--accent-ink)}
+button.act:hover{filter:brightness(1.08)}
+button.act:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+button.act:disabled{opacity:.45; cursor:not-allowed; filter:none}
+
+/* ---------- the dock ---------- */
+#dock{position:fixed; left:0; right:0; bottom:0; z-index:60; background:var(--screen); border-top:2px solid var(--accent); box-shadow:0 -8px 30px -12px rgba(0,0,0,.5); font-family:"IBM Plex Mono",monospace; color:var(--screen-ink)}
+#dock .head{display:flex; align-items:center; gap:12px; padding:10px 20px; cursor:pointer; flex-wrap:wrap}
+#dock .head .ttl{font-family:"Archivo",sans-serif; font-size:.8rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--screen-ink)}
+#dock .head .count{font-size:.72rem; background:#16302E; border:1px solid #3E6360; color:#7FD6CD; padding:3px 9px; border-radius:2px}
+#dock .head .spacer{flex:1}
+#dock .head .caret{color:#8FB0AB; font-size:.9rem}
+#dock .body{display:none; padding:0 20px 18px; max-height:min(46vh,360px); overflow-y:auto}
+#dock.open .body{display:block}
+#dock .nameline{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:12px}
+#dock .nameline label{font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:#8FB0AB}
+#dock .nhint{font-family:"Literata",serif; font-size:.78rem; font-style:italic; color:#8FA9A4}
+#dock .nhint.match{color:#E2AA43; font-style:normal}
+#dock input.needs{border-color:#E2AA43; box-shadow:0 0 0 2px rgba(226,170,67,.3)}
+#dock input{font-family:"IBM Plex Mono",monospace; font-size:.92rem; font-weight:600; background:#16302E; border:1px solid #3E6360; color:#E2AA43; padding:6px 10px; border-radius:2px; width:220px}
+#dock input:focus-visible{outline:2px solid #54C3B8; outline-offset:1px}
+#dock pre{margin:0; font-size:.8rem; line-height:1.8; white-space:pre-wrap; word-break:break-word; color:var(--screen-ink)}
+#dock pre .k{color:#7FD6CD} #dock pre .v{color:#E2AA43} #dock pre .c{color:#8FA9A4; font-style:italic}
+#dock .empty{color:#8FA9A4; font-size:.82rem; font-style:italic; font-family:"Literata",serif}
+#dock .dock-lbl{font-family:"Literata",serif; font-size:.8rem; line-height:1.5; color:#A9C2BD; margin:0 0 10px; max-width:70ch}
+#dock .dock-lbl strong{color:#7FD6CD; font-weight:400}
+#dock .acts{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+#dock button{font-family:"Archivo",sans-serif; font-size:.75rem; font-weight:600; padding:8px 14px; border-radius:2px; border:1px solid #54C3B8; background:#54C3B8; color:#08201E; cursor:pointer}
+#dock button.ghost{background:transparent; color:#7FD6CD}
+#dock button:focus-visible{outline:2px solid #E2AA43; outline-offset:2px}
+
+#toast{position:fixed; left:50%; bottom:calc(100% - 100vh + 90px); transform:translateX(-50%) translateY(12px); background:var(--ink); color:var(--ground); font-family:"IBM Plex Mono",monospace; font-size:.78rem; padding:10px 16px; border-radius:3px; opacity:0; pointer-events:none; transition:opacity .18s,transform .18s; z-index:70; max-width:80vw}
+#toast.on{opacity:1; transform:translateX(-50%) translateY(0)}
+@media (prefers-reduced-motion:reduce){*{transition:none !important; animation:none !important}}
+@media (max-width:640px){ section.step{margin-bottom:46px} .howto{margin-bottom:36px} }
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="eyebrow">ESRFET v0.1.0 · working session</div>
+    <h1>MX Axiom Worksheet</h1>
+    <p class="standfirst">Everything needed to define the macromolecular crystallography family in one meeting: the eight property blocks that hang off the sample, the complete controlled vocabulary for each, and a delta table where every technique is written as <em>parent plus one restriction</em>.</p>
+    <div class="meta">
+      <span>ontologies/esrfet/ESRFET.owl</span>
+      <span>82 techniques defined</span>
+      <span>52 stubs empty</span>
+      <span>8 object properties</span>
+    </div>
+  </div>
+</header>
+
+<div class="howto">
+  <div class="wrap">
+    <h4>How this page is meant to be used</h4>
+    <ol>
+      <li><strong>Click terms to build an axiom</strong>Every term in Step 2 is a button. Clicking it adds it to the <em>axiom builder</em> that opens along the bottom of the screen. The builder writes the finished OWL axiom for you, with the right property in front of each term.</li>
+      <li><strong>Paste it into Protégé</strong>The builder writes the expression in Manchester syntax, ready for the <em>Equivalent To</em> field. Press <em>Copy for Protégé</em>, or <em>Add to table</em> to record it as a row in Step 4 instead.</li>
+      <li><strong>Type directly in Step 4</strong>Any cell with a dashed underline is editable — click it and type. When the meeting ends, press <em>Copy table</em>; nothing survives a page reload.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ============ STEP 1 ============ -->
+<section class="step" id="pattern">
+  <div class="step-head">
+    <span class="step-tag">Step 1 · five minutes</span>
+    <h2>One pattern, no hierarchy drawing</h2>
+    <p>Every technique in ESRFET is a single <code>EquivalentClasses</code> axiom: <code>experimental_technique</code> intersected with a list of <code>∃ property . value</code> restrictions. Nothing is ever asserted as a subclass. The reasoner works out that <code>SCXRD ⊑ XRD</code> purely because SCXRD's list contains XRD's list plus one more conjunct.</p>
+  </div>
+
+  <div class="axiom"><span class="c">// already in the ontology — this is the template for everything below</span>
+
+SCXRD  <span class="k">≡</span>  experimental_technique
+       ⊓ ∃ <span class="k">requires_sample_input</span> . <span class="v">x-ray</span>
+       ⊓ ∃ <span class="k">measures_result_of_interaction</span> . <span class="v">diffraction_of_elastic_scattering</span>
+       ⊓ ∃ <span class="k">requires_sample_type</span> . <span class="v">single_crystal_sample</span>      <span class="c">← the only delta vs. XRD</span></div>
+</section>
+
+<!-- ============ STEP 2 ============ -->
+<section class="step" id="blocks">
+  <div class="step-head">
+    <span class="step-tag">Step 2 · the map and the menu</span>
+    <h2>Eight blocks around the sample</h2>
+    <p>All eight object properties describe one moment: something arrives at the sample, the sample is a certain kind of thing, something leaves, and the whole thing is repeated along some axis.</p>
+  </div>
+
+  <figure class="fig1" style="margin-inline:0">
+    <span class="cap">Fig. 1 — the eight properties, arranged by where they sit in the experiment</span>
+    <div class="zones">
+      <div class="zone">
+        <h4>Arrives at the sample</h4>
+        <div class="pnode"><span class="n">requires_sample_input</span><span class="w">Which beam, field or cell reaches the sample</span></div>
+        <div class="pnode"><span class="n">requires_sample_input_property</span><span class="w">Temperature, pressure, incident angle, beam shaping</span></div>
+      </div>
+      <div class="arrowcol" aria-hidden="true">→</div>
+      <div class="zone">
+        <h4>The sample</h4>
+        <div class="pnode sample"><span class="n">SAMPLE</span></div>
+        <div class="pnode"><span class="n">requires_sample_type</span><span class="w">What kind of matter it has to be</span></div>
+      </div>
+      <div class="arrowcol" aria-hidden="true">→</div>
+      <div class="zone">
+        <h4>Leaves the sample</h4>
+        <div class="pnode"><span class="n">measures_result_of_interaction</span><span class="w">Which physical process is detected</span></div>
+        <div class="pnode"><span class="n">measures_interaction_result_property</span><span class="w">Which property of that signal is read out</span></div>
+        <div class="pnode"><span class="n">measures_with_a_detector_type</span><span class="w">What records it</span></div>
+      </div>
+    </div>
+    <div class="sweep">
+      <span class="lbl">The whole thing is repeated along</span>
+      <span class="n">measures_as_a_function_of</span>
+      <span class="w">— incident energy, time, position in space, or number of specimens. This is where the MX family splits.</span>
+    </div>
+  </figure>
+
+  <p class="prose" style="margin-bottom:22px">Below is the complete filling for each block, read straight out of <code>ESRFET.owl</code>. <strong>Click any term and it drops into the axiom builder at the bottom of the screen.</strong> Click again to remove it.</p>
+
+  <div class="blocks">
+
+    <section class="block" data-prop="requires_sample_input">
+      <header><span class="prop">requires_sample_input</span><span class="range">range → sample_input</span></header>
+      <div class="grps">
+        <div class="grp"><h4>named photon energy ranges</h4><div class="chips">
+          <button class="chip">x-ray</button><button class="chip">hard_x-ray</button><button class="chip">soft_x-ray</button><button class="chip">UV</button><button class="chip">visual_spectrum</button><button class="chip">infrared</button></div></div>
+        <div class="grp"><h4>photon energy bandwidth</h4><div class="chips">
+          <button class="chip">monochromatic_beam</button><button class="chip">pink_beam</button><button class="chip">white_beam</button></div></div>
+        <div class="grp"><h4>other inputs</h4><div class="chips">
+          <button class="chip">electrons</button><button class="chip">charged_particles</button><button class="chip">laser</button><button class="chip">magnetic_field</button><button class="chip">DAC</button></div></div>
+      </div>
+    </section>
+
+    <section class="block" data-prop="requires_sample_input_property">
+      <header><span class="prop">requires_sample_input_property</span><span class="range">range → sample_input_property</span></header>
+      <div class="grps">
+        <div class="grp"><h4>sample temperature</h4><div class="chips">
+          <button class="chip">ultra_cryogenic_temperature</button><button class="chip">cryogenic_temperature</button><button class="chip">low_temperature</button><button class="chip">ambient_temperature</button><button class="chip">moderately_high_temperature</button><button class="chip">high_temperature</button><button class="chip">very_high_temperature</button><button class="chip">extreme_temperature</button><button class="chip">ultra_extreme_temperature</button></div>
+          <p class="hint">cryogenic_temperature = 1–77 K · ambient = 20–25 °C</p></div>
+        <div class="grp"><h4>sample pressure</h4><div class="chips">
+          <button class="chip">extreme_high_vacuum</button><button class="chip">ultra_high_vacuum</button><button class="chip">high_vacuum</button><button class="chip">medium_vacuum</button><button class="chip">low_vacuum</button><button class="chip">atmospheric_pressure</button><button class="chip">low_overpressure</button><button class="chip">high_pressure</button><button class="chip">very_high_pressure</button><button class="chip">extreme_pressure</button></div></div>
+        <div class="grp"><h4>beam &amp; geometry</h4><div class="chips">
+          <button class="chip">unmodified_beam</button><button class="chip">grating</button><button class="chip">speckle_pattern</button><button class="chip">disperse_incident_energy_in_space</button><button class="chip">sample_incident_angle</button><button class="chip">sample_incident_angle_smaller_than_critical_angle</button></div></div>
+      </div>
+    </section>
+
+    <section class="block" data-prop="requires_sample_type">
+      <header><span class="prop">requires_sample_type</span><span class="range">range → sample_type</span></header>
+      <div class="grps">
+        <div class="grp"><h4>all five values</h4><div class="chips">
+          <button class="chip">biological_sample</button><button class="chip">single_crystal_sample</button><button class="chip">polycrystalline_sample</button><button class="chip">powder_sample</button><button class="chip">chemical_solution</button></div>
+          <p class="hint">MX needs two of these at once — see gap 5.</p></div>
+      </div>
+    </section>
+
+    <section class="block" data-prop="measures_result_of_interaction">
+      <header><span class="prop">measures_result_of_interaction</span><span class="range">range → cascade_of_events_being_detected</span></header>
+      <div class="grps">
+        <div class="grp"><h4>scattering</h4><div class="chips">
+          <button class="chip">diffraction</button><button class="chip">diffraction_of_elastic_scattering</button><button class="chip">diffusion</button><button class="chip">refraction</button><button class="chip">reflection</button><button class="chip">transmission</button></div></div>
+        <div class="grp"><h4>absorption &amp; core excitation</h4><div class="chips">
+          <button class="chip">absorption</button><button class="chip">atomic_core_excitation</button><button class="chip">fluorescence</button><button class="chip">photo_electrons</button><button class="chip">auger_electrons</button><button class="chip">total_electrons</button></div></div>
+      </div>
+    </section>
+
+    <section class="block" data-prop="measures_interaction_result_property">
+      <header><span class="prop">measures_interaction_result_property</span><span class="range">range → detected_cascade_of_events_property</span></header>
+      <div class="grps">
+        <div class="grp"><h4>detected photon property</h4><div class="chips">
+          <button class="chip">photon_count</button><button class="chip">photon_energy</button><button class="chip">photon_direction_with_respect_to_primary_beam</button><button class="chip">horizontal_linear_polarization</button><button class="chip">vertical_linear_polarization</button><button class="chip">left_circular_polarization</button><button class="chip">right_circular_polarization</button></div></div>
+        <div class="grp"><h4>detection resolution</h4><div class="chips">
+          <button class="chip">small_length_scales</button><button class="chip">large_length_scales</button><button class="chip">ultra_large_length_scales</button><button class="chip">high_angular_resolution</button><button class="chip flag">high_precision_in_Q_space</button></div>
+          <p class="hint">small = 1–10 Å · large = 10–1000 Å · dashed term is marked deprecated in the ontology.</p></div>
+      </div>
+    </section>
+
+    <section class="block" data-prop="measures_with_a_detector_type">
+      <header><span class="prop">measures_with_a_detector_type</span><span class="range">range → detector_type</span></header>
+      <div class="grps">
+        <div class="grp"><h4>all six values</h4><div class="chips">
+          <button class="chip">area_detector</button><button class="chip">point_detector</button><button class="chip">strip_detector</button><button class="chip">energy_dispersive_detector</button><button class="chip">wavelength_dispersive_detector</button><button class="chip">analyzer_crystal</button></div></div>
+        <div class="grp"><h4>sibling property — not usable on a technique</h4>
+          <p class="hint">The eighth property, <code>measures_transmission_with_detector_type</code>, has domain <code>transmission</code> rather than <code>experimental_technique</code>, so it cannot appear in a technique axiom. See gap 7.</p></div>
+      </div>
+    </section>
+
+    <section class="block" data-prop="measures_as_a_function_of" style="grid-column:1/-1">
+      <header><span class="prop">measures_as_a_function_of</span><span class="range">range → space_time — the richest block, and where MX splits</span></header>
+      <div class="grps" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px 22px">
+        <div class="grp"><h4>how many specimens ← MX splits here</h4><div class="chips">
+          <button class="chip">individual_specimen</button><button class="chip">serial_screening</button></div>
+          <p class="hint">serial_screening: many crystals streaming through, one measurement each. individual_specimen: one crystal is enough.</p></div>
+        <div class="grp"><h4>incident energy</h4><div class="chips">
+          <button class="chip">detection_as_a_function_of_incident_energy</button><button class="chip">detection_as_a_function_of_limited_number_of_incident_energies</button><button class="chip">near_edge</button><button class="chip">extended</button></div></div>
+        <div class="grp"><h4>time</h4><div class="chips">
+          <button class="chip">detection_as_a_function_of_time</button></div></div>
+        <div class="grp"><h4>sample spatial resolution</h4><div class="chips">
+          <button class="chip">nano_sample_spatial_resolution</button><button class="chip">micro_sample_spatial_resolution</button><button class="chip">macro_sample_spatial_resolution</button><button class="chip">multi_sample_spatial_resolution</button><button class="chip">sample_spatial_resolution_achieved_on_detection</button><button class="chip flag">sample_spatial_resolution_achived_on_input</button></div>
+          <p class="hint">nano = 0.1–100 nm · micro = 0.1–100 µm · macro &gt; 100 µm. Dashed term has a typo in the IRI.</p></div>
+        <div class="grp"><h4>imaging &amp; 3D</h4><div class="chips">
+          <button class="chip">full-field_imaging</button><button class="chip">scanning_imaging</button><button class="chip">tomography</button><button class="chip">laminography</button></div></div>
+        <div class="grp"><h4>other axes</h4><div class="chips">
+          <button class="chip">detection_as_a_function_of_sample_to_detector_distance</button><button class="chip">detection_as_a_function_of_limited_number_of_sample_to_detector_distance</button><button class="chip">ramp_compression</button><button class="chip">shock_compression</button><button class="chip flag">simultanious_reference</button></div>
+          <p class="hint">Dashed term has a typo in the IRI.</p></div>
+      </div>
+    </section>
+
+  </div>
+</section>
+
+<!-- ============ STEP 3 ============ -->
+<section class="step" id="mx">
+  <div class="step-head">
+    <span class="step-tag">Step 3 · the one definition that matters</span>
+    <h2>Define MX once</h2>
+    <p><code>MX</code> is currently an empty stub — declared a subclass of <code>experimental_technique</code> and nothing more. Get these lines agreed and the rest of the family costs one line each.</p>
+  </div>
+
+  <div class="axiom"><span class="c">// PROPOSAL — confirm each line with the scientist, then delete or extend</span>
+
+MX  <span class="k">≡</span>  experimental_technique
+    ⊓ ∃ <span class="k">requires_sample_input</span> . <span class="v">x-ray</span>                                 <span class="c">← inherited from XRD, uncontroversial</span>
+    ⊓ ∃ <span class="k">measures_result_of_interaction</span> . <span class="v">diffraction_of_elastic_scattering</span>  <span class="c">← inherited from XRD</span>
+    ⊓ ∃ <span class="k">requires_sample_type</span> . <span class="v">single_crystal_sample</span>                 <span class="c">← makes MX ⊑ SCXRD. agreed?</span>
+    ⊓ ∃ <span class="k">requires_sample_type</span> . <span class="v">biological_sample</span>                     <span class="c">← the actual MX delta</span>
+    ⊓ ∃ <span class="k">measures_with_a_detector_type</span> . <span class="v">area_detector</span>                <span class="c">← definitional, or just true today?</span>
+    ⊓ ∃ <span class="k">requires_sample_input_property</span> . <span class="v">cryogenic_temperature</span>       <span class="c">← definitional, or just typical? room-temp MX exists</span>
+    ⊓ ∃ <span class="k">measures_interaction_result_property</span> . <span class="v">small_length_scales</span>   <span class="c">← 1–10 Å, i.e. atomic. needed?</span></div>
+
+  <p class="prose">The two lines to argue about are the last two. A restriction in an <code>EquivalentClasses</code> axiom is <em>definitional</em>: anything without it is not MX. If room-temperature MX counts as MX, <code>cryogenic_temperature</code> cannot go here — it belongs on the child techniques instead. Ask the question in exactly those terms and the answer comes fast.</p>
+
+  <div class="screen">
+    <span class="cap">Fig. 2 — every edge below is inferred, never asserted. Amber nodes are the empty stubs you are filling.</span>
+<pre class="mermaid">
+%%{init:{'theme':'base','themeVariables':{'background':'#0F1E1D','primaryColor':'#16302E','primaryTextColor':'#DDE7E4','primaryBorderColor':'#3E6360','lineColor':'#6FA8A2','fontFamily':'IBM Plex Mono, monospace','fontSize':'12px'}}}%%
+flowchart TD
+  ET["experimental_technique"]
+  XRD["XRD<br/>x-ray + diffraction"]
+  SCXRD["SCXRD<br/>+ single_crystal_sample"]
+  SSX["SSX<br/>+ serial_screening"]
+  MX["MX<br/>+ biological_sample<br/>+ area_detector"]
+  SMX["SMX<br/>+ serial_screening"]
+  TRMX["TR-MX<br/>+ detection_as_a_function_of_time"]
+  TRSSX["TR-SSX<br/>+ detection_as_a_function_of_time"]
+  MAD["MAD<br/>+ limited_number_of_incident_energies"]
+  SAD["SAD<br/>+ ??? see gap 1"]
+  ET --&gt; XRD
+  XRD --&gt; SCXRD
+  XRD --&gt; SSX
+  SCXRD --&gt; MX
+  MX --&gt; SMX
+  SSX --&gt; SMX
+  MX --&gt; TRMX
+  SMX --&gt; TRSSX
+  TRMX --&gt; TRSSX
+  MX --&gt; MAD
+  MX --&gt; SAD
+  classDef done fill:#16302E,stroke:#54C3B8,stroke-width:1.5px,color:#DDE7E4
+  classDef todo fill:#2B2213,stroke:#E2AA43,stroke-width:1.5px,color:#F0C877
+  classDef root fill:#1A2E2C,stroke:#3E6360,color:#DDE7E4
+  class ET root
+  class XRD,SCXRD,SSX done
+  class MX,SMX,TRMX,TRSSX,MAD,SAD todo
+</pre>
+  </div>
+
+  <p class="prose">Two of these boxes place themselves. <code>SMX</code> is just MX with serial data collection added — and that description already covers everything <code>SSX</code> asks for, so Protégé files SMX under both MX and SSX by itself. <code>TR-SSX</code> does the same and ends up under both <code>SMX</code> and <code>TR-MX</code>. Nobody types those connections in. Adding one line to a child is enough.</p>
+</section>
+
+<!-- ============ STEP 4 ============ -->
+<section class="step" id="deltas">
+  <div class="step-head">
+    <span class="step-tag">Step 4 · the working surface</span>
+    <h2>One line per technique</h2>
+    <p>Ordered the way Protégé will show it once the reasoner has run: <code>XRD</code> at the top with the fewest restrictions, each row below indented under its parent and carrying one more. Rows arrive here in two ways — press <em>Add to table</em> in the axiom builder, or click any dashed cell and type. The <strong>Delta</strong> column is the one that matters; it holds only what is added on top of the parent.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table id="deltas-table">
+      <thead>
+        <tr><th style="width:15%">Technique</th><th style="width:9%">Status</th><th style="width:15%">Parent</th><th style="width:34%">Delta — restrictions to add</th><th style="width:30%">Decide in the meeting</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t l0">XRD</td>
+          <td><span class="pill done">defined</span></td>
+          <td class="d">experimental_technique</td>
+          <td class="d"><b>x-ray + diffraction_of_elastic_scattering</b></td>
+          <td class="d">—</td>
+        </tr>
+        <tr>
+          <td class="t l1"><span class="g">└</span>SCXRD</td>
+          <td><span class="pill done">defined</span></td>
+          <td class="d">XRD</td>
+          <td class="d"><b>+ single_crystal_sample</b></td>
+          <td class="d">—</td>
+        </tr>
+        <tr>
+          <td class="t l1"><span class="g">└</span>SSX</td>
+          <td><span class="pill done">defined</span></td>
+          <td class="d">XRD</td>
+          <td class="d"><b>+ serial_screening</b></td>
+          <td class="d">Should SSX also require biological_sample? Today it does not.</td>
+        </tr>
+        <tr class="parent">
+          <td class="t l2"><span class="g">└</span>MX</td>
+          <td><span class="pill todo">stub</span></td>
+          <td class="d">SCXRD</td>
+          <td class="d fill"><span contenteditable="true" data-ph="click to type">+ biological_sample<br>+ area_detector</span></td>
+          <td class="d"><span contenteditable="true" data-ph="click to type">Is cryogenic_temperature definitional?</span></td>
+        </tr>
+        <tr>
+          <td class="t l3"><span class="g">└</span>SMX</td>
+          <td><span class="pill todo">stub</span></td>
+          <td class="d">MX <span style="color:var(--ink-3)">+ SSX</span></td>
+          <td class="d fill"><span contenteditable="true" data-ph="click to type">+ serial_screening</span></td>
+          <td class="d"><span contenteditable="true" data-ph="click to type">Micro/nano crystals — does beam size belong here?</span></td>
+        </tr>
+        <tr>
+          <td class="t l3"><span class="g">└</span>TR-MX</td>
+          <td><span class="pill todo">stub</span></td>
+          <td class="d">MX</td>
+          <td class="d fill"><span contenteditable="true" data-ph="click to type">+ detection_as_a_function_of_time</span></td>
+          <td class="d"><span contenteditable="true" data-ph="click to type">Is the trigger part of the definition? See gap 2.</span></td>
+        </tr>
+        <tr>
+          <td class="t l3"><span class="g">└</span>MAD</td>
+          <td><span class="pill todo">stub</span></td>
+          <td class="d">MX</td>
+          <td class="d fill"><span contenteditable="true" data-ph="click to type">+ detection_as_a_function_of_limited_number_of_incident_energies</span></td>
+          <td class="d"><span contenteditable="true" data-ph="click to type">Is MAD a technique or an analysis method? See gap 8.</span></td>
+        </tr>
+        <tr>
+          <td class="t l3"><span class="g">└</span>SAD</td>
+          <td><span class="pill todo">stub</span></td>
+          <td class="d">MX</td>
+          <td class="d fill"><span contenteditable="true" data-ph="blocked — see gap 1">?</span></td>
+          <td class="d"><span contenteditable="true" data-ph="click to type">No vocabulary for "one energy". New class needed.</span></td>
+        </tr>
+        <tr>
+          <td class="t l4"><span class="g">└</span>TR-SSX</td>
+          <td><span class="pill todo">stub</span></td>
+          <td class="d">SMX <span style="color:var(--ink-3)">+ TR-MX</span></td>
+          <td class="d fill"><span contenteditable="true" data-ph="click to type">+ detection_as_a_function_of_time</span></td>
+          <td class="d"><span contenteditable="true" data-ph="click to type">pump-probe vs mix-and-inject — same class?</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="scrollnote">Indentation is depth in the inferred hierarchy. <code>SMX</code> and <code>TR-SSX</code> each sit under two parents; the second is shown in grey. On a narrow screen the table scrolls sideways.</p>
+
+  <div class="bar">
+    <button class="act" id="export">Copy whole table</button>
+    <button class="act ghost" id="addrow">Add an empty row</button>
+  </div>
+</section>
+
+<!-- ============ STEP 5 ============ -->
+<section class="step" id="gaps">
+  <div class="step-head">
+    <span class="step-tag">Step 5 · park these, do not solve them live</span>
+    <h2>Eight things the vocabulary cannot say yet</h2>
+    <p>Each of these blocks at least one MX technique. Read them out, capture the scientist's answer, and resolve them after the meeting — they need new classes, not new axioms.</p>
+  </div>
+
+  <div class="gaps">
+    <div class="gap"><span class="tag">Gap 1 · blocks SAD</span><h3>No class for a single incident energy</h3><p><code>space_time</code> offers <code>detection_as_a_function_of_limited_number_of_incident_energies</code>, but nothing distinguishes one energy from several. SAD and MAD would get identical definitions and the reasoner would declare them equivalent.</p></div>
+    <div class="gap"><span class="tag">Gap 2 · blocks TR-MX, TR-SSX</span><h3>No reaction trigger</h3><p><code>laser</code> exists as a <code>sample_input</code>, so pump-probe is expressible. Mix-and-inject, temperature jump and electric-field triggers have no vocabulary at all.</p></div>
+    <div class="gap"><span class="tag">Gap 3 · blocks SMX</span><h3>Beam size is not sample spatial resolution</h3><p><code>micro_sample_spatial_resolution</code> means the sample is <em>resolved</em> at that scale — it appears in scanning techniques. MX with a micro-focus beam does not resolve the crystal spatially; it just uses a small beam. There is no term for beam size.</p></div>
+    <div class="gap"><span class="tag">Gap 4 · blocks SMX, TR-SSX</span><h3>No sample delivery vocabulary</h3><p>Fixed target, chip, viscous jet, injector, loop. On the beamlines these are the real distinctions between serial methods, and none of them are representable.</p></div>
+    <div class="gap"><span class="tag">Gap 5 · blocks MX</span><h3>Two sample types at once</h3><p>MX needs <code>biological_sample</code> <em>and</em> <code>single_crystal_sample</code>. The property allows it, but no existing technique does this — confirm the intersection is intended rather than a modelling error.</p></div>
+    <div class="gap"><span class="tag">Gap 6 · cosmetic</span><h3>Two typos in IRIs</h3><p><code>simultanious_reference</code> and <code>sample_spatial_resolution_achived_on_input</code>. Renaming an IRI is breaking, so decide now whether to fix before v1.0 or keep and add a correct <code>skos:prefLabel</code>.</p></div>
+    <div class="gap"><span class="tag">Gap 7 · consistency</span><h3>One property has the wrong domain</h3><p><code>measures_transmission_with_detector_type</code> has domain <code>transmission</code>; the other seven have domain <code>experimental_technique</code>. Either it is a deliberate exception or it should be folded into <code>measures_with_a_detector_type</code>.</p></div>
+    <div class="gap"><span class="tag">Gap 8 · scope</span><h3>Is phasing a technique?</h3><p>ESRFET models what is measured. MAD and SAD are named for how the data is <em>used</em> to solve the phase problem. The measurement of SAD is just MX at a chosen energy. Worth asking whether they belong in this ontology at all.</p></div>
+  </div>
+</section>
+
+</div>
+
+<aside id="dock" aria-label="Axiom builder">
+  <div class="head" id="dock-head" role="button" tabindex="0" aria-expanded="false" aria-controls="dock-body">
+    <span class="ttl">Axiom builder</span>
+    <span class="count" id="dock-count">0 terms</span>
+    <span class="spacer"></span>
+    <span class="caret" id="dock-caret">▲ open</span>
+  </div>
+  <div class="body" id="dock-body">
+    <div class="nameline">
+      <label for="tname">Technique</label>
+      <input id="tname" type="text" placeholder="e.g. SMX" autocomplete="off" spellcheck="false" list="known-techniques">
+      <datalist id="known-techniques"></datalist>
+      <span class="nhint" id="nhint">Needed only for <em>Add to table</em>.</span>
+    </div>
+    <p class="dock-lbl" id="dock-lbl">Manchester syntax — paste into the <strong>Equivalent To</strong> field of the class you selected in Protégé. Do not include the class name.</p>
+    <pre id="dock-out"><span class="empty">Click any term in Step 2 and the expression appears here.</span></pre>
+    <div class="acts">
+      <button id="copy-axiom">Copy for Protégé</button>
+      <button id="to-table" class="ghost">Add to table</button>
+      <button id="clear-all" class="ghost">Clear</button>
+    </div>
+  </div>
+</aside>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var toastEl=document.getElementById('toast'), tid;
+  function toast(m){ toastEl.textContent=m; toastEl.classList.add('on'); clearTimeout(tid); tid=setTimeout(function(){toastEl.classList.remove('on');},2000); }
+
+  function copy(text, okMsg){
+    function fallback(){
+      var ta=document.createElement('textarea');
+      ta.value=text; ta.setAttribute('readonly','');
+      ta.style.cssText='position:fixed;top:0;left:0;opacity:0';
+      document.body.appendChild(ta); ta.select();
+      var ok=false; try{ ok=document.execCommand('copy'); }catch(e){ ok=false; }
+      document.body.removeChild(ta);
+      toast(ok?okMsg:'Copy blocked by the browser — select the text and press Ctrl+C');
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){toast(okMsg);},fallback);
+    } else { fallback(); }
+  }
+
+  /* ---------- dock ---------- */
+  var dock=document.getElementById('dock'),
+      head=document.getElementById('dock-head'),
+      caret=document.getElementById('dock-caret'),
+      countEl=document.getElementById('dock-count'),
+      out=document.getElementById('dock-out'),
+      nameInput=document.getElementById('tname');
+  var picked=[]; /* [{prop, term, chip}] */
+
+  function setOpen(open){
+    dock.classList.toggle('open',open);
+    head.setAttribute('aria-expanded',String(open));
+    caret.textContent=open?'▼ close':'▲ open';
+    document.body.classList.toggle('dock-open',open);
+  }
+  head.addEventListener('click',function(){ setOpen(!dock.classList.contains('open')); });
+  head.addEventListener('keydown',function(e){
+    if(e.key==='Enter'||e.key===' '){ e.preventDefault(); setOpen(!dock.classList.contains('open')); }
+  });
+
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+
+  function axiomText(){
+    var lines=['experimental_technique'];
+    picked.forEach(function(p){
+      lines.push('  and ('+p.prop+' some '+p.term+')');
+    });
+    return lines.join('\n');
+  }
+
+  function render(){
+    countEl.textContent=picked.length+(picked.length===1?' term':' terms');
+    if(!picked.length){
+      out.innerHTML='<span class="empty">Click any term in Step 2 and the expression appears here.</span>';
+      return;
+    }
+    var html='experimental_technique';
+    picked.forEach(function(p){
+      html+='\n  and (<span class="k">'+esc(p.prop)+'</span> some <span class="v">'+esc(p.term)+'</span>)';
+    });
+    out.innerHTML=html;
+  }
+
+  nameInput.addEventListener('input',render);
+
+  document.querySelectorAll('.block .chip').forEach(function(chip){
+    chip.setAttribute('aria-pressed','false');
+    var prop=chip.closest('.block').getAttribute('data-prop');
+    var term=chip.textContent.trim();
+    chip.addEventListener('click',function(){
+      var i=picked.findIndex(function(p){return p.prop===prop&&p.term===term;});
+      if(i>=0){
+        picked.splice(i,1);
+        chip.setAttribute('aria-pressed','false');
+      } else {
+        picked.push({prop:prop,term:term,chip:chip});
+        chip.setAttribute('aria-pressed','true');
+        setOpen(true);
+      }
+      render();
+    });
+  });
+
+  document.getElementById('copy-axiom').addEventListener('click',function(){
+    if(!picked.length){ toast('Nothing selected yet — click a term in Step 2 first'); return; }
+    copy(axiomText(),'Copied — paste into the Equivalent To field in Protégé');
+  });
+
+  document.getElementById('clear-all').addEventListener('click',function(){
+    picked.forEach(function(p){ p.chip.setAttribute('aria-pressed','false'); });
+    picked=[]; nameInput.value=''; render();
+  });
+
+  /* ---------- table ---------- */
+  var tbody=document.querySelector('#deltas-table tbody');
+
+  function makeRow(name, delta){
+    var tr=document.createElement('tr');
+    tr.innerHTML=
+      '<td class="t l3"><span class="g">└</span><span contenteditable="true" data-ph="acronym"></span></td>'+
+      '<td><span class="pill todo">new</span></td>'+
+      '<td class="d"><span contenteditable="true" data-ph="parent"></span></td>'+
+      '<td class="d fill"><span contenteditable="true" data-ph="+ restriction"></span></td>'+
+      '<td class="d"><span contenteditable="true" data-ph="open question"></span></td>';
+    var eds=tr.querySelectorAll('[contenteditable]');
+    if(name) eds[0].textContent=name;
+    if(delta) eds[2].innerHTML=delta;
+    tbody.appendChild(tr);
+    return tr;
+  }
+
+  function rowName(tr){
+    var td=tr.querySelector('td.t');
+    if(!td) return '';
+    return td.innerText.replace(/[└\s]/g,'').trim();
+  }
+  function findRow(name){
+    var key=name.toLowerCase(), hit=null;
+    tbody.querySelectorAll('tr').forEach(function(tr){
+      if(rowName(tr).toLowerCase()===key) hit=tr;
+    });
+    return hit;
+  }
+  function existingTerms(cell){
+    return cell.innerText.split('\n').map(function(l){
+      return l.replace(/^\s*\+\s*/,'').trim();
+    }).filter(Boolean);
+  }
+  function flash(tr){
+    tr.classList.remove('flash');
+    void tr.offsetWidth;
+    tr.classList.add('flash');
+    tr.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+
+  function refreshDatalist(){
+    var dl=document.getElementById('known-techniques');
+    dl.innerHTML='';
+    tbody.querySelectorAll('tr').forEach(function(tr){
+      var nm=rowName(tr);
+      if(nm){ var o=document.createElement('option'); o.value=nm; dl.appendChild(o); }
+    });
+  }
+
+  var nhint=document.getElementById('nhint');
+  function checkName(){
+    var nm=nameInput.value.trim();
+    nameInput.classList.remove('needs');
+    if(!nm){ nhint.className='nhint'; nhint.innerHTML='Needed only for <em>Add to table</em>.'; return; }
+    var tr=findRow(nm);
+    if(tr){
+      nhint.className='nhint match';
+      nhint.textContent = tr.querySelector('td.fill [contenteditable]')
+        ? 'Already in the table — Add to table will update that row.'
+        : 'Already defined in the ontology — its row cannot be edited.';
+    } else {
+      nhint.className='nhint';
+      nhint.textContent='New technique — Add to table will create a row.';
+    }
+  }
+  nameInput.addEventListener('input',checkName);
+
+  document.getElementById('to-table').addEventListener('click',function(){
+    if(!picked.length){ toast('Nothing selected yet — click a term in Step 2 first'); return; }
+    var name=nameInput.value.trim();
+    if(!name){
+      setOpen(true);
+      nameInput.classList.add('needs');
+      nameInput.focus();
+      toast('Name the technique first — a row without an acronym cannot be matched up later');
+      return;
+    }
+
+    var tr=findRow(name);
+    if(tr){
+      var cell=tr.querySelector('td.fill [contenteditable]');
+      if(!cell){
+        toast(name+' is already defined in the ontology — nothing to add');
+        flash(tr);
+        return;
+      }
+      var have=existingTerms(cell), added=0;
+      picked.forEach(function(p){
+        if(have.indexOf(p.term)===-1){ have.push(p.term); added++; }
+      });
+      cell.innerHTML=have.map(function(t){ return '+ '+esc(t); }).join('<br>');
+      flash(tr);
+      toast(added ? name+' updated — '+added+(added===1?' restriction added':' restrictions added')
+                  : name+' already had all '+picked.length+' of those');
+      refreshDatalist();
+      return;
+    }
+
+    var delta=picked.map(function(p){ return '+ '+esc(p.term); }).join('<br>');
+    var row=makeRow(name, delta);
+    flash(row);
+    toast(name+' added as a new row');
+    refreshDatalist();
+    checkName();
+  });
+
+  document.getElementById('addrow').addEventListener('click',function(){
+    var tr=makeRow('','');
+    tr.querySelector('[contenteditable]').focus();
+  });
+  tbody.addEventListener('input',function(e){
+    if(e.target.closest('td.t')){ refreshDatalist(); checkName(); }
+  });
+
+  document.getElementById('export').addEventListener('click',function(){
+    var lines=[];
+    document.querySelectorAll('#deltas-table tr').forEach(function(tr){
+      var cells=[];
+      tr.querySelectorAll('th,td').forEach(function(c){
+        cells.push(c.innerText.replace(/\s+/g,' ').trim());
+      });
+      if(cells.join('').length) lines.push(cells.join('\t'));
+    });
+    copy(lines.join('\n'), lines.length+' rows copied — paste into Excel or a text file');
+  });
+
+  render();
+  refreshDatalist();
+  checkName();
+})();
+</script>
+
+<script>
+/* Local-preview helper.
+   Published on claude.ai, the host renders <pre class="mermaid"> itself.
+   Served from localhost or opened from disk, nothing does — so if the block
+   is still raw text shortly after load, fetch mermaid and run it.
+   Harmless when published: the check simply finds an <svg> and returns. */
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    var pre = document.querySelector('pre.mermaid');
+    if (!pre || pre.querySelector('svg') || pre.getAttribute('data-processed')) return;
+    import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs')
+      .then(function (mod) {
+        var mermaid = mod.default;
+        mermaid.initialize({ startOnLoad: false, securityLevel: 'loose' });
+        return mermaid.run({ nodes: [pre] });
+      })
+      .catch(function () {
+        pre.insertAdjacentHTML('beforebegin',
+          '<p style="color:#8FA9A4;font-family:Literata,serif;font-style:italic;font-size:.85rem;margin-bottom:10px">' +
+          'Fig. 2 needs an internet connection to draw itself locally. The text below is the diagram source.</p>');
+      });
+  }, 900);
+});
+</script>
