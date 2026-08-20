@@ -208,6 +208,12 @@
         <Class IRI="#KESCT"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#LAUE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LAUE-MX"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LDDS-XAS"/>
     </Declaration>
     <Declaration>
@@ -311,6 +317,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#SIXES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SMAD"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SMS"/>
@@ -505,6 +514,12 @@
         <Class IRI="#cryogenic_temperature"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#crystalline_sample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#data_analysis"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#detected_cascade_of_events_property"/>
     </Declaration>
     <Declaration>
@@ -628,6 +643,9 @@
         <Class IRI="#macro_sample_spatial_resolution"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#mad_analysis"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#magnetic_field"/>
     </Declaration>
     <Declaration>
@@ -698,6 +716,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#right_circular_polarization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sad_analysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sample_compression"/>
@@ -818,6 +839,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#TR‑SSX"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#analyses_data"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
@@ -1654,6 +1678,56 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#LAUE"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#white_beam"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LAUE-MX"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#requires_sample_input"/>
+                    <Class IRI="#pink_beam"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#requires_sample_input"/>
+                    <Class IRI="#white_beam"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#biological_sample"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#crystalline_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#LDDS-XAS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1744,6 +1818,36 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#MAD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#analyses_data"/>
+                <Class IRI="#mad_analysis"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#biological_sample"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#crystalline_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#MICRO-XRD"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -1800,24 +1904,12 @@
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_interaction_result_property"/>
-                <Class IRI="#small_length_scales"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#diffraction_of_elastic_scattering"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#measures_with_a_detector_type"/>
-                <Class IRI="#area_detector"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#requires_sample_input_property"/>
-                <Class IRI="#cryogenic_temperature"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_type"/>
@@ -1825,7 +1917,7 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_type"/>
-                <Class IRI="#single_crystal_sample"/>
+                <Class IRI="#crystalline_sample"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -2044,6 +2136,32 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#SAD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#analyses_data"/>
+                <Class IRI="#sad_analysis"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#biological_sample"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#crystalline_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#SAXS"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -2114,6 +2232,66 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#SMAD"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#analyses_data"/>
+                <Class IRI="#mad_analysis"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_incident_energy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#serial_screening"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#biological_sample"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#crystalline_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SMX"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#serial_screening"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#biological_sample"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#crystalline_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#SSX"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
@@ -2128,6 +2306,10 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#crystalline_sample"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -2168,6 +2350,32 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#requires_sample_input"/>
                 <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TR-MX"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_time"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#biological_sample"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#crystalline_sample"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -2823,6 +3031,32 @@
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TR‑SSX"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#experimental_technique"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#detection_as_a_function_of_time"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_as_a_function_of"/>
+                <Class IRI="#serial_screening"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_result_of_interaction"/>
+                <Class IRI="#diffraction_of_elastic_scattering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_input"/>
+                <Class IRI="#x-ray"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requires_sample_type"/>
+                <Class IRI="#crystalline_sample"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#ARPES"/>
         <Class IRI="#experimental_technique"/>
@@ -2876,7 +3110,7 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MAD"/>
+        <Class IRI="#LAUE"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -2944,23 +3178,11 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SAD"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#SMS"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SMX"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#STXM"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TR-MX"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
@@ -3102,6 +3324,14 @@
     <SubClassOf>
         <Class IRI="#cryogenic_temperature"/>
         <Class IRI="#sample_temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#crystalline_sample"/>
+        <Class IRI="#sample_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data_analysis"/>
+        <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#detected_cascade_of_events_property"/>
@@ -3264,6 +3494,10 @@
         <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#mad_analysis"/>
+        <Class IRI="#data_analysis"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#magnetic_field"/>
         <Class IRI="#sample_input"/>
     </SubClassOf>
@@ -3358,6 +3592,10 @@
     <SubClassOf>
         <Class IRI="#right_circular_polarization"/>
         <Class IRI="#polarization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sad_analysis"/>
+        <Class IRI="#data_analysis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sample_compression"/>
@@ -3503,10 +3741,6 @@
         <Class IRI="#x-ray"/>
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TR‑SSX"/>
-        <Class IRI="#experimental_technique"/>
-    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#cascade_of_events_being_detected"/>
         <Class IRI="#detected_cascade_of_events_property"/>
@@ -3550,6 +3784,10 @@
         <NamedIndividual IRI="#example_photon_count"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#analyses_data"/>
+        <Class IRI="#experimental_technique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
@@ -3581,6 +3819,10 @@
         <ObjectProperty IRI="#requires_sample_type"/>
         <Class IRI="#experimental_technique"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#analyses_data"/>
+        <Class IRI="#data_analysis"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
         <Class IRI="#space_time"/>
@@ -4285,6 +4527,31 @@
         <Literal>K-edge Subtraction Tomography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LAUE</IRI>
+        <Literal>LAUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#LAUE</IRI>
+        <Literal>Laue diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LAUE-MX</IRI>
+        <Literal>TODO: find out how to combine white+pink ontologically</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LAUE-MX</IRI>
+        <Literal>LAUE-MX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#LAUE-MX</IRI>
+        <Literal>Laue Macromolecular Crystallography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#LDDS-XAS</IRI>
         <Literal>Laser-Driven Dynamic Compression X-ray Absorption Spectroscopy (LDDC-XAS) measures X-ray absorption spectra of materials compressed by laser-driven dynamic pressure pulses, providing time-resolved insights into electronic and structural changes under extreme conditions.</Literal>
@@ -4342,7 +4609,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MAD</IRI>
-        <Literal>Multi-wavelength Anomalous Dispersion (MAD) measures diffraction at multiple X-ray wavelengths around an absorption edge to use anomalous scattering differences for more accurate phase determination in crystallography.</Literal>
+        <Literal>Multi-wavelength Anomalous Dispersion (MAD) measures diffraction at multiple X-ray wavelengths around an absorption edge to use anomalous scattering differences for phase determination in crystallography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4901,6 +5168,16 @@ The second definition is chosen for this technique.</Literal>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#SIXES</IRI>
         <Literal>Selectively Induced X-ray Emission Spectroscopy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SMAD</IRI>
+        <Literal>SMAD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>#SMAD</IRI>
+        <Literal>Serial Multi-wavelength Anomalous Dispersion</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6032,6 +6309,11 @@ Large structural features: supramolecular structures, particle sizes, and shapes
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mad_analysis</IRI>
+        <Literal>Treat friedel-pairs as non-equivalent in order to determine phases experimentally at multiple incident beam energies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#measures_as_a_function_of</IRI>
         <Literal>Example: XAS measures as function of incident X-ray photon energy
                 X-ray absorption tomography measures as function of sample orientation
@@ -6166,6 +6448,11 @@ Large structural features: supramolecular structures, particle sizes, and shapes
                 Another way of looking at it:
                 diffraction (cascade of events being detected) requires &apos;any of&apos; single crystal, powder, fiber
                 X-ray powder diffraction (technique) requires &apos;exactly&apos; powder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sad_analysis</IRI>
+        <Literal>Treat friedel-pairs as non-equivalent in order to determine phases experimentally</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
