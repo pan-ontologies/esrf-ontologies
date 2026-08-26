@@ -15,6 +15,22 @@ ruff format .
 ruff check .
 ```
 
+## Pre-commit hooks
+
+[pre-commit](https://pre-commit.com/) runs ruff and validation checks.
+
+Before committing, perform syntax and validation checks with:
+
+```bash
+pre-commit run --all-files
+```
+
+To run this automatically on every commit, install the Git hook:
+
+```bash
+pre-commit install
+```
+
 ## Ontology transpilation
 
 Parsing the OWL files at runtime is too inefficient. Whenever we change the ontology,

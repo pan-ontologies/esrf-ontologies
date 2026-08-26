@@ -3977,7 +3977,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#FF-XANES</IRI>
-        <Literal>Full‑Field X-ray Absorption Near Edge Structure Imaging</Literal>
+        <Literal>Full-Field X-ray Absorption Near Edge Structure Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6379,7 +6379,7 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#FS‑XANES</IRI>
-        <Literal>Full‑Spectral X-ray Absorption Near Edge Structure Imaging</Literal>
+        <Literal>Full-Spectral X-ray Absorption Near Edge Structure Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6389,7 +6389,7 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TR‑SSX</IRI>
-        <Literal>TR‑SSX</Literal>
+        <Literal>TR-SSX</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>

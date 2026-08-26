@@ -117,6 +117,10 @@ jobs:
         run: |
           python ontologies/check_version.py
 
+      - name: Check ontology labels for non-ASCII dashes
+        run: |
+          python ontologies/check_dashes.py
+
   doc-test:
     runs-on: ${{ matrix.os }}
 
