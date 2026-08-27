@@ -16,6 +16,13 @@ OWL_NS = "http://www.w3.org/2002/07/owl#"
 LABEL_PROPERTIES = {"rdfs:label", "skos:prefLabel", "skos:altLabel"}
 
 
+OTHER_BAD_CHARS = {
+    chr(0x00A0): "Non-breaking space",
+}
+
+BAD_CHARS = {**NON_ASCII_DASHES, **OTHER_BAD_CHARS}
+
+
 def check_labels(owl_path: Path) -> List[str]:
     tree = ET.parse(owl_path)  # noqa: S314 (trusted, versioned repo file)
     errors = []
@@ -26,7 +33,7 @@ def check_labels(owl_path: Path) -> List[str]:
             continue
         if prop.get("abbreviatedIRI") not in LABEL_PROPERTIES:
             continue
-        errors.extend(_check_dashes(literal.text, "label", owl_path))
+        errors.extend(_check_chars(literal.text, "label", owl_path))
     return errors
 
 
@@ -41,16 +48,16 @@ def check_iris(owl_path: Path) -> List[str]:
         if iri_attr:
             values.append(iri_attr)
         for value in values:
-            errors.extend(_check_dashes(value, "IRI", owl_path))
+            errors.extend(_check_chars(value, "IRI", owl_path))
     return errors
 
 
-def _check_dashes(value: str, kind: str, owl_path: Path) -> List[str]:
+def _check_chars(value: str, kind: str, owl_path: Path) -> List[str]:
     return [
         f"{owl_path.name}: {kind} '{value}' contains "
-        f"{NON_ASCII_DASHES[char]} (U+{ord(char):04X}); "
-        "use the ASCII hyphen-minus '-' instead"
-        for char in set(value) & NON_ASCII_DASHES.keys()
+        f"{BAD_CHARS[char]} (U+{ord(char):04X}); "
+        "use the plain ASCII equivalent instead"
+        for char in set(value) & BAD_CHARS.keys()
     ]
 
 
