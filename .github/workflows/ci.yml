@@ -6,10 +6,10 @@ on:
       - main
   pull_request:
     branches:
-      - '*'
+      - "*"
   workflow_dispatch:
   schedule:
-    - cron: '0 3 * * *'   # Runs daily at 03:00 UTC
+    - cron: "0 3 * * *" # Runs daily at 03:00 UTC
 
 jobs:
   py-test:
@@ -95,6 +95,7 @@ jobs:
       - name: Install transpilation dependencies
         run: |
           pip install .[dev]
+          pip install pre-commit
 
       - name: Run ontology transpilation
         run: |
@@ -117,9 +118,9 @@ jobs:
         run: |
           python ontologies/check_version.py
 
-      - name: Check ontology labels for non-ASCII dashes
+      - name: Run pre-commit checks
         run: |
-          python ontologies/check_dashes.py
+          pre-commit run --all-files
 
   doc-test:
     runs-on: ${{ matrix.os }}
