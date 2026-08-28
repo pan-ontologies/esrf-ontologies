@@ -1012,7 +1012,7 @@
         </owl:equivalentClass>
         <rdfs:comment>FF-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using broad X-ray beam and an area detector, providing spatially resolved information on chemical state and electronic structure.</rdfs:comment>
         <rdfs:label>FF-XANES</rdfs:label>
-        <skos:prefLabel>Full‑Field X-ray Absorption Near Edge Structure Imaging</skos:prefLabel>
+        <skos:prefLabel>Full-Field X-ray Absorption Near Edge Structure Imaging</skos:prefLabel>
     </owl:Class>
     
 
@@ -1143,6 +1143,44 @@
         <rdfs:comment>FS-EXAFS measures the extended region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on local atomic structure, such as bond lengths and coordination.</rdfs:comment>
         <rdfs:label>FS-EXAFS</rdfs:label>
         <skos:prefLabel>Full-Spectral Extended X-ray Absorption Fine Structure Imaging</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/PaN/ESRFET#FS-XANES -->
+
+
+    <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#FS-XANES">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/PaN/ESRFET#experimental_technique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#near_edge"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_as_a_function_of"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#scanning_imaging"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_interaction_result_property"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#photon_count"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_result_of_interaction"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#atomic_core_excitation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#requires_sample_input"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#x-ray"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure.</rdfs:comment>
+        <rdfs:label>FS-XANES</rdfs:label>
+        <skos:prefLabel>Full-Spectral X-ray Absorption Near Edge Structure Imaging</skos:prefLabel>
     </owl:Class>
     
 
@@ -2580,6 +2618,18 @@ The second definition is chosen for this technique.</rdfs:comment>
         <rdfs:comment>Time-Resolved Macromolecular Crystallography (TR-MX) measures X-ray diffraction from macromolecular crystals at successive time points following a reaction trigger (e.g., laser pulse or substrate injection), enabling the observation of structural changes in biomolecules during a reaction or functional cycle.</rdfs:comment>
         <rdfs:label>TR-MX</rdfs:label>
         <skos:prefLabel>Time-Resolved Macromolecular Crystallography</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/PaN/ESRFET#TR-SSX -->
+
+
+    <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#TR-SSX">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/PaN/ESRFET#experimental_technique"/>
+        <rdfs:comment>Time-Resolved Serial Synchrotron Crystallography (TR-SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR-SSX enables the reconstruction of 3D “molecular movies” that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution.</rdfs:comment>
+        <rdfs:label>TR-SSX</rdfs:label>
+        <skos:prefLabel>Time-Resolved Serial Synchrotron Crystallography</skos:prefLabel>
     </owl:Class>
     
 
@@ -4937,56 +4987,6 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</r
         <rdfs:comment>3DXRD is a far field diffraction technique capable of reconstructing polycrystalline materials from the individual diffraction spots recorded in the diffraction pattern given that the crystallographic parameters of the material are known. The success of the technique is based on the ability of the individual diffraction spots to be separated. This means there is a trade off between the number of grains and the degree of strain that is measurable.</rdfs:comment>
         <rdfs:label>3DXRD</rdfs:label>
         <skos:prefLabel>3D X-ray Diffraction</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/PaN/ESRFET#FS‑XANES -->
-
-
-    <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#FS‑XANES">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/PaN/ESRFET#experimental_technique"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_as_a_function_of"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#near_edge"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_as_a_function_of"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#scanning_imaging"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_interaction_result_property"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#photon_count"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#measures_result_of_interaction"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#atomic_core_excitation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/PaN/ESRFET#requires_sample_input"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/PaN/ESRFET#x-ray"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:comment>FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure.</rdfs:comment>
-        <rdfs:label>FS-XANES</rdfs:label>
-        <skos:prefLabel>Full‑Spectral X-ray Absorption Near Edge Structure Imaging</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/PaN/ESRFET#TR‑SSX -->
-
-
-    <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#TR‑SSX">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/PaN/ESRFET#experimental_technique"/>
-        <rdfs:comment>Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX enables the reconstruction of 3D “molecular movies” that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution.</rdfs:comment>
-        <rdfs:label>TR‑SSX</rdfs:label>
-        <skos:prefLabel>Time-Resolved Serial Synchrotron Crystallography</skos:prefLabel>
     </owl:Class>
     
 

@@ -13,10 +13,10 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "4",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -34,16 +34,16 @@
         "IRI-based" : "local_contact"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant",
-      "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
-      "labels" : {
-        "IRI-based" : "participant"
-      }
-    }, {
       "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#proposal_scientist",
       "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
       "labels" : {
         "IRI-based" : "proposal_scientist"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participant",
+      "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
+      "labels" : {
+        "IRI-based" : "participant"
       }
     }, {
       "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#principal_investigator",
@@ -92,7 +92,7 @@
     "comment" : {
       "undefined" : "An experiment performed at the ESRF."
     },
-    "id" : "4"
+    "id" : "6"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -101,7 +101,7 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "6"
+    "id" : "4"
   } ],
   "property" : [ {
     "id" : "0",
@@ -130,21 +130,21 @@
     "attributes" : [ "object" ],
     "id" : "0"
   }, {
-    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment",
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person",
     "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
     "range" : "4",
     "label" : {
-      "IRI-based" : "involves_experiment"
+      "IRI-based" : "involves_person"
     },
     "domain" : "1",
     "attributes" : [ "object" ],
     "id" : "3"
   }, {
-    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_person",
+    "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#involves_experiment",
     "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
     "range" : "6",
     "label" : {
-      "IRI-based" : "involves_person"
+      "IRI-based" : "involves_experiment"
     },
     "domain" : "1",
     "attributes" : [ "object" ],
@@ -152,11 +152,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78#participates_in_experiment",
     "baseIri" : "http://www.semanticweb.org/denolf/ontologies/2025/5/untitled-ontology-78",
-    "range" : "4",
+    "range" : "6",
     "label" : {
       "IRI-based" : "participates_in_experiment"
     },
-    "domain" : "6",
+    "domain" : "4",
     "attributes" : [ "object" ],
     "id" : "7"
   }, {
@@ -166,7 +166,7 @@
     "label" : {
       "IRI-based" : "has_role_in_experiment"
     },
-    "domain" : "6",
+    "domain" : "4",
     "attributes" : [ "object" ],
     "id" : "8"
   } ]
