@@ -3,6 +3,7 @@
 !.gitignore
 !.github
 !.readthedocs.yaml
+!.pre-commit-config.yaml
 
 # Byte / compiled / optimized
 *.py[cod]

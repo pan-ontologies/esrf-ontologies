@@ -814,10 +814,10 @@
         <Class IRI="#3DXRD"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FS‑XANES"/>
+        <Class IRI="#FS-XANES"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TR‑SSX"/>
+        <Class IRI="#TR-SSX"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#measures_as_a_function_of"/>
@@ -2764,7 +2764,7 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#FS‑XANES"/>
+        <Class IRI="#FS-XANES"/>
         <ObjectIntersectionOf>
             <Class IRI="#experimental_technique"/>
             <ObjectSomeValuesFrom>
@@ -3474,7 +3474,7 @@
         <Class IRI="#named_photon_energy_ranges"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TR‑SSX"/>
+        <Class IRI="#TR-SSX"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <DisjointClasses>
@@ -3977,7 +3977,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#FF-XANES</IRI>
-        <Literal>Full‑Field X-ray Absorption Near Edge Structure Imaging</Literal>
+        <Literal>Full-Field X-ray Absorption Near Edge Structure Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6368,32 +6368,32 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</L
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#FS‑XANES</IRI>
+        <IRI>#FS-XANES</IRI>
         <Literal>FS-XANES measures the near-edge region of the absorption spectrum across a 2D sample area using a focused X-ray beam, providing spatially resolved information on chemical state and electronic structure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#FS‑XANES</IRI>
+        <IRI>#FS-XANES</IRI>
         <Literal>FS-XANES</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
-        <IRI>#FS‑XANES</IRI>
-        <Literal>Full‑Spectral X-ray Absorption Near Edge Structure Imaging</Literal>
+        <IRI>#FS-XANES</IRI>
+        <Literal>Full-Spectral X-ray Absorption Near Edge Structure Imaging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#TR‑SSX</IRI>
-        <Literal>Time-Resolved Serial Synchrotron Crystallography (TR‑SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR‑SSX enables the reconstruction of 3D “molecular movies” that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution.</Literal>
+        <IRI>#TR-SSX</IRI>
+        <Literal>Time-Resolved Serial Synchrotron Crystallography (TR-SSX) measures time-dependent diffraction from a sequence of micro- or nano-crystals, each at a slightly different time-delay after reaction initiation. By combining pump–probe triggering (e.g., laser or mix-and-inject) with high-speed fixed-target delivery and fast detectors, TR-SSX enables the reconstruction of 3D “molecular movies” that reveal structural changes in biomolecules under physiological conditions at microsecond to millisecond resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TR‑SSX</IRI>
-        <Literal>TR‑SSX</Literal>
+        <IRI>#TR-SSX</IRI>
+        <Literal>TR-SSX</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
-        <IRI>#TR‑SSX</IRI>
+        <IRI>#TR-SSX</IRI>
         <Literal>Time-Resolved Serial Synchrotron Crystallography</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>

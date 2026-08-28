@@ -6,10 +6,10 @@ on:
       - main
   pull_request:
     branches:
-      - '*'
+      - "*"
   workflow_dispatch:
   schedule:
-    - cron: '0 3 * * *'   # Runs daily at 03:00 UTC
+    - cron: "0 3 * * *" # Runs daily at 03:00 UTC
 
 jobs:
   py-test:
@@ -116,6 +116,10 @@ jobs:
       - name: Check ontology version format
         run: |
           python ontologies/check_version.py
+
+      - name: Run pre-commit checks
+        run: |
+          pre-commit run --all-files
 
   doc-test:
     runs-on: ${{ matrix.os }}

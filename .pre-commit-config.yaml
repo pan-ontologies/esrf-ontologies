@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.4
+    hooks:
+      - id: ruff-check
+      - id: ruff-format
+
+  - repo: local
+    hooks:
+      - id: check-owl
+        name: Check ontology IRIs/labels for bad characters (dashes, non-breaking space)
+        entry: python ontologies/check_owl.py
+        language: system
+        pass_filenames: false

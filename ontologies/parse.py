@@ -111,7 +111,6 @@ def get_esrfet_techniques():
 
 
 def get_esrfet_building_blocks():
-
     ontology = load_ontology("esrfet", "ESRFET.owl")
 
     building_blocks = ontology.search_one(iri="f{esrfet_prefix}#technique_property")
