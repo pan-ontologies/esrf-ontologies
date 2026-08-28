@@ -7,8 +7,8 @@ repos:
 
   - repo: local
     hooks:
-      - id: check-ontology-dashes
-        name: Check ontology labels for non-ASCII dashes
-        entry: python ontologies/check_dashes.py
+      - id: check-owl
+        name: Check ontology IRIs/labels for bad characters (dashes, non-breaking space)
+        entry: python ontologies/check_owl.py
         language: system
         pass_filenames: false

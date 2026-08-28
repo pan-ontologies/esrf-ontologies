@@ -3,8 +3,6 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import List
 
-from dashes import NON_ASCII_DASHES
-
 ONTOLOGIES_DIR = Path(__file__).parent
 
 ONTOLOGY_FILES = [
@@ -15,6 +13,20 @@ ONTOLOGY_FILES = [
 OWL_NS = "http://www.w3.org/2002/07/owl#"
 LABEL_PROPERTIES = {"rdfs:label", "skos:prefLabel", "skos:altLabel"}
 
+
+# Dash-like characters that visually resemble the ASCII hyphen-minus.
+NON_ASCII_DASHES = {
+    "‐": "Hyphen",
+    "‑": "Non-breaking hyphen",
+    "‒": "Figure dash",
+    "–": "En dash",
+    "—": "Em dash",
+    "―": "Horizontal bar",
+    "−": "Minus sign",
+    "﹘": "Small em dash",
+    "－": "Fullwidth hyphen-minus",
+    "᠆": "Mongolian todo soft hyphen",
+}
 
 OTHER_BAD_CHARS = {
     chr(0x00A0): "Non-breaking space",

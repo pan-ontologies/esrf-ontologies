@@ -5,7 +5,6 @@ from typing import Dict
 from typing import List
 from typing import Set
 
-from dashes import normalize_dashes
 from owlready2 import get_ontology
 from owlready2 import sync_reasoner
 from owlready2.entity import ThingClass
@@ -56,15 +55,15 @@ def get_subclass_tree(cls, path: str = None) -> Dict[str, ThingClass]:
 def get_names(cls: ThingClass) -> List[str]:
     names = []
     for name in cls.label:
-        name = normalize_dashes(name.strip())
+        name = name.strip()
         if name not in names:
             names.append(name)
     for name in cls.prefLabel:
-        name = normalize_dashes(name.strip())
+        name = name.strip()
         if name not in names:
             names.append(name)
     for name in cls.altLabel:
-        name = normalize_dashes(name.strip())
+        name = name.strip()
         if name not in names:
             names.append(name)
     return names
