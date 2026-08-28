@@ -34,6 +34,7 @@ dev = [
     "esrf-ontologies[test]",
     "ruff",
     "owlready2",
+    "pre-commit",
 ]
 doc = [
     "esrf-ontologies[test]",

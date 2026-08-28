@@ -95,7 +95,6 @@ jobs:
       - name: Install transpilation dependencies
         run: |
           pip install .[dev]
-          pip install pre-commit
 
       - name: Run ontology transpilation
         run: |
