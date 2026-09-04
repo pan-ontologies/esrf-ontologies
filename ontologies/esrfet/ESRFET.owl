@@ -4573,7 +4573,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MACRO-EXAFS</IRI>
-        <Literal>Extended X-ray Absorption Fine Structure (MACRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with macroscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.</Literal>
+        <Literal>Macro Extended X-ray Absorption Fine Structure (MACRO-EXAFS) measures oscillations in X-ray absorption above an element’s absorption edge, with macroscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4583,12 +4583,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MACRO-EXAFS</IRI>
-        <Literal>Macro Extended X-ray Absorption Fine Structure (MACRO-EXAFS)</Literal>
+        <Literal>Macro Extended X-ray Absorption Fine Structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MACRO-XANES</IRI>
-        <Literal>MACRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with macroscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
+        <Literal>Macro X-ray Absorption Near Edge Structure (MACRO-XANES) measures the fine structure in X-ray absorption near an element’s absorption edge, with macroscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4598,12 +4598,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MACRO-XANES</IRI>
-        <Literal>Macro X-ray Absorption Near Edge Structure (MACRO-XANES)</Literal>
+        <Literal>Macro X-ray Absorption Near Edge Structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MACRO-XAS</IRI>
-        <Literal>MACRO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with macroscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.</Literal>
+        <Literal>Macro X-ray Absorption Spectroscopy (MACRO-XAS) measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with macroscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4613,12 +4613,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MACRO-XAS</IRI>
-        <Literal>Macro X-ray Absorption Spectroscopy (MACRO-XAS)</Literal>
+        <Literal>Macro X-ray Absorption Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MACRO-XRD</IRI>
-        <Literal>XRD which provides large-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro_sample_spatial_resolution.</Literal>
+        <Literal>Scanning Macro X-ray Diffraction (MACRO-XRD) measures X-ray diffraction while moving the sample through a beam sized according to macro spatial resolution, providing large-scale feature or phase distributions in a 2D projection of the sample in space.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4628,12 +4628,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MACRO-XRD</IRI>
-        <Literal>Scanning Macro X-ray Diffraction (MACRO-XRD)</Literal>
+        <Literal>Scanning Macro X-ray Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MACRO-XRF</IRI>
-        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to macro spacial resolution.</Literal>
+        <Literal>Scanning Macro X-ray Fluorescence (MACRO-XRF) measures X-ray fluorescence while moving the sample through a beam sized according to macro spatial resolution, providing elemental distributions in a 2D projection of the sample in space.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4653,7 +4653,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MACRO-XRF</IRI>
-        <Literal>Scanning Macro X-ray Fluorescence (MACRO-XRF)</Literal>
+        <Literal>Scanning Macro X-ray Fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4688,7 +4688,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MICRO-EXAFS</IRI>
-        <Literal>Extended X-ray Absorption Fine Structure (MICRO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with microscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.</Literal>
+        <Literal>Micro Extended X-ray Absorption Fine Structure (MICRO-EXAFS) measures oscillations in X-ray absorption above an element’s absorption edge, with microscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4698,12 +4698,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-EXAFS</IRI>
-        <Literal>Micro Extended X-ray Absorption Fine Structure (MICRO-EXAFS)</Literal>
+        <Literal>Micro Extended X-ray Absorption Fine Structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MICRO-XANES</IRI>
-        <Literal>MICRO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with microscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
+        <Literal>Micro X-ray Absorption Near Edge Structure (MICRO-XANES) measures the fine structure in X-ray absorption near an element’s absorption edge, with microscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4713,12 +4713,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-XANES</IRI>
-        <Literal>Micro X-ray Absorption Near Edge Structure (MICRO-XANES)</Literal>
+        <Literal>Micro X-ray Absorption Near Edge Structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MICRO-XAS</IRI>
-        <Literal>MICRO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with microscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.</Literal>
+        <Literal>Micro X-ray Absorption Spectroscopy (MICRO-XAS) measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with microscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4728,12 +4728,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-XAS</IRI>
-        <Literal>Micro X-ray Absorption Spectroscopy (MICRO-XAS)</Literal>
+        <Literal>Micro X-ray Absorption Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MICRO-XRD</IRI>
-        <Literal>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution.</Literal>
+        <Literal>Scanning Micro X-ray Diffraction (MICRO-XRD) measures X-ray diffraction while moving the sample through a beam sized according to micro spatial resolution, providing small-scale feature or phase distributions in a 2D projection of the sample in space.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4753,12 +4753,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-XRD</IRI>
-        <Literal>Scanning Micro X-ray Diffraction (MICRO-XRD)</Literal>
+        <Literal>Scanning Micro X-ray Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MICRO-XRF</IRI>
-        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to micro spatial resolution.</Literal>
+        <Literal>Scanning Micro X-ray Fluorescence (MICRO-XRF) measures X-ray fluorescence while moving the sample through a beam sized according to micro spatial resolution, providing elemental distributions in a 2D projection of the sample in space.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4778,7 +4778,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#MICRO-XRF</IRI>
-        <Literal>Scanning Micro X-ray Fluorescence (MICRO-XRF)</Literal>
+        <Literal>Scanning Micro X-ray Fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4828,7 +4828,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NANO-EXAFS</IRI>
-        <Literal>Extended X-ray Absorption Fine Structure (NANO-EXAFS) measures oscillations in X-ray absorption above an element's absorption edge, with nanoscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.</Literal>
+        <Literal>Nano Extended X-ray Absorption Fine Structure (NANO-EXAFS) measures oscillations in X-ray absorption above an element’s absorption edge, with nanoscale spatial resolution, providing information on the local atomic environment, including distances, coordination numbers, and disorder around the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4838,12 +4838,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-EXAFS</IRI>
-        <Literal>Nano Extended X-ray Absorption Fine Structure (NANO-EXAFS)</Literal>
+        <Literal>Nano Extended X-ray Absorption Fine Structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NANO-XANES</IRI>
-        <Literal>NANO-XANES (X-ray Absorption Near Edge Structure) measures the fine structure in X-ray absorption near an element's absorption edge, with nanoscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
+        <Literal>Nano X-ray Absorption Near Edge Structure (NANO-XANES) measures the fine structure in X-ray absorption near an element’s absorption edge, with nanoscale spatial resolution, providing information about the oxidation state, electronic structure, and coordination geometry of the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4853,12 +4853,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-XANES</IRI>
-        <Literal>Nano X-ray Absorption Near Edge Structure (NANO-XANES)</Literal>
+        <Literal>Nano X-ray Absorption Near Edge Structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NANO-XAS</IRI>
-        <Literal>NANO-XAS measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with nanoscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.</Literal>
+        <Literal>Nano X-ray Absorption Spectroscopy (NANO-XAS) measures a signal related to the X-ray absorption probability—such as fluorescence, photon electrons, Auger electrons, or transmission—as a function of the incident X-ray photon energy, with nanoscale spatial resolution. It probes atomic core-level excitations by removing core-shell electrons, providing element-specific information about the local chemical environment, oxidation state, and atomic structure around the absorbing atoms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4868,12 +4868,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-XAS</IRI>
-        <Literal>Nano X-ray Absorption Spectroscopy (NANO-XAS)</Literal>
+        <Literal>Nano X-ray Absorption Spectroscopy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NANO-XRD</IRI>
-        <Literal>XRD which provides small-scale feature or phase distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano spatial resolution.</Literal>
+        <Literal>Scanning Nano X-ray Diffraction (NANO-XRD) measures X-ray diffraction while moving the sample through a beam sized according to nano spatial resolution, providing small-scale feature or phase distributions in a 2D projection of the sample in space.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4893,12 +4893,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-XRD</IRI>
-        <Literal>Scanning Nano X-ray Diffraction (NANO-XRD)</Literal>
+        <Literal>Scanning Nano X-ray Diffraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NANO-XRF</IRI>
-        <Literal>XRF which provides elemental distributions in a 2D projection of the sample in space. The spatial separation is achieved by moving the sample through a beam sized according to nano sample spatial resolution.</Literal>
+        <Literal>Scanning Nano X-ray Fluorescence (NANO-XRF) measures X-ray fluorescence while moving the sample through a beam sized according to nano spatial resolution, providing elemental distributions in a 2D projection of the sample in space.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4918,7 +4918,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#NANO-XRF</IRI>
-        <Literal>Scanning Nano X-ray Fluorescence (NANO-XRF)</Literal>
+        <Literal>Scanning Nano X-ray Fluorescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
