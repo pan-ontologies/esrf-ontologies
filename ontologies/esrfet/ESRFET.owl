@@ -2258,58 +2258,58 @@
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions#NXarpes"/>
+        <Class IRI="https://w3id.org/PaN/NeXus/definitions#NXarpes"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#can_be_used_for_technique"/>
             <Class IRI="#XAS"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions#NXarpes"/>
+        <Class IRI="https://w3id.org/PaN/NeXus/definitions#NXarpes"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#can_be_used_for_technique"/>
             <Class IRI="#XAS"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions#NXarpes"/>
+        <Class IRI="https://w3id.org/PaN/NeXus/definitions#NXarpes"/>
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions#NXarpes"/>
+        <Class IRI="https://w3id.org/PaN/NeXus/definitions#NXarpes"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.org/nexusformat/definitions/NeXusOntology#has"/>
-            <Class IRI="http://purl.org/nexusformat/definitions/Group/NXarpes/ENTRY"/>
+            <ObjectProperty IRI="https://w3id.org/PaN/NeXus/definitions#has"/>
+            <Class IRI="https://w3id.org/PaN/NeXus/definitions#nxarpes-entry-group"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions#NXmpes_arpes"/>
+        <Class IRI="https://w3id.org/PaN/NeXus/definitions#NXmpes_arpes"/>
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions#NXmx"/>
+        <Class IRI="https://w3id.org/PaN/NeXus/definitions#NXmx"/>
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01164"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions#NXarpes"/>
+        <Class IRI="https://w3id.org/PaN/NeXus/definitions#NXarpes"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#can_be_used_for_technique"/>
             <Class IRI="#XAS"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions#NXarpes"/>
+        <Class IRI="https://w3id.org/PaN/NeXus/definitions#NXarpes"/>
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions#NXarpes"/>
+        <Class IRI="https://w3id.org/PaN/NeXus/definitions#NXarpes"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.org/nexusformat/definitions/NeXusOntology#has"/>
-            <Class IRI="http://purl.org/nexusformat/definitions/Group/NXarpes/ENTRY"/>
+            <ObjectProperty IRI="https://w3id.org/PaN/NeXus/definitions#has"/>
+            <Class IRI="https://w3id.org/PaN/NeXus/definitions#nxarpes-entry-group"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/nexusformat/definitions#NXmpes_arpes"/>
+        <Class IRI="https://w3id.org/PaN/NeXus/definitions#NXmpes_arpes"/>
         <Class IRI="http://purl.org/pan-science/PaNET/PaNET01089"/>
     </SubClassOf>
     <SubClassOf>
