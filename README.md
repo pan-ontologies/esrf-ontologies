@@ -13,7 +13,7 @@ Ontologies maintained elsewhere and included here as copies of their upstream so
 | Ontology | Maintained by | Upstream source |
 |----------|---------------|-----------------|
 | *PaNET* | [PaN Ontologies](https://github.com/pan-ontologies) (originally ExPaNDS) | https://github.com/pan-ontologies/PaNET |
-| *NeXus Ontology* | [FAIRmat](https://www.fairmat-nfdi.eu/) | https://github.com/FAIRmat-NFDI/NeXusOntology |
+| *NeXus Ontology* | [NIAC](https://www.nexusformat.org/NIAC.html), developed by [FAIRmat](https://www.fairmat-nfdi.eu/) | https://github.com/nexusformat/NeXusOntology |
 
 Python API:
 

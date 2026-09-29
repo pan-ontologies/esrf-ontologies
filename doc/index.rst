@@ -13,8 +13,9 @@ Ontologies maintained elsewhere and included as copies of their upstream source:
 
 * *PaNET* is maintained by `PaN Ontologies <https://github.com/pan-ontologies>`_ (originally ExPaNDS).
   Upstream source: https://github.com/pan-ontologies/PaNET
-* *NeXus Ontology* is maintained by `FAIRmat <https://www.fairmat-nfdi.eu/>`_.
-  Upstream source: https://github.com/FAIRmat-NFDI/NeXusOntology
+* *NeXus Ontology* is maintained by the `NIAC <https://www.nexusformat.org/NIAC.html>`_,
+  developed by `FAIRmat <https://www.fairmat-nfdi.eu/>`_.
+  Upstream source: https://github.com/nexusformat/NeXusOntology
 
 Python API's:
 
