@@ -3,10 +3,19 @@ ESRF Ontologies |version|
 
 The *ESRF Ontologies* project provides ontologies related to `ESRF <https://esrf.fr/>`_ data acquisition.
 
-Ontologies:
+Ontologies maintained by the ESRF in this project:
 
 * `ESRFET <esrfet_>`_ is an ontology of experimental techniques used at the ESRF connected to
   the `PaNET <https://doi.org/10.5281/zenodo.4806026>`_ ontology.
+* *ESRFFAIR* is an ontology of experiment participation (work in progress).
+
+Ontologies maintained elsewhere and included as copies of their upstream source:
+
+* *PaNET* is maintained by `PaN Ontologies <https://github.com/pan-ontologies>`_ (originally ExPaNDS).
+  Upstream source: https://github.com/pan-ontologies/PaNET
+* *NeXus Ontology* is maintained by the `NIAC <https://www.nexusformat.org/NIAC.html>`_,
+  developed by `FAIRmat <https://www.fairmat-nfdi.eu/>`_.
+  Upstream source: https://github.com/nexusformat/NeXusOntology
 
 Python API's:
 
