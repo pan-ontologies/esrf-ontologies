@@ -32,7 +32,8 @@
   {
     "iri": "https://w3id.org/PaN/ESRFET#BioSAXS",
     "names": [
-      "BioSAXS"
+      "BioSAXS",
+      "Biological Small-Angle X-ray Scattering"
     ],
     "description": "BioSAXS is SAXS applied to biological macromolecules in solution to determine their size, shape, flexibility, and aggregation state in near-native conditions.",
     "versioned_iri": "https://w3id.org/PaN/ESRFET/v0.1.0/#BioSAXS",
