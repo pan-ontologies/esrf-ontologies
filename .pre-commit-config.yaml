@@ -12,3 +12,10 @@ repos:
         entry: python ontologies/check_owl.py
         language: system
         pass_filenames: false
+
+      - id: check-equivalent-techniques
+        name: Check no experimental techniques are equivalent
+        entry: python ontologies/check_equivalent_techniques.py
+        language: system
+        pass_filenames: false
+        files: ^ontologies/(esrfet/ESRFET\.owl|check_equivalent_techniques\.py|parse\.py)$

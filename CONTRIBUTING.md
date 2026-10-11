@@ -41,6 +41,14 @@ to use in production
 python ontologies/parse.py
 ```
 
+## Ontology checks
+
+Check that the reasoner does not infer any two experimental techniques to be equivalent
+
+```bash
+python ontologies/check_equivalent_techniques.py
+```
+
 ## Install Protégé
 
 Tool used to create and modify ontologies.
