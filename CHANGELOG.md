@@ -18,7 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-- Unused `sample_spatial_resolution` data property (conflicted with the class of the same name) and `sample_spatial_resolution_unit` data property.
+- Unused `sample_spatial_resolution` data property (conflicted with the class of the same name).
+- Unused data properties `sample_spatial_resolution_unit`, `atomic_distance_unit` and `atomic_distance_resolution_unit`.
 
 ## [2.1.0]
 

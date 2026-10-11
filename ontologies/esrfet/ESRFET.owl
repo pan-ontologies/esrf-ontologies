@@ -844,12 +844,6 @@
         <ObjectProperty IRI="#requires_sample_type"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#atomic_distance_resolution_unit"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#atomic_distance_unit"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#energy_range_unit"/>
     </Declaration>
     <Declaration>
@@ -3577,14 +3571,6 @@
         <ObjectProperty IRI="#requires_sample_type"/>
         <Class IRI="#sample_type"/>
     </ObjectPropertyRange>
-    <DataPropertyDomain>
-        <DataProperty IRI="#atomic_distance_unit"/>
-        <Class IRI="#diffraction_of_elastic_scattering"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#atomic_distance_unit"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#energy_range_unit"/>
         <Datatype abbreviatedIRI="xsd:string"/>
