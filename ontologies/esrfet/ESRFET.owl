@@ -856,12 +856,6 @@
         <DataProperty IRI="#energy_range_value"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#sample_spatial_resolution"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#sample_spatial_resolution_unit"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#ESRF"/>
     </Declaration>
     <Declaration>

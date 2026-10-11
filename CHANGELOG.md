@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - HR-XRPD: add `analyzer_crystal` and use `high_angular_resolution` instead of `high_precision_in_Q_space`.
 
+### Removed
+
+- Unused `sample_spatial_resolution` data property (conflicted with the class of the same name) and `sample_spatial_resolution_unit` data property.
+
 ## [2.1.0]
 
 ### Added
