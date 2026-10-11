@@ -724,7 +724,7 @@
         <Class IRI="#sample_spatial_resolution_achieved_on_detection"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#sample_spatial_resolution_achived_on_input"/>
+        <Class IRI="#sample_spatial_resolution_achieved_on_input"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sample_temperature"/>
@@ -3362,7 +3362,7 @@
         <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#sample_spatial_resolution_achived_on_input"/>
+        <Class IRI="#sample_spatial_resolution_achieved_on_input"/>
         <Class IRI="#sample_spatial_resolution"/>
     </SubClassOf>
     <SubClassOf>
@@ -6180,7 +6180,7 @@ and remove this class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#sample_spatial_resolution_achived_on_input</IRI>
+        <IRI>#sample_spatial_resolution_achieved_on_input</IRI>
         <Literal>Sample properties are measured with a resolution in space determined by the sample input.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
