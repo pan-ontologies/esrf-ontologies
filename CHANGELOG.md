@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - HR-XRPD: add `analyzer_crystal` and use `high_angular_resolution` instead of `high_precision_in_Q_space`.
 
+### Fixed
+
+- Typo in `sample_spatial_resolution_achived_on_input`, renamed to `sample_spatial_resolution_achieved_on_input`.
+
 ## [2.1.0]
 
 ### Added
