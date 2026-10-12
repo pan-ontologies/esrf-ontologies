@@ -135,14 +135,6 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/PaN/ESRFET#atomic_distance_resolution_unit
-<https://w3id.org/PaN/ESRFET#atomic_distance_resolution_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://w3id.org/PaN/ESRFET#atomic_distance_unit
-<https://w3id.org/PaN/ESRFET#atomic_distance_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/PaN/ESRFET#atomic_distance_unit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/PaN/ESRFET#diffraction_of_elastic_scattering> .
-<https://w3id.org/PaN/ESRFET#atomic_distance_unit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-# 
 # https://w3id.org/PaN/ESRFET#energy_range_unit
 <https://w3id.org/PaN/ESRFET#energy_range_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/PaN/ESRFET#energy_range_unit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
@@ -152,12 +144,6 @@
 <https://w3id.org/PaN/ESRFET#energy_range_value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/PaN/ESRFET#energy_range_value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <https://w3id.org/PaN/ESRFET#energy_range_value> <http://www.w3.org/2000/01/rdf-schema#label> "has energy range value" .
-# 
-# https://w3id.org/PaN/ESRFET#sample_spatial_resolution
-<https://w3id.org/PaN/ESRFET#sample_spatial_resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://w3id.org/PaN/ESRFET#sample_spatial_resolution_unit
-<https://w3id.org/PaN/ESRFET#sample_spatial_resolution_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # 
 # 
@@ -3944,6 +3930,7 @@ _:genid827 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/PaN/ESRFET#sample_spatial_resolution
 <https://w3id.org/PaN/ESRFET#sample_spatial_resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/PaN/ESRFET#sample_spatial_resolution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/PaN/ESRFET#space_time> .
+<https://w3id.org/PaN/ESRFET#sample_spatial_resolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample properties are measured with a resolution in space." .
 # 
 # https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_detection
 <https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_detection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -4238,17 +4225,6 @@ _:genid852 <http://xmlns.com/foaf/0.1/name> "ESRF" .
 _:genid852 <http://xmlns.com/foaf/0.1/homepage> "http://www.esrf.fr"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 _:genid852 <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://ror.org/02550n020"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 _:genid851 <http://xmlns.com/foaf/0.1/name> "Wout De Nolf" .
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<https://w3id.org/PaN/ESRFET#sample_spatial_resolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample properties are measured with a resolution in space." .
-# 
 # 
 # 
 # #################################################################

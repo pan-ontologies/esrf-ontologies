@@ -6691,18 +6691,6 @@
     "@id" : "https://w3id.org/PaN/ESRFET#cascade_of_events_being_detected"
   } ]
 }, {
-  "@id" : "https://w3id.org/PaN/ESRFET#atomic_distance_resolution_unit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "https://w3id.org/PaN/ESRFET#atomic_distance_unit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/PaN/ESRFET#diffraction_of_elastic_scattering"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "https://w3id.org/PaN/ESRFET#auger_electrons",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -7579,7 +7567,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/PaN/ESRFET#sample_spatial_resolution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Sample properties are measured with a resolution in space."
   } ],
@@ -7606,9 +7594,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/PaN/ESRFET#sample_spatial_resolution"
   } ]
-}, {
-  "@id" : "https://w3id.org/PaN/ESRFET#sample_spatial_resolution_unit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "https://w3id.org/PaN/ESRFET#sample_temperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],

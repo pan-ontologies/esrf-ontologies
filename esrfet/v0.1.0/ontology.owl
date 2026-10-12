@@ -265,23 +265,6 @@
     
 
 
-    <!-- https://w3id.org/PaN/ESRFET#atomic_distance_resolution_unit -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/PaN/ESRFET#atomic_distance_resolution_unit"/>
-    
-
-
-    <!-- https://w3id.org/PaN/ESRFET#atomic_distance_unit -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/PaN/ESRFET#atomic_distance_unit">
-        <rdfs:domain rdf:resource="https://w3id.org/PaN/ESRFET#diffraction_of_elastic_scattering"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/PaN/ESRFET#energy_range_unit -->
 
 
@@ -299,20 +282,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>has energy range value</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/PaN/ESRFET#sample_spatial_resolution -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/PaN/ESRFET#sample_spatial_resolution"/>
-    
-
-
-    <!-- https://w3id.org/PaN/ESRFET#sample_spatial_resolution_unit -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/PaN/ESRFET#sample_spatial_resolution_unit"/>
     
 
 
@@ -4603,6 +4572,7 @@ Large structural features: supramolecular structures, particle sizes, and shapes
 
     <owl:Class rdf:about="https://w3id.org/PaN/ESRFET#sample_spatial_resolution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/PaN/ESRFET#space_time"/>
+        <rdfs:comment>Sample properties are measured with a resolution in space.</rdfs:comment>
     </owl:Class>
     
 
@@ -5105,21 +5075,6 @@ Ultra Large structural features: large aggregates, clusters, and larger pores</r
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/02550n020</rdfs:seeAlso>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.esrf.fr</foaf:homepage>
         <foaf:name>ESRF</foaf:name>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="https://w3id.org/PaN/ESRFET#sample_spatial_resolution">
-        <rdfs:comment>Sample properties are measured with a resolution in space.</rdfs:comment>
     </rdf:Description>
     
 
