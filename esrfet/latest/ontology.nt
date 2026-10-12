@@ -3951,10 +3951,10 @@ _:genid827 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_detection> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample properties are measured with a resolution in space determined by the detection mechanism (e.g. detector resolution or beam size)." .
 <https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_detection> <http://www.w3.org/2000/01/rdf-schema#comment> "achieved_on could be an object property of the  \"sample_spatial_resolution\" in this case:\n\n\"sample_spatial_resolution\"\n     achieved_on\n\"detection\"\n\nand remove this class" .
 # 
-# https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achived_on_input
-<https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achived_on_input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achived_on_input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/PaN/ESRFET#sample_spatial_resolution> .
-<https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achived_on_input> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample properties are measured with a resolution in space determined by the sample input." .
+# https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_input
+<https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/PaN/ESRFET#sample_spatial_resolution> .
+<https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_input> <http://www.w3.org/2000/01/rdf-schema#comment> "Sample properties are measured with a resolution in space determined by the sample input." .
 # 
 # https://w3id.org/PaN/ESRFET#sample_temperature
 <https://w3id.org/PaN/ESRFET#sample_temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

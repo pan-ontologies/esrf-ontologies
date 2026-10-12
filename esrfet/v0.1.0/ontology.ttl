@@ -3382,10 +3382,10 @@ Large structural features: supramolecular structures, particle sizes, and shapes
 and remove this class""" .
 
 
-###  https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achived_on_input
-:sample_spatial_resolution_achived_on_input rdf:type owl:Class ;
-                                            rdfs:subClassOf :sample_spatial_resolution ;
-                                            rdfs:comment "Sample properties are measured with a resolution in space determined by the sample input." .
+###  https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_input
+:sample_spatial_resolution_achieved_on_input rdf:type owl:Class ;
+                                             rdfs:subClassOf :sample_spatial_resolution ;
+                                             rdfs:comment "Sample properties are measured with a resolution in space determined by the sample input." .
 
 
 ###  https://w3id.org/PaN/ESRFET#sample_temperature

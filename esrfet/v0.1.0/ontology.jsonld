@@ -7598,7 +7598,7 @@
     "@id" : "https://w3id.org/PaN/ESRFET#sample_spatial_resolution"
   } ]
 }, {
-  "@id" : "https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achived_on_input",
+  "@id" : "https://w3id.org/PaN/ESRFET#sample_spatial_resolution_achieved_on_input",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Sample properties are measured with a resolution in space determined by the sample input."
