@@ -8,7 +8,7 @@ repos:
   - repo: local
     hooks:
       - id: check-owl
-        name: Check ontology IRIs/labels for bad characters (dashes, non-breaking space)
+        name: Check ontology IRIs and labels
         entry: python ontologies/check_owl.py
         language: system
         pass_filenames: false
