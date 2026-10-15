@@ -6,6 +6,16 @@ Development requirements are listed in `pyproject.toml` and can be installed wit
 pip install [--user] [-e] .[dev]
 ```
 
+A Java runtime (11 or newer) is also required by the OWL reasoner used in the ontology checks
+
+```bash
+sudo apt install default-jre          # Debian/Ubuntu
+sudo dnf install java-latest-openjdk  # Fedora
+brew install openjdk                  # macOS
+winget install EclipseAdoptium.Temurin.21.JRE  # Windows
+java -version                         # check
+```
+
 ## Formatting and linting
 
 [ruff](https://docs.astral.sh/ruff/) is used to auto-format and lint the code.
