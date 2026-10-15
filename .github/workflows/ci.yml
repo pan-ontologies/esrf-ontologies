@@ -33,14 +33,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
 
-      - name: Lint and format check with Ruff
-        if: ${{ matrix.python-version == '3.12' }}
-        run: |
-          pip install ruff
-          ruff --version
-          ruff check .
-          ruff format --check .
-
       - name: Build source distribution
         run: |
           pip install build
@@ -103,19 +95,6 @@ jobs:
       - name: Check transpilation did not modify the python project
         run: |
           git diff --exit-code
-
-      - name: Check ontology capitalization (X-ray vs X-Ray)
-        run: |
-          FILES="./ontologies/esrfet/ESRFET.owl ./ontologies/esrffair/ESRFFAIR.owl"
-          if grep -nRE "(X-Ray|x-ray)" $FILES | grep -vE 'IRI="#|<IRI>#'; then
-            echo "❌ Found incorrect capitalization 'X-Ray'. Please use 'X-ray'."
-            exit 1
-          else
-            echo "✅ No incorrect capitalization found."
-          fi
-      - name: Check ontology version format
-        run: |
-          python ontologies/check_version.py
 
       - name: Run pre-commit checks
         run: |
