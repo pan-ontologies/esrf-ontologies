@@ -3505,6 +3505,17 @@
         <Class IRI="#TR-SSX"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#experimental_technique"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#measures_interaction_result_property"/>
+            <Class IRI="#detected_photon_energy_window"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#emission_line_photon_energy_window"/>
+        <Class IRI="#full_photon_energy_window"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#cascade_of_events_being_detected"/>
         <Class IRI="#detected_cascade_of_events_property"/>
