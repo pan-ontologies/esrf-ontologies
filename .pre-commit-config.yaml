@@ -12,3 +12,24 @@ repos:
         entry: python ontologies/check_owl.py
         language: system
         pass_filenames: false
+
+      - id: check-x-ray-capitalization
+        name: Check ontology capitalization (X-ray instead of X-Ray or x-ray)
+        language: pygrep
+        # IRIs are allowed to use x-ray
+        entry: '^(?!.*(IRI="#|<IRI>#)).*(X-Ray|x-ray)'
+        files: ^ontologies/(esrfet/ESRFET|esrffair/ESRFFAIR)\.owl$
+
+      - id: check-version
+        name: Check ontology version format
+        entry: python ontologies/check_version.py
+        language: system
+        pass_filenames: false
+        files: ^ontologies/(esrfet/ESRFET\.owl|check_version\.py)$
+
+      - id: check-equivalent-techniques
+        name: Check no experimental techniques are equivalent
+        entry: python ontologies/check_equivalent_techniques.py
+        language: system
+        pass_filenames: false
+        files: ^ontologies/(esrfet/ESRFET\.owl|check_equivalent_techniques\.py|parse\.py)$

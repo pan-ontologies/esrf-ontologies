@@ -508,6 +508,9 @@
         <Class IRI="#detected_cascade_of_events_property"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#detected_photon_energy_window"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#detected_photon_property"/>
     </Declaration>
     <Declaration>
@@ -547,6 +550,9 @@
         <Class IRI="#electrons"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#emission_line_photon_energy_window"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#energy_dispersive_detector"/>
     </Declaration>
     <Declaration>
@@ -569,6 +575,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#full-field_imaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#full_photon_energy_window"/>
     </Declaration>
     <Declaration>
         <Class IRI="#grating"/>
@@ -761,6 +770,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#strip_detector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sub_natural_linewidth_photon_energy_window"/>
     </Declaration>
     <Declaration>
         <Class IRI="#technique_property"/>
@@ -1500,6 +1512,10 @@
                 <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#sub_natural_linewidth_photon_energy_window"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#atomic_core_excitation"/>
             </ObjectSomeValuesFrom>
@@ -1918,6 +1934,10 @@
                 <Class IRI="#photon_count"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#emission_line_photon_energy_window"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
                 <Class IRI="#atomic_core_excitation"/>
             </ObjectSomeValuesFrom>
@@ -2110,6 +2130,10 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_interaction_result_property"/>
                 <Class IRI="#photon_count"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#measures_interaction_result_property"/>
+                <Class IRI="#full_photon_energy_window"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#measures_result_of_interaction"/>
@@ -3066,6 +3090,10 @@
         <Class IRI="#technique_property"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#detected_photon_energy_window"/>
+        <Class IRI="#detected_photon_property"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#detected_photon_property"/>
         <Class IRI="#detected_cascade_of_events_property"/>
     </SubClassOf>
@@ -3118,6 +3146,10 @@
         <Class IRI="#sample_input"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#emission_line_photon_energy_window"/>
+        <Class IRI="#detected_photon_energy_window"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#energy_dispersive_detector"/>
         <Class IRI="#detector_type"/>
     </SubClassOf>
@@ -3144,6 +3176,10 @@
     <SubClassOf>
         <Class IRI="#full-field_imaging"/>
         <Class IRI="#imaging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#full_photon_energy_window"/>
+        <Class IRI="#detected_photon_energy_window"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#grating"/>
@@ -3402,6 +3438,10 @@
         <Class IRI="#detector_type"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#sub_natural_linewidth_photon_energy_window"/>
+        <Class IRI="#emission_line_photon_energy_window"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#tomography"/>
         <Class IRI="#space_time"/>
     </SubClassOf>
@@ -3465,6 +3505,17 @@
         <Class IRI="#TR-SSX"/>
         <Class IRI="#experimental_technique"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#experimental_technique"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#measures_interaction_result_property"/>
+            <Class IRI="#detected_photon_energy_window"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#emission_line_photon_energy_window"/>
+        <Class IRI="#full_photon_energy_window"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#cascade_of_events_being_detected"/>
         <Class IRI="#detected_cascade_of_events_property"/>
@@ -5719,6 +5770,11 @@ The second definition is chosen for this technique.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#detected_photon_energy_window</IRI>
+        <Literal>Range of detected photon energies that is counted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#detected_photon_property</IRI>
         <Literal>The interaction between the sample and sample input(s) leads to a cascade of events, the result being photons which properties are being measured.</Literal>
     </AnnotationAssertion>
@@ -5756,6 +5812,11 @@ The second definition is chosen for this technique.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#disperse_incident_energy_in_space</IRI>
         <Literal>Disperse incident wave photons in space with a polychromator (e.g. elliptically curved crystal in Bragg or Laue geometry).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#emission_line_photon_energy_window</IRI>
+        <Literal>Only photons within an energy window around a specific emission line are counted.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5846,6 +5907,11 @@ In addition, experimental techniques are semantically defined by
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#full-field_imaging</IRI>
         <Literal>Measure sample characteristics in a 2D plane in space by why of detection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#full_photon_energy_window</IRI>
+        <Literal>All detected photons are counted, without selecting a specific emission line.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6221,6 +6287,11 @@ Small structural features: Atomic distances, crystal lattice spacings, molecular
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#strip_detector</IRI>
         <Literal>Detector that distinguishes the position of the waves (photons or particles) in a 1D strip (line with a certain thickness) in space by using an array of pixels which measure the waves independently.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sub_natural_linewidth_photon_energy_window</IRI>
+        <Literal>Only photons within an energy window narrower than the natural linewidth of the emission line are counted.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
