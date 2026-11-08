@@ -2,10 +2,15 @@ name: ROBOT ontology validation
 
 on:
   workflow_dispatch:
+  # Informative only for now: runs on pull requests but never blocks them.
+  pull_request:
+    branches:
+      - "*"
 
 jobs:
   robot-test:
     runs-on: ubuntu-latest
+    continue-on-error: true
 
     env:
       ROBOT_VERSION: "1.9.8"
