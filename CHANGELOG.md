@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Typo in `sample_spatial_resolution_achived_on_input`, renamed to `sample_spatial_resolution_achieved_on_input`.
+- `S-XEOL`: preferred label.
 
 ## [2.1.0]
 

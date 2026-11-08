@@ -4722,7 +4722,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
         <IRI>#S-XEOL</IRI>
-        <Literal>X-ray Excited Optical Luminescence</Literal>
+        <Literal>Scanning X-ray Excited Optical Luminescence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
