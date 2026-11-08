@@ -20,6 +20,7 @@ html
 
 # Generates
 catalog-v001.xml
+robot.jar
 ESRFET.properties
 /tools/docs/
 

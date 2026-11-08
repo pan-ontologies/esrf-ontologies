@@ -1,0 +1,41 @@
+name: ROBOT ontology validation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  robot-test:
+    runs-on: ubuntu-latest
+
+    env:
+      ROBOT_VERSION: "1.9.8"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Download ROBOT
+        run: |
+          curl -sSLf -o robot.jar "https://github.com/ontodev/robot/releases/download/v${ROBOT_VERSION}/robot.jar"
+
+      - name: Validate ontologies with ROBOT
+        run: |
+          python ontologies/check_robot.py --robot-jar robot.jar
+
+      - name: Upload ROBOT reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: robot-reports
+          path: build/robot/

@@ -1,0 +1,20 @@
+# # Missing Ontology Description
+#
+# **Problem:** The ontology has no description. Unlike the default ROBOT check,
+# dcterms:abstract is accepted as well.
+#
+# **Solution:** Add a dcterms:abstract or dcterms:description to the ontology.
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?entity ?property ?value WHERE {
+  ?entity rdf:type owl:Ontology .
+  FILTER NOT EXISTS {
+    VALUES ?description { dc:description dcterms:description dcterms:abstract }
+    ?entity ?description ?value .
+  }
+  BIND(dcterms:abstract AS ?property)
+}
