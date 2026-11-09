@@ -5713,7 +5713,7 @@
     "@id" : "https://w3id.org/PaN/ESRFET#experimental_technique"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "X-ray Excited Optical Luminescence"
+    "@value" : "Scanning X-ray Excited Optical Luminescence"
   } ]
 }, {
   "@id" : "https://w3id.org/PaN/ESRFET#S-XRD",
