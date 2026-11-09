@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Resolve ontology imports to the local copies when running ROBOT (see check_robot.py). -->
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri name="http://purl.org/pan-science/PaNET/PaNET.owl" uri="../panet/PaNET.owl"/>
+</catalog>

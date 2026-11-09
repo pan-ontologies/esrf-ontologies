@@ -41,6 +41,31 @@ to use in production
 python ontologies/parse.py
 ```
 
+## Ontology validation with ROBOT
+
+[ROBOT](https://robot.obolibrary.org/) checks that the ontologies are in the OWL 2 DL profile, are consistent, have no unsatisfiable classes and have no inferred equivalent classes.
+It also produces quality reports for information.
+
+In GitHub, run the "ROBOT ontology validation" workflow manually from the Actions tab.
+The reports are uploaded as the `robot-reports` artifact.
+
+To run it locally, install Java 11 or higher and download the ROBOT jar file
+
+```bash
+curl -sSLf -o robot.jar https://github.com/ontodev/robot/releases/download/v1.9.8/robot.jar
+python ontologies/check_robot.py --robot-jar robot.jar
+```
+
+Reports are written to `build/robot/`, one set per ontology:
+
+| File | Content | Fails the check |
+| --- | --- | --- |
+| `<name>_profile.txt` | OWL 2 DL profile validation | yes |
+| `<name>_reason.txt` | Reasoner errors: inconsistency, unsatisfiable classes, inferred equivalent classes. Empty when there are none. | yes |
+| `<name>_report.html` / `<name>_report.tsv` | Quality report on what is written in the ontology (labels, comments, metadata, ...). HTML to read, TSV to process. | no |
+
+The quality report rules are listed in `ontologies/robot/profile.txt`, with our own SPARQL rules in `ontologies/robot/queries/`.
+
 ## Install Protégé
 
 Tool used to create and modify ontologies.

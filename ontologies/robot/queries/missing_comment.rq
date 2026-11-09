@@ -1,0 +1,28 @@
+# # Missing Comment
+#
+# **Problem:** A class or property defined in this ontology has no rdfs:comment
+# describing its meaning (we use rdfs:comment instead of IAO definitions).
+#
+# **Solution:** Add an rdfs:comment.
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?entity ?property ?value WHERE {
+  VALUES ?type { owl:Class owl:ObjectProperty owl:DatatypeProperty }
+  VALUES ?property { rdfs:comment }
+  ?entity rdf:type ?type .
+  FILTER NOT EXISTS {
+    ?entity ?property ?value .
+    FILTER(str(?value) != "")
+  }
+  FILTER NOT EXISTS { ?entity owl:deprecated true }
+  # Only entities defined here, not external entities that are only declared.
+  FILTER EXISTS {
+    ?entity ?prop2 ?object .
+    FILTER (?prop2 != rdf:type)
+  }
+  FILTER (!isBlank(?entity))
+}
+ORDER BY ?entity
